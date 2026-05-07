@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DC Black Pride 2026 — Weekend Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0805;
+    --deep: #13100c;
+    --card: #1c1712;
+    --border: #2e2418;
+    --burgundy: #6b1a2a;
+    --burgundy-light: #8b2235;
+    --gold: #c9922a;
+    --gold-light: #e4b04a;
+    --cream: #f0e6d0;
+    --muted: #7a6a54;
+    --text: #e8dcc8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--black);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grain overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.4;
+  }
+
+  .hero {
+    position: relative;
+    padding: 64px 24px 48px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(107,26,42,0.35) 0%, transparent 70%);
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 200px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(201,146,42,0.3);
+    padding: 5px 14px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 8vw, 3.8rem);
+    font-weight: 900;
+    line-height: 1.05;
+    color: var(--cream);
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+
+  .hero h1 span {
+    color: var(--gold-light);
+    font-style: italic;
+  }
+
+  .hero-sub {
+    margin-top: 14px;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+
+  .hero-theme {
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--gold);
+    animation: fadeUp 0.6s 0.25s ease both;
+  }
+
+  .notice {
+    margin: 24px auto 0;
+    max-width: 480px;
+    background: rgba(201,146,42,0.08);
+    border: 1px solid rgba(201,146,42,0.2);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 12px;
+    color: var(--gold-light);
+    line-height: 1.6;
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 16px 80px;
+  }
+
+  .day-section {
+    margin-top: 40px;
+    animation: fadeUp 0.5s ease both;
+  }
+
+  .day-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .day-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--cream);
+  }
+
+  .day-date {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-top: 2px;
+  }
+
+  .day-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .event-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    transition: border-color 0.2s, background 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .event-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--burgundy);
+    border-radius: 3px 0 0 3px;
+    transition: background 0.2s;
+  }
+
+  .event-card:hover {
+    border-color: rgba(201,146,42,0.25);
+    background: #201a13;
+  }
+
+  .event-card:hover::before {
+    background: var(--gold);
+  }
+
+  .event-info { flex: 1; min-width: 0; }
+
+  .event-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cream);
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+
+  .event-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  .meta-pill {
+    font-size: 10.5px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .meta-pill svg {
+    width: 11px; height: 11px;
+    opacity: 0.6;
+    flex-shrink: 0;
+  }
+
+  .badge {
+    font-size: 9.5px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 100px;
+    flex-shrink: 0;
+  }
+
+  .badge-official {
+    background: rgba(107,26,42,0.35);
+    color: #e0748a;
+    border: 1px solid rgba(107,26,42,0.5);
+  }
+
+  .badge-partner {
+    background: rgba(201,146,42,0.12);
+    color: var(--gold-light);
+    border: 1px solid rgba(201,146,42,0.25);
+  }
+
+  .badge-free {
+    background: rgba(40,80,40,0.3);
+    color: #7ec87e;
+    border: 1px solid rgba(40,80,40,0.5);
+  }
+
+  .event-action {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    padding: 7px 13px;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: all 0.18s;
+    white-space: nowrap;
+  }
+
+  .btn-primary {
+    background: var(--burgundy);
+    color: var(--cream);
+    border: 1px solid var(--burgundy-light);
+  }
+
+  .btn-primary:hover {
+    background: var(--burgundy-light);
+    color: #fff;
+  }
+
+  .btn-gold {
+    background: rgba(201,146,42,0.15);
+    color: var(--gold-light);
+    border: 1px solid rgba(201,146,42,0.3);
+  }
+
+  .btn-gold:hover {
+    background: rgba(201,146,42,0.25);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    font-size: 10.5px;
+  }
+
+  .btn-ghost:hover {
+    color: var(--text);
+    border-color: var(--muted);
+  }
+
+  /* Performers */
+  .performers-section {
+    margin-top: 48px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .performers-header {
+    background: linear-gradient(135deg, var(--burgundy) 0%, #3d0f18 100%);
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .performers-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cream);
+  }
+
+  .headliner {
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+  }
+
+  .headliner-label {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+
+  .headliner-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--cream);
+  }
+
+  .performers-grid {
+    padding: 16px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: var(--deep);
+  }
+
+  .performer-chip {
+    font-size: 12px;
+    color: var(--text);
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 5px 12px;
+    border-radius: 100px;
+  }
+
+  /* Key links */
+  .links-section {
+    margin-top: 32px;
+  }
+
+  .links-title {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .link-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+
+  .link-row:last-child { border-bottom: none; }
+  .link-row:hover { opacity: 0.75; }
+
+  .link-row-name {
+    font-size: 13px;
+    color: var(--cream);
+  }
+
+  .link-arrow {
+    color: var(--gold);
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 32px 16px;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  .footer strong { color: var(--gold); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* TBD styling */
+  .tbd { color: var(--muted); font-style: italic; font-size: 11px; }
+
+  /* Women tag */
+  .badge-women {
+    background: rgba(180,60,120,0.2);
+    color: #e48ab8;
+    border: 1px solid rgba(180,60,120,0.35);
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="tag">Memorial Day Weekend · DC</div>
+  <h1>DC Black Pride <span>2026</span></h1>
+  <div class="hero-sub">May 21 – 25, 2026 · Washington, DC</div>
+  <div class="hero-theme">"New Black Renaissance"</div>
+  <div class="notice">
+    📌 Schedule is still being finalized. Check back for updates — ticket links route through our page. Times and venues subject to change.
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- THURSDAY -->
+  <div class="day-section">
+    <div class="day-header">
+      <div class="day-label">Thursday</div>
+      <div class="day-date">May 21</div>
+      <div class="day-line"></div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-partner">Partner Event</span>
+        </div>
+        <div class="event-name">DCBP Kickoff Rooftop Party</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            TBD
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Washington, DC
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-primary">Get Tickets →</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-women">Women's Event</span>
+          <span class="badge badge-partner">Partner Event</span>
+        </div>
+        <div class="event-name">Unleashed DC — 12 Stories</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            7pm – 1am
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            75 District Square SW, 12th Fl
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-primary">Get Tickets →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FRIDAY -->
+  <div class="day-section">
+    <div class="day-header">
+      <div class="day-label">Friday</div>
+      <div class="day-date">May 22</div>
+      <div class="day-line"></div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-official">Official DCBP</span>
+          <span class="badge badge-free">Free</span>
+        </div>
+        <div class="event-name">Welcome Reception / Pass Distribution</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            TBD
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            The Westin Washington, DC Downtown
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-ghost">More Info →</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-women">Women's Event</span>
+          <span class="badge badge-partner">Partner Event</span>
+        </div>
+        <div class="event-name">Unleashed DC — The Gathering Spot</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            10pm – 3am
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            1720 I St NW
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-primary">Get Tickets →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SATURDAY -->
+  <div class="day-section">
+    <div class="day-header">
+      <div class="day-label">Saturday</div>
+      <div class="day-date">May 23</div>
+      <div class="day-line"></div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-official">Official DCBP</span>
+        </div>
+        <div class="event-name">Brunch & Babes — Drag Brunch</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            TBD
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            TBD
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-primary">Get Tickets →</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-official">Official DCBP</span>
+          <span class="badge badge-women">Women's Event</span>
+        </div>
+        <div class="event-name">Funky Dance Day Party for Mature Women</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            2pm – 6pm
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            TBD
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-ghost">More Info →</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-official">Official DCBP</span>
+        </div>
+        <div class="event-name">House & Ballroom Community Summit</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            TBD
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            The Westin Washington, DC Downtown
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-ghost">More Info →</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-women">Women's Event</span>
+          <span class="badge badge-partner">Partner Event</span>
+        </div>
+        <div class="event-name">Unleashed DC — Metrobar Day Party</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            12pm – 7pm
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            640 Rhode Island Ave NE
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-primary">Get Tickets →</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-official">Official DCBP</span>
+          <span class="badge badge-women">Women's Event</span>
+        </div>
+        <div class="event-name">Signature Women's Mega-Party</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            TBD
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            TBD
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-primary">Get Tickets →</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-women">Women's Event</span>
+          <span class="badge badge-partner">Partner Event</span>
+        </div>
+        <div class="event-name">Unleashed DC — Public Bar Live (Night)</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            10pm – 3am
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            1214 18th St NW
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-primary">Get Tickets →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUNDAY -->
+  <div class="day-section">
+    <div class="day-header">
+      <div class="day-label">Sunday</div>
+      <div class="day-date">May 24</div>
+      <div class="day-line"></div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-official">Official DCBP</span>
+          <span class="badge badge-free">Free</span>
+        </div>
+        <div class="event-name">Pride in the Park</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            TBD
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Fort Dupont Park
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-ghost">More Info →</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-official">Official DCBP</span>
+        </div>
+        <div class="event-name">Comedy Show ft. Anthony Oakes</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            TBD
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            TBD
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-primary">Get Tickets →</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-women">Women's Event</span>
+          <span class="badge badge-partner">Partner Event</span>
+        </div>
+        <div class="event-name">Unleashed DC — Sachi Nightclub</div>
+        <div class="event-meta">
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            8pm – 2am
+          </span>
+          <span class="meta-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            727 15th St NW
+          </span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-primary">Get Tickets →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MONDAY -->
+  <div class="day-section">
+    <div class="day-header">
+      <div class="day-label">Monday</div>
+      <div class="day-date">May 25 · Memorial Day</div>
+      <div class="day-line"></div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-info">
+        <div class="event-meta" style="margin-bottom:6px">
+          <span class="badge badge-official">Official DCBP</span>
+        </div>
+        <div class="event-name">Closing Events — More TBA</div>
+        <div class="event-meta">
+          <span class="meta-pill tbd">Check back for updates</span>
+        </div>
+      </div>
+      <div class="event-action">
+        <a href="YOUR-LINKTREE-URL" class="btn btn-ghost">Full Schedule →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERFORMERS -->
+  <div class="performers-section" style="margin-top:48px">
+    <div class="performers-header">
+      <span style="font-size:1.1rem">🎤</span>
+      <h3>Featured Performers</h3>
+    </div>
+    <div class="headliner">
+      <div class="headliner-label">Headliner</div>
+      <div class="headliner-name">Durand Bernarr</div>
+    </div>
+    <div class="performers-grid">
+      <span class="performer-chip">Bang Garcon</span>
+      <span class="performer-chip">Be Steadwell</span>
+      <span class="performer-chip">Jay Columbus</span>
+      <span class="performer-chip">Bennu Byrd</span>
+      <span class="performer-chip">Rue Pratt</span>
+      <span class="performer-chip">Akeem Woods</span>
+    </div>
+  </div>
+
+  <!-- KEY LINKS -->
+  <div class="links-section">
+    <div class="links-title">🔗 Key Resources</div>
+    <a href="https://dcblackpride.org/schedule.htm" target="_blank" class="link-row">
+      <span class="link-row-name">Official DCBP Schedule</span>
+      <span class="link-arrow">↗</span>
+    </a>
+    <a href="https://unleasheddc.com/events-and-tickets" target="_blank" class="link-row">
+      <span class="link-row-name">Unleashed DC — Women's Events</span>
+      <span class="link-arrow">↗</span>
+    </a>
+    <a href="https://centerforblackequity.org/events/dcblackpride26" target="_blank" class="link-row">
+      <span class="link-row-name">Center for Black Equity</span>
+      <span class="link-arrow">↗</span>
+    </a>
+    <a href="YOUR-LINKTREE-URL" target="_blank" class="link-row">
+      <span class="link-row-name">Our Linktree — All Tickets & Info</span>
+      <span class="link-arrow">↗</span>
+    </a>
+  </div>
+
+</div>
+
+<div class="footer">
+  Curated with 🖤 by <strong>SoftQueerWealth</strong><br>
+  Follow us on Instagram for real-time weekend updates<br>
+  <span style="font-size:10px; margin-top:6px; display:block">Schedule subject to change · All ticket links route through our page</span>
+</div>
+
+</body>
+</html>
