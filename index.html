@@ -1135,7 +1135,7 @@ function togglePanel() {
 
 function toggleFilter(btn) {
   const type = btn.dataset.filterType;
-  const val = btn.dataset.value;
+  const val = (btn.dataset.value || '').toLowerCase();
   if (type === 'free') {
     freeOnly = !freeOnly;
     btn.classList.toggle('active', freeOnly);
@@ -1154,15 +1154,15 @@ function applyFilters() {
   const cards = document.querySelectorAll('.event-card');
   let anyVisible = false;
   cards.forEach(card => {
-    const cardTypes = card.dataset.types ? card.dataset.types.split(' ') : [];
-    const cardVibes = card.dataset.vibes ? card.dataset.vibes.split(' ') : [];
+    const cardTypes = card.dataset.types ? card.dataset.types.toLowerCase().split(' ') : [];
+    const cardVibesNorm = ` ${(card.dataset.vibes || '').toLowerCase().replace(/\s+/g, ' ').trim()} `;
     const cardFree = card.dataset.free === 'true';
     let show = true;
     if (activeTypes.size > 0) {
       if (![...activeTypes].some(t => cardTypes.includes(t))) show = false;
     }
     if (activeVibes.size > 0) {
-      if (![...activeVibes].some(v => cardVibes.includes(v.toLowerCase()))) show = false;
+      if (![...activeVibes].some(v => cardVibesNorm.includes(` ${v} `))) show = false;
     }
     if (freeOnly && !cardFree) show = false;
     card.classList.toggle('filtered-out', !show);
