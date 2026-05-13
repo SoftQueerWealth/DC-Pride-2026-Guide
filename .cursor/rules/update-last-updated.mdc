@@ -1,0 +1,17 @@
+---
+description: Keep the guide's visible last-updated date current when event or beauty content changes
+globs: src/**/*.{ts,tsx},src/data/**/*,README.md
+alwaysApply: false
+---
+
+# Last Updated Date
+
+When changing Events or Beauty content, also update the visible `Last updated` date in `src/components/Hero.tsx` to today's date.
+
+This applies to changes that affect event listings, event parsing/filtering, bundled event data, Beauty tab content, or copy that users see in those sections.
+
+Use the format already shown in the component, for example:
+
+```tsx
+<p className="last-updated">Last updated · May 13, 2026</p>
+```

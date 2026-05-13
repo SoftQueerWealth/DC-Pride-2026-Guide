@@ -1,8 +1,17 @@
-export type FilterKind = 'day' | 'type' | 'vibe' | 'free';
+import { EventDay, EventType, EventVibe, type DayId, type EventTypeId, type EventVibeId } from '../types/event';
+
+export enum FilterKind {
+  Day = 'day',
+  Type = 'type',
+  Vibe = 'vibe',
+  Free = 'free',
+}
+
+type FilterPillValue = DayId | EventTypeId | EventVibeId | 'true';
 
 export interface FilterPillDef {
   kind: FilterKind;
-  value: string;
+  value: FilterPillValue;
   label: string;
   /** When true, use .free-pill.active styling */
   freePill?: boolean;
@@ -12,50 +21,50 @@ export const FILTER_SECTIONS: { label: string; pills: FilterPillDef[] }[] = [
   {
     label: 'Day',
     pills: [
-      { kind: 'day', value: 'wednesday', label: 'Wed' },
-      { kind: 'day', value: 'thursday', label: 'Thu' },
-      { kind: 'day', value: 'friday', label: 'Fri' },
-      { kind: 'day', value: 'saturday', label: 'Sat' },
-      { kind: 'day', value: 'sunday', label: 'Sun' },
-      { kind: 'day', value: 'monday', label: 'Mon' },
+      { kind: FilterKind.Day, value: EventDay.Wednesday, label: 'Wed' },
+      { kind: FilterKind.Day, value: EventDay.Thursday, label: 'Thu' },
+      { kind: FilterKind.Day, value: EventDay.Friday, label: 'Fri' },
+      { kind: FilterKind.Day, value: EventDay.Saturday, label: 'Sat' },
+      { kind: FilterKind.Day, value: EventDay.Sunday, label: 'Sun' },
+      { kind: FilterKind.Day, value: EventDay.Monday, label: 'Mon' },
     ],
   },
   {
     label: 'Venue Type',
     pills: [
-      { kind: 'type', value: 'after-dark', label: 'After Dark' },
-      { kind: 'type', value: 'day-party', label: 'Day Party' },
-      { kind: 'type', value: 'brunch', label: 'Brunch' },
-      { kind: 'type', value: 'happy-hour', label: 'Happy Hour' },
-      { kind: 'type', value: 'workshop', label: 'Workshop' },
-      { kind: 'type', value: 'outdoors', label: 'Outdoors' },
-      { kind: 'type', value: 'ball', label: 'Ball' },
-      { kind: 'type', value: 'meetup', label: 'Meetup' },
-      { kind: 'type', value: 'cultural', label: 'Cultural' },
+      { kind: FilterKind.Type, value: EventType.AfterDark, label: 'After Dark' },
+      { kind: FilterKind.Type, value: EventType.DayParty, label: 'Day Party' },
+      { kind: FilterKind.Type, value: EventType.Brunch, label: 'Brunch' },
+      { kind: FilterKind.Type, value: EventType.HappyHour, label: 'Happy Hour' },
+      { kind: FilterKind.Type, value: EventType.Workshop, label: 'Workshop' },
+      { kind: FilterKind.Type, value: EventType.Outdoors, label: 'Outdoors' },
+      { kind: FilterKind.Type, value: EventType.Ball, label: 'Ball' },
+      { kind: FilterKind.Type, value: EventType.Meetup, label: 'Meetup' },
+      { kind: FilterKind.Type, value: EventType.Cultural, label: 'Cultural' },
     ],
   },
   {
     label: 'Vibes',
     pills: [
-      { kind: 'vibe', value: 'flirt', label: 'Flirt' },
-      { kind: 'vibe', value: 'ass shaking', label: 'Ass Shaking' },
-      { kind: 'vibe', value: 'groove', label: 'Groove' },
-      { kind: 'vibe', value: 'chill', label: 'Chill' },
-      { kind: 'vibe', value: 'community', label: 'Community' },
-      { kind: 'vibe', value: 'grown & sexy', label: 'Grown & Sexy' },
-      { kind: 'vibe', value: 'open bar', label: 'Open Bar' },
-      { kind: 'vibe', value: 'food', label: 'Food' },
-      { kind: 'vibe', value: 'games', label: 'Games' },
-      { kind: 'vibe', value: 'dating', label: 'Dating' },
-      { kind: 'vibe', value: 'wellness', label: 'Wellness' },
-      { kind: 'vibe', value: 'networking', label: 'Networking' },
-      { kind: 'vibe', value: 'creative', label: 'Creative' },
-      { kind: 'vibe', value: 'cultural', label: 'Cultural' },
-      { kind: 'vibe', value: '30+', label: '30+' },
+      { kind: FilterKind.Vibe, value: EventVibe.Flirt, label: 'Flirt' },
+      { kind: FilterKind.Vibe, value: EventVibe.AssShaking, label: 'Ass Shaking' },
+      { kind: FilterKind.Vibe, value: EventVibe.Groove, label: 'Groove' },
+      { kind: FilterKind.Vibe, value: EventVibe.Chill, label: 'Chill' },
+      { kind: FilterKind.Vibe, value: EventVibe.Community, label: 'Community' },
+      { kind: FilterKind.Vibe, value: EventVibe.GrownAndSexy, label: 'Grown & Sexy' },
+      { kind: FilterKind.Vibe, value: EventVibe.OpenBar, label: 'Open Bar' },
+      { kind: FilterKind.Vibe, value: EventVibe.Food, label: 'Food' },
+      { kind: FilterKind.Vibe, value: EventVibe.Games, label: 'Games' },
+      { kind: FilterKind.Vibe, value: EventVibe.Dating, label: 'Dating' },
+      { kind: FilterKind.Vibe, value: EventVibe.Wellness, label: 'Wellness' },
+      { kind: FilterKind.Vibe, value: EventVibe.Networking, label: 'Networking' },
+      { kind: FilterKind.Vibe, value: EventVibe.Creative, label: 'Creative' },
+      { kind: FilterKind.Vibe, value: EventVibe.Cultural, label: 'Cultural' },
+      { kind: FilterKind.Vibe, value: EventVibe.ThirtyPlus, label: '30+' },
     ],
   },
   {
     label: 'Price',
-    pills: [{ kind: 'free', value: 'true', label: '🎟️ Free Events Only', freePill: true }],
+    pills: [{ kind: FilterKind.Free, value: 'true', label: '🎟️ Free Events Only', freePill: true }],
   },
 ];
