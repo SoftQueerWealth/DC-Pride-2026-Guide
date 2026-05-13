@@ -1,0 +1,92 @@
+import { useCallback, useMemo, useState } from 'react';
+import type { PrideEvent } from '../types/event';
+
+export interface EventFilterState {
+  activeTypes: Set<string>;
+  activeVibes: Set<string>;
+  activeDays: Set<string>;
+  freeOnly: boolean;
+}
+
+function toggleSetMember(set: Set<string>, value: string): Set<string> {
+  const next = new Set(set);
+  const v = value.toLowerCase();
+  if (next.has(v)) next.delete(v);
+  else next.add(v);
+  return next;
+}
+
+export function useEventFilters(allEvents: PrideEvent[]) {
+  const [activeTypes, setActiveTypes] = useState<Set<string>>(() => new Set());
+  const [activeVibes, setActiveVibes] = useState<Set<string>>(() => new Set());
+  const [activeDays, setActiveDays] = useState<Set<string>>(() => new Set());
+  const [freeOnly, setFreeOnly] = useState(false);
+  const [panelOpen, setPanelOpen] = useState(false);
+
+  const activeFilterCount =
+    activeTypes.size + activeVibes.size + activeDays.size + (freeOnly ? 1 : 0);
+
+  const isPillActive = useCallback(
+    (kind: string, value: string) => {
+      const v = value.toLowerCase();
+      if (kind === 'free') return freeOnly;
+      if (kind === 'type') return activeTypes.has(v);
+      if (kind === 'vibe') return activeVibes.has(v);
+      if (kind === 'day') return activeDays.has(v);
+      return false;
+    },
+    [activeTypes, activeVibes, activeDays, freeOnly],
+  );
+
+  const togglePill = useCallback((kind: string, value: string) => {
+    const v = value.toLowerCase();
+    if (kind === 'free') {
+      setFreeOnly((f) => !f);
+    } else if (kind === 'type') {
+      setActiveTypes((s) => toggleSetMember(s, v));
+    } else if (kind === 'vibe') {
+      setActiveVibes((s) => toggleSetMember(s, v));
+    } else if (kind === 'day') {
+      setActiveDays((s) => toggleSetMember(s, v));
+    }
+  }, []);
+
+  const clearAll = useCallback(() => {
+    setActiveTypes(new Set());
+    setActiveVibes(new Set());
+    setActiveDays(new Set());
+    setFreeOnly(false);
+  }, []);
+
+  const isEventVisible = useCallback(
+    (event: PrideEvent): boolean => {
+      const cardTypes = event.types.map((t) => t.toLowerCase());
+      const cardVibesNorm = ` ${event.vibesRaw.replace(/\s+/g, ' ').trim()} `;
+      const cardDay = event.day.toLowerCase();
+
+      if (activeDays.size > 0 && !activeDays.has(cardDay)) return false;
+      if (activeTypes.size > 0 && ![...activeTypes].some((t) => cardTypes.includes(t))) return false;
+      if (activeVibes.size > 0 && ![...activeVibes].some((v) => cardVibesNorm.includes(` ${v} `))) return false;
+      if (freeOnly && !event.free) return false;
+      return true;
+    },
+    [activeTypes, activeVibes, activeDays, freeOnly],
+  );
+
+  const anyVisible = useMemo(
+    () => allEvents.some((e) => isEventVisible(e)),
+    [allEvents, isEventVisible],
+  );
+
+  return {
+    panelOpen,
+    setPanelOpen,
+    togglePanel: () => setPanelOpen((o) => !o),
+    activeFilterCount,
+    isPillActive,
+    togglePill,
+    clearAll,
+    isEventVisible,
+    anyVisible,
+  };
+}
