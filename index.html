@@ -161,7 +161,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 </div>
 <div class="container">
 
-<div class="day-section">
+<div class="day-section" data-day="wednesday">
   <div class="day-header">
     <div class="day-label">Wednesday</div>
     <div class="day-date"></div>
@@ -217,7 +217,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
   </div>
 </div>
 
-<div class="day-section">
+<div class="day-section" data-day="thursday">
   <div class="day-header">
     <div class="day-label">Thursday</div>
     <div class="day-date"></div>
@@ -318,7 +318,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
   </div>
 </div>
 
-<div class="day-section">
+<div class="day-section" data-day="friday">
   <div class="day-header">
     <div class="day-label">Friday</div>
     <div class="day-date"></div>
@@ -494,7 +494,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
   </div>
 </div>
 
-<div class="day-section">
+<div class="day-section" data-day="saturday">
   <div class="day-header">
     <div class="day-label">Saturday</div>
     <div class="day-date"></div>
@@ -838,7 +838,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
   </div>
 </div>
 
-<div class="day-section">
+<div class="day-section" data-day="sunday">
   <div class="day-header">
     <div class="day-label">Sunday</div>
     <div class="day-date"></div>
@@ -1105,7 +1105,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
   </div>
 </div>
 
-<div class="day-section">
+<div class="day-section" data-day="monday">
   <div class="day-header">
     <div class="day-label">Monday</div>
     <div class="day-date"></div>
@@ -1176,6 +1176,17 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
     </div>
   </div>
   <div class="filter-section">
+    <div class="filter-section-label">Day</div>
+    <div class="filter-pills">
+      <button class="filter-pill" data-filter-type="day" data-value="wednesday" onclick="toggleFilter(this)">Wed</button>
+      <button class="filter-pill" data-filter-type="day" data-value="thursday" onclick="toggleFilter(this)">Thu</button>
+      <button class="filter-pill" data-filter-type="day" data-value="friday" onclick="toggleFilter(this)">Fri</button>
+      <button class="filter-pill" data-filter-type="day" data-value="saturday" onclick="toggleFilter(this)">Sat</button>
+      <button class="filter-pill" data-filter-type="day" data-value="sunday" onclick="toggleFilter(this)">Sun</button>
+      <button class="filter-pill" data-filter-type="day" data-value="monday" onclick="toggleFilter(this)">Mon</button>
+    </div>
+  </div>
+  <div class="filter-section">
     <div class="filter-section-label">Venue Type</div>
     <div class="filter-pills">
       <button class="filter-pill" data-filter-type="type" data-value="after-dark" onclick="toggleFilter(this)">After Dark</button>
@@ -1220,6 +1231,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 <script>
 let activeTypes = new Set();
 let activeVibes = new Set();
+let activeDays = new Set();
 let freeOnly = false;
 let panelOpen = false;
 
@@ -1240,6 +1252,9 @@ function toggleFilter(btn) {
   } else if (type === 'vibe') {
     if (activeVibes.has(val)) { activeVibes.delete(val); btn.classList.remove('active'); }
     else { activeVibes.add(val); btn.classList.add('active'); }
+  } else if (type === 'day') {
+    if (activeDays.has(val)) { activeDays.delete(val); btn.classList.remove('active'); }
+    else { activeDays.add(val); btn.classList.add('active'); }
   }
   applyFilters();
   updateCount();
@@ -1252,7 +1267,12 @@ function applyFilters() {
     const cardTypes = card.dataset.types ? card.dataset.types.toLowerCase().split(' ') : [];
     const cardVibesNorm = ` ${(card.dataset.vibes || '').toLowerCase().replace(/\s+/g, ' ').trim()} `;
     const cardFree = card.dataset.free === 'true';
+    const daySection = card.closest('.day-section');
+    const cardDay = (daySection && daySection.dataset.day) ? daySection.dataset.day.toLowerCase() : '';
     let show = true;
+    if (activeDays.size > 0) {
+      if (!cardDay || !activeDays.has(cardDay)) show = false;
+    }
     if (activeTypes.size > 0) {
       if (![...activeTypes].some(t => cardTypes.includes(t))) show = false;
     }
@@ -1271,7 +1291,7 @@ function applyFilters() {
 }
 
 function updateCount() {
-  const total = activeTypes.size + activeVibes.size + (freeOnly ? 1 : 0);
+  const total = activeTypes.size + activeVibes.size + activeDays.size + (freeOnly ? 1 : 0);
   const countEl = document.getElementById('filterCount');
   countEl.textContent = total;
   countEl.classList.toggle('visible', total > 0);
@@ -1280,6 +1300,7 @@ function updateCount() {
 function clearAll() {
   activeTypes.clear();
   activeVibes.clear();
+  activeDays.clear();
   freeOnly = false;
   document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.event-card').forEach(c => c.classList.remove('filtered-out'));
