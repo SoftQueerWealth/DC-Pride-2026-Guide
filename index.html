@@ -113,7 +113,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .meta-pill{font-size:10px;color:var(--muted);display:flex;align-items:center;gap:3px}
 .meta-pill svg{width:10px;height:10px;opacity:.6;flex-shrink:0}
 .event-vibes{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
-.event-action{flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end;gap:5px;padding-top:2px;min-width:100px}
+.event-action{flex:0 1 min(240px,46%);display:flex;flex-direction:column;align-items:flex-end;gap:5px;padding-top:2px;min-width:100px}
 .btn{display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:500;letter-spacing:.04em;padding:6px 11px;border-radius:7px;text-decoration:none;transition:all .18s;white-space:nowrap;text-align:center}
 .btn-p{background:var(--burgundy);color:var(--cream);border:1px solid var(--burgundy-light)}
 .btn-p:hover{background:var(--burgundy-light);color:#fff}
@@ -122,7 +122,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .btn-w{background:rgba(80,60,20,.2);color:#ccaa44;border:1px solid rgba(80,60,20,.4)}
 .btn-free{background:rgba(40,80,40,.3);color:#7ec87e;border:1px solid rgba(40,80,40,.5)}
 .btn-na{background:transparent;color:var(--muted);border:1px solid var(--border);cursor:default;font-size:10px;padding:6px 11px;border-radius:7px}
-.discount-code{font-size:9.5px;color:var(--gold);text-align:right;line-height:1.4;margin-top:2px}
+.discount-code{font-size:9.5px;color:var(--gold);text-align:right;line-height:1.4;margin-top:2px;width:100%;min-width:0;overflow-wrap:break-word}
 .discount-code strong{font-weight:600}
 .expires{color:var(--muted);font-size:9px}
 .links-section{margin-top:40px}
@@ -148,7 +148,6 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
   <div class="tag">Memorial Day Weekend · DC</div>
   <h1>DC Black Pride <span>2026</span></h1>
   <div class="hero-sub">May 20 – 25, 2026 · Washington, DC</div>
-  <div class="hero-theme">"New Black Renaissance"</div>
   <div class="notice"><strong style="font-size:13px;letter-spacing:.08em;text-transform:uppercase">📌 50+ Events Curated for the Culture.</strong><br><br>This guide grows with the community. See something missing? Slide in our DMs and we'll get it added!<br><br><em>Schedule subject to change.</em></div>
 </div>
 <div class="legend">
@@ -182,6 +181,38 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
     </div>
     <div class="event-action">
       <a href="https://posh.vip/e/the-warm-up-14" target="_blank" class="btn btn-p" onclick="trackClick('The Warm Up with Fela', 'Get Tickets')">Get Tickets →</a>
+    </div>
+  </div>
+  <div class="event-card tp-after-dark" data-types="after-dark" data-vibes="ass shaking flirt" data-free="true">
+    <div class="event-info">
+      <div class="event-badges"><span class="badge b-afterdark">After Dark</span><span class="badge b-free">Free</span></div>
+      <div class="event-name">Ladies Love R&B – DC Black Pride Edition</div>
+      <div class="event-organizer">MIM Entertainment</div>
+      <div class="event-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9:00 PM</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Cafe Saint-Ex · 1847 14th Street NW, Washington, DC 20009</span>
+      </div>
+      <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span><span class="vibes-tag">Flirt</span></div>
+    </div>
+    <div class="event-action">
+      <a href="https://www.eventbrite.com/e/ladies-love-rb-dc-black-pride-edition-tickets-1989135185887?aff=oddtdtcreator" target="_blank" class="btn btn-free" onclick="trackClick('Ladies Love RnB', 'More Info')">More Info →</a>
+      <div class="discount-code">💡 <strong>Free Drinks Giveaway</strong><br>Repost the event flyer for the event you're attending — a few lucky reposts will be randomly selected for 2 complimentary drinks at the door!</div>
+    </div>
+  </div>
+  
+  <div class="event-card tp-happy-hour" data-types="happy-hour" data-vibes="chill flirt" data-free="true">
+    <div class="event-info">
+      <div class="event-badges"><span class="badge b-happyhour">Happy Hour</span><span class="badge b-free">Free</span></div>
+      <div class="event-name">The Pregame: DC Black Pride Weekend Official Kickoff</div>
+      <div class="event-organizer">Lavender Evolutions</div>
+      <div class="event-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6:30 PM</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>18th St Lounge · 1230 9th St NW</span>
+      </div>
+      <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Flirt</span></div>
+    </div>
+    <div class="event-action">
+      <a href="https://posh.vip/e/the-pregame-the-dc-black-pride-kickoff" target="_blank" class="btn btn-free" onclick="trackClick('The Pregame DC Black Pride Kickoff', 'More Info')">More Info →</a>
     </div>
   </div>
 </div>
@@ -282,7 +313,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Creative</span><span class="vibes-tag">Community</span></div>
     </div>
     <div class="event-action">
-      <a href="https://givebutter.com/10th-annual-dc-black-pride-unity-ball-fjwyjy" target="_blank" class="btn btn-free" onclick="trackClick('10th Annual Unity Ball', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://givebutter.com/10th-annual-dc-black-pride-unity-ball-fjwyjy" target="_blank" class="btn btn-free" onclick="trackClick('10th Annual Unity Ball', 'More Info')">More Info →</a>
     </div>
   </div>
 </div>
@@ -306,7 +337,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.instagram.com/p/DXvCLF6GHJy/?igsh=cGttcnM2NWxkdW9z" target="_blank" class="btn btn-free" onclick="trackClick('Fight or Flight Workshop', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.instagram.com/p/DXvCLF6GHJy/?igsh=cGttcnM2NWxkdW9z" target="_blank" class="btn btn-free" onclick="trackClick('Fight or Flight Workshop', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-happy-hour" data-types="happy-hour day-party" data-vibes="flirt dating" data-free="false">
@@ -366,7 +397,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span><span class="vibes-tag">Creative</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.instagram.com/p/DXfTqa-ibT7/?utm_source=ig_web_button_share_sheet" target="_blank" class="btn btn-free" onclick="trackClick('Mary Bowman Poetry Slam', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.instagram.com/p/DXfTqa-ibT7/?utm_source=ig_web_button_share_sheet" target="_blank" class="btn btn-free" onclick="trackClick('Mary Bowman Poetry Slam', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-after-dark" data-types="after-dark" data-vibes="ass shaking grown & sexy" data-free="false">
@@ -458,7 +489,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Wellness</span><span class="vibes-tag">Community</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.ushelpingus.org/events-1" target="_blank" class="btn btn-free" onclick="trackClick('Health and Wellness Pavilion', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.ushelpingus.org/events-1" target="_blank" class="btn btn-free" onclick="trackClick('Health and Wellness Pavilion', 'More Info')">More Info →</a>
     </div>
   </div>
 </div>
@@ -512,7 +543,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Networking</span><span class="vibes-tag">Community</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.instagram.com/p/DX7r4aDlFcl/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="btn btn-free" onclick="trackClick('Flamingo Cafe Love Lust Labels', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.instagram.com/p/DX7r4aDlFcl/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="btn btn-free" onclick="trackClick('Flamingo Cafe Love Lust Labels', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-workshop" data-types="workshop cultural" data-vibes="community cultural" data-free="true">
@@ -527,7 +558,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.instagram.com/p/DXSmnZCjcJx/?igsh=N2JnbGQwM2gwNnYx" target="_blank" class="btn btn-free" onclick="trackClick('New Black Renaissance Aging Workshop', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.instagram.com/p/DXSmnZCjcJx/?igsh=N2JnbGQwM2gwNnYx" target="_blank" class="btn btn-free" onclick="trackClick('New Black Renaissance Aging Workshop', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-day-party" data-types="day-party" data-vibes="flirt groove" data-free="false">
@@ -557,7 +588,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Groove</span><span class="vibes-tag">Flirt</span><span class="vibes-tag">Food</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.eventbrite.com/e/black-queer-joy-brunch-day-party-tickets-1987427249403" target="_blank" class="btn btn-free" onclick="trackClick('Black Queer Joy Brunch', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.eventbrite.com/e/black-queer-joy-brunch-day-party-tickets-1987427249403" target="_blank" class="btn btn-free" onclick="trackClick('Black Queer Joy Brunch', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-workshop" data-types="workshop" data-vibes="networking community cultural" data-free="true">
@@ -572,7 +603,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Networking</span><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.instagram.com/p/DXsdY6ojrF0/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="btn btn-free" onclick="trackClick('Lesbian Liberation Lab', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.instagram.com/p/DXsdY6ojrF0/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="btn btn-free" onclick="trackClick('Lesbian Liberation Lab', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-workshop" data-types="workshop cultural" data-vibes="community cultural" data-free="true">
@@ -587,7 +618,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.instagram.com/p/DXhvap6iW7F/?igsh=MWRsNHV5d2ZwOWN0ZQ==" target="_blank" class="btn btn-free" onclick="trackClick('Doesnt God Love Me Too Workshop', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.instagram.com/p/DXhvap6iW7F/?igsh=MWRsNHV5d2ZwOWN0ZQ==" target="_blank" class="btn btn-free" onclick="trackClick('Doesnt God Love Me Too Workshop', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-workshop" data-types="workshop ball cultural" data-vibes="community cultural creative" data-free="true">
@@ -602,7 +633,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span><span class="vibes-tag">Creative</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.instagram.com/p/DXkiPESGFTh/?igsh=MXV6dThueHlvdGM1dQ==" target="_blank" class="btn btn-free" onclick="trackClick('Black Trans Pride 2026', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.instagram.com/p/DXkiPESGFTh/?igsh=MXV6dThueHlvdGM1dQ==" target="_blank" class="btn btn-free" onclick="trackClick('Black Trans Pride 2026', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-happy-hour" data-types="happy-hour" data-vibes="chill flirt community food open bar" data-free="false">
@@ -648,7 +679,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Flirt</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.meetup.com/dmv-area-black-fem-4-fem-lesbians-and-bisexual-women/events/314573456/?eventOrigin=group_events_list" target="_blank" class="btn btn-free" onclick="trackClick('Black Fem 4 Fem Happy Hour', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.meetup.com/dmv-area-black-fem-4-fem-lesbians-and-bisexual-women/events/314573456/?eventOrigin=group_events_list" target="_blank" class="btn btn-free" onclick="trackClick('Black Fem 4 Fem Happy Hour', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-day-party" data-types="day-party" data-vibes="ass shaking" data-free="false">
@@ -739,7 +770,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
     <div class="event-action">
-      <a href="https://ra.co/events/2433033" target="_blank" class="btn btn-free" onclick="trackClick('The Melt Black Pride Edition', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://ra.co/events/2433033" target="_blank" class="btn btn-free" onclick="trackClick('The Melt Black Pride Edition', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-after-dark" data-types="after-dark" data-vibes="ass shaking" data-free="false">
@@ -755,6 +786,54 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
     </div>
     <div class="event-action">
       <a href="https://dice.fm/event/rydvqq-batty-gyal-the-black-pride-bashment-23rd-may-songbyrd-washington-dc-tickets" target="_blank" class="btn btn-p" onclick="trackClick('Batty Gyal', 'Get Tickets')">Get Tickets →</a>
+    </div>
+  </div>
+  <div class="event-card tp-after-dark" data-types="after-dark" data-vibes="ass shaking" data-free="false">
+    <div class="event-info">
+      <div class="event-badges"><span class="badge b-afterdark">After Dark</span></div>
+      <div class="event-name">Dick Appointment Pres. Bambii</div>
+      <div class="event-organizer">Transmission</div>
+      <div class="event-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM – 3:00 AM</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Transmission · 1353 H St. NE, Washington, DC</span>
+      </div>
+      <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
+    </div>
+    <div class="event-action">
+      <a href="https://shotgun.live/en/events/dick-appointment-hoe-lotta-fun" target="_blank" class="btn btn-p" onclick="trackClick('Dick Appointment Pres Bambii', 'Get Tickets')">Get Tickets →</a>
+    </div>
+  </div>
+  
+  <div class="event-card tp-meetup" data-types="meetup outdoors" data-vibes="chill community games" data-free="true">
+    <div class="event-info">
+      <div class="event-badges"><span class="badge b-meetup">Meetup</span><span class="badge b-outdoors">Outdoors</span><span class="badge b-free">Free</span></div>
+      <div class="event-name">ChocCity Cornhole Week 7 – Black Pride</div>
+      <div class="event-organizer">ChocCity Cornhole</div>
+      <div class="event-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM – 3:00 PM</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Atlas Brew Works · 600 Howard Rd SE, Washington, DC 20020</span>
+      </div>
+      <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Community</span><span class="vibes-tag">Games</span></div>
+    </div>
+    <div class="event-action">
+      <a href="https://www.choccitycornhole.com/events-2" target="_blank" class="btn btn-free" onclick="trackClick('ChocCity Cornhole Black Pride', 'More Info')">More Info →</a>
+    </div>
+  </div>
+  
+  <div class="event-card tp-after-dark" data-types="after-dark" data-vibes="ass shaking 30+" data-free="false">
+    <div class="event-info">
+      <div class="event-badges"><span class="badge b-afterdark">After Dark</span></div>
+      <div class="event-name">Cousins & 'Nem – For the Aunties, Guncles & Uncties</div>
+      <div class="event-organizer">Queer Aunties</div>
+      <div class="event-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM – 2:00 AM</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Decades DC · 1219 Connecticut Ave NW, Washington, DC 20036</span>
+      </div>
+      <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span><span class="vibes-tag">30+</span></div>
+    </div>
+    <div class="event-action">
+      <a href="https://www.queeraunties.com/pricing" target="_blank" class="btn btn-p" onclick="trackClick('Cousins and Nem Queer Aunties', 'Get Tickets')">Get Tickets →</a>
+      <div class="discount-code">💡 First 50 to Love, Lust & Labels panel get free entry</div>
     </div>
   </div>
 </div>
@@ -793,7 +872,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
     <div class="event-action">
-      <a href="https://events.eventnoire.com/e/afroqueer-presents-one-for-the-road-day-party/tickets" target="_blank" class="btn btn-free" onclick="trackClick('One for the Road Day Party', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://events.eventnoire.com/e/afroqueer-presents-one-for-the-road-day-party/tickets" target="_blank" class="btn btn-free" onclick="trackClick('One for the Road Day Party', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-brunch" data-types="brunch outdoors day-party" data-vibes="games groove" data-free="false">
@@ -838,7 +917,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Grown & Sexy</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.eventbrite.com/e/do-you-want-to-get-funky-with-me-tickets-1987802195878" target="_blank" class="btn btn-free" onclick="trackClick('Do You Want To Get Funky With Me', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.eventbrite.com/e/do-you-want-to-get-funky-with-me-tickets-1987802195878" target="_blank" class="btn btn-free" onclick="trackClick('Do You Want To Get Funky With Me', 'More Info')">More Info →</a>
     </div>
   </div>
   <div class="event-card tp-brunch" data-types="brunch" data-vibes="community open bar food" data-free="false">
@@ -1045,7 +1124,23 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.ushelpingus.org/events-1" target="_blank" class="btn btn-free" onclick="trackClick('Pride in the Park', 'RSVP Free')">RSVP Free →</a>
+      <a href="https://www.ushelpingus.org/events-1" target="_blank" class="btn btn-free" onclick="trackClick('Pride in the Park', 'More Info')">More Info →</a>
+    </div>
+  </div>
+  <div class="event-card tp-happy-hour" data-types="happy-hour day-party after-dark" data-vibes="chill networking flirt community ass shaking" data-free="true">
+    <div class="event-info">
+      <div class="event-badges"><span class="badge b-happyhour">Happy Hour</span><span class="badge b-party">Day Party</span><span class="badge b-free">Free</span></div>
+      <div class="event-name">Wicked Mondaze</div>
+      <div class="event-organizer">MIM Entertainment</div>
+      <div class="event-meta">
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5:00 PM – 11:00 PM</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Perch Rooftop at Cambia Hotel · 69 Q St. SW, Washington DC</span>
+      </div>
+      <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Networking</span><span class="vibes-tag">Flirt</span><span class="vibes-tag">Community</span></div>
+    </div>
+    <div class="event-action">
+      <a href="https://www.instagram.com/p/DYHOE1plhBH/?img_index=1" target="_blank" class="btn btn-free" onclick="trackClick('Wicked Mondaze', 'More Info')">More Info →</a>
+      <div class="discount-code">💡 <strong>Free Drinks Giveaway</strong><br>Repost the event flyer for the event you're attending — a few lucky reposts will be randomly selected for 2 complimentary drinks at the door!</div>
     </div>
   </div>
 </div>
