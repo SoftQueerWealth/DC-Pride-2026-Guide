@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
+import { FilterKind } from '../constants/filters';
 import type { PrideEvent } from '../types/event';
 
 export interface EventFilterState {
@@ -27,26 +28,26 @@ export function useEventFilters(allEvents: PrideEvent[]) {
     activeTypes.size + activeVibes.size + activeDays.size + (freeOnly ? 1 : 0);
 
   const isPillActive = useCallback(
-    (kind: string, value: string) => {
+    (kind: FilterKind, value: string) => {
       const v = value.toLowerCase();
-      if (kind === 'free') return freeOnly;
-      if (kind === 'type') return activeTypes.has(v);
-      if (kind === 'vibe') return activeVibes.has(v);
-      if (kind === 'day') return activeDays.has(v);
+      if (kind === FilterKind.Free) return freeOnly;
+      if (kind === FilterKind.Type) return activeTypes.has(v);
+      if (kind === FilterKind.Vibe) return activeVibes.has(v);
+      if (kind === FilterKind.Day) return activeDays.has(v);
       return false;
     },
     [activeTypes, activeVibes, activeDays, freeOnly],
   );
 
-  const togglePill = useCallback((kind: string, value: string) => {
+  const togglePill = useCallback((kind: FilterKind, value: string) => {
     const v = value.toLowerCase();
-    if (kind === 'free') {
+    if (kind === FilterKind.Free) {
       setFreeOnly((f) => !f);
-    } else if (kind === 'type') {
+    } else if (kind === FilterKind.Type) {
       setActiveTypes((s) => toggleSetMember(s, v));
-    } else if (kind === 'vibe') {
+    } else if (kind === FilterKind.Vibe) {
       setActiveVibes((s) => toggleSetMember(s, v));
-    } else if (kind === 'day') {
+    } else if (kind === FilterKind.Day) {
       setActiveDays((s) => toggleSetMember(s, v));
     }
   }, []);

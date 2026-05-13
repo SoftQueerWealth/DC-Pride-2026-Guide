@@ -1,9 +1,9 @@
-import { FILTER_SECTIONS } from '../constants/filters';
+import { FILTER_SECTIONS, type FilterKind } from '../constants/filters';
 
 interface FilterPanelProps {
   open: boolean;
-  isPillActive: (kind: string, value: string) => boolean;
-  onTogglePill: (kind: string, value: string) => void;
+  isPillActive: (kind: FilterKind, value: string) => boolean;
+  onTogglePill: (kind: FilterKind, value: string) => void;
   onClearAll: () => void;
   onClose: () => void;
 }

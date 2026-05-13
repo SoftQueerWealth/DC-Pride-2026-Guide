@@ -4,6 +4,13 @@ declare global {
   }
 }
 
+export enum SocialPlatform {
+  Instagram = 'instagram',
+  Threads = 'threads',
+  Linktree = 'linktree',
+  Email = 'email',
+}
+
 export function trackClick(eventName: string, label: string): void {
   window.gtag?.('event', 'button_click', {
     event_category: 'Event Guide',
@@ -12,7 +19,7 @@ export function trackClick(eventName: string, label: string): void {
   });
 }
 
-export function trackSocialClick(platform: string, url: string): void {
+export function trackSocialClick(platform: SocialPlatform, url: string): void {
   window.gtag?.('event', 'social_link_click', {
     social_platform: platform,
     link_url: url,

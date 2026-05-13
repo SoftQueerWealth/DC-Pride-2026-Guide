@@ -1,75 +1,94 @@
-import type { DayId, PrideEvent } from '../types/event';
+import {
+  CtaButtonClass,
+  EventDay,
+  EventType,
+  EventVibe,
+  type CtaButtonClassId,
+  type DayId,
+  type PrideEvent,
+} from '../types/event';
 
 const SPREADSHEET_ID = '15qGvOIUMxTFy3ncvUW1z8XXT6Pz9iTbZ-MW4UhDmjiM';
 const SHEET_NAME = 'events';
 const API_KEY_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_API_KEY_HERE';
 
-const TYPE_LABELS: Record<string, string> = {
-  'after-dark': 'After Dark',
-  'day-party': 'Day Party',
-  brunch: 'Brunch',
-  'happy-hour': 'Happy Hour',
-  workshop: 'Workshop',
-  outdoors: 'Outdoors',
-  ball: 'Ball',
-  meetup: 'Meetup',
-  cultural: 'Cultural',
-  wellness: 'Wellness',
-};
+const TYPE_LABELS = {
+  [EventType.AfterDark]: 'After Dark',
+  [EventType.DayParty]: 'Day Party',
+  [EventType.Brunch]: 'Brunch',
+  [EventType.HappyHour]: 'Happy Hour',
+  [EventType.Workshop]: 'Workshop',
+  [EventType.Outdoors]: 'Outdoors',
+  [EventType.Ball]: 'Ball',
+  [EventType.Meetup]: 'Meetup',
+  [EventType.Cultural]: 'Cultural',
+  [EventType.Wellness]: 'Wellness',
+} satisfies Record<EventType, string>;
 
-const VIBE_LABELS: Record<string, string> = {
-  flirt: 'Flirt',
-  'ass shaking': 'Ass Shaking',
-  groove: 'Groove',
-  chill: 'Chill',
-  community: 'Community',
-  'grown & sexy': 'Grown & Sexy',
-  'open bar': 'Open Bar',
-  food: 'Food',
-  games: 'Games',
-  dating: 'Dating',
-  wellness: 'Wellness',
-  networking: 'Networking',
-  creative: 'Creative',
-  cultural: 'Cultural',
-  '30+': '30+',
-};
+const VIBE_LABELS = {
+  [EventVibe.Flirt]: 'Flirt',
+  [EventVibe.AssShaking]: 'Ass Shaking',
+  [EventVibe.Groove]: 'Groove',
+  [EventVibe.Chill]: 'Chill',
+  [EventVibe.Community]: 'Community',
+  [EventVibe.GrownAndSexy]: 'Grown & Sexy',
+  [EventVibe.OpenBar]: 'Open Bar',
+  [EventVibe.Food]: 'Food',
+  [EventVibe.Games]: 'Games',
+  [EventVibe.Dating]: 'Dating',
+  [EventVibe.Wellness]: 'Wellness',
+  [EventVibe.Networking]: 'Networking',
+  [EventVibe.Creative]: 'Creative',
+  [EventVibe.Cultural]: 'Cultural',
+  [EventVibe.ThirtyPlus]: '30+',
+} satisfies Record<EventVibe, string>;
 
-const TYPE_ALIASES: Record<string, string> = {
-  afterdark: 'after-dark',
-  'after dark': 'after-dark',
-  'after-dark': 'after-dark',
-  dayparty: 'day-party',
-  'day party': 'day-party',
-  'day-party': 'day-party',
-  happyhour: 'happy-hour',
-  'happy hour': 'happy-hour',
-  'happy-hour': 'happy-hour',
-  brunch: 'brunch',
-  workshop: 'workshop',
-  outdoors: 'outdoors',
-  outdoor: 'outdoors',
-  ball: 'ball',
-  meetup: 'meetup',
-  cultural: 'cultural',
-  wellness: 'wellness',
+function labelForEventType(type: string): string | undefined {
+  return TYPE_LABELS[type as EventType];
+}
+
+const TYPE_ALIASES: Record<string, EventType> = {
+  afterdark: EventType.AfterDark,
+  'after dark': EventType.AfterDark,
+  [EventType.AfterDark]: EventType.AfterDark,
+  dayparty: EventType.DayParty,
+  'day party': EventType.DayParty,
+  [EventType.DayParty]: EventType.DayParty,
+  happyhour: EventType.HappyHour,
+  'happy hour': EventType.HappyHour,
+  [EventType.HappyHour]: EventType.HappyHour,
+  [EventType.Brunch]: EventType.Brunch,
+  [EventType.Workshop]: EventType.Workshop,
+  [EventType.Outdoors]: EventType.Outdoors,
+  outdoor: EventType.Outdoors,
+  [EventType.Ball]: EventType.Ball,
+  [EventType.Meetup]: EventType.Meetup,
+  [EventType.Cultural]: EventType.Cultural,
+  [EventType.Wellness]: EventType.Wellness,
 };
 
 const DAY_ALIASES: Record<string, DayId> = {
-  wed: 'wednesday',
-  wednesday: 'wednesday',
-  thu: 'thursday',
-  thurs: 'thursday',
-  thursday: 'thursday',
-  fri: 'friday',
-  friday: 'friday',
-  sat: 'saturday',
-  saturday: 'saturday',
-  sun: 'sunday',
-  sunday: 'sunday',
-  mon: 'monday',
-  monday: 'monday',
+  wed: EventDay.Wednesday,
+  [EventDay.Wednesday]: EventDay.Wednesday,
+  thu: EventDay.Thursday,
+  thurs: EventDay.Thursday,
+  [EventDay.Thursday]: EventDay.Thursday,
+  fri: EventDay.Friday,
+  [EventDay.Friday]: EventDay.Friday,
+  sat: EventDay.Saturday,
+  [EventDay.Saturday]: EventDay.Saturday,
+  sun: EventDay.Sunday,
+  [EventDay.Sunday]: EventDay.Sunday,
+  mon: EventDay.Monday,
+  [EventDay.Monday]: EventDay.Monday,
 };
+
+enum TicketStatus {
+  SoldOut = 'sold out',
+  SoldOutCompact = 'soldout',
+  RsvpFree = 'rsvp free',
+  WaitlistOpen = 'waitlist open',
+}
 
 const COLUMN_ALIASES = {
   id: ['id', 'eventid'],
@@ -207,24 +226,24 @@ function parseBoolean(value: string): boolean {
 
 function isSoldOutStatus(value: string): boolean {
   const normalized = normalizeToken(value);
-  return normalized === 'sold out' || normalized === 'soldout';
+  return normalized === TicketStatus.SoldOut || normalized === TicketStatus.SoldOutCompact;
 }
 
 function isRsvpFreeStatus(value: string): boolean {
   const normalized = normalizeToken(value);
-  return normalized === 'rsvp free';
+  return normalized === TicketStatus.RsvpFree;
 }
 
 function ctaLabelForTicketStatus(value: string): string | null {
   const normalized = normalizeToken(value);
-  if (normalized === 'rsvp free') return 'RSVP Free';
-  if (normalized === 'waitlist open') return 'Join Waitlist';
+  if (normalized === TicketStatus.RsvpFree) return 'RSVP Free';
+  if (normalized === TicketStatus.WaitlistOpen) return 'Join Waitlist';
   return null;
 }
 
-function ctaButtonClassForTicketStatus(value: string, free: boolean): string {
-  if (normalizeToken(value) === 'waitlist open') return 'btn-w';
-  return free ? 'btn-free' : 'btn-p';
+function ctaButtonClassForTicketStatus(value: string, free: boolean): CtaButtonClassId {
+  if (normalizeToken(value) === TicketStatus.WaitlistOpen) return CtaButtonClass.Waitlist;
+  return free ? CtaButtonClass.Free : CtaButtonClass.Primary;
 }
 
 function parseBadges(value: string, types: string[], free: boolean): string[] {
@@ -237,7 +256,7 @@ function parseBadges(value: string, types: string[], free: boolean): string[] {
           return normalized.includes(normalizeHeader(label));
         });
 
-  const derived = badges.length > 0 ? badges : types.map((type) => TYPE_LABELS[type] ?? titleize(type));
+  const derived = badges.length > 0 ? badges : types.map((type) => labelForEventType(type) ?? titleize(type));
   if (free && !derived.some((badge) => normalizeHeader(badge) === 'free')) {
     derived.push('Free');
   }
@@ -262,9 +281,13 @@ function parseVibeTags(vibesRaw: string, vibeTags: string): string[] {
   return unique(matches.length > 0 ? matches : splitListCell(vibesRaw).map(titleize));
 }
 
-function normalizeClass(value: string, prefix: string, fallback: string): string {
+function normalizeClass<TPrefix extends string>(
+  value: string,
+  prefix: TPrefix,
+  fallback: `${TPrefix}${string}`,
+): `${TPrefix}${string}` {
   const classes = value.split(/\s+/).map((item) => item.trim()).filter(Boolean);
-  const matching = classes.find((item) => item.startsWith(prefix));
+  const matching = classes.find((item): item is `${TPrefix}${string}` => item.startsWith(prefix));
   return matching ?? fallback;
 }
 
@@ -299,7 +322,7 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
       const ctaLabel =
         ctaLabelForTicketStatus(ticketStatus) || readCell(headers, row, 'ctaLabel') || (free ? 'More Info' : 'Get Tickets');
       const fallbackButtonClass = ctaButtonClassForTicketStatus(ticketStatus, free);
-      const fallbackCardClass = `tp-${types[0] ?? 'day-party'}`;
+      const fallbackCardClass: `tp-${string}` = `tp-${types[0] ?? EventType.DayParty}`;
 
       return {
         id: readCell(headers, row, 'id') || `${slugify(`${day}-${name}`)}-${index}`,
@@ -316,8 +339,8 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
         vibeTags: parseVibeTags(vibesRaw, vibeTagsCell),
         ctaHref,
         ctaLabel,
-        ctaButtonClass: normalizeClass(readCell(headers, row, 'ctaButtonClass'), 'btn-', fallbackButtonClass),
-        cardClass: normalizeClass(readCell(headers, row, 'cardClass'), 'tp-', fallbackCardClass),
+        ctaButtonClass: normalizeClass<'btn-'>(readCell(headers, row, 'ctaButtonClass'), 'btn-', fallbackButtonClass),
+        cardClass: normalizeClass<'tp-'>(readCell(headers, row, 'cardClass'), 'tp-', fallbackCardClass),
       };
     })
     .filter((event): event is PrideEvent => event !== null);
