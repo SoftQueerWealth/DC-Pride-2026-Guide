@@ -113,6 +113,9 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .event-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:5px}
 .meta-pill{font-size:10px;color:var(--muted);display:flex;align-items:center;gap:3px}
 .meta-pill svg{width:10px;height:10px;opacity:.6;flex-shrink:0}
+.meta-pill a.meta-pill-maplink{color:inherit;text-decoration:none;min-width:0;border-radius:2px}
+.meta-pill a.meta-pill-maplink:hover{color:var(--text);text-decoration:underline;text-decoration-color:rgba(201,146,42,.4)}
+.meta-pill a.meta-pill-maplink:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .event-vibes{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
 .event-action{flex:0 1 min(240px,46%);display:flex;flex-direction:column;align-items:flex-end;gap:5px;padding-top:2px;min-width:100px}
 .btn{display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:500;letter-spacing:.04em;padding:6px 11px;border-radius:7px;text-decoration:none;transition:all .18s;white-space:nowrap;text-align:center}
@@ -177,7 +180,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Creative Groundings</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Creative Grounds Coffee Shop · 1822 North Capitol St. NW Washington DC 20002</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Creative%20Grounds%20Coffee%20Shop%20%C2%B7%201822%20North%20Capitol%20St.%20NW%20Washington%20DC%2020002" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('The Warm Up with Fela', 'Open in Maps')">Creative Grounds Coffee Shop · 1822 North Capitol St. NW Washington DC 20002</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span><span class="vibes-tag">Wellness</span></div>
     </div>
@@ -192,7 +195,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">MIM Entertainment</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Cafe Saint-Ex · 1847 14th Street NW, Washington, DC 20009</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Saint-Ex%20%C2%B7%201847%2014th%20Street%20NW%2C%20Washington%2C%20DC%2020009" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Ladies Love R&amp;B – DC Black Pride Edition', 'Open in Maps')">Cafe Saint-Ex · 1847 14th Street NW, Washington, DC 20009</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span><span class="vibes-tag">Flirt</span></div>
     </div>
@@ -209,7 +212,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Lavender Evolutions</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6:30 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>18th St Lounge · 1230 9th St NW</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=18th%20St%20Lounge%20%C2%B7%201230%209th%20St%20NW" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('The Pregame: DC Black Pride Weekend Official Kickoff', 'Open in Maps')">18th St Lounge · 1230 9th St NW</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Flirt</span></div>
     </div>
@@ -233,7 +236,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Bliss (A 2 Zee Events + Party with Honey Collab)</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Decades ROOFTOP · 1219 Connecticut Ave. NW, Washington, DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Decades%20ROOFTOP%20%C2%B7%201219%20Connecticut%20Ave.%20NW%2C%20Washington%2C%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Brown Sugar: Welcome to DC Black Pride Rooftop Happy Hour', 'Open in Maps')">Decades ROOFTOP · 1219 Connecticut Ave. NW, Washington, DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Flirt</span><span class="vibes-tag">Open Bar</span><span class="vibes-tag">Groove</span></div>
     </div>
@@ -249,7 +252,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Us Helping Us People Into Living</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>MetroBar · 640 Rhode Island Ave NE, Washington, DC 20002</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=MetroBar%20%C2%B7%20640%20Rhode%20Island%20Ave%20NE%2C%20Washington%2C%20DC%2020002" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Welcome to DC: Happy Hour', 'Open in Maps')">MetroBar · 640 Rhode Island Ave NE, Washington, DC 20002</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span><span class="vibes-tag">Open Bar</span><span class="vibes-tag">Food</span><span class="vibes-tag">Games</span></div>
     </div>
@@ -264,7 +267,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">With Love, Leah</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Shanklin Hall · 2325 18th St NW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Shanklin%20Hall%20%C2%B7%202325%2018th%20St%20NW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('A Toast to HER: DC Black Pride Edition', 'Open in Maps')">Shanklin Hall · 2325 18th St NW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Flirt</span><span class="vibes-tag">Groove</span></div>
     </div>
@@ -279,7 +282,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Unleashed DC</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>12 Stories · 75 District Square SW</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=12%20Stories%20%C2%B7%2075%20District%20Square%20SW" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Sweet Beginnings', 'Open in Maps')">12 Stories · 75 District Square SW</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span><span class="vibes-tag">Flirt</span><span class="vibes-tag">Grown & Sexy</span></div>
     </div>
@@ -294,7 +297,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Raw Honey, She Shed & Deep Cvnt</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Mixxed DC · 2427 18th St. NW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Mixxed%20DC%20%C2%B7%202427%2018th%20St.%20NW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Zesty World: Black Pride Kickoff for the Gworls, Gays, and Theys', 'Open in Maps')">Mixxed DC · 2427 18th St. NW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -310,7 +313,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Center for Black Equity</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Westin%20DC%20Downtown%20%C2%B7%20999%209th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('10th Annual DC Black Pride Unity Ball', 'Open in Maps')">The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Creative</span><span class="vibes-tag">Community</span></div>
     </div>
@@ -334,7 +337,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">PFLAG National</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>3:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Westin%20DC%20Downtown%20%C2%B7%20999%209th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('DC Black Pride: Fight or Flight: Navigating Parenthood During Trying Times', 'Open in Maps')">The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span></div>
     </div>
@@ -349,7 +352,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Lesbifriends Travel</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Mixxed · 2427 18th St. NW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Mixxed%20%C2%B7%202427%2018th%20St.%20NW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Unmasked: A DC Black Pride Speed Dating + Speed Kinking Experience', 'Open in Maps')">Mixxed · 2427 18th St. NW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Flirt</span><span class="vibes-tag">Dating</span></div>
     </div>
@@ -379,7 +382,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Robyn Holden</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Eaton DC · 1201 K Street Northwest, Washington, DC 20005</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Eaton%20DC%20%C2%B7%201201%20K%20Street%20Northwest%2C%20Washington%2C%20DC%2020005" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Black Gay Pride Adult Women T Dance With Robyn Holden', 'Open in Maps')">Eaton DC · 1201 K Street Northwest, Washington, DC 20005</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Groove</span></div>
     </div>
@@ -394,7 +397,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Kenneth Something</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Westin%20DC%20Downtown%20%C2%B7%20999%209th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('DC Black Pride: Mary Bowman Poetry Slam &amp; Open Mic', 'Open in Maps')">The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span><span class="vibes-tag">Creative</span></div>
     </div>
@@ -409,7 +412,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Bliss (A 2 Zee Events + Party with Honey Collab)</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>STRAND NIGHTCLUB · 1400 I St. NW, Washington, DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=STRAND%20NIGHTCLUB%20%C2%B7%201400%20I%20St.%20NW%2C%20Washington%2C%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Dipped: All &quot;Nude&quot; Party', 'Open in Maps')">STRAND NIGHTCLUB · 1400 I St. NW, Washington, DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span><span class="vibes-tag">Grown & Sexy</span></div>
     </div>
@@ -425,7 +428,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Party Girls</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Ivy City Smokehouse · 1356 Okie St NE, Washington, DC 20002</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Ivy%20City%20Smokehouse%20%C2%B7%201356%20Okie%20St%20NE%2C%20Washington%2C%20DC%2020002" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Booty Bounce Black Rodeo', 'Open in Maps')">Ivy City Smokehouse · 1356 Okie St NE, Washington, DC 20002</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -441,7 +444,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Queer Aunties</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>The District Sports Bar · 900 Florida Ave NW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20District%20Sports%20Bar%20%C2%B7%20900%20Florida%20Ave%20NW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Hot Honey DC', 'Open in Maps')">The District Sports Bar · 900 Florida Ave NW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Flirt</span><span class="vibes-tag">Ass Shaking</span><span class="vibes-tag">30+</span></div>
     </div>
@@ -456,7 +459,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Unleashed DC</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>The Gathering Spot · 1720 I St. NW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Gathering%20Spot%20%C2%B7%201720%20I%20St.%20NW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Black Sugar', 'Open in Maps')">The Gathering Spot · 1720 I St. NW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Grown & Sexy</span><span class="vibes-tag">Flirt</span></div>
     </div>
@@ -471,7 +474,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Queeribbeans of DMV</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Mixxed · 2427 18th Street Northwest Washington, DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Mixxed%20%C2%B7%202427%2018th%20Street%20Northwest%20Washington%2C%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('United Nations: Black Pride Diasphoric Bashment', 'Open in Maps')">Mixxed · 2427 18th Street Northwest Washington, DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -486,7 +489,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Us Helping Us People Into Living</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>TBD</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Westin DC Downtown · 999 9th St NW, Washington, DC 20001</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Westin%20DC%20Downtown%20%C2%B7%20999%209th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Health and Wellness Pavilion', 'Open in Maps')">Westin DC Downtown · 999 9th St NW, Washington, DC 20001</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Wellness</span><span class="vibes-tag">Community</span></div>
     </div>
@@ -510,7 +513,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Momentum! Health</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8:00 AM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Navy Yard Area · Washington, DC 20009</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Navy%20Yard%20Area%20%C2%B7%20Washington%2C%20DC%2020009" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('DC Black Pride Fun Run', 'Open in Maps')">Navy Yard Area · Washington, DC 20009</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Wellness</span></div>
     </div>
@@ -540,7 +543,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Letoi Williams</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>11:00 AM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Downtown Westin · 999 9th St. NW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Downtown%20Westin%20%C2%B7%20999%209th%20St.%20NW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Flamingo Cafe: Love, Lust, &amp; Labels', 'Open in Maps')">Downtown Westin · 999 9th St. NW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Networking</span><span class="vibes-tag">Community</span></div>
     </div>
@@ -555,7 +558,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">June Crenshaw</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>11:00 AM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Westin%20DC%20Downtown%20%C2%B7%20999%209th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('DC Black Pride: The New Black Renaissance: Aging, Identity and Our Becoming', 'Open in Maps')">The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span></div>
     </div>
@@ -570,7 +573,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Unleashed DC</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Metro Bar · 640 Rhodes Island Ave NE, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Metro%20Bar%20%C2%B7%20640%20Rhodes%20Island%20Ave%20NE%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Oasis Day Party &amp; Festival', 'Open in Maps')">Metro Bar · 640 Rhodes Island Ave NE, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Flirt</span><span class="vibes-tag">Groove</span></div>
     </div>
@@ -585,7 +588,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Kei-Significance</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Mixxed · 2427 18th St. NW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Mixxed%20%C2%B7%202427%2018th%20St.%20NW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Black Queer Joy Brunch &amp; Day Party', 'Open in Maps')">Mixxed · 2427 18th St. NW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Groove</span><span class="vibes-tag">Flirt</span><span class="vibes-tag">Food</span></div>
     </div>
@@ -600,7 +603,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Tiera Craig</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>1:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Downtown Westin · 999 9th St. NW, Washington, DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Downtown%20Westin%20%C2%B7%20999%209th%20St.%20NW%2C%20Washington%2C%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('The Lesbian Liberation Lab', 'Open in Maps')">Downtown Westin · 999 9th St. NW, Washington, DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Networking</span><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span></div>
     </div>
@@ -615,7 +618,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Janeé Lee</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>1:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Westin%20DC%20Downtown%20%C2%B7%20999%209th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('DC Black Pride: Doesn\'t God Love Me Too? My Worship is For Real', 'Open in Maps')">The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span></div>
     </div>
@@ -630,7 +633,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Destination Tomorrow</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>1:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Westin%20DC%20Downtown%20%C2%B7%20999%209th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Black Trans Pride 2026: Centering Black Trans Leadership, Community Power and Ballroom Culture', 'Open in Maps')">The Westin DC Downtown · 999 9th St NW, Washington, DC 20001</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span><span class="vibes-tag">Creative</span></div>
     </div>
@@ -645,7 +648,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Lesbifriends Travel</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>3:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>The Lesbifriends House · SE Washington DC 20020</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Lesbifriends%20House%20%C2%B7%20SE%20Washington%20DC%2020020" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Qute &amp; Queer 4.0 A DC Black Pride Tradition', 'Open in Maps')">The Lesbifriends House · SE Washington DC 20020</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Flirt</span><span class="vibes-tag">Community</span><span class="vibes-tag">Food</span><span class="vibes-tag">Open Bar</span></div>
     </div>
@@ -660,7 +663,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Bliss (A 2 Zee Events + Party with Honey Collab)</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>4:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Signature Lounge · 1727 Connecticut Ave NW, Washington, DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Signature%20Lounge%20%C2%B7%201727%20Connecticut%20Ave%20NW%2C%20Washington%2C%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Sun-kissed: R&amp;B Party – Vinyals &amp; Vibes', 'Open in Maps')">Signature Lounge · 1727 Connecticut Ave NW, Washington, DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Flirt</span><span class="vibes-tag">Food</span><span class="vibes-tag">Groove</span></div>
     </div>
@@ -676,7 +679,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">DMV Black Fem 4 Fem</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Mixxed · 2427 18th Street Northwest Washington, DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Mixxed%20%C2%B7%202427%2018th%20Street%20Northwest%20Washington%2C%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('DC Black Pride Black Fem 4 Fem Happy Hour', 'Open in Maps')">Mixxed · 2427 18th Street Northwest Washington, DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Flirt</span></div>
     </div>
@@ -691,7 +694,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">DISTRICT PARTIES</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Strand DC · 1400 I St NW, Washington DC 20005</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Strand%20DC%20%C2%B7%201400%20I%20St%20NW%2C%20Washington%20DC%2020005" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('BLACK Pride - Memorial Weekend Day Party', 'Open in Maps')">Strand DC · 1400 I St NW, Washington DC 20005</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -706,7 +709,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Beta Kappa</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Spark Social House · 2009 14th St NW</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Spark%20Social%20House%20%C2%B7%202009%2014th%20St%20NW" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Desire without Definition', 'Open in Maps')">Spark Social House · 2009 14th St NW</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Grown & Sexy</span></div>
     </div>
@@ -721,7 +724,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Black Council HRC</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>7:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Decades · 1219 Connecticut Avenue NW, Washington, DC 20036</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Decades%20%C2%B7%201219%20Connecticut%20Avenue%20NW%2C%20Washington%2C%20DC%2020036" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Lust, Love, &amp; Labels', 'Open in Maps')">Decades · 1219 Connecticut Avenue NW, Washington, DC 20036</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Groove</span></div>
     </div>
@@ -736,7 +739,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Bliss (A 2 Zee Events + Party with Honey Collab)</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Next Level · 15 K St. NE, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Next%20Level%20%C2%B7%2015%20K%20St.%20NE%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('DC Pride\'s MEGA Ladies Party', 'Open in Maps')">Next Level · 15 K St. NE, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -752,7 +755,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Unleashed DC</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Public Bar Live · 1214 18th St. NW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Public%20Bar%20Live%20%C2%B7%201214%2018th%20St.%20NW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Midnight Melt', 'Open in Maps')">Public Bar Live · 1214 18th St. NW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Flirt</span><span class="vibes-tag">Groove</span></div>
     </div>
@@ -767,7 +770,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">The Melt</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Sinners and Saints · 2303 18th St NW</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Sinners%20and%20Saints%20%C2%B7%202303%2018th%20St%20NW" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('The Melt Black Pride Edition', 'Open in Maps')">Sinners and Saints · 2303 18th St NW</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -782,7 +785,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Leslinq & Party Girls</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>11:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Songbyrd · 540 Penn St NE, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Songbyrd%20%C2%B7%20540%20Penn%20St%20NE%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Batty Gyal', 'Open in Maps')">Songbyrd · 540 Penn St NE, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -797,7 +800,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Transmission</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM – 3:00 AM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Transmission · 1353 H St. NE, Washington, DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Transmission%20%C2%B7%201353%20H%20St.%20NE%2C%20Washington%2C%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Dick Appointment Pres. Bambii', 'Open in Maps')">Transmission · 1353 H St. NE, Washington, DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -813,7 +816,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">ChocCity Cornhole</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM – 3:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Atlas Brew Works · 600 Howard Rd SE, Washington, DC 20020</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Atlas%20Brew%20Works%20%C2%B7%20600%20Howard%20Rd%20SE%2C%20Washington%2C%20DC%2020020" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('ChocCity Cornhole Week 7 – Black Pride', 'Open in Maps')">Atlas Brew Works · 600 Howard Rd SE, Washington, DC 20020</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Community</span><span class="vibes-tag">Games</span></div>
     </div>
@@ -829,7 +832,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Queer Aunties</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>10:00 PM – 2:00 AM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Decades DC · 1219 Connecticut Ave NW, Washington, DC 20036</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Decades%20DC%20%C2%B7%201219%20Connecticut%20Ave%20NW%2C%20Washington%2C%20DC%2020036" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Cousins &amp; \'Nem – For the Aunties, Guncles &amp; Uncties', 'Open in Maps')">Decades DC · 1219 Connecticut Ave NW, Washington, DC 20036</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span><span class="vibes-tag">30+</span></div>
     </div>
@@ -854,7 +857,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Lesbifriends Travel</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9:30 AM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>National Arboretum · Washington DC 20002</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=National%20Arboretum%20%C2%B7%20Washington%20DC%2020002" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Walk, Breathe, Rise: A DC Black Pride Morning in Nature', 'Open in Maps')">National Arboretum · Washington DC 20002</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Community</span><span class="vibes-tag">Wellness</span></div>
     </div>
@@ -869,7 +872,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Afro Queer</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>MK on U St.</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=MK%20on%20U%20St." target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('One for the Road Day Party', 'Open in Maps')">MK on U St.</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -884,7 +887,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">DJ Jai Syncere & QMunity Love</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Dirty Habit · 555 8th Street Northwest, Washington, DC 20004</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Dirty%20Habit%20%C2%B7%20555%208th%20Street%20Northwest%2C%20Washington%2C%20DC%2020004" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Brunch with Pride at Dirty Habit DC!', 'Open in Maps')">Dirty Habit · 555 8th Street Northwest, Washington, DC 20004</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Games</span><span class="vibes-tag">Groove</span></div>
     </div>
@@ -899,7 +902,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Pillow Talk</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>As You Are · 500 8th St SE, Washington, DC 20003</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=As%20You%20Are%20%C2%B7%20500%208th%20St%20SE%2C%20Washington%2C%20DC%2020003" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Fourplay Series: Boudoir Photoshoot &amp; Smutty Zine Making', 'Open in Maps')">As You Are · 500 8th St SE, Washington, DC 20003</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Creative</span><span class="vibes-tag">Flirt</span><span class="vibes-tag">Community</span></div>
     </div>
@@ -914,7 +917,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Women inthe Life Association</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>The Continent DC · 1110 Vermont Ave NW</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Continent%20DC%20%C2%B7%201110%20Vermont%20Ave%20NW" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Do You Want To Get Funky With Me: Brunch and Day Party', 'Open in Maps')">The Continent DC · 1110 Vermont Ave NW</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Grown & Sexy</span></div>
     </div>
@@ -929,7 +932,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Tony Nelson</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Hook Hall · 3400 Georgia Ave NW, Washington, DC 20010</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Hook%20Hall%20%C2%B7%203400%20Georgia%20Ave%20NW%2C%20Washington%2C%20DC%2020010" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('7th Annual Brunch &amp; Babes', 'Open in Maps')">Hook Hall · 3400 Georgia Ave NW, Washington, DC 20010</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Open Bar</span><span class="vibes-tag">Food</span></div>
     </div>
@@ -944,7 +947,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Bliss (A 2 Zee Events + Party with Honey Collab)</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>1:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>SELVA · 1223 Connecticut Ave NW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=SELVA%20%C2%B7%201223%20Connecticut%20Ave%20NW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Sweet Like Brown Sugar', 'Open in Maps')">SELVA · 1223 Connecticut Ave NW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Flirt</span><span class="vibes-tag">Food</span><span class="vibes-tag">Groove</span></div>
     </div>
@@ -960,7 +963,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Paint and Debate</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Dupont Underground · 19 Dupont Cir NW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Dupont%20Underground%20%C2%B7%2019%20Dupont%20Cir%20NW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Paint and Debate', 'Open in Maps')">Dupont Underground · 19 Dupont Cir NW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Networking</span><span class="vibes-tag">Cultural</span><span class="vibes-tag">Creative</span></div>
     </div>
@@ -991,7 +994,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Bliss (A 2 Zee Events + Party with Honey Collab)</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>4:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Twelve after Twelve · 1212 18th St. NW, Washington, DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Twelve%20after%20Twelve%20%C2%B7%201212%2018th%20St.%20NW%2C%20Washington%2C%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('SWEET ESCAPE Rooftop Day Party', 'Open in Maps')">Twelve after Twelve · 1212 18th St. NW, Washington, DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span><span class="vibes-tag">Flirt</span><span class="vibes-tag">Grown & Sexy</span></div>
     </div>
@@ -1007,7 +1010,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Queer Aunties</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>4:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>THRoW Social · 1410 Okie St. NE #102, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=THRoW%20Social%20%C2%B7%201410%20Okie%20St.%20NE%20%23102%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Aunties in DC', 'Open in Maps')">THRoW Social · 1410 Okie St. NE #102, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">30+</span><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -1022,7 +1025,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">House of Opulence</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>4:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Shanklin Hall · 2325 18th Street Northwest</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Shanklin%20Hall%20%C2%B7%202325%2018th%20Street%20Northwest" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('House of Opulence Day Party Experience', 'Open in Maps')">Shanklin Hall · 2325 18th Street Northwest</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Flirt</span><span class="vibes-tag">Food</span><span class="vibes-tag">Groove</span><span class="vibes-tag">Community</span></div>
     </div>
@@ -1037,7 +1040,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">For the Girls DC</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Selva · 1223 Connecticut Ave. NW, Washington DC 20036</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Selva%20%C2%B7%201223%20Connecticut%20Ave.%20NW%2C%20Washington%20DC%2020036" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Good Girls Go To Heaven Bad Girls Go To For The Girls', 'Open in Maps')">Selva · 1223 Connecticut Ave. NW, Washington DC 20036</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -1052,7 +1055,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">The Sapphic Sanctuary</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Death Punch Bar · 2321 18th St NW</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Death%20Punch%20Bar%20%C2%B7%202321%2018th%20St%20NW" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Spring Fling', 'Open in Maps')">Death Punch Bar · 2321 18th St NW</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Dating</span><span class="vibes-tag">Flirt</span><span class="vibes-tag">Games</span><span class="vibes-tag">Creative</span></div>
     </div>
@@ -1067,7 +1070,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Off the Mall Tours</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>6:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Howard Theater · 620 T Street Northwest, Washington, DC 20001</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Howard%20Theater%20%C2%B7%20620%20T%20Street%20Northwest%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Queer Black Broadway Walking Tour', 'Open in Maps')">Howard Theater · 620 T Street Northwest, Washington, DC 20001</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Wellness</span><span class="vibes-tag">Community</span></div>
     </div>
@@ -1097,7 +1100,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Unleashed DC</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Sachi Nightclub · 727 15th St NW, Washington, DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Sachi%20Nightclub%20%C2%B7%20727%2015th%20St%20NW%2C%20Washington%2C%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Lick: Pride Finale', 'Open in Maps')">Sachi Nightclub · 727 15th St NW, Washington, DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
@@ -1121,7 +1124,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">Us Helping Us People Into Living</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>12:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Ft. Dupont National Park · 3985 Massachusetts Ave SE, Washington, DC 20019</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Ft.%20Dupont%20National%20Park%20%C2%B7%203985%20Massachusetts%20Ave%20SE%2C%20Washington%2C%20DC%2020019" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Pride in the Park', 'Open in Maps')">Ft. Dupont National Park · 3985 Massachusetts Ave SE, Washington, DC 20019</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Cultural</span></div>
     </div>
@@ -1136,7 +1139,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-organizer">MIM Entertainment</div>
       <div class="event-meta">
         <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>5:00 PM – 11:00 PM</span>
-        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Perch Rooftop at Cambia Hotel · 69 Q St. SW, Washington DC</span>
+        <span class="meta-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Perch%20Rooftop%20at%20Cambia%20Hotel%20%C2%B7%2069%20Q%20St.%20SW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer" class="meta-pill-maplink" onclick="trackClick('Wicked Mondaze', 'Open in Maps')">Perch Rooftop at Cambia Hotel · 69 Q St. SW, Washington DC</a></span>
       </div>
       <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Networking</span><span class="vibes-tag">Flirt</span><span class="vibes-tag">Community</span></div>
     </div>
