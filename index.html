@@ -76,8 +76,8 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .day-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;position:sticky;top:0;background:var(--black);padding:10px 0;z-index:10;border-bottom:1px solid rgba(46,36,24,.5)}
 .day-label{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--cream);white-space:nowrap}
 .day-date{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
-.day-count{font-size:10px;color:var(--gold);background:rgba(201,146,42,.1);border:1px solid rgba(201,146,42,.2);padding:2px 8px;border-radius:100px;white-space:nowrap}
-.day-line{flex:1;height:1px;background:var(--border)}
+.day-count{font-size:10px;color:var(--gold);background:rgba(201,146,42,.1);border:1px solid rgba(201,146,42,.2);padding:2px 8px;border-radius:100px;white-space:nowrap;flex-shrink:0}
+.day-line{flex:1;height:1px;background:var(--border);min-width:12px}
 .day-section.hidden{display:none}
 .event-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px 15px;margin-bottom:7px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;transition:border-color .2s,background .2s;position:relative;overflow:hidden}
 .event-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px 0 0 3px}
@@ -165,7 +165,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
   <div class="day-header">
     <div class="day-label">Wednesday</div>
     <div class="day-date"></div>
-    <div class="day-count">1 event</div>
+    <div class="day-count">3 events</div>
     <div class="day-line"></div>
   </div>
   <div class="event-card tp-workshop" data-types="workshop" data-vibes="community cultural wellness" data-free="false">
@@ -313,7 +313,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Creative</span><span class="vibes-tag">Community</span></div>
     </div>
     <div class="event-action">
-      <a href="https://givebutter.com/10th-annual-dc-black-pride-unity-ball-fjwyjy" target="_blank" class="btn btn-free" onclick="trackClick('10th Annual Unity Ball', 'More Info')">More Info →</a>
+      <a href="https://givebutter.com/10th-annual-dc-black-pride-unity-ball-fjwyjy" target="_blank" class="btn btn-free" onclick="trackClick('10th Annual Unity Ball', 'RSVP Free')">RSVP Free →</a>
     </div>
   </div>
 </div>
@@ -498,7 +498,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
   <div class="day-header">
     <div class="day-label">Saturday</div>
     <div class="day-date"></div>
-    <div class="day-count">19 events</div>
+    <div class="day-count">22 events</div>
     <div class="day-line"></div>
   </div>
   <div class="event-card tp-outdoors" data-types="outdoors" data-vibes="community wellness" data-free="false">
@@ -588,7 +588,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Groove</span><span class="vibes-tag">Flirt</span><span class="vibes-tag">Food</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.eventbrite.com/e/black-queer-joy-brunch-day-party-tickets-1987427249403" target="_blank" class="btn btn-free" onclick="trackClick('Black Queer Joy Brunch', 'More Info')">More Info →</a>
+      <a href="https://www.eventbrite.com/e/black-queer-joy-brunch-day-party-tickets-1987427249403" target="_blank" class="btn btn-free" onclick="trackClick('Black Queer Joy Brunch', 'RSVP Free')">RSVP Free →</a>
     </div>
   </div>
   <div class="event-card tp-workshop" data-types="workshop" data-vibes="networking community cultural" data-free="true">
@@ -679,7 +679,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Chill</span><span class="vibes-tag">Flirt</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.meetup.com/dmv-area-black-fem-4-fem-lesbians-and-bisexual-women/events/314573456/?eventOrigin=group_events_list" target="_blank" class="btn btn-free" onclick="trackClick('Black Fem 4 Fem Happy Hour', 'More Info')">More Info →</a>
+      <a href="https://www.meetup.com/dmv-area-black-fem-4-fem-lesbians-and-bisexual-women/events/314573456/?eventOrigin=group_events_list" target="_blank" class="btn btn-free" onclick="trackClick('Black Fem 4 Fem Happy Hour', 'RSVP Free')">RSVP Free →</a>
     </div>
   </div>
   <div class="event-card tp-day-party" data-types="day-party" data-vibes="ass shaking" data-free="false">
@@ -770,7 +770,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
     <div class="event-action">
-      <a href="https://ra.co/events/2433033" target="_blank" class="btn btn-free" onclick="trackClick('The Melt Black Pride Edition', 'More Info')">More Info →</a>
+      <a href="https://ra.co/events/2433033" target="_blank" class="btn btn-free" onclick="trackClick('The Melt Black Pride Edition', 'RSVP Free')">RSVP Free →</a>
     </div>
   </div>
   <div class="event-card tp-after-dark" data-types="after-dark" data-vibes="ass shaking" data-free="false">
@@ -872,7 +872,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Ass Shaking</span></div>
     </div>
     <div class="event-action">
-      <a href="https://events.eventnoire.com/e/afroqueer-presents-one-for-the-road-day-party/tickets" target="_blank" class="btn btn-free" onclick="trackClick('One for the Road Day Party', 'More Info')">More Info →</a>
+      <a href="https://events.eventnoire.com/e/afroqueer-presents-one-for-the-road-day-party/tickets" target="_blank" class="btn btn-free" onclick="trackClick('One for the Road Day Party', 'RSVP Free')">RSVP Free →</a>
     </div>
   </div>
   <div class="event-card tp-brunch" data-types="brunch outdoors day-party" data-vibes="games groove" data-free="false">
@@ -917,7 +917,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
       <div class="event-vibes"><span class="vibes-tag">Community</span><span class="vibes-tag">Grown & Sexy</span></div>
     </div>
     <div class="event-action">
-      <a href="https://www.eventbrite.com/e/do-you-want-to-get-funky-with-me-tickets-1987802195878" target="_blank" class="btn btn-free" onclick="trackClick('Do You Want To Get Funky With Me', 'More Info')">More Info →</a>
+      <a href="https://www.eventbrite.com/e/do-you-want-to-get-funky-with-me-tickets-1987802195878" target="_blank" class="btn btn-free" onclick="trackClick('Do You Want To Get Funky With Me', 'RSVP Free')">RSVP Free →</a>
     </div>
   </div>
   <div class="event-card tp-brunch" data-types="brunch" data-vibes="community open bar food" data-free="false">
@@ -1109,7 +1109,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
   <div class="day-header">
     <div class="day-label">Monday</div>
     <div class="day-date"></div>
-    <div class="day-count">1 event</div>
+    <div class="day-count">2 events</div>
     <div class="day-line"></div>
   </div>
   <div class="event-card tp-outdoors" data-types="outdoors" data-vibes="community cultural" data-free="true">
