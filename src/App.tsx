@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { DAY_ORDER } from './constants/days';
-import { events } from './data';
+import { useEvents } from './hooks/useEvents';
 import { useEventFilters } from './hooks/useEventFilters';
 import type { DayId, PrideEvent } from './types/event';
 import { DaySection } from './components/DaySection';
@@ -22,14 +22,22 @@ function groupByDay(list: PrideEvent[]): Map<DayId, PrideEvent[]> {
 }
 
 export default function App() {
-  const grouped = useMemo(() => groupByDay(events), []);
+  const { events, error, isLoading } = useEvents();
+  const grouped = useMemo(() => groupByDay(events), [events]);
   const filter = useEventFilters(events);
+  const showNoResults = !isLoading && events.length > 0 && !filter.anyVisible;
 
   return (
     <>
       <Hero />
       <Legend />
       <div className="container">
+        {isLoading ? <div className="data-status">Loading events...</div> : null}
+        {error ? (
+          <div className="data-status data-status-error" role="alert">
+            {error}
+          </div>
+        ) : null}
         {DAY_ORDER.map((day) => {
           const dayEvents = grouped.get(day) ?? [];
           const dayLabel = dayEvents[0]?.dayLabel ?? day;
@@ -43,7 +51,7 @@ export default function App() {
             />
           );
         })}
-        <div className={`no-results${filter.anyVisible ? '' : ' visible'}`}>
+        <div className={`no-results${showNoResults ? ' visible' : ''}`}>
           No events match your filters. Try clearing some! 🖤
         </div>
         <LinksSection />
