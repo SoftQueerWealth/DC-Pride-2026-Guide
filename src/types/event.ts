@@ -69,4 +69,6 @@ export interface PrideEvent {
   ctaButtonClass: CtaButtonClassId | `btn-${string}`;
   /** tp-* class for left accent bar */
   cardClass: `tp-${string}`;
+  /** Shown under the ticket CTA when set (e.g. promo code from the sheet). */
+  discountCode?: string;
 }

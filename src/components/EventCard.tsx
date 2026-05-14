@@ -1,7 +1,8 @@
-import { Clock, MapPin } from 'lucide-react';
+import { Clock, Lightbulb, MapPin } from 'lucide-react';
 import type { PrideEvent } from '../types/event';
 import { trackClick } from '../lib/analytics';
 import { badgeClassForLabel } from '../lib/badgeClass';
+import { parseDiscountDisplay, shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
 import { isMappableLocation, mapsSearchUrl } from '../lib/maps';
 
 interface EventCardProps {
@@ -11,6 +12,10 @@ interface EventCardProps {
 
 export function EventCard({ event, visible }: EventCardProps) {
   const mapsHref = isMappableLocation(event.location) ? mapsSearchUrl(event.location) : null;
+  const discountParsed =
+    event.discountCode && !shouldHideDiscountCode(event.discountCode)
+      ? parseDiscountDisplay(event.discountCode)
+      : null;
 
   return (
     <div
@@ -67,6 +72,27 @@ export function EventCard({ event, visible }: EventCardProps) {
         >
           {event.ctaLabel} →
         </a>
+        {discountParsed ? (
+          <div className="discount-code" role="note">
+            {discountParsed.kind === 'code' ? (
+              <span className="discount-code-row-inner">
+                <span className="discount-code-emoji" aria-hidden>
+                  🏷️
+                </span>
+                <span className="discount-code-label">Code:</span>
+                <span className="discount-code-value">{discountParsed.code}</span>
+                {discountParsed.expiresSuffix ? (
+                  <span className="discount-code-expires">{discountParsed.expiresSuffix}</span>
+                ) : null}
+              </span>
+            ) : (
+              <span className="discount-code-row-inner discount-code-row-inner--tip">
+                <Lightbulb className="discount-code-tip-icon" size={11} strokeWidth={2} aria-hidden />
+                <span className="discount-code-tip-text">{discountParsed.text}</span>
+              </span>
+            )}
+          </div>
+        ) : null}
       </div>
     </div>
   );

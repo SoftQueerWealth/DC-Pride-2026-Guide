@@ -8,6 +8,7 @@ import {
   type PrideEvent,
 } from '../types/event';
 import type { BeautyField, BeautyItem } from '../types/beauty';
+import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
 
 const EVENTS_SHEET_NAME = 'events';
 const BEAUTY_SHEET_NAME = 'beauty';
@@ -111,6 +112,14 @@ const COLUMN_ALIASES = {
   ctaLabel: ['ctalabel', 'buttonlabel', 'linklabel', 'actionlabel'],
   ctaButtonClass: ['ctabuttonclass', 'buttonclass', 'btnclass'],
   cardClass: ['cardclass', 'typeclass', 'accentclass'],
+  discountCode: [
+    'discountcode',
+    'promocode',
+    'promo',
+    'coupon',
+    'couponcode',
+    'ticketcode',
+  ],
 } as const;
 
 const BEAUTY_COLUMN_ALIASES = {
@@ -398,6 +407,9 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
         ctaLabelForTicketStatus(ticketStatus) || readCell(headers, row, 'ctaLabel') || (free ? 'More Info' : 'Get Tickets');
       const fallbackButtonClass = ctaButtonClassForTicketStatus(ticketStatus, free);
       const fallbackCardClass: `tp-${string}` = `tp-${types[0] ?? EventType.DayParty}`;
+      const discountCodeRaw = readCell(headers, row, 'discountCode').trim();
+      const discountCode =
+        discountCodeRaw && !shouldHideDiscountCode(discountCodeRaw) ? discountCodeRaw : '';
 
       return {
         id: readCell(headers, row, 'id') || `${slugify(`${day}-${name}`)}-${index}`,
@@ -416,6 +428,7 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
         ctaLabel,
         ctaButtonClass: normalizeClass<'btn-'>(readCell(headers, row, 'ctaButtonClass'), 'btn-', fallbackButtonClass),
         cardClass: normalizeClass<'tp-'>(readCell(headers, row, 'cardClass'), 'tp-', fallbackCardClass),
+        ...(discountCode ? { discountCode } : {}),
       };
     })
     .filter((event): event is PrideEvent => event !== null);
