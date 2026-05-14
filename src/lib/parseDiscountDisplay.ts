@@ -1,3 +1,5 @@
+import { decodeHtmlEntities } from './decodeHtmlEntities';
+
 export type ParsedDiscount =
   | { kind: 'code'; code: string; expiresSuffix?: string }
   | { kind: 'tip'; text: string };
@@ -6,7 +8,7 @@ const LEADING_EMOJI = /^\s*(?:🏷️|💡)\s*/u;
 
 /** Placeholder cells (e.g. "Pending") should not render under the ticket button. */
 export function shouldHideDiscountCode(raw: string): boolean {
-  return /\bpending\b/i.test(raw.trim());
+  return /\bpending\b/i.test(decodeHtmlEntities(raw).trim());
 }
 
 function looksLikeBareCodeToken(value: string): boolean {
@@ -24,7 +26,7 @@ function looksLikeBareCodeToken(value: string): boolean {
  * Recognizes lines like "🏷️ Code: SAVE10" or "Code: SAVE · expires 5/20".
  */
 export function parseDiscountDisplay(raw: string): ParsedDiscount {
-  const trimmed = raw.trim();
+  const trimmed = decodeHtmlEntities(raw).trim();
   const stripped = trimmed.replace(LEADING_EMOJI, '').trim();
 
   const codeMatch = /^code:\s*(.+)$/i.exec(stripped);

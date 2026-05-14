@@ -8,6 +8,7 @@ import {
   type PrideEvent,
 } from '../types/event';
 import type { BeautyField, BeautyItem } from '../types/beauty';
+import { decodeHtmlEntities } from '../lib/decodeHtmlEntities';
 import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
 
 const EVENTS_SHEET_NAME = 'events';
@@ -208,7 +209,8 @@ function slugify(value: string): string {
 
 function cleanCellValue(value: unknown): string {
   const cell = String(value ?? '').trim();
-  return cell.toLowerCase() === 'nan' ? '' : cell;
+  if (cell.toLowerCase() === 'nan') return '';
+  return decodeHtmlEntities(cell);
 }
 
 function readCell(headers: string[], row: string[], key: ColumnKey): string {

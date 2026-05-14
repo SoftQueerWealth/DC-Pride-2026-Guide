@@ -23,9 +23,29 @@ function slugify(s) {
     .slice(0, 80) || 'event';
 }
 
+/** Keep in sync with `decodeHtmlEntities` in src/lib/decodeHtmlEntities.ts */
+function decodeHtmlEntities(text) {
+  if (!text.includes('&')) return text;
+  let out = text;
+  for (let i = 0; i < 8; i++) {
+    const next = out
+      .replace(/&#x([0-9a-f]{1,6});/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+      .replace(/&#([0-9]{1,7});/g, (_, dec) => String.fromCodePoint(parseInt(dec, 10)))
+      .replace(/&nbsp;/gi, ' ')
+      .replace(/&amp;/gi, '&')
+      .replace(/&lt;/gi, '<')
+      .replace(/&gt;/gi, '>')
+      .replace(/&quot;/gi, '"')
+      .replace(/&apos;/gi, "'");
+    if (next === out) break;
+    out = next;
+  }
+  return out.replace(/\u00a0/g, ' ');
+}
+
 /** Keep in sync with `shouldHideDiscountCode` in src/lib/parseDiscountDisplay.ts */
 function shouldHideDiscountCode(raw) {
-  return /\bpending\b/i.test(String(raw).trim());
+  return /\bpending\b/i.test(decodeHtmlEntities(String(raw)).trim());
 }
 
 const events = [];
@@ -81,7 +101,7 @@ $('.event-card').each((_, el) => {
       .replace(/<br\s*\/?>/gi, ' ')
       .replace(/<\/p>/gi, ' ')
       .replace(/<[^>]+>/g, ' ');
-    discountCode = plain.replace(/\s+/g, ' ').trim() || undefined;
+    discountCode = decodeHtmlEntities(plain.replace(/\s+/g, ' ').trim()) || undefined;
     if (discountCode && shouldHideDiscountCode(discountCode)) discountCode = undefined;
   }
 

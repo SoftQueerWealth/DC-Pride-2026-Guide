@@ -1105,7 +1105,7 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "discountCode": "💡 First 50 to Love, Lust &amp; Labels panel get free entry"
+    "discountCode": "💡 First 50 to Love, Lust & Labels panel get free entry"
   },
   {
     "id": "sunday-walk-breathe-rise-a-dc-black-pride-morning-in-nature-42",
