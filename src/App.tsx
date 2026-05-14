@@ -13,6 +13,7 @@ import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
 import { Legend } from './components/Legend';
 import { LinksSection } from './components/LinksSection';
+import { communityPerkTypeLabel } from './lib/communityPerks';
 
 enum GuideTab {
   Events = 'events',
@@ -81,7 +82,9 @@ export default function App() {
   const filteredBeautyItems = useMemo(
     () =>
       beauty.items.filter((item) => {
-        if (activeBeautyTypes.size > 0 && !activeBeautyTypes.has(normalizeFilterValue(item.businessType))) return false;
+        if (activeBeautyTypes.size > 0 && !activeBeautyTypes.has(normalizeFilterValue(communityPerkTypeLabel(item.businessType)))) {
+          return false;
+        }
         if (activeMobileOnly && !communityPerkIsMobile(item)) return false;
         return true;
       }),

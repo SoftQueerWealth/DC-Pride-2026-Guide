@@ -1,5 +1,6 @@
 import type { BeautyField, BeautyItem } from '../types/beauty';
 import { trackBeautyClick } from '../lib/analytics';
+import { communityPerkTypeLabel } from '../lib/communityPerks';
 
 function beautyDetailValue(field: BeautyField) {
   if (!field.href) return field.value;
@@ -69,7 +70,7 @@ export function BeautySection({ items }: BeautySectionProps) {
               <div className="beauty-partner-top">
                 <div>
                   <div className="event-badges">
-                    <span className="badge b-happyhour">{item.businessType}</span>
+                    <span className="badge b-happyhour">{communityPerkTypeLabel(item.businessType)}</span>
                     {travels ? <span className="badge b-wellness">Mobile</span> : null}
                   </div>
                   <h3>{item.name}</h3>
