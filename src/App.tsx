@@ -1,7 +1,11 @@
 import { useMemo, useState } from 'react';
+import { BeautySection } from './components/BeautySection';
 import { DAY_ORDER } from './constants/days';
+import { FILTER_SECTIONS, type FilterSectionDef } from './constants/filters';
+import { useBeautyItems } from './hooks/useBeautyItems';
 import { useEvents } from './hooks/useEvents';
 import { useEventFilters } from './hooks/useEventFilters';
+import type { BeautyItem } from './types/beauty';
 import type { DayId, PrideEvent } from './types/event';
 import { DaySection } from './components/DaySection';
 import { FilterPanel } from './components/FilterPanel';
@@ -15,7 +19,10 @@ enum GuideTab {
   Beauty = 'beauty',
 }
 
-const ENABLE_BEAUTY_TAB = false;
+enum BeautyFilterKind {
+  BusinessType = 'business-type',
+  Travels = 'travels',
+}
 
 function groupByDay(list: PrideEvent[]): Map<DayId, PrideEvent[]> {
   const map = new Map<DayId, PrideEvent[]>();
@@ -28,19 +35,92 @@ function groupByDay(list: PrideEvent[]): Map<DayId, PrideEvent[]> {
   return map;
 }
 
+function normalizeFilterValue(value: string): string {
+  return value.toLowerCase().replace(/\s+/g, ' ').trim();
+}
+
+function beautyBusinessTypes(items: BeautyItem[]): string[] {
+  return [...new Set(items.map((item) => item.businessType).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+}
+
+function beautyItemTravels(item: BeautyItem): boolean {
+  return item.fields.some(
+    (field) =>
+      ['travels', 'travelsstatus', 'travel', 'travelstatus'].includes(field.key) &&
+      ['yes', 'y', 'true'].includes(normalizeFilterValue(field.value)),
+  );
+}
+
 export default function App() {
   const [activeTab, setActiveTab] = useState<GuideTab>(GuideTab.Events);
+  const [beautyFilterOpen, setBeautyFilterOpen] = useState(false);
+  const [activeBeautyTypes, setActiveBeautyTypes] = useState<Set<string>>(() => new Set());
+  const [activeBeautyTravelsOnly, setActiveBeautyTravelsOnly] = useState(false);
   const { events, error, isLoading } = useEvents();
+  const beauty = useBeautyItems();
   const grouped = useMemo(() => groupByDay(events), [events]);
   const filter = useEventFilters(events);
   const showNoResults = !isLoading && events.length > 0 && !filter.anyVisible;
-  const showBeautyTab = ENABLE_BEAUTY_TAB && activeTab === GuideTab.Beauty;
+  const showBeautyTab = activeTab === GuideTab.Beauty;
   const showEventsTab = !showBeautyTab;
+  const beautyFilterSections = useMemo<FilterSectionDef<BeautyFilterKind>[]>(
+    () => [
+      {
+        label: 'Business Type',
+        pills: beautyBusinessTypes(beauty.items).map((type) => ({
+          kind: BeautyFilterKind.BusinessType,
+          value: normalizeFilterValue(type),
+          label: type,
+        })),
+      },
+      {
+        label: 'Availability',
+        pills: [{ kind: BeautyFilterKind.Travels, value: 'true', label: 'Travels' }],
+      },
+    ],
+    [beauty.items],
+  );
+  const filteredBeautyItems = useMemo(
+    () =>
+      beauty.items.filter((item) => {
+        if (activeBeautyTypes.size > 0 && !activeBeautyTypes.has(normalizeFilterValue(item.businessType))) return false;
+        if (activeBeautyTravelsOnly && !beautyItemTravels(item)) return false;
+        return true;
+      }),
+    [activeBeautyTravelsOnly, activeBeautyTypes, beauty.items],
+  );
+  const showBeautyNoResults = !beauty.isLoading && beauty.items.length > 0 && filteredBeautyItems.length === 0;
+  const activeBeautyFilterCount = activeBeautyTypes.size + (activeBeautyTravelsOnly ? 1 : 0);
 
   const handleTabChange = (tab: GuideTab) => {
-    if (tab === GuideTab.Beauty && !ENABLE_BEAUTY_TAB) return;
     setActiveTab(tab);
     if (tab !== GuideTab.Events) filter.setPanelOpen(false);
+    if (tab !== GuideTab.Beauty) setBeautyFilterOpen(false);
+  };
+
+  const isBeautyPillActive = (kind: BeautyFilterKind, value: string) => {
+    if (kind === BeautyFilterKind.Travels) return activeBeautyTravelsOnly;
+    return activeBeautyTypes.has(normalizeFilterValue(value));
+  };
+
+  const toggleBeautyPill = (kind: BeautyFilterKind, value: string) => {
+    if (kind === BeautyFilterKind.Travels) {
+      setActiveBeautyTravelsOnly((current) => !current);
+      return;
+    }
+
+    const normalized = normalizeFilterValue(value);
+    setActiveBeautyTypes((current) => {
+      const next = new Set(current);
+      if (next.has(normalized)) next.delete(normalized);
+      else next.add(normalized);
+      return next;
+    });
+  };
+
+  const clearBeautyFilters = () => {
+    setActiveBeautyTypes(new Set());
+    setActiveBeautyTravelsOnly(false);
   };
 
   return (
@@ -59,19 +139,17 @@ export default function App() {
           >
             Events
           </button>
-          {ENABLE_BEAUTY_TAB ? (
-            <button
-              id="beauty-tab"
-              type="button"
-              className={`tab-button${showBeautyTab ? ' active' : ''}`}
-              role="tab"
-              aria-selected={showBeautyTab}
-              aria-controls="beauty-panel"
-              onClick={() => handleTabChange(GuideTab.Beauty)}
-            >
-              Beauty
-            </button>
-          ) : null}
+          <button
+            id="beauty-tab"
+            type="button"
+            className={`tab-button${showBeautyTab ? ' active' : ''}`}
+            role="tab"
+            aria-selected={showBeautyTab}
+            aria-controls="beauty-panel"
+            onClick={() => handleTabChange(GuideTab.Beauty)}
+          >
+            Beauty
+          </button>
         </div>
       </nav>
       {showEventsTab ? (
@@ -105,11 +183,25 @@ export default function App() {
         </div>
       ) : (
         <div id="beauty-panel" className="container" role="tabpanel" aria-labelledby="beauty-tab">
-          <section className="beauty-card">
-            <span className="beauty-kicker">Beauty</span>
-            <h2>Beauty guide coming soon</h2>
-            <p>Check back here for glam, grooming, and self-care picks for Pride weekend.</p>
-          </section>
+          {beauty.isLoading ? <div className="data-status">Loading beauty partners...</div> : null}
+          {beauty.error ? (
+            <div className="data-status data-status-error" role="alert">
+              {beauty.error}
+            </div>
+          ) : null}
+          {!beauty.isLoading && !beauty.error && filteredBeautyItems.length > 0 ? (
+            <BeautySection items={filteredBeautyItems} />
+          ) : null}
+          {!beauty.isLoading && !beauty.error && beauty.items.length === 0 ? (
+            <section className="beauty-card">
+              <span className="beauty-kicker">Beauty</span>
+              <h2>Beauty discounts are coming soon</h2>
+              <p>Check back soon for curated glam, grooming, and self-care perks from our confirmed partners.</p>
+            </section>
+          ) : null}
+          <div className={`no-results${showBeautyNoResults ? ' visible' : ''}`}>
+            No beauty partners match your filters. Try clearing some!
+          </div>
         </div>
       )}
       <Footer />
@@ -125,10 +217,35 @@ export default function App() {
           </div>
           <FilterPanel
             open={filter.panelOpen}
+            title="Filter Events"
+            ariaLabel="Filter events"
+            sections={FILTER_SECTIONS}
             isPillActive={filter.isPillActive}
             onTogglePill={filter.togglePill}
             onClearAll={filter.clearAll}
             onClose={filter.togglePanel}
+          />
+        </>
+      ) : null}
+      {showBeautyTab ? (
+        <>
+          <div className="filter-fab">
+            <button type="button" className="filter-toggle-btn" onClick={() => setBeautyFilterOpen((open) => !open)}>
+              Filter Beauty{' '}
+              <span className={`filter-count${activeBeautyFilterCount > 0 ? ' visible' : ''}`}>
+                {activeBeautyFilterCount}
+              </span>
+            </button>
+          </div>
+          <FilterPanel
+            open={beautyFilterOpen}
+            title="Filter Beauty"
+            ariaLabel="Filter beauty partners"
+            sections={beautyFilterSections}
+            isPillActive={isBeautyPillActive}
+            onTogglePill={toggleBeautyPill}
+            onClearAll={clearBeautyFilters}
+            onClose={() => setBeautyFilterOpen(false)}
           />
         </>
       ) : null}

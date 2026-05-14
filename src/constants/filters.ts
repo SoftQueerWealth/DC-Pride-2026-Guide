@@ -7,17 +7,22 @@ export enum FilterKind {
   Free = 'free',
 }
 
-type FilterPillValue = DayId | EventTypeId | EventVibeId | 'true';
+export type FilterPillValue = DayId | EventTypeId | EventVibeId | 'true' | string;
 
-export interface FilterPillDef {
-  kind: FilterKind;
+export interface FilterPillDef<TKind extends string = string> {
+  kind: TKind;
   value: FilterPillValue;
   label: string;
   /** When true, use .free-pill.active styling */
   freePill?: boolean;
 }
 
-export const FILTER_SECTIONS: { label: string; pills: FilterPillDef[] }[] = [
+export interface FilterSectionDef<TKind extends string = string> {
+  label: string;
+  pills: FilterPillDef<TKind>[];
+}
+
+export const FILTER_SECTIONS: FilterSectionDef<FilterKind>[] = [
   {
     label: 'Day',
     pills: [

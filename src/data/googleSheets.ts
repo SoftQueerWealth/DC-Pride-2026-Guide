@@ -7,9 +7,11 @@ import {
   type DayId,
   type PrideEvent,
 } from '../types/event';
+import type { BeautyField, BeautyItem } from '../types/beauty';
 
-const SPREADSHEET_ID = '15qGvOIUMxTFy3ncvUW1z8XXT6Pz9iTbZ-MW4UhDmjiM';
-const SHEET_NAME = 'events';
+const EVENTS_SHEET_NAME = 'events';
+const BEAUTY_SHEET_NAME = 'beauty';
+const SHEETS_ID_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_ID_HERE';
 const API_KEY_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_API_KEY_HERE';
 
 const TYPE_LABELS = {
@@ -111,6 +113,27 @@ const COLUMN_ALIASES = {
   cardClass: ['cardclass', 'typeclass', 'accentclass'],
 } as const;
 
+const BEAUTY_COLUMN_ALIASES = {
+  businessName: ['businessname', 'business', 'brand', 'brandname', 'partner', 'partnername', 'name'],
+  businessType: ['businesstype', 'businesscategory', 'category', 'type'],
+  confirmedPartner: ['confirmedpartner', 'partnerconfirmed', 'confirmed', 'partnerstatus', 'status'],
+  testDiscountCodeStatus: ['testdiscountcodestatus', 'testdiscountcode', 'discountcodestatus', 'codestatus'],
+} as const;
+
+const BEAUTY_INTERNAL_COLUMNS = new Set([
+  'confirmedpartner',
+  'partnerconfirmed',
+  'confirmed',
+  'partnerstatus',
+  'status',
+  'testdiscountcodestatus',
+  'testdiscountcode',
+  'discountcodestatus',
+  'codestatus',
+]);
+
+const BEAUTY_PRIMARY_LINK_COLUMNS = ['website', 'url', 'link', 'booking', 'book', 'instagram', 'social'];
+
 interface SheetsApiResponse {
   values?: string[][];
   error?: {
@@ -119,13 +142,22 @@ interface SheetsApiResponse {
 }
 
 type ColumnKey = keyof typeof COLUMN_ALIASES;
+type BeautyColumnKey = keyof typeof BEAUTY_COLUMN_ALIASES;
 
 function getApiKey(): string {
   return import.meta.env.VITE_GOOGLE_SHEETS_API_KEY?.trim() ?? '';
 }
 
+function getSpreadsheetId(): string {
+  return import.meta.env.VITE_GOOGLE_SHEETS_ID?.trim() ?? '';
+}
+
 function isMissingApiKey(apiKey: string): boolean {
   return apiKey.length === 0 || apiKey === API_KEY_PLACEHOLDER;
+}
+
+function isMissingSpreadsheetId(spreadsheetId: string): boolean {
+  return spreadsheetId.length === 0 || spreadsheetId === SHEETS_ID_PLACEHOLDER;
 }
 
 function normalizeHeader(value: string): string {
@@ -176,6 +208,49 @@ function readCell(headers: string[], row: string[], key: ColumnKey): string {
     if (index >= 0) return cleanCellValue(row[index]);
   }
   return '';
+}
+
+function readBeautyCell(headers: string[], row: string[], key: BeautyColumnKey): string {
+  for (const alias of BEAUTY_COLUMN_ALIASES[key]) {
+    const index = headers.indexOf(normalizeHeader(alias));
+    if (index >= 0) return cleanCellValue(row[index]);
+  }
+  return '';
+}
+
+function beautyFieldHref(label: string, value: string): string | undefined {
+  if (/^https?:\/\//i.test(value)) return value;
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return `mailto:${value}`;
+
+  const normalizedLabel = normalizeHeader(label);
+  if (normalizedLabel.includes('instagram')) {
+    const handle = value.replace(/^@/, '').trim();
+    if (handle && !/\s/.test(handle)) return `https://www.instagram.com/${handle}`;
+  }
+
+  return undefined;
+}
+
+function isConfirmedPartner(value: string): boolean {
+  const normalized = normalizeToken(value);
+  return (
+    normalized === 'yes' ||
+    normalized === 'y' ||
+    normalized === 'true' ||
+    normalized === 'confirmed' ||
+    normalized === 'confirmed partner' ||
+    normalized === 'approved'
+  );
+}
+
+function isPassingDiscountCodeStatus(value: string): boolean {
+  const normalized = normalizeToken(value);
+  return normalized === 'pass' || normalized === 'passed';
+}
+
+function isPrimaryBeautyLink(field: BeautyField): boolean {
+  const normalizedLabel = normalizeHeader(field.label);
+  return Boolean(field.href) && BEAUTY_PRIMARY_LINK_COLUMNS.some((column) => normalizedLabel.includes(column));
 }
 
 function parseDay(value: string): DayId | null {
@@ -346,14 +421,62 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
     .filter((event): event is PrideEvent => event !== null);
 }
 
-export async function fetchSheetEvents(signal?: AbortSignal): Promise<PrideEvent[]> {
+function parseBeautyRows(values: string[][]): BeautyItem[] {
+  const [headerRow, ...dataRows] = values;
+  if (!headerRow) return [];
+
+  const headers = headerRow.map(normalizeHeader);
+  const labels = headerRow.map((header) => titleize(cleanCellValue(header)));
+
+  return dataRows
+    .map((row, index): BeautyItem | null => {
+      if (row.every((cell) => !cleanCellValue(cell))) return null;
+      if (!isConfirmedPartner(readBeautyCell(headers, row, 'confirmedPartner'))) return null;
+      if (!isPassingDiscountCodeStatus(readBeautyCell(headers, row, 'testDiscountCodeStatus'))) return null;
+
+      const fields = headers
+        .map((header, fieldIndex): BeautyField | null => {
+          const label = labels[fieldIndex];
+          const value = cleanCellValue(row[fieldIndex]);
+          if (!header || !label || !value || BEAUTY_INTERNAL_COLUMNS.has(header)) return null;
+          return {
+            key: header,
+            label,
+            value,
+            href: beautyFieldHref(label, value),
+          };
+        })
+        .filter((field): field is BeautyField => field !== null);
+
+      const name = readBeautyCell(headers, row, 'businessName') || fields[0]?.value;
+      if (!name) return null;
+
+      const businessType = readBeautyCell(headers, row, 'businessType') || 'Beauty Partner';
+      const primaryHref = fields.find(isPrimaryBeautyLink)?.href;
+
+      return {
+        id: `${slugify(`${businessType}-${name}`)}-${index}`,
+        name,
+        businessType,
+        fields,
+        primaryHref,
+      };
+    })
+    .filter((item): item is BeautyItem => item !== null);
+}
+
+async function fetchSheetValues(sheetName: string, signal?: AbortSignal): Promise<string[][]> {
   const apiKey = getApiKey();
+  const spreadsheetId = getSpreadsheetId();
   if (isMissingApiKey(apiKey)) {
     throw new Error('Add your Google Sheets API key to VITE_GOOGLE_SHEETS_API_KEY in .env.');
   }
+  if (isMissingSpreadsheetId(spreadsheetId)) {
+    throw new Error('Add your Google Sheets spreadsheet ID to VITE_GOOGLE_SHEETS_ID in .env.');
+  }
 
   const url = new URL(
-    `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${encodeURIComponent(SHEET_NAME)}`,
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(sheetName)}`,
   );
   url.searchParams.set('key', apiKey);
   url.searchParams.set('majorDimension', 'ROWS');
@@ -361,15 +484,23 @@ export async function fetchSheetEvents(signal?: AbortSignal): Promise<PrideEvent
 
   const response = await fetch(url, { signal });
   const payload = (await response.json()) as SheetsApiResponse;
-console.log('payload', payload.values);
 
   if (!response.ok) {
-    throw new Error(payload.error?.message ?? 'Unable to load events from Google Sheets.');
+    throw new Error(payload.error?.message ?? `Unable to load ${sheetName} from Google Sheets.`);
   }
-  const events = parseSheetRows(payload.values ?? []);
+
+  return payload.values ?? [];
+}
+
+export async function fetchSheetEvents(signal?: AbortSignal): Promise<PrideEvent[]> {
+  const events = parseSheetRows(await fetchSheetValues(EVENTS_SHEET_NAME, signal));
   if (events.length === 0) {
     throw new Error('No valid events were found in the Google Sheet.');
   }
 
   return events;
+}
+
+export async function fetchSheetBeautyItems(signal?: AbortSignal): Promise<BeautyItem[]> {
+  return parseBeautyRows(await fetchSheetValues(BEAUTY_SHEET_NAME, signal));
 }

@@ -52,6 +52,23 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .beauty-kicker{display:inline-block;margin-bottom:10px;font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
 .beauty-card h2{font-family:'Playfair Display',serif;font-size:1.55rem;line-height:1.15;color:var(--cream);margin-bottom:10px}
 .beauty-card p{font-size:13px;line-height:1.7;color:var(--muted);max-width:420px;margin:0 auto}
+.beauty-section{margin-top:32px}
+.beauty-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid rgba(46,36,24,.65)}
+.beauty-header h2{font-family:'Playfair Display',serif;font-size:1.45rem;line-height:1.15;color:var(--cream);margin-bottom:7px}
+.beauty-header p{font-size:12px;line-height:1.6;color:var(--muted);max-width:430px}
+.beauty-count{font-size:10px;color:var(--gold);background:rgba(201,146,42,.1);border:1px solid rgba(201,146,42,.2);padding:4px 10px;border-radius:100px;white-space:nowrap;flex-shrink:0}
+.beauty-list{display:grid;gap:10px}
+.beauty-partner-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:15px;position:relative;overflow:hidden;transition:border-color .2s,background .2s}
+.beauty-partner-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);border-radius:3px 0 0 3px}
+.beauty-partner-card:hover{border-color:rgba(201,146,42,.25);background:#201a13}
+.beauty-partner-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:12px}
+.beauty-partner-top h3{font-size:14px;font-weight:600;color:var(--cream);line-height:1.35}
+.beauty-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.beauty-detail{background:rgba(255,255,255,.03);border:1px solid rgba(46,36,24,.72);border-radius:10px;padding:8px 9px;min-width:0}
+.beauty-detail dt{font-size:8.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.beauty-detail dd{font-size:11.5px;line-height:1.45;color:var(--text);overflow-wrap:anywhere}
+.beauty-detail a{color:var(--gold-light);text-decoration:none}
+.beauty-detail a:hover{text-decoration:underline;text-decoration-color:rgba(201,146,42,.45)}
 .day-section{margin-top:36px}
 .day-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;position:sticky;top:0;background:var(--black);padding:10px 0;z-index:10;border-bottom:1px solid rgba(46,36,24,.5)}
 .day-label{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--cream);white-space:nowrap}
@@ -118,3 +135,4 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .footer{text-align:center;padding:32px 16px;border-top:1px solid var(--border);font-size:11px;color:var(--muted);line-height:1.8}
 .footer strong{color:var(--gold)}
 .hero-social svg{fill:none;stroke:currentColor;flex-shrink:0}
+@media (max-width:520px){.beauty-header,.beauty-partner-top{flex-direction:column}.beauty-details{grid-template-columns:1fr}.beauty-partner-top .btn{align-self:flex-start}}
