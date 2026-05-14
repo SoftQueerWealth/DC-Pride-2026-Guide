@@ -23,6 +23,11 @@ function slugify(s) {
     .slice(0, 80) || 'event';
 }
 
+/** Keep in sync with `shouldHideDiscountCode` in src/lib/parseDiscountDisplay.ts */
+function shouldHideDiscountCode(raw) {
+  return /\bpending\b/i.test(String(raw).trim());
+}
+
 const events = [];
 
 $('.event-card').each((_, el) => {
@@ -68,6 +73,18 @@ $('.event-card').each((_, el) => {
   const ctaLabel = $btn.text().replace(/→/g, '').replace(/\s+/g, ' ').trim() || 'Link';
   const btnClass = ($btn.attr('class') || '').split(/\s+/).find((c) => c.startsWith('btn-')) || 'btn-p';
 
+  const $discount = $card.find('.event-action .discount-code').first();
+  let discountCode;
+  if ($discount.length) {
+    const html = $discount.html() ?? '';
+    const plain = html
+      .replace(/<br\s*\/?>/gi, ' ')
+      .replace(/<\/p>/gi, ' ')
+      .replace(/<[^>]+>/g, ' ');
+    discountCode = plain.replace(/\s+/g, ' ').trim() || undefined;
+    if (discountCode && shouldHideDiscountCode(discountCode)) discountCode = undefined;
+  }
+
   const tpClass = ($card.attr('class') || '').split(/\s+/).find((c) => c.startsWith('tp-')) || 'tp-day-party';
 
   const id = slugify(`${day}-${name}`) + '-' + events.length;
@@ -89,6 +106,7 @@ $('.event-card').each((_, el) => {
     ctaLabel,
     ctaButtonClass: btnClass,
     cardClass: tpClass,
+    ...(discountCode ? { discountCode } : {}),
   });
 });
 

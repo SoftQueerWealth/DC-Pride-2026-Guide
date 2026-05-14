@@ -122,8 +122,15 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .btn-w{background:rgba(80,60,20,.2);color:#ccaa44;border:1px solid rgba(80,60,20,.4)}
 .btn-free{background:rgba(40,80,40,.3);color:#7ec87e;border:1px solid rgba(40,80,40,.5)}
 .btn-na{background:transparent;color:var(--muted);border:1px solid var(--border);cursor:default;font-size:10px;padding:6px 11px;border-radius:7px}
-.discount-code{font-size:9.5px;color:var(--gold);text-align:right;line-height:1.4;margin-top:2px;width:100%;min-width:0;overflow-wrap:break-word}
-.discount-code strong{font-weight:600}
+.discount-code{font-size:9.5px;text-align:right;line-height:1.45;margin-top:4px;width:100%;min-width:0;overflow-wrap:break-word}
+.discount-code-row-inner{display:inline-flex;flex-wrap:wrap;align-items:baseline;justify-content:flex-end;column-gap:5px;row-gap:2px;max-width:100%}
+.discount-code-emoji{font-size:10px;line-height:1;display:inline-flex;flex-shrink:0;align-self:center;filter:saturate(1.1)}
+.discount-code-label{color:var(--cream);opacity:.78;font-weight:500;letter-spacing:.02em}
+.discount-code-value{color:var(--gold-light);font-weight:600;letter-spacing:.01em}
+.discount-code-expires{color:var(--muted);font-size:9px;font-weight:400}
+.discount-code-row-inner--tip{align-items:flex-start;column-gap:5px}
+.discount-code-tip-icon{color:var(--gold);flex-shrink:0;margin-top:1px}
+.discount-code-tip-text{color:var(--gold-light);font-weight:400;text-align:right}
 .expires{color:var(--muted);font-size:9px}
 .links-section{margin-top:40px}
 .links-title{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}

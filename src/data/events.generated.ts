@@ -53,7 +53,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbrite.com/e/ladies-love-rb-dc-black-pride-edition-tickets-1989135185887?aff=oddtdtcreator",
     "ctaLabel": "More Info",
     "ctaButtonClass": "btn-free",
-    "cardClass": "tp-after-dark"
+    "cardClass": "tp-after-dark",
+    "discountCode": "💡 Free Drinks Giveaway Repost the event flyer for the event you're attending — a few lucky reposts will be randomly selected for 2 complimentary drinks at the door!"
   },
   {
     "id": "wednesday-the-pregame-dc-black-pride-weekend-official-kickoff-2",
@@ -105,7 +106,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbee.com/v/blissthurs26#/tickets",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour"
+    "cardClass": "tp-happy-hour",
+    "discountCode": "🏷️ Code: SoftQueerWealthXBliss"
   },
   {
     "id": "thursday-welcome-to-dc-happy-hour-4",
@@ -209,7 +211,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://posh.vip/e/dc-zestyworld-black-pride",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
+    "cardClass": "tp-after-dark",
+    "discountCode": "🏷️ Code: SQW"
   },
   {
     "id": "thursday-10th-annual-dc-black-pride-unity-ball-8",
@@ -394,7 +397,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbee.com/v/blissfri26#/tickets",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
+    "cardClass": "tp-after-dark",
+    "discountCode": "🏷️ Code: SoftQueerWealthXBliss"
   },
   {
     "id": "friday-booty-bounce-black-rodeo-15",
@@ -418,7 +422,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://posh.vip/e/booty-bounce-black-pride-edition",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
+    "cardClass": "tp-after-dark",
+    "discountCode": "🏷️ Code: sqwealth · expires 5/20"
   },
   {
     "id": "friday-hot-honey-dc-16",
@@ -818,7 +823,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbee.com/v/blisssatday26#/tickets",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
+    "cardClass": "tp-day-party",
+    "discountCode": "🏷️ Code: SoftQueerWealthXBliss"
   },
   {
     "id": "saturday-dc-black-pride-black-fem-4-fem-happy-hour-31",
@@ -945,7 +951,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbee.com/v/blisssat26#/tickets",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
+    "cardClass": "tp-after-dark",
+    "discountCode": "🏷️ Code: SoftQueerWealthXBliss"
   },
   {
     "id": "saturday-midnight-melt-36",
@@ -1097,7 +1104,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.queeraunties.com/pricing",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
+    "cardClass": "tp-after-dark",
+    "discountCode": "💡 First 50 to Love, Lust &amp; Labels panel get free entry"
   },
   {
     "id": "sunday-walk-breathe-rise-a-dc-black-pride-morning-in-nature-42",
@@ -1284,7 +1292,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbee.com/v/brownsugarbrunch#/tickets",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-brunch"
+    "cardClass": "tp-brunch",
+    "discountCode": "🏷️ Code: SoftQueerWealthXBliss"
   },
   {
     "id": "sunday-paint-and-debate-49",
@@ -1341,7 +1350,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbrite.com/e/the-gym-jam-by-play-play-tickets-1987072646777",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-outdoors"
+    "cardClass": "tp-outdoors",
+    "discountCode": "🏷️ Code: softqueerwealth"
   },
   {
     "id": "sunday-sweet-escape-rooftop-day-party-51",
@@ -1367,7 +1377,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbee.com/v/blisssun26#/tickets",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
+    "cardClass": "tp-day-party",
+    "discountCode": "🏷️ Code: SoftQueerWealthXBliss"
   },
   {
     "id": "sunday-aunties-in-dc-52",
@@ -1607,6 +1618,7 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.instagram.com/p/DYHOE1plhBH/?img_index=1",
     "ctaLabel": "More Info",
     "ctaButtonClass": "btn-free",
-    "cardClass": "tp-happy-hour"
+    "cardClass": "tp-happy-hour",
+    "discountCode": "💡 Free Drinks Giveaway Repost the event flyer for the event you're attending — a few lucky reposts will be randomly selected for 2 complimentary drinks at the door!"
   }
 ];
