@@ -44,8 +44,8 @@ export function BeautySection({ items }: BeautySectionProps) {
     <section className="beauty-section">
       <div className="beauty-header">
         <div>
-          <h2>Beauty Partners</h2>
-          <p>Perks, glam, grooming, and self-care picks vetted for Pride weekend</p>
+          <h2>Community Perks</h2>
+          <p>Perks, services, and self-care picks vetted for the community</p>
         </div>
         <span className="beauty-count">
           {items.length} partner{items.length === 1 ? '' : 's'}
@@ -70,7 +70,7 @@ export function BeautySection({ items }: BeautySectionProps) {
                 <div>
                   <div className="event-badges">
                     <span className="badge b-happyhour">{item.businessType}</span>
-                    {travels ? <span className="badge b-wellness">Travels</span> : null}
+                    {travels ? <span className="badge b-wellness">Mobile</span> : null}
                   </div>
                   <h3>{item.name}</h3>
                 </div>

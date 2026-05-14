@@ -29,7 +29,7 @@ export function trackBeautyClick(partnerName: string, url: string): void {
   if (!shouldTrackAnalytics()) return;
 
   window.gtag?.('event', 'beauty_partner_click', {
-    event_category: 'Beauty Guide',
+    event_category: 'Community Perks',
     event_label: 'Book Here',
     partner_name: partnerName,
     link_url: url,

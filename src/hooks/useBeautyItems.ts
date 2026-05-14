@@ -9,7 +9,7 @@ interface BeautyItemsState {
 }
 
 function errorMessage(error: unknown): string {
-  return error instanceof Error ? error.message : 'Unable to load beauty partners.';
+  return error instanceof Error ? error.message : 'Unable to load community perks.';
 }
 
 const useLiveSheet = import.meta.env.DEV;

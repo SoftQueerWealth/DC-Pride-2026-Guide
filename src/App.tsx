@@ -21,8 +21,10 @@ enum GuideTab {
 
 enum BeautyFilterKind {
   BusinessType = 'business-type',
-  Travels = 'travels',
+  Mobile = 'mobile',
 }
+
+const COMMUNITY_PERK_TYPES = ['Hair', 'Wellness', 'Brows'] as const;
 
 function groupByDay(list: PrideEvent[]): Map<DayId, PrideEvent[]> {
   const map = new Map<DayId, PrideEvent[]>();
@@ -39,11 +41,7 @@ function normalizeFilterValue(value: string): string {
   return value.toLowerCase().replace(/\s+/g, ' ').trim();
 }
 
-function beautyBusinessTypes(items: BeautyItem[]): string[] {
-  return [...new Set(items.map((item) => item.businessType).filter(Boolean))].sort((a, b) => a.localeCompare(b));
-}
-
-function beautyItemTravels(item: BeautyItem): boolean {
+function communityPerkIsMobile(item: BeautyItem): boolean {
   return item.fields.some(
     (field) =>
       ['travels', 'travelsstatus', 'travel', 'travelstatus'].includes(field.key) &&
@@ -55,7 +53,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<GuideTab>(GuideTab.Events);
   const [beautyFilterOpen, setBeautyFilterOpen] = useState(false);
   const [activeBeautyTypes, setActiveBeautyTypes] = useState<Set<string>>(() => new Set());
-  const [activeBeautyTravelsOnly, setActiveBeautyTravelsOnly] = useState(false);
+  const [activeMobileOnly, setActiveMobileOnly] = useState(false);
   const { events, error, isLoading } = useEvents();
   const beauty = useBeautyItems();
   const grouped = useMemo(() => groupByDay(events), [events]);
@@ -67,7 +65,7 @@ export default function App() {
     () => [
       {
         label: 'Business Type',
-        pills: beautyBusinessTypes(beauty.items).map((type) => ({
+        pills: COMMUNITY_PERK_TYPES.map((type) => ({
           kind: BeautyFilterKind.BusinessType,
           value: normalizeFilterValue(type),
           label: type,
@@ -75,22 +73,22 @@ export default function App() {
       },
       {
         label: 'Availability',
-        pills: [{ kind: BeautyFilterKind.Travels, value: 'true', label: 'Travels' }],
+        pills: [{ kind: BeautyFilterKind.Mobile, value: 'true', label: 'Mobile' }],
       },
     ],
-    [beauty.items],
+    [],
   );
   const filteredBeautyItems = useMemo(
     () =>
       beauty.items.filter((item) => {
         if (activeBeautyTypes.size > 0 && !activeBeautyTypes.has(normalizeFilterValue(item.businessType))) return false;
-        if (activeBeautyTravelsOnly && !beautyItemTravels(item)) return false;
+        if (activeMobileOnly && !communityPerkIsMobile(item)) return false;
         return true;
       }),
-    [activeBeautyTravelsOnly, activeBeautyTypes, beauty.items],
+    [activeBeautyTypes, activeMobileOnly, beauty.items],
   );
   const showBeautyNoResults = !beauty.isLoading && beauty.items.length > 0 && filteredBeautyItems.length === 0;
-  const activeBeautyFilterCount = activeBeautyTypes.size + (activeBeautyTravelsOnly ? 1 : 0);
+  const activeBeautyFilterCount = activeBeautyTypes.size + (activeMobileOnly ? 1 : 0);
 
   const handleTabChange = (tab: GuideTab) => {
     setActiveTab(tab);
@@ -99,13 +97,13 @@ export default function App() {
   };
 
   const isBeautyPillActive = (kind: BeautyFilterKind, value: string) => {
-    if (kind === BeautyFilterKind.Travels) return activeBeautyTravelsOnly;
+    if (kind === BeautyFilterKind.Mobile) return activeMobileOnly;
     return activeBeautyTypes.has(normalizeFilterValue(value));
   };
 
   const toggleBeautyPill = (kind: BeautyFilterKind, value: string) => {
-    if (kind === BeautyFilterKind.Travels) {
-      setActiveBeautyTravelsOnly((current) => !current);
+    if (kind === BeautyFilterKind.Mobile) {
+      setActiveMobileOnly((current) => !current);
       return;
     }
 
@@ -120,7 +118,7 @@ export default function App() {
 
   const clearBeautyFilters = () => {
     setActiveBeautyTypes(new Set());
-    setActiveBeautyTravelsOnly(false);
+    setActiveMobileOnly(false);
   };
 
   return (
@@ -148,7 +146,7 @@ export default function App() {
             aria-controls="beauty-panel"
             onClick={() => handleTabChange(GuideTab.Beauty)}
           >
-            Beauty
+            Community Perks
           </button>
         </div>
       </nav>
@@ -183,7 +181,7 @@ export default function App() {
         </div>
       ) : (
         <div id="beauty-panel" className="container" role="tabpanel" aria-labelledby="beauty-tab">
-          {beauty.isLoading ? <div className="data-status">Loading beauty partners...</div> : null}
+          {beauty.isLoading ? <div className="data-status">Loading community perks...</div> : null}
           {beauty.error ? (
             <div className="data-status data-status-error" role="alert">
               {beauty.error}
@@ -194,13 +192,13 @@ export default function App() {
           ) : null}
           {!beauty.isLoading && !beauty.error && beauty.items.length === 0 ? (
             <section className="beauty-card">
-              <span className="beauty-kicker">Beauty</span>
-              <h2>Beauty discounts are coming soon</h2>
+              <span className="beauty-kicker">Community Perks</span>
+              <h2>Community perks are coming soon</h2>
               <p>Check back soon for curated glam, grooming, and self-care perks from our confirmed partners.</p>
             </section>
           ) : null}
           <div className={`no-results${showBeautyNoResults ? ' visible' : ''}`}>
-            No beauty partners match your filters. Try clearing some!
+            No community perks match your filters. Try clearing some!
           </div>
         </div>
       )}
@@ -231,7 +229,7 @@ export default function App() {
         <>
           <div className="filter-fab">
             <button type="button" className="filter-toggle-btn" onClick={() => setBeautyFilterOpen((open) => !open)}>
-              Filter Beauty{' '}
+              Filter Perks{' '}
               <span className={`filter-count${activeBeautyFilterCount > 0 ? ' visible' : ''}`}>
                 {activeBeautyFilterCount}
               </span>
@@ -239,8 +237,8 @@ export default function App() {
           </div>
           <FilterPanel
             open={beautyFilterOpen}
-            title="Filter Beauty"
-            ariaLabel="Filter beauty partners"
+            title="Filter Community Perks"
+            ariaLabel="Filter community perks"
             sections={beautyFilterSections}
             isPillActive={isBeautyPillActive}
             onTogglePill={toggleBeautyPill}

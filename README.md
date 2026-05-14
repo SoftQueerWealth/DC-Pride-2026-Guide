@@ -13,7 +13,7 @@ VITE_GOOGLE_SHEETS_API_KEY=YOUR_GOOGLE_SHEETS_API_KEY_HERE
 
 The app reads from the spreadsheet configured by `VITE_GOOGLE_SHEETS_ID`, tab `events`. The first row should be headers. Recommended columns are `day`, `name`, `organizer`, `types`, `vibes`, `free`, `badges`, `time`, `location`, `vibeTags`, `ctaHref`, `ctaLabel`, `ctaButtonClass`, and `cardClass`.
 
-In local development, the app also reads the `beauty` tab. Beauty rows are shown only when `confirmed partner` is confirmed and `test discount code status` is `pass`; blank or `NaN` fields are skipped. Beauty filters include the `business type` column and a `Travels` option for partners whose travel status is yes.
+In local development, the app also reads the `beauty` tab for the Community Perks section. Rows are shown only when `confirmed partner` is confirmed and `test discount code status` is `pass`; blank or `NaN` fields are skipped. Community Perks filters include the `business type` column and a `Mobile` option for partners whose travel status is yes.
 
 Because this is a browser app, any `VITE_` API key used in development can be exposed in built JavaScript if the live sheet path is enabled for production. Keep production on bundled data unless you intentionally want live updates.
 
@@ -32,9 +32,9 @@ Because this is a browser app, any `VITE_` API key used in development can be ex
 
 `wrangler.jsonc` serves the **`dist`** directory. Run `npm run build` before `wrangler deploy` (or wire CI to build then deploy).
 
-Production reads guide data from the deployed bundle, not Google Sheets at runtime. To change production Events or Beauty content, update the generated data files and deploy again.
+Production reads guide data from the deployed bundle, not Google Sheets at runtime. To change production Events or Community Perks content, update the generated data files and deploy again.
 
-For Beauty sheet changes:
+For Community Perks sheet changes:
 
 ```sh
 npm run sync-beauty
@@ -48,7 +48,7 @@ wrangler deploy
 - `src/constants/` — Day order and filter pill definitions
 - `src/data/googleSheets.ts` — Google Sheets fetch and row parser
 - `src/data/events.generated.ts` — archived generated event list from the legacy migration
-- `src/data/beauty.generated.ts` — generated Beauty partner list for production builds
+- `src/data/beauty.generated.ts` — generated Community Perks partner list for production builds
 - `src/hooks/useEventFilters.ts` — Filter state (mirrors legacy behavior)
 - `src/lib/` — Analytics (`gtag`) and Google Maps URL helpers
 - `legacy/index.html` — Archived monolithic site used as the extraction source
