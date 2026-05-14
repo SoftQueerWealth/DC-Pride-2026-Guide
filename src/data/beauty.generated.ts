@@ -4,9 +4,9 @@ import type { BeautyItem } from '../types/beauty';
 
 export const generatedBeautyItems: BeautyItem[] = [
   {
-    "id": "hair-girls-next-door-on-the-runnn-0",
+    "id": "hair-salon-girls-next-door-on-the-runnn-0",
     "name": "Girls Next Door + On the RuNNN",
-    "businessType": "Hair",
+    "businessType": "Hair Salon",
     "fields": [
       {
         "key": "businessname",
@@ -16,7 +16,12 @@ export const generatedBeautyItems: BeautyItem[] = [
       {
         "key": "businesstype",
         "label": "Business Type",
-        "value": "Hair"
+        "value": "Hair Salon"
+      },
+      {
+        "key": "services",
+        "label": "Services",
+        "value": "Hair Extension + Wig Designs"
       },
       {
         "key": "contactinfo",
@@ -32,21 +37,26 @@ export const generatedBeautyItems: BeautyItem[] = [
       {
         "key": "promo",
         "label": "Promo",
-        "value": "$15 off"
+        "value": "$15 off services $350 and above"
       },
       {
         "key": "bookingsite",
         "label": "Booking Site",
-        "value": "https://girlnextdoorhair.com/products/sew-in-package-for-womens-month?pr_prod_strat=e5_desc&pr_rec_id=df5b9c91f&pr_rec_pid=8174587314351&pr_ref_pid=8276258455727&pr_seq=uniform",
-        "href": "https://girlnextdoorhair.com/products/sew-in-package-for-womens-month?pr_prod_strat=e5_desc&pr_rec_id=df5b9c91f&pr_rec_pid=8174587314351&pr_ref_pid=8276258455727&pr_seq=uniform"
+        "value": "https://girlnextdoorhair.com/products/bundle-sale",
+        "href": "https://girlnextdoorhair.com/products/bundle-sale"
       },
       {
         "key": "owner",
         "label": "Owner",
         "value": "Quarita"
+      },
+      {
+        "key": "travels",
+        "label": "Travels?",
+        "value": "No"
       }
     ],
-    "primaryHref": "https://girlnextdoorhair.com/products/sew-in-package-for-womens-month?pr_prod_strat=e5_desc&pr_rec_id=df5b9c91f&pr_rec_pid=8174587314351&pr_ref_pid=8276258455727&pr_seq=uniform"
+    "primaryHref": "https://girlnextdoorhair.com/products/bundle-sale"
   },
   {
     "id": "brows-brow-d-2",
@@ -66,7 +76,7 @@ export const generatedBeautyItems: BeautyItem[] = [
       {
         "key": "services",
         "label": "Services",
-        "value": "Brows"
+        "value": "Brow Lamination + Tint, Lips + Chin Wax"
       },
       {
         "key": "contactinfo",
@@ -94,14 +104,19 @@ export const generatedBeautyItems: BeautyItem[] = [
         "key": "owner",
         "label": "Owner",
         "value": "A'Jahna Chapman"
+      },
+      {
+        "key": "travels",
+        "label": "Travels?",
+        "value": "No"
       }
     ],
     "primaryHref": "https://browd.glossgenius.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnja_bXAuLQJvNMGleW2OdargNUyYNAInkPlgdrDqCUF1dBw5uW7IVDSSqj-o_aem_LRRV7D8GMoHE4xuKao4LTA"
   },
   {
-    "id": "wellness-acu-with-naja-9",
+    "id": "acupuncture-acu-with-naja-3",
     "name": "Acu with Naja",
-    "businessType": "Wellness",
+    "businessType": "Acupuncture",
     "fields": [
       {
         "key": "businessname",
@@ -111,7 +126,7 @@ export const generatedBeautyItems: BeautyItem[] = [
       {
         "key": "businesstype",
         "label": "Business Type",
-        "value": "Wellness"
+        "value": "Acupuncture"
       },
       {
         "key": "services",
@@ -153,9 +168,9 @@ export const generatedBeautyItems: BeautyItem[] = [
     "primaryHref": "https://www.instagram.com/acuwithnaja?igsh=MWVjOW51ZjJqMm5iYQ=="
   },
   {
-    "id": "hair-adaptable-creationz-10",
+    "id": "barber-adaptable-creationz-9",
     "name": "Adaptable Creationz",
-    "businessType": "Hair",
+    "businessType": "Barber",
     "fields": [
       {
         "key": "businessname",
@@ -165,12 +180,12 @@ export const generatedBeautyItems: BeautyItem[] = [
       {
         "key": "businesstype",
         "label": "Business Type",
-        "value": "Hair"
+        "value": "Barber"
       },
       {
         "key": "services",
         "label": "Services",
-        "value": "Barber, Braids, Cornrows"
+        "value": "Haircuts, Locs, Natural Braids/Twists"
       },
       {
         "key": "contactinfo",
