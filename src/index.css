@@ -135,4 +135,4 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .footer{text-align:center;padding:32px 16px;border-top:1px solid var(--border);font-size:11px;color:var(--muted);line-height:1.8}
 .footer strong{color:var(--gold)}
 .hero-social svg{fill:none;stroke:currentColor;flex-shrink:0}
-@media (max-width:520px){.beauty-header,.beauty-partner-top{flex-direction:column}.beauty-details{grid-template-columns:1fr}.beauty-partner-top .btn{align-self:flex-start}}
+@media (max-width:520px){.beauty-header{flex-direction:column}.beauty-details{grid-template-columns:1fr}.beauty-partner-top{align-items:flex-start}.beauty-partner-top .btn{flex-shrink:0}}
