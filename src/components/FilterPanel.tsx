@@ -1,18 +1,30 @@
-import { FILTER_SECTIONS, type FilterKind } from '../constants/filters';
+import type { FilterSectionDef } from '../constants/filters';
 
-interface FilterPanelProps {
+interface FilterPanelProps<TKind extends string> {
   open: boolean;
-  isPillActive: (kind: FilterKind, value: string) => boolean;
-  onTogglePill: (kind: FilterKind, value: string) => void;
+  title: string;
+  ariaLabel: string;
+  sections: FilterSectionDef<TKind>[];
+  isPillActive: (kind: TKind, value: string) => boolean;
+  onTogglePill: (kind: TKind, value: string) => void;
   onClearAll: () => void;
   onClose: () => void;
 }
 
-export function FilterPanel({ open, isPillActive, onTogglePill, onClearAll, onClose }: FilterPanelProps) {
+export function FilterPanel<TKind extends string>({
+  open,
+  title,
+  ariaLabel,
+  sections,
+  isPillActive,
+  onTogglePill,
+  onClearAll,
+  onClose,
+}: FilterPanelProps<TKind>) {
   return (
-    <div className={`filter-panel${open ? ' open' : ''}`} id="filterPanel" role="dialog" aria-modal="true" aria-label="Filter events">
+    <div className={`filter-panel${open ? ' open' : ''}`} id="filterPanel" role="dialog" aria-modal="true" aria-label={ariaLabel}>
       <div className="filter-panel-header">
-        <div className="filter-panel-title">Filter Events</div>
+        <div className="filter-panel-title">{title}</div>
         <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
           <button type="button" className="clear-btn" onClick={onClearAll}>
             Clear All
@@ -22,7 +34,7 @@ export function FilterPanel({ open, isPillActive, onTogglePill, onClearAll, onCl
           </button>
         </div>
       </div>
-      {FILTER_SECTIONS.map(({ label, pills }) => (
+      {sections.map(({ label, pills }) => (
         <div key={label} className="filter-section">
           <div className="filter-section-label">{label}</div>
           <div className="filter-pills">

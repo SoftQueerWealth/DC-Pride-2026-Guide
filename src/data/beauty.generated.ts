@@ -1,0 +1,194 @@
+/* eslint-disable */
+// Auto-generated from the Google Sheets beauty tab. Do not edit by hand.
+import type { BeautyItem } from '../types/beauty';
+
+export const generatedBeautyItems: BeautyItem[] = [
+  {
+    "id": "hair-girls-next-door-on-the-runnn-0",
+    "name": "Girls Next Door + On the RuNNN",
+    "businessType": "Hair",
+    "fields": [
+      {
+        "key": "businessname",
+        "label": "Business Name",
+        "value": "Girls Next Door + On the RuNNN"
+      },
+      {
+        "key": "businesstype",
+        "label": "Business Type",
+        "value": "Hair"
+      },
+      {
+        "key": "contactinfo",
+        "label": "Contact Info",
+        "value": "https://www.ontherunnnsalon.com/",
+        "href": "https://www.ontherunnnsalon.com/"
+      },
+      {
+        "key": "discountcode",
+        "label": "Discount Code?",
+        "value": "GIRLYPOP"
+      },
+      {
+        "key": "promo",
+        "label": "Promo",
+        "value": "$15 off"
+      },
+      {
+        "key": "bookingsite",
+        "label": "Booking Site",
+        "value": "https://girlnextdoorhair.com/products/sew-in-package-for-womens-month?pr_prod_strat=e5_desc&pr_rec_id=df5b9c91f&pr_rec_pid=8174587314351&pr_ref_pid=8276258455727&pr_seq=uniform",
+        "href": "https://girlnextdoorhair.com/products/sew-in-package-for-womens-month?pr_prod_strat=e5_desc&pr_rec_id=df5b9c91f&pr_rec_pid=8174587314351&pr_ref_pid=8276258455727&pr_seq=uniform"
+      },
+      {
+        "key": "owner",
+        "label": "Owner",
+        "value": "Quarita"
+      }
+    ],
+    "primaryHref": "https://girlnextdoorhair.com/products/sew-in-package-for-womens-month?pr_prod_strat=e5_desc&pr_rec_id=df5b9c91f&pr_rec_pid=8174587314351&pr_ref_pid=8276258455727&pr_seq=uniform"
+  },
+  {
+    "id": "brows-brow-d-2",
+    "name": "Brow'd",
+    "businessType": "Brows",
+    "fields": [
+      {
+        "key": "businessname",
+        "label": "Business Name",
+        "value": "Brow'd"
+      },
+      {
+        "key": "businesstype",
+        "label": "Business Type",
+        "value": "Brows"
+      },
+      {
+        "key": "contactinfo",
+        "label": "Contact Info",
+        "value": "https://browd.glossgenius.com/contact",
+        "href": "https://browd.glossgenius.com/contact"
+      },
+      {
+        "key": "discountcode",
+        "label": "Discount Code?",
+        "value": "Select \"SQW Pride\" service"
+      },
+      {
+        "key": "promo",
+        "label": "Promo",
+        "value": "20% off"
+      },
+      {
+        "key": "bookingsite",
+        "label": "Booking Site",
+        "value": "https://browd.glossgenius.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnja_bXAuLQJvNMGleW2OdargNUyYNAInkPlgdrDqCUF1dBw5uW7IVDSSqj-o_aem_LRRV7D8GMoHE4xuKao4LTA",
+        "href": "https://browd.glossgenius.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnja_bXAuLQJvNMGleW2OdargNUyYNAInkPlgdrDqCUF1dBw5uW7IVDSSqj-o_aem_LRRV7D8GMoHE4xuKao4LTA"
+      },
+      {
+        "key": "owner",
+        "label": "Owner",
+        "value": "A'Jahna Chapman"
+      }
+    ],
+    "primaryHref": "https://browd.glossgenius.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnja_bXAuLQJvNMGleW2OdargNUyYNAInkPlgdrDqCUF1dBw5uW7IVDSSqj-o_aem_LRRV7D8GMoHE4xuKao4LTA"
+  },
+  {
+    "id": "hair-naja-9",
+    "name": "Naja",
+    "businessType": "Hair",
+    "fields": [
+      {
+        "key": "businessname",
+        "label": "Business Name",
+        "value": "Naja"
+      },
+      {
+        "key": "businesstype",
+        "label": "Business Type",
+        "value": "Hair"
+      },
+      {
+        "key": "contactinfo",
+        "label": "Contact Info",
+        "value": "https://www.instagram.com/acuwithnaja?igsh=MWVjOW51ZjJqMm5iYQ==",
+        "href": "https://www.instagram.com/acuwithnaja?igsh=MWVjOW51ZjJqMm5iYQ=="
+      },
+      {
+        "key": "discountcode",
+        "label": "Discount Code?",
+        "value": "Put SQW in message to redeem"
+      },
+      {
+        "key": "promo",
+        "label": "Promo",
+        "value": "20% off first session"
+      },
+      {
+        "key": "bookingsite",
+        "label": "Booking Site",
+        "value": "DM to book https://www.instagram.com/acuwithnaja?igsh=MWVjOW51ZjJqMm5iYQ=="
+      },
+      {
+        "key": "owner",
+        "label": "Owner",
+        "value": "Naja"
+      },
+      {
+        "key": "travels",
+        "label": "Travels?",
+        "value": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "hair-adaptable-creationz-10",
+    "name": "Adaptable Creationz",
+    "businessType": "Hair",
+    "fields": [
+      {
+        "key": "businessname",
+        "label": "Business Name",
+        "value": "Adaptable Creationz"
+      },
+      {
+        "key": "businesstype",
+        "label": "Business Type",
+        "value": "Hair"
+      },
+      {
+        "key": "contactinfo",
+        "label": "Contact Info",
+        "value": "https://www.adaptablecreationz.com/contact-us",
+        "href": "https://www.adaptablecreationz.com/contact-us"
+      },
+      {
+        "key": "discountcode",
+        "label": "Discount Code?",
+        "value": "SQW"
+      },
+      {
+        "key": "promo",
+        "label": "Promo",
+        "value": "20% off"
+      },
+      {
+        "key": "bookingsite",
+        "label": "Booking Site",
+        "value": "https://www.adaptablecreationz.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcARx5AdleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaePj-ai_4f6hBYWtQ4FHgw0njBjCciYOoJW9jc46DXSHl_WGD0f6sb3kbG2XA_aem_RmzObZMizZIAWs4TrlccCQ",
+        "href": "https://www.adaptablecreationz.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcARx5AdleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaePj-ai_4f6hBYWtQ4FHgw0njBjCciYOoJW9jc46DXSHl_WGD0f6sb3kbG2XA_aem_RmzObZMizZIAWs4TrlccCQ"
+      },
+      {
+        "key": "owner",
+        "label": "Owner",
+        "value": "Lydia Gulley"
+      },
+      {
+        "key": "travels",
+        "label": "Travels?",
+        "value": "Yes"
+      }
+    ],
+    "primaryHref": "https://www.adaptablecreationz.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcARx5AdleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaePj-ai_4f6hBYWtQ4FHgw0njBjCciYOoJW9jc46DXSHl_WGD0f6sb3kbG2XA_aem_RmzObZMizZIAWs4TrlccCQ"
+  }
+];
