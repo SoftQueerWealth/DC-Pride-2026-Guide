@@ -25,6 +25,7 @@ Because this is a browser app, any `VITE_` API key used in development can be ex
 | `npm run build` | Typecheck + production bundle to `dist/` |
 | `npm run preview` | Serve `dist/` locally |
 | `npm run lint` | ESLint |
+| `npm run sync-beauty` | Regenerate `src/data/beauty.generated.ts` from the Google Sheets `beauty` tab |
 | `npm run extract-events` | Regenerate `src/data/events.generated.ts` from `legacy/index.html` |
 
 ## Deploy (Cloudflare)
@@ -32,6 +33,14 @@ Because this is a browser app, any `VITE_` API key used in development can be ex
 `wrangler.jsonc` serves the **`dist`** directory. Run `npm run build` before `wrangler deploy` (or wire CI to build then deploy).
 
 Production reads guide data from the deployed bundle, not Google Sheets at runtime. To change production Events or Beauty content, update the generated data files and deploy again.
+
+For Beauty sheet changes:
+
+```sh
+npm run sync-beauty
+npm run build
+wrangler deploy
+```
 
 ## Layout
 
