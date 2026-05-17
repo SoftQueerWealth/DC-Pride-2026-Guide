@@ -22,7 +22,7 @@ export function Hero() {
         <br />
         <em>Schedule subject to change.</em>
       </div>
-      <p className="last-updated">Last updated · May 14, 2026</p>
+      <p className="last-updated">Last updated · May 17, 2026</p>
     </header>
   );
 }
