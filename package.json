@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "sync-beauty": "node scripts/sync-beauty.mjs",
+    "sync-events": "npx tsx scripts/sync-events.ts",
     "extract-events": "node scripts/extract-events.mjs"
   },
   "dependencies": {

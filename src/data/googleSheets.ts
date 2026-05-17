@@ -101,7 +101,7 @@ const COLUMN_ALIASES = {
   name: ['name', 'event', 'eventname', 'eventtitle', 'title'],
   organizer: ['organizer', 'eventorganizer', 'host', 'hosts', 'presenter'],
   types: ['types', 'type', 'venuetype', 'eventtypes', 'eventtype', 'datatypes', 'data-types', 'category', 'categories'],
-  vibesRaw: ['vibesraw', 'vibes', 'datavibes', 'data-vibes', 'vibe'],
+  vibesRaw: ['vibesraw', 'vibes', 'vibestags', 'datavibes', 'data-vibes', 'vibe'],
   free: ['free', 'freetickets', 'isfree', 'datafree', 'data-free', 'price', 'cost'],
   badges: ['badges', 'eventbadges', 'badge', 'labels'],
   time: ['time', 'starttime', 'eventtime', 'event-time'],
@@ -109,7 +109,7 @@ const COLUMN_ALIASES = {
   venueAddress: ['venueaddress', 'address'],
   vibeTags: ['vibestags', 'vibetags', 'vibesdisplay', 'displayvibes'],
   ticketStatus: ['ticketstatus', 'status', 'registrationstatus'],
-  ctaHref: ['ctahref', 'href', 'url', 'link', 'ticketlink', 'tickets', 'eventlink', 'ctalink'],
+  ctaHref: ['ctahref', 'href', 'url', 'link', 'ticketlink', 'tickets', 'eventlink', 'ctalink', 'iglink'],
   ctaLabel: ['ctalabel', 'buttonlabel', 'linklabel', 'actionlabel'],
   ctaButtonClass: ['ctabuttonclass', 'buttonclass', 'btnclass'],
   cardClass: ['cardclass', 'typeclass', 'accentclass'],
@@ -154,12 +154,26 @@ interface SheetsApiResponse {
 type ColumnKey = keyof typeof COLUMN_ALIASES;
 type BeautyColumnKey = keyof typeof BEAUTY_COLUMN_ALIASES;
 
+function envValue(key: 'VITE_GOOGLE_SHEETS_API_KEY' | 'VITE_GOOGLE_SHEETS_ID'): string {
+  const fromProcess = typeof process !== 'undefined' ? process.env[key]?.trim() : '';
+  if (fromProcess) return fromProcess;
+
+  const metaEnv = import.meta.env as Record<string, string | undefined>;
+  return metaEnv[key]?.trim() ?? '';
+}
+
+export function isGoogleSheetsConfigured(): boolean {
+  const apiKey = envValue('VITE_GOOGLE_SHEETS_API_KEY');
+  const spreadsheetId = envValue('VITE_GOOGLE_SHEETS_ID');
+  return !isMissingApiKey(apiKey) && !isMissingSpreadsheetId(spreadsheetId);
+}
+
 function getApiKey(): string {
-  return import.meta.env.VITE_GOOGLE_SHEETS_API_KEY?.trim() ?? '';
+  return envValue('VITE_GOOGLE_SHEETS_API_KEY');
 }
 
 function getSpreadsheetId(): string {
-  return import.meta.env.VITE_GOOGLE_SHEETS_ID?.trim() ?? '';
+  return envValue('VITE_GOOGLE_SHEETS_ID');
 }
 
 function isMissingApiKey(apiKey: string): boolean {
@@ -216,7 +230,19 @@ function cleanCellValue(value: unknown): string {
 function readCell(headers: string[], row: string[], key: ColumnKey): string {
   for (const alias of COLUMN_ALIASES[key]) {
     const index = headers.indexOf(normalizeHeader(alias));
-    if (index >= 0) return cleanCellValue(row[index]);
+    if (index < 0) continue;
+    const value = cleanCellValue(row[index]);
+    if (value) return value;
+  }
+  return '';
+}
+
+function readDayCell(headers: string[], row: string[]): string {
+  for (const alias of COLUMN_ALIASES.day) {
+    const index = headers.indexOf(normalizeHeader(alias));
+    if (index < 0) continue;
+    const value = cleanCellValue(row[index]);
+    if (value) return value;
   }
   return '';
 }
@@ -264,6 +290,30 @@ function isPrimaryBeautyLink(field: BeautyField): boolean {
   return Boolean(field.href) && BEAUTY_PRIMARY_LINK_COLUMNS.some((column) => normalizedLabel.includes(column));
 }
 
+const CALENDAR_DAY_BY_DOW: Partial<Record<number, DayId>> = {
+  0: EventDay.Sunday,
+  1: EventDay.Monday,
+  3: EventDay.Wednesday,
+  4: EventDay.Thursday,
+  5: EventDay.Friday,
+  6: EventDay.Saturday,
+};
+
+function parseDayFromCalendarDate(value: string): DayId | null {
+  const match = value.trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);
+  if (!match) return null;
+
+  const month = Number(match[1]) - 1;
+  const day = Number(match[2]);
+  let year = Number(match[3]);
+  if (year < 100) year += 2000;
+
+  const date = new Date(year, month, day);
+  if (Number.isNaN(date.getTime())) return null;
+
+  return CALENDAR_DAY_BY_DOW[date.getDay()] ?? null;
+}
+
 function parseDay(value: string): DayId | null {
   const normalized = normalizeToken(value);
   const exact = DAY_ALIASES[normalized];
@@ -274,7 +324,7 @@ function parseDay(value: string): DayId | null {
     if (padded.includes(` ${alias} `)) return day;
   }
 
-  return null;
+  return parseDayFromCalendarDate(value);
 }
 
 function dayLabelFor(day: DayId): string {
@@ -394,7 +444,7 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
       if (row.every((cell) => !String(cell ?? '').trim())) return null;
 
       const name = readCell(headers, row, 'name');
-      const day = parseDay(readCell(headers, row, 'day'));
+      const day = parseDay(readDayCell(headers, row));
       if (!name || !day) return null;
 
       const ticketStatus = readCell(headers, row, 'ticketStatus');
