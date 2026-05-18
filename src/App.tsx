@@ -145,7 +145,7 @@ export default function App() {
     trackItineraryShare(itinerary.myCount);
     return shareItinerary({
       title: 'My DC Black Pride Weekend',
-      text: payload.text,
+      url: payload.url,
     });
   }, [events, itinerary.myCount, itinerary.mySelection]);
 

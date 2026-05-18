@@ -19,7 +19,7 @@ export function ItineraryHint({ count, hidden = false }: ItineraryHintProps) {
       {hasSelections ? (
         <p className="itinerary-hint-body">
           <strong>Your itinerary</strong> — {count} event{count === 1 ? '' : 's'} selected. Tap{' '}
-          <strong>Share itinerary</strong> below to send names and ticket links to friends.
+          <strong>Share itinerary</strong> below to share a link to your itinerary with friends.
         </p>
       ) : (
         <p className="itinerary-hint-body">
