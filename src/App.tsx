@@ -1,19 +1,26 @@
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { BeautySection } from './components/BeautySection';
 import { DAY_ORDER } from './constants/days';
 import { FILTER_SECTIONS, type FilterSectionDef } from './constants/filters';
 import { useBeautyItems } from './hooks/useBeautyItems';
 import { useEvents } from './hooks/useEvents';
 import { useEventFilters } from './hooks/useEventFilters';
+import { useItinerary } from './hooks/useItinerary';
 import type { BeautyItem } from './types/beauty';
 import type { DayId, PrideEvent } from './types/event';
 import { DaySection } from './components/DaySection';
 import { FilterPanel } from './components/FilterPanel';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
+import { ItineraryBar } from './components/ItineraryBar';
+import { ItineraryHint } from './components/ItineraryHint';
 import { Legend } from './components/Legend';
 import { LinksSection } from './components/LinksSection';
+import { SharedItineraryHeader } from './components/SharedItineraryHeader';
+import { trackItineraryShare } from './lib/analytics';
 import { communityPerkTypeLabel } from './lib/communityPerks';
+import { formatItineraryShare } from './lib/formatItinerary';
+import { shareItinerary } from './lib/shareItinerary';
 
 enum GuideTab {
   Events = 'events',
@@ -59,7 +66,15 @@ export default function App() {
   const beauty = useBeautyItems();
   const grouped = useMemo(() => groupByDay(events), [events]);
   const filter = useEventFilters(events);
-  const showNoResults = !isLoading && events.length > 0 && !filter.anyVisible;
+  const itinerary = useItinerary(events);
+
+  const isEventShown = useCallback(
+    (event: PrideEvent) => itinerary.isEventShownInView(event.id) && filter.isEventVisible(event),
+    [filter, itinerary],
+  );
+
+  const anyEventsVisible = useMemo(() => events.some(isEventShown), [events, isEventShown]);
+  const showNoResults = !isLoading && events.length > 0 && !anyEventsVisible;
   const showBeautyTab = activeTab === GuideTab.Beauty;
   const showEventsTab = !showBeautyTab;
   const beautyFilterSections = useMemo<FilterSectionDef<BeautyFilterKind>[]>(
@@ -124,6 +139,16 @@ export default function App() {
     setActiveMobileOnly(false);
   };
 
+  const handleShareItinerary = useCallback(async () => {
+    const payload = formatItineraryShare(events, itinerary.mySelection, window.location.origin);
+    if (!payload) return 'failed' as const;
+    trackItineraryShare(itinerary.myCount);
+    return shareItinerary({
+      title: 'My DC Black Pride Weekend',
+      text: payload.text,
+    });
+  }, [events, itinerary.myCount, itinerary.mySelection]);
+
   return (
     <>
       <Hero />
@@ -155,8 +180,17 @@ export default function App() {
       </nav>
       {showEventsTab ? (
         <div id="events-panel" role="tabpanel" aria-labelledby="events-tab">
+          {itinerary.hasSharedContext ? (
+            <SharedItineraryHeader
+              eventCount={itinerary.sharedCount}
+              viewMode={itinerary.viewMode}
+              onViewModeChange={itinerary.setViewMode}
+              onClear={itinerary.clearSharedView}
+            />
+          ) : null}
           <Legend />
-          <div className="container">
+          <ItineraryHint count={itinerary.myCount} hidden={itinerary.hasSharedContext} />
+          <div className={`container${itinerary.myCount > 0 ? ' has-itinerary-bar' : ''}`}>
             {isLoading ? <div className="data-status">Loading events...</div> : null}
             {error ? (
               <div className="data-status data-status-error" role="alert">
@@ -172,12 +206,16 @@ export default function App() {
                   day={day}
                   dayLabel={dayLabel}
                   events={dayEvents}
-                  isEventVisible={filter.isEventVisible}
+                  isEventVisible={isEventShown}
+                  isGoing={(e) => itinerary.isGoing(e.id)}
+                  onToggleGoing={(e) => itinerary.toggleGoing(e.id)}
                 />
               );
             })}
             <div className={`no-results${showNoResults ? ' visible' : ''}`}>
-              No events match your filters. Try clearing some! 🖤
+              {itinerary.isInSharedView
+                ? 'No shared events match your filters. Try clearing some or view the full guide.'
+                : 'No events match your filters. Try clearing some! 🖤'}
             </div>
             <LinksSection />
           </div>
@@ -208,7 +246,12 @@ export default function App() {
       <Footer />
       {showEventsTab ? (
         <>
-          <div className="filter-fab">
+          <ItineraryBar
+            count={itinerary.myCount}
+            onShare={handleShareItinerary}
+            onClear={itinerary.clearMySelection}
+          />
+          <div className={`filter-fab${itinerary.myCount > 0 ? ' filter-fab--with-itinerary' : ''}`}>
             <button type="button" className="filter-toggle-btn" onClick={filter.togglePanel}>
               🎛️ Filter Events{' '}
               <span className={`filter-count${filter.activeFilterCount > 0 ? ' visible' : ''}`}>

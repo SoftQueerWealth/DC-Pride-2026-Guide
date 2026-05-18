@@ -45,3 +45,22 @@ export function trackSocialClick(platform: SocialPlatform, url: string): void {
     link_placement: 'hero',
   });
 }
+
+export function trackItineraryShare(eventCount: number): void {
+  if (!shouldTrackAnalytics()) return;
+
+  window.gtag?.('event', 'itinerary_share', {
+    event_category: 'Event Guide',
+    event_label: 'Share itinerary',
+    event_count: eventCount,
+  });
+}
+
+export function trackItineraryViewToggle(mode: string): void {
+  if (!shouldTrackAnalytics()) return;
+
+  window.gtag?.('event', 'itinerary_view_toggle', {
+    event_category: 'Event Guide',
+    event_label: mode,
+  });
+}
