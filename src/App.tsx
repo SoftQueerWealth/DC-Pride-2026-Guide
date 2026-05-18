@@ -1,6 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 import { BeautySection } from './components/BeautySection';
 import { DAY_ORDER } from './constants/days';
+import { PUBLIC_SITE_ORIGIN } from './constants/site';
 import { FILTER_SECTIONS, type FilterSectionDef } from './constants/filters';
 import { useBeautyItems } from './hooks/useBeautyItems';
 import { useEvents } from './hooks/useEvents';
@@ -141,7 +142,7 @@ export default function App() {
   };
 
   const handleShareItinerary = useCallback(async () => {
-    const payload = formatItineraryShare(events, itinerary.mySelection, window.location.origin);
+    const payload = formatItineraryShare(events, itinerary.mySelection, PUBLIC_SITE_ORIGIN);
     if (!payload) return 'failed' as const;
     trackItineraryShare(itinerary.myCount);
     return shareItinerary({ text: payload.text });
