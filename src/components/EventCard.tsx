@@ -37,7 +37,6 @@ export function EventCard({ event, visible, going = false, onToggleGoing }: Even
         </button>
       ) : null}
       <div className="event-info">
-        {going ? <span className="event-itinerary-badge">In your itinerary</span> : null}
         <div className="event-badges">
           {event.badges.map((b) => (
             <span key={b} className={`badge ${badgeClassForLabel(b)}`}>
