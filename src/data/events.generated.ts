@@ -4,7 +4,7 @@ import type { PrideEvent } from '../types/event';
 
 export const generatedEvents: PrideEvent[] = [
   {
-    "id": "wednesday-the-warm-up-with-fela-0",
+    "id": "2",
     "day": "wednesday",
     "dayLabel": "Wednesday",
     "name": "The Warm Up with Fela",
@@ -30,7 +30,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "wednesday-ladies-love-r-b-1",
+    "id": "3",
     "day": "wednesday",
     "dayLabel": "Wednesday",
     "name": "Ladies Love R&B",
@@ -57,7 +57,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "Free Drinks Giveaway\nRepost the event flyer for the event you're attending — a few lucky reposts will be randomly selected for 2 complimentary drinks at the door!"
   },
   {
-    "id": "wednesday-the-pregame-dc-black-pride-weekend-official-kickoff-2",
+    "id": "4",
     "day": "wednesday",
     "dayLabel": "Wednesday",
     "name": "The Pregame: DC Black Pride weekend official kickoff",
@@ -83,7 +83,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "thursday-brown-sugar-welcome-to-dc-black-pride-rooftop-happy-hour-3",
+    "id": "5",
     "day": "thursday",
     "dayLabel": "Thursday",
     "name": "Brown Sugar: Welcome to DC Black Pride Rooftop Happy Hour",
@@ -110,7 +110,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "SoftQueerWealthXBliss"
   },
   {
-    "id": "thursday-zesty-world-black-pride-kickoff-for-the-gworls-gays-and-theys-4",
+    "id": "6",
     "day": "thursday",
     "dayLabel": "Thursday",
     "name": "Zesty World: Black Pride Kickoff for the Gworls, Gays, and Theys",
@@ -135,7 +135,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "SQW"
   },
   {
-    "id": "thursday-sweet-beginnings-5",
+    "id": "7",
     "day": "thursday",
     "dayLabel": "Thursday",
     "name": "Sweet Beginnings",
@@ -162,7 +162,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "Free Ticket Giveaway\nPost about the event you're attending and tag @unleasheddc for a chance to win complimentary tickets. 4 winners will be selected per event!"
   },
   {
-    "id": "thursday-a-toast-to-her-dc-black-pride-edition-6",
+    "id": "8",
     "day": "thursday",
     "dayLabel": "Thursday",
     "name": "A Toast to HER: DC Black Pride Edition",
@@ -188,7 +188,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "thursday-welcome-to-dc-happy-hour-7",
+    "id": "9",
     "day": "thursday",
     "dayLabel": "Thursday",
     "name": "Welcome to DC: Happy Hour",
@@ -216,7 +216,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "thursday-10th-annual-dc-black-pride-unity-ball-8",
+    "id": "10",
     "day": "thursday",
     "dayLabel": "Thursday",
     "name": "10th Annual DC Black Pride Unity Ball",
@@ -242,7 +242,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-ball"
   },
   {
-    "id": "friday-dipped-all-nude-party-9",
+    "id": "11",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Dipped: All \"Nude\" Party",
@@ -268,7 +268,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "SoftQueerWealthXBliss"
   },
   {
-    "id": "friday-booty-bounce-black-rodeo-10",
+    "id": "12",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Booty Bounce Black Rodeo",
@@ -293,7 +293,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "sqwealth"
   },
   {
-    "id": "friday-hot-honey-dc-11",
+    "id": "13",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Hot Honey DC",
@@ -319,7 +319,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "friday-black-sugar-12",
+    "id": "14",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Black Sugar",
@@ -345,7 +345,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "Free Ticket Giveaway\nPost about the event you're attending and tag @unleasheddc for a chance to win complimentary tickets. 4 winners will be selected per event!"
   },
   {
-    "id": "friday-unmasked-a-dc-black-pride-speed-dating-speed-kinking-experience-13",
+    "id": "15",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Unmasked: A DC Black Pride Speed Dating + Speed Kinking Experience",
@@ -373,7 +373,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "friday-united-nations-black-pride-diasphoric-bashment-14",
+    "id": "16",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "United Nations: Black Pride Diasphoric Bashment",
@@ -397,7 +397,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "friday-dc-black-pride-ladies-all-white-rooftop-tea-party-15",
+    "id": "17",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "DC BLACK PRIDE Ladies All White Rooftop Tea Party",
@@ -422,7 +422,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-day-party"
   },
   {
-    "id": "friday-black-gay-pride-adult-women-t-dance-with-robyn-holden-16",
+    "id": "18",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Black Gay Pride Adult Women T Dance With Robyn Holden",
@@ -447,7 +447,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "friday-fruit-roll-up-17",
+    "id": "19",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Fruit Roll-up",
@@ -472,7 +472,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "Not specific to SQW, but 10% OFF all store purchases for attendees"
   },
   {
-    "id": "saturday-sun-kissed-r-b-party-vinyls-vibes-18",
+    "id": "20",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Sun-kissed: R&B Party – Vinyls & Vibes",
@@ -499,7 +499,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "SoftQueerWealthXBliss"
   },
   {
-    "id": "saturday-dc-pride-s-mega-ladies-party-19",
+    "id": "21",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "DC Pride’s MEGA Ladies Party",
@@ -524,7 +524,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "SoftQueerWealthXBliss"
   },
   {
-    "id": "saturday-batty-gyal-20",
+    "id": "22",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Batty Gyal",
@@ -548,7 +548,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "saturday-dc-black-pride-fun-run-21",
+    "id": "23",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "DC Black Pride Fun Run",
@@ -573,7 +573,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors"
   },
   {
-    "id": "saturday-oasis-day-party-festival-22",
+    "id": "24",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Oasis Day Party & Festival",
@@ -599,7 +599,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "Free Ticket Giveaway\nPost about the event you're attending and tag @unleasheddc for a chance to win complimentary tickets. 4 winners will be selected per event!"
   },
   {
-    "id": "saturday-midnight-melt-23",
+    "id": "25",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Midnight Melt",
@@ -625,7 +625,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "Free Ticket Giveaway\nPost about the event you're attending and tag @unleasheddc for a chance to win complimentary tickets. 4 winners will be selected per event!"
   },
   {
-    "id": "saturday-flamingo-cafe-love-lust-labels-24",
+    "id": "26",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Flamingo Cafe: Love, Lust, & Labels",
@@ -651,7 +651,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "saturday-desire-without-definition-25",
+    "id": "27",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Desire without Definition",
@@ -677,7 +677,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "saturday-black-queer-joy-brunch-day-party-26",
+    "id": "28",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Black Queer Joy Brunch & Day Party",
@@ -706,7 +706,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-brunch"
   },
   {
-    "id": "saturday-qute-queer-4-0-a-dc-black-pride-tradition-27",
+    "id": "29",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Qute & Queer 4.0 A DC Black Pride Tradition",
@@ -734,7 +734,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "saturday-the-lesbian-liberation-lab-28",
+    "id": "30",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "The Lesbian Liberation Lab",
@@ -761,7 +761,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "saturday-get-on-up-girl-29",
+    "id": "31",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Get on Up Girl!",
@@ -787,7 +787,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-day-party"
   },
   {
-    "id": "saturday-lust-love-labels-30",
+    "id": "32",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Lust, Love, & Labels",
@@ -812,7 +812,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-day-party"
   },
   {
-    "id": "saturday-dc-black-pride-black-fem-4-fem-happy-hour-31",
+    "id": "33",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "DC Black Pride Black Fem 4 Fem Happy Hour",
@@ -840,7 +840,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-meetup"
   },
   {
-    "id": "saturday-the-melt-black-pride-edition-32",
+    "id": "34",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "The Melt Black Pride Edition",
@@ -865,7 +865,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "saturday-black-pride-memorial-weekend-day-party-33",
+    "id": "35",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "BLACK Pride - Memorial Weekend Day Party",
@@ -889,7 +889,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-day-party"
   },
   {
-    "id": "saturday-dc-black-pride-the-new-black-renaissance-aging-identity-and-our-becomin-34",
+    "id": "36",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "DC Black Pride: The New Black Renaissance: Aging, Identity and Our Becoming",
@@ -917,7 +917,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "saturday-dc-black-pride-doesn-t-god-love-me-too-my-worship-is-for-real-35",
+    "id": "37",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "DC Black Pride: Doesn't God Love Me Too? My Worship is For Real",
@@ -945,7 +945,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "saturday-black-trans-pride-2026-centering-black-trans-leadership-community-power-36",
+    "id": "38",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Black Trans Pride 2026: Centering Black Trans Leadership, Community Power and Ballroom Culture",
@@ -976,7 +976,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "saturday-dc-black-pride-fight-or-flight-navigating-parenthood-during-trying-time-37",
+    "id": "39",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "DC Black Pride: Fight or Flight: Navigating Parenthood During Trying Times",
@@ -1004,7 +1004,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "saturday-dc-black-pride-mary-bowman-poetry-slam-open-mic-38",
+    "id": "40",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "DC Black Pride: Mary Bowman Poetry Slam & Open Mic",
@@ -1033,7 +1033,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "saturday-dick-appointment-pres-bambii-39",
+    "id": "41",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Dick Appointment Pres. Bambii",
@@ -1059,7 +1059,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "saturday-cousins-nem-for-the-aunties-for-the-guncles-for-the-uncties-40",
+    "id": "42",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Cousins & ’Nem\n\nFor the Aunties\nFor the Guncles\nFor the Uncties",
@@ -1085,7 +1085,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "Not SQW specific –\nThe first 50 people to arrive at the Love, Lust & Labels panel get FREE entry into Cousins & ’Nem"
   },
   {
-    "id": "saturday-choccity-cornhole-week-7-black-pride-41",
+    "id": "43",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "ChocCity Cornhole Week 7 Black Pride",
@@ -1114,7 +1114,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-meetup"
   },
   {
-    "id": "sunday-the-gym-jam-a-real-gay-ass-dance-party-42",
+    "id": "44",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "The Gym Jam: A real Gay Ass Dance Party",
@@ -1145,7 +1145,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "softqueerwealth"
   },
   {
-    "id": "sunday-sweet-like-brown-sugar-43",
+    "id": "45",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Sweet Like Brown Sugar",
@@ -1172,7 +1172,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "SoftQueerWealthXBliss"
   },
   {
-    "id": "sunday-sweet-escape-rooftop-day-party-44",
+    "id": "46",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "SWEET ESCAPE Rooftop Day Party",
@@ -1199,7 +1199,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "SoftQueerWealthXBliss"
   },
   {
-    "id": "sunday-aunties-in-dc-45",
+    "id": "47",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Aunties in DC",
@@ -1224,7 +1224,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-day-party"
   },
   {
-    "id": "sunday-house-of-opulence-day-party-experience-46",
+    "id": "48",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "House of Opulence Day Party Experience",
@@ -1251,7 +1251,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-day-party"
   },
   {
-    "id": "sunday-lick-pride-finale-47",
+    "id": "49",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Lick: Pride Finale",
@@ -1276,7 +1276,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "Free Ticket Giveaway\nPost about the event you're attending and tag @unleasheddc for a chance to win complimentary tickets. 4 winners will be selected per event!"
   },
   {
-    "id": "sunday-walk-breathe-rise-a-dc-black-pride-morning-in-nature-48",
+    "id": "50",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Walk, Breathe, Rise: A DC Black Pride Morning in Nature",
@@ -1302,7 +1302,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors"
   },
   {
-    "id": "sunday-good-girls-go-to-heaven-bad-girls-go-to-for-the-girls-49",
+    "id": "51",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Good Girls Go To Heaven Bad Girls Go To For The Girls",
@@ -1326,7 +1326,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-day-party"
   },
   {
-    "id": "sunday-paint-and-debate-50",
+    "id": "52",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Paint and Debate",
@@ -1353,7 +1353,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "sunday-one-for-the-road-day-party-51",
+    "id": "53",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "One for the Road Day Party",
@@ -1378,7 +1378,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-day-party"
   },
   {
-    "id": "sunday-brunch-with-pride-at-dirty-habit-dc-52",
+    "id": "54",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Brunch with Pride at Dirty Habit DC!",
@@ -1408,7 +1408,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-brunch"
   },
   {
-    "id": "sunday-foreplay-series-boudoir-photoshoot-smutty-zine-making-53",
+    "id": "55",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Foreplay Series: Boudoir Photoshoot & Smutty Zine Making",
@@ -1435,7 +1435,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "sunday-spring-fling-55",
+    "id": "57",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Spring Fling",
@@ -1464,7 +1464,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "sunday-do-you-want-to-get-funky-with-me-brunch-and-day-party-56",
+    "id": "58",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Do You Want To Get Funky With Me: Brunch and Day Party",
@@ -1492,7 +1492,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-brunch"
   },
   {
-    "id": "sunday-queer-black-broadway-walking-tour-57",
+    "id": "59",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Queer Black Broadway Walking Tour",
@@ -1519,7 +1519,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "sunday-dc-black-pride-ultimate-pool-party-58",
+    "id": "60",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "DC Black Pride Ultimate Pool Party",
@@ -1549,7 +1549,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-day-party"
   },
   {
-    "id": "sunday-7th-annual-brunch-babes-59",
+    "id": "61",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "7th Annual Brunch & Babes",
@@ -1575,7 +1575,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-brunch"
   },
   {
-    "id": "friday-health-and-wellness-pavilion-60",
+    "id": "62",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Health and Wellness Pavilion",
@@ -1601,7 +1601,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "saturday-health-and-wellness-pavilion-61",
+    "id": "63",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Health and Wellness Pavilion",
@@ -1627,7 +1627,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "sunday-health-and-wellness-pavilion-62",
+    "id": "64",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Health and Wellness Pavilion",
@@ -1653,7 +1653,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-workshop"
   },
   {
-    "id": "monday-pride-in-the-park-63",
+    "id": "65",
     "day": "monday",
     "dayLabel": "Monday",
     "name": "Pride in the Park",
@@ -1680,7 +1680,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors"
   },
   {
-    "id": "monday-wicked-mondaze-64",
+    "id": "66",
     "day": "monday",
     "dayLabel": "Monday",
     "name": "Wicked Mondaze",

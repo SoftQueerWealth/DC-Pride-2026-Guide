@@ -9,6 +9,7 @@ import { useItinerary } from './hooks/useItinerary';
 import type { BeautyItem } from './types/beauty';
 import type { DayId, PrideEvent } from './types/event';
 import { DaySection } from './components/DaySection';
+import { DonationSection } from './components/DonationSection';
 import { FilterPanel } from './components/FilterPanel';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
@@ -246,6 +247,7 @@ export default function App() {
           </div>
         </div>
       )}
+      <DonationSection />
       <Footer />
       {showEventsTab ? (
         <>

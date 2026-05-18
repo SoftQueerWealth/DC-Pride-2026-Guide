@@ -64,3 +64,13 @@ export function trackItineraryViewToggle(mode: string): void {
     event_label: mode,
   });
 }
+
+export function trackDonationClick(linkUrl: string): void {
+  if (!shouldTrackAnalytics()) return;
+
+  window.gtag?.('event', 'donation_click', {
+    event_category: 'Support',
+    event_label: 'Support SoftQueerWealth',
+    link_url: linkUrl,
+  });
+}

@@ -464,7 +464,7 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
         discountCodeRaw && !shouldHideDiscountCode(discountCodeRaw) ? discountCodeRaw : '';
 
       return {
-        id: readCell(headers, row, 'id') || `${slugify(`${day}-${name}`)}-${index}`,
+        id: String(index + 2),
         day,
         dayLabel: readCell(headers, row, 'dayLabel') || dayLabelFor(day),
         name,
