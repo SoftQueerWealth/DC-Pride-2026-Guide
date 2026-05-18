@@ -6,9 +6,18 @@ interface DaySectionProps {
   dayLabel: string;
   events: PrideEvent[];
   isEventVisible: (e: PrideEvent) => boolean;
+  isGoing?: (e: PrideEvent) => boolean;
+  onToggleGoing?: (e: PrideEvent) => void;
 }
 
-export function DaySection({ day, dayLabel, events, isEventVisible }: DaySectionProps) {
+export function DaySection({
+  day,
+  dayLabel,
+  events,
+  isEventVisible,
+  isGoing,
+  onToggleGoing,
+}: DaySectionProps) {
   const visibleCount = events.filter(isEventVisible).length;
   const hidden = visibleCount === 0;
 
@@ -23,7 +32,13 @@ export function DaySection({ day, dayLabel, events, isEventVisible }: DaySection
         <div className="day-line" />
       </div>
       {events.map((event) => (
-        <EventCard key={event.id} event={event} visible={isEventVisible(event)} />
+        <EventCard
+          key={event.id}
+          event={event}
+          visible={isEventVisible(event)}
+          going={isGoing?.(event)}
+          onToggleGoing={onToggleGoing ? () => onToggleGoing(event) : undefined}
+        />
       ))}
     </section>
   );
