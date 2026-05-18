@@ -141,9 +141,14 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .vibes-tag{font-size:9px;color:var(--muted);background:rgba(255,255,255,.04);border:1px solid var(--border);padding:2px 7px;border-radius:100px}
 .event-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:5px}
 .meta-pill{font-size:10px;color:var(--muted);display:flex;align-items:center;gap:3px}
-.meta-pill svg{width:10px;height:10px;opacity:.6;flex-shrink:0}
-.meta-pill a.meta-pill-maplink{color:inherit;text-decoration:none;min-width:0;border-radius:2px}
-.meta-pill a.meta-pill-maplink:hover{color:var(--text);text-decoration:underline;text-decoration-color:rgba(201,146,42,.4)}
+.meta-pill--location{align-items:flex-start;min-width:0;flex:1 1 auto}
+.meta-pill-location-text{display:inline;line-height:1.45;min-width:0}
+.meta-pill-venue{color:var(--muted)}
+.meta-pill-sep{color:var(--muted)}
+.meta-pill svg{width:10px;height:10px;opacity:.6;flex-shrink:0;margin-top:2px}
+.meta-pill--location svg{margin-top:3px}
+.meta-pill a.meta-pill-maplink{display:inline;color:var(--gold-light);text-decoration:underline;text-decoration-color:rgba(201,146,42,.5);border-radius:2px;transition:color .15s,text-decoration-color .15s}
+.meta-pill a.meta-pill-maplink:hover{color:var(--cream);text-decoration-color:var(--gold-light)}
 .meta-pill a.meta-pill-maplink:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .event-vibes{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
 .event-action{flex:0 1 min(240px,46%);display:flex;flex-direction:column;align-items:flex-end;gap:5px;padding-top:2px;min-width:100px}
@@ -161,9 +166,9 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .discount-code-label{color:var(--cream);opacity:.78;font-weight:500;letter-spacing:.02em}
 .discount-code-value{color:var(--gold-light);font-weight:600;letter-spacing:.01em}
 .discount-code-expires{color:var(--muted);font-size:9px;font-weight:400}
-.discount-code-row-inner--tip{align-items:flex-start;column-gap:5px}
-.discount-code-tip-icon{color:var(--gold);flex-shrink:0;margin-top:1px}
-.discount-code-tip-text{color:var(--gold-light);font-weight:400;text-align:right}
+.discount-code-row-inner--tip{display:flex;flex-wrap:nowrap;align-items:flex-start;justify-content:flex-end;column-gap:6px;width:100%;max-width:100%}
+.discount-code-tip-icon{color:var(--gold);flex-shrink:0;align-self:flex-start;margin-top:2px}
+.discount-code-tip-text{color:var(--gold-light);font-weight:400;text-align:right;flex:1 1 auto;min-width:0;line-height:1.45}
 .expires{color:var(--muted);font-size:9px}
 .links-section{margin-top:40px}
 .links-title{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}

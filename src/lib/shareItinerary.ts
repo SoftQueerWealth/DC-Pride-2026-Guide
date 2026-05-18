@@ -9,7 +9,7 @@ export async function shareItinerary(payload: {
     try {
       await navigator.share({
         title: payload.title,
-        text: 'View shared itinerary',
+        text: 'View my shared itinerary',
         url: payload.url,
       });
       return 'shared';

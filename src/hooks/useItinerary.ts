@@ -71,6 +71,7 @@ export function useItinerary(events: PrideEvent[]) {
 
   const clearSharedView = useCallback(() => {
     setSharedIds(new Set());
+    setMySelection(new Set());
     setViewMode(ItineraryViewMode.Full);
     stripItineraryParamFromUrl();
   }, []);

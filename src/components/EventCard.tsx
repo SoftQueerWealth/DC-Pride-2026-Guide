@@ -3,13 +3,54 @@ import type { PrideEvent } from '../types/event';
 import { trackClick } from '../lib/analytics';
 import { badgeClassForLabel } from '../lib/badgeClass';
 import { parseDiscountDisplay, shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
-import { isMappableLocation, mapsSearchUrl } from '../lib/maps';
+import { isMappableLocation, mapsSearchUrl, splitLocationParts } from '../lib/maps';
 
 interface EventCardProps {
   event: PrideEvent;
   visible: boolean;
   going?: boolean;
   onToggleGoing?: () => void;
+}
+
+function LocationDisplay({
+  location,
+  mapsHref,
+  onMapsClick,
+}: {
+  location: string;
+  mapsHref: string | null;
+  onMapsClick?: () => void;
+}) {
+  const { venue, address } = splitLocationParts(location);
+  const linkProps = {
+    href: mapsHref!,
+    target: '_blank' as const,
+    rel: 'noopener noreferrer',
+    className: 'meta-pill-maplink',
+    onClick: onMapsClick,
+  };
+
+  if (!mapsHref) {
+    return <span className="meta-pill-location-text">{location}</span>;
+  }
+
+  if (venue && address) {
+    return (
+      <span className="meta-pill-location-text">
+        <span className="meta-pill-venue">{venue}</span>
+        <span className="meta-pill-sep" aria-hidden>
+          {' · '}
+        </span>
+        <a {...linkProps}>{address}</a>
+      </span>
+    );
+  }
+
+  return (
+    <span className="meta-pill-location-text">
+      <a {...linkProps}>{address ?? location}</a>
+    </span>
+  );
 }
 
 export function EventCard({ event, visible, going = false, onToggleGoing }: EventCardProps) {
@@ -51,21 +92,13 @@ export function EventCard({ event, visible, going = false, onToggleGoing }: Even
             <Clock size={10} strokeWidth={2} aria-hidden />
             {event.time}
           </span>
-          <span className="meta-pill">
+          <span className="meta-pill meta-pill--location">
             <MapPin size={10} strokeWidth={2} aria-hidden />
-            {mapsHref ? (
-              <a
-                href={mapsHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="meta-pill-maplink"
-                onClick={() => trackClick(event.name, 'Open in Maps')}
-              >
-                {event.location}
-              </a>
-            ) : (
-              event.location
-            )}
+            <LocationDisplay
+              location={event.location}
+              mapsHref={mapsHref}
+              onMapsClick={() => trackClick(event.name, 'Open in Maps')}
+            />
           </span>
         </div>
         <div className="event-vibes">
