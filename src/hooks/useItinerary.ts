@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { trackSharedItineraryOpen } from '../lib/analytics';
 import { parseItineraryParam, stripItineraryParamFromUrl } from '../lib/parseItineraryParam';
 import type { PrideEvent } from '../types/event';
 
@@ -38,6 +39,7 @@ export function useItinerary(events: PrideEvent[]) {
   const [viewMode, setViewMode] = useState<ItineraryViewMode>(ItineraryViewMode.Full);
   const [mySelection, setMySelection] = useState<Set<string>>(() => loadMySelection());
   const [hydratedFromUrl, setHydratedFromUrl] = useState(false);
+  const trackedSharedOpenRef = useRef(false);
 
   useEffect(() => {
     if (validEventIds.size === 0 && events.length === 0) return;
@@ -45,6 +47,10 @@ export function useItinerary(events: PrideEvent[]) {
     if (fromUrl.size > 0) {
       setSharedIds(fromUrl);
       setViewMode(ItineraryViewMode.Shared);
+      if (!trackedSharedOpenRef.current) {
+        trackedSharedOpenRef.current = true;
+        trackSharedItineraryOpen(fromUrl.size);
+      }
     }
     setHydratedFromUrl(true);
   }, [validEventIds, events.length]);

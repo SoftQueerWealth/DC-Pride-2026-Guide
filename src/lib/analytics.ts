@@ -65,6 +65,16 @@ export function trackItineraryViewToggle(mode: string): void {
   });
 }
 
+export function trackSharedItineraryOpen(eventCount: number): void {
+  if (!shouldTrackAnalytics()) return;
+
+  window.gtag?.('event', 'shared_itinerary_open', {
+    event_category: 'Event Guide',
+    event_label: 'Shared link landing',
+    event_count: eventCount,
+  });
+}
+
 export function trackDonationClick(linkUrl: string): void {
   if (!shouldTrackAnalytics()) return;
 
