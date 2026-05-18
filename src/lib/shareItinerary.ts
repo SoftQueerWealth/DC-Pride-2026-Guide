@@ -1,17 +1,9 @@
 export type ShareItineraryResult = 'shared' | 'copied' | 'failed';
 
-export async function shareItinerary(payload: {
-  title: string;
-  url: string;
-  text: string;
-}): Promise<ShareItineraryResult> {
+export async function shareItinerary(payload: { text: string }): Promise<ShareItineraryResult> {
   if (typeof navigator !== 'undefined' && typeof navigator.share === 'function') {
     try {
-      await navigator.share({
-        title: payload.title,
-        text: 'View my shared itinerary',
-        url: payload.url,
-      });
+      await navigator.share({ text: payload.text });
       return 'shared';
     } catch (err) {
       if (err instanceof DOMException && err.name === 'AbortError') {

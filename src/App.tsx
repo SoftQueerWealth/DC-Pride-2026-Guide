@@ -20,6 +20,7 @@ import { SharedItineraryHeader } from './components/SharedItineraryHeader';
 import { trackItineraryShare } from './lib/analytics';
 import { communityPerkTypeLabel } from './lib/communityPerks';
 import { formatItineraryShare } from './lib/formatItinerary';
+import { sortItineraryEvents } from './lib/groupItineraryEvents';
 import { shareItinerary } from './lib/shareItinerary';
 
 enum GuideTab {
@@ -71,6 +72,11 @@ export default function App() {
   const isEventShown = useCallback(
     (event: PrideEvent) => itinerary.isEventShownInView(event.id) && filter.isEventVisible(event),
     [filter, itinerary],
+  );
+
+  const sharedEvents = useMemo(
+    () => sortItineraryEvents(events.filter((e) => itinerary.sharedIds.has(e.id))),
+    [events, itinerary.sharedIds],
   );
 
   const anyEventsVisible = useMemo(() => events.some(isEventShown), [events, isEventShown]);
@@ -143,11 +149,7 @@ export default function App() {
     const payload = formatItineraryShare(events, itinerary.mySelection, window.location.origin);
     if (!payload) return 'failed' as const;
     trackItineraryShare(itinerary.myCount);
-    return shareItinerary({
-      title: 'My DC Black Pride Weekend',
-      url: payload.url,
-      text: payload.text,
-    });
+    return shareItinerary({ text: payload.text });
   }, [events, itinerary.myCount, itinerary.mySelection]);
 
   return (
@@ -183,7 +185,7 @@ export default function App() {
         <div id="events-panel" role="tabpanel" aria-labelledby="events-tab">
           {itinerary.hasSharedContext ? (
             <SharedItineraryHeader
-              eventCount={itinerary.sharedCount}
+              events={sharedEvents}
               viewMode={itinerary.viewMode}
               onViewModeChange={itinerary.setViewMode}
               onClear={itinerary.clearSharedView}
