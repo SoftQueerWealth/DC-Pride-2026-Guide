@@ -3,7 +3,7 @@ import { Share2 } from 'lucide-react';
 
 interface ItineraryBarProps {
   count: number;
-  onShare: () => Promise<'shared' | 'copied' | 'failed'>;
+  onShare: () => Promise<'shared' | 'copied' | 'cancelled' | 'failed'>;
   onClear: () => void;
 }
 
@@ -21,7 +21,7 @@ export function ItineraryBar({ count, onShare, onClear }: ItineraryBarProps) {
     if (result === 'copied') setFeedback('Copied!');
     else if (result === 'shared') setFeedback('Shared!');
     else if (result === 'failed') setFeedback('Could not share');
-    if (result !== 'failed') {
+    if (result === 'shared' || result === 'copied') {
       window.setTimeout(() => setFeedback(null), 2500);
     }
   };

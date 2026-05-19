@@ -1,0 +1,15 @@
+{"sessionId":"1714b1","location":"App.tsx:handleShareItinerary","message":"payload formatted","data":{"hasPayload":true,"selectionSize":1},"timestamp":1779156145984,"hypothesisId":"C"}
+{"sessionId":"1714b1","location":"shareItinerary.ts:entry","message":"shareItinerary called","data":{"hasNativeShare":true,"textLength":230},"timestamp":1779156145984,"hypothesisId":"A,B"}
+{"sessionId":"1714b1","location":"shareItinerary.ts:native-catch","message":"navigator.share rejected","data":{"errName":"AbortError","errMessage":"Share canceled","isAbort":true},"timestamp":1779156150875,"hypothesisId":"A,E"}
+{"sessionId":"1714b1","runId":"post-fix","location":"shareItinerary.ts:abort","message":"user cancelled share","data":{"result":"cancelled"},"timestamp":1779156150876,"hypothesisId":"A"}
+{"sessionId":"1714b1","location":"ItineraryBar.tsx:handleShare","message":"onShare result","data":{"result":"cancelled"},"timestamp":1779156150876,"hypothesisId":"A,C"}
+{"sessionId":"1714b1","location":"App.tsx:handleShareItinerary","message":"payload formatted","data":{"hasPayload":true,"selectionSize":1},"timestamp":1779156154602,"hypothesisId":"C"}
+{"sessionId":"1714b1","location":"shareItinerary.ts:entry","message":"shareItinerary called","data":{"hasNativeShare":true,"textLength":230},"timestamp":1779156154603,"hypothesisId":"A,B"}
+{"sessionId":"1714b1","location":"shareItinerary.ts:native-catch","message":"navigator.share rejected","data":{"errName":"AbortError","errMessage":"Share canceled","isAbort":true},"timestamp":1779156162280,"hypothesisId":"A,E"}
+{"sessionId":"1714b1","runId":"post-fix","location":"shareItinerary.ts:abort","message":"user cancelled share","data":{"result":"cancelled"},"timestamp":1779156162280,"hypothesisId":"A"}
+{"sessionId":"1714b1","location":"ItineraryBar.tsx:handleShare","message":"onShare result","data":{"result":"cancelled"},"timestamp":1779156162280,"hypothesisId":"A,C"}
+{"sessionId":"1714b1","location":"App.tsx:handleShareItinerary","message":"payload formatted","data":{"hasPayload":true,"selectionSize":2},"timestamp":1779156174865,"hypothesisId":"C"}
+{"sessionId":"1714b1","location":"shareItinerary.ts:entry","message":"shareItinerary called","data":{"hasNativeShare":true,"textLength":309},"timestamp":1779156174866,"hypothesisId":"A,B"}
+{"sessionId":"1714b1","location":"shareItinerary.ts:native-catch","message":"navigator.share rejected","data":{"errName":"AbortError","errMessage":"Share canceled","isAbort":true},"timestamp":1779156177426,"hypothesisId":"A,E"}
+{"sessionId":"1714b1","runId":"post-fix","location":"shareItinerary.ts:abort","message":"user cancelled share","data":{"result":"cancelled"},"timestamp":1779156177427,"hypothesisId":"A"}
+{"sessionId":"1714b1","location":"ItineraryBar.tsx:handleShare","message":"onShare result","data":{"result":"cancelled"},"timestamp":1779156177427,"hypothesisId":"A,C"}
