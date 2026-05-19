@@ -14,7 +14,7 @@ export function ItineraryHint({ count, hidden = false }: ItineraryHintProps) {
         <span className="itinerary-hint-check" aria-hidden>
           ✓
         </span>{' '}
-        = Add to your itinerary
+        <span className="itinerary-hint-key-label">Add</span> = add to your itinerary
       </p>
       {hasSelections ? (
         <p className="itinerary-hint-body">
@@ -23,7 +23,8 @@ export function ItineraryHint({ count, hidden = false }: ItineraryHintProps) {
         </p>
       ) : (
         <p className="itinerary-hint-body">
-          <strong>Build your itinerary</strong> — Tap the checkmark on events you&apos;re going to.
+          <strong>Build your itinerary</strong> — Tap <strong>Add</strong> on events you&apos;re going
+          to.
           When you&apos;re ready, share your list with friends.
         </p>
       )}

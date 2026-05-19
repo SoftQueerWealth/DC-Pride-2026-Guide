@@ -69,12 +69,18 @@ export function EventCard({ event, visible, going = false, onToggleGoing }: Even
         <button
           type="button"
           className={`event-going-toggle${going ? ' active' : ''}`}
-          aria-pressed={going}
+          role="checkbox"
+          aria-checked={going}
           aria-label={going ? 'Remove from your itinerary' : 'Add to your itinerary'}
           title={going ? 'Remove from your itinerary' : 'Add to your itinerary'}
           onClick={onToggleGoing}
         >
-          <Check size={14} strokeWidth={2.5} aria-hidden />
+          <span className="event-going-toggle-box" aria-hidden>
+            <Check size={16} strokeWidth={2.5} />
+          </span>
+          <span className="event-going-toggle-label" aria-hidden>
+            {going ? 'Added' : 'Add'}
+          </span>
         </button>
       ) : null}
       <div className="event-info">
