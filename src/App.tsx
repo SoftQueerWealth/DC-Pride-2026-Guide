@@ -21,6 +21,7 @@ import { LinksSection } from './components/LinksSection';
 import { SharedItineraryHeader } from './components/SharedItineraryHeader';
 import { trackItineraryShare } from './lib/analytics';
 import { communityPerkTypeLabel } from './lib/communityPerks';
+import { compareByEventTime } from './lib/eventTimeSort';
 import { formatItineraryShare } from './lib/formatItinerary';
 import { shareItinerary } from './lib/shareItinerary';
 
@@ -43,6 +44,9 @@ function groupByDay(list: PrideEvent[]): Map<DayId, PrideEvent[]> {
   }
   for (const e of list) {
     map.get(e.day)?.push(e);
+  }
+  for (const dayEvents of map.values()) {
+    dayEvents.sort(compareByEventTime);
   }
   return map;
 }

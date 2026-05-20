@@ -1,5 +1,6 @@
 import { DAY_ORDER } from '../constants/days';
 import type { PrideEvent } from '../types/event';
+import { compareByEventTime } from './eventTimeSort';
 
 export type ItineraryDayGroup = {
   dayLabel: string;
@@ -11,7 +12,7 @@ export function sortItineraryEvents(events: PrideEvent[]): PrideEvent[] {
   return [...events].sort((a, b) => {
     const dayDiff = (dayIndex.get(a.day) ?? 0) - (dayIndex.get(b.day) ?? 0);
     if (dayDiff !== 0) return dayDiff;
-    return a.name.localeCompare(b.name);
+    return compareByEventTime(a, b);
   });
 }
 
