@@ -8,5 +8,11 @@
   "assets": {
     "directory": "./dist"
   },
-  "compatibility_flags": ["nodejs_compat"]
+  "compatibility_flags": ["nodejs_compat"],
+
+  "env": {
+    "staging": {
+      "name": "sqw-events-guide-staging"
+    }
+  }
 }

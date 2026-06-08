@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - staging
+
+steps:
+  - run: npm ci
+  - run: npm run build
+  - run: npx wrangler deploy --env staging
+
+on:
+  push:
+    branches:
+      - main
+  
+steps:
+  - run: npm ci
+  - run: npm run build
+  - run: npx wrangler deploy
