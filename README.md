@@ -1,4 +1,4 @@
-# Baltimore Pride 2026 — Weekend Guide
+# Pride Month 2026 — Weekend Guide
 
 React + TypeScript + Vite app. Local development loads guide data from Google Sheets. Production builds use bundled data in `src/data/events.generated.ts` and `src/data/beauty.generated.ts`, so changing the sheet does not change Cloudflare production until you deploy a new build.
 
@@ -11,7 +11,7 @@ VITE_GOOGLE_SHEETS_ID=YOUR_GOOGLE_SHEETS_ID_HERE
 VITE_GOOGLE_SHEETS_API_KEY=YOUR_GOOGLE_SHEETS_API_KEY_HERE
 ```
 
-The app reads from the spreadsheet configured by `VITE_GOOGLE_SHEETS_ID`, tab `events`. The first row should be headers. Recommended columns are `day`, `name`, `organizer`, `types`, `vibes`, `free`, `badges`, `time`, `location`, `vibeTags`, `ctaHref`, `ctaLabel`, `ctaButtonClass`, and `cardClass`.
+The app reads from the spreadsheet configured by `VITE_GOOGLE_SHEETS_ID`. The first row should be headers. Recommended columns are `festival`, `day`, `name`, `organizer`, `types`, `vibes`, `free`, `badges`, `time`, `location`, `vibeTags`, `ctaHref`, `ctaLabel`, `ctaButtonClass`, and `cardClass`. Use the `festival` column to group events by celebration (for example `baltimore-pride` or `capital-pride`); rows without a festival value default to Baltimore Pride.
 
 In local development, the app also reads the `beauty` tab for the Community Perks section. Rows are shown only when `confirmed partner` is confirmed and `test discount code status` is `pass`; blank or `NaN` fields are skipped. Community Perks filters include the `business type` column and a `Mobile` option for partners whose travel status is yes.
 

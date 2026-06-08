@@ -11,11 +11,10 @@ export function Hero({ eventCount }: HeroProps) {
     <header className="hero">
       <HeroSocial />
       <img src="/hero-logo.png" alt="" className="hero-logo" width={80} height={80} />
-      <div className="tag">Charm City Homecoming</div>
+      <div className="tag">Happy Pride!</div>
       <h1>
-        Baltimore Pride <span>2026</span>
+        Pride Month <span>2026</span>
       </h1>
-      <div className="hero-sub">June 8 – 14, 2026 · Baltimore, MD</div>
       <div className="notice">
         <strong style={{ fontSize: '13px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
           📌 {eventCountLabel} Events Curated for the Culture.

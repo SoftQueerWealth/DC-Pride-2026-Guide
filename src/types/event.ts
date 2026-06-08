@@ -52,6 +52,8 @@ export type CtaButtonClassId = `${CtaButtonClass}`;
 
 export interface PrideEvent {
   id: string;
+  /** Festival grouping, e.g. baltimore-pride or capital-pride */
+  festival?: string;
   day: DayId;
   dayLabel: string;
   name: string;

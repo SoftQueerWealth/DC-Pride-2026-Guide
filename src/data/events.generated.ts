@@ -5,6 +5,7 @@ import type { PrideEvent } from '../types/event';
 export const generatedEvents: PrideEvent[] = [
   {
     "id": "2",
+    "festival": "baltimore-pride",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Call Out (The Pool Party)",
@@ -28,6 +29,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "3",
+    "festival": "baltimore-pride",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "The Black Lesbian Link-up",
@@ -54,6 +56,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "4",
+    "festival": "baltimore-pride",
     "day": "thursday",
     "dayLabel": "Thursday",
     "name": "The Link-Up: A Pride Mixer",
@@ -83,6 +86,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "5",
+    "festival": "baltimore-pride",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "CharmCityPrideFest",
@@ -117,6 +121,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "6",
+    "festival": "baltimore-pride",
     "day": "tuesday",
     "dayLabel": "Tuesday",
     "name": "The Masc Meet Up: The Unspoken Energy We All Know",
@@ -147,6 +152,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "7",
+    "festival": "baltimore-pride",
     "day": "wednesday",
     "dayLabel": "Wednesday",
     "name": "Flavors; Pride Happy Hour",
@@ -175,6 +181,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "8",
+    "festival": "baltimore-pride",
     "day": "thursday",
     "dayLabel": "Thursday",
     "name": "Parity Porch Concert:Pride Edition Ft. Black Assets",
@@ -201,6 +208,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "9",
+    "festival": "baltimore-pride",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Sugar Rush: Grown-Up Trampoline Glow Party",
@@ -229,6 +237,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "10",
+    "festival": "baltimore-pride",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Pride on the Pier",
@@ -255,6 +264,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "11",
+    "festival": "baltimore-pride",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "The Nude Experience",
@@ -282,6 +292,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "12",
+    "festival": "baltimore-pride",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Yams: The [Pride] Function Vol. III",
@@ -306,6 +317,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "13",
+    "festival": "baltimore-pride",
     "day": "monday",
     "dayLabel": "Monday",
     "name": "Pride Week Kickoff: Press Conference & Awards Ceremony",
@@ -337,6 +349,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "14",
+    "festival": "baltimore-pride",
     "day": "tuesday",
     "dayLabel": "Tuesday",
     "name": "Baltimore Pride Happy Hour & Karaoke",
@@ -363,6 +376,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "15",
+    "festival": "baltimore-pride",
     "day": "wednesday",
     "dayLabel": "Wednesday",
     "name": "Pride on the Plaza Resource and Job Fair",
@@ -394,6 +408,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "16",
+    "festival": "baltimore-pride",
     "day": "wednesday",
     "dayLabel": "Wednesday",
     "name": "There's No Place Like Home Fashion Show",
@@ -423,6 +438,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "17",
+    "festival": "baltimore-pride",
     "day": "wednesday",
     "dayLabel": "Wednesday",
     "name": "Suits & Sneakers Cocktail Reception",
@@ -456,6 +472,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "18",
+    "festival": "baltimore-pride",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Mount Vernon Block Party",
@@ -488,6 +505,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "19",
+    "festival": "baltimore-pride",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Twilight on the Terrace Gala",
@@ -516,6 +534,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "20",
+    "festival": "baltimore-pride",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Pride 5K Run -Baltimore",
@@ -541,6 +560,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "21",
+    "festival": "baltimore-pride",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Baltimore Pride Parade",
@@ -572,6 +592,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "22",
+    "festival": "baltimore-pride",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Baltimore Pride in the Park Festival (Day 1)",
@@ -606,6 +627,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "23",
+    "festival": "baltimore-pride",
     "day": "sunday",
     "dayLabel": "Sunday",
     "name": "Baltimore Pride in the Park Festival (Day 2)",
@@ -639,6 +661,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "24",
+    "festival": "baltimore-pride",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "YewTopia",
@@ -665,6 +688,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "25",
+    "festival": "baltimore-pride",
     "day": "friday",
     "dayLabel": "Friday",
     "name": "Elevation",
@@ -694,6 +718,7 @@ export const generatedEvents: PrideEvent[] = [
   },
   {
     "id": "26",
+    "festival": "baltimore-pride",
     "day": "saturday",
     "dayLabel": "Saturday",
     "name": "Baltimore Pride Dinnner & Play",
