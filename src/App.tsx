@@ -1,6 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
 import { BeautySection } from './components/BeautySection';
 import { DAY_ORDER } from './constants/days';
+import { ENABLED_FESTIVALS, festivalById } from './constants/festivals';
 import { PUBLIC_SITE_ORIGIN } from './constants/site';
 import { FILTER_SECTIONS, type FilterSectionDef } from './constants/filters';
 import { useBeautyItems } from './hooks/useBeautyItems';
@@ -11,6 +12,7 @@ import type { BeautyItem } from './types/beauty';
 import type { DayId, PrideEvent } from './types/event';
 import { DaySection } from './components/DaySection';
 import { DonationSection } from './components/DonationSection';
+import { FestivalSubheader } from './components/FestivalSubheader';
 import { FilterPanel } from './components/FilterPanel';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
@@ -22,13 +24,11 @@ import { SharedItineraryHeader } from './components/SharedItineraryHeader';
 import { trackItineraryShare } from './lib/analytics';
 import { communityPerkTypeLabel } from './lib/communityPerks';
 import { compareByEventTime } from './lib/eventTimeSort';
+import { countEnabledFestivalEvents, filterEventsByFestival } from './lib/festivalEvents';
 import { formatItineraryShare } from './lib/formatItinerary';
 import { shareItinerary } from './lib/shareItinerary';
 
-enum GuideTab {
-  Events = 'events',
-  Beauty = 'beauty',
-}
+const BEAUTY_TAB = 'beauty';
 
 enum BeautyFilterKind {
   BusinessType = 'business-type',
@@ -36,6 +36,8 @@ enum BeautyFilterKind {
 }
 
 const COMMUNITY_PERK_TYPES = ['Hair', 'Wellness', 'Brows'] as const;
+const ENABLED_FESTIVAL_IDS = ENABLED_FESTIVALS.map((festival) => festival.id);
+const DEFAULT_TAB = ENABLED_FESTIVALS[0]?.id ?? BEAUTY_TAB;
 
 function groupByDay(list: PrideEvent[]): Map<DayId, PrideEvent[]> {
   const map = new Map<DayId, PrideEvent[]>();
@@ -64,14 +66,25 @@ function communityPerkIsMobile(item: BeautyItem): boolean {
 }
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<GuideTab>(GuideTab.Events);
+  const [activeTab, setActiveTab] = useState(DEFAULT_TAB);
   const [beautyFilterOpen, setBeautyFilterOpen] = useState(false);
   const [activeBeautyTypes, setActiveBeautyTypes] = useState<Set<string>>(() => new Set());
   const [activeMobileOnly, setActiveMobileOnly] = useState(false);
   const { events, error, isLoading } = useEvents();
   const beauty = useBeautyItems();
-  const grouped = useMemo(() => groupByDay(events), [events]);
-  const filter = useEventFilters(events);
+  const showBeautyTab = activeTab === BEAUTY_TAB;
+  const showFestivalTab = !showBeautyTab;
+  const activeFestival = showFestivalTab ? festivalById(activeTab) : undefined;
+  const festivalEvents = useMemo(
+    () => (showFestivalTab ? filterEventsByFestival(events, activeTab) : []),
+    [events, activeTab, showFestivalTab],
+  );
+  const heroEventCount = useMemo(
+    () => countEnabledFestivalEvents(events, ENABLED_FESTIVAL_IDS),
+    [events],
+  );
+  const grouped = useMemo(() => groupByDay(festivalEvents), [festivalEvents]);
+  const filter = useEventFilters(festivalEvents);
   const itinerary = useItinerary(events);
 
   const isEventShown = useCallback(
@@ -79,10 +92,8 @@ export default function App() {
     [filter, itinerary],
   );
 
-  const anyEventsVisible = useMemo(() => events.some(isEventShown), [events, isEventShown]);
-  const showNoResults = !isLoading && events.length > 0 && !anyEventsVisible;
-  const showBeautyTab = activeTab === GuideTab.Beauty;
-  const showEventsTab = !showBeautyTab;
+  const anyEventsVisible = useMemo(() => festivalEvents.some(isEventShown), [festivalEvents, isEventShown]);
+  const showNoResults = !isLoading && festivalEvents.length > 0 && !anyEventsVisible;
   const beautyFilterSections = useMemo<FilterSectionDef<BeautyFilterKind>[]>(
     () => [
       {
@@ -114,10 +125,10 @@ export default function App() {
   const showBeautyNoResults = !beauty.isLoading && beauty.items.length > 0 && filteredBeautyItems.length === 0;
   const activeBeautyFilterCount = activeBeautyTypes.size + (activeMobileOnly ? 1 : 0);
 
-  const handleTabChange = (tab: GuideTab) => {
+  const handleTabChange = (tab: string) => {
     setActiveTab(tab);
-    if (tab !== GuideTab.Events) filter.setPanelOpen(false);
-    if (tab !== GuideTab.Beauty) setBeautyFilterOpen(false);
+    if (tab === BEAUTY_TAB) filter.setPanelOpen(false);
+    if (tab !== BEAUTY_TAB) setBeautyFilterOpen(false);
   };
 
   const isBeautyPillActive = (kind: BeautyFilterKind, value: string) => {
@@ -154,20 +165,23 @@ export default function App() {
 
   return (
     <>
-      <Hero eventCount={events.length} />
+      <Hero eventCount={heroEventCount} />
       <nav className="tab-nav" aria-label="Guide sections">
         <div className="tab-list" role="tablist">
-          <button
-            id="events-tab"
-            type="button"
-            className={`tab-button${showEventsTab ? ' active' : ''}`}
-            role="tab"
-            aria-selected={showEventsTab}
-            aria-controls="events-panel"
-            onClick={() => handleTabChange(GuideTab.Events)}
-          >
-            Events
-          </button>
+          {ENABLED_FESTIVALS.map((festival) => (
+            <button
+              key={festival.id}
+              id={`${festival.id}-tab`}
+              type="button"
+              className={`tab-button${activeTab === festival.id ? ' active' : ''}`}
+              role="tab"
+              aria-selected={activeTab === festival.id}
+              aria-controls={`${festival.id}-panel`}
+              onClick={() => handleTabChange(festival.id)}
+            >
+              {festival.tabLabel}
+            </button>
+          ))}
           <button
             id="beauty-tab"
             type="button"
@@ -175,14 +189,15 @@ export default function App() {
             role="tab"
             aria-selected={showBeautyTab}
             aria-controls="beauty-panel"
-            onClick={() => handleTabChange(GuideTab.Beauty)}
+            onClick={() => handleTabChange(BEAUTY_TAB)}
           >
             Community Perks
           </button>
         </div>
       </nav>
-      {showEventsTab ? (
-        <div id="events-panel" role="tabpanel" aria-labelledby="events-tab">
+      {showFestivalTab && activeFestival ? (
+        <div id={`${activeTab}-panel`} role="tabpanel" aria-labelledby={`${activeTab}-tab`}>
+          <FestivalSubheader festival={activeFestival} />
           {itinerary.hasSharedContext ? (
             <SharedItineraryHeader
               viewMode={itinerary.viewMode}
@@ -247,7 +262,7 @@ export default function App() {
       )}
       <DonationSection />
       <Footer />
-      {showEventsTab ? (
+      {showFestivalTab ? (
         <>
           <ItineraryBar
             count={itinerary.myCount}

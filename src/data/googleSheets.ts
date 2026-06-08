@@ -6,6 +6,7 @@ import {
   type PrideEvent,
 } from '../types/event';
 import type { BeautyField, BeautyItem } from '../types/beauty';
+import { DEFAULT_FESTIVAL_ID } from '../constants/festivals';
 import { decodeHtmlEntities } from '../lib/decodeHtmlEntities';
 import { ctaButtonClassForLabel, isInstagramUrl } from '../lib/eventCta';
 import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
@@ -123,7 +124,19 @@ const COLUMN_ALIASES = {
     'couponcode',
     'ticketcode',
   ],
+  festival: ['festival', 'pride', 'guide', 'eventgroup', 'festivalfilter'],
 } as const;
+
+const FESTIVAL_ALIASES: Record<string, string> = {
+  baltimore: 'baltimore-pride',
+  baltimorepride: 'baltimore-pride',
+  'baltimore-pride': 'baltimore-pride',
+  capital: 'capital-pride',
+  capitalpride: 'capital-pride',
+  'capital-pride': 'capital-pride',
+  dc: 'capital-pride',
+  'dc-pride': 'capital-pride',
+};
 
 const BEAUTY_COLUMN_ALIASES = {
   businessName: ['businessname', 'business', 'brand', 'brandname', 'partner', 'partnername', 'name'],
@@ -373,6 +386,19 @@ function isRsvpFreeStatus(value: string): boolean {
   return normalized === TicketStatus.RsvpFree;
 }
 
+function parseFestival(value: string): string {
+  const raw = value.trim();
+  if (!raw) return DEFAULT_FESTIVAL_ID;
+
+  const compact = raw.toLowerCase().replace(/[\s_]+/g, '');
+  if (FESTIVAL_ALIASES[compact]) return FESTIVAL_ALIASES[compact];
+
+  const normalized = normalizeToken(raw).replace(/\s+/g, '-');
+  if (FESTIVAL_ALIASES[normalized]) return FESTIVAL_ALIASES[normalized];
+
+  return normalized || DEFAULT_FESTIVAL_ID;
+}
+
 function ctaLabelForTicketStatus(value: string): string | null {
   const normalized = normalizeToken(value);
   if (normalized === TicketStatus.RsvpFree) return 'RSVP Free';
@@ -466,8 +492,11 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
       const discountCode =
         discountCodeRaw && !shouldHideDiscountCode(discountCodeRaw) ? discountCodeRaw : '';
 
+      const festival = parseFestival(readCell(headers, row, 'festival'));
+
       return {
         id: String(index + 2),
+        festival,
         day,
         dayLabel: readCell(headers, row, 'dayLabel') || dayLabelFor(day),
         name,
