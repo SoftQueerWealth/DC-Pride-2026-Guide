@@ -1,4 +1,4 @@
-# DC Black Pride 2026 — Weekend Guide
+# Baltimore Pride 2026 — Weekend Guide
 
 React + TypeScript + Vite app. Local development loads guide data from Google Sheets. Production builds use bundled data in `src/data/events.generated.ts` and `src/data/beauty.generated.ts`, so changing the sheet does not change Cloudflare production until you deploy a new build.
 

@@ -5,1712 +5,721 @@ import type { PrideEvent } from '../types/event';
 export const generatedEvents: PrideEvent[] = [
   {
     "id": "2",
-    "day": "wednesday",
-    "dayLabel": "Wednesday",
-    "name": "The Warm Up with Fela",
-    "organizer": "Creative Grounds",
-    "types": [
-      "workshop"
-    ],
-    "vibesRaw": "community cultural wellness",
+    "day": "friday",
+    "dayLabel": "Friday",
+    "name": "Call Out (The Pool Party)",
+    "organizer": "HerVibeEvents",
+    "types": [],
+    "vibesRaw": "35+ flirt food byob",
     "free": false,
-    "badges": [
-      "Workshop"
-    ],
-    "time": "6:00 PM",
-    "location": "Creative Grounds Coffee Shop · 1822 North Capitol St. NW Washington DC 20002",
+    "badges": [],
+    "time": "12:00 PM",
+    "location": "TBD w/ticket purchase",
     "vibeTags": [
-      "Community",
-      "Cultural",
-      "Wellness"
+      "35+",
+      "Flirt",
+      "Food",
+      "BYOB"
     ],
-    "ctaHref": "https://posh.vip/e/the-warm-up-14",
+    "ctaHref": "https://www.eventbrite.com/e/call-out-the-pool-party-tickets-1989123427718?utm_experiment=test_share_listing&aff=ebdsshios&sg=76bfd980b4ba9b634c1089308b47b0953783e9018d356a30d11cd21bef8495e92caab815adfdd6cf658dbb2a96798ca3c3fad22edc66e86eec8670d53b4bedb73541aeb3b214c951dda41e2e7b",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-workshop"
+    "cardClass": "tp-day-party"
   },
   {
     "id": "3",
-    "day": "wednesday",
-    "dayLabel": "Wednesday",
-    "name": "Ladies Love R&B",
-    "organizer": "MIM Entertainment",
+    "day": "friday",
+    "dayLabel": "Friday",
+    "name": "The Black Lesbian Link-up",
+    "organizer": "Lez Black Gurls",
     "types": [
-      "after-dark"
+      "meetup"
     ],
-    "vibesRaw": "ass shaking flirt",
-    "free": true,
+    "vibesRaw": "flirt dating food",
+    "free": false,
     "badges": [
-      "After Dark",
-      "Free"
+      "Meetup"
     ],
-    "time": "9:00 PM",
-    "location": "Cafe Saint-Ex · 1847 14th Street NW\nWashington, DC 20009",
+    "time": "7:00 PM",
+    "location": "The Empanada Lady · 10 South St STE 100, Baltimore, MD 21202",
     "vibeTags": [
-      "Ass Shaking",
-      "Flirt"
+      "Flirt",
+      "Dating",
+      "Food"
     ],
-    "ctaHref": "https://www.eventbrite.com/e/ladies-love-rb-dc-black-pride-edition-tickets-1989135185887?aff=oddtdtcreator",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-after-dark",
-    "discountCode": "Free Drinks Giveaway\nRepost the event flyer for the event you're attending — a few lucky reposts will be randomly selected for 2 complimentary drinks at the door!"
+    "ctaHref": "https://www.eventbrite.com/e/lez-black-gurls-presents-the-black-lesbian-link-up-tickets-1989436050782?utm_experiment=test_share_listing&aff=ebdsshios&sg=d038de198ab6c8565d2dd826e8a4689fce5bd6f89f2f54569e47b261ebc0ad0b191c312e847dc7d1fcd87d960e7edf249810a8371439a9ce985bad02342a7e9c2f84662873d0428c6dcff49927",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup"
   },
   {
     "id": "4",
+    "day": "thursday",
+    "dayLabel": "Thursday",
+    "name": "The Link-Up: A Pride Mixer",
+    "organizer": "RLA & Aphrodite's House",
+    "types": [
+      "happy-hour",
+      "meetup"
+    ],
+    "vibesRaw": "groove flirt food",
+    "free": true,
+    "badges": [
+      "Happy Hour",
+      "Meetup",
+      "Free"
+    ],
+    "time": "5:00 PM",
+    "location": "Noir Restaurant and Lounge · 716 York Rd, Baltimore, MD 21212",
+    "vibeTags": [
+      "Groove",
+      "Flirt",
+      "Food"
+    ],
+    "ctaHref": "https://posh.vip/e/the-link-up-a-pride-happy-hour",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-happy-hour"
+  },
+  {
+    "id": "5",
+    "day": "saturday",
+    "dayLabel": "Saturday",
+    "name": "CharmCityPrideFest",
+    "organizer": "CharmCityPride",
+    "types": [
+      "after-dark",
+      "day-party",
+      "happy-hour",
+      "festival"
+    ],
+    "vibesRaw": "ass shaking flirt groove karaoke live show",
+    "free": false,
+    "badges": [
+      "After Dark",
+      "Day Party",
+      "Happy Hour",
+      "Festival"
+    ],
+    "time": "6:00 PM",
+    "location": "Power Plant Live · 34 Market Pl, Baltimore, MD 21202",
+    "vibeTags": [
+      "Ass Shaking",
+      "Flirt",
+      "Groove",
+      "Karaoke",
+      "Live Show"
+    ],
+    "ctaHref": "https://www.axs.com/events/1430048/charm-city-pride-fest-tickets?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleASRZjNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAad0oxEUU2EAH1dxqxa9B7sBs9w37g_YkvixRdfrO1lAjC9S04euf__0aebbbw_aem_wOlUjf04yN7K0U66fhuZiw&utm_id=97760_v0_s00_e0_tv3",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "6",
+    "day": "tuesday",
+    "dayLabel": "Tuesday",
+    "name": "The Masc Meet Up: The Unspoken Energy We All Know",
+    "organizer": "All Love Baltimore & Baltimore City LGBTQ Affairs",
+    "types": [
+      "meetup",
+      "workshop"
+    ],
+    "vibesRaw": "cultural community networking 30+",
+    "free": true,
+    "badges": [
+      "Meetup",
+      "Workshop",
+      "Free"
+    ],
+    "time": "7:30 PM",
+    "location": "Impact Hub Baltimore · 10 E North Ave Suite 5, Baltimore, MD 21202",
+    "vibeTags": [
+      "Cultural",
+      "Community",
+      "Networking",
+      "30+"
+    ],
+    "ctaHref": "https://posh.vip/e/the-masc-meetup-the-unspoken-energy-we-all-know",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup"
+  },
+  {
+    "id": "7",
     "day": "wednesday",
     "dayLabel": "Wednesday",
-    "name": "The Pregame: DC Black Pride weekend official kickoff",
-    "organizer": "Lavender Evolutions",
+    "name": "Flavors; Pride Happy Hour",
+    "organizer": "All Love Baltimore & Blk Ass Flea Mkt",
     "types": [
       "happy-hour"
     ],
-    "vibesRaw": "chill flirt",
+    "vibesRaw": "flirt groove food 30+",
     "free": true,
     "badges": [
       "Happy Hour",
       "Free"
     ],
-    "time": "6:30 PM",
-    "location": "18th St lounge · 1230 9th St NW",
-    "vibeTags": [
-      "Chill",
-      "Flirt"
-    ],
-    "ctaHref": "https://posh.vip/e/the-pregame-the-dc-black-pride-kickoff?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnjT7r1o7UwQVfyFaXm5RXKL6adz5aS6oLqcVyJhNwOxYZGTyCjphWT_fj6kQ_aem_0Jqbnhq_fF3Kc2bnvB3S_w",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "5",
-    "day": "thursday",
-    "dayLabel": "Thursday",
-    "name": "Brown Sugar: Welcome to DC Black Pride Rooftop Happy Hour",
-    "organizer": "Bliss (A 2 Zee Events + Party with Honey Collab)",
-    "types": [
-      "happy-hour"
-    ],
-    "vibesRaw": "flirt open bar groove",
-    "free": false,
-    "badges": [
-      "Happy Hour"
-    ],
-    "time": "5:00 PM",
-    "location": "Decades ROOFTOP · 1219 Connecticut Ave. NW\nWashington, DC",
-    "vibeTags": [
-      "Flirt",
-      "Open Bar",
-      "Groove"
-    ],
-    "ctaHref": "https://www.eventbee.com/v/blissthurs26#/tickets",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour",
-    "discountCode": "SoftQueerWealthXBliss"
-  },
-  {
-    "id": "6",
-    "day": "thursday",
-    "dayLabel": "Thursday",
-    "name": "Zesty World: Black Pride Kickoff for the Gworls, Gays, and Theys",
-    "organizer": "Raw Honey, She Shed & Deep Cvnt",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "8:00 PM",
-    "location": "Mixxed DC · 2427 18th St. NW\nWashington DC",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://posh.vip/e/dc-zestyworld-black-pride",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "SQW"
-  },
-  {
-    "id": "7",
-    "day": "thursday",
-    "dayLabel": "Thursday",
-    "name": "Sweet Beginnings",
-    "organizer": "Unleashed DC",
-    "types": [
-      "night-party"
-    ],
-    "vibesRaw": "ass shaking flirt grown & sexy",
-    "free": false,
-    "badges": [
-      "Night Party"
-    ],
     "time": "7:00 PM",
-    "location": "12 Stories · 75 District Square SW",
+    "location": "Broadway Market · 1640 Aliceanna St. Baltimore MD, 21231",
     "vibeTags": [
-      "Ass Shaking",
       "Flirt",
-      "Grown & Sexy"
+      "Groove",
+      "Food",
+      "30+"
     ],
-    "ctaHref": "https://posh.vip/e/unleashed-dc-black-pride-kickoff-sweet-beginnings",
+    "ctaHref": "https://posh.vip/e/flavors-pride-happy-hour",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-night-party",
-    "discountCode": "Free Ticket Giveaway\nPost about the event you're attending and tag @unleasheddc for a chance to win complimentary tickets. 4 winners will be selected per event!"
+    "cardClass": "tp-happy-hour"
   },
   {
     "id": "8",
     "day": "thursday",
     "dayLabel": "Thursday",
-    "name": "A Toast to HER: DC Black Pride Edition",
-    "organizer": "With Love, Leah",
-    "types": [
-      "happy-hour"
-    ],
-    "vibesRaw": "flirt groove",
-    "free": true,
-    "badges": [
-      "Happy Hour",
-      "Free"
-    ],
-    "time": "6:00 PM",
-    "location": "Shanklin Hall · 2325 18th St NW,\nWashington DC",
-    "vibeTags": [
-      "Flirt",
-      "Groove"
-    ],
-    "ctaHref": "https://posh.vip/e/a-toast-to-her-black-pride-edition",
-    "ctaLabel": "Join Waitlist",
-    "ctaButtonClass": "btn-w",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "9",
-    "day": "thursday",
-    "dayLabel": "Thursday",
-    "name": "Welcome to DC: Happy Hour",
-    "organizer": "Us Helping Us People Into Living",
-    "types": [
-      "happy-hour"
-    ],
-    "vibesRaw": "community cultural open bar food games",
-    "free": false,
-    "badges": [
-      "Happy Hour"
-    ],
-    "time": "5:00 PM",
-    "location": "MetroBar · 640 Rhode Island Ave NE, Washington, DC 20002",
-    "vibeTags": [
-      "Community",
-      "Cultural",
-      "Open Bar",
-      "Food",
-      "Games"
-    ],
-    "ctaHref": "https://www.ushelpingus.org/events/welcome-to-dc-happy-hour-2026",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "10",
-    "day": "thursday",
-    "dayLabel": "Thursday",
-    "name": "10th Annual DC Black Pride Unity Ball",
-    "organizer": "Center for Black Equity",
-    "types": [
-      "ball"
-    ],
-    "vibesRaw": "creative community",
-    "free": true,
-    "badges": [
-      "Ball",
-      "Free"
-    ],
-    "time": "9:00 PM",
-    "location": "The Westin DC Downtown · 999 9th St NW, Washington, DC 20001, USA",
-    "vibeTags": [
-      "Creative",
-      "Community"
-    ],
-    "ctaHref": "https://givebutter.com/10th-annual-dc-black-pride-unity-ball-fjwyjy",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-ball"
-  },
-  {
-    "id": "11",
-    "day": "friday",
-    "dayLabel": "Friday",
-    "name": "Dipped: All \"Nude\" Party",
-    "organizer": "Bliss (A 2 Zee Events + Party with Honey Collab)",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking grown & sexy",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Strand Nightclub · 1400 I St. NW, Washington, DC",
-    "vibeTags": [
-      "Ass Shaking",
-      "Grown & Sexy"
-    ],
-    "ctaHref": "https://www.eventbee.com/v/blissfri26#/tickets",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "SoftQueerWealthXBliss"
-  },
-  {
-    "id": "12",
-    "day": "friday",
-    "dayLabel": "Friday",
-    "name": "Booty Bounce Black Rodeo",
-    "organizer": "Party Girls",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Ivy City Smokehouse · 1356 Okie St NE, Washington, DC 20002",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://posh.vip/e/booty-bounce-black-pride-edition",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "sqwealth"
-  },
-  {
-    "id": "13",
-    "day": "friday",
-    "dayLabel": "Friday",
-    "name": "Hot Honey DC",
-    "organizer": "Queer Aunties",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "flirt ass shaking 30+",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "The District Sports Bar · 900 Florida Ave NW\nWashington DC",
-    "vibeTags": [
-      "Flirt",
-      "Ass Shaking",
-      "30+"
-    ],
-    "ctaHref": "https://posh.vip/e/queer-aunties-x-sheshed-presents-hot-honey",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "14",
-    "day": "friday",
-    "dayLabel": "Friday",
-    "name": "Black Sugar",
-    "organizer": "Unleashed DC",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "grown & sexy flirt",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "The Gathering Spot · 1720 I St. NW,\nWashington DC",
-    "vibeTags": [
-      "Grown & Sexy",
-      "Flirt"
-    ],
-    "ctaHref": "https://posh.vip/e/black-sugar-district-after-dark",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "Free Ticket Giveaway\nPost about the event you're attending and tag @unleasheddc for a chance to win complimentary tickets. 4 winners will be selected per event!"
-  },
-  {
-    "id": "15",
-    "day": "friday",
-    "dayLabel": "Friday",
-    "name": "Unmasked: A DC Black Pride Speed Dating + Speed Kinking Experience",
-    "organizer": "Lesbifriends Travel",
-    "types": [
-      "happy-hour",
-      "day-party"
-    ],
-    "vibesRaw": "flirt dating grown & sexy",
-    "free": false,
-    "badges": [
-      "Happy Hour",
-      "Day Party"
-    ],
-    "time": "5:00 PM",
-    "location": "Mixxed · 2427 18th St. NW\nWashington DC",
-    "vibeTags": [
-      "Flirt",
-      "Dating",
-      "Grown & Sexy"
-    ],
-    "ctaHref": "https://www.lesbifriendstravel.com/events/unmasked-2026",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "16",
-    "day": "friday",
-    "dayLabel": "Friday",
-    "name": "United Nations: Black Pride Diasphoric Bashment",
-    "organizer": "Queeribbeans of DMV",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Mixxed · 2427 18th Street Northwest Washington, DC, DC",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://posh.vip/e/united-nations-1",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "17",
-    "day": "friday",
-    "dayLabel": "Friday",
-    "name": "DC BLACK PRIDE Ladies All White Rooftop Tea Party",
-    "organizer": "Ladies First Entertainment",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "flirt ass shaking",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "5:00 PM",
-    "location": "918 Silver Spring Ave, \nSilver Spring, MD",
-    "vibeTags": [
-      "Flirt",
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/dc-black-pride-ladies-all-white-rooftop-tea-party-25-tix-3017759795-tickets-1984585337167",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "18",
-    "day": "friday",
-    "dayLabel": "Friday",
-    "name": "Black Gay Pride Adult Women T Dance With Robyn Holden",
-    "organizer": "Robyn Holden",
-    "types": [
-      "happy-hour"
-    ],
-    "vibesRaw": "community groove",
-    "free": false,
-    "badges": [
-      "Happy Hour"
-    ],
-    "time": "6:00 PM",
-    "location": "Eaton DC · 1201 K Street Northwest\nWashington, DC 20005",
-    "vibeTags": [
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/black-gay-pride-adult-women-t-dance-with-robyn-holden-202-497-5800-tickets-1980910064327",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "19",
-    "day": "friday",
-    "dayLabel": "Friday",
-    "name": "Fruit Roll-up",
-    "organizer": "Fruit Punch",
-    "types": [
-      "meetup"
-    ],
-    "vibesRaw": "chill",
-    "free": false,
-    "badges": [
-      "Meetup"
-    ],
-    "time": "4:00 PM",
-    "location": "Blunt Sluts · 2451 18th St NW Washington, DC 20009",
-    "vibeTags": [
-      "Chill"
-    ],
-    "ctaHref": "https://posh.vip/e/fruit-rollup",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "discountCode": "Not specific to SQW, but 10% OFF all store purchases for attendees"
-  },
-  {
-    "id": "20",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Sun-kissed: R&B Party – Vinyls & Vibes",
-    "organizer": "Bliss (A 2 Zee Events + Party with Honey Collab)",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "flirt food groove",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "4:00 PM",
-    "location": "Signature Lounge · 1727 Connecticut Ave NW, Washington, DC",
-    "vibeTags": [
-      "Flirt",
-      "Food",
-      "Groove"
-    ],
-    "ctaHref": "https://www.eventbee.com/v/blisssatday26#/tickets",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party",
-    "discountCode": "SoftQueerWealthXBliss"
-  },
-  {
-    "id": "21",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "DC Pride’s MEGA Ladies Party",
-    "organizer": "Bliss (A 2 Zee Events + Party with Honey Collab)",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Next Level · 15 K St. NE, Washington DC",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://www.eventbee.com/v/blisssat26#/tickets",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "SoftQueerWealthXBliss"
-  },
-  {
-    "id": "22",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Batty Gyal",
-    "organizer": "Leslinq & Party Girls",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "11:00 PM",
-    "location": "Songbyrd · 540 Penn St NE\nWashington DC",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://dice.fm/event/rydvqq-batty-gyal-the-black-pride-bashment-23rd-may-songbyrd-washington-dc-tickets",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "23",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "DC Black Pride Fun Run",
-    "organizer": "Momentum! Health",
+    "name": "Parity Porch Concert:Pride Edition Ft. Black Assets",
+    "organizer": "All Love Baltimore, PARITY & Baltimore City LGBTQ Affairs",
     "types": [
       "outdoors"
     ],
-    "vibesRaw": "community wellness",
-    "free": false,
-    "badges": [
-      "Outdoors"
-    ],
-    "time": "8:00 AM",
-    "location": "Navy Yard Area · Washington, DC 20009",
-    "vibeTags": [
-      "Community",
-      "Wellness"
-    ],
-    "ctaHref": "https://runsignup.com/Race/DC/Washington/DCBlackPrideFunRun",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-outdoors"
-  },
-  {
-    "id": "24",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Oasis Day Party & Festival",
-    "organizer": "Unleashed DC",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "flirt groove",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "12:00 PM",
-    "location": "Metro Bar · 640 Rhodes Island Ave NE,\nWashington DC",
-    "vibeTags": [
-      "Flirt",
-      "Groove"
-    ],
-    "ctaHref": "https://posh.vip/e/oasis-day-party-festival",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party",
-    "discountCode": "Free Ticket Giveaway\nPost about the event you're attending and tag @unleasheddc for a chance to win complimentary tickets. 4 winners will be selected per event!"
-  },
-  {
-    "id": "25",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Midnight Melt",
-    "organizer": "Unleashed DC",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "flirt groove",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Public Bar Live · 1214 18th St. NW,\nWashington DC",
-    "vibeTags": [
-      "Flirt",
-      "Groove"
-    ],
-    "ctaHref": "https://posh.vip/e/unleashed-dc-main-eventmidnight-melt-the-ultimate-indulgence",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "Free Ticket Giveaway\nPost about the event you're attending and tag @unleasheddc for a chance to win complimentary tickets. 4 winners will be selected per event!"
-  },
-  {
-    "id": "26",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Flamingo Cafe: Love, Lust, & Labels",
-    "organizer": "Letoi Williams",
-    "types": [
-      "workshop"
-    ],
-    "vibesRaw": "networking community",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Free"
-    ],
-    "time": "11:00 AM",
-    "location": "Downtown Westin · 999 9th St. NW\nWashington DC",
-    "vibeTags": [
-      "Networking",
-      "Community"
-    ],
-    "ctaHref": "https://www.instagram.com/p/DX7r4aDlFcl/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "27",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Desire without Definition",
-    "organizer": "Beta Kappa",
-    "types": [
-      "workshop",
-      "day-party"
-    ],
-    "vibesRaw": "grown & sexy",
-    "free": false,
-    "badges": [
-      "Workshop",
-      "Day Party"
-    ],
-    "time": "7:00 PM",
-    "location": "Spark Social House · 2009 14th St NW",
-    "vibeTags": [
-      "Grown & Sexy"
-    ],
-    "ctaHref": "https://spark-dc.com/pages/black-pride",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "28",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Black Queer Joy Brunch & Day Party",
-    "organizer": "Kei-Significance",
-    "types": [
-      "brunch",
-      "day-party"
-    ],
-    "vibesRaw": "groove flirt food",
-    "free": true,
-    "badges": [
-      "Brunch",
-      "Day Party",
-      "Free"
-    ],
-    "time": "12:00 PM",
-    "location": "Mixxed · 2427 18th St. NW\nWashington DC",
-    "vibeTags": [
-      "Groove",
-      "Flirt",
-      "Food"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/black-queer-joy-brunch-day-party-tickets-1987427249403",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-brunch"
-  },
-  {
-    "id": "29",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Qute & Queer 4.0 A DC Black Pride Tradition",
-    "organizer": "Lesbifriends Travel",
-    "types": [
-      "happy-hour"
-    ],
-    "vibesRaw": "chill flirt community food open bar",
-    "free": false,
-    "badges": [
-      "Happy Hour"
-    ],
-    "time": "3:00 PM",
-    "location": "The Lesbifriends House · SE Washington DC 20020",
-    "vibeTags": [
-      "Chill",
-      "Flirt",
-      "Community",
-      "Food",
-      "Open Bar"
-    ],
-    "ctaHref": "https://www.lesbifriendstravel.com/events/qute-and-queer-4",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "30",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "The Lesbian Liberation Lab",
-    "organizer": "Tiera Craig",
-    "types": [
-      "workshop"
-    ],
-    "vibesRaw": "networking community cultural",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Free"
-    ],
-    "time": "1:00 PM",
-    "location": "Downtown Westin · 999 9th St. NW\nWashington, DC",
-    "vibeTags": [
-      "Networking",
-      "Community",
-      "Cultural"
-    ],
-    "ctaHref": "https://www.instagram.com/p/DXsdY6ojrF0/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "31",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Get on Up Girl!",
-    "organizer": "Lit Lives Matter",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "open bar flirt groove",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "9:00 AM",
-    "location": "1942DC · 1942 9th St NW\nWashington, DC",
-    "vibeTags": [
-      "Open Bar",
-      "Flirt",
-      "Groove"
-    ],
-    "ctaHref": "https://posh.vip/e/get-on-up-girl",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "32",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Lust, Love, & Labels",
-    "organizer": "Black Council HRC",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "community groove",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "7:00 PM",
-    "location": "Decades · 1219 Connecticut Avenue NW, Washington, DC 20036",
-    "vibeTags": [
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://act.hrc.org/page/190143/event/1?ea.tracking.id=em_adv_BLACKCouncil",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "33",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "DC Black Pride Black Fem 4 Fem Happy Hour",
-    "organizer": "DMV Black Fem 4 Fem",
-    "types": [
-      "meetup",
-      "happy-hour"
-    ],
-    "vibesRaw": "chill flirt",
-    "free": true,
-    "badges": [
-      "Meetup",
-      "Happy Hour",
-      "Free"
-    ],
-    "time": "5:00 PM",
-    "location": "Mixxed · 2427 18th Street Northwest Washington, DC, DC",
-    "vibeTags": [
-      "Chill",
-      "Flirt"
-    ],
-    "ctaHref": "https://www.meetup.com/dmv-area-black-fem-4-fem-lesbians-and-bisexual-women/events/314573456/?eventOrigin=group_events_list",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup"
-  },
-  {
-    "id": "34",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "The Melt Black Pride Edition",
-    "organizer": "The Melt",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": true,
-    "badges": [
-      "After Dark",
-      "Free"
-    ],
-    "time": "10:00 PM",
-    "location": "Sinners and Saints · 2303 18th St NW",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://ra.co/events/2433033",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "35",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "BLACK Pride - Memorial Weekend Day Party",
-    "organizer": "DISTRICT PARTIES",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "5:00 PM",
-    "location": "Strand Nightclub · 1400 I St. NW, Washington, DC",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/black-pride-memorial-wknd-day-party-tickets-1985063756131",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "36",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "DC Black Pride: The New Black Renaissance: Aging, Identity and Our Becoming",
-    "organizer": "June Crenshaw",
-    "types": [
-      "workshop",
-      "cultural"
-    ],
-    "vibesRaw": "community cultural",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Cultural",
-      "Free"
-    ],
-    "time": "11:00 AM",
-    "location": "The Westin DC Downtown · 999 9th St NW, Washington, DC 20001, USA",
-    "vibeTags": [
-      "Community",
-      "Cultural"
-    ],
-    "ctaHref": "https://www.instagram.com/p/DXSmnZCjcJx/?igsh=N2JnbGQwM2gwNnYx",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "37",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "DC Black Pride: Doesn't God Love Me Too? My Worship is For Real",
-    "organizer": "Janeé Lee",
-    "types": [
-      "workshop",
-      "cultural"
-    ],
-    "vibesRaw": "community cultural",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Cultural",
-      "Free"
-    ],
-    "time": "1:00 PM",
-    "location": "The Westin DC Downtown · 999 9th St NW, Washington, DC 20001, USA",
-    "vibeTags": [
-      "Community",
-      "Cultural"
-    ],
-    "ctaHref": "https://www.instagram.com/p/DXhvap6iW7F/?igsh=MWRsNHV5d2ZwOWN0ZQ==",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "38",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Black Trans Pride 2026: Centering Black Trans Leadership, Community Power and Ballroom Culture",
-    "organizer": "Destination Tomorrow",
-    "types": [
-      "workshop",
-      "ball",
-      "cultural"
-    ],
-    "vibesRaw": "community cultural creative",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Ball",
-      "Cultural",
-      "Free"
-    ],
-    "time": "1:00 PM",
-    "location": "The Westin DC Downtown · 999 9th St NW, Washington, DC 20001, USA",
-    "vibeTags": [
-      "Community",
-      "Cultural",
-      "Creative"
-    ],
-    "ctaHref": "https://www.instagram.com/p/DXkiPESGFTh/?igsh=MXV6dThueHlvdGM1dQ==",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "39",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "DC Black Pride: Fight or Flight: Navigating Parenthood During Trying Times",
-    "organizer": "PFLAG National",
-    "types": [
-      "workshop",
-      "cultural"
-    ],
-    "vibesRaw": "community cultural",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Cultural",
-      "Free"
-    ],
-    "time": "3:00 PM",
-    "location": "The Westin DC Downtown · 999 9th St NW, Washington, DC 20001, USA",
-    "vibeTags": [
-      "Community",
-      "Cultural"
-    ],
-    "ctaHref": "https://www.instagram.com/p/DXvCLF6GHJy/?igsh=cGttcnM2NWxkdW9z",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "40",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "DC Black Pride: Mary Bowman Poetry Slam & Open Mic",
-    "organizer": "Kenneth Something",
-    "types": [
-      "workshop",
-      "cultural"
-    ],
-    "vibesRaw": "community cultural creative",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Cultural",
-      "Free"
-    ],
-    "time": "6:00 PM",
-    "location": "The Westin DC Downtown · 999 9th St NW, Washington, DC 20001, USA",
-    "vibeTags": [
-      "Community",
-      "Cultural",
-      "Creative"
-    ],
-    "ctaHref": "https://www.instagram.com/p/DXfTqa-ibT7/?utm_source=ig_web_button_share_sheet",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "41",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Dick Appointment Pres. Bambii",
-    "organizer": "Transmission",
-    "types": [
-      "after-dark",
-      "night-party"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "After Dark",
-      "Night Party"
-    ],
-    "time": "10:00 PM",
-    "location": "1353 H Street Northeast, Washington, DC 20002, USA · 1353 H St. NE, D.C.",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://shotgun.live/en/events/dick-appointment-hoe-lotta-fun?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnFTq-sLXlWO8Hm6fZGLCxV8Yw6rzGR_A2kx2gC6hf4LPbMNQpgHgd_uxkDHA_aem_in1zTowhB6zwtX9vDZFU2A",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "42",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Cousins & ’Nem\n\nFor the Aunties\nFor the Guncles\nFor the Uncties",
-    "organizer": "Queer Aunties",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking 30+",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Decades DC · 1219 Connecticut Ave NW, Washington, DC 20036",
-    "vibeTags": [
-      "Ass Shaking",
-      "30+"
-    ],
-    "ctaHref": "https://www.queeraunties.com/pricing",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "Not SQW specific –\nThe first 50 people to arrive at the Love, Lust & Labels panel get FREE entry into Cousins & ’Nem"
-  },
-  {
-    "id": "43",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "ChocCity Cornhole Week 7 Black Pride",
-    "organizer": "ChocCity Cornhole",
-    "types": [
-      "meetup",
-      "outdoors-hangout"
-    ],
-    "vibesRaw": "chill community games",
-    "free": true,
-    "badges": [
-      "Meetup",
-      "Outdoors Hangout",
-      "Free"
-    ],
-    "time": "12:00 PM",
-    "location": "Atlas Brew Works · 600 Howard Rd SE, Washington, DC 20020",
-    "vibeTags": [
-      "Chill",
-      "Community",
-      "Games"
-    ],
-    "ctaHref": "https://www.choccitycornhole.com/events-2?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup"
-  },
-  {
-    "id": "44",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "The Gym Jam: A real Gay Ass Dance Party",
-    "organizer": "Play Play",
-    "types": [
-      "outdoors-hangout",
-      "meetup"
-    ],
-    "vibesRaw": "food chill community groove games",
-    "free": false,
-    "badges": [
-      "Outdoors Hangout",
-      "Meetup"
-    ],
-    "time": "3:00 PM",
-    "location": "Perry Street Preparatory PCS · 1800 Perry St NE\nWashington DC",
-    "vibeTags": [
-      "Food",
-      "Chill",
-      "Community",
-      "Groove",
-      "Games"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/the-gym-jam-by-play-play-tickets-1987072646777",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-outdoors-hangout",
-    "discountCode": "softqueerwealth"
-  },
-  {
-    "id": "45",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Sweet Like Brown Sugar",
-    "organizer": "Bliss (A 2 Zee Events + Party with Honey Collab)",
-    "types": [
-      "brunch"
-    ],
-    "vibesRaw": "flirt food groove",
-    "free": false,
-    "badges": [
-      "Brunch"
-    ],
-    "time": "1:00 PM",
-    "location": "SELVA · 1223 Connecticut Ave NW, Washington DC",
-    "vibeTags": [
-      "Flirt",
-      "Food",
-      "Groove"
-    ],
-    "ctaHref": "https://www.eventbee.com/v/brownsugarbrunch#/tickets",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-brunch",
-    "discountCode": "SoftQueerWealthXBliss"
-  },
-  {
-    "id": "46",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "SWEET ESCAPE Rooftop Day Party",
-    "organizer": "Bliss (A 2 Zee Events + Party with Honey Collab)",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "ass shaking flirt grown & sexy",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "4:00 PM",
-    "location": "Twelve after Twelve · 1212 18th St. NW,\nWashington, DC",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Grown & Sexy"
-    ],
-    "ctaHref": "https://www.eventbee.com/v/blisssun26#/tickets",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party",
-    "discountCode": "SoftQueerWealthXBliss"
-  },
-  {
-    "id": "47",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Aunties in DC",
-    "organizer": "Queer Aunties",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "30+ ass shaking",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "4:00 PM",
-    "location": "THRoW Social · 1410 Okie St.\nNE St. #102\nWashington DC",
-    "vibeTags": [
-      "30+",
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://posh.vip/e/queer-aunties-presents-aunties-in-dc?t=posh-embed",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "48",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "House of Opulence Day Party Experience",
-    "organizer": "House of Opulence",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "flirt food groove community",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "4:00 PM",
-    "location": "Shanklin Hall · 2325 18th Street Northwest",
-    "vibeTags": [
-      "Flirt",
-      "Food",
-      "Groove",
-      "Community"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/house-of-opulence-tickets-1987180701973?utm_source=threads&utm_medium=social&utm_content=link_in_bio",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "49",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Lick: Pride Finale",
-    "organizer": "Unleashed DC",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "8:00 PM",
-    "location": "Sachi Nightclub · 727 15th St NW\nWashington, DC",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://posh.vip/e/lick-pride-finale",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "Free Ticket Giveaway\nPost about the event you're attending and tag @unleasheddc for a chance to win complimentary tickets. 4 winners will be selected per event!"
-  },
-  {
-    "id": "50",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Walk, Breathe, Rise: A DC Black Pride Morning in Nature",
-    "organizer": "Lesbifriends Travel",
-    "types": [
-      "outdoors"
-    ],
-    "vibesRaw": "chill community wellness",
-    "free": false,
-    "badges": [
-      "Outdoors"
-    ],
-    "time": "9:30 AM",
-    "location": "National Arboretum · Washington DC 20002",
-    "vibeTags": [
-      "Chill",
-      "Community",
-      "Wellness"
-    ],
-    "ctaHref": "https://www.lesbifriendstravel.com/events/walk-breathe-rise",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-outdoors"
-  },
-  {
-    "id": "51",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Good Girls Go To Heaven Bad Girls Go To For The Girls",
-    "organizer": "For the Girls DC",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "5:00 PM",
-    "location": "Selva · 1223 Connecticut Ave. NW\nWashington DC 20036",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://posh.vip/e/for-the-girls-dc-black-pride",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "52",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Paint and Debate",
-    "organizer": "Paint and Debate",
-    "types": [
-      "workshop"
-    ],
-    "vibesRaw": "community networking cultural creative",
-    "free": false,
-    "badges": [
-      "Workshop"
-    ],
-    "time": "2:00 PM",
-    "location": "Dupont Underground · 19 Dupont Cir NW\nWashington DC",
-    "vibeTags": [
-      "Community",
-      "Networking",
-      "Cultural",
-      "Creative"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/paint-debate-tickets-1987340861013",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "53",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "One for the Road Day Party",
-    "organizer": "Afro Queer",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": true,
-    "badges": [
-      "Day Party",
-      "Free"
-    ],
-    "time": "12:00 PM",
-    "location": "MK on U St.",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://events.eventnoire.com/e/afroqueer-presents-one-for-the-road-day-party/tickets",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "54",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Brunch with Pride at Dirty Habit DC!",
-    "organizer": "DJ Jai Syncere & QMunity Love",
-    "types": [
-      "brunch",
-      "outdoors-hangout",
-      "day-party"
-    ],
-    "vibesRaw": "groove flirt grown & sexy",
-    "free": false,
-    "badges": [
-      "Brunch",
-      "Outdoors Hangout",
-      "Day Party"
-    ],
-    "time": "12:00 PM",
-    "location": "Dirty Habit · 555 8th Street Northwest\nWashington, DC 20004",
-    "vibeTags": [
-      "Groove",
-      "Flirt",
-      "Grown & Sexy"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/brunch-with-pride-at-dirty-habit-dc-tickets-1987576422584",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-brunch"
-  },
-  {
-    "id": "55",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Foreplay Series: Boudoir Photoshoot & Smutty Zine Making",
-    "organizer": "Pillow Talk",
-    "types": [
-      "workshop"
-    ],
-    "vibesRaw": "chill creative flirt community",
-    "free": false,
-    "badges": [
-      "Workshop"
-    ],
-    "time": "12:00 PM",
-    "location": "As You Are · 500 8th St SE, Washington, DC 20003",
-    "vibeTags": [
-      "Chill",
-      "Creative",
-      "Flirt",
-      "Community"
-    ],
-    "ctaHref": "https://posh.vip/e/foreplay-boudoir-photoshoot-smutty-zinemaking",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "57",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Spring Fling",
-    "organizer": "The Sapphic Sanctuary",
-    "types": [
-      "happy-hour",
-      "cultural"
-    ],
-    "vibesRaw": "dating flirt games creative",
-    "free": false,
-    "badges": [
-      "Happy Hour",
-      "Cultural"
-    ],
-    "time": "5:00 PM",
-    "location": "Death Punch Bar · 2321 18th St NW",
-    "vibeTags": [
-      "Dating",
-      "Flirt",
-      "Games",
-      "Creative"
-    ],
-    "ctaHref": "https://joinpinyada.com/event-details?eventid=642&hostid=1259&share=true",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "58",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Do You Want To Get Funky With Me: Brunch and Day Party",
-    "organizer": "Women inthe Life Association",
-    "types": [
-      "brunch",
-      "day-party"
-    ],
-    "vibesRaw": "community grown & sexy",
-    "free": true,
-    "badges": [
-      "Brunch",
-      "Day Party",
-      "Free"
-    ],
-    "time": "12:00 PM",
-    "location": "The Continent DC · 1110 Vermont Ave NW",
-    "vibeTags": [
-      "Community",
-      "Grown & Sexy"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/do-you-want-to-get-funky-with-me-tickets-1987802195878",
-    "ctaLabel": "Join Waitlist",
-    "ctaButtonClass": "btn-w",
-    "cardClass": "tp-brunch"
-  },
-  {
-    "id": "59",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Queer Black Broadway Walking Tour",
-    "organizer": "Off the Mall Tours",
-    "types": [
-      "outdoors-hangout",
-      "tour"
-    ],
-    "vibesRaw": "wellness community",
-    "free": false,
-    "badges": [
-      "Outdoors Hangout",
-      "Tour"
-    ],
-    "time": "6:00 PM",
-    "location": "Howard Theater · 620 T Street Northwest\nWashington, DC 20001",
-    "vibeTags": [
-      "Wellness",
-      "Community"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/queer-black-broadway-walking-tour-tickets-1988349107706",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-outdoors-hangout"
-  },
-  {
-    "id": "60",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "DC Black Pride Ultimate Pool Party",
-    "organizer": "Ladies First Entertainment",
-    "types": [
-      "day-party",
-      "pool",
-      "outdoors-hangout"
-    ],
-    "vibesRaw": "chill groove flirt",
-    "free": false,
-    "badges": [
-      "Day Party",
-      "Pool",
-      "Outdoors Hangout"
-    ],
-    "time": "6:00 PM",
-    "location": "14300 Willoughby Rd\nUpper Marlboro, MD 20772",
-    "vibeTags": [
-      "Chill",
-      "Groove",
-      "Flirt"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/dc-black-pride-ultimate-pool-party-tickets-1984453979272?aff=ebdsoporgprofile",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "61",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "7th Annual Brunch & Babes",
-    "organizer": "Tony Nelson",
-    "types": [
-      "brunch"
-    ],
-    "vibesRaw": "community open bar food",
-    "free": false,
-    "badges": [
-      "Brunch"
-    ],
-    "time": "12:00 PM",
-    "location": "Hook Hall · 3400 Georgia Ave NW, Washington, DC 20010, USA",
-    "vibeTags": [
-      "Community",
-      "Open Bar",
-      "Food"
-    ],
-    "ctaHref": "https://givebutter.com/brunch-babes26?fbclid=PARlRTSARpszhleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaf2JQBvs6ZdJ6L5eZdui1bgQH6EdSxXsD7D1v-SEa0iAIDwKB1xUruRHyakyg_aem_aTpvhTdlLgWiJ7A1SKGcLQ",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-brunch"
-  },
-  {
-    "id": "62",
-    "day": "friday",
-    "dayLabel": "Friday",
-    "name": "Health and Wellness Pavilion",
-    "organizer": "Us Helping Us People Into Living",
-    "types": [
-      "workshop"
-    ],
-    "vibesRaw": "wellness community",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Free"
-    ],
-    "time": "",
-    "location": "Westin DC Downtown · 999 9th St NW, Washington, DC 20001",
-    "vibeTags": [
-      "Wellness",
-      "Community"
-    ],
-    "ctaHref": "https://www.ushelpingus.org/events-1",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "63",
-    "day": "saturday",
-    "dayLabel": "Saturday",
-    "name": "Health and Wellness Pavilion",
-    "organizer": "Us Helping Us People Into Living",
-    "types": [
-      "workshop"
-    ],
-    "vibesRaw": "wellness community",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Free"
-    ],
-    "time": "",
-    "location": "Westin DC Downtown · 999 9th St NW, Washington, DC 20001",
-    "vibeTags": [
-      "Wellness",
-      "Community"
-    ],
-    "ctaHref": "https://www.ushelpingus.org/events-1",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "64",
-    "day": "sunday",
-    "dayLabel": "Sunday",
-    "name": "Health and Wellness Pavilion",
-    "organizer": "Us Helping Us People Into Living",
-    "types": [
-      "workshop"
-    ],
-    "vibesRaw": "wellness community",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Free"
-    ],
-    "time": "",
-    "location": "Westin DC Downtown · 999 9th St NW, Washington, DC 20001",
-    "vibeTags": [
-      "Wellness",
-      "Community"
-    ],
-    "ctaHref": "https://www.ushelpingus.org/events-1",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "65",
-    "day": "monday",
-    "dayLabel": "Monday",
-    "name": "Pride in the Park",
-    "organizer": "Us Helping Us People Into Living",
-    "types": [
-      "outdoors"
-    ],
-    "vibesRaw": "community cultural chill",
+    "vibesRaw": "community live show",
     "free": true,
     "badges": [
       "Outdoors",
       "Free"
     ],
-    "time": "12:00 PM",
-    "location": "Ft. Dupont National Park · 3985 Massachusetts Ave SE, Washington, DC 20019",
+    "time": "6:30 PM",
+    "location": "500 Blk. of North Carrollton Ave",
     "vibeTags": [
       "Community",
-      "Cultural",
-      "Chill"
+      "Live Show"
     ],
-    "ctaHref": "https://www.ushelpingus.org/events-1",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
+    "ctaHref": "https://posh.vip/e/parity-porch-concert-pride-edition-featuring-black-assests",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
     "cardClass": "tp-outdoors"
   },
   {
-    "id": "66",
-    "day": "monday",
-    "dayLabel": "Monday",
-    "name": "Wicked Mondaze",
-    "organizer": "MIM Entertainment",
+    "id": "9",
+    "day": "friday",
+    "dayLabel": "Friday",
+    "name": "Sugar Rush: Grown-Up Trampoline Glow Party",
+    "organizer": "All Love Baltimore & Baltimore City LGBTQ Affairs",
     "types": [
-      "happy-hour",
-      "day-party",
+      "gynasium",
       "after-dark"
     ],
-    "vibesRaw": "chill networking flirt community ass shaking",
+    "vibesRaw": "30+ games groove",
+    "free": false,
+    "badges": [
+      "Gynasium",
+      "After Dark"
+    ],
+    "time": "10:30 PM",
+    "location": "Sky Zone Timonium · 23 W Aylesbury Rd, Timonium, MD 21093",
+    "vibeTags": [
+      "30+",
+      "Games",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/sugar-rush-2",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-gynasium"
+  },
+  {
+    "id": "10",
+    "day": "saturday",
+    "dayLabel": "Saturday",
+    "name": "Pride on the Pier",
+    "organizer": "All Love Baltimore, Blk Ass Flea Mkt & Baltimore City LGBTQ Affairs",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking food 30+",
+    "free": false,
+    "badges": [
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "Hard Rock Cafe · 601 E Pratt St. Baltimore, MD 21202",
+    "vibeTags": [
+      "Ass Shaking",
+      "Food",
+      "30+"
+    ],
+    "ctaHref": "https://posh.vip/e/pride-on-the-pier",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "11",
+    "day": "sunday",
+    "dayLabel": "Sunday",
+    "name": "The Nude Experience",
+    "organizer": "All Love Baltimore & Blk Ass Flea Mkt",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "grown & sexy 30+ food ass shaking",
+    "free": false,
+    "badges": [
+      "Day Party"
+    ],
+    "time": "4:00 PM",
+    "location": "Our Time Kitchen · 117 W 24th St. Baltimore, MD 21218",
+    "vibeTags": [
+      "Grown & Sexy",
+      "30+",
+      "Food",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://posh.vip/e/the-nude-experience",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party"
+  },
+  {
+    "id": "12",
+    "day": "saturday",
+    "dayLabel": "Saturday",
+    "name": "Yams: The [Pride] Function Vol. III",
+    "organizer": "[The Function]",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "ass shaking",
+    "free": false,
+    "badges": [
+      "Day Party"
+    ],
+    "time": "5:00 PM",
+    "location": "Our Time Kitchen · 118 W 24th St. Baltimore, MD 21218",
+    "vibeTags": [
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://ra.co/events/2452980?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleASRd4JleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacFMvElDRbFeU1VYIP7QpjZpviyFO8c3xEMethGXOR_xFZTzkyEE8565KW9_A_aem_wgW-21jnUZMIscB6o0J7AQ",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party"
+  },
+  {
+    "id": "13",
+    "day": "monday",
+    "dayLabel": "Monday",
+    "name": "Pride Week Kickoff: Press Conference & Awards Ceremony",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "workshop",
+      "outdoors-hangout",
+      "meetup"
+    ],
+    "vibesRaw": "community networking cultural",
+    "free": true,
+    "badges": [
+      "Workshop",
+      "Outdoors Hangout",
+      "Meetup",
+      "Free"
+    ],
+    "time": "3:00 PM",
+    "location": "The Ynot Lot · 101 W North Ave. Baltimore, MD 21201",
+    "vibeTags": [
+      "Community",
+      "Networking",
+      "Cultural"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/pride-week-kickoff-press-conference-awards-ceremony-tickets-1989316320666",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-workshop"
+  },
+  {
+    "id": "14",
+    "day": "tuesday",
+    "dayLabel": "Tuesday",
+    "name": "Baltimore Pride Happy Hour & Karaoke",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "happy-hour"
+    ],
+    "vibesRaw": "karaoke groove",
     "free": true,
     "badges": [
       "Happy Hour",
-      "Day Party",
-      "After Dark",
       "Free"
     ],
     "time": "5:00 PM",
-    "location": "Perch Rooftop at Cambia Hotel · 69 Q St. SW \nWashington DC",
+    "location": "33 W North Ave, Baltimore, MD 21201",
     "vibeTags": [
-      "Chill",
+      "Karaoke",
+      "Groove"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-happy-hour-karaoke-tickets-1989316825175",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-happy-hour"
+  },
+  {
+    "id": "15",
+    "day": "wednesday",
+    "dayLabel": "Wednesday",
+    "name": "Pride on the Plaza Resource and Job Fair",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "meetup",
+      "workshop",
+      "outdoors-hangout"
+    ],
+    "vibesRaw": "networking community cultural",
+    "free": true,
+    "badges": [
+      "Meetup",
+      "Workshop",
+      "Outdoors Hangout",
+      "Free"
+    ],
+    "time": "12:00 PM",
+    "location": "Mayor’s Lawn at War Memorial Plaza · War Memorial Plaza, Baltimore, MD 21202",
+    "vibeTags": [
       "Networking",
+      "Community",
+      "Cultural"
+    ],
+    "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSe_NaouGyuE9uhccRjcsvE677NeftkBUXHJXcxmkxcC35ZVOw/viewform",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup"
+  },
+  {
+    "id": "16",
+    "day": "wednesday",
+    "dayLabel": "Wednesday",
+    "name": "There's No Place Like Home Fashion Show",
+    "organizer": "The Pride Center of Maryland, LGBTQ Affairs, Free State Justice, NAMI",
+    "types": [
+      "outdoors-hangout",
+      "meetup"
+    ],
+    "vibesRaw": "creative community live show",
+    "free": true,
+    "badges": [
+      "Outdoors Hangout",
+      "Meetup",
+      "Free"
+    ],
+    "time": "4:00 PM",
+    "location": "Mayor’s Lawn at War Memorial Plaza · War Memorial Plaza, Baltimore, MD 21203",
+    "vibeTags": [
+      "Creative",
+      "Community",
+      "Live Show"
+    ],
+    "ctaHref": "https://www.baltimorepride.org/event-details/theres-no-place-like-home-fashion-show/form",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-outdoors-hangout"
+  },
+  {
+    "id": "17",
+    "day": "wednesday",
+    "dayLabel": "Wednesday",
+    "name": "Suits & Sneakers Cocktail Reception",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "happy-hour",
+      "ball",
+      "after-dark"
+    ],
+    "vibesRaw": "grown & sexy cultural community networking open bar food",
+    "free": false,
+    "badges": [
+      "Happy Hour",
+      "Ball",
+      "After Dark"
+    ],
+    "time": "7:00 PM",
+    "location": "Top of the World · 401 E Pratt St 27th floor, Baltimore, MD 21202",
+    "vibeTags": [
+      "Grown & Sexy",
+      "Cultural",
+      "Community",
+      "Networking",
+      "Open Bar",
+      "Food"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-suits-sneakers-cocktail-reception-tickets-1989317656662",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-happy-hour"
+  },
+  {
+    "id": "18",
+    "day": "friday",
+    "dayLabel": "Friday",
+    "name": "Mount Vernon Block Party",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "outdoors-hangout",
+      "day-party",
+      "meetup"
+    ],
+    "vibesRaw": "community food wellness groove",
+    "free": true,
+    "badges": [
+      "Outdoors Hangout",
+      "Day Party",
+      "Meetup",
+      "Free"
+    ],
+    "time": "4:00 PM",
+    "location": "200 W Reed Street · 201 W Reed Street",
+    "vibeTags": [
+      "Community",
+      "Food",
+      "Wellness",
+      "Groove"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/mt-vernon-pride-block-party-tickets-1989318307609",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-outdoors-hangout"
+  },
+  {
+    "id": "19",
+    "day": "friday",
+    "dayLabel": "Friday",
+    "name": "Twilight on the Terrace Gala",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "ball"
+    ],
+    "vibesRaw": "live show groove networking food community",
+    "free": false,
+    "badges": [
+      "Ball"
+    ],
+    "time": "7:00 PM",
+    "location": "M&T Bank Exchange at the France-Merrick Performing Arts Center · 401 W Fayette St, Baltimore, MD 21201",
+    "vibeTags": [
+      "Live Show",
+      "Groove",
+      "Networking",
+      "Food",
+      "Community"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-twilight-on-the-terrace-gala-tickets-1989318991655",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-ball"
+  },
+  {
+    "id": "20",
+    "day": "saturday",
+    "dayLabel": "Saturday",
+    "name": "Pride 5K Run -Baltimore",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "outdoors"
+    ],
+    "vibesRaw": "wellness community",
+    "free": false,
+    "badges": [
+      "Outdoors"
+    ],
+    "time": "8:00 AM",
+    "location": "Druid Hill Park · Chinese Pavilion on Swann Dr\nBaltimore, MD US 21217",
+    "vibeTags": [
+      "Wellness",
+      "Community"
+    ],
+    "ctaHref": "https://runsignup.com/Race/MD/Baltimore/Pride5KBaltimore",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-outdoors"
+  },
+  {
+    "id": "21",
+    "day": "saturday",
+    "dayLabel": "Saturday",
+    "name": "Baltimore Pride Parade",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "outdoors-hangout",
+      "festival"
+    ],
+    "vibesRaw": "live show community creative networking food",
+    "free": true,
+    "badges": [
+      "Outdoors Hangout",
+      "Festival",
+      "Free"
+    ],
+    "time": "12:00 PM",
+    "location": "Charles Street & North Avenue · 2900 N. Charles St. Baltimore, MD 21218",
+    "vibeTags": [
+      "Live Show",
+      "Community",
+      "Creative",
+      "Networking",
+      "Food"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-parade-tickets-1989318878316",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-outdoors-hangout"
+  },
+  {
+    "id": "22",
+    "day": "saturday",
+    "dayLabel": "Saturday",
+    "name": "Baltimore Pride in the Park Festival (Day 1)",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "festival",
+      "outdoors-hangout"
+    ],
+    "vibesRaw": "live show community food games networking creative groove cultural",
+    "free": true,
+    "badges": [
+      "Festival",
+      "Outdoors Hangout",
+      "Free"
+    ],
+    "time": "12:00 PM",
+    "location": "Druid Hill Park · 900 Druid Park Lake Dr, Baltimore, MD 21217",
+    "vibeTags": [
+      "Live Show",
+      "Community",
+      "Food",
+      "Games",
+      "Networking",
+      "Creative",
+      "Groove",
+      "Cultural"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-festival-block-party-in-the-park-tickets-1989318089958?aff=ebdsoporgprofile",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-festival"
+  },
+  {
+    "id": "23",
+    "day": "sunday",
+    "dayLabel": "Sunday",
+    "name": "Baltimore Pride in the Park Festival (Day 2)",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "outdoors-hangout",
+      "festival"
+    ],
+    "vibesRaw": "live show community networking groove food games cultural",
+    "free": true,
+    "badges": [
+      "Outdoors Hangout",
+      "Festival",
+      "Free"
+    ],
+    "time": "12:00 PM",
+    "location": "Druid Hill Park · 901 Druid Park Lake Dr, Baltimore, MD 21217",
+    "vibeTags": [
+      "Live Show",
+      "Community",
+      "Networking",
+      "Groove",
+      "Food",
+      "Games",
+      "Cultural"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-in-the-park-festival-tickets-1989320163159?aff=oddtdtcreator",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-outdoors-hangout"
+  },
+  {
+    "id": "24",
+    "day": "saturday",
+    "dayLabel": "Saturday",
+    "name": "YewTopia",
+    "organizer": "Alternative Union",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking groove food",
+    "free": false,
+    "badges": [
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "Element · 1818 Maryland Ave. Baltimore, MD 21201",
+    "vibeTags": [
+      "Ass Shaking",
+      "Groove",
+      "Food"
+    ],
+    "ctaHref": "https://posh.vip/e/yewtopia",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "25",
+    "day": "friday",
+    "dayLabel": "Friday",
+    "name": "Elevation",
+    "organizer": "Alternative Union",
+    "types": [
+      "happy-hour",
+      "after-dark"
+    ],
+    "vibesRaw": "grown & sexy flirt ass shaking food",
+    "free": false,
+    "badges": [
+      "Happy Hour",
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "Belieze Rooftop · 316 Guilford Ave, Baltimore, MD 21202",
+    "vibeTags": [
+      "Grown & Sexy",
+      "Flirt",
+      "Ass Shaking",
+      "Food"
+    ],
+    "ctaHref": "https://posh.vip/e/yewtopia",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-happy-hour"
+  },
+  {
+    "id": "26",
+    "day": "saturday",
+    "dayLabel": "Saturday",
+    "name": "Baltimore Pride Dinnner & Play",
+    "organizer": "Benevolence Lifestyle Club",
+    "types": [
+      "after-dark",
+      "meetup"
+    ],
+    "vibesRaw": "30+ flirt community food",
+    "free": true,
+    "badges": [
+      "After Dark",
+      "Meetup",
+      "Free"
+    ],
+    "time": "5:00 PM",
+    "location": "Kinky Cafe · 2015 N Charles St, Baltimore, MD 21218",
+    "vibeTags": [
+      "30+",
       "Flirt",
       "Community",
-      "Ass Shaking"
+      "Food"
     ],
-    "ctaHref": "",
-    "ctaLabel": "More Info",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-happy-hour",
-    "discountCode": "Free Drinks Giveaway\nRepost the event flyer for the event you're attending — a few lucky reposts will be randomly selected for 2 complimentary drinks at the door!"
+    "ctaHref": "https://posh.vip/e/baltimore-pride-dinner-play",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
   }
 ];

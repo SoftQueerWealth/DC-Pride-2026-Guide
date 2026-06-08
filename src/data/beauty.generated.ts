@@ -168,7 +168,7 @@ export const generatedBeautyItems: BeautyItem[] = [
     "primaryHref": "https://www.instagram.com/acuwithnaja?igsh=MWVjOW51ZjJqMm5iYQ=="
   },
   {
-    "id": "barber-adaptable-creationz-9",
+    "id": "barber-adaptable-creationz-4",
     "name": "Adaptable Creationz",
     "businessType": "Barber",
     "fields": [
@@ -196,12 +196,12 @@ export const generatedBeautyItems: BeautyItem[] = [
       {
         "key": "discountcode",
         "label": "Discount Code?",
-        "value": "SQW"
+        "value": "#SQW"
       },
       {
         "key": "promo",
         "label": "Promo",
-        "value": "20% off until 6/30"
+        "value": "20% off until 6/30 (starts 5/15)"
       },
       {
         "key": "bookingsite",
