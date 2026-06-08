@@ -1,6 +1,7 @@
 import { Check, Clock, Lightbulb, MapPin } from 'lucide-react';
 import type { PrideEvent } from '../types/event';
 import { trackClick } from '../lib/analytics';
+import { eventCtaButtonClass, eventCtaLabel } from '../lib/eventCta';
 import { badgeClassForLabel } from '../lib/badgeClass';
 import { parseDiscountDisplay, shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
 import { isMappableLocation, mapsSearchUrl, splitLocationParts } from '../lib/maps';
@@ -54,6 +55,8 @@ function LocationDisplay({
 }
 
 export function EventCard({ event, visible, going = false, onToggleGoing }: EventCardProps) {
+  const ctaLabel = eventCtaLabel(event);
+  const ctaButtonClass = eventCtaButtonClass(event);
   const mapsHref = isMappableLocation(event.location) ? mapsSearchUrl(event.location) : null;
   const discountParsed =
     event.discountCode && !shouldHideDiscountCode(event.discountCode)
@@ -120,10 +123,10 @@ export function EventCard({ event, visible, going = false, onToggleGoing }: Even
           href={event.ctaHref}
           target="_blank"
           rel="noopener noreferrer"
-          className={`btn ${event.ctaButtonClass}`}
-          onClick={() => trackClick(event.name, event.ctaLabel)}
+          className={`btn ${ctaButtonClass}`}
+          onClick={() => trackClick(event.name, ctaLabel)}
         >
-          {event.ctaLabel} →
+          {ctaLabel} →
         </a>
         {discountParsed ? (
           <div className="discount-code" role="note">

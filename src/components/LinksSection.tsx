@@ -1,29 +1,10 @@
 import { trackClick } from '../lib/analytics';
 
-const RESOURCES: { name: string; href: string; gaName: string }[] = [
-  {
-    name: 'Official DCBP Schedule',
-    href: 'https://dcblackpride.org/schedule.htm',
-    gaName: 'Official DCBP Schedule',
-  },
-  {
-    name: 'Unleashed DC — Women\'s Events',
-    href: 'https://unleasheddc.com/events-and-tickets',
-    gaName: 'Unleashed DC Women Events',
-  },
-  {
-    name: 'Center for Black Equity',
-    href: 'https://centerforblackequity.org/events/dcblackpride26',
-    gaName: 'Center for Black Equity',
-  },
-  {
-    name: 'Data Integrity Report',
-    href: 'https://drive.google.com/file/d/1p5Fux8hrcZG4h7frCY871klMcojTHxva/view?usp=drivesdk',
-    gaName: 'Data Integrity Report',
-  },
-];
+const RESOURCES: { name: string; href: string; gaName: string }[] = [];
 
 export function LinksSection() {
+  if (RESOURCES.length === 0) return null;
+
   return (
     <div className="links-section">
       <div className="links-title">🔗 Key Resources</div>

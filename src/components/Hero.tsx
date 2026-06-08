@@ -1,18 +1,24 @@
+import { formatRoundedEventCount } from '../lib/eventCta';
 import { HeroSocial } from './HeroSocial';
 
-export function Hero() {
+interface HeroProps {
+  eventCount: number;
+}
+
+export function Hero({ eventCount }: HeroProps) {
+  const eventCountLabel = formatRoundedEventCount(eventCount);
   return (
     <header className="hero">
       <HeroSocial />
       <img src="/hero-logo.png" alt="" className="hero-logo" width={80} height={80} />
-      <div className="tag">Memorial Day Weekend · DC</div>
+      <div className="tag">Charm City Homecoming</div>
       <h1>
-        DC Black Pride <span>2026</span>
+        Baltimore Pride <span>2026</span>
       </h1>
-      <div className="hero-sub">May 20 – 25, 2026 · Washington, DC</div>
+      <div className="hero-sub">June 8 – 14, 2026 · Baltimore, MD</div>
       <div className="notice">
         <strong style={{ fontSize: '13px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-          📌 50+ Events Curated for the Culture.
+          📌 {eventCountLabel} Events Curated for the Culture.
         </strong>
         <br />
         <br />
@@ -22,7 +28,7 @@ export function Hero() {
         <br />
         <em>Schedule subject to change.</em>
       </div>
-      <p className="last-updated">Last updated · May 17, 2026</p>
+      <p className="last-updated">Last updated · June 8, 2026</p>
     </header>
   );
 }

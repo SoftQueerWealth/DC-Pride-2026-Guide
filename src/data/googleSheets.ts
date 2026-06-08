@@ -1,17 +1,16 @@
 import {
-  CtaButtonClass,
   EventDay,
   EventType,
   EventVibe,
-  type CtaButtonClassId,
   type DayId,
   type PrideEvent,
 } from '../types/event';
 import type { BeautyField, BeautyItem } from '../types/beauty';
 import { decodeHtmlEntities } from '../lib/decodeHtmlEntities';
+import { ctaButtonClassForLabel, isInstagramUrl } from '../lib/eventCta';
 import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
 
-const EVENTS_SHEET_NAME = 'events';
+const EVENTS_SHEET_NAME = 'Baltimore Pride Master';
 const BEAUTY_SHEET_NAME = 'beauty';
 const SHEETS_ID_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_ID_HERE';
 const API_KEY_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_API_KEY_HERE';
@@ -72,6 +71,11 @@ const TYPE_ALIASES: Record<string, EventType> = {
 };
 
 const DAY_ALIASES: Record<string, DayId> = {
+  mon: EventDay.Monday,
+  [EventDay.Monday]: EventDay.Monday,
+  tue: EventDay.Tuesday,
+  tues: EventDay.Tuesday,
+  [EventDay.Tuesday]: EventDay.Tuesday,
   wed: EventDay.Wednesday,
   [EventDay.Wednesday]: EventDay.Wednesday,
   thu: EventDay.Thursday,
@@ -83,8 +87,6 @@ const DAY_ALIASES: Record<string, DayId> = {
   [EventDay.Saturday]: EventDay.Saturday,
   sun: EventDay.Sunday,
   [EventDay.Sunday]: EventDay.Sunday,
-  mon: EventDay.Monday,
-  [EventDay.Monday]: EventDay.Monday,
 };
 
 enum TicketStatus {
@@ -293,6 +295,7 @@ function isPrimaryBeautyLink(field: BeautyField): boolean {
 const CALENDAR_DAY_BY_DOW: Partial<Record<number, DayId>> = {
   0: EventDay.Sunday,
   1: EventDay.Monday,
+  2: EventDay.Tuesday,
   3: EventDay.Wednesday,
   4: EventDay.Thursday,
   5: EventDay.Friday,
@@ -377,11 +380,6 @@ function ctaLabelForTicketStatus(value: string): string | null {
   return null;
 }
 
-function ctaButtonClassForTicketStatus(value: string, free: boolean): CtaButtonClassId {
-  if (normalizeToken(value) === TicketStatus.WaitlistOpen) return CtaButtonClass.Waitlist;
-  return free ? CtaButtonClass.Free : CtaButtonClass.Primary;
-}
-
 function parseBadges(value: string, types: string[], free: boolean): string[] {
   const directBadges = splitListCell(value);
   const badges =
@@ -455,9 +453,14 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
       const vibeTagsCell = readCell(headers, row, 'vibeTags');
       const vibesRaw = parseVibesRaw(readCell(headers, row, 'vibesRaw'), vibeTagsCell);
       const ctaHref = readCell(headers, row, 'ctaHref');
-      const ctaLabel =
-        ctaLabelForTicketStatus(ticketStatus) || readCell(headers, row, 'ctaLabel') || (free ? 'More Info' : 'Get Tickets');
-      const fallbackButtonClass = ctaButtonClassForTicketStatus(ticketStatus, free);
+      const statusCtaLabel = ctaLabelForTicketStatus(ticketStatus);
+      let ctaLabel =
+        statusCtaLabel ||
+        readCell(headers, row, 'ctaLabel') ||
+        (free ? 'More Info' : 'Get Tickets');
+      if (!statusCtaLabel && ctaHref && !isInstagramUrl(ctaHref)) {
+        ctaLabel = 'Get Tickets';
+      }
       const fallbackCardClass: `tp-${string}` = `tp-${types[0] ?? EventType.DayParty}`;
       const discountCodeRaw = readCell(headers, row, 'discountCode').trim();
       const discountCode =
@@ -478,7 +481,7 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
         vibeTags: parseVibeTags(vibesRaw, vibeTagsCell),
         ctaHref,
         ctaLabel,
-        ctaButtonClass: normalizeClass<'btn-'>(readCell(headers, row, 'ctaButtonClass'), 'btn-', fallbackButtonClass),
+        ctaButtonClass: normalizeClass<'btn-'>(readCell(headers, row, 'ctaButtonClass'), 'btn-', ctaButtonClassForLabel(ctaLabel)),
         cardClass: normalizeClass<'tp-'>(readCell(headers, row, 'cardClass'), 'tp-', fallbackCardClass),
         ...(discountCode ? { discountCode } : {}),
       };

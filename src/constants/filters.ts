@@ -26,12 +26,13 @@ export const FILTER_SECTIONS: FilterSectionDef<FilterKind>[] = [
   {
     label: 'Day',
     pills: [
+      { kind: FilterKind.Day, value: EventDay.Monday, label: 'Mon' },
+      { kind: FilterKind.Day, value: EventDay.Tuesday, label: 'Tue' },
       { kind: FilterKind.Day, value: EventDay.Wednesday, label: 'Wed' },
       { kind: FilterKind.Day, value: EventDay.Thursday, label: 'Thu' },
       { kind: FilterKind.Day, value: EventDay.Friday, label: 'Fri' },
       { kind: FilterKind.Day, value: EventDay.Saturday, label: 'Sat' },
       { kind: FilterKind.Day, value: EventDay.Sunday, label: 'Sun' },
-      { kind: FilterKind.Day, value: EventDay.Monday, label: 'Mon' },
     ],
   },
   {

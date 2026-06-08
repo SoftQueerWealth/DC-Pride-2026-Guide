@@ -154,7 +154,7 @@ export default function App() {
 
   return (
     <>
-      <Hero />
+      <Hero eventCount={events.length} />
       <nav className="tab-nav" aria-label="Guide sections">
         <div className="tab-list" role="tablist">
           <button
