@@ -335,39 +335,6 @@ export const generatedEvents: PrideEvent[] = [
   {
     "id": "13",
     "festival": "baltimore-pride",
-    "day": "monday",
-    "dayDate": "2026-06-08",
-    "dayLabel": "Monday",
-    "name": "Pride Week Kickoff: Press Conference & Awards Ceremony",
-    "organizer": "The Pride Center of Maryland",
-    "types": [
-      "workshop",
-      "outdoors-hangout",
-      "meetup"
-    ],
-    "vibesRaw": "community networking cultural",
-    "free": true,
-    "badges": [
-      "Workshop",
-      "Outdoors Hangout",
-      "Meetup",
-      "Free"
-    ],
-    "time": "3:00 PM",
-    "location": "The Ynot Lot · 101 W North Ave. Baltimore, MD 21201",
-    "vibeTags": [
-      "Community",
-      "Networking",
-      "Cultural"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/pride-week-kickoff-press-conference-awards-ceremony-tickets-1989316320666",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop"
-  },
-  {
-    "id": "14",
-    "festival": "baltimore-pride",
     "day": "tuesday",
     "dayDate": "2026-06-09",
     "dayLabel": "Tuesday",
@@ -394,7 +361,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "15",
+    "id": "14",
     "festival": "baltimore-pride",
     "day": "wednesday",
     "dayDate": "2026-06-10",
@@ -427,7 +394,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-meetup"
   },
   {
-    "id": "16",
+    "id": "15",
     "festival": "baltimore-pride",
     "day": "wednesday",
     "dayDate": "2026-06-10",
@@ -458,7 +425,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "17",
+    "id": "16",
     "festival": "baltimore-pride",
     "day": "wednesday",
     "dayDate": "2026-06-10",
@@ -493,7 +460,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "18",
+    "id": "17",
     "festival": "baltimore-pride",
     "day": "friday",
     "dayDate": "2026-06-12",
@@ -527,7 +494,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "19",
+    "id": "18",
     "festival": "baltimore-pride",
     "day": "friday",
     "dayDate": "2026-06-12",
@@ -557,7 +524,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-ball"
   },
   {
-    "id": "20",
+    "id": "19",
     "festival": "baltimore-pride",
     "day": "saturday",
     "dayDate": "2026-06-13",
@@ -584,7 +551,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors"
   },
   {
-    "id": "21",
+    "id": "20",
     "festival": "baltimore-pride",
     "day": "saturday",
     "dayDate": "2026-06-13",
@@ -617,7 +584,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "22",
+    "id": "21",
     "festival": "baltimore-pride",
     "day": "saturday",
     "dayDate": "2026-06-13",
@@ -653,7 +620,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-festival"
   },
   {
-    "id": "23",
+    "id": "22",
     "festival": "baltimore-pride",
     "day": "sunday",
     "dayDate": "2026-06-14",
@@ -688,7 +655,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "24",
+    "id": "23",
     "festival": "baltimore-pride",
     "day": "saturday",
     "dayDate": "2026-06-13",
@@ -716,7 +683,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "25",
+    "id": "24",
     "festival": "baltimore-pride",
     "day": "friday",
     "dayDate": "2026-06-12",
@@ -747,7 +714,34 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "27",
+    "id": "25",
+    "festival": "baltimore-pride",
+    "day": "friday",
+    "dayDate": "2026-06-12",
+    "dayLabel": "Friday",
+    "name": "The Kickoff",
+    "organizer": "Bmore Prides Truth Or Dare 11 With Badd Dolly",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking flirt",
+    "free": false,
+    "badges": [
+      "After Dark"
+    ],
+    "time": "10:00 PM",
+    "location": "Select Lounge · 415 North Paca Street\nBaltimore, MD 21201",
+    "vibeTags": [
+      "Ass Shaking",
+      "Flirt"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/bmore-prides-truth-or-dare-11-with-badd-dolly-tickets-1989971205444?aff=ebdsoporgprofile",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "26",
     "festival": "baltimore-pride",
     "day": "saturday",
     "dayDate": "2026-06-13",
@@ -777,5 +771,33 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "27",
+    "festival": "baltimore-pride",
+    "day": "sunday",
+    "dayDate": "2026-06-14",
+    "dayLabel": "Sunday",
+    "name": "Singles Mingle in Living Color",
+    "organizer": "Dating with Tiff",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "flirt dating",
+    "free": true,
+    "badges": [
+      "Meetup",
+      "Free"
+    ],
+    "time": "12:00 PM",
+    "location": "Aye Gallery & Alter Studiio · 100 E 23rd St, Baltimore, MD 21218, USA",
+    "vibeTags": [
+      "Flirt",
+      "Dating"
+    ],
+    "ctaHref": "https://posh.vip/e/singles-mingle-not-your-average-singles-mixer-3",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup"
   }
 ];
