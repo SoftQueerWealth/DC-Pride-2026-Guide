@@ -13,7 +13,7 @@ export function Hero({ eventCount }: HeroProps) {
       <img src="/hero-logo.png" alt="" className="hero-logo" width={80} height={80} />
       <div className="tag">Happy Pride!</div>
       <h1>
-        Pride Month <span>2026</span>
+        June Pride Guide <span>2026</span>
       </h1>
       <div className="notice">
         <strong style={{ fontSize: '13px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
