@@ -55,6 +55,8 @@ export interface PrideEvent {
   /** Festival grouping, e.g. baltimore-pride or capital-pride */
   festival?: string;
   day: DayId;
+  /** ISO calendar date from sheet day cell, e.g. 2026-06-11 */
+  dayDate?: string;
   dayLabel: string;
   name: string;
   organizer?: string;

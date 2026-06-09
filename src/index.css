@@ -128,8 +128,13 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .beauty-detail a:hover{text-decoration:underline;text-decoration-color:var(--primary-border)}
 .day-section{margin-top:36px}
 .day-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;position:sticky;top:0;background:var(--black);padding:10px 0;z-index:10;border-bottom:1px solid var(--border)}
-.day-label{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--cream);white-space:nowrap}
-.day-date{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.day-title{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream);white-space:nowrap}
+.day-title-name,.day-title-sep,.day-title-date{font-family:inherit}
+.day-title-name{font-weight:700}
+.day-title-sep{font-weight:400}
+.day-title-date{display:inline-flex;align-items:baseline;gap:.3em;font-weight:400;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;letter-spacing:.05em}
+.day-title-month{text-transform:uppercase}
+.day-title-day{font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1}
 .day-count{font-size:10px;color:var(--gold-light);background:var(--accent-soft);border:1px solid var(--accent-border);padding:2px 8px;border-radius:100px;white-space:nowrap;flex-shrink:0}
 .day-line{flex:1;height:1px;background:var(--border);min-width:12px}
 .day-section.hidden{display:none}

@@ -217,11 +217,13 @@ export default function App() {
             {DAY_ORDER.map((day) => {
               const dayEvents = grouped.get(day) ?? [];
               const dayLabel = dayEvents[0]?.dayLabel ?? day;
+              const dayDate = dayEvents[0]?.dayDate;
               return (
                 <DaySection
                   key={day}
                   day={day}
                   dayLabel={dayLabel}
+                  dayDate={dayDate}
                   events={dayEvents}
                   isEventVisible={isEventShown}
                   isGoing={(e) => itinerary.isGoing(e.id)}

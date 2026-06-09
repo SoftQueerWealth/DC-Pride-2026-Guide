@@ -7,13 +7,18 @@ export const generatedEvents: PrideEvent[] = [
     "id": "2",
     "festival": "baltimore-pride",
     "day": "friday",
+    "dayDate": "2026-06-12",
     "dayLabel": "Friday",
     "name": "Call Out (The Pool Party)",
     "organizer": "HerVibeEvents",
-    "types": [],
+    "types": [
+      "unknown"
+    ],
     "vibesRaw": "35+ flirt food byob",
     "free": false,
-    "badges": [],
+    "badges": [
+      "Unknown"
+    ],
     "time": "12:00 PM",
     "location": "TBD w/ticket purchase",
     "vibeTags": [
@@ -25,12 +30,13 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbrite.com/e/call-out-the-pool-party-tickets-1989123427718?utm_experiment=test_share_listing&aff=ebdsshios&sg=76bfd980b4ba9b634c1089308b47b0953783e9018d356a30d11cd21bef8495e92caab815adfdd6cf658dbb2a96798ca3c3fad22edc66e86eec8670d53b4bedb73541aeb3b214c951dda41e2e7b",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
+    "cardClass": "tp-unknown"
   },
   {
     "id": "3",
     "festival": "baltimore-pride",
     "day": "friday",
+    "dayDate": "2026-06-12",
     "dayLabel": "Friday",
     "name": "The Black Lesbian Link-up",
     "organizer": "Lez Black Gurls",
@@ -52,12 +58,14 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbrite.com/e/lez-black-gurls-presents-the-black-lesbian-link-up-tickets-1989436050782?utm_experiment=test_share_listing&aff=ebdsshios&sg=d038de198ab6c8565d2dd826e8a4689fce5bd6f89f2f54569e47b261ebc0ad0b191c312e847dc7d1fcd87d960e7edf249810a8371439a9ce985bad02342a7e9c2f84662873d0428c6dcff49927",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup"
+    "cardClass": "tp-meetup",
+    "discountCode": "LBG15"
   },
   {
     "id": "4",
     "festival": "baltimore-pride",
     "day": "thursday",
+    "dayDate": "2026-06-11",
     "dayLabel": "Thursday",
     "name": "The Link-Up: A Pride Mixer",
     "organizer": "RLA & Aphrodite's House",
@@ -80,14 +88,15 @@ export const generatedEvents: PrideEvent[] = [
       "Food"
     ],
     "ctaHref": "https://posh.vip/e/the-link-up-a-pride-happy-hour",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-happy-hour"
   },
   {
     "id": "5",
     "festival": "baltimore-pride",
     "day": "saturday",
+    "dayDate": "2026-06-13",
     "dayLabel": "Saturday",
     "name": "CharmCityPrideFest",
     "organizer": "CharmCityPride",
@@ -117,12 +126,14 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.axs.com/events/1430048/charm-city-pride-fest-tickets?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleASRZjNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAad0oxEUU2EAH1dxqxa9B7sBs9w37g_YkvixRdfrO1lAjC9S04euf__0aebbbw_aem_wOlUjf04yN7K0U66fhuZiw&utm_id=97760_v0_s00_e0_tv3",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
+    "cardClass": "tp-after-dark",
+    "discountCode": "🎟️ Win 2 Free Tickets!\n\nFollow Charm City Fest, Uncuffed & SQW • Like this post • Tag 2 friends\n\n✨ Winner receives 2 complimentary tickets."
   },
   {
     "id": "6",
     "festival": "baltimore-pride",
     "day": "tuesday",
+    "dayDate": "2026-06-09",
     "dayLabel": "Tuesday",
     "name": "The Masc Meet Up: The Unspoken Energy We All Know",
     "organizer": "All Love Baltimore & Baltimore City LGBTQ Affairs",
@@ -146,14 +157,15 @@ export const generatedEvents: PrideEvent[] = [
       "30+"
     ],
     "ctaHref": "https://posh.vip/e/the-masc-meetup-the-unspoken-energy-we-all-know",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-meetup"
   },
   {
     "id": "7",
     "festival": "baltimore-pride",
     "day": "wednesday",
+    "dayDate": "2026-06-10",
     "dayLabel": "Wednesday",
     "name": "Flavors; Pride Happy Hour",
     "organizer": "All Love Baltimore & Blk Ass Flea Mkt",
@@ -175,14 +187,15 @@ export const generatedEvents: PrideEvent[] = [
       "30+"
     ],
     "ctaHref": "https://posh.vip/e/flavors-pride-happy-hour",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-happy-hour"
   },
   {
     "id": "8",
     "festival": "baltimore-pride",
     "day": "thursday",
+    "dayDate": "2026-06-11",
     "dayLabel": "Thursday",
     "name": "Parity Porch Concert:Pride Edition Ft. Black Assets",
     "organizer": "All Love Baltimore, PARITY & Baltimore City LGBTQ Affairs",
@@ -202,14 +215,15 @@ export const generatedEvents: PrideEvent[] = [
       "Live Show"
     ],
     "ctaHref": "https://posh.vip/e/parity-porch-concert-pride-edition-featuring-black-assests",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-outdoors"
   },
   {
     "id": "9",
     "festival": "baltimore-pride",
     "day": "friday",
+    "dayDate": "2026-06-12",
     "dayLabel": "Friday",
     "name": "Sugar Rush: Grown-Up Trampoline Glow Party",
     "organizer": "All Love Baltimore & Baltimore City LGBTQ Affairs",
@@ -239,6 +253,7 @@ export const generatedEvents: PrideEvent[] = [
     "id": "10",
     "festival": "baltimore-pride",
     "day": "saturday",
+    "dayDate": "2026-06-13",
     "dayLabel": "Saturday",
     "name": "Pride on the Pier",
     "organizer": "All Love Baltimore, Blk Ass Flea Mkt & Baltimore City LGBTQ Affairs",
@@ -266,6 +281,7 @@ export const generatedEvents: PrideEvent[] = [
     "id": "11",
     "festival": "baltimore-pride",
     "day": "sunday",
+    "dayDate": "2026-06-14",
     "dayLabel": "Sunday",
     "name": "The Nude Experience",
     "organizer": "All Love Baltimore & Blk Ass Flea Mkt",
@@ -294,6 +310,7 @@ export const generatedEvents: PrideEvent[] = [
     "id": "12",
     "festival": "baltimore-pride",
     "day": "saturday",
+    "dayDate": "2026-06-13",
     "dayLabel": "Saturday",
     "name": "Yams: The [Pride] Function Vol. III",
     "organizer": "[The Function]",
@@ -319,6 +336,7 @@ export const generatedEvents: PrideEvent[] = [
     "id": "13",
     "festival": "baltimore-pride",
     "day": "monday",
+    "dayDate": "2026-06-08",
     "dayLabel": "Monday",
     "name": "Pride Week Kickoff: Press Conference & Awards Ceremony",
     "organizer": "The Pride Center of Maryland",
@@ -343,14 +361,15 @@ export const generatedEvents: PrideEvent[] = [
       "Cultural"
     ],
     "ctaHref": "https://www.eventbrite.com/e/pride-week-kickoff-press-conference-awards-ceremony-tickets-1989316320666",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-workshop"
   },
   {
     "id": "14",
     "festival": "baltimore-pride",
     "day": "tuesday",
+    "dayDate": "2026-06-09",
     "dayLabel": "Tuesday",
     "name": "Baltimore Pride Happy Hour & Karaoke",
     "organizer": "The Pride Center of Maryland",
@@ -370,14 +389,15 @@ export const generatedEvents: PrideEvent[] = [
       "Groove"
     ],
     "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-happy-hour-karaoke-tickets-1989316825175",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-happy-hour"
   },
   {
     "id": "15",
     "festival": "baltimore-pride",
     "day": "wednesday",
+    "dayDate": "2026-06-10",
     "dayLabel": "Wednesday",
     "name": "Pride on the Plaza Resource and Job Fair",
     "organizer": "The Pride Center of Maryland",
@@ -402,14 +422,15 @@ export const generatedEvents: PrideEvent[] = [
       "Cultural"
     ],
     "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSe_NaouGyuE9uhccRjcsvE677NeftkBUXHJXcxmkxcC35ZVOw/viewform",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-meetup"
   },
   {
     "id": "16",
     "festival": "baltimore-pride",
     "day": "wednesday",
+    "dayDate": "2026-06-10",
     "dayLabel": "Wednesday",
     "name": "There's No Place Like Home Fashion Show",
     "organizer": "The Pride Center of Maryland, LGBTQ Affairs, Free State Justice, NAMI",
@@ -432,14 +453,15 @@ export const generatedEvents: PrideEvent[] = [
       "Live Show"
     ],
     "ctaHref": "https://www.baltimorepride.org/event-details/theres-no-place-like-home-fashion-show/form",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-outdoors-hangout"
   },
   {
     "id": "17",
     "festival": "baltimore-pride",
     "day": "wednesday",
+    "dayDate": "2026-06-10",
     "dayLabel": "Wednesday",
     "name": "Suits & Sneakers Cocktail Reception",
     "organizer": "The Pride Center of Maryland",
@@ -474,6 +496,7 @@ export const generatedEvents: PrideEvent[] = [
     "id": "18",
     "festival": "baltimore-pride",
     "day": "friday",
+    "dayDate": "2026-06-12",
     "dayLabel": "Friday",
     "name": "Mount Vernon Block Party",
     "organizer": "The Pride Center of Maryland",
@@ -499,14 +522,15 @@ export const generatedEvents: PrideEvent[] = [
       "Groove"
     ],
     "ctaHref": "https://www.eventbrite.com/e/mt-vernon-pride-block-party-tickets-1989318307609",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-outdoors-hangout"
   },
   {
     "id": "19",
     "festival": "baltimore-pride",
     "day": "friday",
+    "dayDate": "2026-06-12",
     "dayLabel": "Friday",
     "name": "Twilight on the Terrace Gala",
     "organizer": "The Pride Center of Maryland",
@@ -536,6 +560,7 @@ export const generatedEvents: PrideEvent[] = [
     "id": "20",
     "festival": "baltimore-pride",
     "day": "saturday",
+    "dayDate": "2026-06-13",
     "dayLabel": "Saturday",
     "name": "Pride 5K Run -Baltimore",
     "organizer": "The Pride Center of Maryland",
@@ -562,6 +587,7 @@ export const generatedEvents: PrideEvent[] = [
     "id": "21",
     "festival": "baltimore-pride",
     "day": "saturday",
+    "dayDate": "2026-06-13",
     "dayLabel": "Saturday",
     "name": "Baltimore Pride Parade",
     "organizer": "The Pride Center of Maryland",
@@ -586,14 +612,15 @@ export const generatedEvents: PrideEvent[] = [
       "Food"
     ],
     "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-parade-tickets-1989318878316",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-outdoors-hangout"
   },
   {
     "id": "22",
     "festival": "baltimore-pride",
     "day": "saturday",
+    "dayDate": "2026-06-13",
     "dayLabel": "Saturday",
     "name": "Baltimore Pride in the Park Festival (Day 1)",
     "organizer": "The Pride Center of Maryland",
@@ -621,14 +648,15 @@ export const generatedEvents: PrideEvent[] = [
       "Cultural"
     ],
     "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-festival-block-party-in-the-park-tickets-1989318089958?aff=ebdsoporgprofile",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-festival"
   },
   {
     "id": "23",
     "festival": "baltimore-pride",
     "day": "sunday",
+    "dayDate": "2026-06-14",
     "dayLabel": "Sunday",
     "name": "Baltimore Pride in the Park Festival (Day 2)",
     "organizer": "The Pride Center of Maryland",
@@ -655,14 +683,15 @@ export const generatedEvents: PrideEvent[] = [
       "Cultural"
     ],
     "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-in-the-park-festival-tickets-1989320163159?aff=oddtdtcreator",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-outdoors-hangout"
   },
   {
     "id": "24",
     "festival": "baltimore-pride",
     "day": "saturday",
+    "dayDate": "2026-06-13",
     "dayLabel": "Saturday",
     "name": "YewTopia",
     "organizer": "Alternative Union",
@@ -690,6 +719,7 @@ export const generatedEvents: PrideEvent[] = [
     "id": "25",
     "festival": "baltimore-pride",
     "day": "friday",
+    "dayDate": "2026-06-12",
     "dayLabel": "Friday",
     "name": "Elevation",
     "organizer": "Alternative Union",
@@ -717,9 +747,10 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "26",
+    "id": "27",
     "festival": "baltimore-pride",
     "day": "saturday",
+    "dayDate": "2026-06-13",
     "dayLabel": "Saturday",
     "name": "Baltimore Pride Dinnner & Play",
     "organizer": "Benevolence Lifestyle Club",

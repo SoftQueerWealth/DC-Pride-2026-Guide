@@ -4,6 +4,7 @@ import {
   ITINERARY_SHARE_OPENER,
 } from '../constants/itineraryShare';
 import type { PrideEvent } from '../types/event';
+import { formatDayHeaderLabel } from './formatDayDate';
 import { groupItineraryEventsByDay } from './groupItineraryEvents';
 import { buildItineraryUrl } from './parseItineraryParam';
 
@@ -25,7 +26,7 @@ export function formatItineraryShare(
   const sections: string[] = [ITINERARY_SHARE_OPENER, ''];
 
   for (const { dayLabel, events: dayEvents } of groupItineraryEventsByDay(selected)) {
-    sections.push(dayLabel);
+    sections.push(formatDayHeaderLabel(dayLabel, dayEvents[0]?.dayDate));
     for (const event of dayEvents) {
       sections.push(formatEventLine(event));
     }

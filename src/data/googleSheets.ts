@@ -99,7 +99,7 @@ enum TicketStatus {
 
 const COLUMN_ALIASES = {
   id: ['id', 'eventid'],
-  day: ['dayofweek', 'weekday', 'eventday', 'dayid', 'dataday', 'data-day', 'day'],
+  day: ['day', 'dataday', 'data-day', 'dayid', 'eventday', 'dayofweek', 'weekday'],
   dayLabel: ['daylabel', 'dayname', 'displayday'],
   name: ['name', 'event', 'eventname', 'eventtitle', 'title'],
   organizer: ['organizer', 'eventorganizer', 'host', 'hosts', 'presenter'],
@@ -253,13 +253,18 @@ function readCell(headers: string[], row: string[], key: ColumnKey): string {
 }
 
 function readDayCell(headers: string[], row: string[]): string {
+  const values: string[] = [];
   for (const alias of COLUMN_ALIASES.day) {
     const index = headers.indexOf(normalizeHeader(alias));
     if (index < 0) continue;
     const value = cleanCellValue(row[index]);
-    if (value) return value;
+    if (value) values.push(value);
   }
-  return '';
+
+  const calendarValue = values.find((value) => parseCalendarDateCell(value) !== null);
+  if (calendarValue) return calendarValue;
+
+  return values[0] ?? '';
 }
 
 function readBeautyCell(headers: string[], row: string[], key: BeautyColumnKey): string {
@@ -315,7 +320,13 @@ const CALENDAR_DAY_BY_DOW: Partial<Record<number, DayId>> = {
   6: EventDay.Saturday,
 };
 
-function parseDayFromCalendarDate(value: string): DayId | null {
+function toIsoDateString(year: number, month: number, day: number): string {
+  const monthPart = String(month + 1).padStart(2, '0');
+  const dayPart = String(day).padStart(2, '0');
+  return `${year}-${monthPart}-${dayPart}`;
+}
+
+function parseCalendarDateCell(value: string): { day: DayId; dayDate: string } | null {
   const match = value.trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);
   if (!match) return null;
 
@@ -327,10 +338,13 @@ function parseDayFromCalendarDate(value: string): DayId | null {
   const date = new Date(year, month, day);
   if (Number.isNaN(date.getTime())) return null;
 
-  return CALENDAR_DAY_BY_DOW[date.getDay()] ?? null;
+  const dayId = CALENDAR_DAY_BY_DOW[date.getDay()];
+  if (!dayId) return null;
+
+  return { day: dayId, dayDate: toIsoDateString(year, month, day) };
 }
 
-function parseDay(value: string): DayId | null {
+function parseWeekday(value: string): DayId | null {
   const normalized = normalizeToken(value);
   const exact = DAY_ALIASES[normalized];
   if (exact) return exact;
@@ -340,7 +354,17 @@ function parseDay(value: string): DayId | null {
     if (padded.includes(` ${alias} `)) return day;
   }
 
-  return parseDayFromCalendarDate(value);
+  return null;
+}
+
+function parseDayFromCell(value: string): { day: DayId; dayDate?: string } | null {
+  const calendar = parseCalendarDateCell(value);
+  if (calendar) return calendar;
+
+  const day = parseWeekday(value);
+  if (!day) return null;
+
+  return { day };
 }
 
 function dayLabelFor(day: DayId): string {
@@ -468,8 +492,9 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
       if (row.every((cell) => !String(cell ?? '').trim())) return null;
 
       const name = readCell(headers, row, 'name');
-      const day = parseDay(readDayCell(headers, row));
-      if (!name || !day) return null;
+      const parsedDay = parseDayFromCell(readDayCell(headers, row));
+      if (!name || !parsedDay) return null;
+      const { day, dayDate } = parsedDay;
 
       const ticketStatus = readCell(headers, row, 'ticketStatus');
       if (isSoldOutStatus(ticketStatus)) return null;
@@ -498,6 +523,7 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
         id: String(index + 2),
         festival,
         day,
+        ...(dayDate ? { dayDate } : {}),
         dayLabel: readCell(headers, row, 'dayLabel') || dayLabelFor(day),
         name,
         organizer: readCell(headers, row, 'organizer') || undefined,
