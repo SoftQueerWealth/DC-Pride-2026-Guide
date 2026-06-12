@@ -1,10 +1,13 @@
 import { Check, Clock, Lightbulb, MapPin } from 'lucide-react';
+import { useState } from 'react';
 import type { PrideEvent } from '../types/event';
 import { trackClick } from '../lib/analytics';
 import { eventCtaButtonClass, eventCtaLabel } from '../lib/eventCta';
 import { badgeClassForLabel } from '../lib/badgeClass';
+import { flyerModalUrl } from '../lib/flyerUrl';
 import { parseDiscountDisplay, shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
 import { isMappableLocation, mapsSearchUrl, splitLocationParts } from '../lib/maps';
+import { FlyerLightbox } from './FlyerLightbox';
 
 interface EventCardProps {
   event: PrideEvent;
@@ -55,6 +58,7 @@ function LocationDisplay({
 }
 
 export function EventCard({ event, visible, going = false, onToggleGoing }: EventCardProps) {
+  const [flyerOpen, setFlyerOpen] = useState(false);
   const ctaLabel = eventCtaLabel(event);
   const ctaButtonClass = eventCtaButtonClass(event);
   const mapsHref = isMappableLocation(event.location) ? mapsSearchUrl(event.location) : null;
@@ -96,14 +100,30 @@ export function EventCard({ event, visible, going = false, onToggleGoing }: Even
         </div>
         <div className="event-name-row">
           {event.flyerUrl ? (
-            <img
-              src={event.flyerUrl}
-              alt=""
-              className="event-flyer"
-              loading="lazy"
-              decoding="async"
-              referrerPolicy="no-referrer"
-            />
+            <>
+              <button
+                type="button"
+                className="event-flyer-button"
+                aria-label={`View flyer for ${event.name}`}
+                onClick={() => setFlyerOpen(true)}
+              >
+                <img
+                  src={event.flyerUrl}
+                  alt=""
+                  className="event-flyer"
+                  loading="lazy"
+                  decoding="async"
+                  referrerPolicy="no-referrer"
+                />
+              </button>
+              {flyerOpen ? (
+                <FlyerLightbox
+                  src={flyerModalUrl(event.flyerUrl)}
+                  label={event.name}
+                  onClose={() => setFlyerOpen(false)}
+                />
+              ) : null}
+            </>
           ) : null}
           <div className="event-name-block">
             <div className="event-name">{event.name}</div>

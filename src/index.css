@@ -154,7 +154,16 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .event-info{flex:1;min-width:0}
 .event-name-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:6px}
 .event-name-block{flex:1;min-width:0}
+.event-flyer-button{padding:0;border:none;background:transparent;cursor:zoom-in;flex-shrink:0;border-radius:6px;line-height:0}
+.event-flyer-button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .event-flyer{width:72px;max-height:96px;object-fit:cover;border-radius:6px;border:1px solid var(--border);flex-shrink:0;display:block}
+.flyer-lightbox-backdrop{position:fixed;inset:0;z-index:2000;background:rgba(247,243,236,.78);display:flex;align-items:center;justify-content:center;padding:24px;cursor:pointer;animation:flyer-lightbox-fade-in .15s ease}
+.flyer-lightbox-modal{display:flex;flex-direction:column;align-items:flex-end;gap:8px;max-width:min(92vw,480px);max-height:calc(100dvh - 48px);cursor:default}
+.flyer-lightbox-image{max-width:100%;max-height:calc(100dvh - 48px - 52px);width:auto;height:auto;border-radius:8px;border:1px solid var(--border);box-shadow:0 8px 32px var(--shadow);object-fit:contain;display:block}
+.flyer-lightbox-close{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--text);background:var(--deep);border:1px solid var(--border);border-radius:8px;width:36px;height:36px;cursor:pointer;transition:background .15s,border-color .15s;flex-shrink:0}
+.flyer-lightbox-close:hover{background:var(--black);border-color:var(--accent-border)}
+.flyer-lightbox-close:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@keyframes flyer-lightbox-fade-in{from{opacity:0}to{opacity:1}}
 .event-name{font-size:13px;font-weight:500;color:var(--cream);line-height:1.4;margin-bottom:2px}
 .event-organizer{font-size:10.5px;color:var(--muted);margin-bottom:0;font-style:italic}
 .event-badges{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:5px}
