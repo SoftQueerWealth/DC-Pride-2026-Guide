@@ -94,8 +94,22 @@ export function EventCard({ event, visible, going = false, onToggleGoing }: Even
             </span>
           ))}
         </div>
-        <div className="event-name">{event.name}</div>
-        {event.organizer ? <div className="event-organizer">{event.organizer}</div> : null}
+        <div className="event-name-row">
+          {event.flyerUrl ? (
+            <img
+              src={event.flyerUrl}
+              alt=""
+              className="event-flyer"
+              loading="lazy"
+              decoding="async"
+              referrerPolicy="no-referrer"
+            />
+          ) : null}
+          <div className="event-name-block">
+            <div className="event-name">{event.name}</div>
+            {event.organizer ? <div className="event-organizer">{event.organizer}</div> : null}
+          </div>
+        </div>
         <div className="event-meta">
           <span className="meta-pill">
             <Clock size={10} strokeWidth={2} aria-hidden />
