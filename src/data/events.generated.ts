@@ -6,132 +6,6 @@ export const generatedEvents: PrideEvent[] = [
   {
     "id": "2",
     "festival": "baltimore-pride",
-    "day": "friday",
-    "dayDate": "2026-06-12",
-    "dayLabel": "Friday",
-    "name": "Call Out (The Pool Party)",
-    "organizer": "HerVibeEvents",
-    "types": [
-      "unknown"
-    ],
-    "vibesRaw": "35+ flirt food byob",
-    "free": false,
-    "badges": [
-      "Unknown"
-    ],
-    "time": "12:00 PM",
-    "location": "TBD w/ticket purchase",
-    "vibeTags": [
-      "35+",
-      "Flirt",
-      "Food",
-      "BYOB"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/call-out-the-pool-party-tickets-1989123427718?utm_experiment=test_share_listing&aff=ebdsshios&sg=76bfd980b4ba9b634c1089308b47b0953783e9018d356a30d11cd21bef8495e92caab815adfdd6cf658dbb2a96798ca3c3fad22edc66e86eec8670d53b4bedb73541aeb3b214c951dda41e2e7b",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-unknown"
-  },
-  {
-    "id": "3",
-    "festival": "baltimore-pride",
-    "day": "friday",
-    "dayDate": "2026-06-12",
-    "dayLabel": "Friday",
-    "name": "The Black Lesbian Link-up",
-    "organizer": "Lez Black Gurls",
-    "types": [
-      "meetup"
-    ],
-    "vibesRaw": "flirt dating food",
-    "free": false,
-    "badges": [
-      "Meetup"
-    ],
-    "time": "7:00 PM",
-    "location": "The Empanada Lady · 10 South St STE 100, Baltimore, MD 21202",
-    "vibeTags": [
-      "Flirt",
-      "Dating",
-      "Food"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/lez-black-gurls-presents-the-black-lesbian-link-up-tickets-1989436050782?utm_experiment=test_share_listing&aff=ebdsshios&sg=d038de198ab6c8565d2dd826e8a4689fce5bd6f89f2f54569e47b261ebc0ad0b191c312e847dc7d1fcd87d960e7edf249810a8371439a9ce985bad02342a7e9c2f84662873d0428c6dcff49927",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "discountCode": "LBG15"
-  },
-  {
-    "id": "4",
-    "festival": "baltimore-pride",
-    "day": "thursday",
-    "dayDate": "2026-06-11",
-    "dayLabel": "Thursday",
-    "name": "The Link-Up: A Pride Mixer",
-    "organizer": "RLA & Aphrodite's House",
-    "types": [
-      "happy-hour",
-      "meetup"
-    ],
-    "vibesRaw": "groove flirt food",
-    "free": true,
-    "badges": [
-      "Happy Hour",
-      "Meetup",
-      "Free"
-    ],
-    "time": "5:00 PM",
-    "location": "Noir Restaurant and Lounge · 716 York Rd, Baltimore, MD 21212",
-    "vibeTags": [
-      "Groove",
-      "Flirt",
-      "Food"
-    ],
-    "ctaHref": "https://posh.vip/e/the-link-up-a-pride-happy-hour",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "5",
-    "festival": "baltimore-pride",
-    "day": "saturday",
-    "dayDate": "2026-06-13",
-    "dayLabel": "Saturday",
-    "name": "CharmCityPrideFest",
-    "organizer": "CharmCityPride",
-    "types": [
-      "after-dark",
-      "day-party",
-      "happy-hour",
-      "festival"
-    ],
-    "vibesRaw": "ass shaking flirt groove karaoke live show",
-    "free": false,
-    "badges": [
-      "After Dark",
-      "Day Party",
-      "Happy Hour",
-      "Festival"
-    ],
-    "time": "6:00 PM",
-    "location": "Power Plant Live · 34 Market Pl, Baltimore, MD 21202",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Groove",
-      "Karaoke",
-      "Live Show"
-    ],
-    "ctaHref": "https://www.axs.com/events/1430048/charm-city-pride-fest-tickets?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleASRZjNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAad0oxEUU2EAH1dxqxa9B7sBs9w37g_YkvixRdfrO1lAjC9S04euf__0aebbbw_aem_wOlUjf04yN7K0U66fhuZiw&utm_id=97760_v0_s00_e0_tv3",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "🎟️ Win 2 Free Tickets!\n\nFollow Charm City Fest, Uncuffed & SQW • Like this post • Tag 2 friends\n\n✨ Winner receives 2 complimentary tickets."
-  },
-  {
-    "id": "6",
-    "festival": "baltimore-pride",
     "day": "tuesday",
     "dayDate": "2026-06-09",
     "dayLabel": "Tuesday",
@@ -159,10 +33,40 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://posh.vip/e/the-masc-meetup-the-unspoken-energy-we-all-know",
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup"
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://lh3.googleusercontent.com/d/1wGF3KiDRydNExf7ZimEsP9lMFSa0PJjA=w200"
   },
   {
-    "id": "7",
+    "id": "3",
+    "festival": "baltimore-pride",
+    "day": "tuesday",
+    "dayDate": "2026-06-09",
+    "dayLabel": "Tuesday",
+    "name": "Baltimore Pride Happy Hour & Karaoke",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "happy-hour"
+    ],
+    "vibesRaw": "karaoke groove",
+    "free": true,
+    "badges": [
+      "Happy Hour",
+      "Free"
+    ],
+    "time": "5:00 PM",
+    "location": "33 W North Ave, Baltimore, MD 21201",
+    "vibeTags": [
+      "Karaoke",
+      "Groove"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-happy-hour-karaoke-tickets-1989316825175",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour",
+    "flyerUrl": "https://lh3.googleusercontent.com/d/1XcDpjvuZFITYh6SHluZgFlMyXgJdYpTN=w200"
+  },
+  {
+    "id": "4",
     "festival": "baltimore-pride",
     "day": "wednesday",
     "dayDate": "2026-06-10",
@@ -192,176 +96,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "8",
-    "festival": "baltimore-pride",
-    "day": "thursday",
-    "dayDate": "2026-06-11",
-    "dayLabel": "Thursday",
-    "name": "Parity Porch Concert:Pride Edition Ft. Black Assets",
-    "organizer": "All Love Baltimore, PARITY & Baltimore City LGBTQ Affairs",
-    "types": [
-      "outdoors"
-    ],
-    "vibesRaw": "community live show",
-    "free": true,
-    "badges": [
-      "Outdoors",
-      "Free"
-    ],
-    "time": "6:30 PM",
-    "location": "500 Blk. of North Carrollton Ave",
-    "vibeTags": [
-      "Community",
-      "Live Show"
-    ],
-    "ctaHref": "https://posh.vip/e/parity-porch-concert-pride-edition-featuring-black-assests",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-outdoors"
-  },
-  {
-    "id": "9",
-    "festival": "baltimore-pride",
-    "day": "friday",
-    "dayDate": "2026-06-12",
-    "dayLabel": "Friday",
-    "name": "Sugar Rush: Grown-Up Trampoline Glow Party",
-    "organizer": "All Love Baltimore & Baltimore City LGBTQ Affairs",
-    "types": [
-      "gynasium",
-      "after-dark"
-    ],
-    "vibesRaw": "30+ games groove",
-    "free": false,
-    "badges": [
-      "Gynasium",
-      "After Dark"
-    ],
-    "time": "10:30 PM",
-    "location": "Sky Zone Timonium · 23 W Aylesbury Rd, Timonium, MD 21093",
-    "vibeTags": [
-      "30+",
-      "Games",
-      "Groove"
-    ],
-    "ctaHref": "https://posh.vip/e/sugar-rush-2",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-gynasium"
-  },
-  {
-    "id": "10",
-    "festival": "baltimore-pride",
-    "day": "saturday",
-    "dayDate": "2026-06-13",
-    "dayLabel": "Saturday",
-    "name": "Pride on the Pier",
-    "organizer": "All Love Baltimore, Blk Ass Flea Mkt & Baltimore City LGBTQ Affairs",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking food 30+",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "8:00 PM",
-    "location": "Hard Rock Cafe · 601 E Pratt St. Baltimore, MD 21202",
-    "vibeTags": [
-      "Ass Shaking",
-      "Food",
-      "30+"
-    ],
-    "ctaHref": "https://posh.vip/e/pride-on-the-pier",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "11",
-    "festival": "baltimore-pride",
-    "day": "sunday",
-    "dayDate": "2026-06-14",
-    "dayLabel": "Sunday",
-    "name": "The Nude Experience",
-    "organizer": "All Love Baltimore & Blk Ass Flea Mkt",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "grown & sexy 30+ food ass shaking",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "4:00 PM",
-    "location": "Our Time Kitchen · 117 W 24th St. Baltimore, MD 21218",
-    "vibeTags": [
-      "Grown & Sexy",
-      "30+",
-      "Food",
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://posh.vip/e/the-nude-experience",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "12",
-    "festival": "baltimore-pride",
-    "day": "saturday",
-    "dayDate": "2026-06-13",
-    "dayLabel": "Saturday",
-    "name": "Yams: The [Pride] Function Vol. III",
-    "organizer": "[The Function]",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "Day Party"
-    ],
-    "time": "5:00 PM",
-    "location": "Our Time Kitchen · 118 W 24th St. Baltimore, MD 21218",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://ra.co/events/2452980?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleASRd4JleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacFMvElDRbFeU1VYIP7QpjZpviyFO8c3xEMethGXOR_xFZTzkyEE8565KW9_A_aem_wgW-21jnUZMIscB6o0J7AQ",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "13",
-    "festival": "baltimore-pride",
-    "day": "tuesday",
-    "dayDate": "2026-06-09",
-    "dayLabel": "Tuesday",
-    "name": "Baltimore Pride Happy Hour & Karaoke",
-    "organizer": "The Pride Center of Maryland",
-    "types": [
-      "happy-hour"
-    ],
-    "vibesRaw": "karaoke groove",
-    "free": true,
-    "badges": [
-      "Happy Hour",
-      "Free"
-    ],
-    "time": "5:00 PM",
-    "location": "33 W North Ave, Baltimore, MD 21201",
-    "vibeTags": [
-      "Karaoke",
-      "Groove"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/baltimore-pride-happy-hour-karaoke-tickets-1989316825175",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "14",
+    "id": "5",
     "festival": "baltimore-pride",
     "day": "wednesday",
     "dayDate": "2026-06-10",
@@ -394,7 +129,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-meetup"
   },
   {
-    "id": "15",
+    "id": "6",
     "festival": "baltimore-pride",
     "day": "wednesday",
     "dayDate": "2026-06-10",
@@ -425,7 +160,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "16",
+    "id": "7",
     "festival": "baltimore-pride",
     "day": "wednesday",
     "dayDate": "2026-06-10",
@@ -460,7 +195,154 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "17",
+    "id": "8",
+    "festival": "baltimore-pride",
+    "day": "thursday",
+    "dayDate": "2026-06-11",
+    "dayLabel": "Thursday",
+    "name": "The Link-Up: A Pride Mixer",
+    "organizer": "RLA & Aphrodite's House",
+    "types": [
+      "happy-hour",
+      "meetup"
+    ],
+    "vibesRaw": "groove flirt food",
+    "free": true,
+    "badges": [
+      "Happy Hour",
+      "Meetup",
+      "Free"
+    ],
+    "time": "5:00 PM",
+    "location": "Noir Restaurant and Lounge · 716 York Rd, Baltimore, MD 21212",
+    "vibeTags": [
+      "Groove",
+      "Flirt",
+      "Food"
+    ],
+    "ctaHref": "https://posh.vip/e/the-link-up-a-pride-happy-hour",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour"
+  },
+  {
+    "id": "9",
+    "festival": "baltimore-pride",
+    "day": "thursday",
+    "dayDate": "2026-06-11",
+    "dayLabel": "Thursday",
+    "name": "Parity Porch Concert:Pride Edition Ft. Black Assets",
+    "organizer": "All Love Baltimore, PARITY & Baltimore City LGBTQ Affairs",
+    "types": [
+      "outdoors"
+    ],
+    "vibesRaw": "community live show",
+    "free": true,
+    "badges": [
+      "Outdoors",
+      "Free"
+    ],
+    "time": "6:30 PM",
+    "location": "500 Blk. of North Carrollton Ave",
+    "vibeTags": [
+      "Community",
+      "Live Show"
+    ],
+    "ctaHref": "https://posh.vip/e/parity-porch-concert-pride-edition-featuring-black-assests",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-outdoors"
+  },
+  {
+    "id": "10",
+    "festival": "baltimore-pride",
+    "day": "friday",
+    "dayDate": "2026-06-12",
+    "dayLabel": "Friday",
+    "name": "Call Out (The Pool Party)",
+    "organizer": "HerVibeEvents",
+    "types": [
+      "unknown"
+    ],
+    "vibesRaw": "35+ flirt food byob",
+    "free": false,
+    "badges": [
+      "Unknown"
+    ],
+    "time": "12:00 PM",
+    "location": "TBD w/ticket purchase",
+    "vibeTags": [
+      "35+",
+      "Flirt",
+      "Food",
+      "BYOB"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/call-out-the-pool-party-tickets-1989123427718?utm_experiment=test_share_listing&aff=ebdsshios&sg=76bfd980b4ba9b634c1089308b47b0953783e9018d356a30d11cd21bef8495e92caab815adfdd6cf658dbb2a96798ca3c3fad22edc66e86eec8670d53b4bedb73541aeb3b214c951dda41e2e7b",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-unknown"
+  },
+  {
+    "id": "11",
+    "festival": "baltimore-pride",
+    "day": "friday",
+    "dayDate": "2026-06-12",
+    "dayLabel": "Friday",
+    "name": "The Black Lesbian Link-up",
+    "organizer": "Lez Black Gurls",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "flirt dating food",
+    "free": false,
+    "badges": [
+      "Meetup"
+    ],
+    "time": "7:00 PM",
+    "location": "The Empanada Lady · 10 South St STE 100, Baltimore, MD 21202",
+    "vibeTags": [
+      "Flirt",
+      "Dating",
+      "Food"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/lez-black-gurls-presents-the-black-lesbian-link-up-tickets-1989436050782?utm_experiment=test_share_listing&aff=ebdsshios&sg=d038de198ab6c8565d2dd826e8a4689fce5bd6f89f2f54569e47b261ebc0ad0b191c312e847dc7d1fcd87d960e7edf249810a8371439a9ce985bad02342a7e9c2f84662873d0428c6dcff49927",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "discountCode": "TRUE"
+  },
+  {
+    "id": "12",
+    "festival": "baltimore-pride",
+    "day": "friday",
+    "dayDate": "2026-06-12",
+    "dayLabel": "Friday",
+    "name": "Sugar Rush: Grown-Up Trampoline Glow Party",
+    "organizer": "All Love Baltimore & Baltimore City LGBTQ Affairs",
+    "types": [
+      "gynasium",
+      "after-dark"
+    ],
+    "vibesRaw": "30+ games groove",
+    "free": false,
+    "badges": [
+      "Gynasium",
+      "After Dark"
+    ],
+    "time": "10:30 PM",
+    "location": "Sky Zone Timonium · 23 W Aylesbury Rd, Timonium, MD 21093",
+    "vibeTags": [
+      "30+",
+      "Games",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/sugar-rush-2",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-gynasium"
+  },
+  {
+    "id": "13",
     "festival": "baltimore-pride",
     "day": "friday",
     "dayDate": "2026-06-12",
@@ -494,7 +376,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "18",
+    "id": "14",
     "festival": "baltimore-pride",
     "day": "friday",
     "dayDate": "2026-06-12",
@@ -524,7 +406,158 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-ball"
   },
   {
+    "id": "15",
+    "festival": "baltimore-pride",
+    "day": "friday",
+    "dayDate": "2026-06-12",
+    "dayLabel": "Friday",
+    "name": "Elevation Late Night Happy Hour",
+    "organizer": "Alternative Union",
+    "types": [
+      "happy-hour",
+      "after-dark"
+    ],
+    "vibesRaw": "grown & sexy flirt ass shaking food",
+    "free": false,
+    "badges": [
+      "Happy Hour",
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "Belieze Rooftop · 316 Guilford Ave, Baltimore, MD 21202",
+    "vibeTags": [
+      "Grown & Sexy",
+      "Flirt",
+      "Ass Shaking",
+      "Food"
+    ],
+    "ctaHref": "https://posh.vip/e/yewtopia",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-happy-hour",
+    "discountCode": "TRUE"
+  },
+  {
+    "id": "16",
+    "festival": "baltimore-pride",
+    "day": "friday",
+    "dayDate": "2026-06-12",
+    "dayLabel": "Friday",
+    "name": "The Kickoff",
+    "organizer": "Bmore Prides Truth Or Dare 11 With Badd Dolly",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking flirt",
+    "free": false,
+    "badges": [
+      "After Dark"
+    ],
+    "time": "10:00 PM",
+    "location": "Select Lounge · 415 North Paca Street\nBaltimore, MD 21201",
+    "vibeTags": [
+      "Ass Shaking",
+      "Flirt"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/bmore-prides-truth-or-dare-11-with-badd-dolly-tickets-1989971205444?aff=ebdsoporgprofile",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "discountCode": "FALSE"
+  },
+  {
+    "id": "17",
+    "festival": "baltimore-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-13",
+    "dayLabel": "Saturday",
+    "name": "CharmCityPrideFest",
+    "organizer": "CharmCityPride",
+    "types": [
+      "after-dark",
+      "day-party",
+      "happy-hour",
+      "festival"
+    ],
+    "vibesRaw": "ass shaking flirt groove karaoke live show",
+    "free": false,
+    "badges": [
+      "After Dark",
+      "Day Party",
+      "Happy Hour",
+      "Festival"
+    ],
+    "time": "6:00 PM",
+    "location": "Power Plant Live · 34 Market Pl, Baltimore, MD 21202",
+    "vibeTags": [
+      "Ass Shaking",
+      "Flirt",
+      "Groove",
+      "Karaoke",
+      "Live Show"
+    ],
+    "ctaHref": "https://www.axs.com/events/1430048/charm-city-pride-fest-tickets?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleASRZjNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAad0oxEUU2EAH1dxqxa9B7sBs9w37g_YkvixRdfrO1lAjC9S04euf__0aebbbw_aem_wOlUjf04yN7K0U66fhuZiw&utm_id=97760_v0_s00_e0_tv3",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "discountCode": "TRUE"
+  },
+  {
+    "id": "18",
+    "festival": "baltimore-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-13",
+    "dayLabel": "Saturday",
+    "name": "Pride on the Pier",
+    "organizer": "All Love Baltimore, Blk Ass Flea Mkt & Baltimore City LGBTQ Affairs",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking food 30+",
+    "free": false,
+    "badges": [
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "Hard Rock Cafe · 601 E Pratt St. Baltimore, MD 21202",
+    "vibeTags": [
+      "Ass Shaking",
+      "Food",
+      "30+"
+    ],
+    "ctaHref": "https://posh.vip/e/pride-on-the-pier",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
     "id": "19",
+    "festival": "baltimore-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-13",
+    "dayLabel": "Saturday",
+    "name": "Yams: The [Pride] Function Vol. III",
+    "organizer": "[The Function]",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "ass shaking",
+    "free": false,
+    "badges": [
+      "Day Party"
+    ],
+    "time": "5:00 PM",
+    "location": "Our Time Kitchen · 118 W 24th St. Baltimore, MD 21218",
+    "vibeTags": [
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://ra.co/events/2452980?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleASRd4JleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacFMvElDRbFeU1VYIP7QpjZpviyFO8c3xEMethGXOR_xFZTzkyEE8565KW9_A_aem_wgW-21jnUZMIscB6o0J7AQ",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party"
+  },
+  {
+    "id": "20",
     "festival": "baltimore-pride",
     "day": "saturday",
     "dayDate": "2026-06-13",
@@ -551,7 +584,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors"
   },
   {
-    "id": "20",
+    "id": "21",
     "festival": "baltimore-pride",
     "day": "saturday",
     "dayDate": "2026-06-13",
@@ -584,7 +617,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "21",
+    "id": "22",
     "festival": "baltimore-pride",
     "day": "saturday",
     "dayDate": "2026-06-13",
@@ -620,7 +653,125 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-festival"
   },
   {
-    "id": "22",
+    "id": "23",
+    "festival": "baltimore-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-13",
+    "dayLabel": "Saturday",
+    "name": "YewTopia",
+    "organizer": "Alternative Union",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking groove food",
+    "free": false,
+    "badges": [
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "Element · 1818 Maryland Ave. Baltimore, MD 21201",
+    "vibeTags": [
+      "Ass Shaking",
+      "Groove",
+      "Food"
+    ],
+    "ctaHref": "https://posh.vip/e/yewtopia",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "24",
+    "festival": "baltimore-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-13",
+    "dayLabel": "Saturday",
+    "name": "Baltimore Pride Dinnner & Play",
+    "organizer": "Benevolence Lifestyle Club",
+    "types": [
+      "after-dark",
+      "meetup"
+    ],
+    "vibesRaw": "30+ flirt community food",
+    "free": true,
+    "badges": [
+      "After Dark",
+      "Meetup",
+      "Free"
+    ],
+    "time": "5:00 PM",
+    "location": "Kinky Cafe · 2015 N Charles St, Baltimore, MD 21218",
+    "vibeTags": [
+      "30+",
+      "Flirt",
+      "Community",
+      "Food"
+    ],
+    "ctaHref": "https://posh.vip/e/baltimore-pride-dinner-play",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "25",
+    "festival": "baltimore-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-13",
+    "dayLabel": "Saturday",
+    "name": "The Biggest Afterparty of Pride Weekend",
+    "organizer": "Lil Joe Events",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking flirt",
+    "free": true,
+    "badges": [
+      "After Dark",
+      "Free"
+    ],
+    "time": "10:00 PM",
+    "location": "Mansion · 6 E Lafayette Ave, Baltimore MD",
+    "vibeTags": [
+      "Ass Shaking",
+      "Flirt"
+    ],
+    "ctaHref": "https://posh.vip/e/abc-juneteenth-mansion-pool-party?t=msmira&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnrqjjgiL-m-cAdMsYNqEbjTn6fw1Am62DGZWK_n230cWqarEm-Gi8L5c1WpA_aem_M0jtY0fkNa52wkHiVLE-rw",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "discountCode": "TRUE"
+  },
+  {
+    "id": "26",
+    "festival": "baltimore-pride",
+    "day": "sunday",
+    "dayDate": "2026-06-14",
+    "dayLabel": "Sunday",
+    "name": "The Nude Experience",
+    "organizer": "All Love Baltimore & Blk Ass Flea Mkt",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "grown & sexy 30+ food ass shaking",
+    "free": false,
+    "badges": [
+      "Day Party"
+    ],
+    "time": "4:00 PM",
+    "location": "Our Time Kitchen · 117 W 24th St. Baltimore, MD 21218",
+    "vibeTags": [
+      "Grown & Sexy",
+      "30+",
+      "Food",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://posh.vip/e/the-nude-experience",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party"
+  },
+  {
+    "id": "27",
     "festival": "baltimore-pride",
     "day": "sunday",
     "dayDate": "2026-06-14",
@@ -655,125 +806,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "23",
-    "festival": "baltimore-pride",
-    "day": "saturday",
-    "dayDate": "2026-06-13",
-    "dayLabel": "Saturday",
-    "name": "YewTopia",
-    "organizer": "Alternative Union",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking groove food",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "8:00 PM",
-    "location": "Element · 1818 Maryland Ave. Baltimore, MD 21201",
-    "vibeTags": [
-      "Ass Shaking",
-      "Groove",
-      "Food"
-    ],
-    "ctaHref": "https://posh.vip/e/yewtopia",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "24",
-    "festival": "baltimore-pride",
-    "day": "friday",
-    "dayDate": "2026-06-12",
-    "dayLabel": "Friday",
-    "name": "Elevation",
-    "organizer": "Alternative Union",
-    "types": [
-      "happy-hour",
-      "after-dark"
-    ],
-    "vibesRaw": "grown & sexy flirt ass shaking food",
-    "free": false,
-    "badges": [
-      "Happy Hour",
-      "After Dark"
-    ],
-    "time": "8:00 PM",
-    "location": "Belieze Rooftop · 316 Guilford Ave, Baltimore, MD 21202",
-    "vibeTags": [
-      "Grown & Sexy",
-      "Flirt",
-      "Ass Shaking",
-      "Food"
-    ],
-    "ctaHref": "https://posh.vip/e/yewtopia",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "25",
-    "festival": "baltimore-pride",
-    "day": "friday",
-    "dayDate": "2026-06-12",
-    "dayLabel": "Friday",
-    "name": "The Kickoff",
-    "organizer": "Bmore Prides Truth Or Dare 11 With Badd Dolly",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking flirt",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Select Lounge · 415 North Paca Street\nBaltimore, MD 21201",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/bmore-prides-truth-or-dare-11-with-badd-dolly-tickets-1989971205444?aff=ebdsoporgprofile",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "26",
-    "festival": "baltimore-pride",
-    "day": "saturday",
-    "dayDate": "2026-06-13",
-    "dayLabel": "Saturday",
-    "name": "Baltimore Pride Dinnner & Play",
-    "organizer": "Benevolence Lifestyle Club",
-    "types": [
-      "after-dark",
-      "meetup"
-    ],
-    "vibesRaw": "30+ flirt community food",
-    "free": true,
-    "badges": [
-      "After Dark",
-      "Meetup",
-      "Free"
-    ],
-    "time": "5:00 PM",
-    "location": "Kinky Cafe · 2015 N Charles St, Baltimore, MD 21218",
-    "vibeTags": [
-      "30+",
-      "Flirt",
-      "Community",
-      "Food"
-    ],
-    "ctaHref": "https://posh.vip/e/baltimore-pride-dinner-play",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "27",
+    "id": "28",
     "festival": "baltimore-pride",
     "day": "sunday",
     "dayDate": "2026-06-14",
@@ -783,7 +816,7 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "meetup"
     ],
-    "vibesRaw": "flirt dating",
+    "vibesRaw": "flirt dating 30+",
     "free": true,
     "badges": [
       "Meetup",
@@ -793,7 +826,8 @@ export const generatedEvents: PrideEvent[] = [
     "location": "Aye Gallery & Alter Studiio · 100 E 23rd St, Baltimore, MD 21218, USA",
     "vibeTags": [
       "Flirt",
-      "Dating"
+      "Dating",
+      "30+"
     ],
     "ctaHref": "https://posh.vip/e/singles-mingle-not-your-average-singles-mixer-3",
     "ctaLabel": "Get Tickets",

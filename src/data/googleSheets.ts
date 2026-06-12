@@ -125,6 +125,7 @@ const COLUMN_ALIASES = {
     'ticketcode',
   ],
   festival: ['festival', 'pride', 'guide', 'eventgroup', 'festivalfilter'],
+  flyerUrl: ['flyer', 'flyerurl', 'flyerlink', 'flyerimage', 'eventflyer', 'poster', 'posterurl'],
 } as const;
 
 const FESTIVAL_ALIASES: Record<string, string> = {
@@ -273,6 +274,34 @@ function readBeautyCell(headers: string[], row: string[], key: BeautyColumnKey):
     if (index >= 0) return cleanCellValue(row[index]);
   }
   return '';
+}
+
+function extractGoogleDriveFileId(value: string): string | null {
+  const patterns = [
+    /drive\.google\.com\/file\/d\/([^/?#]+)/i,
+    /drive\.google\.com\/open\?[^#]*\bid=([^&]+)/i,
+    /drive\.google\.com\/uc\?[^#]*\bid=([^&]+)/i,
+    /drive\.google\.com\/thumbnail\?[^#]*\bid=([^&]+)/i,
+  ];
+
+  for (const pattern of patterns) {
+    const match = value.match(pattern);
+    if (match?.[1]) return match[1];
+  }
+
+  return null;
+}
+
+function normalizeFlyerUrl(value: string): string {
+  const trimmed = value.trim();
+  if (!trimmed) return '';
+
+  const fileId = extractGoogleDriveFileId(trimmed);
+  if (fileId) {
+    return `https://lh3.googleusercontent.com/d/${fileId}=w200`;
+  }
+
+  return trimmed;
 }
 
 function beautyFieldHref(label: string, value: string): string | undefined {
@@ -517,6 +546,8 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
       const discountCode =
         discountCodeRaw && !shouldHideDiscountCode(discountCodeRaw) ? discountCodeRaw : '';
 
+      const flyerUrl = normalizeFlyerUrl(readCell(headers, row, 'flyerUrl'));
+
       const festival = parseFestival(readCell(headers, row, 'festival'));
 
       return {
@@ -539,6 +570,7 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
         ctaButtonClass: normalizeClass<'btn-'>(readCell(headers, row, 'ctaButtonClass'), 'btn-', ctaButtonClassForLabel(ctaLabel)),
         cardClass: normalizeClass<'tp-'>(readCell(headers, row, 'cardClass'), 'tp-', fallbackCardClass),
         ...(discountCode ? { discountCode } : {}),
+        ...(flyerUrl ? { flyerUrl } : {}),
       };
     })
     .filter((event): event is PrideEvent => event !== null);

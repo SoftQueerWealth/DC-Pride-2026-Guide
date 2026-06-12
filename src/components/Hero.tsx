@@ -27,7 +27,7 @@ export function Hero({ eventCount }: HeroProps) {
         <br />
         <em>Schedule subject to change.</em>
       </div>
-      <p className="last-updated">Last updated · June 8, 2026</p>
+      <p className="last-updated">Last updated · June 12, 2026</p>
     </header>
   );
 }

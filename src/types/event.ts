@@ -76,4 +76,6 @@ export interface PrideEvent {
   cardClass: `tp-${string}`;
   /** Shown under the ticket CTA when set (e.g. promo code from the sheet). */
   discountCode?: string;
+  /** Direct image URL for the event flyer/poster, when provided in the sheet. */
+  flyerUrl?: string;
 }
