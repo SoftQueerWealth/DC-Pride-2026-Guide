@@ -1,6 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
 import { BeautySection } from './components/BeautySection';
-import { DAY_ORDER } from './constants/days';
 import { ENABLED_FESTIVALS, festivalById } from './constants/festivals';
 import { PUBLIC_SITE_ORIGIN } from './constants/site';
 import { FILTER_SECTIONS, type FilterSectionDef } from './constants/filters';
@@ -9,7 +8,7 @@ import { useEvents } from './hooks/useEvents';
 import { useEventFilters } from './hooks/useEventFilters';
 import { useItinerary } from './hooks/useItinerary';
 import type { BeautyItem } from './types/beauty';
-import type { DayId, PrideEvent } from './types/event';
+import type { PrideEvent } from './types/event';
 import { DaySection } from './components/DaySection';
 import { DonationSection } from './components/DonationSection';
 import { FestivalSubheader } from './components/FestivalSubheader';
@@ -23,8 +22,7 @@ import { LinksSection } from './components/LinksSection';
 import { SharedItineraryHeader } from './components/SharedItineraryHeader';
 import { trackItineraryShare } from './lib/analytics';
 import { communityPerkTypeLabel } from './lib/communityPerks';
-import { compareByEventTime } from './lib/eventTimeSort';
-import { countEnabledFestivalEvents, filterEventsByFestival } from './lib/festivalEvents';
+import { groupFestivalEvents } from './lib/groupFestivalEvents';
 import { formatItineraryShare } from './lib/formatItinerary';
 import { shareItinerary } from './lib/shareItinerary';
 
@@ -36,22 +34,7 @@ enum BeautyFilterKind {
 }
 
 const COMMUNITY_PERK_TYPES = ['Hair', 'Wellness', 'Brows'] as const;
-const ENABLED_FESTIVAL_IDS = ENABLED_FESTIVALS.map((festival) => festival.id);
 const DEFAULT_TAB = ENABLED_FESTIVALS[0]?.id ?? BEAUTY_TAB;
-
-function groupByDay(list: PrideEvent[]): Map<DayId, PrideEvent[]> {
-  const map = new Map<DayId, PrideEvent[]>();
-  for (const d of DAY_ORDER) {
-    map.set(d, []);
-  }
-  for (const e of list) {
-    map.get(e.day)?.push(e);
-  }
-  for (const dayEvents of map.values()) {
-    dayEvents.sort(compareByEventTime);
-  }
-  return map;
-}
 
 function normalizeFilterValue(value: string): string {
   return value.toLowerCase().replace(/\s+/g, ' ').trim();
@@ -70,22 +53,25 @@ export default function App() {
   const [beautyFilterOpen, setBeautyFilterOpen] = useState(false);
   const [activeBeautyTypes, setActiveBeautyTypes] = useState<Set<string>>(() => new Set());
   const [activeMobileOnly, setActiveMobileOnly] = useState(false);
-  const { events, error, isLoading } = useEvents();
+  const { allEvents, eventsForFestival, error, isLoading } = useEvents();
   const beauty = useBeautyItems();
   const showBeautyTab = activeTab === BEAUTY_TAB;
   const showFestivalTab = !showBeautyTab;
   const activeFestival = showFestivalTab ? festivalById(activeTab) : undefined;
   const festivalEvents = useMemo(
-    () => (showFestivalTab ? filterEventsByFestival(events, activeTab) : []),
-    [events, activeTab, showFestivalTab],
+    () => (showFestivalTab ? eventsForFestival(activeTab) : []),
+    [activeTab, eventsForFestival, showFestivalTab],
   );
   const heroEventCount = useMemo(
-    () => countEnabledFestivalEvents(events, ENABLED_FESTIVAL_IDS),
-    [events],
+    () => ENABLED_FESTIVALS.reduce((sum, festival) => sum + eventsForFestival(festival.id).length, 0),
+    [eventsForFestival],
   );
-  const grouped = useMemo(() => groupByDay(festivalEvents), [festivalEvents]);
+  const grouped = useMemo(
+    () => (activeFestival ? groupFestivalEvents(festivalEvents, activeFestival.grouping) : []),
+    [activeFestival, festivalEvents],
+  );
   const filter = useEventFilters(festivalEvents);
-  const itinerary = useItinerary(events);
+  const itinerary = useItinerary(allEvents);
 
   const isEventShown = useCallback(
     (event: PrideEvent) => itinerary.isEventShownInView(event.id) && filter.isEventVisible(event),
@@ -157,11 +143,11 @@ export default function App() {
   };
 
   const handleShareItinerary = useCallback(async () => {
-    const payload = formatItineraryShare(events, itinerary.mySelection, PUBLIC_SITE_ORIGIN);
+    const payload = formatItineraryShare(allEvents, itinerary.mySelection, PUBLIC_SITE_ORIGIN);
     if (!payload) return 'failed' as const;
     trackItineraryShare(itinerary.myCount);
     return shareItinerary({ text: payload.text });
-  }, [events, itinerary.myCount, itinerary.mySelection]);
+  }, [allEvents, itinerary.myCount, itinerary.mySelection]);
 
   return (
     <>
@@ -214,23 +200,18 @@ export default function App() {
                 {error}
               </div>
             ) : null}
-            {DAY_ORDER.map((day) => {
-              const dayEvents = grouped.get(day) ?? [];
-              const dayLabel = dayEvents[0]?.dayLabel ?? day;
-              const dayDate = dayEvents[0]?.dayDate;
-              return (
-                <DaySection
-                  key={day}
-                  day={day}
-                  dayLabel={dayLabel}
-                  dayDate={dayDate}
-                  events={dayEvents}
-                  isEventVisible={isEventShown}
-                  isGoing={(e) => itinerary.isGoing(e.id)}
-                  onToggleGoing={(e) => itinerary.toggleGoing(e.id)}
-                />
-              );
-            })}
+            {grouped.map((dayGroup) => (
+              <DaySection
+                key={dayGroup.key}
+                day={dayGroup.day}
+                dayLabel={dayGroup.dayLabel}
+                dayDate={dayGroup.dayDate}
+                events={dayGroup.events}
+                isEventVisible={isEventShown}
+                isGoing={(e) => itinerary.isGoing(e.id)}
+                onToggleGoing={(e) => itinerary.toggleGoing(e.id)}
+              />
+            ))}
             <div className={`no-results${showNoResults ? ' visible' : ''}`}>
               {itinerary.isInSharedView
                 ? 'No shared events match your filters. Try clearing some or view the full guide.'

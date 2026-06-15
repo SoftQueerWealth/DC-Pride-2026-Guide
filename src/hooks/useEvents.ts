@@ -1,10 +1,13 @@
-import { useEffect, useState } from 'react';
-import { events as bundledEvents } from '../data';
-import { fetchSheetEvents, isGoogleSheetsConfigured } from '../data/googleSheets';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { bundledEventsForFestival } from '../data';
+import { ENABLED_FESTIVALS } from '../constants/festivals';
+import { fetchFestivalSheetEvents, isGoogleSheetsConfigured } from '../data/googleSheets';
 import type { PrideEvent } from '../types/event';
 
 interface EventsState {
-  events: PrideEvent[];
+  eventsByFestival: Record<string, PrideEvent[]>;
+  allEvents: PrideEvent[];
+  eventsForFestival: (festivalId: string) => PrideEvent[];
   error: string | null;
   isLoading: boolean;
 }
@@ -13,14 +16,20 @@ function errorMessage(error: unknown): string {
   return error instanceof Error ? error.message : 'Unable to load events.';
 }
 
+function bundledEventsByFestival(): Record<string, PrideEvent[]> {
+  return Object.fromEntries(
+    ENABLED_FESTIVALS.map((festival) => [festival.id, bundledEventsForFestival(festival.id)]),
+  );
+}
+
 const useGoogleSheets = isGoogleSheetsConfigured();
 
 export function useEvents(): EventsState {
-  const [state, setState] = useState<EventsState>({
-    events: bundledEvents,
-    error: null,
-    isLoading: useGoogleSheets,
-  });
+  const [eventsByFestival, setEventsByFestival] = useState<Record<string, PrideEvent[]>>(
+    () => bundledEventsByFestival(),
+  );
+  const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(useGoogleSheets);
 
   useEffect(() => {
     if (!useGoogleSheets) return;
@@ -28,19 +37,24 @@ export function useEvents(): EventsState {
     const controller = new AbortController();
     let cancelled = false;
 
-    fetchSheetEvents(controller.signal)
-      .then((events) => {
+    Promise.all(
+      ENABLED_FESTIVALS.map(async (festival) => {
+        const events = await fetchFestivalSheetEvents(festival.id, controller.signal);
+        return [festival.id, events] as const;
+      }),
+    )
+      .then((results) => {
         if (cancelled) return;
-        setState({ events, error: null, isLoading: false });
+        setEventsByFestival(Object.fromEntries(results));
+        setError(null);
+        setIsLoading(false);
       })
-      .catch((error: unknown) => {
-        if (error instanceof DOMException && error.name === 'AbortError') return;
+      .catch((fetchError: unknown) => {
+        if (fetchError instanceof DOMException && fetchError.name === 'AbortError') return;
         if (cancelled) return;
-        setState({
-          events: bundledEvents,
-          error: errorMessage(error),
-          isLoading: false,
-        });
+        setEventsByFestival(bundledEventsByFestival());
+        setError(errorMessage(fetchError));
+        setIsLoading(false);
       });
 
     return () => {
@@ -49,5 +63,21 @@ export function useEvents(): EventsState {
     };
   }, []);
 
-  return state;
+  const eventsForFestival = useCallback(
+    (festivalId: string) => eventsByFestival[festivalId] ?? [],
+    [eventsByFestival],
+  );
+
+  const allEvents = useMemo(
+    () => ENABLED_FESTIVALS.flatMap((festival) => eventsByFestival[festival.id] ?? []),
+    [eventsByFestival],
+  );
+
+  return {
+    eventsByFestival,
+    allEvents,
+    eventsForFestival,
+    error,
+    isLoading,
+  };
 }
