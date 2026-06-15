@@ -6,18 +6,12 @@ export type ParsedDiscount =
 
 const LEADING_EMOJI = /^\s*(?:🏷️|💡)\s*/u;
 
-/** Placeholder cells (e.g. "Pending", checkbox FALSE) should not render under the ticket button. */
+/** Placeholder cells (e.g. "Pending") should not render under the ticket button. */
 export function shouldHideDiscountCode(raw: string): boolean {
-  const normalized = decodeHtmlEntities(raw).trim().toLowerCase();
-  if (!normalized || normalized === 'nan') return true;
-  if (normalized === 'true' || normalized === 'false') return true;
-  if (/\bpending\b/i.test(normalized)) return true;
-  if (['none', 'no', 'n/a', 'na', '-'].includes(normalized)) return true;
-  return false;
+  return /\bpending\b/i.test(decodeHtmlEntities(raw).trim());
 }
 
 function looksLikeBareCodeToken(value: string): boolean {
-  if (/^(true|false)$/i.test(value)) return false;
   if (!/^[A-Za-z0-9._-]+$/.test(value) || value.length < 3 || value.length > 48) return false;
   if (/\d/.test(value)) return true;
   if (/[._-]/.test(value)) return true;
