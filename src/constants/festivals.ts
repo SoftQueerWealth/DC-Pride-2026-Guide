@@ -1,8 +1,12 @@
+export type FestivalGrouping = 'weekday' | 'calendar';
+
 export interface PrideFestival {
   id: string;
   tabLabel: string;
   dateRange: string;
   location: string;
+  sheetName: string;
+  grouping: FestivalGrouping;
   enabled: boolean;
 }
 
@@ -12,6 +16,8 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     tabLabel: 'Baltimore Pride',
     dateRange: 'June 8 – 14, 2026',
     location: 'Baltimore, MD',
+    sheetName: 'Baltimore Pride Master',
+    grouping: 'weekday',
     enabled: true,
   },
   {
@@ -19,7 +25,9 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     tabLabel: 'Capital Pride',
     dateRange: 'June 2026',
     location: 'Washington, DC',
-    enabled: false,
+    sheetName: 'Capital Pride Master',
+    grouping: 'calendar',
+    enabled: true,
   },
 ];
 

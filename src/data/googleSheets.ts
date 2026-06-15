@@ -6,12 +6,11 @@ import {
   type PrideEvent,
 } from '../types/event';
 import type { BeautyField, BeautyItem } from '../types/beauty';
-import { DEFAULT_FESTIVAL_ID } from '../constants/festivals';
+import { DEFAULT_FESTIVAL_ID, ENABLED_FESTIVALS, festivalById } from '../constants/festivals';
 import { decodeHtmlEntities } from '../lib/decodeHtmlEntities';
 import { ctaButtonClassForLabel, isInstagramUrl } from '../lib/eventCta';
 import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
 
-const EVENTS_SHEET_NAME = 'Baltimore Pride Master';
 const BEAUTY_SHEET_NAME = 'beauty';
 const SHEETS_ID_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_ID_HERE';
 const API_KEY_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_API_KEY_HERE';
@@ -127,17 +126,6 @@ const COLUMN_ALIASES = {
   festival: ['festival', 'pride', 'guide', 'eventgroup', 'festivalfilter'],
   flyerUrl: ['flyer', 'flyerurl', 'flyerlink', 'flyerimage', 'eventflyer', 'poster', 'posterurl'],
 } as const;
-
-const FESTIVAL_ALIASES: Record<string, string> = {
-  baltimore: 'baltimore-pride',
-  baltimorepride: 'baltimore-pride',
-  'baltimore-pride': 'baltimore-pride',
-  capital: 'capital-pride',
-  capitalpride: 'capital-pride',
-  'capital-pride': 'capital-pride',
-  dc: 'capital-pride',
-  'dc-pride': 'capital-pride',
-};
 
 const BEAUTY_COLUMN_ALIASES = {
   businessName: ['businessname', 'business', 'brand', 'brandname', 'partner', 'partnername', 'name'],
@@ -439,19 +427,6 @@ function isRsvpFreeStatus(value: string): boolean {
   return normalized === TicketStatus.RsvpFree;
 }
 
-function parseFestival(value: string): string {
-  const raw = value.trim();
-  if (!raw) return DEFAULT_FESTIVAL_ID;
-
-  const compact = raw.toLowerCase().replace(/[\s_]+/g, '');
-  if (FESTIVAL_ALIASES[compact]) return FESTIVAL_ALIASES[compact];
-
-  const normalized = normalizeToken(raw).replace(/\s+/g, '-');
-  if (FESTIVAL_ALIASES[normalized]) return FESTIVAL_ALIASES[normalized];
-
-  return normalized || DEFAULT_FESTIVAL_ID;
-}
-
 function ctaLabelForTicketStatus(value: string): string | null {
   const normalized = normalizeToken(value);
   if (normalized === TicketStatus.RsvpFree) return 'RSVP Free';
@@ -511,7 +486,13 @@ function readLocation(headers: string[], row: string[]): string {
   return location || address;
 }
 
-function parseSheetRows(values: string[][]): PrideEvent[] {
+interface ParseSheetRowsOptions {
+  festivalId: string;
+  idPrefix?: string;
+}
+
+function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): PrideEvent[] {
+  const { festivalId, idPrefix = '' } = options;
   const [headerRow, ...dataRows] = values;
   if (!headerRow) return [];
 
@@ -548,11 +529,9 @@ function parseSheetRows(values: string[][]): PrideEvent[] {
 
       const flyerUrl = normalizeFlyerUrl(readCell(headers, row, 'flyerUrl'));
 
-      const festival = parseFestival(readCell(headers, row, 'festival'));
-
       return {
-        id: String(index + 2),
-        festival,
+        id: `${idPrefix}${index + 2}`,
+        festival: festivalId,
         day,
         ...(dayDate ? { dayDate } : {}),
         dayLabel: readCell(headers, row, 'dayLabel') || dayLabelFor(day),
@@ -647,13 +626,39 @@ async function fetchSheetValues(sheetName: string, signal?: AbortSignal): Promis
   return payload.values ?? [];
 }
 
-export async function fetchSheetEvents(signal?: AbortSignal): Promise<PrideEvent[]> {
-  const events = parseSheetRows(await fetchSheetValues(EVENTS_SHEET_NAME, signal));
-  if (events.length === 0) {
+export async function fetchFestivalSheetEvents(
+  festivalId: string,
+  signal?: AbortSignal,
+): Promise<PrideEvent[]> {
+  const festival = festivalById(festivalId);
+  if (!festival) {
+    throw new Error(`Unknown festival: ${festivalId}`);
+  }
+
+  const idPrefix = festivalId === DEFAULT_FESTIVAL_ID ? '' : `${festivalId}-`;
+  return parseSheetRows(await fetchSheetValues(festival.sheetName, signal), {
+    festivalId,
+    idPrefix,
+  });
+}
+
+export async function fetchAllFestivalSheetEvents(
+  signal?: AbortSignal,
+): Promise<Record<string, PrideEvent[]>> {
+  const results = await Promise.all(
+    ENABLED_FESTIVALS.map(async (festival) => {
+      const events = await fetchFestivalSheetEvents(festival.id, signal);
+      return [festival.id, events] as const;
+    }),
+  );
+
+  const eventsByFestival = Object.fromEntries(results);
+  const totalEvents = results.reduce((sum, [, events]) => sum + events.length, 0);
+  if (totalEvents === 0) {
     throw new Error('No valid events were found in the Google Sheet.');
   }
 
-  return events;
+  return eventsByFestival;
 }
 
 export async function fetchSheetBeautyItems(signal?: AbortSignal): Promise<BeautyItem[]> {
