@@ -306,8 +306,7 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbrite.com/e/lez-black-gurls-presents-the-black-lesbian-link-up-tickets-1989436050782?utm_experiment=test_share_listing&aff=ebdsshios&sg=d038de198ab6c8565d2dd826e8a4689fce5bd6f89f2f54569e47b261ebc0ad0b191c312e847dc7d1fcd87d960e7edf249810a8371439a9ce985bad02342a7e9c2f84662873d0428c6dcff49927",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "discountCode": "TRUE"
+    "cardClass": "tp-meetup"
   },
   {
     "id": "12",
@@ -432,8 +431,7 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://posh.vip/e/yewtopia",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour",
-    "discountCode": "TRUE"
+    "cardClass": "tp-happy-hour"
   },
   {
     "id": "16",
@@ -460,8 +458,7 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.eventbrite.com/e/bmore-prides-truth-or-dare-11-with-badd-dolly-tickets-1989971205444?aff=ebdsoporgprofile",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "FALSE"
+    "cardClass": "tp-after-dark"
   },
   {
     "id": "17",
@@ -497,8 +494,7 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.axs.com/events/1430048/charm-city-pride-fest-tickets?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleASRZjNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAad0oxEUU2EAH1dxqxa9B7sBs9w37g_YkvixRdfrO1lAjC9S04euf__0aebbbw_aem_wOlUjf04yN7K0U66fhuZiw&utm_id=97760_v0_s00_e0_tv3",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "TRUE"
+    "cardClass": "tp-after-dark"
   },
   {
     "id": "18",
@@ -736,8 +732,7 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://posh.vip/e/abc-juneteenth-mansion-pool-party?t=msmira&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnrqjjgiL-m-cAdMsYNqEbjTn6fw1Am62DGZWK_n230cWqarEm-Gi8L5c1WpA_aem_M0jtY0fkNa52wkHiVLE-rw",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "discountCode": "TRUE"
+    "cardClass": "tp-after-dark"
   },
   {
     "id": "26",
