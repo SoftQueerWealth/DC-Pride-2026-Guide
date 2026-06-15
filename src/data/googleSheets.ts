@@ -241,6 +241,15 @@ function readCell(headers: string[], row: string[], key: ColumnKey): string {
   return '';
 }
 
+/** Uses the first matching header only — avoids reading a later alias column when the primary cell is empty. */
+function readCellFromFirstMatchingHeader(headers: string[], row: string[], key: ColumnKey): string {
+  for (const alias of COLUMN_ALIASES[key]) {
+    const index = headers.indexOf(normalizeHeader(alias));
+    if (index >= 0) return cleanCellValue(row[index]);
+  }
+  return '';
+}
+
 function readDayCell(headers: string[], row: string[]): string {
   const values: string[] = [];
   for (const alias of COLUMN_ALIASES.day) {
@@ -523,7 +532,7 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         ctaLabel = 'Get Tickets';
       }
       const fallbackCardClass: `tp-${string}` = `tp-${types[0] ?? EventType.DayParty}`;
-      const discountCodeRaw = readCell(headers, row, 'discountCode').trim();
+      const discountCodeRaw = readCellFromFirstMatchingHeader(headers, row, 'discountCode').trim();
       const discountCode =
         discountCodeRaw && !shouldHideDiscountCode(discountCodeRaw) ? discountCodeRaw : '';
 
