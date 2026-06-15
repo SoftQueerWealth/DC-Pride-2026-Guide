@@ -1,5 +1,6 @@
 declare global {
   interface Window {
+    dataLayer?: unknown[];
     gtag?: (...args: unknown[]) => void;
   }
 }
@@ -11,8 +12,10 @@ export enum SocialPlatform {
   Email = 'email',
 }
 
+import { isAnalyticsEnabled } from './initAnalytics';
+
 function shouldTrackAnalytics(): boolean {
-  return import.meta.env.PROD && typeof window !== 'undefined' && Boolean(window.gtag);
+  return isAnalyticsEnabled() && typeof window !== 'undefined' && Boolean(window.gtag);
 }
 
 export function trackClick(eventName: string, label: string): void {

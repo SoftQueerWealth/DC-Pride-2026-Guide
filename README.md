@@ -24,12 +24,15 @@ In local development, the app also reads the `beauty` tab for the Community Perk
 
 Because this is a browser app, any `VITE_` API key used in development can be exposed in built JavaScript if the live sheet path is enabled for production. Keep production on bundled data unless you intentionally want live updates.
 
+Google Analytics loads only when `VITE_ENABLE_ANALYTICS=true` (set in `.env.production` for main/production deploys). Staging builds use `--mode staging` and `.env.staging`, so analytics is not loaded or tracked on staging.
+
 ## Scripts
 
 | Command | Description |
 |--------|-------------|
 | `npm run dev` | Local dev server |
-| `npm run build` | Typecheck + production bundle to `dist/` |
+| `npm run build` | Typecheck + production bundle to `dist/` (analytics enabled via `.env.production`) |
+| `npm run build:staging` | Staging bundle to `dist/` (analytics disabled via `.env.staging`) |
 | `npm run preview` | Serve `dist/` locally |
 | `npm run lint` | ESLint |
 | `npm run sync-events` | Regenerate `src/data/festivals/*.generated.ts` from Google Sheets festival tabs |
