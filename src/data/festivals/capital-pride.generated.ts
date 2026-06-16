@@ -16,6 +16,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking wlw only",
     "free": false,
+    "price": "$14.00",
     "badges": [
       "After Dark"
     ],
@@ -44,6 +45,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "flirt chill dating",
     "free": true,
+    "price": "Free",
     "badges": [
       "Happy Hour",
       "Meetup",
@@ -73,10 +75,10 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark"
     ],
     "vibesRaw": "ass shaking",
-    "free": true,
+    "free": false,
+    "price": "$33.00",
     "badges": [
-      "After Dark",
-      "Free"
+      "After Dark"
     ],
     "time": "10:00 PM",
     "location": "Decades DC · 1219 Connecticut Ave. NW Washington, DC 20036",
@@ -102,6 +104,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "chill games community wlw only",
     "free": true,
+    "price": "Free",
     "badges": [
       "Outdoors Hangout",
       "Meetup",
@@ -133,6 +136,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking",
     "free": false,
+    "price": "$18.00",
     "badges": [
       "After Dark"
     ],
@@ -159,6 +163,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking",
     "free": false,
+    "price": "$18.00",
     "badges": [
       "After Dark"
     ],
@@ -185,6 +190,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking flirt",
     "free": true,
+    "price": "Free",
     "badges": [
       "Day Party",
       "Free"
@@ -203,9 +209,9 @@ export const generatedEvents: PrideEvent[] = [
   {
     "id": "capital-pride-9",
     "festival": "capital-pride",
-    "day": "friday",
-    "dayDate": "2026-06-19",
-    "dayLabel": "Friday",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
     "name": "Junteenth Pride Party",
     "organizer": "Unleashed DC",
     "types": [
@@ -213,6 +219,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking groove",
     "free": false,
+    "price": "$18.00",
     "badges": [
       "After Dark"
     ],
@@ -240,6 +247,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "groove ass shaking",
     "free": true,
+    "price": "Free",
     "badges": [
       "After Dark",
       "Free"
@@ -268,6 +276,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "groove ass shaking",
     "free": false,
+    "price": "$20.00",
     "badges": [
       "Day Party"
     ],
@@ -295,6 +304,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "groove ass shaking",
     "free": false,
+    "price": "$5.00",
     "badges": [
       "After Dark"
     ],
@@ -322,6 +332,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking",
     "free": false,
+    "price": "$5.00",
     "badges": [
       "After Dark"
     ],
@@ -348,6 +359,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "chill",
     "free": true,
+    "price": "Free",
     "badges": [
       "Happy Hour",
       "Free"
@@ -375,6 +387,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "community games chill",
     "free": false,
+    "price": "$9.00",
     "badges": [
       "Meetup"
     ],
@@ -404,6 +417,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "community chill games",
     "free": true,
+    "price": "Free",
     "badges": [
       "Outdoors Hangout",
       "Meetup",
@@ -434,6 +448,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "chill community",
     "free": true,
+    "price": "Free",
     "badges": [
       "Outdoors",
       "Free"
@@ -462,6 +477,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking groove",
     "free": false,
+    "price": "$22.99",
     "badges": [
       "After Dark"
     ],
@@ -489,6 +505,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking groove",
     "free": false,
+    "price": "$23.00",
     "badges": [
       "After Dark"
     ],
@@ -506,32 +523,6 @@ export const generatedEvents: PrideEvent[] = [
   {
     "id": "capital-pride-20",
     "festival": "capital-pride",
-    "day": "friday",
-    "dayDate": "2026-06-19",
-    "dayLabel": "Friday",
-    "name": "FOR THE GIRLS PRIDETEENTH Edition",
-    "organizer": "For the Girls",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Hook Hall · 3400 Georgia Ave NW Washington DC",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://posh.vip/e/washington-dc-for-the-girls",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "capital-pride-21",
-    "festival": "capital-pride",
     "day": "saturday",
     "dayDate": "2026-06-20",
     "dayLabel": "Saturday",
@@ -542,6 +533,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking groove",
     "free": false,
+    "price": "$18.00",
     "badges": [
       "After Dark"
     ],

@@ -64,6 +64,8 @@ export interface PrideEvent {
   /** Normalized lowercase string from `data-vibes` (multi-word tokens preserved). */
   vibesRaw: string;
   free: boolean;
+  /** Human-readable ticket price from the sheet, e.g. "Free", "$25", "From $15". */
+  price?: string;
   badges: string[];
   time: string;
   location: string;

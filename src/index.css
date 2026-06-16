@@ -183,6 +183,10 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .event-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:5px}
 .meta-pill{font-size:10px;color:var(--muted);display:flex;align-items:center;gap:3px}
 .meta-pill--location{align-items:flex-start;min-width:0;flex:1 1 auto}
+.meta-pill--price{color:var(--muted);align-items:center;white-space:nowrap;flex-wrap:nowrap}
+.meta-pill--price svg{margin-top:0;opacity:.6}
+.meta-pill--price-free{color:#2f7a45}
+.meta-pill--price-free svg{opacity:.75}
 .meta-pill-location-text{display:inline;line-height:1.45;min-width:0}
 .meta-pill-venue{color:var(--muted)}
 .meta-pill-sep{color:var(--muted)}
