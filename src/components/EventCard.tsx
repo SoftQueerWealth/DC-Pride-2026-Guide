@@ -1,4 +1,4 @@
-import { Check, Clock, Lightbulb, MapPin } from 'lucide-react';
+import { Check, Clock, Lightbulb, MapPin, Ticket } from 'lucide-react';
 import { useState } from 'react';
 import type { PrideEvent } from '../types/event';
 import { trackClick } from '../lib/analytics';
@@ -135,6 +135,14 @@ export function EventCard({ event, visible, going = false, onToggleGoing }: Even
             <Clock size={10} strokeWidth={2} aria-hidden />
             {event.time}
           </span>
+          {event.price ? (
+            <span
+              className={`meta-pill meta-pill--price${event.free ? ' meta-pill--price-free' : ''}`}
+            >
+              <Ticket size={10} strokeWidth={2} aria-hidden />
+              {event.price}
+            </span>
+          ) : null}
           <span className="meta-pill meta-pill--location">
             <MapPin size={10} strokeWidth={2} aria-hidden />
             <LocationDisplay

@@ -17,6 +17,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "cultural community networking 30+",
     "free": true,
+    "price": "Free",
     "badges": [
       "Meetup",
       "Workshop",
@@ -48,6 +49,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "karaoke groove",
     "free": true,
+    "price": "Free",
     "badges": [
       "Happy Hour",
       "Free"
@@ -76,6 +78,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "flirt groove food 30+",
     "free": true,
+    "price": "Free",
     "badges": [
       "Happy Hour",
       "Free"
@@ -108,6 +111,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "networking community cultural",
     "free": true,
+    "price": "Free",
     "badges": [
       "Meetup",
       "Workshop",
@@ -140,6 +144,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "creative community live show",
     "free": true,
+    "price": "Free",
     "badges": [
       "Outdoors Hangout",
       "Meetup",
@@ -172,6 +177,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "grown & sexy cultural community networking open bar food",
     "free": false,
+    "price": "$28.00",
     "badges": [
       "Happy Hour",
       "Ball",
@@ -206,6 +212,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "groove flirt food",
     "free": true,
+    "price": "Free",
     "badges": [
       "Happy Hour",
       "Meetup",
@@ -236,6 +243,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "community live show",
     "free": true,
+    "price": "Free",
     "badges": [
       "Outdoors",
       "Free"
@@ -263,9 +271,11 @@ export const generatedEvents: PrideEvent[] = [
       "unknown"
     ],
     "vibesRaw": "35+ flirt food byob",
-    "free": false,
+    "free": true,
+    "price": "$45.00",
     "badges": [
-      "Unknown"
+      "Unknown",
+      "Free"
     ],
     "time": "12:00 PM",
     "location": "TBD w/ticket purchase",
@@ -293,6 +303,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "flirt dating food",
     "free": false,
+    "price": "$13.00",
     "badges": [
       "Meetup"
     ],
@@ -321,10 +332,12 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark"
     ],
     "vibesRaw": "30+ games groove",
-    "free": false,
+    "free": true,
+    "price": "$23.00",
     "badges": [
       "Gynasium",
-      "After Dark"
+      "After Dark",
+      "Free"
     ],
     "time": "10:30 PM",
     "location": "Sky Zone Timonium · 23 W Aylesbury Rd, Timonium, MD 21093",
@@ -353,6 +366,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "community food wellness groove",
     "free": true,
+    "price": "Free",
     "badges": [
       "Outdoors Hangout",
       "Day Party",
@@ -385,6 +399,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "live show groove networking food community",
     "free": false,
+    "price": "$162.00",
     "badges": [
       "Ball"
     ],
@@ -416,6 +431,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "grown & sexy flirt ass shaking food",
     "free": false,
+    "price": "$20.00",
     "badges": [
       "Happy Hour",
       "After Dark"
@@ -446,6 +462,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking flirt",
     "free": false,
+    "price": "$23.00",
     "badges": [
       "After Dark"
     ],
@@ -476,6 +493,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking flirt groove karaoke live show",
     "free": false,
+    "price": "$32.00",
     "badges": [
       "After Dark",
       "Day Party",
@@ -508,9 +526,11 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark"
     ],
     "vibesRaw": "ass shaking food 30+",
-    "free": false,
+    "free": true,
+    "price": "$18.00",
     "badges": [
-      "After Dark"
+      "After Dark",
+      "Free"
     ],
     "time": "8:00 PM",
     "location": "Hard Rock Cafe · 601 E Pratt St. Baltimore, MD 21202",
@@ -537,6 +557,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking",
     "free": false,
+    "price": "$11.50",
     "badges": [
       "Day Party"
     ],
@@ -563,6 +584,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "wellness community",
     "free": false,
+    "price": "$50.00",
     "badges": [
       "Outdoors"
     ],
@@ -591,6 +613,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "live show community creative networking food",
     "free": true,
+    "price": "Free",
     "badges": [
       "Outdoors Hangout",
       "Festival",
@@ -624,6 +647,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "live show community food games networking creative groove cultural",
     "free": true,
+    "price": "Free",
     "badges": [
       "Festival",
       "Outdoors Hangout",
@@ -659,6 +683,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking groove food",
     "free": false,
+    "price": "$20.00",
     "badges": [
       "After Dark"
     ],
@@ -688,6 +713,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "30+ flirt community food",
     "free": true,
+    "price": "$56.00",
     "badges": [
       "After Dark",
       "Meetup",
@@ -719,6 +745,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "ass shaking flirt",
     "free": true,
+    "price": "$17.50",
     "badges": [
       "After Dark",
       "Free"
@@ -746,9 +773,11 @@ export const generatedEvents: PrideEvent[] = [
       "day-party"
     ],
     "vibesRaw": "grown & sexy 30+ food ass shaking",
-    "free": false,
+    "free": true,
+    "price": "$18.00",
     "badges": [
-      "Day Party"
+      "Day Party",
+      "Free"
     ],
     "time": "4:00 PM",
     "location": "Our Time Kitchen · 117 W 24th St. Baltimore, MD 21218",
@@ -777,6 +806,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "live show community networking groove food games cultural",
     "free": true,
+    "price": "Free",
     "badges": [
       "Outdoors Hangout",
       "Festival",
@@ -811,6 +841,7 @@ export const generatedEvents: PrideEvent[] = [
     ],
     "vibesRaw": "flirt dating 30+",
     "free": true,
+    "price": "$17.50",
     "badges": [
       "Meetup",
       "Free"

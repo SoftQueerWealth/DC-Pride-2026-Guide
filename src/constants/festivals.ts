@@ -18,7 +18,7 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     location: 'Baltimore, MD',
     sheetName: 'Baltimore Pride Master',
     grouping: 'weekday',
-    enabled: true,
+    enabled: false,
   },
   {
     id: 'capital-pride',
@@ -31,7 +31,7 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
   },
 ];
 
-export const DEFAULT_FESTIVAL_ID = 'baltimore-pride';
+export const DEFAULT_FESTIVAL_ID = 'capital-pride';
 
 export const ENABLED_FESTIVALS = PRIDE_FESTIVALS.filter((festival) => festival.enabled);
 

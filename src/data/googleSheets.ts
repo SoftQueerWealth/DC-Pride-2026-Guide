@@ -10,6 +10,7 @@ import { DEFAULT_FESTIVAL_ID, ENABLED_FESTIVALS, festivalById } from '../constan
 import { decodeHtmlEntities } from '../lib/decodeHtmlEntities';
 import { ctaButtonClassForLabel, isInstagramUrl } from '../lib/eventCta';
 import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
+import { formatTicketPriceDisplay, priceIndicatesFree } from '../lib/parsePriceDisplay';
 
 const BEAUTY_SHEET_NAME = 'beauty';
 const SHEETS_ID_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_ID_HERE';
@@ -104,7 +105,10 @@ const COLUMN_ALIASES = {
   organizer: ['organizer', 'eventorganizer', 'host', 'hosts', 'presenter'],
   types: ['types', 'type', 'venuetype', 'eventtypes', 'eventtype', 'datatypes', 'data-types', 'category', 'categories'],
   vibesRaw: ['vibesraw', 'vibes', 'vibestags', 'datavibes', 'data-vibes', 'vibe'],
-  free: ['free', 'freetickets', 'isfree', 'datafree', 'data-free', 'price', 'cost'],
+  free: ['free', 'freetickets', 'isfree', 'datafree', 'data-free'],
+  price: ['price', 'cost', 'ticketprice', 'data-price'],
+  earlyBirdPrice: ['earlybirdticketprice', 'earlybirdprice', 'ebprice'],
+  generalTicketPrice: ['generalticketprice', 'generalprice', 'gaprice'],
   badges: ['badges', 'eventbadges', 'badge', 'labels'],
   time: ['time', 'starttime', 'eventtime', 'event-time'],
   location: ['location', 'venuename', 'venue', 'venueaddress', 'address', 'eventlocation'],
@@ -519,7 +523,17 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
       if (isSoldOutStatus(ticketStatus)) return null;
 
       const types = parseTypes(readCell(headers, row, 'types'));
-      const free = parseBoolean(readCell(headers, row, 'free')) || isRsvpFreeStatus(ticketStatus);
+      const earlyBirdRaw = readCellFromFirstMatchingHeader(headers, row, 'earlyBirdPrice');
+      const generalRaw = readCellFromFirstMatchingHeader(headers, row, 'generalTicketPrice');
+      const priceRaw = readCellFromFirstMatchingHeader(headers, row, 'price');
+      const freeRaw = readCell(headers, row, 'free');
+      const free =
+        parseBoolean(freeRaw) ||
+        priceIndicatesFree(earlyBirdRaw) ||
+        priceIndicatesFree(generalRaw) ||
+        priceIndicatesFree(priceRaw) ||
+        isRsvpFreeStatus(ticketStatus);
+      const price = formatTicketPriceDisplay(earlyBirdRaw, generalRaw, priceRaw, free);
       const vibeTagsCell = readCell(headers, row, 'vibeTags');
       const vibesRaw = parseVibesRaw(readCell(headers, row, 'vibesRaw'), vibeTagsCell);
       const ctaHref = readCell(headers, row, 'ctaHref');
@@ -549,6 +563,7 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         types,
         vibesRaw,
         free,
+        ...(price ? { price } : {}),
         badges: parseBadges(readCell(headers, row, 'badges'), types, free),
         time: readCell(headers, row, 'time'),
         location: readLocation(headers, row),
