@@ -230,6 +230,12 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .donation-cta:hover{background:var(--burgundy-light);border-color:var(--burgundy-light)}
 .donation-cta:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .donation-cta svg{color:var(--on-primary);flex-shrink:0}
+.shoutout-section{max-width:680px;margin:24px auto 0;padding:0 16px}
+.shoutout-card{max-width:480px;margin:0 auto;padding:20px 18px;text-align:center;background:var(--accent-soft);border:1px solid var(--accent-border);border-radius:12px}
+.shoutout-text{font-size:12px;line-height:1.65;color:var(--text);margin:0}
+.shoutout-link{color:var(--burgundy);text-decoration:underline;text-decoration-color:var(--primary-border);border-radius:2px;transition:color .15s,text-decoration-color .15s}
+.shoutout-link:hover{color:var(--burgundy-light);text-decoration-color:var(--burgundy-light)}
+.shoutout-link:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .footer{text-align:center;padding:32px 16px;border-top:1px solid var(--border);font-size:11px;color:var(--muted);line-height:1.8}
 .footer strong{color:var(--gold-light)}
 .hero-social svg{fill:none;stroke:currentColor;flex-shrink:0}
