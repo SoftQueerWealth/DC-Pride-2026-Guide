@@ -20,7 +20,7 @@ The app reads from the spreadsheet configured by `VITE_GOOGLE_SHEETS_ID`. Each f
 
 The first row on each tab should be headers. Recommended columns are `day`, `name`, `organizer`, `types`, `vibes`, `free`, `badges`, `time`, `location`, `vibeTags`, `ctaHref`, `ctaLabel`, `ctaButtonClass`, and `cardClass`. Events belong to the festival of the tab they are on — Baltimore and Capital Pride data are kept separate.
 
-In local development, the app also reads the `beauty` tab for the Community Perks section. Rows are shown only when `confirmed partner` is confirmed and `test discount code status` is `pass`; blank or `NaN` fields are skipped. Community Perks filters include the `business type` column and a `Mobile` option for partners whose travel status is yes.
+In local development, the app also reads the `Business` tab for the Community Perks section. Rows are shown when `Status` is `Confirmed Partner` and `Test Discount Code` is not `Fail`; blank or `NaN` fields are skipped. Community Perks filters include the `business type` column and a `Mobile` option for partners whose travel status is yes.
 
 Because this is a browser app, any `VITE_` API key used in development can be exposed in built JavaScript if the live sheet path is enabled for production. Keep production on bundled data unless you intentionally want live updates.
 
@@ -36,7 +36,8 @@ Google Analytics loads only when `VITE_ENABLE_ANALYTICS=true` (set in `.env.prod
 | `npm run preview` | Serve `dist/` locally |
 | `npm run lint` | ESLint |
 | `npm run sync-events` | Regenerate `src/data/festivals/*.generated.ts` from Google Sheets festival tabs |
-| `npm run sync-beauty` | Regenerate `src/data/beauty.generated.ts` from the Google Sheets `beauty` tab |
+| `npm run deploy:staging` | Sync events, `build:staging`, and `wrangler deploy --env staging` |
+| `npm run sync-beauty` | Regenerate `src/data/beauty.generated.ts` from the Google Sheets `Business` tab |
 | `npm run extract-events` | Regenerate legacy `events.generated.ts` from `legacy/index.html` (archived) |
 
 ## Deploy (Cloudflare)

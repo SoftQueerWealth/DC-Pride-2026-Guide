@@ -12,7 +12,7 @@ import { ctaButtonClassForLabel, isInstagramUrl } from '../lib/eventCta';
 import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
 import { formatTicketPriceDisplay, priceIndicatesFree } from '../lib/parsePriceDisplay';
 
-const BEAUTY_SHEET_NAME = 'beauty';
+const BEAUTY_SHEET_NAME = 'Business';
 const SHEETS_ID_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_ID_HERE';
 const API_KEY_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_API_KEY_HERE';
 
@@ -254,6 +254,38 @@ function readCellFromFirstMatchingHeader(headers: string[], row: string[], key: 
   return '';
 }
 
+/** Collects sheet column indices for discount-code aliases, in column order. */
+function discountCodeColumnIndices(headers: string[]): number[] {
+  const aliasHeaders = new Set(COLUMN_ALIASES.discountCode.map((alias) => normalizeHeader(alias)));
+  const indices: number[] = [];
+  for (let index = 0; index < headers.length; index += 1) {
+    if (aliasHeaders.has(headers[index])) indices.push(index);
+  }
+  return indices;
+}
+
+/**
+ * Reads a promo code when the sheet uses a checkbox/flag column plus a code column.
+ * The code is returned only when the flag column is TRUE (two-column sheets).
+ */
+function readDiscountCode(headers: string[], row: string[]): string {
+  const indices = discountCodeColumnIndices(headers);
+
+  if (indices.length >= 2) {
+    const flagRaw = cleanCellValue(row[indices[0]]);
+    if (!parseBoolean(flagRaw)) return '';
+    const codeRaw = cleanCellValue(row[indices[1]]);
+    if (codeRaw && !shouldHideDiscountCode(codeRaw)) return codeRaw;
+    return '';
+  }
+
+  for (const index of indices) {
+    const value = cleanCellValue(row[index]);
+    if (value && !shouldHideDiscountCode(value)) return value;
+  }
+  return '';
+}
+
 function readDayCell(headers: string[], row: string[]): string {
   const values: string[] = [];
   for (const alias of COLUMN_ALIASES.day) {
@@ -330,9 +362,9 @@ function isConfirmedPartner(value: string): boolean {
   );
 }
 
-function isPassingDiscountCodeStatus(value: string): boolean {
+function isFailingDiscountCodeStatus(value: string): boolean {
   const normalized = normalizeToken(value);
-  return normalized === 'pass' || normalized === 'passed';
+  return normalized === 'fail' || normalized === 'failed';
 }
 
 function isPrimaryBeautyLink(field: BeautyField): boolean {
@@ -546,7 +578,7 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         ctaLabel = 'Get Tickets';
       }
       const fallbackCardClass: `tp-${string}` = `tp-${types[0] ?? EventType.DayParty}`;
-      const discountCodeRaw = readCellFromFirstMatchingHeader(headers, row, 'discountCode').trim();
+      const discountCodeRaw = readDiscountCode(headers, row).trim();
       const discountCode =
         discountCodeRaw && !shouldHideDiscountCode(discountCodeRaw) ? discountCodeRaw : '';
 
@@ -590,7 +622,7 @@ function parseBeautyRows(values: string[][]): BeautyItem[] {
     .map((row, index): BeautyItem | null => {
       if (row.every((cell) => !cleanCellValue(cell))) return null;
       if (!isConfirmedPartner(readBeautyCell(headers, row, 'confirmedPartner'))) return null;
-      if (!isPassingDiscountCodeStatus(readBeautyCell(headers, row, 'testDiscountCodeStatus'))) return null;
+      if (isFailingDiscountCodeStatus(readBeautyCell(headers, row, 'testDiscountCodeStatus'))) return null;
 
       const fields = headers
         .map((header, fieldIndex): BeautyField | null => {
