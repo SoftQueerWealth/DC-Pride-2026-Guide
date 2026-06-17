@@ -9,6 +9,7 @@ import { useEventFilters } from './hooks/useEventFilters';
 import { useItinerary } from './hooks/useItinerary';
 import type { BeautyItem } from './types/beauty';
 import type { PrideEvent } from './types/event';
+import { CommunityShoutOut } from './components/CommunityShoutOut';
 import { DaySection } from './components/DaySection';
 import { DonationSection } from './components/DonationSection';
 import { FestivalSubheader } from './components/FestivalSubheader';
@@ -244,6 +245,7 @@ export default function App() {
         </div>
       )}
       <DonationSection />
+      <CommunityShoutOut />
       <Footer />
       {showFestivalTab ? (
         <>
