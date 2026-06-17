@@ -11,6 +11,7 @@
     "lint": "eslint .",
     "sync-beauty": "node scripts/sync-beauty.mjs",
     "sync-events": "npx tsx scripts/sync-events.ts",
+    "deploy:staging": "bash scripts/sync-deploy-staging.sh",
     "extract-events": "node scripts/extract-events.mjs"
   },
   "dependencies": {

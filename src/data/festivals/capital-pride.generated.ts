@@ -4,35 +4,68 @@ import type { PrideEvent } from '../../types/event';
 
 export const generatedEvents: PrideEvent[] = [
   {
-    "id": "capital-pride-2",
+    "id": "2",
     "festival": "capital-pride",
-    "day": "saturday",
-    "dayDate": "2026-06-20",
-    "dayLabel": "Saturday",
-    "name": "Femme&Bad Pt. 2",
-    "organizer": "BridgeCulture",
+    "day": "wednesday",
+    "dayDate": "2026-06-17",
+    "dayLabel": "Wednesday",
+    "name": "Ladies Love R&B",
+    "organizer": "MIM Entertainment",
     "types": [
       "after-dark"
     ],
-    "vibesRaw": "ass shaking wlw only",
-    "free": false,
-    "price": "$14.00",
+    "vibesRaw": "groove ass shaking",
+    "free": true,
+    "price": "Free",
     "badges": [
-      "After Dark"
+      "After Dark",
+      "Free"
     ],
-    "time": "10:00 PM",
-    "location": "Mixxed Bar · 2427 18th St. NW Washington, DC 20009",
+    "time": "9:00 PM",
+    "location": "Saint-EX · 1847 14th St NW Washington, DC 20009",
     "vibeTags": [
-      "Ass Shaking",
-      "wlw only"
+      "Groove",
+      "Ass Shaking"
     ],
-    "ctaHref": "https://www.eventbrite.com/e/femmebad-pt2-tickets-1987955671929?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
+    "ctaHref": "https://posh.vip/e/ladies-love-rb--18",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "capital-pride-3",
+    "id": "3",
+    "festival": "capital-pride",
+    "day": "wednesday",
+    "dayDate": "2026-06-17",
+    "dayLabel": "Wednesday",
+    "name": "Summer at Stan's ☀️ Vol. 3: Juneteenth Edition",
+    "organizer": "Gwladys",
+    "types": [
+      "happy-hour",
+      "meetup"
+    ],
+    "vibesRaw": "chill community flirt",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Happy Hour",
+      "Meetup",
+      "Free"
+    ],
+    "time": "5:00 PM",
+    "location": "Stan's DC · 1029 Vermont Ave NW, Washington, DC 20005",
+    "vibeTags": [
+      "Chill",
+      "Community",
+      "Flirt"
+    ],
+    "ctaHref": "https://partiful.com/e/EHviToZkQGiACNM7eWdM",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour"
+  },
+  {
+    "id": "4",
     "festival": "capital-pride",
     "day": "thursday",
     "dayDate": "2026-06-18",
@@ -64,34 +97,65 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "capital-pride-4",
+    "id": "5",
     "festival": "capital-pride",
-    "day": "saturday",
-    "dayDate": "2026-06-20",
-    "dayLabel": "Saturday",
-    "name": "ELIX-Her: The Official Captial Pride Women's Party",
-    "organizer": "A 2 Zee Events, Capital Pride DC, Party With Honey & Tezrah",
+    "day": "thursday",
+    "dayDate": "2026-06-18",
+    "dayLabel": "Thursday",
+    "name": "Happy Hour Pride Social",
+    "organizer": "Aliya Duran",
     "types": [
-      "after-dark"
+      "happy-hour"
     ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "price": "$33.00",
+    "vibesRaw": "chill",
+    "free": true,
+    "price": "Free",
     "badges": [
-      "After Dark"
+      "Happy Hour",
+      "Free"
     ],
-    "time": "10:00 PM",
-    "location": "Decades DC · 1219 Connecticut Ave. NW Washington, DC 20036",
+    "time": "5:30 PM",
+    "location": "CUT Above · 1050 31st St. NW Washington, DC",
     "vibeTags": [
-      "Ass Shaking"
+      "Chill"
     ],
-    "ctaHref": "https://tickets.capitalpride.org/e/elix-26?fbclid=PAVERFWASWwp5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacoFB_8-IF8ezkuuymS4jGu179ap0lQNoVfT340p7gE98OltvZChaNyRH--lg_aem_M4yqgjLrabl4hgKAfu6PBg",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
+    "ctaHref": "https://www.opentable.com/booking/experiences-availability?rid=1400797&restref=1400797&experienceId=704178&utm_source=external&utm_medium=referral&utm_campaign=destdc",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour"
   },
   {
-    "id": "capital-pride-5",
+    "id": "6",
+    "festival": "capital-pride",
+    "day": "thursday",
+    "dayDate": "2026-06-18",
+    "dayLabel": "Thursday",
+    "name": "Sapphics in STEM: Spades 101",
+    "organizer": "Party Girls DC",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "community games chill",
+    "free": false,
+    "price": "$9.00",
+    "badges": [
+      "Meetup"
+    ],
+    "time": "6:00 PM",
+    "location": "Sojourner Truth Montessori Public Charter School · 3420 16th St NE,\nWashington, DC",
+    "vibeTags": [
+      "Community",
+      "Games",
+      "Chill"
+    ],
+    "ctaHref": "https://posh.vip/e/sapphics-in-stem-spades-101-1?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnnzhu33l6lzDBCn4gZ2GUUsmapNoHjSjCyNbq7CUl-HPs60KMe3T7D75A_B8_aem_DkRLjpfacDn9D0zYyikIdQ",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "discountCode": "sqwealth"
+  },
+  {
+    "id": "7",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -124,39 +188,12 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "capital-pride-6",
-    "festival": "capital-pride",
-    "day": "saturday",
-    "dayDate": "2026-06-20",
-    "dayLabel": "Saturday",
-    "name": "FOR THE GIRLS x Meet Me *DC Pride Weekend",
-    "organizer": "FOR THE GIRLS & Meet Me",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "price": "$18.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Public Bar · 1214 18th St NW Washington, DC 20036",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://posh.vip/e/washington-dc-for-the-girls-juneteenth-1",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "capital-pride-7",
+    "id": "8",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
     "dayLabel": "Friday",
-    "name": "FOR THE GIRLS *Junteenth",
+    "name": "FOR THE GIRLS *Juneteenth",
     "organizer": "FOR THE GIRLS",
     "types": [
       "after-dark"
@@ -178,121 +215,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "capital-pride-8",
-    "festival": "capital-pride",
-    "day": "monday",
-    "dayDate": "2026-06-22",
-    "dayLabel": "Monday",
-    "name": "Wicked Mondaze Summer Kickoff",
-    "organizer": "MIM Entertainment & Jaywalking Productions",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "ass shaking flirt",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Day Party",
-      "Free"
-    ],
-    "time": "6:00 PM",
-    "location": "Wild Days - Eaton Hotel · Washington",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/wicked-mondaze-pop-up-happy-hour-tickets-1991574097738?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "capital-pride-9",
-    "festival": "capital-pride",
-    "day": "saturday",
-    "dayDate": "2026-06-20",
-    "dayLabel": "Saturday",
-    "name": "Junteenth Pride Party",
-    "organizer": "Unleashed DC",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking groove",
-    "free": false,
-    "price": "$18.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "KOI · 1413 K St. NW Washington, DC 20005",
-    "vibeTags": [
-      "Ass Shaking",
-      "Groove"
-    ],
-    "ctaHref": "https://posh.vip/e/unleashed-dcs-juneteenth-pride-party",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "capital-pride-10",
-    "festival": "capital-pride",
-    "day": "wednesday",
-    "dayDate": "2026-06-17",
-    "dayLabel": "Wednesday",
-    "name": "Ladies Love R&B",
-    "organizer": "MIM Entertainment",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "groove ass shaking",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "After Dark",
-      "Free"
-    ],
-    "time": "9:00 PM",
-    "location": "Saint-EX · 1847 14th St NW Washington, DC 20009",
-    "vibeTags": [
-      "Groove",
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://posh.vip/e/ladies-love-rb--18",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "capital-pride-11",
-    "festival": "capital-pride",
-    "day": "sunday",
-    "dayDate": "2026-06-21",
-    "dayLabel": "Sunday",
-    "name": "Sweat",
-    "organizer": "Lavender Evolutions",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "groove ass shaking",
-    "free": false,
-    "price": "$20.00",
-    "badges": [
-      "Day Party"
-    ],
-    "time": "2:00 PM",
-    "location": "Transmission · 1353 H St NE Washington, DC 20002",
-    "vibeTags": [
-      "Groove",
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://shotgun.live/en/events/sweat-pres-by-lavender-evolutions",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "capital-pride-12",
+    "id": "9",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -314,129 +237,13 @@ export const generatedEvents: PrideEvent[] = [
       "Groove",
       "Ass Shaking"
     ],
-    "ctaHref": "https://www.instagram.com/p/DZDyPsfmDgn/?igsh=aGowY3A5bnlwcGpz",
+    "ctaHref": "https://posh.vip/e/2016-frat-out",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "capital-pride-13",
-    "festival": "capital-pride",
-    "day": "saturday",
-    "dayDate": "2026-06-20",
-    "dayLabel": "Saturday",
-    "name": "Boots! Ego Boost: A Girly-Pop Pride Party",
-    "organizer": "As You Are",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking",
-    "free": false,
-    "price": "$5.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "11:00 PM",
-    "location": "As You Are · 502 8th St. SE Washington, DC",
-    "vibeTags": [
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://www.instagram.com/p/DZDyPsfmDgn/?igsh=aGowY3A5bnlwcGpz",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
-  },
-  {
-    "id": "capital-pride-14",
-    "festival": "capital-pride",
-    "day": "thursday",
-    "dayDate": "2026-06-18",
-    "dayLabel": "Thursday",
-    "name": "Happy Hour Pride Social",
-    "organizer": "Aliya Duran",
-    "types": [
-      "happy-hour"
-    ],
-    "vibesRaw": "chill",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Happy Hour",
-      "Free"
-    ],
-    "time": "5:30 PM",
-    "location": "CUT Above · 1050 31st St. NW Washington, DC",
-    "vibeTags": [
-      "Chill"
-    ],
-    "ctaHref": "https://www.opentable.com/booking/experiences-availability?rid=1400797&restref=1400797&experienceId=704178&utm_source=external&utm_medium=referral&utm_campaign=destdc",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-happy-hour"
-  },
-  {
-    "id": "capital-pride-15",
-    "festival": "capital-pride",
-    "day": "thursday",
-    "dayDate": "2026-06-18",
-    "dayLabel": "Thursday",
-    "name": "Sapphics in STEM: Spades 101",
-    "organizer": "Party Girls DC",
-    "types": [
-      "meetup"
-    ],
-    "vibesRaw": "community games chill",
-    "free": false,
-    "price": "$9.00",
-    "badges": [
-      "Meetup"
-    ],
-    "time": "6:00 PM",
-    "location": "3420 16th St NE · Washington DC",
-    "vibeTags": [
-      "Community",
-      "Games",
-      "Chill"
-    ],
-    "ctaHref": "https://posh.vip/e/sapphics-in-stem-spades-101-1?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnnzhu33l6lzDBCn4gZ2GUUsmapNoHjSjCyNbq7CUl-HPs60KMe3T7D75A_B8_aem_DkRLjpfacDn9D0zYyikIdQ",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup"
-  },
-  {
-    "id": "capital-pride-16",
-    "festival": "capital-pride",
-    "day": "friday",
-    "dayDate": "2026-06-19",
-    "dayLabel": "Friday",
-    "name": "Dee Rene Park Takeover: A Black Lesbian & Queer Meetup",
-    "organizer": "The Kickback Social Club",
-    "types": [
-      "outdoors-hangout",
-      "meetup"
-    ],
-    "vibesRaw": "community chill games",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Outdoors Hangout",
-      "Meetup",
-      "Free"
-    ],
-    "time": "4:00 PM",
-    "location": "The Parks at Walter Reed - Great Lawn · 1301 Main Dr NW Washington DC",
-    "vibeTags": [
-      "Community",
-      "Chill",
-      "Games"
-    ],
-    "ctaHref": "https://posh.vip/e/queerteenth-park-takeover-a-black-lesbian-and-queer-meetup",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-outdoors-hangout"
-  },
-  {
-    "id": "capital-pride-17",
+    "id": "10",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -465,7 +272,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors"
   },
   {
-    "id": "capital-pride-18",
+    "id": "11",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -493,7 +300,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "capital-pride-19",
+    "id": "12",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -521,7 +328,144 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "capital-pride-20",
+    "id": "13",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "Femme&Bad Pt. 2",
+    "organizer": "BridgeCulture",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking wlw only",
+    "free": false,
+    "price": "$14.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "10:00 PM",
+    "location": "Mixxed Bar · 2427 18th St. NW Washington, DC 20009",
+    "vibeTags": [
+      "Ass Shaking",
+      "wlw only"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/femmebad-pt2-tickets-1987955671929?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "14",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "ELIX-Her: The Official Captial Pride Women's Party",
+    "organizer": "A 2 Zee Events, Capital Pride DC, Party With Honey & Tezrah",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking",
+    "free": false,
+    "price": "$33.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "10:00 PM",
+    "location": "Decades DC · 1219 Connecticut Ave. NW Washington, DC 20036",
+    "vibeTags": [
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://tickets.capitalpride.org/e/elix-26?fbclid=PAVERFWASWwp5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacoFB_8-IF8ezkuuymS4jGu179ap0lQNoVfT340p7gE98OltvZChaNyRH--lg_aem_M4yqgjLrabl4hgKAfu6PBg",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "15",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "FOR THE GIRLS x Meet Me *DC Pride Weekend",
+    "organizer": "FOR THE GIRLS & Meet Me",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking",
+    "free": false,
+    "price": "$18.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "10:00 PM",
+    "location": "Public Bar Live · 1214 18th St NW Washington, DC 20036",
+    "vibeTags": [
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://posh.vip/e/washington-dc-for-the-girls-juneteenth-1",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "16",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "Junteenth Pride Party",
+    "organizer": "Unleashed DC",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking groove",
+    "free": false,
+    "price": "$18.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "10:00 PM",
+    "location": "KOI · 1413 K St. NW Washington, DC 20005",
+    "vibeTags": [
+      "Ass Shaking",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/unleashed-dcs-juneteenth-pride-party",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "17",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "Boots! Ego Boost: A Girly-Pop Pride Party",
+    "organizer": "As You Are",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking",
+    "free": false,
+    "price": "$5.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "11:00 PM",
+    "location": "As You Are · 502 8th St. SE Washington, DC",
+    "vibeTags": [
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://www.instagram.com/p/DZDyPsfmDgn/?igsh=aGowY3A5bnlwcGpz",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "18",
     "festival": "capital-pride",
     "day": "saturday",
     "dayDate": "2026-06-20",
@@ -546,6 +490,65 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://posh.vip/e/the-juneteenth-function",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark"
+    "cardClass": "tp-after-dark",
+    "discountCode": "sqwealth"
+  },
+  {
+    "id": "19",
+    "festival": "capital-pride",
+    "day": "sunday",
+    "dayDate": "2026-06-21",
+    "dayLabel": "Sunday",
+    "name": "Sweat",
+    "organizer": "Lavender Evolutions",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "groove ass shaking",
+    "free": false,
+    "price": "$20.00",
+    "badges": [
+      "Day Party"
+    ],
+    "time": "2:00 PM",
+    "location": "Transmission · 1353 H St NE Washington, DC 20002",
+    "vibeTags": [
+      "Groove",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://shotgun.live/en/events/sweat-pres-by-lavender-evolutions",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "discountCode": "SOFTIE"
+  },
+  {
+    "id": "20",
+    "festival": "capital-pride",
+    "day": "monday",
+    "dayDate": "2026-06-22",
+    "dayLabel": "Monday",
+    "name": "Wicked Mondaze Summer Kickoff",
+    "organizer": "MIM Entertainment & Jaywalking Productions",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "ass shaking flirt",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Day Party",
+      "Free"
+    ],
+    "time": "6:00 PM",
+    "location": "Wild Days - Eaton Hotel · Washington",
+    "vibeTags": [
+      "Ass Shaking",
+      "Flirt"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/wicked-mondaze-pop-up-happy-hour-tickets-1991574097738?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-day-party"
   }
 ];
