@@ -67,6 +67,39 @@ export const generatedEvents: PrideEvent[] = [
   {
     "id": "4",
     "festival": "capital-pride",
+    "day": "wednesday",
+    "dayDate": "2026-06-17",
+    "dayLabel": "Wednesday",
+    "name": "Mixx & Mingle",
+    "organizer": "MIXXED",
+    "types": [
+      "happy-hour",
+      "meetup"
+    ],
+    "vibesRaw": "chill flirt networking community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Happy Hour",
+      "Meetup",
+      "Free"
+    ],
+    "time": "5:00 PM",
+    "location": "Mixxed Bar · 2427 18th St NW, Washington, DC 20009",
+    "vibeTags": [
+      "Chill",
+      "Flirt",
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://www.opentable.com/r/mixxed-reservations-washington?restref=1292734&lang=en-US&ot_source=Instagram&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnSbxyo1aFB2-BcIfH71vqdigsqZySpHJhPvxVHYl3K9VntarXOZWGXnM0R9Q_aem_kgvYzu9BqGVCm-CdZhhbKA&utm_id=97760_v0_s00_e0_tv3",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour"
+  },
+  {
+    "id": "5",
+    "festival": "capital-pride",
     "day": "thursday",
     "dayDate": "2026-06-18",
     "dayLabel": "Thursday",
@@ -97,7 +130,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "5",
+    "id": "6",
     "festival": "capital-pride",
     "day": "thursday",
     "dayDate": "2026-06-18",
@@ -125,7 +158,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "6",
+    "id": "7",
     "festival": "capital-pride",
     "day": "thursday",
     "dayDate": "2026-06-18",
@@ -155,7 +188,71 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "sqwealth"
   },
   {
-    "id": "7",
+    "id": "8",
+    "festival": "capital-pride",
+    "day": "thursday",
+    "dayDate": "2026-06-18",
+    "dayLabel": "Thursday",
+    "name": "Prideteenth Cookout",
+    "organizer": "MIXXED",
+    "types": [
+      "happy-hour",
+      "meetup"
+    ],
+    "vibesRaw": "chill flirt networking community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Happy Hour",
+      "Meetup",
+      "Free"
+    ],
+    "time": "4:00 PM",
+    "location": "Mixxed Bar · 2427 18th St NW, Washington, DC 20009",
+    "vibeTags": [
+      "Chill",
+      "Flirt",
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://www.opentable.com/r/mixxed-reservations-washington?restref=1292734&lang=en-US&ot_source=Instagram&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnSbxyo1aFB2-BcIfH71vqdigsqZySpHJhPvxVHYl3K9VntarXOZWGXnM0R9Q_aem_kgvYzu9BqGVCm-CdZhhbKA&utm_id=97760_v0_s00_e0_tv3",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour"
+  },
+  {
+    "id": "9",
+    "festival": "capital-pride",
+    "day": "thursday",
+    "dayDate": "2026-06-18",
+    "dayLabel": "Thursday",
+    "name": "Schism: A Drag and Burlesque Show Juneteenth Edition",
+    "organizer": "Barrel House",
+    "types": [
+      "ball",
+      "after-dark"
+    ],
+    "vibesRaw": "community flirt live show",
+    "free": false,
+    "price": "$10.00",
+    "badges": [
+      "Ball",
+      "After Dark"
+    ],
+    "time": "10:00 PM",
+    "location": "Barrel House · 1341 14th Street NW\nWashington, DC 20005",
+    "vibeTags": [
+      "Community",
+      "Flirt",
+      "Live Show"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/schism-a-drag-and-burlesque-show-juneteenth-edition-tickets-1990702308192?aff=oddtdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnCXAMWp60dPDswxO0IY3w9Qo_KZ_4Bo9aRt9WKeeAvnHgWrIeqSGE4z7r6qA_aem_lOWJrHXlagz9GMfRdjx1DQ",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-ball"
+  },
+  {
+    "id": "10",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -188,7 +285,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "8",
+    "id": "11",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -215,7 +312,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "9",
+    "id": "12",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -243,7 +340,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "10",
+    "id": "13",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -272,7 +369,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors"
   },
   {
-    "id": "11",
+    "id": "14",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -300,7 +397,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "12",
+    "id": "15",
     "festival": "capital-pride",
     "day": "friday",
     "dayDate": "2026-06-19",
@@ -328,7 +425,40 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "13",
+    "id": "16",
+    "festival": "capital-pride",
+    "day": "friday",
+    "dayDate": "2026-06-19",
+    "dayLabel": "Friday",
+    "name": "Glow With Pride",
+    "organizer": "MIXXED",
+    "types": [
+      "happy-hour",
+      "meetup"
+    ],
+    "vibesRaw": "chill flirt networking community",
+    "free": true,
+    "price": "TBD",
+    "badges": [
+      "Happy Hour",
+      "Meetup",
+      "Free"
+    ],
+    "time": "10:00 PM",
+    "location": "Mixxed Bar · 2427 18th St NW, Washington, DC 20009",
+    "vibeTags": [
+      "Chill",
+      "Flirt",
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://www.opentable.com/r/mixxed-reservations-washington?restref=1292734&lang=en-US&ot_source=Instagram&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnSbxyo1aFB2-BcIfH71vqdigsqZySpHJhPvxVHYl3K9VntarXOZWGXnM0R9Q_aem_kgvYzu9BqGVCm-CdZhhbKA&utm_id=97760_v0_s00_e0_tv3",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour"
+  },
+  {
+    "id": "17",
     "festival": "capital-pride",
     "day": "saturday",
     "dayDate": "2026-06-20",
@@ -356,7 +486,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "14",
+    "id": "18",
     "festival": "capital-pride",
     "day": "saturday",
     "dayDate": "2026-06-20",
@@ -383,7 +513,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "15",
+    "id": "19",
     "festival": "capital-pride",
     "day": "saturday",
     "dayDate": "2026-06-20",
@@ -410,7 +540,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "16",
+    "id": "20",
     "festival": "capital-pride",
     "day": "saturday",
     "dayDate": "2026-06-20",
@@ -438,7 +568,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "17",
+    "id": "21",
     "festival": "capital-pride",
     "day": "saturday",
     "dayDate": "2026-06-20",
@@ -465,7 +595,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "18",
+    "id": "22",
     "festival": "capital-pride",
     "day": "saturday",
     "dayDate": "2026-06-20",
@@ -494,7 +624,269 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "sqwealth"
   },
   {
-    "id": "19",
+    "id": "23",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "Booty Rex Queer Pride Dance Party",
+    "organizer": "Booty Rex Party",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking groove",
+    "free": false,
+    "price": "$30.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "7:00 PM",
+    "location": "Black Cat · 1811 14th St NW, Washington, DC 20009",
+    "vibeTags": [
+      "Ass Shaking",
+      "Groove"
+    ],
+    "ctaHref": "https://www.etix.com/ticket/p/30368158/booty-rex-queer-pride-dance-party-washington-black-cat",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "24",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "Puppy Yoga - Lover Gi*l Leisure: BIPOC Queer class",
+    "organizer": "Fela",
+    "types": [
+      "meetup",
+      "workshop"
+    ],
+    "vibesRaw": "chill community wellness",
+    "free": false,
+    "price": "$50.00",
+    "badges": [
+      "Meetup",
+      "Workshop"
+    ],
+    "time": "4:00 PM",
+    "location": "Lucky Pup Yoga · 2469 18th St NW, 2nd Floor, Washington, DC",
+    "vibeTags": [
+      "Chill",
+      "Community",
+      "Wellness"
+    ],
+    "ctaHref": "https://app.arketa.co/luckypupyoga/checkout/ftWNUDMMMhVZJfAkR9uN?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnldNykCLP2UjSVK_W_oE4y4apRKsbcZyE-sDhVcZfTjZpoGfb2be_dD2QoL4_aem_lTuDThux2p2WEgQCdCCqlw",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup"
+  },
+  {
+    "id": "25",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "Queer Yoga with Gabby: Kwn vs. Kehlani",
+    "organizer": "Big Kids Club DMV",
+    "types": [
+      "outdoors-hangout",
+      "meetup"
+    ],
+    "vibesRaw": "chill community wellness",
+    "free": false,
+    "price": "$11.00",
+    "badges": [
+      "Outdoors Hangout",
+      "Meetup"
+    ],
+    "time": "10:30 AM",
+    "location": "Rockcreek Park (Picnic Grove 14) · 5220 16th St NW, Washington, DC 20011",
+    "vibeTags": [
+      "Chill",
+      "Community",
+      "Wellness"
+    ],
+    "ctaHref": "https://posh.vip/e/queer-yoga-kwn-vs-kehlani?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnM4mup7dR3ygAPVdl8aNSd50DYFCnX1WVqpBjn6TsWer0NWbmjK5obK6MST8_aem_C-x1uqxuwM0zBvaEv4V3Sg",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-outdoors-hangout"
+  },
+  {
+    "id": "26",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "Fever Day Dream",
+    "organizer": "Alphabet Soup + Transmission",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "ass shaking groove",
+    "free": false,
+    "price": "$22.00",
+    "badges": [
+      "Day Party"
+    ],
+    "time": "1:00 PM",
+    "location": "Transmission · 1353 H Street Northeast, Washington, DC 20002, USA",
+    "vibeTags": [
+      "Ass Shaking",
+      "Groove"
+    ],
+    "ctaHref": "https://shotgun.live/en/events/alphabet-soup-pres-feverdaydream",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party"
+  },
+  {
+    "id": "27",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "Sapphic Summer",
+    "organizer": "Sapphic Social DC",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "flirt ass shaking",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Day Party",
+      "Free"
+    ],
+    "time": "4:00 PM",
+    "location": "Mixxed Bar · 2427 18th St NW, Washington, DC 20009",
+    "vibeTags": [
+      "Flirt",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://posh.vip/e/sapphic-summer?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGn8S_o8Yb1t3wCOeaMggWNAlErK5B8eAz3WBFweO_EJ-ABRbrKvUHE1XzjzTQ_aem_1w49xZK2Q1GxJ3PjNF6ylw",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party"
+  },
+  {
+    "id": "28",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "Splash Zone",
+    "organizer": "Luv 202",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking groove",
+    "free": false,
+    "price": "$30.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "5:00 PM",
+    "location": "City-State Public House · 705 Edgewood St NE, Washington, DC 20017",
+    "vibeTags": [
+      "Ass Shaking",
+      "Groove"
+    ],
+    "ctaHref": "https://ra.co/events/2444677?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnB1X6ZT7mWztKEUfG2D5mFDGA6YOiybmRLB2JHwxyXspWIxsaA5sKKyMdbGw_aem_NUfglOvOQMWYdxfQwjbZxA",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "29",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "SEXDRIVE vol7: Enter The Jungle",
+    "organizer": "Bodyshoppe mp3",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking groove",
+    "free": true,
+    "price": "$15.00",
+    "badges": [
+      "After Dark",
+      "Free"
+    ],
+    "time": "10:00 PM",
+    "location": "Sinners & Saints · 2309 18th St NW, Washington, DC 20009, USA",
+    "vibeTags": [
+      "Ass Shaking",
+      "Groove"
+    ],
+    "ctaHref": "https://ra.co/events/2450605?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnMbuJuhYYheHigllqyQ9NgP2pf4CZjsHEnDRDbktIQBUY9x926yWbtK0vFX4_aem_RtX0_q31wL3dNK25DR1l9g",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "30",
+    "festival": "capital-pride",
+    "day": "saturday",
+    "dayDate": "2026-06-20",
+    "dayLabel": "Saturday",
+    "name": "Turbo Pride Xxl By 140+ X Fwb X Xunt",
+    "organizer": "Friends with Benefits DC",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking groove",
+    "free": false,
+    "price": "$25.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "10:00 PM",
+    "location": "Transmission · 1353 H Street Northeast, Washington, DC 20002, USA",
+    "vibeTags": [
+      "Ass Shaking",
+      "Groove"
+    ],
+    "ctaHref": "https://shotgun.live/en/events/140-x-fwb-turbo-xxl-pride?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGn9ED2cmg4ysHjvzQNbRmJOFXU-_49pFV3sLF4eXxQaH3RGuaeCfT59Ca_mJg_aem_bzxg8ppsFeXawFS8Wm96gA",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark"
+  },
+  {
+    "id": "31",
+    "festival": "capital-pride",
+    "day": "sunday",
+    "dayDate": "2026-06-21",
+    "dayLabel": "Sunday",
+    "name": "Pride Brunch",
+    "organizer": "MIXXED",
+    "types": [
+      "brunch",
+      "day-party"
+    ],
+    "vibesRaw": "flirt community",
+    "free": false,
+    "price": "$50.00",
+    "badges": [
+      "Brunch",
+      "Day Party"
+    ],
+    "time": "12:00 PM",
+    "location": "Mixxed Bar · 2427 18th St NW, Washington, DC 20009",
+    "vibeTags": [
+      "Flirt",
+      "Community"
+    ],
+    "ctaHref": "https://www.opentable.com/r/mixxed-reservations-washington?restref=1292734&lang=en-US&ot_source=Instagram&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnSbxyo1aFB2-BcIfH71vqdigsqZySpHJhPvxVHYl3K9VntarXOZWGXnM0R9Q_aem_kgvYzu9BqGVCm-CdZhhbKA&utm_id=97760_v0_s00_e0_tv3",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-brunch"
+  },
+  {
+    "id": "32",
     "festival": "capital-pride",
     "day": "sunday",
     "dayDate": "2026-06-21",
@@ -523,7 +915,7 @@ export const generatedEvents: PrideEvent[] = [
     "discountCode": "SOFTIE"
   },
   {
-    "id": "20",
+    "id": "33",
     "festival": "capital-pride",
     "day": "monday",
     "dayDate": "2026-06-22",
