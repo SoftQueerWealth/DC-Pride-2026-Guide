@@ -36,7 +36,7 @@ Google Analytics loads only when `VITE_ENABLE_ANALYTICS=true` (set in `.env.prod
 | `npm run preview` | Serve `dist/` locally |
 | `npm run lint` | ESLint |
 | `npm run sync-events` | Regenerate `src/data/festivals/*.generated.ts` from Google Sheets festival tabs |
-| `npm run deploy:staging` | Sync events, `build:staging`, and `wrangler deploy --env staging` |
+| `npm run deploy:staging` | Sync events + community perks, `build:staging`, and `wrangler deploy --env staging` |
 | `npm run sync-beauty` | Regenerate `src/data/beauty.generated.ts` from the Google Sheets `Business` tab |
 | `npm run extract-events` | Regenerate legacy `events.generated.ts` from `legacy/index.html` (archived) |
 
