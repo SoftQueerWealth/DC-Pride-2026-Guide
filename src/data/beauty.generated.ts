@@ -69,6 +69,71 @@ export const generatedBeautyItems: BeautyItem[] = [
     "primaryHref": "https://girlnextdoorhair.com/products/bundle-sale"
   },
   {
+    "id": "hair-salon-sugar-braids-1",
+    "name": "Sugar Braids",
+    "businessType": "Hair Salon",
+    "fields": [
+      {
+        "key": "businessname",
+        "label": "Business Name",
+        "value": "Sugar Braids"
+      },
+      {
+        "key": "businesstype",
+        "label": "Business Type",
+        "value": "Hair Salon"
+      },
+      {
+        "key": "services",
+        "label": "Services",
+        "value": "Braids, Cornrows, French Curls, Natural Styles + Twists"
+      },
+      {
+        "key": "city",
+        "label": "City",
+        "value": "DMV"
+      },
+      {
+        "key": "neighborhood",
+        "label": "Neighborhood",
+        "value": "Silver Spring"
+      },
+      {
+        "key": "contactinfo",
+        "label": "Contact Info",
+        "value": "sugarbraid@gmail.com",
+        "href": "mailto:sugarbraid@gmail.com"
+      },
+      {
+        "key": "discountcode",
+        "label": "Discount Code?",
+        "value": "PRIDEBRAID26\nMention in person"
+      },
+      {
+        "key": "promo",
+        "label": "Promo",
+        "value": "15% off"
+      },
+      {
+        "key": "bookingsite",
+        "label": "Booking Site",
+        "value": "https://www.sugarbraid.com/",
+        "href": "https://www.sugarbraid.com/"
+      },
+      {
+        "key": "owner",
+        "label": "Owner",
+        "value": "Gaelle Laure Djeukam"
+      },
+      {
+        "key": "travels",
+        "label": "Travels?",
+        "value": "No"
+      }
+    ],
+    "primaryHref": "https://www.sugarbraid.com/"
+  },
+  {
     "id": "brows-brow-d-2",
     "name": "Brow'd",
     "businessType": "Brows",
@@ -404,14 +469,14 @@ export const generatedBeautyItems: BeautyItem[] = [
     "primaryHref": "https://booksy.com/en-us/119326_rae-barber_barber-shop_126442_pikesville"
   },
   {
-    "id": "salon-a-new-me-13",
-    "name": "A New Me",
+    "id": "salon-anumee-aesthetics-13",
+    "name": "Anumee Aesthetics",
     "businessType": "Salon",
     "fields": [
       {
         "key": "businessname",
         "label": "Business Name",
-        "value": "A New Me"
+        "value": "Anumee Aesthetics"
       },
       {
         "key": "businesstype",
