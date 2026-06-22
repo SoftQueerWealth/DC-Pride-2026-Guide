@@ -6,6 +6,7 @@ export interface PrideFestival {
   dateRange: string;
   location: string;
   sheetName: string;
+  spreadsheetId?: string;
   grouping: FestivalGrouping;
   enabled: boolean;
 }
@@ -27,11 +28,21 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     location: 'Washington, DC',
     sheetName: 'Capital Pride Master',
     grouping: 'calendar',
+    enabled: false,
+  },
+  {
+    id: 'june-2026',
+    tabLabel: 'Events',
+    dateRange: 'June 2026',
+    location: 'Washington, DC',
+    sheetName: 'June 2026',
+    spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
+    grouping: 'calendar',
     enabled: true,
   },
 ];
 
-export const DEFAULT_FESTIVAL_ID = 'capital-pride';
+export const DEFAULT_FESTIVAL_ID = 'june-2026';
 
 export const ENABLED_FESTIVALS = PRIDE_FESTIVALS.filter((festival) => festival.enabled);
 
