@@ -1,11 +1,11 @@
 import { ENABLED_FESTIVALS } from '../constants/festivals';
 import type { PrideEvent } from '../types/event';
 import { generatedEvents as baltimorePrideEvents } from './festivals/baltimore-pride.generated';
-import { generatedEvents as capitalPrideEvents } from './festivals/capital-pride.generated';
+import { generatedEvents as june2026Events } from './festivals/june-2026.generated';
 
 const BUNDLED_BY_FESTIVAL: Record<string, PrideEvent[]> = {
   'baltimore-pride': baltimorePrideEvents,
-  'capital-pride': capitalPrideEvents,
+  'june-2026': june2026Events,
 };
 
 export function bundledEventsForFestival(festivalId: string): PrideEvent[] {

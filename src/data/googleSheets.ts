@@ -11,6 +11,7 @@ import { decodeHtmlEntities } from '../lib/decodeHtmlEntities';
 import { ctaButtonClassForLabel, isInstagramUrl } from '../lib/eventCta';
 import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
 import { formatTicketPriceDisplay, priceIndicatesFree } from '../lib/parsePriceDisplay';
+import { parseEventTimeMinutes } from '../lib/eventTimeSort';
 
 const BEAUTY_SHEET_NAME = 'Business';
 const SHEETS_ID_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_ID_HERE';
@@ -524,11 +525,113 @@ function normalizeClass<TPrefix extends string>(
   return matching ?? fallback;
 }
 
+function readCellByHeader(headers: string[], row: string[], header: string): string {
+  const index = headers.indexOf(normalizeHeader(header));
+  return index >= 0 ? cleanCellValue(row[index]) : '';
+}
+
+/**
+ * Some sheet rows are pasted one column off (e.g. Date Added filled while other rows leave it blank).
+ * Detect when the Event cell holds a date and the Discount Code cell holds the real event name.
+ */
+function isDateShiftedRow(headers: string[], row: string[]): boolean {
+  const eventValue = readCellByHeader(headers, row, 'event');
+  const discountValue = readCellByHeader(headers, row, 'discountcode');
+  if (!parseCalendarDateCell(eventValue)) return false;
+  if (!discountValue || discountValue.toLowerCase() === 'reached out') return false;
+  return !parseCalendarDateCell(discountValue);
+}
+
+const SHIFTED_HEADER_FOR_KEY = {
+  name: 'discountcode',
+  organizer: 'ticketlink',
+  types: 'organizer',
+  vibesRaw: 'day',
+  vibeTags: 'day',
+  time: 'earlybirdticketprice',
+  ctaHref: 'venuename',
+  ticketStatus: 'organizersite',
+  free: 'venuename',
+  earlyBirdPrice: 'vibestags',
+  generalTicketPrice: 'venuetype',
+  price: 'vibestags',
+} as const satisfies Partial<Record<ColumnKey, string>>;
+
+function readEventField(headers: string[], row: string[], key: ColumnKey, shifted: boolean): string {
+  if (!shifted) return readCell(headers, row, key);
+  const shiftedHeader = SHIFTED_HEADER_FOR_KEY[key as keyof typeof SHIFTED_HEADER_FOR_KEY];
+  if (shiftedHeader) return readCellByHeader(headers, row, shiftedHeader);
+  return readCell(headers, row, key);
+}
+
+function readEventDayCell(headers: string[], row: string[], shifted: boolean): string {
+  if (shifted) return readCellByHeader(headers, row, 'event');
+  return readDayCell(headers, row);
+}
+
+function readEventLocation(headers: string[], row: string[], shifted: boolean): string {
+  if (!shifted) return readLocation(headers, row);
+  const venue = readCellByHeader(headers, row, 'city');
+  const area = readCellByHeader(headers, row, 'dayofweek');
+  if (venue && area) return `${venue} · ${area}`;
+  return venue || area;
+}
+
+function isPriceColumnShiftedRow(headers: string[], row: string[]): boolean {
+  const name = readCell(headers, row, 'name');
+  const parsedDay = parseDayFromCell(readDayCell(headers, row));
+  if (!name || !parsedDay) return false;
+  const vibesCell = readCellByHeader(headers, row, 'vibestags');
+  return /^\$[\d,.]+/.test(vibesCell);
+}
+
+function readTimeFromRow(row: string[]): string {
+  for (const cell of row) {
+    const value = cleanCellValue(cell);
+    if (parseEventTimeMinutes(value) !== null) return value;
+  }
+  return '';
+}
+
+function readTicketStatusCell(headers: string[], row: string[]): string {
+  const direct = readCell(headers, row, 'ticketStatus');
+  if (direct) return direct;
+  return readCellByHeader(headers, row, 'organizersite');
+}
+
+function readEventPriceField(
+  headers: string[],
+  row: string[],
+  key: 'earlyBirdPrice' | 'generalTicketPrice' | 'price',
+  shifted: boolean,
+): string {
+  if (!shifted) return readCellFromFirstMatchingHeader(headers, row, key);
+  const shiftedHeader = SHIFTED_HEADER_FOR_KEY[key];
+  return shiftedHeader ? readCellByHeader(headers, row, shiftedHeader) : '';
+}
+function readLocationFromExtendedColumns(headers: string[], row: string[]): string {
+  const city = readCellByHeader(headers, row, 'city').trim();
+  const neighborhood = readCellByHeader(headers, row, 'neighborhood').trim();
+  if (city && !/^https?:/i.test(city)) {
+    return neighborhood && neighborhood !== city ? `${city} · ${neighborhood}` : city;
+  }
+  return '';
+}
+
 function readLocation(headers: string[], row: string[]): string {
   const location = readCell(headers, row, 'location');
   const address = readCell(headers, row, 'venueAddress');
-  if (location && address && location !== address) return `${location} · ${address}`;
-  return location || address;
+  if (location && address && location !== address) {
+    const combined = `${location} · ${address}`;
+    if (/^https?:\/\//i.test(location)) {
+      return readLocationFromExtendedColumns(headers, row) || combined;
+    }
+    return combined;
+  }
+  if (/^https?:\/\//i.test(location)) {
+    return readLocationFromExtendedColumns(headers, row) || location;
+  }
+  return location || address || readLocationFromExtendedColumns(headers, row);
 }
 
 interface ParseSheetRowsOptions {
@@ -546,19 +649,23 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
     .map((row, index): PrideEvent | null => {
       if (row.every((cell) => !String(cell ?? '').trim())) return null;
 
-      const name = readCell(headers, row, 'name');
-      const parsedDay = parseDayFromCell(readDayCell(headers, row));
+      const shifted = isDateShiftedRow(headers, row);
+      const priceShifted = !shifted && isPriceColumnShiftedRow(headers, row);
+      const name = readEventField(headers, row, 'name', shifted);
+      const parsedDay = parseDayFromCell(readEventDayCell(headers, row, shifted));
       if (!name || !parsedDay) return null;
       const { day, dayDate } = parsedDay;
 
-      const ticketStatus = readCell(headers, row, 'ticketStatus');
+      const ticketStatus = readTicketStatusCell(headers, row);
       if (isSoldOutStatus(ticketStatus)) return null;
 
-      const types = parseTypes(readCell(headers, row, 'types'));
-      const earlyBirdRaw = readCellFromFirstMatchingHeader(headers, row, 'earlyBirdPrice');
-      const generalRaw = readCellFromFirstMatchingHeader(headers, row, 'generalTicketPrice');
-      const priceRaw = readCellFromFirstMatchingHeader(headers, row, 'price');
-      const freeRaw = readCell(headers, row, 'free');
+      const types = priceShifted
+        ? [EventType.DayParty]
+        : parseTypes(readEventField(headers, row, 'types', shifted));
+      const earlyBirdRaw = readEventPriceField(headers, row, 'earlyBirdPrice', shifted);
+      const generalRaw = readEventPriceField(headers, row, 'generalTicketPrice', shifted);
+      const priceRaw = readEventPriceField(headers, row, 'price', shifted);
+      const freeRaw = readEventField(headers, row, 'free', shifted);
       const free =
         parseBoolean(freeRaw) ||
         priceIndicatesFree(earlyBirdRaw) ||
@@ -566,16 +673,20 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         priceIndicatesFree(priceRaw) ||
         isRsvpFreeStatus(ticketStatus);
       const price = formatTicketPriceDisplay(earlyBirdRaw, generalRaw, priceRaw, free);
-      const vibeTagsCell = readCell(headers, row, 'vibeTags');
-      const vibesRaw = parseVibesRaw(readCell(headers, row, 'vibesRaw'), vibeTagsCell);
-      const ctaHref = readCell(headers, row, 'ctaHref');
+      const vibeTagsCell = readEventField(headers, row, 'vibeTags', shifted);
+      const vibesRaw = priceShifted
+        ? parseVibesRaw(readCellByHeader(headers, row, 'communityfocus'), vibeTagsCell)
+        : parseVibesRaw(readEventField(headers, row, 'vibesRaw', shifted), vibeTagsCell);
+      const ctaHref = priceShifted
+        ? readCell(headers, row, 'ctaHref')
+        : readEventField(headers, row, 'ctaHref', shifted);
       const statusCtaLabel = ctaLabelForTicketStatus(ticketStatus);
       let ctaLabel =
         statusCtaLabel ||
         readCell(headers, row, 'ctaLabel') ||
         (free ? 'More Info' : 'Get Tickets');
       if (!statusCtaLabel && ctaHref && !isInstagramUrl(ctaHref)) {
-        ctaLabel = 'Get Tickets';
+        ctaLabel = free ? 'RSVP Free' : 'Get Tickets';
       }
       const fallbackCardClass: `tp-${string}` = `tp-${types[0] ?? EventType.DayParty}`;
       const discountCodeRaw = readDiscountCode(headers, row).trim();
@@ -591,14 +702,16 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         ...(dayDate ? { dayDate } : {}),
         dayLabel: readCell(headers, row, 'dayLabel') || dayLabelFor(day),
         name,
-        organizer: readCell(headers, row, 'organizer') || undefined,
+        organizer: readEventField(headers, row, 'organizer', shifted) || undefined,
         types,
         vibesRaw,
         free,
         ...(price ? { price } : {}),
         badges: parseBadges(readCell(headers, row, 'badges'), types, free),
-        time: readCell(headers, row, 'time'),
-        location: readLocation(headers, row),
+        time: priceShifted ? readTimeFromRow(row) : readEventField(headers, row, 'time', shifted),
+        location: priceShifted
+          ? readLocationFromExtendedColumns(headers, row) || readLocation(headers, row)
+          : readEventLocation(headers, row, shifted),
         vibeTags: parseVibeTags(vibesRaw, vibeTagsCell),
         ctaHref,
         ctaLabel,
@@ -655,9 +768,12 @@ function parseBeautyRows(values: string[][]): BeautyItem[] {
     .filter((item): item is BeautyItem => item !== null);
 }
 
-async function fetchSheetValues(sheetName: string, signal?: AbortSignal): Promise<string[][]> {
+async function fetchSheetValues(
+  sheetName: string,
+  spreadsheetId: string = getSpreadsheetId(),
+  signal?: AbortSignal,
+): Promise<string[][]> {
   const apiKey = getApiKey();
-  const spreadsheetId = getSpreadsheetId();
   if (isMissingApiKey(apiKey)) {
     throw new Error('Add your Google Sheets API key to VITE_GOOGLE_SHEETS_API_KEY in .env.');
   }
@@ -692,7 +808,8 @@ export async function fetchFestivalSheetEvents(
   }
 
   const idPrefix = festivalId === DEFAULT_FESTIVAL_ID ? '' : `${festivalId}-`;
-  return parseSheetRows(await fetchSheetValues(festival.sheetName, signal), {
+  const spreadsheetId = festival.spreadsheetId ?? getSpreadsheetId();
+  return parseSheetRows(await fetchSheetValues(festival.sheetName, spreadsheetId, signal), {
     festivalId,
     idPrefix,
   });
@@ -718,5 +835,5 @@ export async function fetchAllFestivalSheetEvents(
 }
 
 export async function fetchSheetBeautyItems(signal?: AbortSignal): Promise<BeautyItem[]> {
-  return parseBeautyRows(await fetchSheetValues(BEAUTY_SHEET_NAME, signal));
+  return parseBeautyRows(await fetchSheetValues(BEAUTY_SHEET_NAME, getSpreadsheetId(), signal));
 }

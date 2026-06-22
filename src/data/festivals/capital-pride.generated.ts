@@ -260,14 +260,12 @@ export const generatedEvents: PrideEvent[] = [
     "name": "Queer-Teenth Park Takeover: A Black Lesbian and Queer Meetup",
     "organizer": "The Kickback Social Club",
     "types": [
-      "outdoors-hangout",
       "meetup"
     ],
     "vibesRaw": "chill games community wlw only",
     "free": true,
     "price": "Free",
     "badges": [
-      "Outdoors Hangout",
       "Meetup",
       "Free"
     ],
@@ -282,7 +280,7 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://posh.vip/e/queerteenth-park-takeover-a-black-lesbian-and-queer-meetup",
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
-    "cardClass": "tp-outdoors-hangout"
+    "cardClass": "tp-meetup"
   },
   {
     "id": "11",
