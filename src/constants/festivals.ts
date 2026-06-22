@@ -40,6 +40,16 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     grouping: 'calendar',
     enabled: true,
   },
+  {
+    id: 'nyc-pride',
+    tabLabel: 'NYC Pride',
+    dateRange: 'June 2026',
+    location: 'New York, NY',
+    sheetName: 'NYC Pride Master',
+    spreadsheetId: '15qGvOIUMxTFy3ncvUW1z8XXT6Pz9iTbZ-MW4UhDmjiM',
+    grouping: 'calendar',
+    enabled: true,
+  },
 ];
 
 export const DEFAULT_FESTIVAL_ID = 'june-2026';
