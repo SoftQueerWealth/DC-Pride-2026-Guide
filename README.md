@@ -42,7 +42,26 @@ Google Analytics loads only when `VITE_ENABLE_ANALYTICS=true` (set in `.env.prod
 
 ## Deploy (Cloudflare)
 
-`wrangler.jsonc` serves the **`dist`** directory. Run `npm run build` before `wrangler deploy` (or wire CI to build then deploy).
+`wrangler.jsonc` deploys `worker.ts` plus the **`dist`** static assets. The Worker 301-redirects `www` and `http` requests to `https://softqueerwealth.com`. Run `npm run build` before `wrangler deploy` (or wire CI to build then deploy).
+
+### Custom domains and link previews
+
+For OG/social link previews to work when someone shares `www.softqueerwealth.com` or `http://softqueerwealth.com`, confirm in the Cloudflare dashboard:
+
+1. **Worker custom domains** (`sqw-events-guide`): both `softqueerwealth.com` and `www.softqueerwealth.com` are attached.
+2. **DNS**: proxied records for apex and `www` both route to the Worker.
+3. **SSL/TLS**: edge certificates are Active for both hostnames; mode is Full or Full (strict).
+4. **Always Use HTTPS** is enabled (SSL/TLS → Edge Certificates).
+
+After deploy, verify redirects:
+
+```sh
+curl -I http://softqueerwealth.com
+curl -I https://www.softqueerwealth.com
+curl -I http://www.softqueerwealth.com
+```
+
+Each should return `301` with `Location: https://softqueerwealth.com/`.
 
 Production reads guide data from the deployed bundle, not Google Sheets at runtime. To change production Events or Community Perks content, update the generated data files and deploy again.
 
