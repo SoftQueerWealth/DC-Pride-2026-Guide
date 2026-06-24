@@ -32,7 +32,7 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
   },
   {
     id: 'june-2026',
-    tabLabel: 'Events',
+    tabLabel: 'DC Events',
     dateRange: 'June 2026',
     location: 'Washington, DC',
     sheetName: 'June 2026',
