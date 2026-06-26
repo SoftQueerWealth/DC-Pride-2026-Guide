@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sqw-events-guide",
+  "name": "dc-pride-2026-guide",
   "compatibility_date": "2026-05-07",
   "main": "worker.ts",
   "observability": {

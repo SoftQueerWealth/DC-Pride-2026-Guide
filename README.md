@@ -48,7 +48,7 @@ Google Analytics loads only when `VITE_ENABLE_ANALYTICS=true` (set in `.env.prod
 
 For OG/social link previews to work when someone shares `www.softqueerwealth.com` or `http://softqueerwealth.com`, confirm in the Cloudflare dashboard:
 
-1. **Worker custom domains** (`sqw-events-guide`): both `softqueerwealth.com` and `www.softqueerwealth.com` are attached.
+1. **Worker custom domains** (`dc-pride-2026-guide`): both `softqueerwealth.com` and `www.softqueerwealth.com` are attached.
 2. **DNS**: proxied records for apex and `www` both route to the Worker.
 3. **SSL/TLS**: edge certificates are Active for both hostnames; mode is Full or Full (strict).
 4. **Always Use HTTPS** is enabled (SSL/TLS → Edge Certificates).
