@@ -469,9 +469,9 @@ export const generatedBeautyItems: BeautyItem[] = [
     "primaryHref": "https://booksy.com/en-us/119326_rae-barber_barber-shop_126442_pikesville"
   },
   {
-    "id": "salon-anumee-aesthetics-13",
+    "id": "medical-spa-anumee-aesthetics-13",
     "name": "Anumee Aesthetics",
-    "businessType": "Salon",
+    "businessType": "Medical Spa",
     "fields": [
       {
         "key": "businessname",
@@ -481,7 +481,7 @@ export const generatedBeautyItems: BeautyItem[] = [
       {
         "key": "businesstype",
         "label": "Business Type",
-        "value": "Salon"
+        "value": "Medical Spa"
       },
       {
         "key": "services",
@@ -532,5 +532,86 @@ export const generatedBeautyItems: BeautyItem[] = [
       }
     ],
     "primaryHref": "https://anumeeaesthetics.myaestheticrecord.com/online-booking?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnqSSejw4jDHKpy4Sx5dpbS0ovsfQj0ciECy_UnablmwihEozfzaPe00JuEVA_aem_gE5Ip_A30opFbzDCVCa-SA"
+  },
+  {
+    "id": "nail-salon-nish-nails-15",
+    "name": "NISH (nails)",
+    "businessType": "Nail Salon",
+    "fields": [
+      {
+        "key": "businessname",
+        "label": "Business Name",
+        "value": "NISH (nails)"
+      },
+      {
+        "key": "businesstype",
+        "label": "Business Type",
+        "value": "Nail Salon"
+      },
+      {
+        "key": "services",
+        "label": "Services",
+        "value": "Nails"
+      },
+      {
+        "key": "city",
+        "label": "City",
+        "value": "605 Chesapeake St SE, Washington, DC 20032"
+      },
+      {
+        "key": "neighborhood",
+        "label": "Neighborhood",
+        "value": "SE, DC"
+      },
+      {
+        "key": "igpage",
+        "label": "IG Page",
+        "value": "https://www.instagram.com/idgtippede4t/",
+        "href": "https://www.instagram.com/idgtippede4t/"
+      },
+      {
+        "key": "vibestype",
+        "label": "Vibes Type",
+        "value": "Chill"
+      },
+      {
+        "key": "communityfavoritefor",
+        "label": "Community Favorite For",
+        "value": "Specialize in gel x sets & intricate nail art"
+      },
+      {
+        "key": "contactinfo",
+        "label": "Contact Info",
+        "value": "idgtippede4t@gmail.com",
+        "href": "mailto:idgtippede4t@gmail.com"
+      },
+      {
+        "key": "discountcode",
+        "label": "Discount Code?",
+        "value": "\"SQW15\" note when booking online"
+      },
+      {
+        "key": "promo",
+        "label": "Promo",
+        "value": "15% off"
+      },
+      {
+        "key": "bookingsite",
+        "label": "Booking Site",
+        "value": "https://book.heygoldie.com/idgtippede4t?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaASnY8lleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacCgvKaUvd1v3YebkdgHzdARayr5eAHtc0SyEwd2vPjfIsMvrcetHR5Lpe6Xw_aem_9YqLpszBlSj7AtIeQaY0zA",
+        "href": "https://book.heygoldie.com/idgtippede4t?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaASnY8lleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacCgvKaUvd1v3YebkdgHzdARayr5eAHtc0SyEwd2vPjfIsMvrcetHR5Lpe6Xw_aem_9YqLpszBlSj7AtIeQaY0zA"
+      },
+      {
+        "key": "owner",
+        "label": "Owner",
+        "value": "Nish"
+      },
+      {
+        "key": "travels",
+        "label": "Travels?",
+        "value": "No"
+      }
+    ],
+    "primaryHref": "https://book.heygoldie.com/idgtippede4t?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaASnY8lleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacCgvKaUvd1v3YebkdgHzdARayr5eAHtc0SyEwd2vPjfIsMvrcetHR5Lpe6Xw_aem_9YqLpszBlSj7AtIeQaY0zA"
   }
 ];
