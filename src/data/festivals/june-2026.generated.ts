@@ -6,6 +6,36 @@ export const generatedEvents: PrideEvent[] = [
   {
     "id": "2",
     "festival": "june-2026",
+    "day": "monday",
+    "dayDate": "2026-06-22",
+    "dayLabel": "Monday",
+    "name": "Wicked Mondaze Summer Kickoff",
+    "organizer": "MIM Entertainment & Jaywalking Productions",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "chill ass shaking flirt",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Day Party",
+      "Free"
+    ],
+    "time": "6:00 PM",
+    "location": "Wild Days - Eaton Hotel",
+    "vibeTags": [
+      "Chill",
+      "Ass Shaking",
+      "Flirt"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/wicked-mondaze-pop-up-happy-hour-tickets-1991574097738?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-day-party"
+  },
+  {
+    "id": "3",
+    "festival": "june-2026",
     "day": "tuesday",
     "dayDate": "2026-06-23",
     "dayLabel": "Tuesday",
@@ -35,7 +65,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-meetup"
   },
   {
-    "id": "3",
+    "id": "4",
     "festival": "june-2026",
     "day": "wednesday",
     "dayDate": "2026-06-24",
@@ -65,7 +95,39 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "4",
+    "id": "5",
+    "festival": "june-2026",
+    "day": "wednesday",
+    "dayDate": "2026-06-24",
+    "dayLabel": "Wednesday",
+    "name": "Team DC Night OUT Series: Nats Night OUT 2026",
+    "organizer": "Baseball Team DC",
+    "types": [
+      "outdoors-hangout",
+      "meetup"
+    ],
+    "vibesRaw": "chill community food games",
+    "free": false,
+    "price": "$40.00",
+    "badges": [
+      "Outdoors Hangout",
+      "Meetup"
+    ],
+    "time": "5:30 PM",
+    "location": "Nationals Park · 1500 South Capitol Street SE, Washington, DC 20003",
+    "vibeTags": [
+      "Chill",
+      "Community",
+      "Food",
+      "Games"
+    ],
+    "ctaHref": "https://www.zeffy.com/en-US/ticketing/nats-night-out--2026",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-outdoors-hangout"
+  },
+  {
+    "id": "6",
     "festival": "june-2026",
     "day": "thursday",
     "dayDate": "2026-06-25",
@@ -94,7 +156,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-meetup"
   },
   {
-    "id": "5",
+    "id": "7",
     "festival": "june-2026",
     "day": "friday",
     "dayDate": "2026-06-26",
@@ -125,7 +187,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "6",
+    "id": "8",
     "festival": "june-2026",
     "day": "friday",
     "dayDate": "2026-06-26",
@@ -150,10 +212,11 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.instantseats.com/index.cfm?fuseaction=buy.event&eventID=1B5B210C-C3AB-0773-BD9BD83174D76A1F",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-live-show"
+    "cardClass": "tp-live-show",
+    "discountCode": "Priority entry to the show and a discounted $10 ticket to the exclusive after event after the 9:30p show"
   },
   {
-    "id": "7",
+    "id": "9",
     "festival": "june-2026",
     "day": "friday",
     "dayDate": "2026-06-26",
@@ -178,10 +241,11 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://www.instantseats.com/index.cfm?fuseaction=buy.event&eventID=1B5B2251-ED3B-521B-9F1F7989386E01DD",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-live-show"
+    "cardClass": "tp-live-show",
+    "discountCode": "Priority entry to the show and a discounted $10 ticket to the exclusive after event after the 9:30p show"
   },
   {
-    "id": "8",
+    "id": "10",
     "festival": "june-2026",
     "day": "saturday",
     "dayDate": "2026-06-27",
@@ -217,7 +281,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-live-show"
   },
   {
-    "id": "9",
+    "id": "11",
     "festival": "june-2026",
     "day": "saturday",
     "dayDate": "2026-06-27",
@@ -246,7 +310,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark"
   },
   {
-    "id": "10",
+    "id": "12",
     "festival": "june-2026",
     "day": "saturday",
     "dayDate": "2026-06-27",
@@ -271,10 +335,11 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://posh.vip/e/so-massive-queeribbean-day-party?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnG-PUHC1sUYg-vEWYeIfA9w8NIP57jul9bTSGVNLHctiE-33v6N9MGgoPUkQ_aem_iABx-39W7m16YBXuwsbrrw",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
+    "cardClass": "tp-day-party",
+    "discountCode": "SQW15"
   },
   {
-    "id": "11",
+    "id": "13",
     "festival": "june-2026",
     "day": "saturday",
     "dayDate": "2026-06-27",
@@ -306,7 +371,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-outdoors-hangout"
   },
   {
-    "id": "12",
+    "id": "14",
     "festival": "june-2026",
     "day": "saturday",
     "dayDate": "2026-06-27",
@@ -338,7 +403,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-happy-hour"
   },
   {
-    "id": "13",
+    "id": "15",
     "festival": "june-2026",
     "day": "sunday",
     "dayDate": "2026-06-28",
@@ -368,10 +433,11 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://posh.vip/e/spritz-blooms-a-black-lesbian-queer-garden-party",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
+    "cardClass": "tp-day-party",
+    "discountCode": "softqueerwealth"
   },
   {
-    "id": "14",
+    "id": "16",
     "festival": "june-2026",
     "day": "sunday",
     "dayDate": "2026-06-28",
@@ -400,7 +466,7 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-day-party"
   },
   {
-    "id": "15",
+    "id": "17",
     "festival": "june-2026",
     "day": "sunday",
     "dayDate": "2026-06-28",
@@ -428,68 +494,7 @@ export const generatedEvents: PrideEvent[] = [
     "ctaHref": "https://posh.vip/e/queeribbeans-day-in-di-yaad?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGngsmFsegzWxlkDH6-bgR5QNXryxmYDxxh_DKuntAickxmCy24x35hm50srdI_aem_FtzR6VLMkZ14ljjNV-hzkQ",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-outdoors-hangout"
-  },
-  {
-    "id": "16",
-    "festival": "june-2026",
-    "day": "wednesday",
-    "dayDate": "2026-06-24",
-    "dayLabel": "Wednesday",
-    "name": "Team DC Night OUT Series: Nats Night OUT 2026",
-    "organizer": "Baseball Team DC",
-    "types": [
-      "outdoors-hangout",
-      "meetup"
-    ],
-    "vibesRaw": "chill community food games",
-    "free": false,
-    "price": "$40.00",
-    "badges": [
-      "Outdoors Hangout",
-      "Meetup"
-    ],
-    "time": "5:30 PM",
-    "location": "Nationals Park · 1500 South Capitol Street SE, Washington, DC 20003",
-    "vibeTags": [
-      "Chill",
-      "Community",
-      "Food",
-      "Games"
-    ],
-    "ctaHref": "https://www.zeffy.com/en-US/ticketing/nats-night-out--2026",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-outdoors-hangout"
-  },
-  {
-    "id": "17",
-    "festival": "june-2026",
-    "day": "monday",
-    "dayDate": "2026-06-22",
-    "dayLabel": "Monday",
-    "name": "Wicked Mondaze Summer Kickoff",
-    "organizer": "MIM Entertainment & Jaywalking Productions",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "chill ass shaking flirt",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Day Party",
-      "Free"
-    ],
-    "time": "6:00 PM",
-    "location": "Wild Days - Eaton Hotel",
-    "vibeTags": [
-      "Chill",
-      "Ass Shaking",
-      "Flirt"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/wicked-mondaze-pop-up-happy-hour-tickets-1991574097738?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-day-party"
+    "cardClass": "tp-outdoors-hangout",
+    "discountCode": "SQW15"
   }
 ];
