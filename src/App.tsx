@@ -61,6 +61,7 @@ export default function App() {
   const showBeautyTab = activeTab === BEAUTY_TAB;
   const showFestivalTab = !showBeautyTab;
   const activeFestival = showFestivalTab ? festivalById(activeTab) : undefined;
+  const isSingleCityFestival = (activeFestival?.cityInclude?.length ?? 0) === 1;
   const festivalEvents = useMemo(
     () => (showFestivalTab ? eventsForFestival(activeTab) : []),
     [activeTab, eventsForFestival, showFestivalTab],
@@ -71,14 +72,15 @@ export default function App() {
   );
   const grouped = useMemo(
     () =>
-      activeFestival && selectedCity
+      activeFestival && (isSingleCityFestival || selectedCity)
         ? groupFestivalEvents(cityFilteredEvents, activeFestival.grouping)
         : [],
-    [activeFestival, cityFilteredEvents, selectedCity],
+    [activeFestival, cityFilteredEvents, isSingleCityFestival, selectedCity],
   );
   const cityGroups = useMemo(
-    () => (!selectedCity ? groupEventsByCityThenDate(festivalEvents) : []),
-    [festivalEvents, selectedCity],
+    () =>
+      !isSingleCityFestival && !selectedCity ? groupEventsByCityThenDate(festivalEvents) : [],
+    [festivalEvents, isSingleCityFestival, selectedCity],
   );
   const filter = useEventFilters(festivalEvents);
   const itinerary = useItinerary(allEvents);
@@ -126,6 +128,7 @@ export default function App() {
 
   const handleTabChange = (tab: string) => {
     setActiveTab(tab);
+    setSelectedCity('');
     if (tab === BEAUTY_TAB) filter.setPanelOpen(false);
     if (tab !== BEAUTY_TAB) setBeautyFilterOpen(false);
   };
@@ -206,7 +209,9 @@ export default function App() {
           ) : null}
           <Legend />
           <ItineraryHint count={itinerary.myCount} hidden={itinerary.hasSharedContext} />
-          <CityFilter value={selectedCity} onChange={setSelectedCity} />
+          {!isSingleCityFestival ? (
+            <CityFilter value={selectedCity} onChange={setSelectedCity} />
+          ) : null}
           <div className={`container${itinerary.myCount > 0 ? ' has-itinerary-bar' : ''}`}>
             {isLoading ? <div className="data-status">Loading events...</div> : null}
             {error ? (
@@ -214,7 +219,7 @@ export default function App() {
                 {error}
               </div>
             ) : null}
-            {selectedCity
+            {isSingleCityFestival || selectedCity
               ? grouped.map((dayGroup) => (
                   <DaySection
                     key={dayGroup.key}

@@ -1,3 +1,5 @@
+import type { CityKey } from './cities';
+
 export type FestivalGrouping = 'weekday' | 'calendar';
 
 export interface PrideFestival {
@@ -9,6 +11,8 @@ export interface PrideFestival {
   spreadsheetId?: string;
   grouping: FestivalGrouping;
   enabled: boolean;
+  cityInclude?: CityKey[];
+  cityExclude?: CityKey[];
 }
 
 export const PRIDE_FESTIVALS: PrideFestival[] = [
@@ -59,6 +63,18 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
     grouping: 'calendar',
     enabled: true,
+    cityExclude: ['chicago'],
+  },
+  {
+    id: 'wnba-all-star-weekend',
+    tabLabel: 'WNBA All-Star Weekend',
+    dateRange: 'July 2026',
+    location: 'Chicago',
+    sheetName: 'July_Events',
+    spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
+    grouping: 'calendar',
+    enabled: true,
+    cityInclude: ['chicago'],
   },
 ];
 

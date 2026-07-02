@@ -1375,5 +1375,136 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-live-show",
     "flyerUrl": "https://www.instagram.com/p/DaL9dkdEagh/?img_index=1",
     "city": "nyc"
+  },
+  {
+    "id": "45",
+    "festival": "july-events",
+    "day": "thursday",
+    "dayDate": "2026-07-02",
+    "dayLabel": "Thursday",
+    "name": "Here: Pride and Belonging in African Art",
+    "organizer": "National Museum of African Art",
+    "types": [
+      "educational"
+    ],
+    "vibesRaw": "chill creative cultural",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Educational",
+      "Free"
+    ],
+    "time": "10:00 AM",
+    "location": "National Museum of African Art · 950 Independence Avenue, SW\nWashington, DC 20560",
+    "vibeTags": [
+      "Chill",
+      "Creative",
+      "Cultural"
+    ],
+    "ctaHref": "https://africa.si.edu/exhibitions/here-pride-and-belonging-african-art",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-educational",
+    "flyerUrl": "https://www.instagram.com/p/DZsaqUTFBpH/?img_index=1",
+    "city": "dc"
+  },
+  {
+    "id": "55",
+    "festival": "july-events",
+    "day": "wednesday",
+    "dayDate": "2026-07-29",
+    "dayLabel": "Wednesday",
+    "name": "Hump Day Cheers",
+    "organizer": "BlackDMVSapphics",
+    "types": [
+      "happy-hour"
+    ],
+    "vibesRaw": "food flirt community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Happy Hour",
+      "Free"
+    ],
+    "time": "5:30 PM",
+    "location": "Shanklin Hall · 2325 18th St NW, Washington, DC 20009, USA",
+    "vibeTags": [
+      "Food",
+      "Flirt",
+      "Community"
+    ],
+    "ctaHref": "https://posh.vip/e/midweek-happy-hour?u=dvn__a&_t=mr3vw6op&os=web&src=event_page",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour",
+    "city": "dc"
+  },
+  {
+    "id": "56",
+    "festival": "july-events",
+    "day": "friday",
+    "dayDate": "2026-07-17",
+    "dayLabel": "Friday",
+    "name": "The 'Cule Club - a polyam/ENM meet up",
+    "organizer": "Dee René",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "chill flirt community 30+ grown & sexy groove polyamorous",
+    "free": false,
+    "price": "$15.00",
+    "badges": [
+      "Meetup"
+    ],
+    "time": "6:30 PM",
+    "location": "The Muni · 1400 14th St NW Ste B, Washington, DC 20005, USA",
+    "vibeTags": [
+      "Chill",
+      "Flirt",
+      "Community",
+      "30+",
+      "Grown & Sexy",
+      "Groove",
+      "Polyamorous"
+    ],
+    "ctaHref": "https://posh.vip/e/the-cule-club-a-polyamenm-meet-up",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "city": "dc"
+  },
+  {
+    "id": "57",
+    "festival": "july-events",
+    "day": "friday",
+    "dayDate": "2026-07-17",
+    "dayLabel": "Friday",
+    "name": "After Hours Leather Society: Open House",
+    "organizer": "After Hours Leather Society",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "flirt community grown & sexy groove polyamorous",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "After Dark",
+      "Free"
+    ],
+    "time": "7:30 PM",
+    "location": "Please register to see the exact location of this event. · O St. NW",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Grown & Sexy",
+      "Groove",
+      "Polyamorous"
+    ],
+    "ctaHref": "https://api.leadconnectorhq.com/widget/form/LF1nfP6EGb2Nx0h381zu",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-after-dark",
+    "flyerUrl": "https://www.instagram.com/p/DTnyY1skfiV/?hl=en",
+    "city": "dc"
   }
 ];

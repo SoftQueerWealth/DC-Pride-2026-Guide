@@ -8,6 +8,7 @@ import {
 import type { BeautyField, BeautyItem } from '../types/beauty';
 import { normalizeSheetCity } from '../constants/cities';
 import { DEFAULT_FESTIVAL_ID, ENABLED_FESTIVALS, festivalById } from '../constants/festivals';
+import { filterEventsForFestival } from '../lib/festivalCityFilter';
 import { decodeHtmlEntities } from '../lib/decodeHtmlEntities';
 import { ctaButtonClassForLabel, isInstagramUrl } from '../lib/eventCta';
 import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
@@ -815,10 +816,11 @@ export async function fetchFestivalSheetEvents(
 
   const idPrefix = festivalId === DEFAULT_FESTIVAL_ID ? '' : `${festivalId}-`;
   const spreadsheetId = festival.spreadsheetId ?? getSpreadsheetId();
-  return parseSheetRows(await fetchSheetValues(festival.sheetName, spreadsheetId, signal), {
+  const events = parseSheetRows(await fetchSheetValues(festival.sheetName, spreadsheetId, signal), {
     festivalId,
     idPrefix,
   });
+  return filterEventsForFestival(events, festival);
 }
 
 export async function fetchAllFestivalSheetEvents(

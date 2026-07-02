@@ -1,6 +1,7 @@
 export const CITY_ORDER = ['dc', 'nyc', 'baltimore', 'dmv'] as const;
 
-export type CityKey = (typeof CITY_ORDER)[number];
+export type MainCityKey = (typeof CITY_ORDER)[number];
+export type CityKey = MainCityKey | 'chicago';
 
 const SHEET_CITY_MAP: Record<string, CityKey> = {
   dc: 'dc',
@@ -8,6 +9,9 @@ const SHEET_CITY_MAP: Record<string, CityKey> = {
   nyc: 'nyc',
   newyork: 'nyc',
   baltimore: 'baltimore',
+  chicago: 'chicago',
+  thechi: 'chicago',
+  chi: 'chicago',
 };
 
 const CITY_LABELS: Record<CityKey, string> = {
@@ -15,6 +19,7 @@ const CITY_LABELS: Record<CityKey, string> = {
   nyc: 'New York',
   baltimore: 'Baltimore',
   dmv: 'DMV',
+  chicago: 'Chicago',
 };
 
 export function normalizeSheetCity(raw: string): CityKey | null {
@@ -26,7 +31,7 @@ export function cityDisplayLabel(key: string): string {
   return CITY_LABELS[key as CityKey] ?? key;
 }
 
-export const cityFilterOptions: { value: CityKey; label: string }[] = CITY_ORDER.map((key) => ({
+export const cityFilterOptions: { value: MainCityKey; label: string }[] = CITY_ORDER.map((key) => ({
   value: key,
   label: CITY_LABELS[key],
 }));
