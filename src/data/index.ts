@@ -1,17 +1,18 @@
-import { ENABLED_FESTIVALS } from '../constants/festivals';
+import { ENABLED_FESTIVALS, festivalById } from '../constants/festivals';
+import { filterEventsForFestival } from '../lib/festivalCityFilter';
 import type { PrideEvent } from '../types/event';
-import { generatedEvents as baltimorePrideEvents } from './festivals/baltimore-pride.generated';
-import { generatedEvents as june2026Events } from './festivals/june-2026.generated';
-import { generatedEvents as nycPrideEvents } from './festivals/nyc-pride.generated';
+import { generatedEvents as julyEvents } from './festivals/july-events.generated';
+import { generatedEvents as wnbaEvents } from './festivals/wnba-all-star-weekend.generated';
 
-const BUNDLED_BY_FESTIVAL: Record<string, PrideEvent[]> = {
-  'baltimore-pride': baltimorePrideEvents,
-  'june-2026': june2026Events,
-  'nyc-pride': nycPrideEvents,
-};
+const JULY_SHEET_FESTIVAL_IDS = new Set(['july-events', 'wnba-all-star-weekend']);
+const ALL_JULY_SHEET_EVENTS: PrideEvent[] = [...julyEvents, ...wnbaEvents];
 
 export function bundledEventsForFestival(festivalId: string): PrideEvent[] {
-  return BUNDLED_BY_FESTIVAL[festivalId] ?? [];
+  const festival = festivalById(festivalId);
+  if (!festival) return [];
+
+  const events = JULY_SHEET_FESTIVAL_IDS.has(festivalId) ? ALL_JULY_SHEET_EVENTS : [];
+  return filterEventsForFestival(events, festival);
 }
 
 export function allBundledFestivalEvents(): PrideEvent[] {

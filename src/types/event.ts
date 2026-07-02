@@ -80,4 +80,6 @@ export interface PrideEvent {
   discountCode?: string;
   /** Direct image URL for the event flyer/poster, when provided in the sheet. */
   flyerUrl?: string;
+  /** Normalized city key from the sheet City column, e.g. dc, nyc, baltimore, dmv. */
+  city?: string;
 }

@@ -6,7 +6,9 @@ import {
   type PrideEvent,
 } from '../types/event';
 import type { BeautyField, BeautyItem } from '../types/beauty';
+import { normalizeSheetCity } from '../constants/cities';
 import { DEFAULT_FESTIVAL_ID, ENABLED_FESTIVALS, festivalById } from '../constants/festivals';
+import { filterEventsForFestival } from '../lib/festivalCityFilter';
 import { decodeHtmlEntities } from '../lib/decodeHtmlEntities';
 import { ctaButtonClassForLabel, isInstagramUrl } from '../lib/eventCta';
 import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
@@ -129,7 +131,8 @@ const COLUMN_ALIASES = {
     'ticketcode',
   ],
   festival: ['festival', 'pride', 'guide', 'eventgroup', 'festivalfilter'],
-  flyerUrl: ['flyer', 'flyerurl', 'flyerlink', 'flyerimage', 'eventflyer', 'poster', 'posterurl'],
+  city: ['city', 'eventcity', 'market'],
+  flyerUrl: ['flyer', 'flyerurl', 'flyerlink', 'flyerimage', 'eventflyer', 'poster', 'posterurl', 'iglinkflyer'],
 } as const;
 
 const BEAUTY_COLUMN_ALIASES = {
@@ -694,6 +697,9 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         discountCodeRaw && !shouldHideDiscountCode(discountCodeRaw) ? discountCodeRaw : '';
 
       const flyerUrl = normalizeFlyerUrl(readCell(headers, row, 'flyerUrl'));
+      const cityRaw = readCell(headers, row, 'city');
+      const city = cityRaw ? normalizeSheetCity(cityRaw) : null;
+      if (cityRaw && !city) return null;
 
       return {
         id: `${idPrefix}${index + 2}`,
@@ -719,6 +725,7 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         cardClass: normalizeClass<'tp-'>(readCell(headers, row, 'cardClass'), 'tp-', fallbackCardClass),
         ...(discountCode ? { discountCode } : {}),
         ...(flyerUrl ? { flyerUrl } : {}),
+        ...(city ? { city } : {}),
       };
     })
     .filter((event): event is PrideEvent => event !== null);
@@ -809,10 +816,11 @@ export async function fetchFestivalSheetEvents(
 
   const idPrefix = festivalId === DEFAULT_FESTIVAL_ID ? '' : `${festivalId}-`;
   const spreadsheetId = festival.spreadsheetId ?? getSpreadsheetId();
-  return parseSheetRows(await fetchSheetValues(festival.sheetName, spreadsheetId, signal), {
+  const events = parseSheetRows(await fetchSheetValues(festival.sheetName, spreadsheetId, signal), {
     festivalId,
     idPrefix,
   });
+  return filterEventsForFestival(events, festival);
 }
 
 export async function fetchAllFestivalSheetEvents(

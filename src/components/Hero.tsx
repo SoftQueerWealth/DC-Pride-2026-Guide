@@ -1,23 +1,16 @@
-import { formatRoundedEventCount } from '../lib/eventCta';
 import { HeroSocial } from './HeroSocial';
 
-interface HeroProps {
-  eventCount: number;
-}
-
-export function Hero({ eventCount }: HeroProps) {
-  const eventCountLabel = formatRoundedEventCount(eventCount);
+export function Hero() {
   return (
     <header className="hero">
       <HeroSocial />
       <img src="/hero-logo.png" alt="" className="hero-logo" width={80} height={80} />
-      <div className="tag">Happy Pride!</div>
       <h1>
-        June Pride Guide <span>2026</span>
+      The Mahogany Pages
       </h1>
       <div className="notice">
         <strong style={{ fontSize: '13px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-          📌 {eventCountLabel} Events Curated for the Culture.
+      🌈🤎 Centering Black WLW, Femmes, and Theys
         </strong>
         <br />
         <br />
@@ -27,7 +20,7 @@ export function Hero({ eventCount }: HeroProps) {
         <br />
         <em>Schedule subject to change.</em>
       </div>
-      <p className="last-updated">Last updated · June 22, 2026</p>
+      <p className="last-updated">Last updated · July 2, 2026</p>
     </header>
   );
 }
