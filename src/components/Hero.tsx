@@ -5,13 +5,12 @@ export function Hero() {
     <header className="hero">
       <HeroSocial />
       <img src="/hero-logo.png" alt="" className="hero-logo" width={80} height={80} />
-      <div className="tag">Happy Pride!</div>
       <h1>
-      🌈🤎 The Mahogany Pages
+      The Mahogany Pages
       </h1>
       <div className="notice">
         <strong style={{ fontSize: '13px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-           Centering Black WLW, Femmes, and Theys
+      🌈🤎 Centering Black WLW, Femmes, and Theys
         </strong>
         <br />
         <br />

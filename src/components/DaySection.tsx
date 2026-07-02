@@ -43,7 +43,6 @@ export function DaySection({
         <div className="day-count">
           {visibleCount} event{visibleCount === 1 ? '' : 's'}
         </div>
-        <div className="day-line" />
       </div>
       {events.map((event) => (
         <EventCard

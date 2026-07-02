@@ -43,9 +43,8 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .city-filter-select:focus{outline:2px solid var(--gold);outline-offset:2px}
 .city-section{margin-top:40px}
 .city-section.hidden{display:none}
-.city-header{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.city-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border)}
 .city-title{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:600;color:var(--cream);letter-spacing:.02em;margin:0;white-space:nowrap}
-.city-line{flex:1;height:1px;background:var(--border)}
 .tab-nav{border-bottom:1px solid var(--border);background:rgba(255,255,255,.92);padding:12px 16px}
 .tab-list{max-width:680px;margin:0 auto;display:flex;gap:8px}
 .tab-button{flex:1;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);background:var(--black);border:1px solid var(--border);border-radius:100px;padding:10px 14px;cursor:pointer;transition:background .18s,border-color .18s,color .18s}
@@ -138,7 +137,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .beauty-detail a{color:var(--burgundy);text-decoration:none}
 .beauty-detail a:hover{text-decoration:underline;text-decoration-color:var(--primary-border)}
 .day-section{margin-top:36px}
-.day-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;position:sticky;top:0;background:var(--black);padding:10px 0;z-index:10;border-bottom:1px solid var(--border)}
+.day-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;position:sticky;top:0;background:var(--black);padding:10px 0;z-index:10}
 .day-title{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream);white-space:nowrap}
 .day-title-name,.day-title-sep,.day-title-date{font-family:inherit}
 .day-title-name{font-weight:700}
@@ -147,7 +146,6 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .day-title-month{text-transform:uppercase}
 .day-title-day{font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1}
 .day-count{font-size:10px;color:var(--gold-light);background:var(--accent-soft);border:1px solid var(--accent-border);padding:2px 8px;border-radius:100px;white-space:nowrap;flex-shrink:0}
-.day-line{flex:1;height:1px;background:var(--border);min-width:12px}
 .day-section.hidden{display:none}
 .event-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px 15px;margin-bottom:7px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;transition:border-color .2s,background .2s,box-shadow .2s;position:relative;overflow:hidden;box-shadow:0 2px 10px var(--shadow)}
 .event-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:3px 0 0 3px}

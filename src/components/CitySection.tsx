@@ -27,7 +27,6 @@ export function CitySection({
     <section className={`city-section${hidden ? ' hidden' : ''}`}>
       <div className="city-header">
         <h2 className="city-title">{cityLabel}</h2>
-        <div className="city-line" />
       </div>
       {dayGroups.map((dayGroup) => (
         <DaySection
