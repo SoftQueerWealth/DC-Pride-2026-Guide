@@ -9,7 +9,8 @@ import { useEventFilters } from './hooks/useEventFilters';
 import { useItinerary } from './hooks/useItinerary';
 import type { BeautyItem } from './types/beauty';
 import type { PrideEvent } from './types/event';
-import { CommunityShoutOut } from './components/CommunityShoutOut';
+import { CityFilter } from './components/CityFilter';
+import { CitySection } from './components/CitySection';
 import { DaySection } from './components/DaySection';
 import { DonationSection } from './components/DonationSection';
 import { FestivalSubheader } from './components/FestivalSubheader';
@@ -23,7 +24,7 @@ import { LinksSection } from './components/LinksSection';
 import { SharedItineraryHeader } from './components/SharedItineraryHeader';
 import { trackItineraryShare } from './lib/analytics';
 import { communityPerkTypeLabel } from './lib/communityPerks';
-import { groupFestivalEvents } from './lib/groupFestivalEvents';
+import { groupEventsByCityThenDate, groupFestivalEvents } from './lib/groupFestivalEvents';
 import { formatItineraryShare } from './lib/formatItinerary';
 import { shareItinerary } from './lib/shareItinerary';
 
@@ -54,6 +55,7 @@ export default function App() {
   const [beautyFilterOpen, setBeautyFilterOpen] = useState(false);
   const [activeBeautyTypes, setActiveBeautyTypes] = useState<Set<string>>(() => new Set());
   const [activeMobileOnly, setActiveMobileOnly] = useState(false);
+  const [selectedCity, setSelectedCity] = useState('');
   const { allEvents, eventsForFestival, error, isLoading } = useEvents();
   const beauty = useBeautyItems();
   const showBeautyTab = activeTab === BEAUTY_TAB;
@@ -67,9 +69,20 @@ export default function App() {
     () => ENABLED_FESTIVALS.reduce((sum, festival) => sum + eventsForFestival(festival.id).length, 0),
     [eventsForFestival],
   );
+  const cityFilteredEvents = useMemo(
+    () => (selectedCity ? festivalEvents.filter((e) => e.city === selectedCity) : festivalEvents),
+    [festivalEvents, selectedCity],
+  );
   const grouped = useMemo(
-    () => (activeFestival ? groupFestivalEvents(festivalEvents, activeFestival.grouping) : []),
-    [activeFestival, festivalEvents],
+    () =>
+      activeFestival && selectedCity
+        ? groupFestivalEvents(cityFilteredEvents, activeFestival.grouping)
+        : [],
+    [activeFestival, cityFilteredEvents, selectedCity],
+  );
+  const cityGroups = useMemo(
+    () => (!selectedCity ? groupEventsByCityThenDate(festivalEvents) : []),
+    [festivalEvents, selectedCity],
   );
   const filter = useEventFilters(festivalEvents);
   const itinerary = useItinerary(allEvents);
@@ -79,7 +92,10 @@ export default function App() {
     [filter, itinerary],
   );
 
-  const anyEventsVisible = useMemo(() => festivalEvents.some(isEventShown), [festivalEvents, isEventShown]);
+  const anyEventsVisible = useMemo(
+    () => cityFilteredEvents.some(isEventShown),
+    [cityFilteredEvents, isEventShown],
+  );
   const showNoResults = !isLoading && festivalEvents.length > 0 && !anyEventsVisible;
   const beautyFilterSections = useMemo<FilterSectionDef<BeautyFilterKind>[]>(
     () => [
@@ -194,6 +210,7 @@ export default function App() {
           ) : null}
           <Legend />
           <ItineraryHint count={itinerary.myCount} hidden={itinerary.hasSharedContext} />
+          <CityFilter value={selectedCity} onChange={setSelectedCity} />
           <div className={`container${itinerary.myCount > 0 ? ' has-itinerary-bar' : ''}`}>
             {isLoading ? <div className="data-status">Loading events...</div> : null}
             {error ? (
@@ -201,18 +218,29 @@ export default function App() {
                 {error}
               </div>
             ) : null}
-            {grouped.map((dayGroup) => (
-              <DaySection
-                key={dayGroup.key}
-                day={dayGroup.day}
-                dayLabel={dayGroup.dayLabel}
-                dayDate={dayGroup.dayDate}
-                events={dayGroup.events}
-                isEventVisible={isEventShown}
-                isGoing={(e) => itinerary.isGoing(e.id)}
-                onToggleGoing={(e) => itinerary.toggleGoing(e.id)}
-              />
-            ))}
+            {selectedCity
+              ? grouped.map((dayGroup) => (
+                  <DaySection
+                    key={dayGroup.key}
+                    day={dayGroup.day}
+                    dayLabel={dayGroup.dayLabel}
+                    dayDate={dayGroup.dayDate}
+                    events={dayGroup.events}
+                    isEventVisible={isEventShown}
+                    isGoing={(e) => itinerary.isGoing(e.id)}
+                    onToggleGoing={(e) => itinerary.toggleGoing(e.id)}
+                  />
+                ))
+              : cityGroups.map((cityGroup) => (
+                  <CitySection
+                    key={cityGroup.cityKey}
+                    cityLabel={cityGroup.cityLabel}
+                    dayGroups={cityGroup.dayGroups}
+                    isEventVisible={isEventShown}
+                    isGoing={(e) => itinerary.isGoing(e.id)}
+                    onToggleGoing={(e) => itinerary.toggleGoing(e.id)}
+                  />
+                ))}
             <div className={`no-results${showNoResults ? ' visible' : ''}`}>
               {itinerary.isInSharedView
                 ? 'No shared events match your filters. Try clearing some or view the full guide.'
@@ -245,7 +273,6 @@ export default function App() {
         </div>
       )}
       <DonationSection />
-      <CommunityShoutOut />
       <Footer />
       {showFestivalTab ? (
         <>

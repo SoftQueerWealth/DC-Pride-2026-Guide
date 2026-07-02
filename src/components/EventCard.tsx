@@ -9,6 +9,8 @@ import { parseDiscountDisplay, shouldHideDiscountCode } from '../lib/parseDiscou
 import { isMappableLocation, mapsSearchUrl, splitLocationParts } from '../lib/maps';
 import { FlyerLightbox } from './FlyerLightbox';
 
+const SHOW_EVENT_FLYERS = false;
+
 interface EventCardProps {
   event: PrideEvent;
   visible: boolean;
@@ -99,7 +101,7 @@ export function EventCard({ event, visible, going = false, onToggleGoing }: Even
           ))}
         </div>
         <div className="event-name-row">
-          {event.flyerUrl ? (
+          {SHOW_EVENT_FLYERS && event.flyerUrl ? (
             <>
               <button
                 type="button"

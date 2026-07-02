@@ -1,3 +1,4 @@
+import { CITY_ORDER, cityDisplayLabel } from '../constants/cities';
 import { DAY_ORDER } from '../constants/days';
 import type { FestivalGrouping } from '../constants/festivals';
 import type { DayId, PrideEvent } from '../types/event';
@@ -65,4 +66,31 @@ export function groupFestivalEvents(
     return groupByCalendarDate(events);
   }
   return groupByWeekday(events);
+}
+
+export type CityDayGroup = {
+  cityKey: string;
+  cityLabel: string;
+  dayGroups: FestivalDayGroup[];
+};
+
+export function groupEventsByCityThenDate(events: PrideEvent[]): CityDayGroup[] {
+  const byCity = new Map<string, PrideEvent[]>();
+  for (const event of events) {
+    const key = event.city ?? '';
+    const bucket = byCity.get(key) ?? [];
+    bucket.push(event);
+    byCity.set(key, bucket);
+  }
+
+  const orderedKeys = [
+    ...CITY_ORDER.filter((key) => byCity.has(key)),
+    ...[...byCity.keys()].filter((key) => !CITY_ORDER.includes(key as (typeof CITY_ORDER)[number])),
+  ];
+
+  return orderedKeys.map((cityKey) => ({
+    cityKey,
+    cityLabel: cityKey ? cityDisplayLabel(cityKey) : 'Other',
+    dayGroups: groupByCalendarDate(byCity.get(cityKey) ?? []),
+  }));
 }

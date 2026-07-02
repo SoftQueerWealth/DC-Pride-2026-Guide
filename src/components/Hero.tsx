@@ -13,7 +13,7 @@ export function Hero({ eventCount }: HeroProps) {
       <img src="/hero-logo.png" alt="" className="hero-logo" width={80} height={80} />
       <div className="tag">Happy Pride!</div>
       <h1>
-        June Pride Guide <span>2026</span>
+        Queer Pride Guide <span>2026</span>
       </h1>
       <div className="notice">
         <strong style={{ fontSize: '13px', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
@@ -27,7 +27,7 @@ export function Hero({ eventCount }: HeroProps) {
         <br />
         <em>Schedule subject to change.</em>
       </div>
-      <p className="last-updated">Last updated · June 22, 2026</p>
+      <p className="last-updated">Last updated · July 2, 2026</p>
     </header>
   );
 }

@@ -38,7 +38,7 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     sheetName: 'June Events',
     spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
     grouping: 'calendar',
-    enabled: true,
+    enabled: false,
   },
   {
     id: 'nyc-pride',
@@ -48,11 +48,21 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     sheetName: 'NYC Pride Master',
     spreadsheetId: '15qGvOIUMxTFy3ncvUW1z8XXT6Pz9iTbZ-MW4UhDmjiM',
     grouping: 'calendar',
+    enabled: false,
+  },
+  {
+    id: 'july-events',
+    tabLabel: 'Events',
+    dateRange: 'July 2026',
+    location: 'DC · NYC · Baltimore · DMV',
+    sheetName: 'July_Events',
+    spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
+    grouping: 'calendar',
     enabled: true,
   },
 ];
 
-export const DEFAULT_FESTIVAL_ID = 'june-2026';
+export const DEFAULT_FESTIVAL_ID = 'july-events';
 
 export const ENABLED_FESTIVALS = PRIDE_FESTIVALS.filter((festival) => festival.enabled);
 
