@@ -65,10 +65,6 @@ export default function App() {
     () => (showFestivalTab ? eventsForFestival(activeTab) : []),
     [activeTab, eventsForFestival, showFestivalTab],
   );
-  const heroEventCount = useMemo(
-    () => ENABLED_FESTIVALS.reduce((sum, festival) => sum + eventsForFestival(festival.id).length, 0),
-    [eventsForFestival],
-  );
   const cityFilteredEvents = useMemo(
     () => (selectedCity ? festivalEvents.filter((e) => e.city === selectedCity) : festivalEvents),
     [festivalEvents, selectedCity],
@@ -168,7 +164,7 @@ export default function App() {
 
   return (
     <>
-      <Hero eventCount={heroEventCount} />
+      <Hero />
       <nav className="tab-nav" aria-label="Guide sections">
         <div className="tab-list" role="tablist">
           {ENABLED_FESTIVALS.map((festival) => (
