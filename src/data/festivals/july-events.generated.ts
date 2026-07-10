@@ -1506,5 +1506,204 @@ export const generatedEvents: PrideEvent[] = [
     "cardClass": "tp-after-dark",
     "flyerUrl": "https://www.instagram.com/p/DTnyY1skfiV/?hl=en",
     "city": "dc"
+  },
+  {
+    "id": "71",
+    "festival": "july-events",
+    "day": "sunday",
+    "dayDate": "2026-07-26",
+    "dayLabel": "Sunday",
+    "name": "Art-Making Club Artist Workshop",
+    "organizer": "The Sapphic Sanctuary",
+    "types": [
+      "workshop"
+    ],
+    "vibesRaw": "creative community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Free"
+    ],
+    "time": "2:00 PM",
+    "location": "Francis Gregory Neighborhood Library · 3660 Alabama Ave SE, Washington, DC",
+    "vibeTags": [
+      "Creative",
+      "Community"
+    ],
+    "ctaHref": "https://docs.google.com/forms/d/e/1FAIpQLSdyoMIAw1uGukj-LVm04qgTcctCSpJE0ukRUdNzJG6Xxn5J2w/viewform",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/Dabcksnlm3j/?img_index=1",
+    "city": "dc"
+  },
+  {
+    "id": "72",
+    "festival": "july-events",
+    "day": "wednesday",
+    "dayDate": "2026-07-29",
+    "dayLabel": "Wednesday",
+    "name": "Tongue Twisted",
+    "organizer": "Dame Sadie",
+    "types": [
+      "workshop",
+      "educational",
+      "meetup"
+    ],
+    "vibesRaw": "creative flirt community grown & sexy wlw only",
+    "free": false,
+    "price": "$25.00",
+    "badges": [
+      "Workshop",
+      "Educational",
+      "Meetup"
+    ],
+    "time": "7:00 PM",
+    "location": "Mixxed DC · 2427 18th Street Northwest\nWashington, DC 20009",
+    "vibeTags": [
+      "Creative",
+      "Flirt",
+      "Community",
+      "Grown & Sexy",
+      "wlw only"
+    ],
+    "ctaHref": "https://damesadie.com/events",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/Dah9jjyFchD/?img_index=1",
+    "city": "dc"
+  },
+  {
+    "id": "93",
+    "festival": "july-events",
+    "day": "friday",
+    "dayDate": "2026-07-10",
+    "dayLabel": "Friday",
+    "name": "Rumba Queer: Rueda de Casino Workshop",
+    "organizer": "Rumba Queer DC",
+    "types": [
+      "meetup",
+      "workshop"
+    ],
+    "vibesRaw": "creative groove community",
+    "free": false,
+    "price": "$23.00",
+    "badges": [
+      "Meetup",
+      "Workshop"
+    ],
+    "time": "7:00 PM",
+    "location": "Dance Loft on 14 · 4618 14th St NW, Washington, DC 20011, USA",
+    "vibeTags": [
+      "Creative",
+      "Groove",
+      "Community"
+    ],
+    "ctaHref": "https://posh.vip/e/rumba-queer-rueda-de-casino-workshop?t=lt",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/p/DaOJrMuj1zs/?img_index=1",
+    "city": "dc"
+  },
+  {
+    "id": "94",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-18",
+    "dayLabel": "Saturday",
+    "name": "Verano de Vuelta",
+    "organizer": "Rumba Queer DC",
+    "types": [
+      "after-dark",
+      "workshop"
+    ],
+    "vibesRaw": "groove ass shaking",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "After Dark",
+      "Workshop",
+      "Free"
+    ],
+    "time": "7:00 PM",
+    "location": "Icon DC · 2001 11th St NW, Washington, DC 20001, USA",
+    "vibeTags": [
+      "Groove",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://posh.vip/e/verano-de-vuelta?t=lt",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-after-dark",
+    "city": "dc"
+  },
+  {
+    "id": "95",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-11",
+    "dayLabel": "Saturday",
+    "name": "Rumba Queer: 3 Week Beginner Bachata Series",
+    "organizer": "Rumba Queer DC",
+    "types": [
+      "meetup",
+      "workshop"
+    ],
+    "vibesRaw": "creative groove community",
+    "free": false,
+    "price": "$18.00",
+    "badges": [
+      "Meetup",
+      "Workshop"
+    ],
+    "time": "6:00 PM",
+    "location": "Dance Loft on 14 · 4618 14th St NW, Washington, DC 20011, USA",
+    "vibeTags": [
+      "Creative",
+      "Groove",
+      "Community"
+    ],
+    "ctaHref": "https://posh.vip/e/rumba-queer-3-week-beginner-bachata-series-2?t=lt",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/p/DaO4IPcM9hb/",
+    "city": "dc"
+  },
+  {
+    "id": "96",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-11",
+    "dayLabel": "Saturday",
+    "name": "Soft and Seen: A Cuddle and Consent Experience for Fem 4 Fem Black Lesbians & Bisexual Women",
+    "organizer": "DMV Black Feme 4 Feme",
+    "types": [
+      "workshop",
+      "meetup"
+    ],
+    "vibesRaw": "community chill wlw only",
+    "free": false,
+    "price": "$35.00",
+    "badges": [
+      "Workshop",
+      "Meetup"
+    ],
+    "time": "6:00 PM",
+    "location": "Mixxed DC · 2427 18th Street Northwest\nWashington, DC 20009",
+    "vibeTags": [
+      "Community",
+      "Chill",
+      "wlw only"
+    ],
+    "ctaHref": "https://events.eventnoire.com/e/soft-and-seen-a-cuddle-and-consent-experience-for",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/DaBlw3mgcKx/",
+    "city": "dc"
   }
 ];
