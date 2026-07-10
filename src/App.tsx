@@ -27,6 +27,7 @@ import { communityPerkTypeLabel } from './lib/communityPerks';
 import { groupEventsByCityThenDate, groupFestivalEvents } from './lib/groupFestivalEvents';
 import { formatItineraryShare } from './lib/formatItinerary';
 import { shareItinerary } from './lib/shareItinerary';
+import { filterUpcomingEvents } from './lib/upcomingEvents';
 
 const BEAUTY_TAB = 'beauty';
 
@@ -63,7 +64,7 @@ export default function App() {
   const activeFestival = showFestivalTab ? festivalById(activeTab) : undefined;
   const isSingleCityFestival = (activeFestival?.cityInclude?.length ?? 0) === 1;
   const festivalEvents = useMemo(
-    () => (showFestivalTab ? eventsForFestival(activeTab) : []),
+    () => (showFestivalTab ? filterUpcomingEvents(eventsForFestival(activeTab)) : []),
     [activeTab, eventsForFestival, showFestivalTab],
   );
   const cityFilteredEvents = useMemo(
