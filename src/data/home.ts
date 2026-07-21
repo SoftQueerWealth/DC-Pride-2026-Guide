@@ -12,13 +12,13 @@ export type HomeSpotlight = {
   title: string;
   body: string;
   tone: PlaceholderTone;
-  room: 'reading' | 'community';
+  room: 'reading' | 'neighborhood';
   enterExhibition?: boolean;
 };
 
 export type ExplorePill = {
   label: string;
-  room: 'neighborhood' | 'community';
+  room: 'neighborhood' | 'reading';
 };
 
 export const HERO_FRAMES: { label: string; tone: PlaceholderTone }[] = [
@@ -48,7 +48,7 @@ export const HOME_SPOTLIGHTS: HomeSpotlight[] = [
     title: 'Acu With Naja',
     body: 'Holistic healing & wellness in DC — a Community Headliner.',
     tone: 'sage',
-    room: 'community',
+    room: 'neighborhood',
   },
 ];
 
@@ -84,7 +84,7 @@ export const EXPLORE_PILLS: ExplorePill[] = [
   { label: '🧭 Weekend Guides', room: 'neighborhood' },
   { label: '📍 By Neighborhood', room: 'neighborhood' },
   { label: '🎟️ Free Events', room: 'neighborhood' },
-  { label: '💳 Community Perks', room: 'community' },
+  { label: '💳 Community Perks', room: 'neighborhood' },
   { label: '🔗 Share Itinerary', room: 'neighborhood' },
 ];
 

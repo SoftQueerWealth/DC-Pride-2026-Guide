@@ -1,17 +1,12 @@
 import { useCallback, useEffect, useState } from 'react';
 import { HomePage } from './components/home/HomePage';
+import { MahoganyPages } from './components/mahogany/MahoganyPages';
 import { PartnerModal } from './components/PartnerModal';
 import { RoomPlaceholder } from './components/RoomPlaceholder';
 import { Topbar } from './components/Topbar';
 import type { RoomId } from './data/rooms';
 
-const PLACEHOLDER_ROOMS: Exclude<RoomId, 'home'>[] = [
-  'neighborhood',
-  'reading',
-  'gallery',
-  'community',
-  'about',
-];
+const PLACEHOLDER_ROOMS: Exclude<RoomId, 'home' | 'neighborhood'>[] = ['reading', 'about'];
 
 export default function App() {
   const [activeRoom, setActiveRoom] = useState<RoomId>('home');
@@ -59,6 +54,7 @@ export default function App() {
       />
 
       {activeRoom === 'home' ? <HomePage onGo={go} /> : null}
+      {activeRoom === 'neighborhood' ? <MahoganyPages /> : null}
       {PLACEHOLDER_ROOMS.map((roomId) =>
         activeRoom === roomId ? <RoomPlaceholder key={roomId} roomId={roomId} /> : null,
       )}

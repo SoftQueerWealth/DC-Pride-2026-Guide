@@ -70,7 +70,9 @@ export function HomePage({ onGo }: HomePageProps) {
                 <div
                   className={`placeholder ${spot.tone}`}
                   data-label={spot.label}
-                  style={{ height: spot.room === 'community' ? 170 : spot.enterExhibition ? 210 : 190 }}
+                  style={{
+                    height: spot.enterExhibition ? 210 : spot.room === 'reading' ? 190 : 170,
+                  }}
                 />
                 <div className="body">
                   <p className="eyebrow" style={{ marginBottom: 2 }}>
@@ -120,7 +122,7 @@ export function HomePage({ onGo }: HomePageProps) {
                 type="button"
                 className="btn small"
                 style={{ width: '100%', justifyContent: 'center' }}
-                onClick={() => onGo('community')}
+                onClick={() => onGo('neighborhood')}
               >
                 Browse Perks →
               </button>

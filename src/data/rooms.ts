@@ -1,10 +1,4 @@
-export type RoomId =
-  | 'home'
-  | 'neighborhood'
-  | 'reading'
-  | 'gallery'
-  | 'community'
-  | 'about';
+export type RoomId = 'home' | 'neighborhood' | 'reading' | 'about';
 
 export type RoomDef = {
   id: RoomId;
@@ -33,20 +27,6 @@ export const ROOMS: RoomDef[] = [
     placeholderTitle: 'Soft Letters',
     placeholderBody:
       'Issues, exhibitions, and Softies of the Month — coming soon. The Soft Letter is where we tell our stories.',
-  },
-  {
-    id: 'gallery',
-    label: 'Archives',
-    placeholderTitle: 'Archives',
-    placeholderBody:
-      'Past issues, albums, and cultural memory — coming soon. A place to revisit what we\'ve built together.',
-  },
-  {
-    id: 'community',
-    label: 'Community Perks',
-    placeholderTitle: 'Community Perks',
-    placeholderBody:
-      'Discounts and hookups from Black & queer-owned businesses — coming soon. Your community headliners live here.',
   },
   {
     id: 'about',
