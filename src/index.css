@@ -1677,3 +1677,110 @@ nav.rooms button:hover {
     text-align: left;
   }
 }
+
+/* ---------- Soft Letters ---------- */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.g2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.g3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.g4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 900px) {
+  .g2,
+  .g3,
+  .g4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .g2,
+  .g3,
+  .g4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.soft-letters-intro {
+  margin-bottom: 8px;
+}
+
+.soft-letters-title {
+  margin: 0 0 8px;
+  font-size: 40px;
+  line-height: 1.08;
+}
+
+.soft-letters-lede {
+  margin: 0;
+  color: var(--ink-soft);
+  max-width: 560px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.soft-letters-issues {
+  margin-top: 32px;
+}
+
+.soft-letters-issue--soon {
+  opacity: 0.85;
+}
+
+.soft-letters-softie {
+  max-width: 480px;
+}
+
+.soft-letters-share-title {
+  margin: 0 0 16px;
+  font-size: 28px;
+}
+
+.soft-letters-share-card {
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 18px;
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.soft-letters-share-card h4 {
+  margin: 0 0 4px;
+}
+
+.soft-letters-share-card p {
+  margin: 0;
+}
+
+.soft-letters-share-card:hover {
+  border-color: var(--terracotta);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 640px) {
+  .soft-letters-title {
+    font-size: 32px;
+  }
+
+  .soft-letters-share-title {
+    font-size: 24px;
+  }
+
+  .soft-letters-softie {
+    max-width: none;
+  }
+}
