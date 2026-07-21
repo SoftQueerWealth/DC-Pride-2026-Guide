@@ -102,6 +102,10 @@ button {
   border-bottom: 1px solid var(--line);
 }
 
+.topbar.drawer-open {
+  z-index: 400;
+}
+
 .topbar-inner {
   max-width: 1180px;
   margin: 0 auto;

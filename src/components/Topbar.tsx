@@ -18,7 +18,7 @@ export function Topbar({
 }: TopbarProps) {
   return (
     <>
-      <header className="topbar">
+      <header className={`topbar${drawerOpen ? ' drawer-open' : ''}`}>
         <div className="topbar-inner">
           <button type="button" className="brand" onClick={() => onGo('home')}>
             <img className="logo-icon" src="/hero-logo.png" alt="" width={34} height={34} />
