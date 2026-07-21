@@ -55,7 +55,7 @@ export default function App() {
       {activeRoom === 'home' ? <HomePage onGo={go} /> : null}
       {activeRoom === 'neighborhood' ? <MahoganyPages /> : null}
       {activeRoom === 'reading' ? (
-        <SoftLettersPage onOpenPartner={() => setPartnerOpen(true)} />
+        <SoftLettersPage onOpenPartner={() => setPartnerOpen(true)} onGo={go} />
       ) : null}
       {activeRoom === 'about' ? <RoomPlaceholder roomId="about" /> : null}
 
