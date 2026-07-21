@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
+import { AboutPage } from './components/about/AboutPage';
 import { HomePage } from './components/home/HomePage';
 import { MahoganyPages } from './components/mahogany/MahoganyPages';
 import { PartnerModal } from './components/PartnerModal';
-import { RoomPlaceholder } from './components/RoomPlaceholder';
 import { SoftLettersPage } from './components/softLetters/SoftLettersPage';
 import { Topbar } from './components/Topbar';
 import type { RoomId } from './data/rooms';
@@ -57,7 +57,9 @@ export default function App() {
       {activeRoom === 'reading' ? (
         <SoftLettersPage onOpenPartner={() => setPartnerOpen(true)} onGo={go} />
       ) : null}
-      {activeRoom === 'about' ? <RoomPlaceholder roomId="about" /> : null}
+      {activeRoom === 'about' ? (
+        <AboutPage onGo={go} onOpenPartner={() => setPartnerOpen(true)} />
+      ) : null}
 
       <PartnerModal open={partnerOpen} onClose={() => setPartnerOpen(false)} />
     </>

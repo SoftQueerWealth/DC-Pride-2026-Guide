@@ -2159,3 +2159,219 @@ nav.rooms button:hover {
     font-size: 28px;
   }
 }
+
+/* ---------- About Us ---------- */
+.logo-full {
+  height: 70px;
+  width: auto;
+  display: block;
+  margin: 0 auto 18px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+@media (max-width: 700px) {
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card h4 {
+  margin: 10px 0 1px;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+}
+
+.team-card p {
+  margin: 0;
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 22px;
+}
+
+@media (max-width: 700px) {
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.stat-grid .num {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: var(--terracotta-dark);
+}
+
+.stat-grid .lbl {
+  font-size: 11px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.hero-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  background: var(--cream-card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px 28px;
+  margin-top: 22px;
+}
+
+.hero-stat .num {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  color: var(--mahogany);
+  line-height: 1;
+}
+
+.hero-stat .lbl {
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.chart-box {
+  background: var(--cream-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 14px;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  height: 160px;
+  margin-top: 10px;
+}
+
+.chart-bars .bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.chart-bars .bar {
+  width: 100%;
+  background: linear-gradient(180deg, var(--terracotta), var(--mahogany));
+  border-radius: 5px 5px 0 0;
+}
+
+.chart-bars .bar-label {
+  font-size: 10px;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+
+.reel-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  margin-top: 16px;
+  padding-bottom: 4px;
+}
+
+.reel-row > div {
+  flex: 0 0 108px;
+}
+
+.reel-card {
+  position: relative;
+  width: 108px;
+  height: 168px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.reel-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.reel-label {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.ethics-box {
+  background: var(--cream-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 14px;
+}
+
+.ethics-box ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.social-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.room-tile {
+  background: var(--cream-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 14px;
+  text-align: center;
+  transition: 0.15s;
+  color: inherit;
+  font: inherit;
+  display: inline-block;
+}
+
+.room-tile:hover {
+  border-color: var(--terracotta);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.social-row .room-tile {
+  padding: 9px 14px;
+  font-size: 12px;
+}
