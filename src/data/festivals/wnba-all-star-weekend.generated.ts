@@ -4,103 +4,7 @@ import type { PrideEvent } from '../../types/event';
 
 export const generatedEvents: PrideEvent[] = [
   {
-    "id": "wnba-all-star-weekend-46",
-    "festival": "wnba-all-star-weekend",
-    "day": "friday",
-    "dayDate": "2026-07-24",
-    "dayLabel": "Friday",
-    "name": "WNBA All-Star Weekend: THE DRAFT",
-    "organizer": "Girlytheceo + Queer Aunties",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "flirt ass shaking grown & sexy groove",
-    "free": false,
-    "price": "$45.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "7:00 PM",
-    "location": "Level Sporting Club · 3343 N. Clark Street, Chicago",
-    "vibeTags": [
-      "Flirt",
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://www.queeraunties.com/pricing",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "flyerUrl": "https://www.instagram.com/p/DZoCqtij7WN/?img_index=1",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-47",
-    "festival": "wnba-all-star-weekend",
-    "day": "saturday",
-    "dayDate": "2026-07-25",
-    "dayLabel": "Saturday",
-    "name": "WNBA All-Star Weekend: FOR THE LOVE OF BASKETBALL",
-    "organizer": "Girlytheceo + Queer Aunties",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "flirt ass shaking grown & sexy groove",
-    "free": false,
-    "price": "$45.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Secret Location · Location will be shared with guests prior to event",
-    "vibeTags": [
-      "Flirt",
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://www.queeraunties.com/pricing",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "flyerUrl": "https://www.instagram.com/p/DZoCqtij7WN/?img_index=1",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-48",
-    "festival": "wnba-all-star-weekend",
-    "day": "thursday",
-    "dayDate": "2026-07-02",
-    "dayLabel": "Thursday",
-    "name": "WNBA ASW ‘26 Cousins Camp",
-    "organizer": "Off The Dribble + Clubhouse Buckets",
-    "types": [
-      "meetup",
-      "outdoors-hangout"
-    ],
-    "vibesRaw": "community games",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Outdoors Hangout",
-      "Free"
-    ],
-    "time": "",
-    "location": "The Chi",
-    "vibeTags": [
-      "Community",
-      "Games"
-    ],
-    "ctaHref": "https://www.heylo.com/g/7fd1f873-5b39-42d3-b666-c2651567cd81?utm_content=vanity-url&utm_medium=referral&utm_source=l.threads.com",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-49",
+    "id": "wnba-all-star-weekend-57",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -132,7 +36,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-50",
+    "id": "wnba-all-star-weekend-58",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -164,76 +68,13 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-51",
-    "festival": "wnba-all-star-weekend",
-    "day": "saturday",
-    "dayDate": "2026-07-25",
-    "dayLabel": "Saturday",
-    "name": "TOGETHXR House: Chicago, we're Home. 🏀",
-    "organizer": "TOGETHXR House",
-    "types": [
-      "meetup"
-    ],
-    "vibesRaw": "community food games",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Free"
-    ],
-    "time": "9:30 AM",
-    "location": "Big City Pickle (West Loop) · 113 N Elizabeth St, Chicago, IL 60607",
-    "vibeTags": [
-      "Community",
-      "Food",
-      "Games"
-    ],
-    "ctaHref": "https://www.togethxr.com/pages/togethxr-house",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.instagram.com/p/DaQSdIkEc6l/?hl=en&img_index=1",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-52",
-    "festival": "wnba-all-star-weekend",
-    "day": "thursday",
-    "dayDate": "2026-07-23",
-    "dayLabel": "Thursday",
-    "name": "Drip Social x 2026 WNBA All-Star Kickoff",
-    "organizer": "dripsocialhq",
-    "types": [
-      "meetup"
-    ],
-    "vibesRaw": "community food games",
-    "free": false,
-    "price": "$35.00",
-    "badges": [
-      "Meetup"
-    ],
-    "time": "7:00 PM",
-    "location": "Please register to see the exact location of this event.",
-    "vibeTags": [
-      "Community",
-      "Food",
-      "Games"
-    ],
-    "ctaHref": "https://luma.com/8x6xkao9?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnD2dNHyONyexdmYhTU7N8u968CBpM5ed7lxAZThLTcKjJafjZbxqrmG6TJuM_aem_NL4Zgrv1X8yGm1IDBPcICA&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3&utm_medium=social&utm_source=ig",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.instagram.com/p/DYSO0vHDiqT/?hl=en&img_index=1",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-53",
+    "id": "wnba-all-star-weekend-59",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
     "dayLabel": "Friday",
     "name": "Future of Sports: Investing in Athletes",
-    "organizer": "State Street Investment Management SPY",
+    "organizer": "Front Office Sports Live",
     "types": [
       "meetup"
     ],
@@ -259,158 +100,45 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-54",
-    "festival": "wnba-all-star-weekend",
-    "day": "thursday",
-    "dayDate": "2026-07-23",
-    "dayLabel": "Thursday",
-    "name": "Run It Back Chicago: The All-Star Fundraising Gala",
-    "organizer": "Run It Back",
-    "types": [
-      "meetup",
-      "educational"
-    ],
-    "vibesRaw": "community food games networking",
-    "free": false,
-    "price": "$100.00",
-    "badges": [
-      "Meetup",
-      "Educational"
-    ],
-    "time": "5:00 PM",
-    "location": "Salesforce Tower Chicago · 333 W Wolf Point Plaza, Chicago, IL 60654, USA",
-    "vibeTags": [
-      "Community",
-      "Food",
-      "Games",
-      "Networking"
-    ],
-    "ctaHref": "https://www.werunitback.org/event-details/run-it-back-chicago-the-all-star-fundraising-gala",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.threads.com/@lexismickens/post/DaQXKMkDhPN/good-morning-thriends-its-wednesday-and-you-know-what-also-starts-with-a-w-our/",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-58",
-    "festival": "wnba-all-star-weekend",
-    "day": "thursday",
-    "dayDate": "2026-07-23",
-    "dayLabel": "Thursday",
-    "name": "The Green Room — a WNBA All-Star Weekend activation",
-    "organizer": "Social Market Agency",
-    "types": [
-      "meetup"
-    ],
-    "vibesRaw": "community food games networking",
-    "free": false,
-    "price": "$28.00",
-    "badges": [
-      "Meetup"
-    ],
-    "time": "4:00 PM",
-    "location": "Level Sporting Club · 3343 N. Clark St, Chicago, IL 60657",
-    "vibeTags": [
-      "Community",
-      "Food",
-      "Games",
-      "Networking"
-    ],
-    "ctaHref": "https://app.promotix.com/events/details/The-Green-Room-tickets?utm_source=threads&utm_medium=social&utm_content=link_in_bio",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.threads.com/@mov.bri/post/DaMHI0JDd23/introducing-the-green-room-a-wnba-all-star-weekend-activation-presented-by/",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-59",
+    "id": "wnba-all-star-weekend-60",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
     "dayLabel": "Friday",
-    "name": "Full Court Salon- an exploration of beauty, identity, and women’s basketball",
+    "name": "Full Court Salon: Movement Session 1 w/ Chicago JumpClub",
     "organizer": "@leagueoftheirownchi + @sweetteasbeautysupply.la + JD Sports US",
-    "types": [],
-    "vibesRaw": "",
-    "free": false,
-    "badges": [],
-    "time": "",
-    "location": "The Chi",
-    "vibeTags": [],
-    "ctaHref": "https://www.instagram.com/p/DaQR9MTRP9X/?hl=en",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party",
-    "flyerUrl": "https://www.instagram.com/p/DaQR9MTRP9X/?hl=en",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-60",
-    "festival": "wnba-all-star-weekend",
-    "day": "saturday",
-    "dayDate": "2026-07-25",
-    "dayLabel": "Saturday",
-    "name": "Full Court Salon- an exploration of beauty, identity, and women’s basketball",
-    "organizer": "@leagueoftheirownchi + @sweetteasbeautysupply.la + JD Sports US",
-    "types": [],
-    "vibesRaw": "",
-    "free": false,
-    "badges": [],
-    "time": "",
-    "location": "The Chi",
-    "vibeTags": [],
-    "ctaHref": "https://www.instagram.com/p/DaQR9MTRP9X/?hl=en",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party",
+    "types": [
+      "outdoors-hangout",
+      "workshop"
+    ],
+    "vibesRaw": "wellness",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Outdoors Hangout",
+      "Workshop",
+      "Free"
+    ],
+    "time": "11:30 AM",
+    "location": "Hoste in Chicago · 1857 W 16th St, Chicago, IL 60608",
+    "vibeTags": [
+      "Wellness"
+    ],
+    "ctaHref": "https://sweatpals.com/event/full-court-salon-movement-session-1-w-chicago-jumpclub?utm_source=user_share_eae38ef8-1b9f-4b3a-abcd-41e3df13ae07&utm_medium=shared_link&utm_campaign=event_share",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-outdoors-hangout",
     "flyerUrl": "https://www.instagram.com/p/DaQR9MTRP9X/?hl=en",
     "city": "chicago"
   },
   {
     "id": "wnba-all-star-weekend-61",
     "festival": "wnba-all-star-weekend",
-    "day": "thursday",
-    "dayDate": "2026-07-23",
-    "dayLabel": "Thursday",
-    "name": "LESBIAN ALL STAR WEEKEND: Thursday: Exclusive Welcome WLW Mixer",
-    "organizer": "@blissxsundays",
-    "types": [
-      "meetup"
-    ],
-    "vibesRaw": "chill networking community food groove games grown & sexy",
-    "free": false,
-    "price": "$27.00",
-    "badges": [
-      "Meetup"
-    ],
-    "time": "5:00 PM",
-    "location": "Nobody's Darling · 1744 W Balmoral Ave, Chicago, IL 60640",
-    "vibeTags": [
-      "Chill",
-      "Networking",
-      "Community",
-      "Food",
-      "Groove",
-      "Games",
-      "Grown & Sexy"
-    ],
-    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=BlissSundays",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-62",
-    "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
     "dayLabel": "Friday",
     "name": "LESBIAN ALL STAR WEEKEND: Friday: Sneaker Ball",
-    "organizer": "@blissxsundays",
+    "organizer": "Ladies Love Us, Bliss Sundays & Lovers and Friends",
     "types": [
       "after-dark"
     ],
@@ -429,159 +157,16 @@ export const generatedEvents: PrideEvent[] = [
       "Groove",
       "Grown & Sexy"
     ],
-    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=BlissSundays",
+    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=SQW",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
+    "discountCode": "SQW",
     "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-63",
-    "festival": "wnba-all-star-weekend",
-    "day": "saturday",
-    "dayDate": "2026-07-25",
-    "dayLabel": "Saturday",
-    "name": "LESBIAN ALL STAR WEEKEND: Saturday: Walk/Run Club",
-    "organizer": "@blissxsundays",
-    "types": [
-      "outdoors-hangout",
-      "meetup"
-    ],
-    "vibesRaw": "community wellness",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Outdoors Hangout",
-      "Meetup",
-      "Free"
-    ],
-    "time": "10:00 AM",
-    "location": "Tunnel · 151 W Kinzie St, Chicago, IL 60654",
-    "vibeTags": [
-      "Community",
-      "Wellness"
-    ],
-    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=BlissSundays",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-outdoors-hangout",
-    "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-64",
-    "festival": "wnba-all-star-weekend",
-    "day": "sunday",
-    "dayDate": "2026-07-26",
-    "dayLabel": "Sunday",
-    "name": "LESBIAN ALL STAR WEEKEND: Sunday: Brunch Day Party",
-    "organizer": "@blissxsundays",
-    "types": [
-      "brunch",
-      "day-party"
-    ],
-    "vibesRaw": "flirt community grown & sexy groove open bar food",
-    "free": false,
-    "price": "$27.00",
-    "badges": [
-      "Brunch",
-      "Day Party"
-    ],
-    "time": "9:00 PM",
-    "location": "Dime Chi · 2263 N Lincoln Ave, Chicago, IL 60614",
-    "vibeTags": [
-      "Flirt",
-      "Community",
-      "Grown & Sexy",
-      "Groove",
-      "Open Bar",
-      "Food"
-    ],
-    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=BlissSundays",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-brunch",
-    "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-65",
-    "festival": "wnba-all-star-weekend",
-    "day": "thursday",
-    "dayDate": "2026-07-23",
-    "dayLabel": "Thursday",
-    "name": "LESBIAN ALL STAR WEEKEND: ALL ACCESS PASS",
-    "organizer": "@blissxsundays",
-    "types": [
-      "brunch",
-      "day-party",
-      "after-dark",
-      "meetup"
-    ],
-    "vibesRaw": "flirt community grown & sexy groove open bar food chill networking",
-    "free": false,
-    "price": "$105.00",
-    "badges": [
-      "Brunch",
-      "Day Party",
-      "After Dark",
-      "Meetup"
-    ],
-    "time": "12:00 PM",
-    "location": "Across locations",
-    "vibeTags": [
-      "Flirt",
-      "Community",
-      "Grown & Sexy",
-      "Groove",
-      "Open Bar",
-      "Food",
-      "Chill",
-      "Networking"
-    ],
-    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=BlissSundays",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-brunch",
-    "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-66",
-    "festival": "wnba-all-star-weekend",
-    "day": "saturday",
-    "dayDate": "2026-07-25",
-    "dayLabel": "Saturday",
-    "name": "LESBIAN WNBA ALL-STAR WEEKEND AFTER PARTY",
-    "organizer": "Dirty Matriarch",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "flirt community grown & sexy groove ass shaking",
-    "free": false,
-    "price": "$38.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "9:00 PM",
-    "location": "Joy District · 112 W Hubbard St, Chicago, 60654",
-    "vibeTags": [
-      "Flirt",
-      "Community",
-      "Grown & Sexy",
-      "Groove",
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://speakeasygo.com/event/EVE-D205Y5?t=BlissSundays",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-67",
+    "id": "wnba-all-star-weekend-62",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -612,7 +197,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-68",
+    "id": "wnba-all-star-weekend-63",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -645,7 +230,454 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
+    "id": "wnba-all-star-weekend-64",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "Care Beyond the Court presented by Planned Parenthood @ Hoop House",
+    "organizer": "Hoop Vision",
+    "types": [
+      "educational"
+    ],
+    "vibesRaw": "community chill wellness",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Educational",
+      "Free"
+    ],
+    "time": "12:00 PM",
+    "location": "Hoop House | Downtown Chicago · Please register to see the exact location of this event.",
+    "vibeTags": [
+      "Community",
+      "Chill",
+      "Wellness"
+    ],
+    "ctaHref": "https://luma.com/v7m6ieym",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-educational",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-65",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "In The Arena: WNBA All-Star Weekend",
+    "organizer": "Parul Khosla: Co-Founder & CEO of Arena",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "networking community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Free"
+    ],
+    "time": "2:00 PM",
+    "location": "Centre Court Productions · 469 N Racine Ave, Chicago, IL 60642, USA",
+    "vibeTags": [
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://luma.com/7m453p4o?fbclid=PARlRTSAS7p7dwZG9mAmV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpwwiCOyZuTsCgMiz2SjSet-aUPLMs4Oatgbvkia50ucohRnVS1fUe579MEq9_aem_3ZL4orXghU0wPr2AKNKa8Q&utm_id=97760_v0_s00_e0_tv4",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-66",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "Beyond The Game: Women Who Win",
+    "organizer": "iBall Athletics",
+    "types": [
+      "workshop",
+      "educational"
+    ],
+    "vibesRaw": "chill networking",
+    "free": false,
+    "price": "$25.00",
+    "badges": [
+      "Workshop",
+      "Educational"
+    ],
+    "time": "12:00 PM",
+    "location": "Brûlée · 2036 South Michigan Avenue\nChicago, IL 60616",
+    "vibeTags": [
+      "Chill",
+      "Networking"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/beyond-the-game-women-who-win-tickets-1993579603259",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/DagTDdhz6W4/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-67",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "All Star Weekend Live",
+    "organizer": "iHeaert Women Sports",
+    "types": [
+      "live-show"
+    ],
+    "vibesRaw": "games",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Live Show",
+      "Free"
+    ],
+    "time": "1:00 PM",
+    "location": "Level Sporting Club · 3343 N Clark St, Chicago, IL 60657",
+    "vibeTags": [
+      "Games"
+    ],
+    "ctaHref": "https://www.instagram.com/p/Da8hfDSvu77/?hl=en",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-live-show",
+    "flyerUrl": "https://www.instagram.com/p/Da8hfDSvu77/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-68",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "Full Court Salon: Movement Session 1 w/ Chicago JumpClub",
+    "organizer": "Full Court Salon",
+    "types": [
+      "meetup",
+      "outdoors-hangout"
+    ],
+    "vibesRaw": "creative community games",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Outdoors Hangout",
+      "Free"
+    ],
+    "time": "11:30 AM",
+    "location": "Industrial Modern Event Space & Cocktail Venue | Hoste · 1857 W 16th St, Chicago, IL 60608, USA",
+    "vibeTags": [
+      "Creative",
+      "Community",
+      "Games"
+    ],
+    "ctaHref": "https://sweatpals.com/event/full-court-salon-movement-session-1-w-chicago-jumpclub?utm_source=user_share_eae38ef8-1b9f-4b3a-abcd-41e3df13ae07&utm_medium=shared_link&utm_campaign=event_share",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/p/Da8f-7sGF2z/?img_index=1",
+    "city": "chicago"
+  },
+  {
     "id": "wnba-all-star-weekend-69",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "Coach Story Sessions: Celebrating Legacy",
+    "organizer": "Lisa Leslie, Azzi Fudd, and Jordan Chiles",
+    "types": [
+      "workshop",
+      "educational"
+    ],
+    "vibesRaw": "cultural chill",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Educational",
+      "Free"
+    ],
+    "time": "11:30 AM",
+    "location": "Offshore Rooftop · 1000 E Grand, Chicago, IL",
+    "vibeTags": [
+      "Cultural",
+      "Chill"
+    ],
+    "ctaHref": "https://www.instagram.com/p/Da4GKjjoV8m/",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/Da4GKjjoV8m/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-70",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "Women in Sports Pilates",
+    "organizer": "Dev Ward + Lexi Mickens",
+    "types": [
+      "workshop"
+    ],
+    "vibesRaw": "wellness networking community",
+    "free": false,
+    "badges": [
+      "Workshop"
+    ],
+    "time": "9:30 AM",
+    "location": "SNIPES · 4757 W Cermak Rd Cicero IL 60804",
+    "vibeTags": [
+      "Wellness",
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://www.instagram.com/p/DbBWygJOpro/?hl=en",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/DbBWygJOpro/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-71",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "WNBA All Star Lesbian Hoop Her Weekend\nAll Access Pass",
+    "organizer": "The Real Mrs. Diva",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "flirt community ass shaking",
+    "free": false,
+    "price": "$60.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "1:00 PM",
+    "location": "Multiple Locations",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/wnba-all-star-lesbian-hoop-her-weekend-tickets-1989131877993?aff=oddtdtcreator",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "flyerUrl": "https://www.instagram.com/p/Da9IAiNtP6i/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-72",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "HOUSE OF HER at AIRE ROOFTOP",
+    "organizer": "The Real Mrs. Diva",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "flirt community ass shaking",
+    "free": false,
+    "price": "$23.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "Aire Rooftop Chicago · 100 W Monroe St (Floor 24), Chicago, IL",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/wnba-all-star-lesbian-hoop-her-weekend-tickets-1989131877993?aff=oddtdtcreator",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "flyerUrl": "https://www.instagram.com/p/Da9IAiNtP6i/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-73",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "WNBA All-Star Hoop HER Weekend: House of HER Kickoff Party",
+    "organizer": "The Real Ms. Diva & Pink Diamond Ent. & Kaystar-Ent.",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "groove grown & sexy flirt 30+",
+    "free": false,
+    "price": "$23.50",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "Aire Rooftop Chicago · 100 W Monroe St (Floor 24), Chicago, IL",
+    "vibeTags": [
+      "Groove",
+      "Grown & Sexy",
+      "Flirt",
+      "30+"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/wnba-all-star-lesbian-hoop-her-weekend-tickets-1989131877993?aff=oddtdtcreator",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-75",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "TOGETHXR House: Chicago, we're Home. 🏀",
+    "organizer": "TOGETHXR House",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "community food games",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Free"
+    ],
+    "time": "9:30 AM",
+    "location": "Big City Pickle (West Loop) · 113 N Elizabeth St, Chicago, IL 60607",
+    "vibeTags": [
+      "Community",
+      "Food",
+      "Games"
+    ],
+    "ctaHref": "https://www.togethxr.com/pages/togethxr-house",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/p/DaQSdIkEc6l/?hl=en&img_index=1",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-76",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "LOTO x Sweet Tea's Beauty Supply: WNBA All-Star Full Court Salon",
+    "organizer": "@leagueoftheirownchi + @sweetteasbeautysupply.la + JD Sports US",
+    "types": [
+      "workshop",
+      "educational"
+    ],
+    "vibesRaw": "cultural wellness merch",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Educational",
+      "Free"
+    ],
+    "time": "12:00 PM",
+    "location": "Hoste in Chicago · 1857 W 16th St, Chicago, IL 60608",
+    "vibeTags": [
+      "Cultural",
+      "Wellness",
+      "Merch"
+    ],
+    "ctaHref": "https://sweatpals.com/event/loto-x-sweet-teas-beauty-supply-full-court-salon?utm_source=user_share_eae38ef8-1b9f-4b3a-abcd-41e3df13ae07&utm_medium=shared_link&utm_campaign=event_share",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/DaQR9MTRP9X/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-77",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "LESBIAN ALL STAR WEEKEND: Saturday: Walk/Run Club",
+    "organizer": "Ladies Love Us, Bliss Sundays & Lovers and Friends",
+    "types": [
+      "outdoors-hangout",
+      "meetup"
+    ],
+    "vibesRaw": "community wellness",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Outdoors Hangout",
+      "Meetup",
+      "Free"
+    ],
+    "time": "10:00 AM",
+    "location": "Tunnel · 151 W Kinzie St, Chicago, IL 60654",
+    "vibeTags": [
+      "Community",
+      "Wellness"
+    ],
+    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=SQW",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-outdoors-hangout",
+    "discountCode": "SQW",
+    "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-78",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "LESBIAN WNBA ALL-STAR WEEKEND AFTER PARTY",
+    "organizer": "Dirty Matriarch, Ladies Love Us, Bliss Sundays & Lovers and Friends",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "flirt community grown & sexy groove ass shaking",
+    "free": false,
+    "price": "$38.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "9:00 PM",
+    "location": "Joy District · 112 W Hubbard St, Chicago, 60654",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Grown & Sexy",
+      "Groove",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=SQW",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "discountCode": "SQW",
+    "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-79",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -677,10 +709,11 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-meetup",
+    "discountCode": "SQW + $5 donation",
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-70",
+    "id": "wnba-all-star-weekend-80",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -712,71 +745,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-73",
-    "festival": "wnba-all-star-weekend",
-    "day": "thursday",
-    "dayDate": "2026-07-23",
-    "dayLabel": "Thursday",
-    "name": "Above The Rim: All-Star Weekend",
-    "organizer": "The Wine Down: An R&B Experience",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "flirt grown & sexy groove",
-    "free": false,
-    "price": "$35.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "9:00 PM",
-    "location": "Chez Event Venue · 247 E Ontario St 2nd floor, Chicago, IL 60611, USA",
-    "vibeTags": [
-      "Flirt",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://posh.vip/e/above-the-rim-allstar-weekend-1?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnlAbW1RDuZiz4os7usFjclw-OBdAn9gg63o82hPOZqOyqZtaJQtjQEsmhx0k_aem_nCNoW5-jAKVvSPpDt0d1OQ",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "flyerUrl": "https://www.instagram.com/p/DaQt7rakbSb/?img_index=1",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-74",
-    "festival": "wnba-all-star-weekend",
-    "day": "thursday",
-    "dayDate": "2026-07-23",
-    "dayLabel": "Thursday",
-    "name": "Off The Court during WNBA All-Star Weekend",
-    "organizer": "Syd Michelle",
-    "types": [
-      "workshop",
-      "educational"
-    ],
-    "vibesRaw": "networking community",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Workshop",
-      "Educational",
-      "Free"
-    ],
-    "time": "12:00 PM",
-    "location": "The Chi",
-    "vibeTags": [
-      "Networking",
-      "Community"
-    ],
-    "ctaHref": "https://www.instagram.com/p/DaWYIUMCbUT/?img_index=1",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop",
-    "flyerUrl": "https://www.instagram.com/p/DaWYIUMCbUT/?img_index=1",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-75",
+    "id": "wnba-all-star-weekend-81",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -808,7 +777,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-76",
+    "id": "wnba-all-star-weekend-82",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -844,7 +813,697 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-77",
+    "id": "wnba-all-star-weekend-83",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "\"Basketball is my therapy!\":WNBA All-Star Game Watch Party",
+    "organizer": "DJ Kidd Swag &  DJ Cash Era",
+    "types": [
+      "meetup",
+      "day-party"
+    ],
+    "vibesRaw": "community food games groove",
+    "free": false,
+    "price": "$20.00",
+    "badges": [
+      "Meetup",
+      "Day Party"
+    ],
+    "time": "6:00 PM",
+    "location": "The Origin · 2010 W Armitage Chicago, IL 60647",
+    "vibeTags": [
+      "Community",
+      "Food",
+      "Games",
+      "Groove"
+    ],
+    "ctaHref": "https://events.eventnoire.com/e/wnbaallstar",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "discountCode": "SQW 10% off",
+    "flyerUrl": "https://www.instagram.com/p/Dal9qf2RQWA/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-84",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "\"Basketball is my therapy!\": WNBA All-Star Game After Party",
+    "organizer": "DJ Kidd Swag &  DJ Cash Era",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "flirt ass shaking food",
+    "free": false,
+    "price": "$35.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "9:00 PM",
+    "location": "The Origin · 2010 W Armitage Chicago, IL 60647",
+    "vibeTags": [
+      "Flirt",
+      "Ass Shaking",
+      "Food"
+    ],
+    "ctaHref": "https://events.eventnoire.com/e/wnbaallstar",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "discountCode": "SQW 10% off",
+    "flyerUrl": "https://www.instagram.com/p/Dal9qf2RQWA/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-85",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "WNBA All Star Weekend Heart of a Champion Community Event hosted",
+    "organizer": "Project LOVE Chicago & Sneakers 2 Scrubs",
+    "types": [
+      "workshop",
+      "educational"
+    ],
+    "vibesRaw": "family wellness",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Educational",
+      "Free"
+    ],
+    "time": "10:00 AM",
+    "location": "University of Chicago — Gerald Ratner Athletic Center · 5530 South Ellis Avenue, Chicago, IL 60637",
+    "vibeTags": [
+      "Family",
+      "Wellness"
+    ],
+    "ctaHref": "https://events.eventnoire.com/e/heart-of-a-champ",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/Da6GBdEgZli/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-86",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "Nobody's Darling: WNBA All Star Watch Party",
+    "organizer": "Nobody's Darling",
+    "types": [
+      "happy-hour",
+      "meetup"
+    ],
+    "vibesRaw": "games community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Happy Hour",
+      "Meetup",
+      "Free"
+    ],
+    "time": "7:30 PM",
+    "location": "Nobody’s Darling · 1744 W. Balmoral Ave. | Chicago",
+    "vibeTags": [
+      "Games",
+      "Community"
+    ],
+    "ctaHref": "https://www.instagram.com/p/Da5yStIMnT4/",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour",
+    "flyerUrl": "https://www.instagram.com/p/Da5yStIMnT4/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-87",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "HOOPHER AFTERPARY at ST. PATRICKS",
+    "organizer": "The Real Mrs. Diva",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "flirt community ass shaking",
+    "free": false,
+    "price": "$28.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "6:00 PM",
+    "location": "St Patrick's · 15022 Lincoln Ave, Dolton, IL",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/wnba-all-star-lesbian-hoop-her-weekend-tickets-1989131877993?aff=oddtdtcreator",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "flyerUrl": "https://www.instagram.com/p/Da9IAiNtP6i/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-88",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "HOOPHER AFTERPARY VIP EXPERIENCE",
+    "organizer": "The Real Mrs. Diva",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "flirt community ass shaking",
+    "free": false,
+    "price": "$108.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "6:00 PM",
+    "location": "St Patrick's · 15022 Lincoln Ave, Dolton, IL",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/wnba-all-star-lesbian-hoop-her-weekend-tickets-1989131877993?aff=oddtdtcreator",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "flyerUrl": "https://www.instagram.com/p/Da9IAiNtP6i/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-90",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "WNBA 2026 All-Star Game Group Outing",
+    "organizer": "Class C Entertainment",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "community",
+    "free": false,
+    "price": "$290.00",
+    "badges": [
+      "Meetup"
+    ],
+    "time": "7:30 PM",
+    "location": "United Center · 1901 W Madison St, Chicago, IL 60612",
+    "vibeTags": [
+      "Community"
+    ],
+    "ctaHref": "",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-91",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "WNBA All-Star Hoop HER Weekend: HER Rooftop After Party",
+    "organizer": "The Real Ms. Diva & Pink Diamond Ent. & Kaystar-Ent.",
+    "types": [
+      "day-party",
+      "after-dark"
+    ],
+    "vibesRaw": "grown & sexy groove flirt",
+    "free": false,
+    "price": "$28.50",
+    "badges": [
+      "Day Party",
+      "After Dark"
+    ],
+    "time": "6:00 PM",
+    "location": "St Patrick's · 15022 Lincoln Ave, Dolton, IL",
+    "vibeTags": [
+      "Grown & Sexy",
+      "Groove",
+      "Flirt"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/wnba-all-star-lesbian-hoop-her-weekend-tickets-1989131877993?aff=oddtdtcreator",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-92",
+    "festival": "wnba-all-star-weekend",
+    "day": "sunday",
+    "dayDate": "2026-07-26",
+    "dayLabel": "Sunday",
+    "name": "LESBIAN ALL STAR WEEKEND: Sunday: Brunch Day Party",
+    "organizer": "Ladies Love Us, Bliss Sundays & Lovers and Friends",
+    "types": [
+      "brunch",
+      "day-party"
+    ],
+    "vibesRaw": "flirt community grown & sexy groove open bar food",
+    "free": false,
+    "price": "$27.00",
+    "badges": [
+      "Brunch",
+      "Day Party"
+    ],
+    "time": "12:00 PM",
+    "location": "Dime Chi · 2263 N Lincoln Ave, Chicago, IL 60614",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Grown & Sexy",
+      "Groove",
+      "Open Bar",
+      "Food"
+    ],
+    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=SQW",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-brunch",
+    "discountCode": "SQW",
+    "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-93",
+    "festival": "wnba-all-star-weekend",
+    "day": "sunday",
+    "dayDate": "2026-07-26",
+    "dayLabel": "Sunday",
+    "name": "HOOP HER DAY PARTY at HUBBARD INN",
+    "organizer": "The Real Mrs. Diva",
+    "types": [
+      "brunch",
+      "day-party"
+    ],
+    "vibesRaw": "flirt community ass shaking",
+    "free": false,
+    "price": "$23.00",
+    "badges": [
+      "Brunch",
+      "Day Party"
+    ],
+    "time": "1:00 PM",
+    "location": "Hubbard Inn (1st FLOOR) · 110 W Hubbard St, Chicago, IL",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/wnba-all-star-lesbian-hoop-her-weekend-tickets-1989131877993?aff=oddtdtcreator",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-brunch",
+    "flyerUrl": "https://www.instagram.com/p/Da9IAiNtP6i/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-94",
+    "festival": "wnba-all-star-weekend",
+    "day": "sunday",
+    "dayDate": "2026-07-26",
+    "dayLabel": "Sunday",
+    "name": "WNBA All-Star Finale Day Party: Rookies & Legends",
+    "organizer": "All Girls Chi and Blasé",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "flirt community ass shaking",
+    "free": false,
+    "price": "$34.00",
+    "badges": [
+      "Day Party"
+    ],
+    "time": "3:00 PM",
+    "location": "Hubbard Inn · 110 W Hubbard St, Chicago, IL",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://posh.vip/e/wnba-allstar-finale-day-party-rookies-legends",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "flyerUrl": "https://www.tiktok.com/@lifeonq/photo/7662590940942568717",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-95",
+    "festival": "wnba-all-star-weekend",
+    "day": "sunday",
+    "dayDate": "2026-07-26",
+    "dayLabel": "Sunday",
+    "name": "WNBA All-Star Hoop HER Weekend: HER Finale The Last Shot",
+    "organizer": "The Real Ms. Diva & Pink Diamond Ent. & Kaystar-Ent.",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "flirt groove grown & sexy",
+    "free": false,
+    "price": "$23.50",
+    "badges": [
+      "Day Party"
+    ],
+    "time": "3:00 PM",
+    "location": "Hubbard Inn · 110 W Hubbard St, Chicago, IL",
+    "vibeTags": [
+      "Flirt",
+      "Groove",
+      "Grown & Sexy"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/wnba-all-star-lesbian-hoop-her-weekend-tickets-1989131877993?aff=oddtdtcreator",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-96",
+    "festival": "wnba-all-star-weekend",
+    "day": "sunday",
+    "dayDate": "2026-07-26",
+    "dayLabel": "Sunday",
+    "name": "Picnic at the Park",
+    "organizer": "Starlight Sapphic",
+    "types": [
+      "meetup",
+      "outdoors-hangout"
+    ],
+    "vibesRaw": "chill community food",
+    "free": false,
+    "price": "$7.50",
+    "badges": [
+      "Meetup",
+      "Outdoors Hangout"
+    ],
+    "time": "1:00 PM",
+    "location": "Ping Tom Memorial Park · 1700 S Wentworth Ave, Chicago, IL",
+    "vibeTags": [
+      "Chill",
+      "Community",
+      "Food"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/starlight-sapphic-presents-picnic-at-the-park-tickets-1990799782741?utm_experiment=test_share_listing&aff=ebdsshios&sg=eddad93ac96307b0c76b6a4c29301dbb90ddb47e0c605dbbf282b56a7c912a12f51f33832c20f888a1f857e3602ba061b62902f2b22f35b12a3c6c0d381646cccd05f9d185cc5a58195ec74004",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-97",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-02",
+    "dayLabel": "Thursday",
+    "name": "WNBA ASW ‘26 Cousins Camp",
+    "organizer": "Off The Dribble + Clubhouse Buckets",
+    "types": [
+      "meetup",
+      "outdoors-hangout"
+    ],
+    "vibesRaw": "community games",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Outdoors Hangout",
+      "Free"
+    ],
+    "time": "",
+    "location": "The Chi",
+    "vibeTags": [
+      "Community",
+      "Games"
+    ],
+    "ctaHref": "https://www.heylo.com/g/7fd1f873-5b39-42d3-b666-c2651567cd81?utm_content=vanity-url&utm_medium=referral&utm_source=l.threads.com",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-98",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "Drip Social x 2026 WNBA All-Star Kickoff",
+    "organizer": "dripsocialhq",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "community food games",
+    "free": false,
+    "price": "$35.00",
+    "badges": [
+      "Meetup"
+    ],
+    "time": "7:00 PM",
+    "location": "Please register to see the exact location of this event.",
+    "vibeTags": [
+      "Community",
+      "Food",
+      "Games"
+    ],
+    "ctaHref": "https://luma.com/8x6xkao9?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnD2dNHyONyexdmYhTU7N8u968CBpM5ed7lxAZThLTcKjJafjZbxqrmG6TJuM_aem_NL4Zgrv1X8yGm1IDBPcICA&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3&utm_medium=social&utm_source=ig",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/p/DYSO0vHDiqT/?hl=en&img_index=1",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-99",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "Run It Back Chicago: The All-Star Fundraising Gala",
+    "organizer": "Run It Back",
+    "types": [
+      "meetup",
+      "educational"
+    ],
+    "vibesRaw": "community food games networking",
+    "free": false,
+    "price": "$100.00",
+    "badges": [
+      "Meetup",
+      "Educational"
+    ],
+    "time": "5:00 PM",
+    "location": "Salesforce Tower Chicago · 333 W Wolf Point Plaza, Chicago, IL 60654, USA",
+    "vibeTags": [
+      "Community",
+      "Food",
+      "Games",
+      "Networking"
+    ],
+    "ctaHref": "https://www.werunitback.org/event-details/run-it-back-chicago-the-all-star-fundraising-gala",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.threads.com/@lexismickens/post/DaQXKMkDhPN/good-morning-thriends-its-wednesday-and-you-know-what-also-starts-with-a-w-our/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-100",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "The Green Room — a WNBA All-Star Weekend activation",
+    "organizer": "Social Market Agency",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "community food games networking",
+    "free": false,
+    "price": "$28.00",
+    "badges": [
+      "Meetup"
+    ],
+    "time": "4:00 PM",
+    "location": "Level Sporting Club · 3343 N. Clark St, Chicago, IL 60657",
+    "vibeTags": [
+      "Community",
+      "Food",
+      "Games",
+      "Networking"
+    ],
+    "ctaHref": "https://app.promotix.com/events/details/The-Green-Room-tickets?utm_source=threads&utm_medium=social&utm_content=link_in_bio",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.threads.com/@mov.bri/post/DaMHI0JDd23/introducing-the-green-room-a-wnba-all-star-weekend-activation-presented-by/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-101",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "LESBIAN ALL STAR WEEKEND: Thursday: Exclusive Welcome WLW Mixer",
+    "organizer": "Ladies Love Us, Bliss Sundays & Lovers and Friends",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "chill networking community food groove games grown & sexy",
+    "free": false,
+    "price": "$27.00",
+    "badges": [
+      "Meetup"
+    ],
+    "time": "5:00 PM",
+    "location": "Nobody's Darling · 1744 W Balmoral Ave, Chicago, IL 60640",
+    "vibeTags": [
+      "Chill",
+      "Networking",
+      "Community",
+      "Food",
+      "Groove",
+      "Games",
+      "Grown & Sexy"
+    ],
+    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=SQW",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "discountCode": "SQW",
+    "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-102",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "LESBIAN ALL STAR WEEKEND: ALL ACCESS PASS",
+    "organizer": "Ladies Love Us, Bliss Sundays & Lovers and Friends",
+    "types": [
+      "brunch",
+      "day-party",
+      "after-dark",
+      "meetup"
+    ],
+    "vibesRaw": "flirt community grown & sexy groove open bar food chill networking",
+    "free": false,
+    "price": "$105.00",
+    "badges": [
+      "Brunch",
+      "Day Party",
+      "After Dark",
+      "Meetup"
+    ],
+    "time": "5:00 PM",
+    "location": "Across locations",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Grown & Sexy",
+      "Groove",
+      "Open Bar",
+      "Food",
+      "Chill",
+      "Networking"
+    ],
+    "ctaHref": "https://speakeasygo.com/event/EVE-LNAFY7?t=SQW",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-brunch",
+    "discountCode": "SQW",
+    "flyerUrl": "https://www.instagram.com/p/DZ8uSc1O2L0/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-103",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "Above The Rim: All-Star Weekend",
+    "organizer": "The Wine Down: An R&B Experience",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "flirt grown & sexy groove",
+    "free": false,
+    "price": "$35.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "9:00 PM",
+    "location": "Chez Event Venue · 247 E Ontario St 2nd floor, Chicago, IL 60611, USA",
+    "vibeTags": [
+      "Flirt",
+      "Grown & Sexy",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/above-the-rim-allstar-weekend-1?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnlAbW1RDuZiz4os7usFjclw-OBdAn9gg63o82hPOZqOyqZtaJQtjQEsmhx0k_aem_nCNoW5-jAKVvSPpDt0d1OQ",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "flyerUrl": "https://www.instagram.com/p/DaQt7rakbSb/?img_index=1",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-104",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "Off The Court - A WNBA All-Star Activation",
+    "organizer": "Syd Michelle",
+    "types": [
+      "workshop",
+      "educational"
+    ],
+    "vibesRaw": "networking community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Educational",
+      "Free"
+    ],
+    "time": "12:00 PM",
+    "location": "Vault Gallerie · 2015 S Laflin St Chicago, IL",
+    "vibeTags": [
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/off-the-court-a-wnba-all-star-activation-tickets-1991000015643?aff=oddtdtcreator&keep_tld=true&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnmQGYeMwwfo_g6gmyTKu2eVpoN2xqgEFHrmCIvq7J5jYpOekmQKbc2LX8BOc_aem_lnzW503ea43El4iA3kq7rg",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/DaWYIUMCbUT/?img_index=1",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-105",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -876,38 +1535,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-78",
-    "festival": "wnba-all-star-weekend",
-    "day": "friday",
-    "dayDate": "2026-07-24",
-    "dayLabel": "Friday",
-    "name": "Care Beyond the Court presented by Planned Parenthood @ Hoop House",
-    "organizer": "Hoop Vision",
-    "types": [
-      "educational"
-    ],
-    "vibesRaw": "community chill wellness",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Educational",
-      "Free"
-    ],
-    "time": "12:00 PM",
-    "location": "Hoop House | Downtown Chicago · Please register to see the exact location of this event.",
-    "vibeTags": [
-      "Community",
-      "Chill",
-      "Wellness"
-    ],
-    "ctaHref": "https://luma.com/v7m6ieym",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-educational",
-    "city": "chicago"
-  },
-  {
-    "id": "wnba-all-star-weekend-79",
+    "id": "wnba-all-star-weekend-106",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -941,33 +1569,637 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-80",
+    "id": "wnba-all-star-weekend-107",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "Sam Jay's Starting Lineup featuring Sam Jay, Zainab Johnson, Punkie Johnson, Just Nesh, Syd Colson, and TP",
+    "organizer": "Sam Jay's",
+    "types": [
+      "live-show"
+    ],
+    "vibesRaw": "live show",
+    "free": false,
+    "price": "$55.00",
+    "badges": [
+      "Live Show"
+    ],
+    "time": "8:00 PM",
+    "location": "Thalia Hall · 1807 S Allport St, Chicago, IL 60608",
+    "vibeTags": [
+      "Live Show"
+    ],
+    "ctaHref": "https://www.ticketweb.com/event/sam-jays-starting-lineup-featuring-thalia-hall-tickets/14195424",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-live-show",
+    "discountCode": "Two giveaway tickets",
+    "flyerUrl": "https://www.instagram.com/p/DajH6m7iJyy/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-108",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "VOICES OF THE GAME",
+    "organizer": "Full Court Press: Legends",
+    "types": [
+      "workshop",
+      "educational"
+    ],
+    "vibesRaw": "networking food",
+    "free": false,
+    "price": "$125.00",
+    "badges": [
+      "Workshop",
+      "Educational"
+    ],
+    "time": "12:00 PM",
+    "location": "avec River North, Chicago · 41 W Erie St, Chicago, IL 60654",
+    "vibeTags": [
+      "Networking",
+      "Food"
+    ],
+    "ctaHref": "https://88vines.com/full-court-press%3A-legends",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/Da8IiQZxLnd/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-109",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "WNBA: Trivia Night (Test your women's sports knowledge",
+    "organizer": "Anna DeShawn",
+    "types": [
+      "happy-hour",
+      "meetup"
+    ],
+    "vibesRaw": "games chill community food",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Happy Hour",
+      "Meetup",
+      "Free"
+    ],
+    "time": "8:00 PM",
+    "location": "Level Sporting Club · 3343 N Clark St, Chicago, IL 60657",
+    "vibeTags": [
+      "Games",
+      "Chill",
+      "Community",
+      "Food"
+    ],
+    "ctaHref": "https://partiful.com/e/Ae5KjbycPneD1BwuSzEM",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour",
+    "flyerUrl": "https://www.instagram.com/p/DanSqwjETyc/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-110",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "Femme Haus x Marc Nolan: WNBA All Star Weekend Happy Hour",
+    "organizer": "Marc Nolan",
+    "types": [
+      "happy-hour"
+    ],
+    "vibesRaw": "chill flirt community grown & sexy groove",
+    "free": false,
+    "price": "$26.00",
+    "badges": [
+      "Happy Hour"
+    ],
+    "time": "7:00 PM",
+    "location": "Marc Nolan · 171 N Sangamon St, Chicago, IL 60607, USA",
+    "vibeTags": [
+      "Chill",
+      "Flirt",
+      "Community",
+      "Grown & Sexy",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/femme-haus-x-marc-nolan-wnba-all-star-weekend-happy-hour?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnXjR7x_Ga2EeCRkGUrhRtAOiWvWV1YAYoRTrIO9ptw6vHz4l9AAKjLPQPKqU_aem_jyxjZdl4wsC4P3oKPpq8Xg",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-happy-hour",
+    "flyerUrl": "https://www.instagram.com/p/Da8hNAuBfca/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-111",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "Power Players Mixer: WNBA Edition",
+    "organizer": "Playa Society",
+    "types": [
+      "workshop",
+      "educational"
+    ],
+    "vibesRaw": "networking",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Educational",
+      "Free"
+    ],
+    "time": "5:00 PM",
+    "location": "Tree House Chicago · 149 W Kinzie St, Chicago, IL 60654",
+    "vibeTags": [
+      "Networking"
+    ],
+    "ctaHref": "https://partiful.com/e/64727ei5wJfGJFQTVfHI?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnuL7-TFREaq18xs_R0k9pYZiozmJURrdKqUUwfRVOSA0cjno4sgaYdMR_44s_aem_kID9IuhqaENXgbEwgWfmFQ",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/Da3iPO-Eu8T/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-112",
+    "festival": "wnba-all-star-weekend",
+    "day": "wednesday",
+    "dayDate": "2026-07-22",
+    "dayLabel": "Wednesday",
+    "name": "Sip & Chill (27+ Listening Experience)",
+    "organizer": "Adult Supervision Needed",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "grown & sexy groove",
+    "free": false,
+    "price": "$34.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "Trigger · 2810 W Addison St Chicago, IL 60618",
+    "vibeTags": [
+      "Grown & Sexy",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/sip-chill-27-listening-experience-chicago?u=dvn__a&_t=mrrxxi7z&os=ios&src=event_page",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-113",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
     "dayLabel": "Friday",
-    "name": "In The Arena: WNBA All-Star Weekend",
-    "organizer": "Parul Khosla: Co-Founder & CEO of Arena",
+    "name": "EVERYONE WATCHES WOMEN’S SPORTS™ LIVE SPECIAL",
+    "organizer": "Togethxr and everyonewatches",
     "types": [
-      "meetup"
+      "live-show"
     ],
-    "vibesRaw": "networking community",
+    "vibesRaw": "chill live show",
+    "free": false,
+    "price": "$25.00",
+    "badges": [
+      "Live Show"
+    ],
+    "time": "5:00 PM",
+    "location": "The Chicago Theatre · 175 N State St, Chicago, IL 60601, US",
+    "vibeTags": [
+      "Chill",
+      "Live Show"
+    ],
+    "ctaHref": "https://www.ticketmaster.com/event/070064E6B3AC24EB",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-live-show",
+    "flyerUrl": "https://www.instagram.com/p/DWG9w-Mk2t2/?hl=en",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-114",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "A WNBA All-Star Pre-Kickoff Soirée: Women Ball Harder",
+    "organizer": "Chef Emani Nicole + Sweeney Taud + SuccezZ Boutique +",
+    "types": [
+      "workshop"
+    ],
+    "vibesRaw": "chill networking food",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
+      "Workshop",
       "Free"
     ],
-    "time": "2:00 PM",
-    "location": "Centre Court Productions · 469 N Racine Ave, Chicago, IL 60642, USA",
+    "time": "6:00 PM",
+    "location": "Brûlée · 2036 S Michigan Ave, Chicago, IL 60616",
     "vibeTags": [
+      "Chill",
       "Networking",
-      "Community"
+      "Food"
     ],
-    "ctaHref": "https://luma.com/7m453p4o?fbclid=PARlRTSAS7p7dwZG9mAmV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpwwiCOyZuTsCgMiz2SjSet-aUPLMs4Oatgbvkia50ucohRnVS1fUe579MEq9_aem_3ZL4orXghU0wPr2AKNKa8Q&utm_id=97760_v0_s00_e0_tv4",
+    "ctaHref": "https://events.eventnoire.com/e/women-ball-harder/tickets?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnM4b7cjaFDQml41kDR4cmhi-JWgv25M-5SvXrBHroO5oKipwy55vfAcrytd4_aem_GnHjSJhj48Gfif-Zhts4GQ",
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/Da0seDcTBOi/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-115",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "Come grab a seat at the Founders Table",
+    "organizer": "Minority Women in Sports + Sydni Michelle",
+    "types": [
+      "brunch",
+      "workshop"
+    ],
+    "vibesRaw": "networking chill",
+    "free": false,
+    "badges": [
+      "Brunch",
+      "Workshop"
+    ],
+    "time": "12:00 PM",
+    "location": "Register to See Address",
+    "vibeTags": [
+      "Networking",
+      "Chill"
+    ],
+    "ctaHref": "https://luma.com/7gnrkmuh?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGn_Pqalo0du20rk2Tbim3mUbifTpu98hGpTjyJx6iDzU3JNP9shKUDSBRcvfw_aem_lCgbpBnZPxFPdm1pM-yX9Q&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3&utm_medium=social&utm_source=ig",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-brunch",
+    "flyerUrl": "https://www.instagram.com/p/DawGohGEdcN/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-117",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "WNBA All Star Weekend, 2026: Parity Precovery Party",
+    "organizer": "Paritynow",
+    "types": [
+      "workshop"
+    ],
+    "vibesRaw": "community wellness",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Free"
+    ],
+    "time": "12:00 PM",
+    "location": "Babe's Sports Bar · 3017 W Armitage Ave, Chicago, IL 60647",
+    "vibeTags": [
+      "Community",
+      "Wellness"
+    ],
+    "ctaHref": "https://www.paritynow.com/wnba-allstar-weekend-2026-precovery-party",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/DavW-xPk2Ft/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-118",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "SKY JAM: A WNBA All-Star Weekend Rooftop Day Party",
+    "organizer": "That's So Rubes x Take5 Events x Freemind Global",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "flirt community ass shaking groove grown & sexy",
+    "free": false,
+    "price": "$28.00",
+    "badges": [
+      "Day Party"
+    ],
+    "time": "2:00 PM",
+    "location": "Joy District Rooftop · 112 W Hubbard St, Chicago, IL 60654, USA",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Ass Shaking",
+      "Groove",
+      "Grown & Sexy"
+    ],
+    "ctaHref": "https://posh.vip/e/sky-jam-a-wnba-allstar-weekend-rooftop-day-party",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "flyerUrl": "https://www.instagram.com/p/DaiOHb3ACBY/?img_index=1",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-119",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "SKY JAM AFTER DARK (WNBA ALL-STAR AFTER PARTY)",
+    "organizer": "FREEMIND GLOBAL X THAT’S SO RUBES",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "flirt community ass shaking groove grown & sexy",
+    "free": false,
+    "price": "$23.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "10:00 PM",
+    "location": "Icon Bar and Lounge · 2247 N Lincoln Ave, Chicago, IL 60614, USA",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Ass Shaking",
+      "Groove",
+      "Grown & Sexy"
+    ],
+    "ctaHref": "https://posh.vip/e/fmg-presents-after-dark-2026-7-26-9-0",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "flyerUrl": "https://www.instagram.com/p/DbDsLsGji3t/?img_index=1",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-120",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "ALL STAR WEEKEND DAD & DAUGHTER CLINIC",
+    "organizer": "GirlDads Care",
+    "types": [
+      "workshop"
+    ],
+    "vibesRaw": "games family",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Free"
+    ],
+    "time": "8:00 AM",
+    "location": "The Sport House (Hyde Park) · 1301 E 47th St. Bldg 1, Chicago IL 60653",
+    "vibeTags": [
+      "Games",
+      "Family"
+    ],
+    "ctaHref": "https://skybasketballacademy.net/training/clinics/full-724-all-star-weekend-dad-daughter-clinic?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnHwR57kbpkhdUqMffNPgHwUzTMcD9y4uHQlB7rVwg9mVOTGhf8xerBNVlyyo_aem_2D9LPOEATzXvrbNSpid24w",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/DaQgR3ARcbQ/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-121",
+    "festival": "wnba-all-star-weekend",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "Tunnel Face: Beauty That Performs",
+    "organizer": "nickirouge",
+    "types": [
+      "workshop"
+    ],
+    "vibesRaw": "creative networking",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Free"
+    ],
+    "time": "11:00 AM",
+    "location": "Scratch Goods · 127 N Peoria St., Chicago, IL 60607",
+    "vibeTags": [
+      "Creative",
+      "Networking"
+    ],
+    "ctaHref": "https://nickirouge.net/tunnelfaceregistration?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGn3lTBBd33pcACIGZSxsAOHwmzhbhHmyZqcb_JfzoYgPE1Icw0LntHTMQvQVM_aem_22Lup8Zj4A_IzrwBPniVWA",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/Da6YiGwDhIz/?img_index=1",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-122",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "Merch Cookout at WNBA Live",
+    "organizer": "Playasociety",
+    "types": [
+      "workshop"
+    ],
+    "vibesRaw": "chill creative merch",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Free"
+    ],
+    "time": "",
+    "location": "McCormick Place (Lakeside Center) · 2301 S Martin Luther King Dr, Chicago",
+    "vibeTags": [
+      "Chill",
+      "Creative",
+      "Merch"
+    ],
+    "ctaHref": "https://www.instagram.com/p/Da3PR2glPZe/",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "http://instagram.com/p/Da3PR2glPZe/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-123",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "NABJ-Chicago’s WNBA All Star Media Mixer",
+    "organizer": "Nabj_Chicago + Flowers Communications",
+    "types": [
+      "happy-hour"
+    ],
+    "vibesRaw": "chill networking groove",
+    "free": false,
+    "price": "$10.00",
+    "badges": [
+      "Happy Hour"
+    ],
+    "time": "6:00 PM",
+    "location": "Lighthouse at 303 · 303 E Wacker Dr Ste 207, Chicago, IL 60601",
+    "vibeTags": [
+      "Chill",
+      "Networking",
+      "Groove"
+    ],
+    "ctaHref": "https://www.ticketfalcon.com/e/nabj-chicagos-wnba-all-star-media-mixer-powered-by-flowers-communications/",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-happy-hour",
+    "flyerUrl": "https://www.instagram.com/p/Da2z9h9xzY8/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-124",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "All Star WNBA 5K Walk/Run",
+    "organizer": "compo.nenets",
+    "types": [
+      "outdoors"
+    ],
+    "vibesRaw": "wellness community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Outdoors",
+      "Free"
+    ],
+    "time": "8:00 AM",
+    "location": "Muffy's Lounge & Components · 1322 E 67th St, Chicago, IL 60637",
+    "vibeTags": [
+      "Wellness",
+      "Community"
+    ],
+    "ctaHref": "https://www.instagram.com/p/DaK_7_9DPD3/",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-outdoors",
+    "flyerUrl": "https://www.instagram.com/p/DaK_7_9DPD3/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-136",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "Queen of the City: Chicago",
+    "organizer": "BallOut Brand & ABL",
+    "types": [
+      "meetup",
+      "live-show"
+    ],
+    "vibesRaw": "community games live show",
+    "free": false,
+    "price": "$20.00",
+    "badges": [
+      "Meetup",
+      "Live Show"
+    ],
+    "time": "10:30 AM",
+    "location": "Flames Athletic Center (FAC) · 839 W. Roosevelt Rd.\nChicago, IL 60608",
+    "vibeTags": [
+      "Community",
+      "Games",
+      "Live Show"
+    ],
+    "ctaHref": "https://register.ryzer.com/camp.cfm?sport=4&id=338986",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
     "cardClass": "tp-meetup",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-137",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "WNBA All Star Weekend: Meet and Greet with Azura Stevens",
+    "organizer": "Tropacecompany.com",
+    "types": [
+      "workshop"
+    ],
+    "vibesRaw": "chill food family",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Free"
+    ],
+    "time": "11:00 AM",
+    "location": "Sip & Savor Coffee House · 78 E 47th Street Chicago,IL",
+    "vibeTags": [
+      "Chill",
+      "Food",
+      "Family"
+    ],
+    "ctaHref": "https://www.instagram.com/p/DavQaO9uRKP/",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/DavQaO9uRKP/",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-138",
+    "festival": "wnba-all-star-weekend",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "WNBA All Star Beach Party Weekend",
+    "organizer": "the lesbians social club",
+    "types": [
+      "day-party"
+    ],
+    "vibesRaw": "chill flirt community ass shaking groove",
+    "free": false,
+    "price": "$27.00",
+    "badges": [
+      "Day Party"
+    ],
+    "time": "4:00 PM",
+    "location": "Whispers at Oak Street Beach · 1001 N Lake Shore Dr, Chicago, 60611",
+    "vibeTags": [
+      "Chill",
+      "Flirt",
+      "Community",
+      "Ass Shaking",
+      "Groove"
+    ],
+    "ctaHref": "https://speakeasygo.com/event/EVE-2FWW05?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnIljCxY2Wbc5CZ1vJnxe5SmwrJlCOyooqBM-SuVZVBacAxQzuk4p1EQEwwOc_aem_BHxUpxw-SO3xpZKSF3L1cg&utm_id=97760_v0_s00_e0_tv3",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "flyerUrl": "https://www.instagram.com/p/DaVlrXhRjaR/",
     "city": "chicago"
   }
 ];

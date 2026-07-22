@@ -6,6 +6,266 @@ export const generatedEvents: PrideEvent[] = [
   {
     "id": "2",
     "festival": "july-events",
+    "day": "thursday",
+    "dayDate": "2026-07-09",
+    "dayLabel": "Thursday",
+    "name": "Parity Porch Concert Summer Series: Performance by Tyler Moonlight",
+    "organizer": "Parity",
+    "types": [
+      "live-show"
+    ],
+    "vibesRaw": "chill creative community groove",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Live Show",
+      "Free"
+    ],
+    "time": "6:30 PM",
+    "location": "PARITY Porch · 500 N Carrollton Ave Baltimore, MD",
+    "vibeTags": [
+      "Chill",
+      "Creative",
+      "Community",
+      "Groove"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/parity-porch-concert-summer-series-tickets-1989124481871?keep_tld=true",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-live-show",
+    "flyerUrl": "https://www.instagram.com/p/DaGZdoMkY6V/?img_index=1",
+    "city": "baltimore"
+  },
+  {
+    "id": "3",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-18",
+    "dayLabel": "Saturday",
+    "name": "Lez Black Gurls presents Lez Picnic",
+    "organizer": "LezBlackGurls",
+    "types": [
+      "meetup",
+      "outdoors-hangout"
+    ],
+    "vibesRaw": "chill community games",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Outdoors Hangout",
+      "Free"
+    ],
+    "time": "1:00 PM",
+    "location": "West Covington Park · 101 West Cromwell Street\nBaltimore, MD 21230",
+    "vibeTags": [
+      "Chill",
+      "Community",
+      "Games"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/lez-black-gurls-presents-lez-picnic-tickets-1991346621350?aff=oddtdtcreator",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/lezblackgurlsbmore/",
+    "city": "baltimore"
+  },
+  {
+    "id": "4",
+    "festival": "july-events",
+    "day": "wednesday",
+    "dayDate": "2026-07-01",
+    "dayLabel": "Wednesday",
+    "name": "LBG presents Gentle Movement & Community Connection with RestEasyBby",
+    "organizer": "LezBlackGurls",
+    "types": [
+      "meetup",
+      "workshop"
+    ],
+    "vibesRaw": "chill community wellness",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Workshop",
+      "Free"
+    ],
+    "time": "7:00 PM",
+    "location": "Baltimore Unity Hall · 1505 Eutaw Place\nBaltimore, MD 21217",
+    "vibeTags": [
+      "Chill",
+      "Community",
+      "Wellness"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/lbg-presents-gentle-movement-community-connection-with-resteasybby-tickets-1991347005499",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/lezblackgurlsbmore/",
+    "city": "baltimore"
+  },
+  {
+    "id": "6",
+    "festival": "july-events",
+    "day": "friday",
+    "dayDate": "2026-07-10",
+    "dayLabel": "Friday",
+    "name": "Queeribbean Carnival Kickoff",
+    "organizer": "Aphrodites House",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking grown & sexy groove",
+    "free": false,
+    "price": "$17.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "7:00 PM",
+    "location": "Nobles (2nd Floor) · 1024 S Charles St, Baltimore, MD 21230, USA",
+    "vibeTags": [
+      "Ass Shaking",
+      "Grown & Sexy",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/queeribbean-carnival-kickoff",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "flyerUrl": "https://www.instagram.com/p/DaAxNLgOxqr/",
+    "city": "baltimore"
+  },
+  {
+    "id": "7",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "Sapphic Saturdays",
+    "organizer": "Aphrodites House",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "grown & sexy",
+    "free": false,
+    "price": "$11.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "The Manor · 924 N Charles St, Baltimore, MD 21201, USA",
+    "vibeTags": [
+      "Grown & Sexy"
+    ],
+    "ctaHref": "https://posh.vip/e/sapphic-saturdays-24",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "flyerUrl": "https://www.instagram.com/p/DaLISEUOYKx/",
+    "city": "baltimore"
+  },
+  {
+    "id": "8",
+    "festival": "july-events",
+    "day": "wednesday",
+    "dayDate": "2026-07-01",
+    "dayLabel": "Wednesday",
+    "name": "Salsa with Pride",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "workshop"
+    ],
+    "vibesRaw": "community cultural grown & sexy groove",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Free"
+    ],
+    "time": "7:30 PM",
+    "location": "The Pride Center of Maryland · 2418 Saint Paul Street\nBaltimore, MD 21218",
+    "vibeTags": [
+      "Community",
+      "Cultural",
+      "Grown & Sexy",
+      "Groove"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/salsa-with-pride-tickets-1988786376589?aff=ebdsoporgprofile",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.instagram.com/p/DaLjqqxyYjb/",
+    "city": "baltimore"
+  },
+  {
+    "id": "9",
+    "festival": "july-events",
+    "day": "sunday",
+    "dayDate": "2026-07-05",
+    "dayLabel": "Sunday",
+    "name": "Queer Clothing Swap",
+    "organizer": "The Pride Center of Maryland",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "chill ass shaking",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Free"
+    ],
+    "time": "12:00 PM",
+    "location": "The Pride Center of Maryland · 2418 Saint Paul Street\nBaltimore, MD 21218",
+    "vibeTags": [
+      "Chill",
+      "Ass Shaking"
+    ],
+    "ctaHref": "https://www.instagram.com/p/DaLO-h1goj-/",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/p/DaLO-h1goj-/",
+    "city": "baltimore"
+  },
+  {
+    "id": "10",
+    "festival": "july-events",
+    "day": "thursday",
+    "dayDate": "2026-07-02",
+    "dayLabel": "Thursday",
+    "name": "NOSTALGIA",
+    "organizer": "Peazy",
+    "types": [
+      "happy-hour",
+      "meetup"
+    ],
+    "vibesRaw": "30+ chill flirt community grown & sexy",
+    "free": false,
+    "price": "$12.51",
+    "badges": [
+      "Happy Hour",
+      "Meetup"
+    ],
+    "time": "7:00 PM",
+    "location": "Safari Club · 5625 O Donnell Street\nBaltimore, MD 21224",
+    "vibeTags": [
+      "30+",
+      "Chill",
+      "Flirt",
+      "Community",
+      "Grown & Sexy"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/nostalgia-72-tickets-1992778045779?aff=oddtdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnCves_Cq-U3qs6TcPlknZOcSCEwoxJDvneqtGSA1DnyS00wZpXpq9i-s4Zew_aem_7xas2-32YPGXtDT1SlgrkA&keep_tld=true",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-happy-hour",
+    "flyerUrl": "https://www.instagram.com/p/DaLV6qVgS4E/",
+    "city": "baltimore"
+  },
+  {
+    "id": "11",
+    "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-11",
     "dayLabel": "Saturday",
@@ -36,42 +296,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "3",
-    "festival": "july-events",
-    "day": "saturday",
-    "dayDate": "2026-07-18",
-    "dayLabel": "Saturday",
-    "name": "To be determined: a Black queer portrait exhibition + happy hour",
-    "organizer": "Morganeliz",
-    "types": [
-      "meetup",
-      "live-show"
-    ],
-    "vibesRaw": "chill creative community live show",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Live Show",
-      "Free"
-    ],
-    "time": "6:00 PM",
-    "location": "miXt Food Hall · 3809 Rhode Island Avenue\nBrentwood, MD 20722",
-    "vibeTags": [
-      "Chill",
-      "Creative",
-      "Community",
-      "Live Show"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/to-be-determined-a-black-queer-portrait-exhibition-happy-hour-tickets-1992166238848?aff=oddtdtcreator&keep_tld=true",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.instagram.com/p/DaBcRSyPz0H/",
-    "city": "dmv"
-  },
-  {
-    "id": "4",
+    "id": "12",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-18",
@@ -101,7 +326,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "5",
+    "id": "13",
     "festival": "july-events",
     "day": "friday",
     "dayDate": "2026-07-03",
@@ -131,7 +356,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "6",
+    "id": "14",
     "festival": "july-events",
     "day": "tuesday",
     "dayDate": "2026-07-07",
@@ -163,7 +388,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "7",
+    "id": "15",
     "festival": "july-events",
     "day": "tuesday",
     "dayDate": "2026-07-14",
@@ -195,7 +420,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "8",
+    "id": "16",
     "festival": "july-events",
     "day": "tuesday",
     "dayDate": "2026-07-21",
@@ -227,7 +452,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "9",
+    "id": "17",
     "festival": "july-events",
     "day": "tuesday",
     "dayDate": "2026-07-28",
@@ -259,7 +484,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "10",
+    "id": "18",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-04",
@@ -291,7 +516,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "11",
+    "id": "19",
     "festival": "july-events",
     "day": "thursday",
     "dayDate": "2026-07-09",
@@ -322,7 +547,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "12",
+    "id": "20",
     "festival": "july-events",
     "day": "sunday",
     "dayDate": "2026-07-12",
@@ -352,7 +577,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "13",
+    "id": "21",
     "festival": "july-events",
     "day": "wednesday",
     "dayDate": "2026-07-15",
@@ -382,7 +607,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "14",
+    "id": "22",
     "festival": "july-events",
     "day": "wednesday",
     "dayDate": "2026-07-22",
@@ -415,7 +640,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "15",
+    "id": "23",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -450,7 +675,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "16",
+    "id": "24",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -484,7 +709,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "17",
+    "id": "25",
     "festival": "july-events",
     "day": "sunday",
     "dayDate": "2026-07-12",
@@ -517,7 +742,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "18",
+    "id": "26",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-11",
@@ -548,7 +773,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "19",
+    "id": "27",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-11",
@@ -578,7 +803,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "20",
+    "id": "28",
     "festival": "july-events",
     "day": "thursday",
     "dayDate": "2026-07-30",
@@ -612,7 +837,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "21",
+    "id": "29",
     "festival": "july-events",
     "day": "wednesday",
     "dayDate": "2026-07-01",
@@ -644,7 +869,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "22",
+    "id": "30",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-18",
@@ -674,7 +899,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "23",
+    "id": "31",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-18",
@@ -709,7 +934,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "24",
+    "id": "32",
     "festival": "july-events",
     "day": "sunday",
     "dayDate": "2026-07-19",
@@ -748,636 +973,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "25",
-    "festival": "july-events",
-    "day": "thursday",
-    "dayDate": "2026-07-09",
-    "dayLabel": "Thursday",
-    "name": "Parity Porch Concert Summer Series: Performance by Tyler Moonlight",
-    "organizer": "Parity",
-    "types": [
-      "live-show"
-    ],
-    "vibesRaw": "chill creative community groove",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Live Show",
-      "Free"
-    ],
-    "time": "6:30 PM",
-    "location": "PARITY Porch · 500 N Carrollton Ave Baltimore, MD",
-    "vibeTags": [
-      "Chill",
-      "Creative",
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/parity-porch-concert-summer-series-tickets-1989124481871?keep_tld=true",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-live-show",
-    "flyerUrl": "https://www.instagram.com/p/DaGZdoMkY6V/?img_index=1",
-    "city": "baltimore"
-  },
-  {
-    "id": "26",
-    "festival": "july-events",
-    "day": "saturday",
-    "dayDate": "2026-07-18",
-    "dayLabel": "Saturday",
-    "name": "Lez Black Gurls presents Lez Picnic",
-    "organizer": "LezBlackGurls",
-    "types": [
-      "meetup",
-      "outdoors-hangout"
-    ],
-    "vibesRaw": "chill community games",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Outdoors Hangout",
-      "Free"
-    ],
-    "time": "1:00 PM",
-    "location": "West Covington Park · 101 West Cromwell Street\nBaltimore, MD 21230",
-    "vibeTags": [
-      "Chill",
-      "Community",
-      "Games"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/lez-black-gurls-presents-lez-picnic-tickets-1991346621350?aff=oddtdtcreator",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.instagram.com/lezblackgurlsbmore/",
-    "city": "baltimore"
-  },
-  {
-    "id": "27",
-    "festival": "july-events",
-    "day": "wednesday",
-    "dayDate": "2026-07-01",
-    "dayLabel": "Wednesday",
-    "name": "LBG presents Gentle Movement & Community Connection with RestEasyBby",
-    "organizer": "LezBlackGurls",
-    "types": [
-      "meetup",
-      "workshop"
-    ],
-    "vibesRaw": "chill community wellness",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Workshop",
-      "Free"
-    ],
-    "time": "7:00 PM",
-    "location": "Baltimore Unity Hall · 1505 Eutaw Place\nBaltimore, MD 21217",
-    "vibeTags": [
-      "Chill",
-      "Community",
-      "Wellness"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/lbg-presents-gentle-movement-community-connection-with-resteasybby-tickets-1991347005499",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.instagram.com/lezblackgurlsbmore/",
-    "city": "baltimore"
-  },
-  {
-    "id": "29",
-    "festival": "july-events",
-    "day": "friday",
-    "dayDate": "2026-07-10",
-    "dayLabel": "Friday",
-    "name": "Queeribbean Carnival Kickoff",
-    "organizer": "Aphrodites House",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking grown & sexy groove",
-    "free": false,
-    "price": "$17.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "7:00 PM",
-    "location": "Nobles (2nd Floor) · 1024 S Charles St, Baltimore, MD 21230, USA",
-    "vibeTags": [
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://posh.vip/e/queeribbean-carnival-kickoff",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "flyerUrl": "https://www.instagram.com/p/DaAxNLgOxqr/",
-    "city": "baltimore"
-  },
-  {
-    "id": "30",
-    "festival": "july-events",
-    "day": "saturday",
-    "dayDate": "2026-07-25",
-    "dayLabel": "Saturday",
-    "name": "Sapphic Saturdays",
-    "organizer": "Aphrodites House",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "grown & sexy",
-    "free": false,
-    "price": "$11.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "8:00 PM",
-    "location": "The Manor · 924 N Charles St, Baltimore, MD 21201, USA",
-    "vibeTags": [
-      "Grown & Sexy"
-    ],
-    "ctaHref": "https://posh.vip/e/sapphic-saturdays-24",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "flyerUrl": "https://www.instagram.com/p/DaLISEUOYKx/",
-    "city": "baltimore"
-  },
-  {
-    "id": "31",
-    "festival": "july-events",
-    "day": "wednesday",
-    "dayDate": "2026-07-01",
-    "dayLabel": "Wednesday",
-    "name": "Salsa with Pride",
-    "organizer": "The Pride Center of Maryland",
-    "types": [
-      "workshop"
-    ],
-    "vibesRaw": "community cultural grown & sexy groove",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Workshop",
-      "Free"
-    ],
-    "time": "7:30 PM",
-    "location": "The Pride Center of Maryland · 2418 Saint Paul Street\nBaltimore, MD 21218",
-    "vibeTags": [
-      "Community",
-      "Cultural",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/salsa-with-pride-tickets-1988786376589?aff=ebdsoporgprofile",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-workshop",
-    "flyerUrl": "https://www.instagram.com/p/DaLjqqxyYjb/",
-    "city": "baltimore"
-  },
-  {
-    "id": "32",
-    "festival": "july-events",
-    "day": "sunday",
-    "dayDate": "2026-07-05",
-    "dayLabel": "Sunday",
-    "name": "Queer Clothing Swap",
-    "organizer": "The Pride Center of Maryland",
-    "types": [
-      "meetup"
-    ],
-    "vibesRaw": "chill ass shaking",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Free"
-    ],
-    "time": "12:00 PM",
-    "location": "The Pride Center of Maryland · 2418 Saint Paul Street\nBaltimore, MD 21218",
-    "vibeTags": [
-      "Chill",
-      "Ass Shaking"
-    ],
-    "ctaHref": "https://www.instagram.com/p/DaLO-h1goj-/",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.instagram.com/p/DaLO-h1goj-/",
-    "city": "baltimore"
-  },
-  {
     "id": "33",
-    "festival": "july-events",
-    "day": "thursday",
-    "dayDate": "2026-07-02",
-    "dayLabel": "Thursday",
-    "name": "NOSTALGIA",
-    "organizer": "Peazy",
-    "types": [
-      "happy-hour",
-      "meetup"
-    ],
-    "vibesRaw": "30+ chill flirt community grown & sexy",
-    "free": false,
-    "price": "$12.51",
-    "badges": [
-      "Happy Hour",
-      "Meetup"
-    ],
-    "time": "7:00 PM",
-    "location": "Safari Club · 5625 O Donnell Street\nBaltimore, MD 21224",
-    "vibeTags": [
-      "30+",
-      "Chill",
-      "Flirt",
-      "Community",
-      "Grown & Sexy"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/nostalgia-72-tickets-1992778045779?aff=oddtdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnCves_Cq-U3qs6TcPlknZOcSCEwoxJDvneqtGSA1DnyS00wZpXpq9i-s4Zew_aem_7xas2-32YPGXtDT1SlgrkA&keep_tld=true",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour",
-    "flyerUrl": "https://www.instagram.com/p/DaLV6qVgS4E/",
-    "city": "baltimore"
-  },
-  {
-    "id": "34",
-    "festival": "july-events",
-    "day": "tuesday",
-    "dayDate": "2026-07-07",
-    "dayLabel": "Tuesday",
-    "name": "Author Event: Colorism by Dr. Sarah L. Webb in Conversation with Eboni K. Williams",
-    "organizer": "Gladys Books & Wine",
-    "types": [
-      "meetup",
-      "live-show",
-      "educational"
-    ],
-    "vibesRaw": "creative networking community",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Live Show",
-      "Educational",
-      "Free"
-    ],
-    "time": "7:00 PM",
-    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
-    "vibeTags": [
-      "Creative",
-      "Networking",
-      "Community"
-    ],
-    "ctaHref": "https://luma.com/colorism",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.instagram.com/p/DZ3Jp63lC8P/?img_index=1",
-    "city": "nyc"
-  },
-  {
-    "id": "35",
-    "festival": "july-events",
-    "day": "thursday",
-    "dayDate": "2026-07-09",
-    "dayLabel": "Thursday",
-    "name": "Black Girls Cinema Club presents Coffee & Conversation: a film theory workshop on Bessie\nEven Timings",
-    "organizer": "Gladys Books & Wine",
-    "types": [
-      "meetup",
-      "workshop",
-      "educational"
-    ],
-    "vibesRaw": "creative networking community",
-    "free": false,
-    "price": "$15.00",
-    "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational"
-    ],
-    "time": "6:00 PM",
-    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
-    "vibeTags": [
-      "Creative",
-      "Networking",
-      "Community"
-    ],
-    "ctaHref": "https://luma.com/Black-Girl-Cinema-Club",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.instagram.com/p/DaLMTSJxgjs/",
-    "city": "nyc"
-  },
-  {
-    "id": "36",
-    "festival": "july-events",
-    "day": "friday",
-    "dayDate": "2026-07-10",
-    "dayLabel": "Friday",
-    "name": "A Black Feminist Climate Arts Salon Presented by the Climate Museum",
-    "organizer": "Gladys Books & Wine",
-    "types": [
-      "meetup",
-      "workshop",
-      "educational"
-    ],
-    "vibesRaw": "creative networking community",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational",
-      "Free"
-    ],
-    "time": "6:30 PM",
-    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
-    "vibeTags": [
-      "Creative",
-      "Networking",
-      "Community"
-    ],
-    "ctaHref": "https://www.climatemuseum.org/events/a-black-feminist-climate-arts-salon",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "city": "nyc"
-  },
-  {
-    "id": "37",
-    "festival": "july-events",
-    "day": "saturday",
-    "dayDate": "2026-07-11",
-    "dayLabel": "Saturday",
-    "name": "Monthly Collage Series + WNBA Watch Party with Fitted WBB, the Living Lesbian Archive, For Them and Autostraddle",
-    "organizer": "For Them + Autostraddle",
-    "types": [
-      "meetup",
-      "workshop"
-    ],
-    "vibesRaw": "creative community",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Workshop",
-      "Free"
-    ],
-    "time": "1:00 PM",
-    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
-    "vibeTags": [
-      "Creative",
-      "Community"
-    ],
-    "ctaHref": "https://www.gladysbooksandwine.com/pages/events#?event-id=84452",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "city": "nyc"
-  },
-  {
-    "id": "38",
-    "festival": "july-events",
-    "day": "friday",
-    "dayDate": "2026-07-17",
-    "dayLabel": "Friday",
-    "name": "Author Event: Free Girls by Kristen McCallum in Conversation with Jennifer Baker",
-    "organizer": "Gladys Books & Wine",
-    "types": [
-      "meetup",
-      "educational"
-    ],
-    "vibesRaw": "creative networking community",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Educational",
-      "Free"
-    ],
-    "time": "6:30 PM",
-    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
-    "vibeTags": [
-      "Creative",
-      "Networking",
-      "Community"
-    ],
-    "ctaHref": "https://luma.com/Free-Girls",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "city": "nyc"
-  },
-  {
-    "id": "39",
-    "festival": "july-events",
-    "day": "thursday",
-    "dayDate": "2026-07-23",
-    "dayLabel": "Thursday",
-    "name": "Somatic Perimenopause - The Peri Portal: Why What's Working Isn't Working Anymore",
-    "organizer": "Gladys Books & Wine",
-    "types": [
-      "meetup",
-      "educational"
-    ],
-    "vibesRaw": "creative networking community",
-    "free": false,
-    "price": "$25.00",
-    "badges": [
-      "Meetup",
-      "Educational"
-    ],
-    "time": "6:30 PM",
-    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
-    "vibeTags": [
-      "Creative",
-      "Networking",
-      "Community"
-    ],
-    "ctaHref": "https://luma.com/bohjkjdc",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "city": "nyc"
-  },
-  {
-    "id": "40",
-    "festival": "july-events",
-    "day": "thursday",
-    "dayDate": "2026-07-30",
-    "dayLabel": "Thursday",
-    "name": "Unsent: An Evening of Letter Writing & Reflection",
-    "organizer": "Broken Hearts Restored",
-    "types": [
-      "meetup",
-      "educational"
-    ],
-    "vibesRaw": "creative networking community wellness",
-    "free": false,
-    "price": "$15.00",
-    "badges": [
-      "Meetup",
-      "Educational"
-    ],
-    "time": "7:00 PM",
-    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
-    "vibeTags": [
-      "Creative",
-      "Networking",
-      "Community",
-      "Wellness"
-    ],
-    "ctaHref": "https://luma.com/unsent",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "city": "nyc"
-  },
-  {
-    "id": "41",
-    "festival": "july-events",
-    "day": "wednesday",
-    "dayDate": "2026-07-01",
-    "dayLabel": "Wednesday",
-    "name": "The ANTICRASTINATION",
-    "organizer": "sociaLight social club",
-    "types": [
-      "meetup",
-      "workshop"
-    ],
-    "vibesRaw": "creative networking community",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Workshop",
-      "Free"
-    ],
-    "time": "5:00 PM",
-    "location": "Saint James Libations · 269 Stanhope St, Brooklyn, NY 11237, USA",
-    "vibeTags": [
-      "Creative",
-      "Networking",
-      "Community"
-    ],
-    "ctaHref": "https://posh.vip/e/the-anticrastination-1",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "flyerUrl": "https://www.instagram.com/p/DaL9dkdEagh/?img_index=1",
-    "city": "nyc"
-  },
-  {
-    "id": "42",
-    "festival": "july-events",
-    "day": "thursday",
-    "dayDate": "2026-07-02",
-    "dayLabel": "Thursday",
-    "name": "Ladies Night Happy Hour",
-    "organizer": "Nine11",
-    "types": [
-      "happy-hour"
-    ],
-    "vibesRaw": "chill ass shaking grown & sexy groove",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Happy Hour",
-      "Free"
-    ],
-    "time": "6:00 PM",
-    "location": "Saint James Libations · 269 Stanhope St, Brooklyn, NY 11237, USA",
-    "vibeTags": [
-      "Chill",
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://partiful.com/e/BxAtuBl2mjENGM83GJyv?",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-happy-hour",
-    "flyerUrl": "https://www.instagram.com/p/DaL9dkdEagh/?img_index=1",
-    "city": "nyc"
-  },
-  {
-    "id": "43",
-    "festival": "july-events",
-    "day": "friday",
-    "dayDate": "2026-07-03",
-    "dayLabel": "Friday",
-    "name": "Lovergirl After Dark",
-    "organizer": "Lovergurl",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking flirt groove grown & sexy",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "After Dark",
-      "Free"
-    ],
-    "time": "10:00 PM",
-    "location": "Saint James Libations · 269 Stanhope St, Brooklyn, NY 11237, USA",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Groove",
-      "Grown & Sexy"
-    ],
-    "ctaHref": "https://posh.vip/e/lovergirl-after-dark",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-after-dark",
-    "flyerUrl": "https://www.instagram.com/p/DaL9dkdEagh/?img_index=1",
-    "city": "nyc"
-  },
-  {
-    "id": "44",
-    "festival": "july-events",
-    "day": "sunday",
-    "dayDate": "2026-07-05",
-    "dayLabel": "Sunday",
-    "name": "Blacker The Berry: Live @ Saint James Libations - 7/5",
-    "organizer": "Sun Phillage Productions",
-    "types": [
-      "live-show",
-      "after-dark"
-    ],
-    "vibesRaw": "groove grown & sexy flirt",
-    "free": false,
-    "price": "$23.00",
-    "badges": [
-      "Live Show",
-      "After Dark"
-    ],
-    "time": "8:00 PM",
-    "location": "Saint James Libations · 269 Stanhope St, Brooklyn, NY 11237, USA",
-    "vibeTags": [
-      "Groove",
-      "Grown & Sexy",
-      "Flirt"
-    ],
-    "ctaHref": "https://sickening.events/e/blackertheberry-saintjames/tickets?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaASvknBwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp85ZGEXMeT2xmERUKNWZa_vs5yX_x5N4qkHC2G2umG16fwD3_3sc2qej0_DM_aem_iNrLvn2gca4OeVeYImNTRw",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-live-show",
-    "flyerUrl": "https://www.instagram.com/p/DaL9dkdEagh/?img_index=1",
-    "city": "nyc"
-  },
-  {
-    "id": "45",
     "festival": "july-events",
     "day": "thursday",
     "dayDate": "2026-07-02",
@@ -1409,7 +1005,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "55",
+    "id": "34",
     "festival": "july-events",
     "day": "wednesday",
     "dayDate": "2026-07-29",
@@ -1440,7 +1036,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "56",
+    "id": "35",
     "festival": "july-events",
     "day": "friday",
     "dayDate": "2026-07-17",
@@ -1474,7 +1070,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "57",
+    "id": "36",
     "festival": "july-events",
     "day": "friday",
     "dayDate": "2026-07-17",
@@ -1508,7 +1104,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "71",
+    "id": "37",
     "festival": "july-events",
     "day": "sunday",
     "dayDate": "2026-07-26",
@@ -1539,7 +1135,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "72",
+    "id": "38",
     "festival": "july-events",
     "day": "wednesday",
     "dayDate": "2026-07-29",
@@ -1576,7 +1172,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "93",
+    "id": "40",
     "festival": "july-events",
     "day": "friday",
     "dayDate": "2026-07-10",
@@ -1609,7 +1205,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "94",
+    "id": "41",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-18",
@@ -1641,7 +1237,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "95",
+    "id": "42",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-11",
@@ -1674,7 +1270,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "96",
+    "id": "43",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-11",
@@ -1704,6 +1300,656 @@ export const generatedEvents: PrideEvent[] = [
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
     "flyerUrl": "https://www.instagram.com/p/DaBlw3mgcKx/",
+    "city": "dc"
+  },
+  {
+    "id": "44",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-18",
+    "dayLabel": "Saturday",
+    "name": "To be determined: a Black queer portrait exhibition + happy hour",
+    "organizer": "Morganeliz",
+    "types": [
+      "meetup",
+      "live-show"
+    ],
+    "vibesRaw": "chill creative community live show",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Live Show",
+      "Free"
+    ],
+    "time": "6:00 PM",
+    "location": "miXt Food Hall · 3809 Rhode Island Avenue\nBrentwood, MD 20722",
+    "vibeTags": [
+      "Chill",
+      "Creative",
+      "Community",
+      "Live Show"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/to-be-determined-a-black-queer-portrait-exhibition-happy-hour-tickets-1992166238848?aff=oddtdtcreator&keep_tld=true",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/p/DaBcRSyPz0H/",
+    "city": "dmv"
+  },
+  {
+    "id": "45",
+    "festival": "july-events",
+    "day": "tuesday",
+    "dayDate": "2026-07-07",
+    "dayLabel": "Tuesday",
+    "name": "Author Event: Colorism by Dr. Sarah L. Webb in Conversation with Eboni K. Williams",
+    "organizer": "Gladys Books & Wine",
+    "types": [
+      "meetup",
+      "live-show",
+      "educational"
+    ],
+    "vibesRaw": "creative networking community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Live Show",
+      "Educational",
+      "Free"
+    ],
+    "time": "7:00 PM",
+    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
+    "vibeTags": [
+      "Creative",
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://luma.com/colorism",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/p/DZ3Jp63lC8P/?img_index=1",
+    "city": "nyc"
+  },
+  {
+    "id": "46",
+    "festival": "july-events",
+    "day": "thursday",
+    "dayDate": "2026-07-09",
+    "dayLabel": "Thursday",
+    "name": "Black Girls Cinema Club presents Coffee & Conversation: a film theory workshop on Bessie\nEven Timings",
+    "organizer": "Gladys Books & Wine",
+    "types": [
+      "meetup",
+      "workshop",
+      "educational"
+    ],
+    "vibesRaw": "creative networking community",
+    "free": false,
+    "price": "$15.00",
+    "badges": [
+      "Meetup",
+      "Workshop",
+      "Educational"
+    ],
+    "time": "6:00 PM",
+    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
+    "vibeTags": [
+      "Creative",
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://luma.com/Black-Girl-Cinema-Club",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/p/DaLMTSJxgjs/",
+    "city": "nyc"
+  },
+  {
+    "id": "47",
+    "festival": "july-events",
+    "day": "friday",
+    "dayDate": "2026-07-10",
+    "dayLabel": "Friday",
+    "name": "A Black Feminist Climate Arts Salon Presented by the Climate Museum",
+    "organizer": "Gladys Books & Wine",
+    "types": [
+      "meetup",
+      "workshop",
+      "educational"
+    ],
+    "vibesRaw": "creative networking community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Workshop",
+      "Educational",
+      "Free"
+    ],
+    "time": "6:30 PM",
+    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
+    "vibeTags": [
+      "Creative",
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://www.climatemuseum.org/events/a-black-feminist-climate-arts-salon",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "city": "nyc"
+  },
+  {
+    "id": "48",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-11",
+    "dayLabel": "Saturday",
+    "name": "Monthly Collage Series + WNBA Watch Party with Fitted WBB, the Living Lesbian Archive, For Them and Autostraddle",
+    "organizer": "For Them + Autostraddle",
+    "types": [
+      "meetup",
+      "workshop"
+    ],
+    "vibesRaw": "creative community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Workshop",
+      "Free"
+    ],
+    "time": "1:00 PM",
+    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
+    "vibeTags": [
+      "Creative",
+      "Community"
+    ],
+    "ctaHref": "https://www.gladysbooksandwine.com/pages/events#?event-id=84452",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "city": "nyc"
+  },
+  {
+    "id": "49",
+    "festival": "july-events",
+    "day": "friday",
+    "dayDate": "2026-07-17",
+    "dayLabel": "Friday",
+    "name": "Author Event: Free Girls by Kristen McCallum in Conversation with Jennifer Baker",
+    "organizer": "Gladys Books & Wine",
+    "types": [
+      "meetup",
+      "educational"
+    ],
+    "vibesRaw": "creative networking community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Educational",
+      "Free"
+    ],
+    "time": "6:30 PM",
+    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
+    "vibeTags": [
+      "Creative",
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://luma.com/Free-Girls",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "city": "nyc"
+  },
+  {
+    "id": "50",
+    "festival": "july-events",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "Somatic Perimenopause - The Peri Portal: Why What's Working Isn't Working Anymore",
+    "organizer": "Gladys Books & Wine",
+    "types": [
+      "meetup",
+      "educational"
+    ],
+    "vibesRaw": "creative networking community",
+    "free": false,
+    "price": "$25.00",
+    "badges": [
+      "Meetup",
+      "Educational"
+    ],
+    "time": "6:30 PM",
+    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
+    "vibeTags": [
+      "Creative",
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://luma.com/bohjkjdc",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "city": "nyc"
+  },
+  {
+    "id": "51",
+    "festival": "july-events",
+    "day": "thursday",
+    "dayDate": "2026-07-30",
+    "dayLabel": "Thursday",
+    "name": "Unsent: An Evening of Letter Writing & Reflection",
+    "organizer": "Broken Hearts Restored",
+    "types": [
+      "meetup",
+      "educational"
+    ],
+    "vibesRaw": "creative networking community wellness",
+    "free": false,
+    "price": "$15.00",
+    "badges": [
+      "Meetup",
+      "Educational"
+    ],
+    "time": "7:00 PM",
+    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233, USA",
+    "vibeTags": [
+      "Creative",
+      "Networking",
+      "Community",
+      "Wellness"
+    ],
+    "ctaHref": "https://luma.com/unsent",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "city": "nyc"
+  },
+  {
+    "id": "52",
+    "festival": "july-events",
+    "day": "wednesday",
+    "dayDate": "2026-07-01",
+    "dayLabel": "Wednesday",
+    "name": "The ANTICRASTINATION",
+    "organizer": "sociaLight social club",
+    "types": [
+      "meetup",
+      "workshop"
+    ],
+    "vibesRaw": "creative networking community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Workshop",
+      "Free"
+    ],
+    "time": "5:00 PM",
+    "location": "Saint James Libations · 269 Stanhope St, Brooklyn, NY 11237, USA",
+    "vibeTags": [
+      "Creative",
+      "Networking",
+      "Community"
+    ],
+    "ctaHref": "https://posh.vip/e/the-anticrastination-1",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "flyerUrl": "https://www.instagram.com/p/DaL9dkdEagh/?img_index=1",
+    "city": "nyc"
+  },
+  {
+    "id": "53",
+    "festival": "july-events",
+    "day": "thursday",
+    "dayDate": "2026-07-02",
+    "dayLabel": "Thursday",
+    "name": "Ladies Night Happy Hour",
+    "organizer": "Nine11",
+    "types": [
+      "happy-hour"
+    ],
+    "vibesRaw": "chill ass shaking grown & sexy groove",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Happy Hour",
+      "Free"
+    ],
+    "time": "6:00 PM",
+    "location": "Saint James Libations · 269 Stanhope St, Brooklyn, NY 11237, USA",
+    "vibeTags": [
+      "Chill",
+      "Ass Shaking",
+      "Grown & Sexy",
+      "Groove"
+    ],
+    "ctaHref": "https://partiful.com/e/BxAtuBl2mjENGM83GJyv?",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-happy-hour",
+    "flyerUrl": "https://www.instagram.com/p/DaL9dkdEagh/?img_index=1",
+    "city": "nyc"
+  },
+  {
+    "id": "54",
+    "festival": "july-events",
+    "day": "friday",
+    "dayDate": "2026-07-03",
+    "dayLabel": "Friday",
+    "name": "Lovergirl After Dark",
+    "organizer": "Lovergurl",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "ass shaking flirt groove grown & sexy",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "After Dark",
+      "Free"
+    ],
+    "time": "10:00 PM",
+    "location": "Saint James Libations · 269 Stanhope St, Brooklyn, NY 11237, USA",
+    "vibeTags": [
+      "Ass Shaking",
+      "Flirt",
+      "Groove",
+      "Grown & Sexy"
+    ],
+    "ctaHref": "https://posh.vip/e/lovergirl-after-dark",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-after-dark",
+    "flyerUrl": "https://www.instagram.com/p/DaL9dkdEagh/?img_index=1",
+    "city": "nyc"
+  },
+  {
+    "id": "55",
+    "festival": "july-events",
+    "day": "sunday",
+    "dayDate": "2026-07-05",
+    "dayLabel": "Sunday",
+    "name": "Blacker The Berry: Live @ Saint James Libations - 7/5",
+    "organizer": "Sun Phillage Productions",
+    "types": [
+      "live-show",
+      "after-dark"
+    ],
+    "vibesRaw": "groove grown & sexy flirt",
+    "free": false,
+    "price": "$23.00",
+    "badges": [
+      "Live Show",
+      "After Dark"
+    ],
+    "time": "8:00 PM",
+    "location": "Saint James Libations · 269 Stanhope St, Brooklyn, NY 11237, USA",
+    "vibeTags": [
+      "Groove",
+      "Grown & Sexy",
+      "Flirt"
+    ],
+    "ctaHref": "https://sickening.events/e/blackertheberry-saintjames/tickets?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZnRzaASvknBwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp85ZGEXMeT2xmERUKNWZa_vs5yX_x5N4qkHC2G2umG16fwD3_3sc2qej0_DM_aem_iNrLvn2gca4OeVeYImNTRw",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-live-show",
+    "flyerUrl": "https://www.instagram.com/p/DaL9dkdEagh/?img_index=1",
+    "city": "nyc"
+  },
+  {
+    "id": "125",
+    "festival": "july-events",
+    "day": "sunday",
+    "dayDate": "2026-07-26",
+    "dayLabel": "Sunday",
+    "name": "Chocolate City Swim",
+    "organizer": "Party Girls by DJ Fay",
+    "types": [
+      "pool"
+    ],
+    "vibesRaw": "community flirt food",
+    "free": false,
+    "price": "$18.00",
+    "badges": [
+      "Pool"
+    ],
+    "time": "2:00 PM",
+    "location": "Tag Rooftop Bar at The Ven at Embassy Row · 2015 Massachusetts Ave NW, Washington, DC 20036, USA",
+    "vibeTags": [
+      "Community",
+      "Flirt",
+      "Food"
+    ],
+    "ctaHref": "https://posh.vip/e/partygirl-chocolate-city-swim-event?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnQukih-kxjUVJ3jV_1L4JR3lCOVJRbqX-m-YI6VdxcH0xAF6V2TVznpKIPBs_aem_vtW2qYxNRBnQPmKu8i-ORA",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-pool",
+    "flyerUrl": "https://www.instagram.com/p/DadsA3uKc1n/",
+    "city": "dc"
+  },
+  {
+    "id": "126",
+    "festival": "july-events",
+    "day": "sunday",
+    "dayDate": "2026-07-12",
+    "dayLabel": "Sunday",
+    "name": "Les Linq’s Book Club",
+    "organizer": "Les Linq",
+    "types": [],
+    "vibesRaw": "",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Free"
+    ],
+    "time": "2:00 PM",
+    "location": "MLK Library · 901 G St NW, Washington, DC 20001",
+    "vibeTags": [],
+    "ctaHref": "https://web.groupme.com/join_group/115747585/SCBHdPQm?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGn9sKUe9UZgu8r5Sz2e9_AyJfPvQquoY05uiJrx3Xdt0G7GX1KYloe2LEJVqo_aem_3p8yEBhKDfagVm4fxymd9A",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-day-party",
+    "flyerUrl": "https://www.instagram.com/p/DYmlj6gxKui/",
+    "city": "dc"
+  },
+  {
+    "id": "127",
+    "festival": "july-events",
+    "day": "sunday",
+    "dayDate": "2026-07-12",
+    "dayLabel": "Sunday",
+    "name": "Heatwave",
+    "organizer": "Les Linq",
+    "types": [],
+    "vibesRaw": "",
+    "free": false,
+    "badges": [],
+    "time": "",
+    "location": "DC",
+    "vibeTags": [],
+    "ctaHref": "https://posh.vip/e/heatwave-20?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnFZHXncS_fDIGJy4rv6wuUwoGhtiALUE3Uz0iUbHFew8ijutiGmwQNysYNhk_aem_bExrBkcDXD_bwiFvQA1Wfg",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "city": "dc"
+  },
+  {
+    "id": "128",
+    "festival": "july-events",
+    "day": "sunday",
+    "dayDate": "2026-07-12",
+    "dayLabel": "Sunday",
+    "name": "Lavendar Evolutions Book Club",
+    "organizer": "Lavendar Evolutions",
+    "types": [],
+    "vibesRaw": "",
+    "free": false,
+    "badges": [],
+    "time": "",
+    "location": "DC",
+    "vibeTags": [],
+    "ctaHref": "https://bookclubs.com/clubs/6019622/join/c56cf2?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGni75adVQ1HZSDAhixnuCyTvDSHBvagiDyac-Bow8_gLREvbh-XwVHHoxy5d0_aem_ZmFrZWR1bW15MTZieXRlcw",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "city": "dc"
+  },
+  {
+    "id": "129",
+    "festival": "july-events",
+    "day": "sunday",
+    "dayDate": "2026-07-26",
+    "dayLabel": "Sunday",
+    "name": "BRUNCH & BADDIES MANSION POOL PARTY",
+    "organizer": "TMS Entertainment DC",
+    "types": [
+      "day-party",
+      "pool"
+    ],
+    "vibesRaw": "chill flirt grown & sexy food",
+    "free": false,
+    "price": "$34.00",
+    "badges": [
+      "Day Party",
+      "Pool"
+    ],
+    "time": "3:00 PM",
+    "location": "TBD",
+    "vibeTags": [
+      "Chill",
+      "Flirt",
+      "Grown & Sexy",
+      "Food"
+    ],
+    "ctaHref": "https://www.eventbrite.com/e/brunch-baddies-mansion-pool-party-tickets-1993505567817?aff=oddtdtcreator&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnhkeiO9XbWWNHb_65r7g3uPmLlQ_XNiCxZdyMlB_XEAybSst6Sid8V9PfU7Q_aem_hBOwaGdjW0Rxl14scHeprw&utm_content=link_in_bio&utm_medium=social&utm_source=ig",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "city": "dc"
+  },
+  {
+    "id": "130",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "WNBA ALL STAR WATCH PARTY",
+    "organizer": "The Frequency Class",
+    "types": [
+      "meetup"
+    ],
+    "vibesRaw": "food networking groove",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Meetup",
+      "Free"
+    ],
+    "time": "9:00 PM",
+    "location": "Public Bar Live · 1214 18th St NW Washington, DC 20036",
+    "vibeTags": [
+      "Food",
+      "Networking",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/wnba-all-star-watch-party-3?u=kiddfresh&_t=mrc86jrc&os=web&src=event_page&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnWokQQQjVEHTp0TT71h0VUbhJaKQHPaPAS4KarWx7d5Va0yXyHVJ4a1dEy9M_aem_R-lqosRAhQm1dgnWthcZdg",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "city": "dc"
+  },
+  {
+    "id": "132",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-25",
+    "dayLabel": "Saturday",
+    "name": "Virtual Intuitive Movement: A Grounding & Embodiment Experience with Dr. Udim Isang",
+    "organizer": "Lesbifriends Travel",
+    "types": [],
+    "vibesRaw": "",
+    "free": false,
+    "badges": [],
+    "time": "",
+    "location": "DC",
+    "vibeTags": [],
+    "ctaHref": "https://www.lesbifriendstravel.com/events/virtual-intuitive-movement",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "city": "dc"
+  },
+  {
+    "id": "133",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-18",
+    "dayLabel": "Saturday",
+    "name": "Slippery When Wet 4.0: Evening Edition",
+    "organizer": "Lesbifriends Travel",
+    "types": [],
+    "vibesRaw": "",
+    "free": false,
+    "badges": [],
+    "time": "",
+    "location": "DC",
+    "vibeTags": [],
+    "ctaHref": "https://www.lesbifriendstravel.com/events/slippery-when-wet-4-evening-edition",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "city": "dc"
+  },
+  {
+    "id": "134",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-18",
+    "dayLabel": "Saturday",
+    "name": "Slippery When Wet 4.0: Day Party",
+    "organizer": "Lesbifriends Travel",
+    "types": [],
+    "vibesRaw": "",
+    "free": false,
+    "badges": [],
+    "time": "",
+    "location": "DC",
+    "vibeTags": [],
+    "ctaHref": "https://www.lesbifriendstravel.com/events/slippery-when-wet-4-day-party",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
+    "city": "dc"
+  },
+  {
+    "id": "135",
+    "festival": "july-events",
+    "day": "saturday",
+    "dayDate": "2026-07-18",
+    "dayLabel": "Saturday",
+    "name": "MUSE! Hike",
+    "organizer": "The Big Kids Club",
+    "types": [],
+    "vibesRaw": "",
+    "free": false,
+    "badges": [],
+    "time": "",
+    "location": "DC",
+    "vibeTags": [],
+    "ctaHref": "https://posh.vip/e/muse-hike?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnmyFjTHGxfDcjugwR3xj4R04WhfuwojucOvOpo2UhgqykHHUIBJSuu0j_afE_aem_NTfzkcO9NGQ0jgyvBV1muw",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party",
     "city": "dc"
   }
 ];

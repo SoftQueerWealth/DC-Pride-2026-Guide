@@ -4,7 +4,7 @@ import type { BeautyItem } from '../types/beauty';
 
 export const generatedBeautyItems: BeautyItem[] = [
   {
-    "id": "hair-salon-girls-next-door-on-the-runnn-0",
+    "id": "hair-salon-girls-next-door-on-the-runnn-1",
     "name": "Girls Next Door + On the RuNNN",
     "businessType": "Hair Salon",
     "fields": [
@@ -64,12 +64,17 @@ export const generatedBeautyItems: BeautyItem[] = [
         "key": "travels",
         "label": "Travels?",
         "value": "No"
+      },
+      {
+        "key": "contactnotes",
+        "label": "Contact Notes",
+        "value": "Bri to contact"
       }
     ],
     "primaryHref": "https://girlnextdoorhair.com/products/bundle-sale"
   },
   {
-    "id": "hair-salon-sugar-braids-1",
+    "id": "hair-salon-sugar-braids-2",
     "name": "Sugar Braids",
     "businessType": "Hair Salon",
     "fields": [
@@ -129,12 +134,17 @@ export const generatedBeautyItems: BeautyItem[] = [
         "key": "travels",
         "label": "Travels?",
         "value": "No"
+      },
+      {
+        "key": "contactnotes",
+        "label": "Contact Notes",
+        "value": "Bri to contact"
       }
     ],
     "primaryHref": "https://www.sugarbraid.com/"
   },
   {
-    "id": "brows-brow-d-2",
+    "id": "brows-brow-d-3",
     "name": "Brow'd",
     "businessType": "Brows",
     "fields": [
@@ -194,12 +204,22 @@ export const generatedBeautyItems: BeautyItem[] = [
         "key": "travels",
         "label": "Travels?",
         "value": "No"
+      },
+      {
+        "key": "datecontacted",
+        "label": "Date Contacted",
+        "value": "7/16/2026"
+      },
+      {
+        "key": "contactnotes",
+        "label": "Contact Notes",
+        "value": "Text Sent"
       }
     ],
     "primaryHref": "https://browd.glossgenius.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnja_bXAuLQJvNMGleW2OdargNUyYNAInkPlgdrDqCUF1dBw5uW7IVDSSqj-o_aem_LRRV7D8GMoHE4xuKao4LTA"
   },
   {
-    "id": "acupuncture-acu-with-naja-3",
+    "id": "acupuncture-acu-with-naja-4",
     "name": "Acu with Naja",
     "businessType": "Acupuncture",
     "fields": [
@@ -258,12 +278,17 @@ export const generatedBeautyItems: BeautyItem[] = [
         "key": "travels",
         "label": "Travels?",
         "value": "Yes"
+      },
+      {
+        "key": "datecontacted",
+        "label": "Date Contacted",
+        "value": "7/16/2026"
       }
     ],
     "primaryHref": "https://www.instagram.com/acuwithnaja?igsh=MWVjOW51ZjJqMm5iYQ=="
   },
   {
-    "id": "barber-adaptable-creationz-4",
+    "id": "barber-adaptable-creationz-5",
     "name": "Adaptable Creationz",
     "businessType": "Barber",
     "fields": [
@@ -323,12 +348,22 @@ export const generatedBeautyItems: BeautyItem[] = [
         "key": "travels",
         "label": "Travels?",
         "value": "Yes"
+      },
+      {
+        "key": "datecontacted",
+        "label": "Date Contacted",
+        "value": "7/16/2026"
+      },
+      {
+        "key": "contactnotes",
+        "label": "Contact Notes",
+        "value": "DM Sent"
       }
     ],
     "primaryHref": "https://www.adaptablecreationz.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcARx5AdleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaePj-ai_4f6hBYWtQ4FHgw0njBjCciYOoJW9jc46DXSHl_WGD0f6sb3kbG2XA_aem_RmzObZMizZIAWs4TrlccCQ"
   },
   {
-    "id": "shop-loni-s-lp-baltimore-s-finest-vinyls-cd-s-11",
+    "id": "shop-loni-s-lp-baltimore-s-finest-vinyls-cd-s-6",
     "name": "Loni's LP: Baltimore's Finest Vinyls & CD's",
     "businessType": "Shop",
     "fields": [
@@ -383,12 +418,22 @@ export const generatedBeautyItems: BeautyItem[] = [
         "key": "owner",
         "label": "Owner",
         "value": "NaLoni Scott"
+      },
+      {
+        "key": "datecontacted",
+        "label": "Date Contacted",
+        "value": "7/16/2026"
+      },
+      {
+        "key": "contactnotes",
+        "label": "Contact Notes",
+        "value": "DM Sent"
       }
     ],
     "primaryHref": "https://lonislps.com/"
   },
   {
-    "id": "barber-osmosis-combs-12",
+    "id": "barber-osmosis-combs-7",
     "name": "Osmosis Combs",
     "businessType": "Barber",
     "fields": [
@@ -464,12 +509,22 @@ export const generatedBeautyItems: BeautyItem[] = [
         "key": "travels",
         "label": "Travels?",
         "value": "No"
+      },
+      {
+        "key": "datecontacted",
+        "label": "Date Contacted",
+        "value": "7/17/2026"
+      },
+      {
+        "key": "contactnotes",
+        "label": "Contact Notes",
+        "value": "DM Sent"
       }
     ],
     "primaryHref": "https://booksy.com/en-us/119326_rae-barber_barber-shop_126442_pikesville"
   },
   {
-    "id": "medical-spa-anumee-aesthetics-13",
+    "id": "medical-spa-anumee-aesthetics-8",
     "name": "Anumee Aesthetics",
     "businessType": "Medical Spa",
     "fields": [
@@ -529,12 +584,17 @@ export const generatedBeautyItems: BeautyItem[] = [
         "key": "travels",
         "label": "Travels?",
         "value": "No"
+      },
+      {
+        "key": "contactnotes",
+        "label": "Contact Notes",
+        "value": "Paid partnerhip in August"
       }
     ],
     "primaryHref": "https://anumeeaesthetics.myaestheticrecord.com/online-booking?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnqSSejw4jDHKpy4Sx5dpbS0ovsfQj0ciECy_UnablmwihEozfzaPe00JuEVA_aem_gE5Ip_A30opFbzDCVCa-SA"
   },
   {
-    "id": "nail-salon-nish-nails-15",
+    "id": "nail-salon-nish-nails-9",
     "name": "NISH (nails)",
     "businessType": "Nail Salon",
     "fields": [
