@@ -1305,6 +1305,39 @@ export const generatedEvents: PrideEvent[] = [
   {
     "id": "44",
     "festival": "july-events",
+    "day": "friday",
+    "dayDate": "2026-07-24",
+    "dayLabel": "Friday",
+    "name": "The LinqUp: Summer Edition Sunset Series",
+    "organizer": "LesLinq",
+    "types": [
+      "after-dark"
+    ],
+    "vibesRaw": "flirt community ass shaking groove",
+    "free": false,
+    "price": "$8.00",
+    "badges": [
+      "After Dark"
+    ],
+    "time": "6:00 PM",
+    "location": "Electric Cool-Aid · 512 Rhode Island Ave NW, Washington, DC 20001, USA",
+    "vibeTags": [
+      "Flirt",
+      "Community",
+      "Ass Shaking",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/the-linqup-summer-edition-sunset-series?u=tyravaughn243&_t=mrmbqnuo&os=ios&src=event_page&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnIYtxBqUVFXR35WAo78BDhYtKZkdbM9MmzFMLleX_vUVYBlyFmVJpUH98onU_aem_zQQOZ4nYjXUQm75Visa6aQ",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "discountCode": "Two Giveaway Tickets",
+    "flyerUrl": "https://www.instagram.com/p/Da0jB_5DjD2/?img_index=1",
+    "city": "dc"
+  },
+  {
+    "id": "45",
+    "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-18",
     "dayLabel": "Saturday",
@@ -1338,7 +1371,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dmv"
   },
   {
-    "id": "45",
+    "id": "46",
     "festival": "july-events",
     "day": "tuesday",
     "dayDate": "2026-07-07",
@@ -1374,7 +1407,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "46",
+    "id": "47",
     "festival": "july-events",
     "day": "thursday",
     "dayDate": "2026-07-09",
@@ -1409,7 +1442,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "47",
+    "id": "48",
     "festival": "july-events",
     "day": "friday",
     "dayDate": "2026-07-10",
@@ -1444,7 +1477,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "48",
+    "id": "49",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-11",
@@ -1476,7 +1509,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "49",
+    "id": "50",
     "festival": "july-events",
     "day": "friday",
     "dayDate": "2026-07-17",
@@ -1509,7 +1542,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "50",
+    "id": "51",
     "festival": "july-events",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1541,7 +1574,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "51",
+    "id": "52",
     "festival": "july-events",
     "day": "thursday",
     "dayDate": "2026-07-30",
@@ -1574,7 +1607,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "52",
+    "id": "53",
     "festival": "july-events",
     "day": "wednesday",
     "dayDate": "2026-07-01",
@@ -1608,7 +1641,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "53",
+    "id": "54",
     "festival": "july-events",
     "day": "thursday",
     "dayDate": "2026-07-02",
@@ -1641,7 +1674,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "54",
+    "id": "55",
     "festival": "july-events",
     "day": "friday",
     "dayDate": "2026-07-03",
@@ -1674,7 +1707,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "55",
+    "id": "56",
     "festival": "july-events",
     "day": "sunday",
     "dayDate": "2026-07-05",
@@ -1707,7 +1740,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "125",
+    "id": "126",
     "festival": "july-events",
     "day": "sunday",
     "dayDate": "2026-07-26",
@@ -1738,7 +1771,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "126",
+    "id": "127",
     "festival": "july-events",
     "day": "sunday",
     "dayDate": "2026-07-12",
@@ -1763,7 +1796,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "127",
+    "id": "128",
     "festival": "july-events",
     "day": "sunday",
     "dayDate": "2026-07-12",
@@ -1784,7 +1817,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "128",
+    "id": "129",
     "festival": "july-events",
     "day": "sunday",
     "dayDate": "2026-07-12",
@@ -1805,7 +1838,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "129",
+    "id": "130",
     "festival": "july-events",
     "day": "sunday",
     "dayDate": "2026-07-26",
@@ -1838,7 +1871,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "130",
+    "id": "131",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -1869,7 +1902,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "132",
+    "id": "133",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -1890,7 +1923,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "133",
+    "id": "134",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-18",
@@ -1911,7 +1944,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "134",
+    "id": "135",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-18",
@@ -1932,7 +1965,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "135",
+    "id": "136",
     "festival": "july-events",
     "day": "saturday",
     "dayDate": "2026-07-18",

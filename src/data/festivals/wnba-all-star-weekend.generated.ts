@@ -4,7 +4,7 @@ import type { PrideEvent } from '../../types/event';
 
 export const generatedEvents: PrideEvent[] = [
   {
-    "id": "wnba-all-star-weekend-57",
+    "id": "wnba-all-star-weekend-58",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -36,7 +36,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-58",
+    "id": "wnba-all-star-weekend-59",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -68,7 +68,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-59",
+    "id": "wnba-all-star-weekend-60",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -100,7 +100,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-60",
+    "id": "wnba-all-star-weekend-61",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -132,7 +132,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-61",
+    "id": "wnba-all-star-weekend-62",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -166,7 +166,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-62",
+    "id": "wnba-all-star-weekend-63",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -197,7 +197,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-63",
+    "id": "wnba-all-star-weekend-64",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -230,7 +230,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-64",
+    "id": "wnba-all-star-weekend-65",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -261,7 +261,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-65",
+    "id": "wnba-all-star-weekend-66",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -291,7 +291,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-66",
+    "id": "wnba-all-star-weekend-67",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -323,7 +323,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-67",
+    "id": "wnba-all-star-weekend-68",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -353,7 +353,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-68",
+    "id": "wnba-all-star-weekend-69",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -387,7 +387,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-69",
+    "id": "wnba-all-star-weekend-70",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -420,7 +420,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-70",
+    "id": "wnba-all-star-weekend-71",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -450,7 +450,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-71",
+    "id": "wnba-all-star-weekend-72",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -481,7 +481,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-72",
+    "id": "wnba-all-star-weekend-73",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -512,7 +512,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-73",
+    "id": "wnba-all-star-weekend-74",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -543,7 +543,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-75",
+    "id": "wnba-all-star-weekend-76",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -575,7 +575,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-76",
+    "id": "wnba-all-star-weekend-77",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -609,7 +609,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-77",
+    "id": "wnba-all-star-weekend-78",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -643,7 +643,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-78",
+    "id": "wnba-all-star-weekend-79",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -677,12 +677,12 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-79",
+    "id": "wnba-all-star-weekend-80",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
     "dayLabel": "Saturday",
-    "name": "WNBA ALL STAR DAY PARTY",
+    "name": "WNBA ALL STAR DAY PARTY: Pregame 101",
     "organizer": "Cut Cuz + Kels + Adonia",
     "types": [
       "meetup",
@@ -713,7 +713,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-80",
+    "id": "wnba-all-star-weekend-81",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -745,7 +745,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-81",
+    "id": "wnba-all-star-weekend-82",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -777,7 +777,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-82",
+    "id": "wnba-all-star-weekend-83",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -813,7 +813,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-83",
+    "id": "wnba-all-star-weekend-84",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -848,7 +848,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-84",
+    "id": "wnba-all-star-weekend-85",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -880,7 +880,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-85",
+    "id": "wnba-all-star-weekend-86",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -913,7 +913,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-86",
+    "id": "wnba-all-star-weekend-87",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -946,7 +946,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-87",
+    "id": "wnba-all-star-weekend-88",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -977,7 +977,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-88",
+    "id": "wnba-all-star-weekend-89",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -1008,7 +1008,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-90",
+    "id": "wnba-all-star-weekend-91",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -1036,7 +1036,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-91",
+    "id": "wnba-all-star-weekend-92",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -1068,12 +1068,12 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-92",
+    "id": "wnba-all-star-weekend-93",
     "festival": "wnba-all-star-weekend",
     "day": "sunday",
     "dayDate": "2026-07-26",
     "dayLabel": "Sunday",
-    "name": "LESBIAN ALL STAR WEEKEND: Sunday: Brunch Day Party",
+    "name": "LESBIAN ALL STAR WEEKEND: Brunch Day Party",
     "organizer": "Ladies Love Us, Bliss Sundays & Lovers and Friends",
     "types": [
       "brunch",
@@ -1105,7 +1105,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-93",
+    "id": "wnba-all-star-weekend-94",
     "festival": "wnba-all-star-weekend",
     "day": "sunday",
     "dayDate": "2026-07-26",
@@ -1138,7 +1138,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-94",
+    "id": "wnba-all-star-weekend-95",
     "festival": "wnba-all-star-weekend",
     "day": "sunday",
     "dayDate": "2026-07-26",
@@ -1169,7 +1169,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-95",
+    "id": "wnba-all-star-weekend-96",
     "festival": "wnba-all-star-weekend",
     "day": "sunday",
     "dayDate": "2026-07-26",
@@ -1199,7 +1199,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-96",
+    "id": "wnba-all-star-weekend-97",
     "festival": "wnba-all-star-weekend",
     "day": "sunday",
     "dayDate": "2026-07-26",
@@ -1231,7 +1231,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-97",
+    "id": "wnba-all-star-weekend-98",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-02",
@@ -1263,7 +1263,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-98",
+    "id": "wnba-all-star-weekend-99",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1294,7 +1294,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-99",
+    "id": "wnba-all-star-weekend-100",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1328,7 +1328,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-100",
+    "id": "wnba-all-star-weekend-101",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1360,7 +1360,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-101",
+    "id": "wnba-all-star-weekend-102",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1396,7 +1396,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-102",
+    "id": "wnba-all-star-weekend-103",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1439,7 +1439,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-103",
+    "id": "wnba-all-star-weekend-104",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1470,7 +1470,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-104",
+    "id": "wnba-all-star-weekend-105",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1503,7 +1503,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-105",
+    "id": "wnba-all-star-weekend-106",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1535,7 +1535,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-106",
+    "id": "wnba-all-star-weekend-107",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1569,7 +1569,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-107",
+    "id": "wnba-all-star-weekend-108",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1599,7 +1599,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-108",
+    "id": "wnba-all-star-weekend-109",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1631,7 +1631,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-109",
+    "id": "wnba-all-star-weekend-110",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1666,7 +1666,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-110",
+    "id": "wnba-all-star-weekend-111",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1699,7 +1699,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-111",
+    "id": "wnba-all-star-weekend-112",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1731,7 +1731,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-112",
+    "id": "wnba-all-star-weekend-113",
     "festival": "wnba-all-star-weekend",
     "day": "wednesday",
     "dayDate": "2026-07-22",
@@ -1760,7 +1760,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-113",
+    "id": "wnba-all-star-weekend-114",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -1790,7 +1790,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-114",
+    "id": "wnba-all-star-weekend-115",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -1822,7 +1822,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-115",
+    "id": "wnba-all-star-weekend-116",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -1853,7 +1853,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-117",
+    "id": "wnba-all-star-weekend-118",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -1884,7 +1884,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-118",
+    "id": "wnba-all-star-weekend-119",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -1917,7 +1917,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-119",
+    "id": "wnba-all-star-weekend-120",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -1950,7 +1950,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-120",
+    "id": "wnba-all-star-weekend-121",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -1981,7 +1981,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-121",
+    "id": "wnba-all-star-weekend-122",
     "festival": "wnba-all-star-weekend",
     "day": "friday",
     "dayDate": "2026-07-24",
@@ -2012,7 +2012,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-122",
+    "id": "wnba-all-star-weekend-123",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -2044,7 +2044,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-123",
+    "id": "wnba-all-star-weekend-124",
     "festival": "wnba-all-star-weekend",
     "day": "thursday",
     "dayDate": "2026-07-23",
@@ -2075,7 +2075,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-124",
+    "id": "wnba-all-star-weekend-125",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -2106,7 +2106,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-136",
+    "id": "wnba-all-star-weekend-137",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -2138,7 +2138,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-137",
+    "id": "wnba-all-star-weekend-138",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
@@ -2170,7 +2170,39 @@ export const generatedEvents: PrideEvent[] = [
     "city": "chicago"
   },
   {
-    "id": "wnba-all-star-weekend-138",
+    "id": "wnba-all-star-weekend-139",
+    "festival": "wnba-all-star-weekend",
+    "day": "thursday",
+    "dayDate": "2026-07-23",
+    "dayLabel": "Thursday",
+    "name": "Court & Cocktails Social",
+    "organizer": "125 ventures, Distinctions, UBS, The List",
+    "types": [
+      "workshop",
+      "educational"
+    ],
+    "vibesRaw": "networking",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Workshop",
+      "Educational",
+      "Free"
+    ],
+    "time": "5:00 PM",
+    "location": "Location Disclosed With Invite",
+    "vibeTags": [
+      "Networking"
+    ],
+    "ctaHref": "https://partiful.com/e/1sbHrSJAG7mDqAF4ymvc?",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "flyerUrl": "https://www.linkedin.com/posts/alexander-onaindia_were-kicking-off-wnba-all-star-weekend-right-share-7485706845353934848-5ogT/?utm_source=share&utm_medium=member_ios&rcm=ACoAAEJhSsMBmUzJExLVBW3yJVpe_STj3wvZjFQ",
+    "city": "chicago"
+  },
+  {
+    "id": "wnba-all-star-weekend-140",
     "festival": "wnba-all-star-weekend",
     "day": "saturday",
     "dayDate": "2026-07-25",
