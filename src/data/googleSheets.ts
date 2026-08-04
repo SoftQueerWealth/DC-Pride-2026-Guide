@@ -105,7 +105,7 @@ const COLUMN_ALIASES = {
   day: ['day', 'dataday', 'data-day', 'dayid', 'eventday', 'dayofweek', 'weekday'],
   dayLabel: ['daylabel', 'dayname', 'displayday'],
   name: ['name', 'event', 'eventname', 'eventtitle', 'title'],
-  organizer: ['organizer', 'eventorganizer', 'host', 'hosts', 'presenter'],
+  organizer: ['organizer', 'organizername', 'eventorganizer', 'host', 'hosts', 'presenter'],
   types: ['types', 'type', 'venuetype', 'eventtypes', 'eventtype', 'datatypes', 'data-types', 'category', 'categories'],
   vibesRaw: ['vibesraw', 'vibes', 'vibestags', 'datavibes', 'data-vibes', 'vibe'],
   free: ['free', 'freetickets', 'isfree', 'datafree', 'data-free'],
@@ -642,13 +642,30 @@ interface ParseSheetRowsOptions {
   idPrefix?: string;
 }
 
+function rowLooksLikeEventHeader(row: string[]): boolean {
+  const headers = row.map(normalizeHeader);
+  const hasName = COLUMN_ALIASES.name.some((alias) => headers.includes(normalizeHeader(alias)));
+  const hasDay = COLUMN_ALIASES.day.some((alias) => headers.includes(normalizeHeader(alias)));
+  return hasName && hasDay;
+}
+
+/** Sheets may include a legend/preamble above the real header row (e.g. August Events). */
+function findEventHeaderRowIndex(values: string[][]): number {
+  for (let index = 0; index < Math.min(values.length, 15); index += 1) {
+    if (rowLooksLikeEventHeader(values[index] ?? [])) return index;
+  }
+  return 0;
+}
+
 function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): PrideEvent[] {
   const { festivalId, idPrefix = '' } = options;
-  const [headerRow, ...dataRows] = values;
+  const headerRowIndex = findEventHeaderRowIndex(values);
+  const headerRow = values[headerRowIndex];
   if (!headerRow) return [];
 
   const headers = headerRow.map(normalizeHeader);
-  return dataRows
+  return values
+    .slice(headerRowIndex + 1)
     .map((row, index): PrideEvent | null => {
       if (row.every((cell) => !String(cell ?? '').trim())) return null;
 
@@ -702,7 +719,7 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
       if (cityRaw && !city) return null;
 
       return {
-        id: `${idPrefix}${index + 2}`,
+        id: `${idPrefix}${headerRowIndex + index + 2}`,
         festival: festivalId,
         day,
         ...(dayDate ? { dayDate } : {}),
