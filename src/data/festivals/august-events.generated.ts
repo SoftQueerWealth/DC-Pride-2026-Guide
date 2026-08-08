@@ -4,7 +4,7 @@ import type { PrideEvent } from '../../types/event';
 
 export const generatedEvents: PrideEvent[] = [
   {
-    "id": "5",
+    "id": "4",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-08-17",
@@ -35,7 +35,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "6",
+    "id": "5",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -69,7 +69,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "8",
+    "id": "7",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-01",
@@ -98,7 +98,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "9",
+    "id": "8",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-01",
@@ -127,36 +127,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "10",
-    "festival": "august-events",
-    "day": "thursday",
-    "dayDate": "2026-08-06",
-    "dayLabel": "Thursday",
-    "name": "Bloodlust Ft DJ Re:Code",
-    "organizer": "Transmission",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking groove",
-    "free": false,
-    "price": "$20",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
-    "vibeTags": [
-      "Ass Shaking",
-      "Groove"
-    ],
-    "ctaHref": "https://shotgun.live/en/events/bloodlust-vampire-club-night",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "dc"
-  },
-  {
-    "id": "11",
+    "id": "9",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -190,7 +161,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "12",
+    "id": "10",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -223,38 +194,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "13",
-    "festival": "august-events",
-    "day": "thursday",
-    "dayDate": "2026-08-13",
-    "dayLabel": "Thursday",
-    "name": "Substrate Pres. Moktar",
-    "organizer": "Transmission",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking groove community flirt",
-    "free": false,
-    "price": "$20",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "9:00 PM",
-    "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
-    "vibeTags": [
-      "Ass Shaking",
-      "Groove",
-      "Community",
-      "Flirt"
-    ],
-    "ctaHref": "https://shotgun.live/en/events/substrate-pres-moktar",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "dc"
-  },
-  {
-    "id": "14",
+    "id": "11",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -285,7 +225,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "15",
+    "id": "12",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -316,7 +256,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "16",
+    "id": "13",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -347,7 +287,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "17",
+    "id": "14",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -378,7 +318,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "18",
+    "id": "15",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -409,7 +349,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "19",
+    "id": "16",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -441,12 +381,12 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "20",
+    "id": "17",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
     "dayLabel": "Saturday",
-    "name": "Verify manually",
+    "name": "Dyke's Uncorked: Sapphic Virginia Tour",
     "organizer": "QueerTalk",
     "types": [
       "brunch",
@@ -474,7 +414,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "21",
+    "id": "18",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -510,7 +450,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "22",
+    "id": "19",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -546,7 +486,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "23",
+    "id": "20",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-13",
@@ -580,7 +520,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "24",
+    "id": "21",
     "festival": "august-events",
     "day": "tuesday",
     "dayDate": "2026-08-04",
@@ -613,7 +553,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "25",
+    "id": "22",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -646,7 +586,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "26",
+    "id": "23",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-30",
@@ -677,7 +617,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "28",
+    "id": "25",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -708,7 +648,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "29",
+    "id": "26",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -739,7 +679,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "31",
+    "id": "28",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-05",
@@ -771,12 +711,12 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "32",
+    "id": "29",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
     "dayLabel": "Saturday",
-    "name": "Verify manually",
+    "name": "🎨MUSE! Hike",
     "organizer": "Big Kids Club DMV",
     "types": [
       "meetup",
@@ -791,7 +731,7 @@ export const generatedEvents: PrideEvent[] = [
       "Outdoors Hangout",
       "Workshop"
     ],
-    "time": "9:00 AM",
+    "time": "9:30 AM",
     "location": "Rock Creek Park Nature Center and Planetarium · 5200 Glover Rd NW, Washington, DC 20015, USA",
     "vibeTags": [
       "Chill",
@@ -806,12 +746,12 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "33",
+    "id": "30",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
     "dayLabel": "Saturday",
-    "name": "Verify manually",
+    "name": "Hang N’ Hike: Masc Edition",
     "organizer": "Big Kids Club DMV",
     "types": [
       "meetup",
@@ -839,7 +779,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "34",
+    "id": "31",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -874,7 +814,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "35",
+    "id": "32",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -906,7 +846,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "36",
+    "id": "33",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-23",
@@ -939,7 +879,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "37",
+    "id": "34",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -970,7 +910,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "38",
+    "id": "35",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -1001,7 +941,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "39",
+    "id": "36",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-30",
@@ -1032,7 +972,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "40",
+    "id": "37",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -1065,69 +1005,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "41",
-    "festival": "august-events",
-    "day": "friday",
-    "dayDate": "2026-08-07",
-    "dayLabel": "Friday",
-    "name": "House Of Grooves: Stretch Armstrong + Sissies Of Mercy",
-    "organizer": "House of Yes",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking flirt community groove",
-    "free": false,
-    "price": "$11.00+",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://shotgun.live/en/events/house-of-grooves-august-7-2026",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "42",
-    "festival": "august-events",
-    "day": "friday",
-    "dayDate": "2026-08-07",
-    "dayLabel": "Friday",
-    "name": "Inner Sin: Mandrake + Maayan Nidam",
-    "organizer": "House of Yes",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking flirt community groove",
-    "free": false,
-    "price": "$16.00+",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "The Onyx Room · 8 Wyckoff Avenue, Brooklyn, NY 11237",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://shotgun.live/en/events/inner-sin-aug-7-2026",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "43",
+    "id": "38",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -1160,38 +1038,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "44",
-    "festival": "august-events",
-    "day": "saturday",
-    "dayDate": "2026-08-08",
-    "dayLabel": "Saturday",
-    "name": "Festival Dominicano: Mundo + Brian Cid Presents Ladobé",
-    "organizer": "House of Yes",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking flirt community groove",
-    "free": false,
-    "price": "$22.05+",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://shotgun.live/en/events/festival-dominicano-august-8-2026",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "45",
+    "id": "39",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -1213,7 +1060,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "46",
+    "id": "40",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -1244,7 +1091,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "47",
+    "id": "41",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1277,38 +1124,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "48",
-    "festival": "august-events",
-    "day": "saturday",
-    "dayDate": "2026-08-15",
-    "dayLabel": "Saturday",
-    "name": "Heat Wave: Egyptian Lover, Stacey Hotwaxx Hale, Bridge",
-    "organizer": "House of Yes",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking flirt community groove",
-    "free": false,
-    "price": "$43.31+",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://shotgun.live/en/events/egyptian-lover-august-15-2026",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "49",
+    "id": "42",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1339,7 +1155,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "50",
+    "id": "43",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -1373,7 +1189,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "51",
+    "id": "44",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -1405,7 +1221,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "52",
+    "id": "45",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -1438,7 +1254,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "53",
+    "id": "46",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -1469,7 +1285,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "54",
+    "id": "47",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -1502,38 +1318,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "55",
-    "festival": "august-events",
-    "day": "saturday",
-    "dayDate": "2026-08-22",
-    "dayLabel": "Saturday",
-    "name": "Full Throttle: Township Rebellion",
-    "organizer": "House of Yes",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking flirt community groove",
-    "free": false,
-    "price": "$19.50-$27.30",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://shotgun.live/en/events/august-22-2026",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "56",
+    "id": "48",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -1564,7 +1349,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "57",
+    "id": "49",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-28",
@@ -1597,38 +1382,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "58",
-    "festival": "august-events",
-    "day": "friday",
-    "dayDate": "2026-08-28",
-    "dayLabel": "Friday",
-    "name": "Slayyyland: Cam Girl, Vice, P_A_T",
-    "organizer": "House of Yes",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking flirt community groove",
-    "free": false,
-    "price": "$0-$16.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://shotgun.live/en/events/slayyyland-2",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "59",
+    "id": "50",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -1661,7 +1415,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "60",
+    "id": "51",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -1692,7 +1446,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "61",
+    "id": "52",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -1723,12 +1477,12 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "62",
+    "id": "53",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
     "dayLabel": "Friday",
-    "name": "All Gays Go To Heaven (per ticket-link URL slug, unconfirmed -- dice.fm page could not be fetched)",
+    "name": "All Gays Go To Heaven",
     "organizer": "ggg.nyc",
     "types": [
       "day-party"
@@ -1755,7 +1509,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "63",
+    "id": "54",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -1789,7 +1543,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "64",
+    "id": "55",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1824,7 +1578,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "65",
+    "id": "56",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-13",
@@ -1859,7 +1613,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "66",
+    "id": "57",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1894,76 +1648,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "67",
-    "festival": "august-events",
-    "day": "sunday",
-    "dayDate": "2026-08-16",
-    "dayLabel": "Sunday",
-    "name": "Children's Author Event: The Boredom Monster -- Reading, Drawing & Signing!",
-    "organizer": "Gladys Books",
-    "types": [
-      "meetup",
-      "workshop",
-      "educational"
-    ],
-    "vibesRaw": "chill creative community",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational",
-      "Free"
-    ],
-    "time": "2:00 PM",
-    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233",
-    "vibeTags": [
-      "Chill",
-      "Creative",
-      "Community"
-    ],
-    "ctaHref": "https://luma.com/THE-BOREDOM-MONSTER",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "city": "nyc"
-  },
-  {
-    "id": "68",
-    "festival": "august-events",
-    "day": "tuesday",
-    "dayDate": "2026-08-18",
-    "dayLabel": "Tuesday",
-    "name": "Author Event: What (TF) Do I Do Now? by Tareasa “Reesa Teesa” Johnson",
-    "organizer": "Gladys Books",
-    "types": [
-      "meetup",
-      "workshop",
-      "educational"
-    ],
-    "vibesRaw": "chill creative community",
-    "free": false,
-    "price": "$32 (signed book) or $10 (gift card tier)",
-    "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational"
-    ],
-    "time": "7:00 PM",
-    "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233",
-    "vibeTags": [
-      "Chill",
-      "Creative",
-      "Community"
-    ],
-    "ctaHref": "https://luma.com/ReesaTeesa",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-meetup",
-    "city": "nyc"
-  },
-  {
-    "id": "69",
+    "id": "58",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -1998,7 +1683,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "70",
+    "id": "59",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-27",
@@ -2032,7 +1717,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "71",
+    "id": "60",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-28",
@@ -2059,13 +1744,13 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "72",
+    "id": "61",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-13",
     "dayLabel": "Thursday",
     "name": "Parity Porch Concert Summer Series (August edition)",
-    "organizer": "Blk Ass Flea Mkt (shared/promoted -- organized by Parity)",
+    "organizer": "Blk Ass Flea Mkt & Parity",
     "types": [
       "live-show",
       "happy-hour"
@@ -2093,7 +1778,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "73",
+    "id": "62",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -2112,7 +1797,7 @@ export const generatedEvents: PrideEvent[] = [
       "Meetup"
     ],
     "time": "4:00 PM",
-    "location": "Verify manually · LOCATION TBA",
+    "location": "LOCATION TBA",
     "vibeTags": [
       "Chill",
       "Community",
@@ -2126,7 +1811,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "75",
+    "id": "64",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -2158,7 +1843,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "76",
+    "id": "65",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-09",
@@ -2191,70 +1876,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "79",
-    "festival": "august-events",
-    "day": "saturday",
-    "dayDate": "2026-08-15",
-    "dayLabel": "Saturday",
-    "name": "GATHER August Edition: A Monthly Mixtape Sapphic Tea Dance & Social",
-    "organizer": "Mixtape Sapphics",
-    "types": [
-      "outdoors-hangout",
-      "happy-hour"
-    ],
-    "vibesRaw": "community chill groove",
-    "free": false,
-    "price": "$21",
-    "badges": [
-      "Outdoors Hangout",
-      "Happy Hour"
-    ],
-    "time": "5:00 PM",
-    "location": "Spark Social · 2009 14th Street Northwest, Washington, DC 20009",
-    "vibeTags": [
-      "Community",
-      "Chill",
-      "Groove"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/gather-august-edition-a-monthly-mixtape-sapphic-tea-dance-social-tickets-1991954680070",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-outdoors-hangout",
-    "city": "dc"
-  },
-  {
-    "id": "80",
-    "festival": "august-events",
-    "day": "saturday",
-    "dayDate": "2026-08-29",
-    "dayLabel": "Saturday",
-    "name": "Mic Check: A Mixtape Karaoke Community Night",
-    "organizer": "Mixtape Sapphics",
-    "types": [
-      "happy-hour"
-    ],
-    "vibesRaw": "karaoke chill community groove",
-    "free": false,
-    "price": "$36",
-    "badges": [
-      "Happy Hour"
-    ],
-    "time": "5:00 PM",
-    "location": "Muzette · 2305 18th Street Northwest, Washington, DC 20009",
-    "vibeTags": [
-      "Karaoke",
-      "Chill",
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://www.eventbrite.com/e/mic-check-a-mixtape-karaoke-community-night-tickets-1995386748479",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-happy-hour",
-    "city": "dc"
-  },
-  {
-    "id": "85",
+    "id": "72",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -2285,7 +1907,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "86",
+    "id": "73",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -2316,7 +1938,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "88",
+    "id": "74",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -2351,7 +1973,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "89",
+    "id": "75",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -2388,7 +2010,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "90",
+    "id": "76",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-08-17",
@@ -2422,7 +2044,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "91",
+    "id": "77",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -2454,7 +2076,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "92",
+    "id": "78",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-12",
@@ -2488,71 +2110,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "94",
-    "festival": "august-events",
-    "day": "thursday",
-    "dayDate": "2026-08-13",
-    "dayLabel": "Thursday",
-    "name": "TrappyHour",
-    "organizer": "TrappyHourHarlem",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "flirt community ass shaking grown & sexy groove",
-    "free": false,
-    "price": "TBD",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Harlem Nights · 2361 Adam Clayton Powell Jr Blvd, New York, NY 10030",
-    "vibeTags": [
-      "Flirt",
-      "Community",
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://www.the-nyc-collective.com/events/trappyhour-1",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "95",
-    "festival": "august-events",
-    "day": "sunday",
-    "dayDate": "2026-08-16",
-    "dayLabel": "Sunday",
-    "name": "TrappyHour",
-    "organizer": "TrappyHourHarlem",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "flirt community ass shaking grown & sexy groove",
-    "free": false,
-    "price": "TBD",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Harlem Nights · 2361 Adam Clayton Powell Jr Blvd, New York, NY 10030",
-    "vibeTags": [
-      "Flirt",
-      "Community",
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://www.the-nyc-collective.com/events/trappyhour-2",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "96",
+    "id": "80",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -2584,7 +2142,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "97",
+    "id": "81",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -2616,7 +2174,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "98",
+    "id": "82",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -2648,7 +2206,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "99",
+    "id": "83",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -2680,7 +2238,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "100",
+    "id": "84",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -2712,73 +2270,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "101",
-    "festival": "august-events",
-    "day": "saturday",
-    "dayDate": "2026-08-15",
-    "dayLabel": "Saturday",
-    "name": "DC \"Dungeon\"",
-    "organizer": "DEVIANT",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "flirt community ass shaking grown & sexy groove kink",
-    "free": false,
-    "price": "$29",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "ICON · 2001 11th Street NW, Washington, DC 20001",
-    "vibeTags": [
-      "Flirt",
-      "Community",
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove",
-      "Kink"
-    ],
-    "ctaHref": "https://www.deviant.live/party/dc",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "dc"
-  },
-  {
-    "id": "102",
-    "festival": "august-events",
-    "day": "friday",
-    "dayDate": "2026-08-14",
-    "dayLabel": "Friday",
-    "name": "NYC \"Physique\"",
-    "organizer": "DEVIANT",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "flirt community ass shaking grown & sexy groove kink",
-    "free": false,
-    "price": "$25 Before 12AM / $35 General Admission",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "11:00 PM",
-    "location": "Red Eye · 355 West 41st Street, New York, NY 10036",
-    "vibeTags": [
-      "Flirt",
-      "Community",
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove",
-      "Kink"
-    ],
-    "ctaHref": "https://www.deviant.live/party/nyc",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "103",
+    "id": "85",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2813,7 +2305,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "104",
+    "id": "86",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -2843,7 +2335,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "105",
+    "id": "87",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -2876,7 +2368,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "106",
+    "id": "88",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -2908,7 +2400,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "107",
+    "id": "89",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-26",
@@ -2942,7 +2434,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "108",
+    "id": "90",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -2974,35 +2466,83 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "109",
+    "id": "93",
     "festival": "august-events",
-    "day": "friday",
-    "dayDate": "2026-08-07",
-    "dayLabel": "Friday",
-    "name": "GIVE WITH: A CLLCTIVGive Celebration",
-    "organizer": "CLLCTIVLY",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "groove community ass shaking flirt creative",
+    "day": "monday",
+    "dayDate": "2026-08-17",
+    "dayLabel": "Monday",
+    "name": "Virtual Intuitive Movement: A Grounding & Embodiment Experience with Dr. Udim Isang",
+    "organizer": "Lesbifriends Travel",
+    "types": [],
+    "vibesRaw": "",
     "free": false,
-    "price": "$78.50",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "7:00 PM (Elevated Access) / 8:00 PM (General Admission)",
-    "location": "Baltimore Museum of Industry · 1415 Key Highway, Baltimore, MD 21230",
-    "vibeTags": [
-      "Groove",
-      "Community",
-      "Ass Shaking",
-      "Flirt",
-      "Creative"
-    ],
-    "ctaHref": "https://tickets.givewith.org/events/cllctivly/2294817",
+    "badges": [],
+    "time": "",
+    "location": "",
+    "vibeTags": [],
+    "ctaHref": "https://www.lesbifriendstravel.com/events/virtual-intuitive-movement",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "baltimore"
+    "cardClass": "tp-day-party"
+  },
+  {
+    "id": "94",
+    "festival": "august-events",
+    "day": "monday",
+    "dayDate": "2026-08-17",
+    "dayLabel": "Monday",
+    "name": "Virtual Intuitive Movement: A Grounding & Embodiment Experience with Dr. Udim Isang",
+    "organizer": "Lesbifriends Travel",
+    "types": [],
+    "vibesRaw": "",
+    "free": false,
+    "badges": [],
+    "time": "",
+    "location": "",
+    "vibeTags": [],
+    "ctaHref": "https://www.lesbifriendstravel.com/events/virtual-intuitive-movement",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party"
+  },
+  {
+    "id": "95",
+    "festival": "august-events",
+    "day": "sunday",
+    "dayDate": "2026-08-16",
+    "dayLabel": "Sunday",
+    "name": "Lesbifriends in the Park 2.1",
+    "organizer": "Lesbifriends Travel",
+    "types": [],
+    "vibesRaw": "",
+    "free": false,
+    "badges": [],
+    "time": "",
+    "location": "",
+    "vibeTags": [],
+    "ctaHref": "https://www.lesbifriendstravel.com/events/lbf-in-the-park-3",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party"
+  },
+  {
+    "id": "96",
+    "festival": "august-events",
+    "day": "saturday",
+    "dayDate": "2026-08-01",
+    "dayLabel": "Saturday",
+    "name": "BLISS \"Body\" Rooftop Pool Party",
+    "organizer": "A 2 Zee Events",
+    "types": [],
+    "vibesRaw": "",
+    "free": false,
+    "badges": [],
+    "time": "",
+    "location": "",
+    "vibeTags": [],
+    "ctaHref": "https://www.eventbee.com/v/blisspoolparty#/tickets",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-day-party"
   }
 ];
