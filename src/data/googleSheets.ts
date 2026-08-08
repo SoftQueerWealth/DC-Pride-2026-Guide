@@ -133,6 +133,7 @@ const COLUMN_ALIASES = {
   festival: ['festival', 'pride', 'guide', 'eventgroup', 'festivalfilter'],
   city: ['city', 'eventcity', 'market'],
   flyerUrl: ['flyer', 'flyerurl', 'flyerlink', 'flyerimage', 'eventflyer', 'poster', 'posterurl', 'iglinkflyer'],
+  skip: ['skip', 'skiprow', 'skipevent'],
 } as const;
 
 const BEAUTY_COLUMN_ALIASES = {
@@ -668,6 +669,8 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
     .slice(headerRowIndex + 1)
     .map((row, index): PrideEvent | null => {
       if (row.every((cell) => !String(cell ?? '').trim())) return null;
+
+      if (parseBoolean(readCellFromFirstMatchingHeader(headers, row, 'skip'))) return null;
 
       const shifted = isDateShiftedRow(headers, row);
       const priceShifted = !shifted && isPriceColumnShiftedRow(headers, row);

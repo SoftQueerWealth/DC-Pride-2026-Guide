@@ -81,7 +81,7 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     tabLabel: 'August Events',
     dateRange: 'August 2026',
     location: 'DC · NYC · Baltimore · DMV',
-    sheetName: 'August Events',
+    sheetName: 'Filterable August Events',
     spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
     grouping: 'calendar',
     enabled: true,
