@@ -369,7 +369,7 @@ export const generatedEvents: PrideEvent[] = [
     "dayDate": "2026-08-08",
     "dayLabel": "Saturday",
     "name": "Yoga with Indie and Lez Black Gurls Presents: Community Yoga",
-    "organizer": "Yoga with Indie x Lez Black Gurls (confirmed collab)",
+    "organizer": "Yoga with Indie x Lez Black Gurls",
     "types": [
       "workshop",
       "educational"
@@ -770,7 +770,7 @@ export const generatedEvents: PrideEvent[] = [
     "dayDate": "2026-08-14",
     "dayLabel": "Friday",
     "name": "Out N Bad x SheShed DC x Sapphic JA: THE CROSSOVER (Twerk vs Bashment)",
-    "organizer": "She Shed",
+    "organizer": "Out N Bad x She Shed",
     "types": [
       "after-dark"
     ],
@@ -884,37 +884,6 @@ export const generatedEvents: PrideEvent[] = [
     "day": "friday",
     "dayDate": "2026-08-14",
     "dayLabel": "Friday",
-    "name": "Out N Bad x SheShed DC x Sapphic JA: THE CROSSOVER (Twerk vs Bashment) -- confirms/updates the She Shed row",
-    "organizer": "Out N Bad",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking flirt community groove",
-    "free": false,
-    "price": "$18.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "The House · 29 Locust St, Brooklyn, NY 11206, USA",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Community",
-      "Groove"
-    ],
-    "ctaHref": "https://www.outnbad.com/events",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "31",
-    "festival": "august-events",
-    "day": "friday",
-    "dayDate": "2026-08-14",
-    "dayLabel": "Friday",
     "name": "All Gays Go To Heaven",
     "organizer": "ggg.nyc",
     "types": [
@@ -942,7 +911,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "32",
+    "id": "31",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -974,7 +943,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "33",
+    "id": "32",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1006,7 +975,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "34",
+    "id": "33",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1037,7 +1006,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "35",
+    "id": "34",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1070,7 +1039,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "36",
+    "id": "35",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1102,7 +1071,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "37",
+    "id": "36",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1135,7 +1104,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "38",
+    "id": "37",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1166,7 +1135,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "39",
+    "id": "38",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1201,7 +1170,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "40",
+    "id": "39",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1236,7 +1205,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "41",
+    "id": "40",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1267,7 +1236,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "42",
+    "id": "41",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1298,7 +1267,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "44",
+    "id": "43",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -1330,7 +1299,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "45",
+    "id": "44",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -1350,7 +1319,7 @@ export const generatedEvents: PrideEvent[] = [
       "Free"
     ],
     "time": "12:00 PM",
-    "location": "Rock Creek Park · Washington, DC (exact site withheld pre-event for attendee privacy -- not a data gap)",
+    "location": "Rock Creek Park · Shared after RSVP",
     "vibeTags": [
       "Chill",
       "Community",
@@ -1364,7 +1333,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "46",
+    "id": "45",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -1397,7 +1366,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "48",
+    "id": "47",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -1429,7 +1398,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "49",
+    "id": "48",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -1461,39 +1430,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "50",
-    "festival": "august-events",
-    "day": "sunday",
-    "dayDate": "2026-08-16",
-    "dayLabel": "Sunday",
-    "name": "Lesbifriends in the Park 2.1",
-    "organizer": "Lesbifriends Travel",
-    "types": [
-      "meetup",
-      "outdoors-hangout"
-    ],
-    "vibesRaw": "community wellness",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "Meetup",
-      "Outdoors Hangout",
-      "Free"
-    ],
-    "time": "12:00 PM",
-    "location": "Rock Creek Park",
-    "vibeTags": [
-      "Community",
-      "Wellness"
-    ],
-    "ctaHref": "https://www.lesbifriendstravel.com/events/lbf-in-the-park-2",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-meetup",
-    "city": "dc"
-  },
-  {
-    "id": "51",
+    "id": "49",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-08-17",
@@ -1524,7 +1461,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "52",
+    "id": "50",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-08-17",
@@ -1558,47 +1495,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "53",
-    "festival": "august-events",
-    "day": "monday",
-    "dayDate": "2026-08-17",
-    "dayLabel": "Monday",
-    "name": "Virtual Intuitive Movement: A Grounding & Embodiment Experience with Dr. Udim Isang",
-    "organizer": "Lesbifriends Travel",
-    "types": [],
-    "vibesRaw": "",
-    "free": false,
-    "badges": [],
-    "time": "",
-    "location": "",
-    "vibeTags": [],
-    "ctaHref": "https://www.lesbifriendstravel.com/events/virtual-intuitive-movement",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "54",
-    "festival": "august-events",
-    "day": "monday",
-    "dayDate": "2026-08-17",
-    "dayLabel": "Monday",
-    "name": "Virtual Intuitive Movement: A Grounding & Embodiment Experience with Dr. Udim Isang",
-    "organizer": "Lesbifriends Travel",
-    "types": [],
-    "vibesRaw": "",
-    "free": false,
-    "badges": [],
-    "time": "",
-    "location": "",
-    "vibeTags": [],
-    "ctaHref": "https://www.lesbifriendstravel.com/events/virtual-intuitive-movement",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "55",
+    "id": "51",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -1630,7 +1527,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "56",
+    "id": "52",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -1665,7 +1562,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "57",
+    "id": "53",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -1695,7 +1592,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "58",
+    "id": "54",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -1726,7 +1623,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "59",
+    "id": "55",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -1760,7 +1657,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "60",
+    "id": "56",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -1792,7 +1689,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "61",
+    "id": "57",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -1824,7 +1721,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "62",
+    "id": "58",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -1857,7 +1754,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "63",
+    "id": "59",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -1888,7 +1785,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "65",
+    "id": "61",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -1920,7 +1817,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "66",
+    "id": "62",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -1951,7 +1848,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "67",
+    "id": "63",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -1987,7 +1884,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "68",
+    "id": "64",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2018,7 +1915,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "69",
+    "id": "65",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2051,7 +1948,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "70",
+    "id": "66",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2082,7 +1979,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "71",
+    "id": "67",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2102,7 +1999,7 @@ export const generatedEvents: PrideEvent[] = [
       "Free"
     ],
     "time": "6:00 PM",
-    "location": "Terminal 5 · New York, NY (street address not given on this page)",
+    "location": "Terminal 5 · 610 West 56th Street\r\nNew York, NY 10019",
     "vibeTags": [
       "Flirt",
       "Community",
@@ -2117,7 +2014,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "72",
+    "id": "68",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-23",
@@ -2150,7 +2047,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "73",
+    "id": "69",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-26",
@@ -2184,7 +2081,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "74",
+    "id": "70",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-27",
@@ -2218,7 +2115,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "75",
+    "id": "71",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-28",
@@ -2251,7 +2148,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "77",
+    "id": "73",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -2284,7 +2181,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "78",
+    "id": "74",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -2317,12 +2214,12 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "79",
+    "id": "75",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
     "dayLabel": "Saturday",
-    "name": "Abc Party: Sponges & N2n",
+    "name": "ABC Party: Sponges & N2n",
     "organizer": "House of Yes",
     "types": [
       "after-dark"
@@ -2348,7 +2245,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "82",
+    "id": "78",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-30",
@@ -2379,7 +2276,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "83",
+    "id": "79",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-30",
@@ -2410,7 +2307,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "85",
+    "id": "81",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2441,7 +2338,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "nyc"
   },
   {
-    "id": "86",
+    "id": "82",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-05",
@@ -2477,7 +2374,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "87",
+    "id": "83",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-12",
@@ -2513,7 +2410,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "88",
+    "id": "84",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -2549,7 +2446,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "89",
+    "id": "85",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -2583,7 +2480,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "baltimore"
   },
   {
-    "id": "90",
+    "id": "86",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -2619,7 +2516,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "91",
+    "id": "87",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -2655,7 +2552,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "92",
+    "id": "88",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -2691,7 +2588,7 @@ export const generatedEvents: PrideEvent[] = [
     "city": "dc"
   },
   {
-    "id": "93",
+    "id": "89",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
