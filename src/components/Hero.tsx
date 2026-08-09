@@ -1,3 +1,4 @@
+import { LAST_UPDATED_LABEL } from '../constants/lastUpdated';
 import { HeroSocial } from './HeroSocial';
 
 export function Hero() {
@@ -20,7 +21,7 @@ export function Hero() {
         <br />
         <em>Schedule subject to change.</em>
       </div>
-      <p className="last-updated">Last updated · July 10, 2026</p>
+      <p className="last-updated">Last updated · {LAST_UPDATED_LABEL}</p>
     </header>
   );
 }
