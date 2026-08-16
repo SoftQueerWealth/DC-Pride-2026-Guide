@@ -2,6 +2,9 @@ import type { CityKey } from './cities';
 
 export type FestivalGrouping = 'weekday' | 'calendar';
 
+/** Sheet value in Black Pride / Festival for The Collective takeover tab. */
+export const COLLECTIVE_PRIDE_SERIES = 'The Collective: NYC Black Pride';
+
 export interface PrideFestival {
   id: string;
   tabLabel: string;
@@ -13,6 +16,10 @@ export interface PrideFestival {
   enabled: boolean;
   cityInclude?: CityKey[];
   cityExclude?: CityKey[];
+  /** Keep only rows whose Black Pride / Festival column matches. */
+  prideSeriesInclude?: string[];
+  /** Drop rows whose Black Pride / Festival column matches. */
+  prideSeriesExclude?: string[];
 }
 
 export const PRIDE_FESTIVALS: PrideFestival[] = [
@@ -85,6 +92,19 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
     grouping: 'calendar',
     enabled: true,
+    prideSeriesExclude: [COLLECTIVE_PRIDE_SERIES],
+  },
+  {
+    id: 'nyc-collective-black-queer-takeover',
+    tabLabel: 'NYC: The Collective Black Queer Takeover',
+    dateRange: 'August 2026',
+    location: 'New York, NY',
+    sheetName: 'Filterable August Events',
+    spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
+    grouping: 'calendar',
+    enabled: true,
+    cityInclude: ['nyc'],
+    prideSeriesInclude: [COLLECTIVE_PRIDE_SERIES],
   },
 ];
 

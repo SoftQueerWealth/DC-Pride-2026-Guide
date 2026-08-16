@@ -82,4 +82,6 @@ export interface PrideEvent {
   flyerUrl?: string;
   /** Normalized city key from the sheet City column, e.g. dc, nyc, baltimore, dmv. */
   city?: string;
+  /** Value from the sheet Black Pride / Festival column, when present. */
+  prideSeries?: string;
 }

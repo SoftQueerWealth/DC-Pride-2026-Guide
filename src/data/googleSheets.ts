@@ -131,6 +131,7 @@ const COLUMN_ALIASES = {
     'ticketcode',
   ],
   festival: ['festival', 'pride', 'guide', 'eventgroup', 'festivalfilter'],
+  prideSeries: ['blackpridefestival', 'blackpride', 'pridefestival', 'blackpridefest'],
   city: ['city', 'eventcity', 'market'],
   flyerUrl: ['flyer', 'flyerurl', 'flyerlink', 'flyerimage', 'eventflyer', 'poster', 'posterurl', 'iglinkflyer'],
   skip: ['skip', 'skiprow', 'skipevent'],
@@ -717,6 +718,7 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         discountCodeRaw && !shouldHideDiscountCode(discountCodeRaw) ? discountCodeRaw : '';
 
       const flyerUrl = normalizeFlyerUrl(readCell(headers, row, 'flyerUrl'));
+      const prideSeries = readCell(headers, row, 'prideSeries') || undefined;
       const cityRaw = readCell(headers, row, 'city');
       const city = cityRaw ? normalizeSheetCity(cityRaw) : null;
       if (cityRaw && !city) return null;
@@ -746,6 +748,7 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         ...(discountCode ? { discountCode } : {}),
         ...(flyerUrl ? { flyerUrl } : {}),
         ...(city ? { city } : {}),
+        ...(prideSeries ? { prideSeries } : {}),
       };
     })
     .filter((event): event is PrideEvent => event !== null);

@@ -1,6 +1,9 @@
 import { useCallback, useMemo, useState } from 'react';
 import { BeautySection } from './components/BeautySection';
-import { ENABLED_FESTIVALS, festivalById } from './constants/festivals';
+import {
+  ENABLED_FESTIVALS,
+  festivalById,
+} from './constants/festivals';
 import { PUBLIC_SITE_ORIGIN } from './constants/site';
 import { FILTER_SECTIONS, type FilterSectionDef } from './constants/filters';
 import { useBeautyItems } from './hooks/useBeautyItems';
@@ -30,6 +33,9 @@ import { shareItinerary } from './lib/shareItinerary';
 import { filterUpcomingEvents } from './lib/upcomingEvents';
 
 const BEAUTY_TAB = 'beauty';
+const AUGUST_FESTIVAL_ID = 'august-events';
+const COLLECTIVE_FESTIVAL_ID = 'nyc-collective-black-queer-takeover';
+const NAV_FESTIVALS = ENABLED_FESTIVALS.filter((festival) => festival.id !== COLLECTIVE_FESTIVAL_ID);
 
 enum BeautyFilterKind {
   BusinessType = 'business-type',
@@ -37,7 +43,7 @@ enum BeautyFilterKind {
 }
 
 const COMMUNITY_PERK_TYPES = ['Hair', 'Wellness', 'Brows'] as const;
-const DEFAULT_TAB = ENABLED_FESTIVALS[0]?.id ?? BEAUTY_TAB;
+const DEFAULT_TAB = NAV_FESTIVALS[0]?.id ?? BEAUTY_TAB;
 
 function normalizeFilterValue(value: string): string {
   return value.toLowerCase().replace(/\s+/g, ' ').trim();
@@ -61,6 +67,7 @@ export default function App() {
   const beauty = useBeautyItems();
   const showBeautyTab = activeTab === BEAUTY_TAB;
   const showFestivalTab = !showBeautyTab;
+  const collectiveMode = activeTab === COLLECTIVE_FESTIVAL_ID;
   const activeFestival = showFestivalTab ? festivalById(activeTab) : undefined;
   const isSingleCityFestival = (activeFestival?.cityInclude?.length ?? 0) === 1;
   const festivalEvents = useMemo(
@@ -171,14 +178,14 @@ export default function App() {
       <Hero />
       <nav className="tab-nav" aria-label="Guide sections">
         <div className="tab-list" role="tablist">
-          {ENABLED_FESTIVALS.map((festival) => (
+          {NAV_FESTIVALS.map((festival) => (
             <button
               key={festival.id}
               id={`${festival.id}-tab`}
               type="button"
-              className={`tab-button${activeTab === festival.id ? ' active' : ''}`}
+              className={`tab-button${activeTab === festival.id || (festival.id === AUGUST_FESTIVAL_ID && collectiveMode) ? ' active' : ''}`}
               role="tab"
-              aria-selected={activeTab === festival.id}
+              aria-selected={activeTab === festival.id || (festival.id === AUGUST_FESTIVAL_ID && collectiveMode)}
               aria-controls={`${festival.id}-panel`}
               onClick={() => handleTabChange(festival.id)}
             >
@@ -199,7 +206,11 @@ export default function App() {
         </div>
       </nav>
       {showFestivalTab && activeFestival ? (
-        <div id={`${activeTab}-panel`} role="tabpanel" aria-labelledby={`${activeTab}-tab`}>
+        <div
+          id={`${collectiveMode ? AUGUST_FESTIVAL_ID : activeTab}-panel`}
+          role="tabpanel"
+          aria-labelledby={`${AUGUST_FESTIVAL_ID}-tab`}
+        >
           <FestivalSubheader festival={activeFestival} />
           {itinerary.hasSharedContext ? (
             <SharedItineraryHeader
@@ -210,9 +221,29 @@ export default function App() {
           ) : null}
           <Legend />
           <ItineraryHint count={itinerary.myCount} hidden={itinerary.hasSharedContext} />
-          {!isSingleCityFestival ? (
-            <CityFilter value={selectedCity} onChange={setSelectedCity} />
-          ) : null}
+          <div className="featured-controls">
+            {!collectiveMode && !isSingleCityFestival ? (
+              <CityFilter value={selectedCity} onChange={setSelectedCity} />
+            ) : collectiveMode ? (
+              <button
+                type="button"
+                className="btn-back-august"
+                onClick={() => handleTabChange(AUGUST_FESTIVAL_ID)}
+              >
+                ← August Events
+              </button>
+            ) : null}
+            <button
+              type="button"
+              className={`featured-card${collectiveMode ? ' active' : ''}`}
+              onClick={() => handleTabChange(COLLECTIVE_FESTIVAL_ID)}
+              aria-pressed={collectiveMode}
+            >
+              <span className="featured-chip">Featured</span>
+              <span className="featured-title">NYC: The Collective Black Queer Takeover</span>
+              <span className="featured-meta">New York · August 2026</span>
+            </button>
+          </div>
           <div className={`container${itinerary.myCount > 0 ? ' has-itinerary-bar' : ''}`}>
             {isLoading ? <div className="data-status">Loading events...</div> : null}
             {error ? (

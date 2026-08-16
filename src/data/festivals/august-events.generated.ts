@@ -64,7 +64,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "5",
@@ -95,7 +96,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "6",
@@ -126,7 +128,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "7",
@@ -159,7 +162,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "8",
@@ -190,7 +194,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "9",
@@ -222,7 +227,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "10",
@@ -288,7 +294,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-meetup",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "12",
@@ -321,7 +328,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-meetup",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "13",
@@ -354,7 +362,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "14",
@@ -388,7 +397,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-live-show",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "15",
@@ -420,7 +430,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-live-show",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "16",
@@ -453,73 +464,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-outdoors-hangout",
-    "city": "dc"
-  },
-  {
-    "id": "17",
-    "festival": "august-events",
-    "day": "wednesday",
-    "dayDate": "2026-08-12",
-    "dayLabel": "Wednesday",
-    "name": "Game Night: CANCELED",
-    "organizer": "Deviant",
-    "types": [
-      "after-dark",
-      "meetup"
-    ],
-    "vibesRaw": "chill community games groove flirt",
-    "free": true,
-    "price": "Free",
-    "badges": [
-      "After Dark",
-      "Meetup",
-      "Free"
-    ],
-    "time": "9:00 PM",
-    "location": "Solera · Saint Ann's Avenue, The Bronx, NY (exact street number not given)",
-    "vibeTags": [
-      "Chill",
-      "Community",
-      "Games",
-      "Groove",
-      "Flirt"
-    ],
-    "ctaHref": "https://www.the-nyc-collective.com/events/game-night",
-    "ctaLabel": "RSVP Free",
-    "ctaButtonClass": "btn-free",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "18",
-    "festival": "august-events",
-    "day": "friday",
-    "dayDate": "2026-08-14",
-    "dayLabel": "Friday",
-    "name": "Physique",
-    "organizer": "Deviant",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking flirt grown & sexy groove",
-    "free": false,
-    "price": "$35.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "Red Eye · 355 West 41st StreetNew York, New York, 10036",
-    "vibeTags": [
-      "Ass Shaking",
-      "Flirt",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://redeyetickets.com/events/deviant-physique",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "20",
@@ -555,7 +501,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "21",
@@ -587,7 +534,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "22",
@@ -622,7 +570,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-live-show",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "NYC Black Pride (29th Annual)"
   },
   {
     "id": "23",
@@ -654,7 +603,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "24",
@@ -719,7 +669,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-meetup",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "26",
@@ -754,7 +705,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-meetup",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "27",
@@ -789,7 +741,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-meetup",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "28",
@@ -824,7 +777,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-meetup",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "29",
@@ -859,7 +813,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-meetup",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "30",
@@ -893,7 +848,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-meetup",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "31",
@@ -927,7 +883,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-meetup",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "32",
@@ -963,7 +920,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-live-show",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "33",
@@ -996,7 +954,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "34",
@@ -1027,39 +986,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-live-show",
-    "city": "nyc"
-  },
-  {
-    "id": "35",
-    "festival": "august-events",
-    "day": "sunday",
-    "dayDate": "2026-08-16",
-    "dayLabel": "Sunday",
-    "name": "Tailgate",
-    "organizer": "Good Dayz",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "flirt community ass shaking grown & sexy groove",
-    "free": false,
-    "price": "$10.00",
-    "badges": [
-      "Day Party"
-    ],
-    "time": "4:00 PM",
-    "location": "BK Backyard · 151 Banker St. Brooklyn, NY 11222",
-    "vibeTags": [
-      "Flirt",
-      "Community",
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://posh.vip/e/tailgate-9?u=dvn__a&_t=mskqsbow&os=ios&src=event_page",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "36",
@@ -1092,7 +1020,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-meetup",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "37",
@@ -1126,39 +1055,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-meetup",
-    "city": "baltimore"
-  },
-  {
-    "id": "38",
-    "festival": "august-events",
-    "day": "sunday",
-    "dayDate": "2026-08-16",
-    "dayLabel": "Sunday",
-    "name": "Haus of Honey",
-    "organizer": "Haus of Honey",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "flirt community ass shaking grown & sexy groove",
-    "free": false,
-    "price": "$10.00",
-    "badges": [
-      "Day Party"
-    ],
-    "time": "5:00 PM",
-    "location": "Dive Bar BK · 408 troutman street East Williamsburg, Brooklyn",
-    "vibeTags": [
-      "Flirt",
-      "Community",
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://dice.fm/event/6do963-haus-of-honey-16th-aug-the-sultan-room-rooftop-brooklyn-tickets",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "39",
@@ -1192,7 +1090,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "40",
@@ -1225,7 +1124,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "41",
@@ -1258,7 +1158,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "42",
@@ -1280,7 +1181,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "43",
@@ -1311,7 +1213,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "44",
@@ -1344,7 +1247,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "45",
@@ -1375,7 +1279,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "46",
@@ -1409,7 +1314,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "47",
@@ -1441,7 +1347,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "48",
@@ -1474,7 +1381,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "49",
@@ -1506,7 +1414,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "50",
@@ -1539,7 +1448,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "51",
@@ -1570,7 +1480,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "52",
@@ -1603,7 +1514,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "53",
@@ -1636,7 +1548,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "54",
@@ -1667,7 +1580,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "55",
@@ -1701,7 +1615,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-live-show",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "57",
@@ -1767,7 +1682,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-outdoors-hangout",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "59",
@@ -1798,7 +1714,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "60",
@@ -1860,7 +1777,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "64",
@@ -1891,7 +1809,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-outdoors-hangout",
-    "city": "dmv"
+    "city": "dmv",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "67",
@@ -1921,38 +1840,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-live-show",
-    "city": "nyc"
-  },
-  {
-    "id": "69",
-    "festival": "august-events",
-    "day": "friday",
-    "dayDate": "2026-08-14",
-    "dayLabel": "Friday",
-    "name": "THE CROSSOVER (Twerk vs Bashment)",
-    "organizer": "Out N Bad x She Shed x Sapphic Ja",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking groove community flirt",
-    "free": false,
-    "price": "$18.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "10:00 PM",
-    "location": "The House · 29 Locust St, Brooklyn, NY 11206, USA",
-    "vibeTags": [
-      "Ass Shaking",
-      "Groove",
-      "Community",
-      "Flirt"
-    ],
-    "ctaHref": "https://posh.vip/e/out-n-bad-x-sapphic-ja-x-sheshed-dc-presents-the-crossover-twerk-vs-bashment",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "NYC Black Pride (29th Annual)"
   },
   {
     "id": "70",
@@ -1986,7 +1875,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-meetup",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "72",
@@ -2018,7 +1908,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-happy-hour",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "73",
@@ -2051,38 +1942,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-brunch",
-    "city": "dc"
-  },
-  {
-    "id": "74",
-    "festival": "august-events",
-    "day": "saturday",
-    "dayDate": "2026-08-15",
-    "dayLabel": "Saturday",
-    "name": "Zestyworld: The Collective Weekend",
-    "organizer": "Raw Honey",
-    "types": [
-      "after-dark"
-    ],
-    "vibesRaw": "ass shaking groove community flirt",
-    "free": false,
-    "price": "$19.00",
-    "badges": [
-      "After Dark"
-    ],
-    "time": "11:00 PM",
-    "location": "Putnam's Pub & Cooker · 419 Myrtle Avenue, Brooklyn, NY 11205",
-    "vibeTags": [
-      "Ass Shaking",
-      "Groove",
-      "Community",
-      "Flirt"
-    ],
-    "ctaHref": "https://posh.vip/e/nyc-zestyworld-the-collective-weekend",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "75",
@@ -2113,38 +1974,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "76",
-    "festival": "august-events",
-    "day": "saturday",
-    "dayDate": "2026-08-22",
-    "dayLabel": "Saturday",
-    "name": "(NYC) Raw Honey: COZY",
-    "organizer": "Raw Honey",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "ass shaking groove community flirt",
-    "free": false,
-    "price": "$13.00",
-    "badges": [
-      "Day Party"
-    ],
-    "time": "5:00 PM",
-    "location": "Dive Bar · 408 Troutman St, Brooklyn, NY 11237, USA",
-    "vibeTags": [
-      "Ass Shaking",
-      "Groove",
-      "Community",
-      "Flirt"
-    ],
-    "ctaHref": "https://posh.vip/e/nyc-haus-of-honey-the-collective-weekend",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "77",
@@ -2176,39 +2007,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
-  },
-  {
-    "id": "78",
-    "festival": "august-events",
-    "day": "saturday",
-    "dayDate": "2026-08-15",
-    "dayLabel": "Saturday",
-    "name": "Sunkissed",
-    "organizer": "Recess",
-    "types": [
-      "day-party"
-    ],
-    "vibesRaw": "flirt community ass shaking grown & sexy groove",
-    "free": false,
-    "price": "$10.00",
-    "badges": [
-      "Day Party"
-    ],
-    "time": "3:00 PM",
-    "location": "Unlisted Rooftop (11th floor) · 3 Freeman Alley, New York, NY 10002",
-    "vibeTags": [
-      "Flirt",
-      "Community",
-      "Ass Shaking",
-      "Grown & Sexy",
-      "Groove"
-    ],
-    "ctaHref": "https://posh.vip/e/sunkissed-by-recess-1",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "79",
@@ -2244,7 +2044,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-meetup",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "80",
@@ -2280,7 +2081,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "81",
@@ -2316,7 +2118,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "82",
@@ -2352,7 +2155,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "83",
@@ -2388,7 +2192,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "84",
@@ -2424,7 +2229,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "85",
@@ -2460,7 +2266,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "86",
@@ -2496,7 +2303,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "87",
@@ -2529,7 +2337,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "88",
@@ -2561,7 +2370,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "89",
@@ -2593,7 +2403,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "90",
@@ -2624,7 +2435,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "91",
@@ -2659,7 +2471,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "92",
@@ -2689,7 +2502,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "93",
@@ -2720,7 +2534,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-after-dark",
-    "city": "nyc"
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "94",
@@ -2751,7 +2566,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "97",
@@ -2784,7 +2600,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "More Info",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-live-show",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "98",
@@ -2813,7 +2630,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "99",
@@ -2842,7 +2660,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "100",
@@ -2876,7 +2695,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-live-show",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "101",
@@ -2909,7 +2729,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "102",
@@ -2940,7 +2761,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "103",
@@ -2972,7 +2794,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "104",
@@ -3003,7 +2826,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "105",
@@ -3035,7 +2859,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "106",
@@ -3066,7 +2891,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "107",
@@ -3097,7 +2923,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-day-party",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "108",
@@ -3127,7 +2954,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "109",
@@ -3157,7 +2985,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "110",
@@ -3190,7 +3019,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "baltimore"
+    "city": "baltimore",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "111",
@@ -3223,7 +3053,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-workshop",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "112",
@@ -3257,7 +3088,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "113",
@@ -3291,7 +3123,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dmv"
+    "city": "dmv",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "114",
@@ -3322,7 +3155,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dmv"
+    "city": "dmv",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "115",
@@ -3356,7 +3190,8 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "RSVP Free",
     "ctaButtonClass": "btn-free",
     "cardClass": "tp-happy-hour",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   },
   {
     "id": "116",
@@ -3386,6 +3221,7 @@ export const generatedEvents: PrideEvent[] = [
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
     "cardClass": "tp-after-dark",
-    "city": "dc"
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
   }
 ];
