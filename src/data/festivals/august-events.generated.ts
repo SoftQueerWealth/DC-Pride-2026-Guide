@@ -1047,7 +1047,7 @@ export const generatedEvents: PrideEvent[] = [
       "Day Party"
     ],
     "time": "4:00 PM",
-    "location": "BK Backyard · 151 Banker St. Boorklyn, NY 11222",
+    "location": "BK Backyard · 151 Banker St. Brooklyn, NY 11222",
     "vibeTags": [
       "Flirt",
       "Community",
