@@ -129,10 +129,13 @@ const COLUMN_ALIASES = {
     'coupon',
     'couponcode',
     'ticketcode',
+    'code',
   ],
   festival: ['festival', 'pride', 'guide', 'eventgroup', 'festivalfilter'],
+  prideSeries: ['blackpridefestival', 'blackpride', 'pridefestival', 'blackpridefest'],
   city: ['city', 'eventcity', 'market'],
   flyerUrl: ['flyer', 'flyerurl', 'flyerlink', 'flyerimage', 'eventflyer', 'poster', 'posterurl', 'iglinkflyer'],
+  skip: ['skip', 'skiprow', 'skipevent', 'skipped'],
 } as const;
 
 const BEAUTY_COLUMN_ALIASES = {
@@ -468,7 +471,11 @@ function parseBoolean(value: string): boolean {
 
 function isSoldOutStatus(value: string): boolean {
   const normalized = normalizeToken(value);
-  return normalized === TicketStatus.SoldOut || normalized === TicketStatus.SoldOutCompact;
+  return (
+    normalized === TicketStatus.SoldOut ||
+    normalized === TicketStatus.SoldOutCompact ||
+    /\bsold\s*out\b/.test(normalized)
+  );
 }
 
 function isRsvpFreeStatus(value: string): boolean {
@@ -651,6 +658,7 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
   return dataRows
     .map((row, index): PrideEvent | null => {
       if (row.every((cell) => !String(cell ?? '').trim())) return null;
+      if (parseBoolean(readCellFromFirstMatchingHeader(headers, row, 'skip'))) return null;
 
       const shifted = isDateShiftedRow(headers, row);
       const priceShifted = !shifted && isPriceColumnShiftedRow(headers, row);
@@ -660,7 +668,7 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
       const { day, dayDate } = parsedDay;
 
       const ticketStatus = readTicketStatusCell(headers, row);
-      if (isSoldOutStatus(ticketStatus)) return null;
+      if (isSoldOutStatus(ticketStatus) || isSoldOutStatus(name)) return null;
 
       const types = priceShifted
         ? [EventType.DayParty]
@@ -697,6 +705,8 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         discountCodeRaw && !shouldHideDiscountCode(discountCodeRaw) ? discountCodeRaw : '';
 
       const flyerUrl = normalizeFlyerUrl(readCell(headers, row, 'flyerUrl'));
+      const prideSeries =
+        readCell(headers, row, 'prideSeries') || readCell(headers, row, 'festival') || undefined;
       const cityRaw = readCell(headers, row, 'city');
       const city = cityRaw ? normalizeSheetCity(cityRaw) : null;
       if (cityRaw && !city) return null;
@@ -726,6 +736,7 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         ...(discountCode ? { discountCode } : {}),
         ...(flyerUrl ? { flyerUrl } : {}),
         ...(city ? { city } : {}),
+        ...(prideSeries ? { prideSeries } : {}),
       };
     })
     .filter((event): event is PrideEvent => event !== null);
@@ -788,8 +799,11 @@ async function fetchSheetValues(
     throw new Error('Add your Google Sheets spreadsheet ID to VITE_GOOGLE_SHEETS_ID in .env.');
   }
 
+  const range = /^[A-Za-z0-9_]+$/.test(sheetName)
+    ? sheetName
+    : `'${sheetName.replace(/'/g, "''")}'`;
   const url = new URL(
-    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(sheetName)}`,
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(range)}`,
   );
   url.searchParams.set('key', apiKey);
   url.searchParams.set('majorDimension', 'ROWS');

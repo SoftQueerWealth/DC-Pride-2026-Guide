@@ -1,7 +1,7 @@
 import {
   ITINERARY_SHARE_FOOTER,
   ITINERARY_SHARE_LINK_LABEL,
-  ITINERARY_SHARE_OPENER,
+  itineraryShareOpener,
 } from '../constants/itineraryShare';
 import type { PrideEvent } from '../types/event';
 import { formatDayHeaderLabel } from './formatDayDate';
@@ -23,7 +23,7 @@ export function formatItineraryShare(
   if (selected.length === 0) return null;
 
   const url = buildItineraryUrl(origin, selectedIds);
-  const sections: string[] = [ITINERARY_SHARE_OPENER, ''];
+  const sections: string[] = [itineraryShareOpener(selected), ''];
 
   for (const { dayLabel, events: dayEvents } of groupItineraryEventsByDay(selected)) {
     sections.push(formatDayHeaderLabel(dayLabel, dayEvents[0]?.dayDate));

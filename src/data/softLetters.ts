@@ -54,14 +54,6 @@ export const SOFTIE_OF_THE_MONTH: Softie = {
 
 export const SOFT_LETTER_SHARE_CTAS: SoftLetterShareCta[] = [
   {
-    title: 'Submit a Story',
-    body: 'Share something you think we should tell.',
-  },
-  {
-    title: 'Pitch an Article',
-    body: 'Got a piece in you? We want to read it.',
-  },
-  {
     title: 'Suggest Coverage',
     body: 'A person, event, or cultural moment we should know about.',
   },

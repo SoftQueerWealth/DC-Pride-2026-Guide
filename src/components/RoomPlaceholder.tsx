@@ -2,7 +2,7 @@ import { roomById, type RoomId } from '../data/rooms';
 import { FOOTER_BAND, FOOTER_COPY } from '../data/home';
 
 type RoomPlaceholderProps = {
-  roomId: Exclude<RoomId, 'home'>;
+  roomId: RoomId;
 };
 
 export function RoomPlaceholder({ roomId }: RoomPlaceholderProps) {

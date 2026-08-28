@@ -5,23 +5,23 @@ type TopbarProps = {
   activeRoom: RoomId;
   drawerOpen: boolean;
   onGo: (room: RoomId) => void;
-  onOpenPartner: () => void;
   onToggleDrawer: () => void;
+  onCloseDrawer: () => void;
 };
 
 export function Topbar({
   activeRoom,
   drawerOpen,
   onGo,
-  onOpenPartner,
   onToggleDrawer,
+  onCloseDrawer,
 }: TopbarProps) {
   return (
     <>
       <header className={`topbar${drawerOpen ? ' drawer-open' : ''}`}>
         <div className="topbar-inner">
-          <button type="button" className="brand" onClick={() => onGo('home')}>
-            <img className="logo-icon" src="/hero-logo.png" alt="" width={34} height={34} />
+          <button type="button" className="brand" onClick={() => onGo('neighborhood')}>
+            <img className="logo-icon" src="/sqw-mark.png" alt="" width={107} height={56} />
             <div className="brand-text">
               <div className="name">Soft Queer Wealth</div>
               <div className="tag">Care · Culture · Community</div>
@@ -33,6 +33,17 @@ export function Topbar({
             id="navrooms"
             aria-label="Site rooms"
           >
+            <div className="drawer-header">
+              <span className="drawer-header-title">Menu</span>
+              <button
+                type="button"
+                className="drawer-close-btn"
+                aria-label="Close menu"
+                onClick={onCloseDrawer}
+              >
+                ✕
+              </button>
+            </div>
             {ROOMS.map((room) => (
               <button
                 key={room.id}
@@ -47,13 +58,10 @@ export function Topbar({
           </nav>
 
           <div className="topbar-actions">
-            <button type="button" className="nav-cta" onClick={onOpenPartner}>
-              Partner With Us
-            </button>
             <button
               type="button"
               className="menu-toggle"
-              aria-label={drawerOpen ? 'Close menu' : 'Open menu'}
+              aria-label="Open menu"
               aria-expanded={drawerOpen}
               aria-controls="navrooms"
               onClick={onToggleDrawer}
@@ -64,19 +72,14 @@ export function Topbar({
         </div>
       </header>
 
-      <div
-        className={`drawer-overlay${drawerOpen ? ' open' : ''}`}
-        onClick={onToggleDrawer}
-        aria-hidden={!drawerOpen}
-      />
       <button
         type="button"
-        className={`drawer-close${drawerOpen ? ' open' : ''}`}
+        className={`drawer-overlay${drawerOpen ? ' open' : ''}`}
+        onClick={onCloseDrawer}
         aria-label="Close menu"
-        onClick={onToggleDrawer}
-      >
-        ✕
-      </button>
+        aria-hidden={!drawerOpen}
+        tabIndex={drawerOpen ? 0 : -1}
+      />
     </>
   );
 }

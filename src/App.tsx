@@ -1,19 +1,19 @@
 import { useCallback, useEffect, useState } from 'react';
-import { AboutPage } from './components/about/AboutPage';
-import { HomePage } from './components/home/HomePage';
 import { MahoganyPages } from './components/mahogany/MahoganyPages';
-import { PartnerModal } from './components/PartnerModal';
 import { SoftLettersPage } from './components/softLetters/SoftLettersPage';
 import { Topbar } from './components/Topbar';
-import type { RoomId } from './data/rooms';
+import { SOFT_LETTERS_ENABLED, type RoomId } from './data/rooms';
 
 export default function App() {
-  const [activeRoom, setActiveRoom] = useState<RoomId>('home');
+  const [activeRoom, setActiveRoom] = useState<RoomId>('neighborhood');
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [partnerOpen, setPartnerOpen] = useState(false);
 
   const go = useCallback((room: RoomId) => {
-    setActiveRoom(room);
+    if (room === 'reading' && !SOFT_LETTERS_ENABLED) {
+      setActiveRoom('neighborhood');
+    } else {
+      setActiveRoom(room);
+    }
     setDrawerOpen(false);
     window.scrollTo(0, 0);
   }, []);
@@ -22,25 +22,50 @@ export default function App() {
     setDrawerOpen((open) => !open);
   }, []);
 
+  const closeDrawer = useCallback(() => {
+    setDrawerOpen(false);
+  }, []);
+
   useEffect(() => {
-    if (!drawerOpen && !partnerOpen) return;
+    if (!drawerOpen) return;
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key !== 'Escape') return;
       setDrawerOpen(false);
-      setPartnerOpen(false);
     };
 
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [drawerOpen, partnerOpen]);
+  }, [drawerOpen]);
 
   useEffect(() => {
-    document.body.style.overflow = drawerOpen || partnerOpen ? 'hidden' : '';
-    return () => {
-      document.body.style.overflow = '';
+    if (!drawerOpen) return;
+
+    const scrollY = window.scrollY;
+    const html = document.documentElement;
+    const { body } = document;
+
+    html.classList.add('drawer-lock');
+    body.classList.add('drawer-lock');
+    body.style.top = `-${scrollY}px`;
+
+    const preventBackgroundScroll = (event: TouchEvent) => {
+      const nav = document.getElementById('navrooms');
+      const target = event.target;
+      if (nav && target instanceof Node && nav.contains(target)) return;
+      event.preventDefault();
     };
-  }, [drawerOpen, partnerOpen]);
+
+    document.addEventListener('touchmove', preventBackgroundScroll, { passive: false });
+
+    return () => {
+      html.classList.remove('drawer-lock');
+      body.classList.remove('drawer-lock');
+      body.style.top = '';
+      document.removeEventListener('touchmove', preventBackgroundScroll);
+      window.scrollTo(0, scrollY);
+    };
+  }, [drawerOpen]);
 
   return (
     <>
@@ -48,20 +73,15 @@ export default function App() {
         activeRoom={activeRoom}
         drawerOpen={drawerOpen}
         onGo={go}
-        onOpenPartner={() => setPartnerOpen(true)}
         onToggleDrawer={toggleDrawer}
+        onCloseDrawer={closeDrawer}
       />
 
-      {activeRoom === 'home' ? <HomePage onGo={go} /> : null}
-      {activeRoom === 'neighborhood' ? <MahoganyPages /> : null}
-      {activeRoom === 'reading' ? (
-        <SoftLettersPage onOpenPartner={() => setPartnerOpen(true)} onGo={go} />
-      ) : null}
-      {activeRoom === 'about' ? (
-        <AboutPage onGo={go} onOpenPartner={() => setPartnerOpen(true)} />
-      ) : null}
-
-      <PartnerModal open={partnerOpen} onClose={() => setPartnerOpen(false)} />
+      {activeRoom === 'reading' && SOFT_LETTERS_ENABLED ? (
+        <SoftLettersPage onGo={go} />
+      ) : (
+        <MahoganyPages />
+      )}
     </>
   );
 }

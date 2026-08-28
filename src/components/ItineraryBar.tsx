@@ -44,7 +44,12 @@ export function ItineraryBar({ count, onShare, onClear }: ItineraryBarProps) {
           aria-label="Share itinerary"
         >
           <Share2 size={14} strokeWidth={2} aria-hidden />
-          {sharing ? 'Sharing…' : 'Share itinerary'}
+          {sharing ? 'Sharing…' : (
+            <>
+              <span className="itinerary-bar-share-full">Share itinerary</span>
+              <span className="itinerary-bar-share-short">Share</span>
+            </>
+          )}
         </button>
       </div>
     </div>

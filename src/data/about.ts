@@ -23,43 +23,11 @@ export const ABOUT_STATS = [
   { num: '001', label: 'Soft Letters issue published' },
 ] as const;
 
-export const ABOUT_RADAR =
-  'July WNBA All-Star · August Queer Caribbean Festival · September Atlanta Black Pride · October Baltimore Black Pride';
-
-export const ABOUT_CHART_BARS = [
-  { label: 'May', heightPct: 35 },
-  { label: 'Jun', heightPct: 65 },
-  { label: 'Jul', heightPct: 100 },
-] as const;
-
-export type AboutReel = {
-  label: string;
-  caption: string;
-  tone: PlaceholderTone;
-};
-
-export const ABOUT_REELS: AboutReel[] = [
-  {
-    label: 'May 2026',
-    caption: 'Our launch month — first events live, DC only.',
-    tone: 'dark',
-  },
-  {
-    label: 'June 2026',
-    caption: 'Pride season — DC, Baltimore & NYC, all at once.',
-    tone: 'rose',
-  },
-  {
-    label: 'July 2026',
-    caption: 'STATIC dropped, and we hit 100+ events across 3 cities.',
-    tone: 'sage',
-  },
-];
-
 export type AboutTeamMember = {
   name: string;
   role: string;
   tone: PlaceholderTone | '';
+  bio?: string;
 };
 
 export const ABOUT_TEAM: AboutTeamMember[] = [

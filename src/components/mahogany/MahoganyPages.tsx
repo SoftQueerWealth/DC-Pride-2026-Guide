@@ -1,87 +1,192 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { CityFilter } from '../CityFilter';
 import { CitySection } from '../CitySection';
 import { DaySection } from '../DaySection';
 import { ItineraryBar } from '../ItineraryBar';
 import { SharedItineraryHeader } from '../SharedItineraryHeader';
 import { EventFilterSidebar } from './EventFilterSidebar';
-import { festivalById } from '../../constants/festivals';
+import { cityFilterOptionsForKeys } from '../../constants/cities';
+import {
+  AUGUST_FESTIVAL_ID,
+  FEATURED_FESTIVALS,
+  featuredFestivalById,
+  type FeaturedFestival,
+} from '../../constants/festivals';
 import { PUBLIC_SITE_ORIGIN } from '../../constants/site';
 import { FOOTER_BAND, FOOTER_COPY } from '../../data/home';
 import { useEvents } from '../../hooks/useEvents';
 import { useEventFilters } from '../../hooks/useEventFilters';
 import { useItinerary } from '../../hooks/useItinerary';
-import { trackItineraryShare } from '../../lib/analytics';
+import { trackItineraryShare, SocialPlatform, trackSocialClick } from '../../lib/analytics';
+import { eventMatchesPrideSeries, isUntaggedPrideSeries } from '../../lib/festivalCityFilter';
 import { formatItineraryShare } from '../../lib/formatItinerary';
 import { groupEventsByCityThenDate, groupFestivalEvents } from '../../lib/groupFestivalEvents';
 import { shareItinerary } from '../../lib/shareItinerary';
 import { filterUpcomingEvents } from '../../lib/upcomingEvents';
 import type { PrideEvent } from '../../types/event';
 
-const JULY_FESTIVAL_ID = 'july-events';
-const WNBA_FESTIVAL_ID = 'wnba-all-star-weekend';
+function splitFeaturedEvents(
+  guideEvents: PrideEvent[],
+  featured: FeaturedFestival,
+): { official: PrideEvent[]; more: PrideEvent[] } {
+  const cityMonthEvents = guideEvents.filter(
+    (event) =>
+      event.city === featured.city && Boolean(event.dayDate?.startsWith(featured.monthPrefix)),
+  );
+  const official = cityMonthEvents.filter((event) =>
+    eventMatchesPrideSeries(event, featured.prideSeries),
+  );
+  const more = cityMonthEvents.filter((event) => isUntaggedPrideSeries(event));
+  return { official, more };
+}
 
 export function MahoganyPages() {
-  const [wnbaMode, setWnbaMode] = useState(false);
+  const [featuredId, setFeaturedId] = useState<string | null>(null);
   const [selectedCity, setSelectedCity] = useState('');
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
-  const festivalId = wnbaMode ? WNBA_FESTIVAL_ID : JULY_FESTIVAL_ID;
-  const activeFestival = festivalById(festivalId);
+  const featured = featuredId ? featuredFestivalById(featuredId) : undefined;
+  const grouping = 'calendar';
+
   const { allEvents, eventsForFestival, error, isLoading } = useEvents();
 
-  const festivalEvents = useMemo(
-    () => filterUpcomingEvents(eventsForFestival(festivalId)),
-    [eventsForFestival, festivalId],
+  const guideEvents = useMemo(
+    () => filterUpcomingEvents(eventsForFestival(AUGUST_FESTIVAL_ID)),
+    [eventsForFestival],
   );
 
-  const cityFilteredEvents = useMemo(
+  const { official: officialEvents, more: moreEvents } = useMemo(
     () =>
-      wnbaMode || !selectedCity
-        ? festivalEvents
-        : festivalEvents.filter((event) => event.city === selectedCity),
-    [festivalEvents, selectedCity, wnbaMode],
+      featured
+        ? splitFeaturedEvents(guideEvents, featured)
+        : { official: [] as PrideEvent[], more: [] as PrideEvent[] },
+    [featured, guideEvents],
   );
+
+  const cityFilteredEvents = useMemo(() => {
+    if (featured) return [...officialEvents, ...moreEvents];
+    if (!selectedCity) return guideEvents;
+    return guideEvents.filter((event) => event.city === selectedCity);
+  }, [featured, guideEvents, moreEvents, officialEvents, selectedCity]);
 
   const grouped = useMemo(() => {
-    if (!activeFestival) return [];
-    if (wnbaMode || selectedCity) {
-      return groupFestivalEvents(cityFilteredEvents, activeFestival.grouping);
-    }
-    return [];
-  }, [activeFestival, cityFilteredEvents, selectedCity, wnbaMode]);
+    if (featured || !selectedCity) return [];
+    return groupFestivalEvents(cityFilteredEvents, grouping);
+  }, [cityFilteredEvents, featured, selectedCity]);
+
+  const officialGrouped = useMemo(() => {
+    if (!featured || officialEvents.length === 0) return [];
+    return groupFestivalEvents(officialEvents, grouping);
+  }, [featured, officialEvents]);
+
+  const moreGrouped = useMemo(() => {
+    if (!featured || moreEvents.length === 0) return [];
+    return groupFestivalEvents(moreEvents, grouping);
+  }, [featured, moreEvents]);
 
   const cityGroups = useMemo(() => {
-    if (wnbaMode || selectedCity) return [];
-    return groupEventsByCityThenDate(festivalEvents);
-  }, [festivalEvents, selectedCity, wnbaMode]);
+    if (featured || selectedCity) return [];
+    return groupEventsByCityThenDate(guideEvents);
+  }, [featured, guideEvents, selectedCity]);
 
-  const filter = useEventFilters(festivalEvents);
+  const cityOptions = useMemo(
+    () => cityFilterOptionsForKeys(guideEvents.map((event) => event.city ?? '')),
+    [guideEvents],
+  );
+
+  const filter = useEventFilters(cityFilteredEvents);
   const itinerary = useItinerary(allEvents);
 
+  const sharedEvents = useMemo(
+    () => (itinerary.isInSharedView ? allEvents.filter((event) => itinerary.sharedIds.has(event.id)) : []),
+    [allEvents, itinerary.isInSharedView, itinerary.sharedIds],
+  );
+
+  const sharedCityGroups = useMemo(
+    () => (itinerary.isInSharedView ? groupEventsByCityThenDate(sharedEvents) : []),
+    [itinerary.isInSharedView, sharedEvents],
+  );
+
   const isEventShown = useCallback(
-    (event: PrideEvent) => itinerary.isEventShownInView(event.id) && filter.isEventVisible(event),
+    (event: PrideEvent) => {
+      if (itinerary.isInSharedView) return true;
+      return itinerary.isEventShownInView(event.id) && filter.isEventVisible(event);
+    },
     [filter, itinerary],
   );
 
   const anyEventsVisible = useMemo(
-    () => cityFilteredEvents.some(isEventShown),
-    [cityFilteredEvents, isEventShown],
+    () =>
+      itinerary.isInSharedView
+        ? sharedEvents.length > 0
+        : cityFilteredEvents.some(isEventShown),
+    [cityFilteredEvents, isEventShown, itinerary.isInSharedView, sharedEvents.length],
   );
 
-  const showNoResults = !isLoading && festivalEvents.length > 0 && !anyEventsVisible;
+  const showNoResults = itinerary.isInSharedView
+    ? !isLoading && sharedEvents.length === 0
+    : !isLoading && cityFilteredEvents.length > 0 && !anyEventsVisible;
 
   const handleCityChange = (city: string) => {
-    setWnbaMode(false);
     setSelectedCity(city);
+    if (!city || (featured && city !== featured.city)) {
+      setFeaturedId(null);
+    }
     filter.clearAll();
   };
 
-  const handleSelectWnba = () => {
-    setWnbaMode(true);
-    setSelectedCity('');
+  const handleSelectFeatured = (id: string) => {
+    if (featuredId === id) {
+      setFeaturedId(null);
+      filter.clearAll();
+      return;
+    }
+
+    const next = featuredFestivalById(id);
+    setFeaturedId(id);
+    setSelectedCity(next?.city ?? '');
     filter.clearAll();
   };
+
+  useEffect(() => {
+    if (itinerary.isInSharedView) setMobileFiltersOpen(false);
+  }, [itinerary.isInSharedView]);
+
+  useEffect(() => {
+    if (!mobileFiltersOpen) return;
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      setMobileFiltersOpen(false);
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [mobileFiltersOpen]);
+
+  useEffect(() => {
+    if (!mobileFiltersOpen) return;
+
+    const html = document.documentElement;
+    const { body } = document;
+    html.classList.add('filters-lock');
+    body.classList.add('filters-lock');
+
+    const preventBackgroundScroll = (event: TouchEvent) => {
+      const sheet = document.getElementById('mahogany-filters-sheet');
+      const target = event.target;
+      if (sheet && target instanceof Node && sheet.contains(target)) return;
+      event.preventDefault();
+    };
+
+    document.addEventListener('touchmove', preventBackgroundScroll, { passive: false });
+
+    return () => {
+      html.classList.remove('filters-lock');
+      body.classList.remove('filters-lock');
+      document.removeEventListener('touchmove', preventBackgroundScroll);
+    };
+  }, [mobileFiltersOpen]);
 
   const handleShareItinerary = useCallback(async () => {
     const payload = formatItineraryShare(allEvents, itinerary.mySelection, PUBLIC_SITE_ORIGIN);
@@ -91,15 +196,34 @@ export function MahoganyPages() {
   }, [allEvents, itinerary.myCount, itinerary.mySelection]);
 
   return (
-    <section className="screen active" id="screen-neighborhood" aria-label="The Mahogany Pages">
+    <section
+      className={`screen active${itinerary.myCount > 0 ? ' has-itinerary-bar' : ''}${mobileFiltersOpen ? ' filters-open' : ''}`}
+      id="screen-neighborhood"
+      aria-label="The Mahogany Pages"
+    >
       <div className={`wrap section-pad${itinerary.myCount > 0 ? ' has-itinerary-bar' : ''}`}>
         <div className="mahogany-intro">
           <div className="mahogany-intro-copy">
             <p className="eyebrow">Find Community</p>
             <h1 className="mahogany-title">The Mahogany Pages</h1>
             <p className="mahogany-lede">
-              Events happening near you — curated, local, and by us.
+              Black and Brown Queer Events Near You — curated with locals who know the scene.
             </p>
+            <p className="last-updated">Last updated · August 28, 2026</p>
+            <a
+              className="btn small"
+              href="https://www.instagram.com/softqueerwealth?igsh=NzVzaWt4N3BseDQ5"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() =>
+                trackSocialClick(
+                  SocialPlatform.Instagram,
+                  'https://www.instagram.com/softqueerwealth?igsh=NzVzaWt4N3BseDQ5',
+                )
+              }
+            >
+              Share an Event →
+            </a>
           </div>
           <div className="sidebar-box mahogany-vibe-box">
             <h3>✨ Find your vibe, save your favorites</h3>
@@ -110,20 +234,32 @@ export function MahoganyPages() {
           </div>
         </div>
 
-        <div className="mahogany-controls">
-          <CityFilter value={selectedCity} onChange={handleCityChange} className="mahogany-city-filter" />
+        {itinerary.isInSharedView ? null : (
+          <div className="mahogany-controls">
+            <CityFilter
+              value={selectedCity}
+              onChange={handleCityChange}
+              className="mahogany-city-filter"
+              options={cityOptions}
+            />
 
-          <button
-            type="button"
-            className={`mahogany-wnba-card${wnbaMode ? ' active' : ''}`}
-            onClick={handleSelectWnba}
-            aria-pressed={wnbaMode}
-          >
-            <span className="mahogany-wnba-chip">Featured</span>
-            <span className="mahogany-wnba-title">WNBA All-Star Weekend</span>
-            <span className="mahogany-wnba-meta">Chicago · July 2026</span>
-          </button>
-        </div>
+            <div className="mahogany-featured-row">
+              {FEATURED_FESTIVALS.map((card) => (
+                <button
+                  key={card.id}
+                  type="button"
+                  className={`mahogany-wnba-card${featuredId === card.id ? ' active' : ''}`}
+                  onClick={() => handleSelectFeatured(card.id)}
+                  aria-pressed={featuredId === card.id}
+                >
+                  <span className="mahogany-wnba-chip">Featured</span>
+                  <span className="mahogany-wnba-title">{card.tabLabel}</span>
+                  <span className="mahogany-wnba-meta">{card.location}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {itinerary.hasSharedContext ? (
           <SharedItineraryHeader
@@ -133,42 +269,19 @@ export function MahoganyPages() {
           />
         ) : null}
 
-        <div className="mahogany-layout">
-          <div className="mahogany-filters-desktop">
-            <EventFilterSidebar
-              activeFilterCount={filter.activeFilterCount}
-              isPillActive={filter.isPillActive}
-              onTogglePill={filter.togglePill}
-              onClearAll={filter.clearAll}
-            />
-          </div>
+        <div className={`mahogany-layout${itinerary.isInSharedView ? ' mahogany-layout--shared' : ''}`}>
+          {itinerary.isInSharedView ? null : (
+            <div className="mahogany-filters-desktop">
+              <EventFilterSidebar
+                activeFilterCount={filter.activeFilterCount}
+                isPillActive={filter.isPillActive}
+                onTogglePill={filter.togglePill}
+                onClearAll={filter.clearAll}
+              />
+            </div>
+          )}
 
           <div className="mahogany-events">
-            <div className="mahogany-filters-mobile-bar">
-              <button
-                type="button"
-                className="btn small mahogany-filters-toggle"
-                aria-expanded={mobileFiltersOpen}
-                onClick={() => setMobileFiltersOpen((open) => !open)}
-              >
-                Filters
-                {filter.activeFilterCount > 0 ? (
-                  <span className="filter-sidebar-count">{filter.activeFilterCount}</span>
-                ) : null}
-              </button>
-            </div>
-
-            {mobileFiltersOpen ? (
-              <div className="mahogany-filters-mobile-panel">
-                <EventFilterSidebar
-                  activeFilterCount={filter.activeFilterCount}
-                  isPillActive={filter.isPillActive}
-                  onTogglePill={filter.togglePill}
-                  onClearAll={filter.clearAll}
-                />
-              </div>
-            ) : null}
-
             {isLoading ? <div className="data-status">Loading events...</div> : null}
             {error ? (
               <div className="data-status data-status-error" role="alert">
@@ -176,8 +289,42 @@ export function MahoganyPages() {
               </div>
             ) : null}
 
-            {wnbaMode || selectedCity
-              ? grouped.map((dayGroup) => (
+            <div className="event-list">
+              {itinerary.isInSharedView ? (
+                sharedCityGroups.map((cityGroup) => (
+                  <CitySection
+                    key={cityGroup.cityKey}
+                    cityLabel={cityGroup.cityLabel}
+                    dayGroups={cityGroup.dayGroups}
+                    isEventVisible={isEventShown}
+                    isGoing={(event) => itinerary.isGoing(event.id)}
+                    onToggleGoing={(event) => itinerary.toggleGoing(event.id)}
+                  />
+                ))
+              ) : featured ? (
+                <>
+                  {officialGrouped.length > 0 ? (
+                    <CitySection
+                      cityLabel="Official events"
+                      dayGroups={officialGrouped}
+                      isEventVisible={isEventShown}
+                      isGoing={(event) => itinerary.isGoing(event.id)}
+                      onToggleGoing={(event) => itinerary.toggleGoing(event.id)}
+                      className={moreGrouped.length > 0 ? 'city-section--before-more' : undefined}
+                    />
+                  ) : null}
+                  {moreGrouped.length > 0 ? (
+                    <CitySection
+                      cityLabel="More Events"
+                      dayGroups={moreGrouped}
+                      isEventVisible={isEventShown}
+                      isGoing={(event) => itinerary.isGoing(event.id)}
+                      onToggleGoing={(event) => itinerary.toggleGoing(event.id)}
+                    />
+                  ) : null}
+                </>
+              ) : selectedCity ? (
+                grouped.map((dayGroup) => (
                   <DaySection
                     key={dayGroup.key}
                     day={dayGroup.day}
@@ -189,7 +336,8 @@ export function MahoganyPages() {
                     onToggleGoing={(event) => itinerary.toggleGoing(event.id)}
                   />
                 ))
-              : cityGroups.map((cityGroup) => (
+              ) : (
+                cityGroups.map((cityGroup) => (
                   <CitySection
                     key={cityGroup.cityKey}
                     cityLabel={cityGroup.cityLabel}
@@ -198,16 +346,61 @@ export function MahoganyPages() {
                     isGoing={(event) => itinerary.isGoing(event.id)}
                     onToggleGoing={(event) => itinerary.toggleGoing(event.id)}
                   />
-                ))}
+                ))
+              )}
+            </div>
 
             <div className={`no-results${showNoResults ? ' visible' : ''}`}>
               {itinerary.isInSharedView
-                ? 'No shared events match your filters. Try clearing some or view the full guide.'
+                ? 'Those shared events are no longer in the guide.'
                 : 'No events match your filters. Try clearing some!'}
             </div>
           </div>
         </div>
       </div>
+
+      {itinerary.isInSharedView ? null : (
+        <button
+          type="button"
+          className="mahogany-filters-fab"
+          aria-expanded={mobileFiltersOpen}
+          aria-controls="mahogany-filters-sheet"
+          onClick={(event) => {
+            event.currentTarget.focus({ preventScroll: true });
+            setMobileFiltersOpen((open) => !open);
+          }}
+        >
+          {mobileFiltersOpen ? 'Close' : 'Filters'}
+          {!mobileFiltersOpen && filter.activeFilterCount > 0 ? (
+            <span className="filter-sidebar-count">{filter.activeFilterCount}</span>
+          ) : null}
+        </button>
+      )}
+
+      {mobileFiltersOpen && !itinerary.isInSharedView ? (
+        <>
+          <button
+            type="button"
+            className="mahogany-filters-backdrop"
+            aria-label="Close filters"
+            onClick={() => setMobileFiltersOpen(false)}
+          />
+          <div
+            id="mahogany-filters-sheet"
+            className="mahogany-filters-sheet"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Event filters"
+          >
+            <EventFilterSidebar
+              activeFilterCount={filter.activeFilterCount}
+              isPillActive={filter.isPillActive}
+              onTogglePill={filter.togglePill}
+              onClearAll={filter.clearAll}
+            />
+          </div>
+        </>
+      ) : null}
 
       <ItineraryBar
         count={itinerary.myCount}

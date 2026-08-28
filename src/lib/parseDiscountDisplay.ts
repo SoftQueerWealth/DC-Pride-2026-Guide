@@ -16,6 +16,10 @@ export function shouldHideDiscountCode(raw: string): boolean {
   return false;
 }
 
+export function hasVisibleDiscountCode(discountCode?: string): boolean {
+  return Boolean(discountCode?.trim() && !shouldHideDiscountCode(discountCode));
+}
+
 function looksLikeBareCodeToken(value: string): boolean {
   if (/^(true|false)$/i.test(value)) return false;
   if (!/^[A-Za-z0-9._-]+$/.test(value) || value.length < 3 || value.length > 48) return false;

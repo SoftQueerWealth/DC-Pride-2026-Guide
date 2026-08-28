@@ -5,6 +5,7 @@ interface ImportMetaEnv {
   readonly VITE_GOOGLE_SHEETS_API_KEY?: string;
   readonly VITE_PUBLIC_SITE_ORIGIN?: string;
   readonly VITE_ENABLE_ANALYTICS?: string;
+  readonly VITE_ENABLE_SOFT_LETTERS?: string;
 }
 
 interface ImportMeta {

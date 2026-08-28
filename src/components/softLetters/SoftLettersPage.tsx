@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { RoomId } from '../../data/rooms';
+import { SUGGEST_COVERAGE_EMAIL_HREF } from '../../constants/partner';
 import { FOOTER_BAND, FOOTER_COPY } from '../../data/home';
 import {
   SOFT_LETTER_ISSUES,
@@ -13,11 +14,10 @@ import { StaticExhibition } from './StaticExhibition';
 type SoftLettersView = 'landing' | 'exhibition' | 'contributor';
 
 type SoftLettersPageProps = {
-  onOpenPartner: () => void;
   onGo: (room: RoomId) => void;
 };
 
-export function SoftLettersPage({ onOpenPartner, onGo }: SoftLettersPageProps) {
+export function SoftLettersPage({ onGo }: SoftLettersPageProps) {
   const [view, setView] = useState<SoftLettersView>('landing');
   const [contributorName, setContributorName] = useState<string | null>(null);
   const [currentStep, setCurrentStep] = useState(0);
@@ -150,17 +150,16 @@ export function SoftLettersPage({ onOpenPartner, onGo }: SoftLettersPageProps) {
 
             <p className="eyebrow">We&apos;re building this together</p>
             <h2 className="soft-letters-share-title">Have something to share?</h2>
-            <div className="grid g3 soft-letters-share">
+            <div className="grid soft-letters-share">
               {SOFT_LETTER_SHARE_CTAS.map((cta) => (
-                <button
+                <a
                   key={cta.title}
-                  type="button"
                   className="card body soft-letters-share-card"
-                  onClick={onOpenPartner}
+                  href={SUGGEST_COVERAGE_EMAIL_HREF}
                 >
                   <h4>{cta.title}</h4>
                   <p>{cta.body}</p>
-                </button>
+                </a>
               ))}
             </div>
           </>

@@ -2,6 +2,16 @@ import type { CityKey } from './cities';
 
 export type FestivalGrouping = 'weekday' | 'calendar';
 
+/** Sheet value in Black Pride / Festival for NYC Black Pride. */
+export const NYC_BLACK_PRIDE_SERIES = 'NYC Black Pride (29th Annual)';
+export const ATL_BLACK_PRIDE_SERIES = 'ATL Black Pride (20th Annual)';
+export const STAMINA_PRIDE_SERIES = 'STAMINA 2026: Queer Caribbean Festival';
+export const GLOBAL_BLACK_PRIDE_SERIES = 'Global Black Pride';
+
+export const AUGUST_FESTIVAL_ID = 'august-events';
+export const SEPTEMBER_FESTIVAL_ID = 'september-events';
+export const NYC_BLACK_PRIDE_FESTIVAL_ID = 'nyc-black-pride';
+
 export interface PrideFestival {
   id: string;
   tabLabel: string;
@@ -13,6 +23,10 @@ export interface PrideFestival {
   enabled: boolean;
   cityInclude?: CityKey[];
   cityExclude?: CityKey[];
+  /** Keep only rows whose Black Pride / Festival column matches. */
+  prideSeriesInclude?: string[];
+  /** Drop rows whose Black Pride / Festival column matches. */
+  prideSeriesExclude?: string[];
 }
 
 export const PRIDE_FESTIVALS: PrideFestival[] = [
@@ -62,7 +76,7 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     sheetName: 'July_Events',
     spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
     grouping: 'calendar',
-    enabled: true,
+    enabled: false,
     cityExclude: ['chicago'],
   },
   {
@@ -73,15 +87,107 @@ export const PRIDE_FESTIVALS: PrideFestival[] = [
     sheetName: 'July_Events',
     spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
     grouping: 'calendar',
-    enabled: true,
+    enabled: false,
     cityInclude: ['chicago'],
+  },
+  {
+    id: 'august-events',
+    tabLabel: 'August Events',
+    dateRange: 'August – September 2026',
+    location: 'DC · NYC · Baltimore · DMV · Atlanta',
+    sheetName: 'Filterable August Sept Events',
+    spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
+    grouping: 'calendar',
+    enabled: true,
+  },
+  {
+    id: NYC_BLACK_PRIDE_FESTIVAL_ID,
+    tabLabel: 'NYC Black Pride (29th Annual)',
+    dateRange: 'August 2026',
+    location: 'New York, NY',
+    sheetName: 'Filterable August Sept Events',
+    spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
+    grouping: 'calendar',
+    enabled: false,
+    cityInclude: ['nyc'],
+    prideSeriesInclude: [NYC_BLACK_PRIDE_SERIES],
+  },
+  {
+    id: SEPTEMBER_FESTIVAL_ID,
+    tabLabel: 'September Events',
+    dateRange: 'September 2026',
+    location: 'DC · NYC · Baltimore · DMV · Atlanta',
+    sheetName: 'Filterable August Sept Events',
+    spreadsheetId: '1DPgR56Fl7Y47x1ILoa9ek-2eg7AL6RbcHuX_h-Pu3nY',
+    grouping: 'calendar',
+    enabled: false,
   },
 ];
 
-export const DEFAULT_FESTIVAL_ID = 'july-events';
+export interface FeaturedFestival {
+  id: string;
+  monthId: string;
+  /** ISO year-month, e.g. 2026-08 — Featured views only include events in this month. */
+  monthPrefix: string;
+  tabLabel: string;
+  location: string;
+  city: CityKey;
+  prideSeries: string;
+  includeCityAsMoreEvents: boolean;
+}
+
+export const FEATURED_FESTIVALS: FeaturedFestival[] = [
+  {
+    id: NYC_BLACK_PRIDE_FESTIVAL_ID,
+    monthId: AUGUST_FESTIVAL_ID,
+    monthPrefix: '2026-08',
+    tabLabel: 'NYC Black Pride (29th Annual)',
+    location: 'New York · August 2026',
+    city: 'nyc',
+    prideSeries: NYC_BLACK_PRIDE_SERIES,
+    includeCityAsMoreEvents: true,
+  },
+  {
+    id: 'stamina-2026',
+    monthId: SEPTEMBER_FESTIVAL_ID,
+    monthPrefix: '2026-09',
+    tabLabel: 'STAMINA 2026: Queer Caribbean Festival',
+    location: 'New York · September 2026',
+    city: 'nyc',
+    prideSeries: STAMINA_PRIDE_SERIES,
+    includeCityAsMoreEvents: true,
+  },
+  {
+    id: 'atl-black-pride',
+    monthId: SEPTEMBER_FESTIVAL_ID,
+    monthPrefix: '2026-09',
+    tabLabel: 'ATL Black Pride (20th Annual)',
+    location: 'Atlanta · September 2026',
+    city: 'atlanta',
+    prideSeries: ATL_BLACK_PRIDE_SERIES,
+    includeCityAsMoreEvents: true,
+  },
+  {
+    id: 'global-black-pride',
+    monthId: SEPTEMBER_FESTIVAL_ID,
+    monthPrefix: '2026-09',
+    tabLabel: 'Global Black Pride',
+    location: 'Paris · September 2026',
+    city: 'paris',
+    prideSeries: GLOBAL_BLACK_PRIDE_SERIES,
+    includeCityAsMoreEvents: true,
+  },
+];
+
+export const DEFAULT_FESTIVAL_ID = AUGUST_FESTIVAL_ID;
 
 export const ENABLED_FESTIVALS = PRIDE_FESTIVALS.filter((festival) => festival.enabled);
 
 export function festivalById(id: string): PrideFestival | undefined {
   return PRIDE_FESTIVALS.find((festival) => festival.id === id);
 }
+
+export function featuredFestivalById(id: string): FeaturedFestival | undefined {
+  return FEATURED_FESTIVALS.find((featured) => featured.id === id);
+}
+

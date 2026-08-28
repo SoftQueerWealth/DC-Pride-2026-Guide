@@ -8,6 +8,7 @@ interface CitySectionProps {
   isEventVisible: (e: PrideEvent) => boolean;
   isGoing?: (e: PrideEvent) => boolean;
   onToggleGoing?: (e: PrideEvent) => void;
+  className?: string;
 }
 
 export function CitySection({
@@ -16,6 +17,7 @@ export function CitySection({
   isEventVisible,
   isGoing,
   onToggleGoing,
+  className,
 }: CitySectionProps) {
   const visibleCount = dayGroups.reduce(
     (sum, group) => sum + group.events.filter(isEventVisible).length,
@@ -24,7 +26,7 @@ export function CitySection({
   const hidden = visibleCount === 0;
 
   return (
-    <section className={`city-section${hidden ? ' hidden' : ''}`}>
+    <section className={`city-section${hidden ? ' hidden' : ''}${className ? ` ${className}` : ''}`}>
       <div className="city-header">
         <h2 className="city-title">{cityLabel}</h2>
       </div>

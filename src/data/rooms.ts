@@ -1,4 +1,4 @@
-export type RoomId = 'home' | 'neighborhood' | 'reading' | 'about';
+export type RoomId = 'neighborhood' | 'reading' | 'about';
 
 export type RoomDef = {
   id: RoomId;
@@ -7,13 +7,7 @@ export type RoomDef = {
   placeholderBody: string;
 };
 
-export const ROOMS: RoomDef[] = [
-  {
-    id: 'home',
-    label: 'Home',
-    placeholderTitle: 'Home',
-    placeholderBody: '',
-  },
+const ALL_ROOMS: RoomDef[] = [
   {
     id: 'neighborhood',
     label: 'The Mahogany Pages',
@@ -28,17 +22,16 @@ export const ROOMS: RoomDef[] = [
     placeholderBody:
       'Issues, exhibitions, and Softies of the Month — coming soon. The Soft Letter is where we tell our stories.',
   },
-  {
-    id: 'about',
-    label: 'About Us',
-    placeholderTitle: 'About Us',
-    placeholderBody:
-      'Who we are, how we grow, and how to work with us — coming soon. Softness is resistance. Joy is revolutionary.',
-  },
 ];
 
+export const SOFT_LETTERS_ENABLED = import.meta.env.VITE_ENABLE_SOFT_LETTERS === 'true';
+
+export const ROOMS: RoomDef[] = ALL_ROOMS.filter(
+  (room) => room.id !== 'reading' || SOFT_LETTERS_ENABLED,
+);
+
 export function roomById(id: RoomId): RoomDef {
-  const room = ROOMS.find((r) => r.id === id);
+  const room = ALL_ROOMS.find((r) => r.id === id);
   if (!room) throw new Error(`Unknown room: ${id}`);
   return room;
 }

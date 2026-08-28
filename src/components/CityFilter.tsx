@@ -1,12 +1,13 @@
-import { cityFilterOptions } from '../constants/cities';
+import { cityFilterOptions, type CityFilterOption } from '../constants/cities';
 
 interface CityFilterProps {
   value: string;
   onChange: (value: string) => void;
   className?: string;
+  options?: CityFilterOption[];
 }
 
-export function CityFilter({ value, onChange, className }: CityFilterProps) {
+export function CityFilter({ value, onChange, className, options = cityFilterOptions }: CityFilterProps) {
   return (
     <div className={`city-filter${className ? ` ${className}` : ''}`}>
       <label htmlFor="city-filter-select" className="city-filter-label">
@@ -19,7 +20,7 @@ export function CityFilter({ value, onChange, className }: CityFilterProps) {
         onChange={(e) => onChange(e.target.value)}
       >
         <option value="">All Cities</option>
-        {cityFilterOptions.map((option) => (
+        {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}
           </option>

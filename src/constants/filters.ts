@@ -5,6 +5,7 @@ export enum FilterKind {
   Type = 'type',
   Vibe = 'vibe',
   Free = 'free',
+  Discount = 'discount',
 }
 
 export type FilterPillValue = DayId | EventTypeId | EventVibeId | 'true' | string;
@@ -71,6 +72,9 @@ export const FILTER_SECTIONS: FilterSectionDef<FilterKind>[] = [
   },
   {
     label: 'Price',
-    pills: [{ kind: FilterKind.Free, value: 'true', label: '🎟️ Free Events Only', freePill: true }],
+    pills: [
+      { kind: FilterKind.Free, value: 'true', label: '🎟️ Free Events Only', freePill: true },
+      { kind: FilterKind.Discount, value: 'true', label: 'Discount' },
+    ],
   },
 ];

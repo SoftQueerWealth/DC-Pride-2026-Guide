@@ -1,7 +1,7 @@
-export const CITY_ORDER = ['dc', 'nyc', 'baltimore', 'dmv'] as const;
+export const CITY_ORDER = ['dc', 'nyc', 'baltimore', 'dmv', 'atlanta'] as const;
 
 export type MainCityKey = (typeof CITY_ORDER)[number];
-export type CityKey = MainCityKey | 'chicago';
+export type CityKey = MainCityKey | 'chicago' | 'paris';
 
 const SHEET_CITY_MAP: Record<string, CityKey> = {
   dc: 'dc',
@@ -9,9 +9,12 @@ const SHEET_CITY_MAP: Record<string, CityKey> = {
   nyc: 'nyc',
   newyork: 'nyc',
   baltimore: 'baltimore',
+  atlanta: 'atlanta',
+  atl: 'atlanta',
   chicago: 'chicago',
   thechi: 'chicago',
   chi: 'chicago',
+  paris: 'paris',
 };
 
 const CITY_LABELS: Record<CityKey, string> = {
@@ -19,7 +22,9 @@ const CITY_LABELS: Record<CityKey, string> = {
   nyc: 'New York',
   baltimore: 'Baltimore',
   dmv: 'DMV',
+  atlanta: 'Atlanta',
   chicago: 'Chicago',
+  paris: 'Paris',
 };
 
 export function normalizeSheetCity(raw: string): CityKey | null {
@@ -31,7 +36,21 @@ export function cityDisplayLabel(key: string): string {
   return CITY_LABELS[key as CityKey] ?? key;
 }
 
-export const cityFilterOptions: { value: MainCityKey; label: string }[] = CITY_ORDER.map((key) => ({
+export type CityFilterOption = { value: string; label: string };
+
+export const cityFilterOptions: CityFilterOption[] = CITY_ORDER.map((key) => ({
   value: key,
   label: CITY_LABELS[key],
 }));
+
+export function cityFilterOptionsForKeys(keys: Iterable<string>): CityFilterOption[] {
+  const present = new Set([...keys].filter(Boolean));
+  const ordered = [
+    ...CITY_ORDER.filter((key) => present.has(key)),
+    ...[...present].filter((key) => !CITY_ORDER.includes(key as MainCityKey)),
+  ];
+  return ordered.map((key) => ({
+    value: key,
+    label: cityDisplayLabel(key),
+  }));
+}
