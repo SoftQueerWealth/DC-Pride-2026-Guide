@@ -29,6 +29,11 @@ jobs:
         run: npm run build
 
       - name: Deploy to Cloudflare Workers (production)
-        run: npx wrangler deploy --env=""
+        run: |
+          if [ -z "${CLOUDFLARE_API_TOKEN}" ]; then
+            echo "::error::CLOUDFLARE_API_TOKEN secret is not set in repository secrets."
+            exit 1
+          fi
+          npx wrangler deploy --env=""
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
