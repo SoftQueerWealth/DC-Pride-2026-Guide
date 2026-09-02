@@ -37,6 +37,7 @@ Google Analytics loads only when `VITE_ENABLE_ANALYTICS=true` (set in `.env.prod
 | `npm run lint` | ESLint |
 | `npm run sync-events` | Regenerate `src/data/festivals/*.generated.ts` from Google Sheets festival tabs |
 | `npm run deploy:staging` | Sync events + community perks, `build:staging`, and `wrangler deploy --env staging` |
+| `npm run deploy:prod` | Stamp last-updated date, sync events + community perks, `build`, and `wrangler deploy` (production) |
 | `npm run sync-beauty` | Regenerate `src/data/beauty.generated.ts` from the Google Sheets `Business` tab |
 | `npm run extract-events` | Regenerate legacy `events.generated.ts` from `legacy/index.html` (archived) |
 
@@ -48,7 +49,7 @@ Google Analytics loads only when `VITE_ENABLE_ANALYTICS=true` (set in `.env.prod
 
 For OG/social link previews to work when someone shares `www.softqueerwealth.com` or `http://softqueerwealth.com`, confirm in the Cloudflare dashboard:
 
-1. **Worker custom domains** (`sqw-events-guide`): both `softqueerwealth.com` and `www.softqueerwealth.com` are attached.
+1. **Worker custom domains** (`dc-pride-2026-guide`): both `softqueerwealth.com` and `www.softqueerwealth.com` are attached.
 2. **DNS**: proxied records for apex and `www` both route to the Worker.
 3. **SSL/TLS**: edge certificates are Active for both hostnames; mode is Full or Full (strict).
 4. **Always Use HTTPS** is enabled (SSL/TLS → Edge Certificates).
@@ -63,22 +64,19 @@ curl -I http://www.softqueerwealth.com
 
 Each should return `301` with `Location: https://softqueerwealth.com/`.
 
-Production reads guide data from the deployed bundle, not Google Sheets at runtime. To change production Events or Community Perks content, update the generated data files and deploy again.
-
-For festival event sheet changes:
+Production reads guide data from the deployed bundle, not Google Sheets at runtime. To change production Events or Community Perks content, use:
 
 ```sh
-npm run sync-events
-npm run build
-wrangler deploy
+npm run deploy:prod
 ```
 
-For Community Perks sheet changes:
+That stamps the Hero last-updated date, syncs events and community perks, builds, and deploys to Cloudflare production.
+
+For a manual production build only (no sync / no date stamp):
 
 ```sh
-npm run sync-beauty
 npm run build
-wrangler deploy
+wrangler deploy --env=""
 ```
 
 ## Layout
