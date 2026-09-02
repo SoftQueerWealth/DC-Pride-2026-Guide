@@ -27,6 +27,7 @@ function normalizePrideSeriesFromSheet(value: string): string {
   return value.trim();
 }
 
+const BEAUTY_SHEET_NAME = 'Business';
 const SHEETS_ID_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_ID_HERE';
 const API_KEY_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_API_KEY_HERE';
 

@@ -1,2 +1,2 @@
 /** Stamped by scripts/update-last-updated.mjs during prod deploy. Do not edit by hand. */
-export const LAST_UPDATED_LABEL = 'August 16, 2026';
+export const LAST_UPDATED_LABEL = 'September 2, 2026';
