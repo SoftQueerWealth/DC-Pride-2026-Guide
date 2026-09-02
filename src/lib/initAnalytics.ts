@@ -1,11 +1,19 @@
 const GA_MEASUREMENT_ID = 'G-XWNSXDGLBC';
 
+export { GA_MEASUREMENT_ID };
+
 export function isAnalyticsEnabled(): boolean {
   return import.meta.env.VITE_ENABLE_ANALYTICS === 'true';
 }
 
 export function initAnalytics(): void {
-  if (!isAnalyticsEnabled() || typeof document === 'undefined') return;
+  const enabled = isAnalyticsEnabled();
+  const hasDocument = typeof document !== 'undefined';
+  const gtagAlreadyInHtml = typeof window !== 'undefined' && typeof window.gtag === 'function';
+
+  if (!enabled || !hasDocument) return;
+
+  if (gtagAlreadyInHtml) return;
 
   const script = document.createElement('script');
   script.async = true;
@@ -17,5 +25,5 @@ export function initAnalytics(): void {
     window.dataLayer?.push(args);
   };
   window.gtag('js', new Date());
-  window.gtag('config', GA_MEASUREMENT_ID);
+  window.gtag('config', GA_MEASUREMENT_ID, { send_page_view: true });
 }

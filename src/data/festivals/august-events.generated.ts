@@ -14,11 +14,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "live show chill cultural",
     "free": true,
     "price": "Free",
     "badges": [
-      "Live Show",
+      "Black",
+      "Queer",
       "Free"
     ],
     "time": "6:00 PM",
@@ -47,12 +52,16 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "community",
     "free": false,
     "price": "$221.00",
     "badges": [
-      "After Dark",
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "Atlanta, GA, USA",
@@ -77,11 +86,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "creative games groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "8:00 PM",
     "location": "SKATE TOWNE · 5570 Old National Hwy, Atlanta, GA 30349, USA",
@@ -108,11 +122,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "community ass shaking groove grown & sexy flirt",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "9:00 PM",
     "location": "MSR My Sister's Room · 1104 Crescent Ave NE, Atlanta, GA 30309, USA",
@@ -141,11 +160,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "grown & sexy flirt groove",
     "free": false,
     "price": "$29.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "3:00 PM",
     "location": "Magic City · 241 Forsyth St SW, Atlanta, GA 30303, USA",
@@ -172,11 +196,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy creative",
     "free": false,
     "price": "$45.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Cover Lounge · 4110 Memorial Dr Ste A, Decatur, GA 30032",
@@ -204,11 +233,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": false,
     "price": "$34.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "3:00 PM",
     "location": "Believe Music Hall · 181 Ralph David Abernathy Blvd SW, Atlanta, GA 30312",
@@ -236,11 +270,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": false,
     "price": "$56.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "4 ELEMENTS {Formally SUITE LOUNGE} · 375 Luckie St NW, Atlanta, GA 30313",
@@ -268,11 +307,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill groove grown & sexy",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "3:00 PM",
     "location": "PALM BEACH · 330 Edgewood Ave SE, Atlanta, GA 30312",
@@ -299,11 +343,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": false,
     "price": "$29.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "REVEL · 1778 Ellsworth Industrial Blvd NW, Atlanta, GA 3031",
@@ -331,11 +380,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove community cultural",
     "free": false,
     "price": "$29.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Queer"
     ],
     "time": "10:00 PM",
     "location": "FLO · 2196B Cheshire Bridge Rd NE, Atlanta, GA 30324",
@@ -366,12 +420,16 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "chill community creative food cultural live show",
     "free": true,
     "price": "Free",
     "badges": [
-      "Outdoors Hangout",
-      "Live Show",
+      "Black",
+      "Queer",
       "Free"
     ],
     "time": "2:00 PM",
@@ -403,12 +461,16 @@ export const generatedEvents: PrideEvent[] = [
       "live-show",
       "brunch"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "live show creative community cultural grown & sexy food groove",
     "free": false,
     "price": "$66.00",
     "badges": [
-      "Live Show",
-      "Brunch"
+      "Black",
+      "Queer"
     ],
     "time": "12:00 PM",
     "location": "The Starling Atlanta Midtown, Curio Collection by Hilton · 188 14th Street Northeast\nAtlanta, GA 30361",
@@ -439,11 +501,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "live show creative community cultural grown & sexy",
     "free": false,
     "price": "$177.00",
     "badges": [
-      "Live Show"
+      "Black",
+      "Queer"
     ],
     "time": "5:00 PM",
     "location": "The Starling Atlanta Midtown, Curio Collection by Hilton · 188 14th Street Northeast\nAtlanta, GA 30361",
@@ -472,11 +539,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "live show food grown & sexy groove",
     "free": false,
     "price": "$25.00",
     "badges": [
-      "Live Show"
+      "Black",
+      "Sapphic"
     ],
     "time": "12:00 PM",
     "location": "Cirque Daiquiri Bar & Grill · 2160 Monroe Drive Northeast\nAtlanta, GA 30324",
@@ -504,11 +576,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "30+ flirt community ass shaking grown & sexy groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "9:00 PM",
     "location": "Rose Bar · 3115 Piedmont Rd NE, Atlanta, Ga 30305",
@@ -538,11 +615,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "30+ flirt community ass shaking grown & sexy groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "9:00 PM",
     "location": "High Society Buckhead · 3201 Cains Hill Pl NW, Atlanta, GA 30305",
@@ -573,12 +655,16 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "30+ flirt community ass shaking grown & sexy groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "Outdoors Hangout",
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "3:00 PM",
     "location": "Moxy Atlanta Midtown · 48 13th St NE, Atlanta, GA 30309",
@@ -608,11 +694,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking community flirt grown & sexy groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Mixx Atlanta · 1492 Piedmont Ave NE ste b, Atlanta, GA 30309",
@@ -641,11 +732,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking community flirt grown & sexy groove",
     "free": false,
     "price": "$12.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Mixx Atlanta · 1492 Piedmont Ave NE ste b, Atlanta, GA 30309",
@@ -673,11 +769,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "flirt ass shaking groove",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "3:00 PM",
     "location": "THChill Lounge · 116 Krog St NE, Atlanta, GA 30307",
@@ -705,11 +808,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "flirt ass shaking groove grown & sexy",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "10:00 PM",
     "location": "Cam Kirk Studios · 112 Krog St NE D125, Atlanta, GA 30307",
@@ -738,11 +848,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "flirt ass shaking groove grown & sexy",
     "free": false,
     "price": "$22.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Queer"
     ],
     "time": "8:00 PM",
     "location": "Spaceman Rooftop · 3301 Lenox Parkway Northeast NE, Atlanta, GA 30326",
@@ -770,11 +885,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "flirt ass shaking groove grown & sexy",
     "free": false,
     "price": "$11.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Queer"
     ],
     "time": "10:00 PM",
     "location": "Wild Leap Atlanta ⎸ Brewery ⎸ Distillery · 125 Ted Turner Drive Southwest, Atlanta, GA 30313",
@@ -802,11 +922,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "flirt ass shaking groove grown & sexy food",
     "free": false,
     "price": "$22.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Queer"
     ],
     "time": "5:00 PM",
     "location": "Westside Motor Lounge · 725 Echo St NW, Atlanta, GA 3031",
@@ -835,11 +960,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "flirt ass shaking groove grown & sexy",
     "free": false,
     "price": "$17.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Queer"
     ],
     "time": "10:00 PM",
     "location": "404.EXE · 736 Ponce De Leon Avenue Northeast, Atlanta, GA 30306",
@@ -868,12 +998,18 @@ export const generatedEvents: PrideEvent[] = [
       "meetup",
       "gynasium"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "creative community games wellness",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Meetup",
-      "Gynasium"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "12:00 PM",
     "location": "Dill Dinker · 1200 White St SW, Atlanta, GA 30310",
@@ -901,12 +1037,18 @@ export const generatedEvents: PrideEvent[] = [
       "happy-hour",
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "chill flirt grown & sexy groove",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Happy Hour",
-      "Day Party"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "8:00 PM",
     "location": "RT60 · 89 Centennial Olympic Park Dr NW, Atlanta, GA 30313",
@@ -935,12 +1077,18 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "chill community games",
     "free": true,
     "price": "Free",
     "badges": [
-      "Outdoors Hangout",
-      "Meetup",
+      "Black",
+      "Sapphic",
+      "30+",
       "Free"
     ],
     "time": "2:00 PM",
@@ -969,12 +1117,16 @@ export const generatedEvents: PrideEvent[] = [
       "happy-hour",
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "chill flirt community grown & sexy groove",
     "free": false,
     "price": "$7.00",
     "badges": [
-      "Happy Hour",
-      "Day Party"
+      "Black",
+      "Queer"
     ],
     "time": "5:00 PM",
     "location": "The Waiting Room · 674 Myrtle St NE, Atlanta, GA 30308",
@@ -1003,11 +1155,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "workshop"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "creative community cultural",
     "free": false,
     "price": "$7.00",
     "badges": [
-      "Workshop"
+      "Black",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "The MURPH · 561 West Whitehall Street Southwest\nAtlanta, GA 30310",
@@ -1035,12 +1192,16 @@ export const generatedEvents: PrideEvent[] = [
       "meetup",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "creative community cultural",
     "free": false,
     "price": "$7.00",
     "badges": [
-      "Meetup",
-      "Educational"
+      "Black",
+      "Sapphic"
     ],
     "time": "6:30 PM",
     "location": "The MURPH · 561 West Whitehall Street Southwest\nAtlanta, GA 30310",
@@ -1067,11 +1228,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill community dating games groove",
     "free": false,
     "price": "$7.00",
     "badges": [
-      "Meetup"
+      "Black",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "The MURPH · 561 West Whitehall Street Southwest\nAtlanta, GA 30310",
@@ -1100,11 +1266,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "live show",
     "free": false,
     "price": "$40.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "6:30 PM",
     "location": "Lakewood Amphitheatre · 2002 Lakewood Way SW, Atlanta, GA 30315",
@@ -1129,11 +1300,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "Tongue & Groove · 565 Main St NE, Atlanta, GA 30324",
@@ -1161,11 +1337,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "live show creative",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "Live Show"
+      "Black",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "CODE RED BAR & GRILL · 1511 Memorial Drive Southeast\nAtlanta, GA 30317",
@@ -1192,11 +1373,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking groove",
     "free": false,
     "price": "$28.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Apache XLR · 393 Marietta Street NorthWest Atlanta, GA 30313",
@@ -1224,11 +1410,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking groove",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Marquette Lounge · 868 Joseph E. Boone Blvd, Atlanta, GA",
@@ -1256,11 +1447,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking groove",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "3:00 AM",
     "location": "Marquette Lounge · 868 Joseph E. Boone Blvd, Atlanta, GA",
@@ -1288,11 +1484,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking groove",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 AM",
     "location": "The Atrium · 5479 Memorial Drive Stone Mountain Ga",
@@ -1320,10 +1521,15 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": false,
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "8:00 PM",
     "location": "RT60 Rooftop Bar · 89 Centennial Olympic Park Dr NW, Atlanta, GA 30313",
@@ -1351,11 +1557,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": false,
     "price": "$40.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "4:00 PM",
     "location": "The Tess, Autograph Collection · 415 East Paces Ferry Rd NE, Atlanta, GA 30305",
@@ -1378,16 +1589,58 @@ export const generatedEvents: PrideEvent[] = [
     "day": "friday",
     "dayDate": "2026-09-04",
     "dayLabel": "Friday",
+    "name": "Queer Aunties and B Hen Presents: Cousins and 'Nem ATL",
+    "organizer": "Queer Aunties",
+    "types": [
+      "after-dark"
+    ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
+    "vibesRaw": "flirt ass shaking grown & sexy groove",
+    "free": false,
+    "price": "$40.00",
+    "badges": [
+      "Black",
+      "Sapphic"
+    ],
+    "time": "10:00 PM",
+    "location": "Rose and Rye · 3377 Peachtree Rd NE, Atlanta, GA 30326",
+    "vibeTags": [
+      "Flirt",
+      "Ass Shaking",
+      "Grown & Sexy",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/queer-aunties-and-b-hen-presents-cousins-and-nem-atl",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "city": "atlanta",
+    "prideSeries": "ATL Black Pride (20th Annual)"
+  },
+  {
+    "id": "45",
+    "festival": "august-events",
+    "day": "friday",
+    "dayDate": "2026-09-04",
+    "dayLabel": "Friday",
     "name": "5Y ANNIVERSARY ALL ACCESS PASS",
     "organizer": "Sidequa MsDiva Brisha",
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "grown & sexy groove ass shaking flirt",
     "free": false,
     "price": "$110.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "8:00 PM",
     "location": "Location Revealed To Pass Holders",
@@ -1406,7 +1659,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "ATL Black Pride (20th Annual)"
   },
   {
-    "id": "45",
+    "id": "46",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-04",
@@ -1416,11 +1669,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "grown & sexy groove ass shaking flirt",
     "free": false,
     "price": "$29.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "8:00 PM",
     "location": "Wyndham Atlanta Buckhead Hotel · 3405 Lenox Rd NE Atlanta, GA 30326",
@@ -1439,7 +1697,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "ATL Black Pride (20th Annual)"
   },
   {
-    "id": "46",
+    "id": "47",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -1449,11 +1707,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "creative grown & sexy live show flirt groove",
     "free": false,
     "price": "$109.00",
     "badges": [
-      "Live Show"
+      "Black",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "Atlanta Black Pride 2K26 · 3405 Lenox Rd NE Atlanta, GA 30326",
@@ -1473,7 +1736,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "ATL Black Pride (20th Annual)"
   },
   {
-    "id": "47",
+    "id": "48",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-06",
@@ -1483,11 +1746,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt grown & sexy groove",
     "free": false,
     "price": "$29.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "9:00 PM",
     "location": "Atlanta Black Pride 2K26 · 3405 Lenox Rd NE Atlanta, GA 30326",
@@ -1505,7 +1773,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "ATL Black Pride (20th Annual)"
   },
   {
-    "id": "48",
+    "id": "49",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-23",
@@ -1516,12 +1784,16 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Trans/GNC"
+    ],
     "vibesRaw": "chill community wellness",
     "free": true,
     "price": "Free",
     "badges": [
-      "Outdoors Hangout",
-      "Meetup",
+      "Black",
+      "Trans/GNC",
       "Free"
     ],
     "time": "7:00 PM",
@@ -1539,7 +1811,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "49",
+    "id": "50",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-30",
@@ -1549,11 +1821,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
+    ],
     "vibesRaw": "creative community chill",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Meetup"
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
     ],
     "time": "1:00 PM",
     "location": "Wild Heaven Brewery in the West End · 1010 White Street SW Atlanta, GA 30310",
@@ -1570,7 +1849,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "50",
+    "id": "51",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-09-03",
@@ -1581,12 +1860,18 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
+    ],
     "vibesRaw": "creative community groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "Workshop",
-      "Meetup",
+      "Black",
+      "Sapphic",
+      "Trans/GNC",
       "Free"
     ],
     "time": "6:00 PM",
@@ -1604,7 +1889,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "51",
+    "id": "52",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-09-10",
@@ -1615,12 +1900,16 @@ export const generatedEvents: PrideEvent[] = [
       "educational",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "chill creative community cultural",
     "free": false,
     "price": "$16.50",
     "badges": [
-      "Educational",
-      "Meetup"
+      "Black",
+      "Queer"
     ],
     "time": "7:00 PM",
     "location": "The Tara · 2345 Cheshire Bridge Rd NE\nAtlanta, GA 30324",
@@ -1638,7 +1927,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "52",
+    "id": "53",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-23",
@@ -1649,12 +1938,18 @@ export const generatedEvents: PrideEvent[] = [
       "happy-hour",
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
+    ],
     "vibesRaw": "flirt community ass shaking grown & sexy groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "Happy Hour",
-      "Day Party"
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
     ],
     "time": "5:00 PM",
     "location": "REVERB ROOFTOP · 89 Centennial Olympic Park Dr NW, Atlanta, GA 30313",
@@ -1673,7 +1968,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "53",
+    "id": "54",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-06",
@@ -1684,12 +1979,18 @@ export const generatedEvents: PrideEvent[] = [
       "happy-hour",
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
+    ],
     "vibesRaw": "flirt community ass shaking grown & sexy groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "Happy Hour",
-      "Day Party"
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
     ],
     "time": "3:00 PM",
     "location": "Elite Hookah Lounge Atl · 3043 Buford Hwy NE, Atlanta, GA 30329",
@@ -1708,7 +2009,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "ATL Black Pride (20th Annual)"
   },
   {
-    "id": "54",
+    "id": "55",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -1719,12 +2020,18 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Masc"
+    ],
     "vibesRaw": "community wellness",
     "free": true,
     "price": "Free",
     "badges": [
-      "Outdoors Hangout",
-      "Meetup",
+      "Black",
+      "Sapphic",
+      "Masc",
       "Free"
     ],
     "time": "9:00 AM",
@@ -1741,7 +2048,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "ATL Black Pride (20th Annual)"
   },
   {
-    "id": "55",
+    "id": "56",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -1751,11 +2058,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "festival"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer-friendly"
+    ],
     "vibesRaw": "creative games",
     "free": false,
     "price": "$63.00",
     "badges": [
-      "Festival"
+      "POC",
+      "Queer-friendly"
     ],
     "time": "7:00 PM",
     "location": "Georgia Aquarium · 225 Baker St NW, Atlanta, GA 30313",
@@ -1771,7 +2083,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "56",
+    "id": "57",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-09-03",
@@ -1781,11 +2093,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "festival"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer-friendly"
+    ],
     "vibesRaw": "creative games",
     "free": false,
     "price": "$49.00",
     "badges": [
-      "Festival"
+      "POC",
+      "Queer-friendly"
     ],
     "time": "7:00 PM",
     "location": "Southern Exchange Ballrooms · 200 Peachtree St, Atlanta, GA 30303",
@@ -1801,7 +2118,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "57",
+    "id": "58",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -1811,11 +2128,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "creative community live show",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Live Show"
+      "POC",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "Le Mondo · 406 N Howard St, Baltimore, MD 21201, USA",
@@ -1832,7 +2154,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "58",
+    "id": "59",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -1842,11 +2164,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
+    ],
     "vibesRaw": "ass shaking flirt community grown & sexy groove",
     "free": false,
     "price": "$12.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
     ],
     "time": "8:00 PM",
     "location": "The Manor · 924 N Charles St, Baltimore, MD 21201, USA",
@@ -1865,7 +2194,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "59",
+    "id": "60",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -1876,12 +2205,16 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "chill community ass shaking groove",
     "free": false,
     "price": "$5.00",
     "badges": [
-      "Day Party",
-      "Meetup"
+      "Black",
+      "Queer"
     ],
     "time": "4:00 PM",
     "location": "LOCATION TBA",
@@ -1899,7 +2232,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "60",
+    "id": "61",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-13",
@@ -1910,12 +2243,16 @@ export const generatedEvents: PrideEvent[] = [
       "live-show",
       "happy-hour"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer-friendly"
+    ],
     "vibesRaw": "chill community live show groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "Live Show",
-      "Happy Hour",
+      "Black",
+      "Queer-friendly",
       "Free"
     ],
     "time": "6:30 PM",
@@ -1934,7 +2271,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "61",
+    "id": "62",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -1944,11 +2281,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Youth/Family"
+    ],
     "vibesRaw": "chill community cultural grown & sexy live show",
     "free": false,
     "price": "$3.00",
     "badges": [
-      "Live Show"
+      "Black",
+      "Sapphic",
+      "Youth/Family"
     ],
     "time": "7:00 PM",
     "location": "Baltimore Museum of Art · 10 Art Museum Drive, Baltimore, MD 21218",
@@ -1967,7 +2311,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "62",
+    "id": "63",
     "festival": "august-events",
     "day": "tuesday",
     "dayDate": "2026-08-04",
@@ -1978,12 +2322,18 @@ export const generatedEvents: PrideEvent[] = [
       "meetup",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "chill creative community",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
-      "Educational",
+      "POC",
+      "Sapphic",
+      "30+",
       "Free"
     ],
     "time": "7:00 PM",
@@ -2001,7 +2351,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "63",
+    "id": "64",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-13",
@@ -2013,13 +2363,18 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "chill creative community",
     "free": false,
     "price": "$50.00",
     "badges": [
-      "Meetup",
-      "Outdoors Hangout",
-      "Educational"
+      "POC",
+      "Sapphic",
+      "30+"
     ],
     "time": "7:00 PM",
     "location": "Baltimore Water Taxi · 901 South Broadway, Baltimore, MD 21231",
@@ -2036,7 +2391,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "64",
+    "id": "65",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -2047,12 +2402,18 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "happy-hour"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "ass shaking flirt community grown & sexy groove",
     "free": false,
     "price": "$13.00",
     "badges": [
-      "After Dark",
-      "Happy Hour"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "7:00 PM",
     "location": "SAFARI · 5625 O'Donnell St, Baltimore, MD",
@@ -2071,7 +2432,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "65",
+    "id": "66",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2081,11 +2442,20 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "ball"
     ],
+    "audienceTags": [
+      "Black",
+      "MLM",
+      "Sapphic",
+      "Trans/GNC"
+    ],
     "vibesRaw": "creative community groove live show",
     "free": true,
     "price": "Free",
     "badges": [
-      "Ball",
+      "Black",
+      "MLM",
+      "Sapphic",
+      "Trans/GNC",
       "Free"
     ],
     "time": "3:00 PM",
@@ -2104,7 +2474,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "66",
+    "id": "67",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -2116,13 +2486,16 @@ export const generatedEvents: PrideEvent[] = [
       "festival",
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer-friendly"
+    ],
     "vibesRaw": "chill creative groove live show",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "Outdoors Hangout",
-      "Festival",
-      "Live Show"
+      "Black",
+      "Queer-friendly"
     ],
     "time": "12:00 PM",
     "location": "Point Park, Harbor East · Harbor East, Baltimore, MD (street address not given)",
@@ -2140,7 +2513,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "67",
+    "id": "68",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2150,11 +2523,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "groove ass shaking community",
     "free": true,
     "price": "Free",
     "badges": [
-      "After Dark",
+      "POC",
+      "Sapphic",
       "Free"
     ],
     "time": "8:00 PM",
@@ -2172,7 +2550,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "68",
+    "id": "69",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-26",
@@ -2183,12 +2561,16 @@ export const generatedEvents: PrideEvent[] = [
       "meetup",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "community creative chill live show",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
-      "Educational",
+      "POC",
+      "Sapphic",
       "Free"
     ],
     "time": "7:30 PM",
@@ -2207,7 +2589,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "69",
+    "id": "70",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -2219,13 +2601,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "creative community games groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "10:30 AM",
@@ -2244,7 +2629,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "70",
+    "id": "71",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -2254,11 +2639,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "groove community ass shaking flirt creative",
     "free": false,
     "price": "$7.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Sapphic"
     ],
     "time": "8:00 PM",
     "location": "Current Space (rear courtyard) · 421 Tyson Street, Baltimore, MD",
@@ -2277,7 +2667,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "71",
+    "id": "72",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2287,11 +2677,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt community ass shaking groove",
     "free": false,
     "price": "$12.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Sapphic"
     ],
     "time": "8:00 PM",
     "location": "Le Mondo · 406 N Howard St, Baltimore, MD 21201, USA",
@@ -2309,7 +2704,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "72",
+    "id": "73",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-12",
@@ -2320,12 +2715,18 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "live-show"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic",
+      "Trans/GNC"
+    ],
     "vibesRaw": "flirt community ass shaking groove live show",
     "free": false,
     "price": "$13.00",
     "badges": [
-      "After Dark",
-      "Live Show"
+      "POC",
+      "Sapphic",
+      "Trans/GNC"
     ],
     "time": "10:00 PM",
     "location": "Club Nest at The Eagle · 2022 N Charles St.",
@@ -2344,7 +2745,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "73",
+    "id": "74",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -2354,11 +2755,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "chill creative community cultural live show",
     "free": true,
     "price": "Free",
     "badges": [
-      "Live Show",
+      "Black",
+      "Queer",
       "Free"
     ],
     "time": "5:30 PM",
@@ -2378,7 +2784,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "74",
+    "id": "75",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -2389,12 +2795,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community wellness",
     "free": false,
     "price": "$13.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:30 AM",
     "location": "The Pride Center of Maryland · 2418 Saint Paul Street, Baltimore, MD 21218",
@@ -2412,7 +2822,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "75",
+    "id": "76",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-01",
@@ -2423,12 +2833,18 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "outdoors-hangout"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy 30+",
     "free": false,
     "price": "$32.50",
     "badges": [
-      "Day Party",
-      "Outdoors Hangout"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "7:30 PM",
     "location": "VIDA Penthouse Pool & Lounge (corrects earlier \"Penthouse Pool Club\" guess -- confirmed by source text) · 1612 U Street NW, Washington, DC 20009",
@@ -2446,7 +2862,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "76",
+    "id": "77",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-12",
@@ -2456,11 +2872,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "flirt community grown & sexy groove",
     "free": false,
     "price": "$20.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "5:00 PM",
     "location": "Onyx Decades · 1815 M St. NW DC",
@@ -2478,7 +2901,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "77",
+    "id": "78",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2488,11 +2911,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer-friendly"
+    ],
     "vibesRaw": "ass shaking groove flirt cultural",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "Day Party"
+      "POC",
+      "Queer-friendly"
     ],
     "time": "4:00 PM",
     "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
@@ -2510,7 +2938,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "78",
+    "id": "79",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -2520,11 +2948,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Sapphic"
     ],
     "time": "11:00 PM",
     "location": "DC9 · 1940 9th St NW\nWashington, DC 20001",
@@ -2542,7 +2975,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "79",
+    "id": "80",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -2552,11 +2985,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "Tag Rooftop Bar at The Ven at Embassy Row · 2015 Massachusetts Ave NW, Washington, DC 20036, USA",
@@ -2574,7 +3012,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "80",
+    "id": "81",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-23",
@@ -2584,11 +3022,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt community grown & sexy groove live show",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Day Party"
+      "POC",
+      "Sapphic"
     ],
     "time": "12:00 PM",
     "location": "Wunder Garten · 1101 1st St NE, Washington, DC 20002, USA",
@@ -2608,7 +3051,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "81",
+    "id": "82",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-30",
@@ -2618,11 +3061,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Day Party"
+      "POC",
+      "Sapphic"
     ],
     "time": "2:00 PM",
     "location": "Tag Rooftop Bar at The Ven at Embassy Row · 2015 Massachusetts Ave NW, Washington, DC 20036, USA",
@@ -2640,7 +3088,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "82",
+    "id": "83",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -2651,12 +3099,18 @@ export const generatedEvents: PrideEvent[] = [
       "meetup",
       "workshop"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
+    ],
     "vibesRaw": "chill creative community cultural",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
-      "Workshop",
+      "Black",
+      "Sapphic",
+      "Trans/GNC",
       "Free"
     ],
     "time": "7:30 PM",
@@ -2675,7 +3129,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "83",
+    "id": "84",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-27",
@@ -2685,11 +3139,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Trans/GNC"
+    ],
     "vibesRaw": "chill creative community cultural",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
+      "Black",
+      "Sapphic",
+      "Trans/GNC",
       "Free"
     ],
     "time": "7:00 PM",
@@ -2708,7 +3169,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "84",
+    "id": "85",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -2720,13 +3181,18 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "workshop"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Masc"
+    ],
     "vibesRaw": "chill creative community wellness",
     "free": false,
     "price": "$6.00",
     "badges": [
-      "Meetup",
-      "Outdoors Hangout",
-      "Workshop"
+      "Black",
+      "Sapphic",
+      "Masc"
     ],
     "time": "9:30 AM",
     "location": "Rock Creek Park Nature Center and Planetarium · 5200 Glover Rd NW, Washington, DC 20015, USA",
@@ -2744,7 +3210,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "85",
+    "id": "86",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -2755,12 +3221,16 @@ export const generatedEvents: PrideEvent[] = [
       "meetup",
       "outdoors-hangout"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community wellness",
     "free": false,
     "price": "$6.00",
     "badges": [
-      "Meetup",
-      "Outdoors Hangout"
+      "Black",
+      "Sapphic"
     ],
     "time": "9:00 AM",
     "location": "Rock Creek Park Nature Center and Planetarium · 5200 Glover Rd NW, Washington, DC 20015, USA",
@@ -2778,7 +3248,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "86",
+    "id": "87",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-27",
@@ -2788,11 +3258,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "happy-hour"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "chill networking flirt community food groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "Happy Hour",
+      "Black",
+      "Sapphic",
+      "30+",
       "Free"
     ],
     "time": "5:30 PM",
@@ -2813,7 +3290,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "87",
+    "id": "88",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -2823,11 +3300,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt groove",
     "free": false,
     "price": "$14.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Sinners and Saints · 2309 18th Street Northwest\nWashington, DC 20009",
@@ -2844,7 +3326,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "88",
+    "id": "89",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-09",
@@ -2855,12 +3337,18 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "community byob chill",
     "free": true,
     "price": "Free",
     "badges": [
-      "Outdoors Hangout",
-      "Meetup",
+      "Black",
+      "Sapphic",
+      "30+",
       "Free"
     ],
     "time": "3:00 PM",
@@ -2878,7 +3366,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "89",
+    "id": "90",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-08-24",
@@ -2889,12 +3377,16 @@ export const generatedEvents: PrideEvent[] = [
       "happy-hour",
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt community ass shaking grown & sexy groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "Happy Hour",
-      "Day Party",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "6:00 PM",
@@ -2914,7 +3406,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "90",
+    "id": "91",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-06",
@@ -2924,11 +3416,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "creative flirt community dating",
     "free": true,
     "price": "Free",
     "badges": [
-      "Live Show",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "8:00 AM",
@@ -2947,7 +3444,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "91",
+    "id": "92",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-23",
@@ -2957,11 +3454,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "workshop"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "chill creative flirt",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "Workshop"
+      "POC",
+      "Queer"
     ],
     "time": "5:00 PM",
     "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
@@ -2978,7 +3480,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "92",
+    "id": "93",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-28",
@@ -2988,11 +3490,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking groove flirt",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
@@ -3009,7 +3516,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "93",
+    "id": "94",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -3019,11 +3526,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking groove",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Public Bar Live (Rooftop) · 1214 18th St NW, Washington, DC 20036",
@@ -3040,7 +3552,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "94",
+    "id": "95",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-08-17",
@@ -3051,12 +3563,16 @@ export const generatedEvents: PrideEvent[] = [
       "live-show",
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "creative ass shaking chill live show groove",
     "free": false,
     "price": "$87.00",
     "badges": [
-      "Live Show",
-      "After Dark"
+      "POC",
+      "Queer"
     ],
     "time": "8:00 PM",
     "location": "The Fillmore Silver Spring · 8656 Colesville Road, Silver Spring, MD",
@@ -3075,7 +3591,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "95",
+    "id": "96",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -3086,12 +3602,18 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "chill community groove family",
     "free": true,
     "price": "Free",
     "badges": [
-      "Outdoors Hangout",
-      "Meetup",
+      "Black",
+      "Sapphic",
+      "30+",
       "Free"
     ],
     "time": "12:00 PM",
@@ -3110,7 +3632,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "96",
+    "id": "97",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-08-17",
@@ -3121,12 +3643,18 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "wellness chill",
     "free": false,
     "price": "$5.00",
     "badges": [
-      "Workshop",
-      "Meetup"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "7:30 PM",
     "location": "N/A (virtual event)",
@@ -3142,7 +3670,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "97",
+    "id": "98",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-06",
@@ -3153,12 +3681,18 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "chill creative community food cultural",
     "free": false,
     "price": "$100.00",
     "badges": [
-      "Workshop",
-      "Meetup"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "2:00 PM",
     "location": "Location To Be Announced with Ticket · Private Location",
@@ -3177,7 +3711,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "98",
+    "id": "99",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-19",
@@ -3188,12 +3722,18 @@ export const generatedEvents: PrideEvent[] = [
       "meetup",
       "outdoors-hangout"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "community cultural wellness",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
-      "Outdoors Hangout",
+      "Black",
+      "Sapphic",
+      "30+",
       "Free"
     ],
     "time": "7:30 AM",
@@ -3211,7 +3751,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "99",
+    "id": "100",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-26",
@@ -3222,12 +3762,18 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "chill community games",
     "free": false,
     "price": "$55.00",
     "badges": [
-      "Outdoors Hangout",
-      "Meetup"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "6:30 PM",
     "location": "Audi Field · 100 Potomac Ave SWWashington, DC",
@@ -3244,7 +3790,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "100",
+    "id": "101",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-27",
@@ -3255,44 +3801,18 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "community wellness",
     "free": false,
     "price": "$75.00",
     "badges": [
-      "Workshop",
-      "Educational"
-    ],
-    "time": "9:00 AM",
-    "location": "Location To Be Announced with Ticket · Southeast, Washington, DC",
-    "vibeTags": [
-      "Community",
-      "Wellness"
-    ],
-    "ctaHref": "https://www.lesbifriendstravel.com/events/firearm-safety-9-27-26",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-workshop",
-    "city": "dc",
-    "prideSeries": "No -- standalone event"
-  },
-  {
-    "id": "101",
-    "festival": "august-events",
-    "day": "sunday",
-    "dayDate": "2026-09-27",
-    "dayLabel": "Sunday",
-    "name": "Firearm Safety Training for Queer Black Folks: Concealed Carry Permit",
-    "organizer": "Lesbifriends Travel",
-    "types": [
-      "workshop",
-      "educational"
-    ],
-    "vibesRaw": "community wellness",
-    "free": false,
-    "price": "$300.00",
-    "badges": [
-      "Workshop",
-      "Educational"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "9:00 AM",
     "location": "Location To Be Announced with Ticket · Southeast, Washington, DC",
@@ -3311,6 +3831,44 @@ export const generatedEvents: PrideEvent[] = [
     "id": "102",
     "festival": "august-events",
     "day": "sunday",
+    "dayDate": "2026-09-27",
+    "dayLabel": "Sunday",
+    "name": "Firearm Safety Training for Queer Black Folks: Concealed Carry Permit",
+    "organizer": "Lesbifriends Travel",
+    "types": [
+      "workshop",
+      "educational"
+    ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
+    "vibesRaw": "community wellness",
+    "free": false,
+    "price": "$300.00",
+    "badges": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
+    "time": "9:00 AM",
+    "location": "Location To Be Announced with Ticket · Southeast, Washington, DC",
+    "vibeTags": [
+      "Community",
+      "Wellness"
+    ],
+    "ctaHref": "https://www.lesbifriendstravel.com/events/firearm-safety-9-27-26",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-workshop",
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
+  },
+  {
+    "id": "103",
+    "festival": "august-events",
+    "day": "sunday",
     "dayDate": "2026-08-23",
     "dayLabel": "Sunday",
     "name": "Flow State: Movement Inspired By Music",
@@ -3318,11 +3876,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "workshop"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative wellness",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Workshop"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:45 AM",
     "location": "The Brazilian-American Culture Center · 3001 Sherman Ave NW, Washington, DC 20001",
@@ -3339,7 +3902,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "103",
+    "id": "104",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-08-24",
@@ -3350,12 +3913,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community wellness",
     "free": false,
     "price": "$25.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "POC",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "Femme Fatale DC · 3409 Connecticut Avenue Northwest Washington, DC 20008",
@@ -3373,7 +3940,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "104",
+    "id": "105",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-05",
@@ -3383,11 +3950,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": true,
     "price": "Free",
     "badges": [
-      "After Dark",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "9:00 PM",
@@ -3406,7 +3978,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "105",
+    "id": "106",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -3416,11 +3988,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "creative live show community",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Live Show"
+      "POC",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "Sinners and Saints · 2309 18th Street Northwest\nWashington, DC 20009",
@@ -3437,7 +4014,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "106",
+    "id": "107",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-23",
@@ -3447,11 +4024,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Youth/Family"
+    ],
     "vibesRaw": "chill creative cultural live show",
     "free": true,
     "price": "Free",
     "badges": [
-      "Live Show",
+      "Black",
+      "Sapphic",
+      "Youth/Family",
       "Free"
     ],
     "time": "10:00 AM",
@@ -3470,7 +4054,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "107",
+    "id": "108",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -3480,11 +4064,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": false,
     "price": "$16.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Ivy City Smokehouse · 1356 Okie St NE, Washington, DC 20002",
@@ -3502,7 +4091,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "108",
+    "id": "109",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-04",
@@ -3512,11 +4101,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "After Dark",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "10:00 PM",
@@ -3535,7 +4129,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "109",
+    "id": "110",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-12",
@@ -3547,13 +4141,18 @@ export const generatedEvents: PrideEvent[] = [
       "live-show",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "30+"
+    ],
     "vibesRaw": "chill creative flirt community",
     "free": false,
     "price": "$25.00",
     "badges": [
-      "Meetup",
-      "Live Show",
-      "Educational"
+      "Black",
+      "Sapphic",
+      "30+"
     ],
     "time": "7:00 PM",
     "location": "1800 Perry St NE · 1800 Perry Street Northeast\nWashington, D.C., DC 20018",
@@ -3571,7 +4170,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "110",
+    "id": "111",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -3582,12 +4181,16 @@ export const generatedEvents: PrideEvent[] = [
       "happy-hour",
       "meetup"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "chill flirt community",
     "free": false,
     "price": "$12.00",
     "badges": [
-      "Happy Hour",
-      "Meetup"
+      "POC",
+      "Sapphic"
     ],
     "time": "6:00 PM",
     "location": "Spark Social Patio · 2009 14th St NW, Washington, DC 20009, USA",
@@ -3604,7 +4207,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "111",
+    "id": "112",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -3615,12 +4218,16 @@ export const generatedEvents: PrideEvent[] = [
       "brunch",
       "meetup"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt community food cultural",
     "free": false,
     "price": "$70.00",
     "badges": [
-      "Brunch",
-      "Meetup"
+      "POC",
+      "Sapphic"
     ],
     "time": "10:30 AM",
     "location": "Washington Union Station - Main Entrance · 40 Massachusetts Avenue Northeast\nWashington, DC 20002",
@@ -3638,7 +4245,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "112",
+    "id": "113",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-26",
@@ -3648,11 +4255,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "workshop"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill community food",
     "free": false,
     "price": "$70.00",
     "badges": [
-      "Workshop"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:30 AM",
     "location": "Union Station Bus Terminal · 102 H Street Northeast\nWashington, DC 20002",
@@ -3669,7 +4281,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "113",
+    "id": "114",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-05",
@@ -3680,12 +4292,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "chill creative flirt community cultural grown & sexy wellness",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "POC",
+      "Queer"
     ],
     "time": "6:00 PM",
     "location": "Dance Loft on 14 · 4618 14th St NW, Washington, DC 20011, USA",
@@ -3706,7 +4322,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "114",
+    "id": "115",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -3717,12 +4333,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "chill creative flirt community cultural grown & sexy wellness",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "POC",
+      "Queer"
     ],
     "time": "7:00 PM",
     "location": "Dance Loft on 14 · 4618 14th St NW, Washington, DC 20011, USA",
@@ -3743,7 +4363,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "115",
+    "id": "116",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -3754,12 +4374,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "chill creative flirt community cultural grown & sexy wellness",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "POC",
+      "Queer"
     ],
     "time": "8:00 PM",
     "location": "Dance Loft on 14 · 4618 14th St NW, Washington, DC 20011, USA",
@@ -3780,7 +4404,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "116",
+    "id": "117",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-12",
@@ -3791,12 +4415,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "chill creative flirt community cultural grown & sexy wellness",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "POC",
+      "Queer"
     ],
     "time": "6:00 PM",
     "location": "Dance Loft on 14 · 4618 14th St NW, Washington, DC 20011, USA",
@@ -3817,7 +4445,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "117",
+    "id": "118",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -3828,12 +4456,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "chill creative flirt community cultural grown & sexy wellness",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "POC",
+      "Queer"
     ],
     "time": "8:00 PM",
     "location": "Dance Loft on 14 · 4618 14th St NW, Washington, DC 20011, USA",
@@ -3854,7 +4486,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "118",
+    "id": "119",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -3865,12 +4497,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "chill creative flirt community cultural grown & sexy wellness",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "POC",
+      "Queer"
     ],
     "time": "6:00 PM",
     "location": "Dance Loft on 14 · 4618 14th St NW, Washington, DC 20011, USA",
@@ -3891,7 +4527,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "119",
+    "id": "120",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -3902,12 +4538,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "chill creative flirt community cultural grown & sexy wellness",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "POC",
+      "Queer"
     ],
     "time": "8:00 PM",
     "location": "Dance Loft on 14 · 4618 14th St NW, Washington, DC 20011, USA",
@@ -3928,7 +4568,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "120",
+    "id": "121",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-26",
@@ -3939,12 +4579,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "flirt cultural grown & sexy ass shaking",
     "free": false,
     "price": "$8.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "POC",
+      "Queer"
     ],
     "time": "7:00 PM",
     "location": "Trade · 1410 14th St NW, Washington, DC 20005, USA",
@@ -3962,7 +4606,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "121",
+    "id": "122",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -3972,11 +4616,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt community grown & sexy groove",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Mixxed DC · 2427 18th St NW, Washington, DC 20009, USA",
@@ -3995,7 +4644,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "122",
+    "id": "123",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -4005,11 +4654,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt community ass shaking groove",
     "free": false,
     "price": "$5.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Sinners and Saints · 2309 18th Street Northwest, Washington, DC 20009",
@@ -4027,7 +4681,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "123",
+    "id": "124",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -4038,12 +4692,16 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community grown & sexy groove live show",
     "free": false,
     "price": "$29.00",
     "badges": [
-      "Day Party",
-      "After Dark"
+      "POC",
+      "Queer"
     ],
     "time": "4:00 PM",
     "location": "Hook Hall · 3400 Georgia Avenue Northwest, Washington, DC 20010",
@@ -4063,7 +4721,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "124",
+    "id": "125",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -4073,11 +4731,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt community ass shaking groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "8:00 PM",
     "location": "Hotel Zena Washington DC · 1155 14th St NW, Washington, DC 20005",
@@ -4095,7 +4758,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "125",
+    "id": "126",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-09-07",
@@ -4105,11 +4768,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill community games byob 30+",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "11:00 AM",
@@ -4129,7 +4797,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "126",
+    "id": "127",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-18",
@@ -4140,12 +4808,18 @@ export const generatedEvents: PrideEvent[] = [
       "happy-hour",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Non monogamy"
+    ],
     "vibesRaw": "chill community games 30+",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Happy Hour",
-      "Meetup"
+      "Black",
+      "Sapphic",
+      "Non monogamy"
     ],
     "time": "6:30 PM",
     "location": "Sudhouse DC · 1340 U St NW, Washington, DC 20009",
@@ -4163,7 +4837,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "127",
+    "id": "128",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-27",
@@ -4174,12 +4848,18 @@ export const generatedEvents: PrideEvent[] = [
       "happy-hour",
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Non monogamy"
+    ],
     "vibesRaw": "community 30+ ass shaking grown & sexy groove",
     "free": false,
     "price": "$20.00",
     "badges": [
-      "Happy Hour",
-      "Day Party"
+      "Black",
+      "Sapphic",
+      "Non monogamy"
     ],
     "time": "2:00 PM",
     "location": "Eighteenth Street Lounge · 1230 9th St NW, Washington, DC 20001",
@@ -4198,7 +4878,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "128",
+    "id": "129",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-09-02",
@@ -4210,13 +4890,18 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "Kink"
+    ],
     "vibesRaw": "",
     "free": false,
     "price": "$15.00",
     "badges": [
-      "Live Show",
-      "Workshop",
-      "Educational"
+      "Black",
+      "Sapphic",
+      "Kink"
     ],
     "time": "7:00 PM",
     "location": "Mixxed · 2427 18th Street NW",
@@ -4229,7 +4914,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "129",
+    "id": "130",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-18",
@@ -4240,12 +4925,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "networking community",
     "free": false,
     "price": "$22.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "Black",
+      "Queer"
     ],
     "time": "6:00 PM",
     "location": "St. Vincent Wine · 3212 Georgia Ave NW, Washington, DC 20010",
@@ -4261,7 +4950,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "130",
+    "id": "131",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-01",
@@ -4271,11 +4960,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "ass shaking groove",
     "free": false,
     "price": "$20.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Queer",
+      "Trans/GNC"
     ],
     "time": "10:00 PM",
     "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
@@ -4291,7 +4987,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "131",
+    "id": "132",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-01",
@@ -4301,11 +4997,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "ass shaking groove",
     "free": false,
     "price": "$15.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Queer",
+      "Trans/GNC"
     ],
     "time": "11:00 PM",
     "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
@@ -4321,7 +5024,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "132",
+    "id": "133",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -4332,12 +5035,18 @@ export const generatedEvents: PrideEvent[] = [
       "live-show",
       "workshop"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "creative flirt live show groove kink",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "Live Show",
-      "Workshop"
+      "POC",
+      "Queer",
+      "Trans/GNC"
     ],
     "time": "6:00 PM",
     "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
@@ -4356,7 +5065,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "133",
+    "id": "134",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -4367,12 +5076,18 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "live-show"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "After Dark",
-      "Live Show"
+      "POC",
+      "Queer",
+      "Trans/GNC"
     ],
     "time": "10:00 PM",
     "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
@@ -4390,7 +5105,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "134",
+    "id": "135",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -4400,11 +5115,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": false,
     "price": "$20.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Queer",
+      "Trans/GNC"
     ],
     "time": "10:00 PM",
     "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
@@ -4422,7 +5144,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "135",
+    "id": "136",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -4432,11 +5154,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": true,
     "price": "$20.00",
     "badges": [
-      "After Dark",
+      "POC",
+      "Queer",
+      "Trans/GNC",
       "Free"
     ],
     "time": "10:00 PM",
@@ -4455,7 +5184,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "136",
+    "id": "137",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -4465,11 +5194,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": false,
     "price": "$20.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Queer",
+      "Trans/GNC"
     ],
     "time": "9:00 PM",
     "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
@@ -4487,7 +5223,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "137",
+    "id": "138",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -4497,11 +5233,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": true,
     "price": "$20.00",
     "badges": [
-      "After Dark",
+      "POC",
+      "Queer",
+      "Trans/GNC",
       "Free"
     ],
     "time": "10:00 PM",
@@ -4520,7 +5263,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "138",
+    "id": "139",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -4530,11 +5273,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Queer",
+      "Trans/GNC"
     ],
     "time": "10:00 PM",
     "location": "TRANSMISSION · 1353 H Street Northeast, Washington, DC 20002",
@@ -4552,7 +5302,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "139",
+    "id": "140",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -4563,12 +5313,18 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer-friendly",
+      "Kink"
+    ],
     "vibesRaw": "creative flirt food grown & sexy live show",
     "free": false,
     "price": "$36.00",
     "badges": [
-      "After Dark",
-      "Live Show"
+      "Black",
+      "Queer-friendly",
+      "Kink"
     ],
     "time": "7:00 PM",
     "location": "Mixxed Food & Drinks · 2427 18th Street Northwest\nWashington, DC 20009",
@@ -4587,7 +5343,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "140",
+    "id": "141",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-27",
@@ -4597,11 +5353,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "ball"
     ],
+    "audienceTags": [
+      "Black",
+      "Trans/GNC",
+      "MLM"
+    ],
     "vibesRaw": "live show flirt creative community ass shaking",
     "free": true,
     "price": "Free",
     "badges": [
-      "Ball",
+      "Black",
+      "Trans/GNC",
+      "MLM",
       "Free"
     ],
     "time": "9:00 PM",
@@ -4621,7 +5384,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "141",
+    "id": "142",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-09-28",
@@ -4631,11 +5394,34 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "tour"
     ],
+    "audienceTags": [
+      "Queer-friendly",
+      "WLW/Lesbian",
+      "Sapphic",
+      "Trans/GNC",
+      "Femme",
+      "Masc",
+      "Queer",
+      "Black",
+      "POC",
+      "QTBIPOC",
+      "Nonbinary"
+    ],
     "vibesRaw": "live show community groove",
     "free": false,
     "price": "$33.00",
     "badges": [
-      "Tour"
+      "Queer-friendly",
+      "WLW/Lesbian",
+      "Sapphic",
+      "Trans/GNC",
+      "Femme",
+      "Masc",
+      "Queer",
+      "Black",
+      "POC",
+      "QTBIPOC",
+      "Nonbinary"
     ],
     "time": "7:00 PM",
     "location": "Songbyrd · 540 Penn St NE, Washington, DC 20002",
@@ -4652,7 +5438,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "142",
+    "id": "143",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -4662,11 +5448,20 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer-friendly",
+      "Non monogamy",
+      "Kink"
+    ],
     "vibesRaw": "creative flirt food grown & sexy",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Queer-friendly",
+      "Non monogamy",
+      "Kink"
     ],
     "time": "9:00 PM",
     "location": "TBD · Arlington, VA, USA",
@@ -4684,7 +5479,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "143",
+    "id": "144",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-04",
@@ -4695,12 +5490,20 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer-friendly",
+      "Non monogamy",
+      "Kink"
+    ],
     "vibesRaw": "grown & sexy games flirt",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "After Dark",
-      "Meetup"
+      "Black",
+      "Queer-friendly",
+      "Non monogamy",
+      "Kink"
     ],
     "time": "7:00 PM",
     "location": "Location To Be Announced with Ticket · Arlington, VA",
@@ -4717,7 +5520,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "144",
+    "id": "145",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-18",
@@ -4728,12 +5531,20 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer-friendly",
+      "Non monogamy",
+      "Kink"
+    ],
     "vibesRaw": "grown & sexy games flirt",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "After Dark",
-      "Meetup"
+      "Black",
+      "Queer-friendly",
+      "Non monogamy",
+      "Kink"
     ],
     "time": "9:00 PM",
     "location": "Location To Be Announced with Ticket · Arlington, VA",
@@ -4750,7 +5561,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "145",
+    "id": "146",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -4760,11 +5571,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$11.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "Location To Be Announced with Ticket · Temple Hills",
@@ -4782,7 +5598,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "146",
+    "id": "147",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -4793,12 +5609,20 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "ENM",
+      "Kink",
+      "Queer"
+    ],
     "vibesRaw": "creative flirt food grown & sexy live show",
     "free": false,
     "price": "$55.00",
     "badges": [
-      "After Dark",
-      "Live Show"
+      "Black",
+      "ENM",
+      "Kink",
+      "Queer"
     ],
     "time": "1:00 PM",
     "location": "To be announced · TBD",
@@ -4817,7 +5641,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "147",
+    "id": "148",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -4828,12 +5652,16 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "meetup"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "community chill",
     "free": false,
     "price": "$42.00",
     "badges": [
-      "Outdoors Hangout",
-      "Meetup"
+      "POC",
+      "Sapphic"
     ],
     "time": "2:00 PM",
     "location": "Maple Lawn Farms · 11788 Scaggsville Road, Fulton, MD 20759",
@@ -4849,7 +5677,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "148",
+    "id": "149",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -4859,11 +5687,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking groove",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "District804 · 8004 W Broad St, Richmond, VA 23294",
@@ -4880,7 +5713,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "149",
+    "id": "150",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-30",
@@ -4890,11 +5723,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt grown & sexy groove",
     "free": false,
     "price": "$67.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "The location will be revealed on the event date",
@@ -4912,7 +5750,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "150",
+    "id": "151",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -4922,11 +5760,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt groove",
     "free": false,
     "price": "$9.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "Location To Be Announced with Ticket · Temple Hills, MD",
@@ -4943,7 +5786,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "151",
+    "id": "152",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-23",
@@ -4954,12 +5797,16 @@ export const generatedEvents: PrideEvent[] = [
       "happy-hour",
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt community groove chill",
     "free": false,
     "price": "$16.00",
     "badges": [
-      "Happy Hour",
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "4:00 PM",
     "location": "Bronx Brewery · 841 E 135th St, Bronx, NY 10454",
@@ -4977,7 +5824,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "152",
+    "id": "153",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -4987,11 +5834,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "flirt community ass shaking groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "POC",
+      "Queer"
     ],
     "time": "10:00 PM",
     "location": "Paragon · 990 Broadway Brooklyn, NY",
@@ -5009,7 +5863,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "153",
+    "id": "154",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -5021,13 +5875,16 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "live-show"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "creative community live show flirt groove",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Workshop",
-      "After Dark",
-      "Live Show"
+      "POC",
+      "Sapphic"
     ],
     "time": "8:00 PM",
     "location": "SPIN Times Square · 1626 Broadway, New York, NY 10019",
@@ -5046,7 +5903,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "154",
+    "id": "155",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -5057,12 +5914,16 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking groove",
     "free": false,
     "price": "$20.00",
     "badges": [
-      "After Dark",
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "6:00 PM",
     "location": "La'Mode BK · 1401 Bedford Avenue\nBrooklyn, NY 11216",
@@ -5080,7 +5941,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "155",
+    "id": "156",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -5092,13 +5953,16 @@ export const generatedEvents: PrideEvent[] = [
       "gynasium",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt wellness chill",
     "free": true,
     "price": "Free",
     "badges": [
-      "Outdoors Hangout",
-      "Gynasium",
-      "Meetup",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "5:00 PM",
@@ -5116,7 +5980,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "156",
+    "id": "157",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -5126,11 +5990,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill community groove grown & sexy",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "8:00 PM",
     "location": "Saint James Libations · 269 Stanhope St, Brooklyn, NY 11237",
@@ -5148,7 +6017,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "157",
+    "id": "158",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-30",
@@ -5158,11 +6027,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill community groove grown & sexy",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "LoHi Roof Bar · 314 Scholes St, Brooklyn, NY 11206",
@@ -5180,7 +6054,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "158",
+    "id": "159",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -5190,11 +6064,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "Day Party",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "6:00 PM",
@@ -5213,7 +6092,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "159",
+    "id": "160",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -5225,13 +6104,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community",
     "free": true,
     "price": "$10.00",
     "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "7:00 PM",
@@ -5249,7 +6131,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "160",
+    "id": "161",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-13",
@@ -5261,13 +6143,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "7:00 PM",
@@ -5285,7 +6170,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "161",
+    "id": "162",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -5297,13 +6182,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "2:00 PM",
@@ -5321,7 +6209,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "162",
+    "id": "163",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -5333,13 +6221,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "1:00 PM",
@@ -5357,7 +6248,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "163",
+    "id": "164",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -5369,13 +6260,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community",
     "free": true,
     "price": "Free",
     "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "7:00 PM",
@@ -5393,7 +6287,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "164",
+    "id": "165",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -5405,13 +6299,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community",
     "free": false,
     "price": "$50.00",
     "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational"
+      "Black",
+      "Sapphic"
     ],
     "time": "6:30 PM",
     "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233",
@@ -5428,7 +6325,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "165",
+    "id": "166",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -5440,13 +6337,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community wellness live show",
     "free": false,
     "price": "$15.00",
     "badges": [
-      "Live Show",
-      "Workshop",
-      "Educational"
+      "Black",
+      "Sapphic"
     ],
     "time": "3:00 PM",
     "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233",
@@ -5465,7 +6365,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "166",
+    "id": "167",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-27",
@@ -5477,13 +6377,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Meetup",
-      "Workshop",
-      "Educational"
+      "Black",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233",
@@ -5500,7 +6403,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "167",
+    "id": "168",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-28",
@@ -5511,12 +6414,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "educational"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community wellness",
     "free": false,
     "price": "$25.00",
     "badges": [
-      "Workshop",
-      "Educational"
+      "Black",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233",
@@ -5534,7 +6441,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "168",
+    "id": "169",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -5544,11 +6451,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative community live show",
     "free": false,
     "price": "$13.00",
     "badges": [
-      "Live Show"
+      "Black",
+      "Sapphic"
     ],
     "time": "6:30 PM",
     "location": "Gladys Books & Wine · 306 Malcolm X Blvd, Brooklyn, NY 11233",
@@ -5566,7 +6478,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "169",
+    "id": "170",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -5576,11 +6488,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "MLM",
+      "Trans/GNC"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "MLM",
+      "Trans/GNC"
     ],
     "time": "4:00 PM",
     "location": "Hotel Chantelle · 92 Ludlow St, New York, NY 10002",
@@ -5598,7 +6517,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "170",
+    "id": "171",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -5608,11 +6527,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt community ass shaking grown & sexy groove",
     "free": false,
     "price": "$13.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "Dive Bar BK · 408 Troutman Street East Williamsburg, Brooklyn",
@@ -5631,7 +6555,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "171",
+    "id": "172",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -5642,12 +6566,16 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "happy-hour"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$47.25",
     "badges": [
-      "Day Party",
-      "Happy Hour"
+      "POC",
+      "Queer"
     ],
     "time": "6:30 PM",
     "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -5665,7 +6593,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "172",
+    "id": "173",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-08",
@@ -5676,12 +6604,16 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "happy-hour"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$52.50",
     "badges": [
-      "Day Party",
-      "Happy Hour"
+      "POC",
+      "Queer"
     ],
     "time": "6:30 PM",
     "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -5699,7 +6631,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "173",
+    "id": "174",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -5709,11 +6641,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "creative flirt grown & sexy",
     "free": false,
     "price": "$36.75",
     "badges": [
-      "Live Show"
+      "POC",
+      "Queer"
     ],
     "time": "6:30 PM",
     "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -5730,7 +6667,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "174",
+    "id": "175",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -5740,11 +6677,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$11.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Queer"
     ],
     "time": "10:00 PM",
     "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -5762,7 +6704,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "175",
+    "id": "176",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -5773,12 +6715,16 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "happy-hour"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$42.00",
     "badges": [
-      "Day Party",
-      "Happy Hour"
+      "POC",
+      "Queer"
     ],
     "time": "6:30 PM",
     "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -5796,7 +6742,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "176",
+    "id": "177",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -5806,11 +6752,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$11.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Queer"
     ],
     "time": "10:00 PM",
     "location": "The Onyx Room · 8 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -5828,7 +6779,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "177",
+    "id": "178",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -5839,12 +6790,16 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "happy-hour"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "Day Party",
-      "Happy Hour",
+      "POC",
+      "Queer",
       "Free"
     ],
     "time": "6:30 PM",
@@ -5863,7 +6818,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "178",
+    "id": "179",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-20",
@@ -5873,11 +6828,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "After Dark",
+      "POC",
+      "Queer",
       "Free"
     ],
     "time": "10:00 PM",
@@ -5896,7 +6856,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "179",
+    "id": "180",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -5907,12 +6867,16 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "happy-hour"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$36.75",
     "badges": [
-      "Day Party",
-      "Happy Hour"
+      "POC",
+      "Queer"
     ],
     "time": "6:30 PM",
     "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -5930,7 +6894,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "180",
+    "id": "181",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -5940,11 +6904,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "After Dark",
+      "POC",
+      "Queer",
       "Free"
     ],
     "time": "10:00 PM",
@@ -5963,7 +6932,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "181",
+    "id": "182",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -5974,12 +6943,16 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "happy-hour"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$42.00",
     "badges": [
-      "Day Party",
-      "Happy Hour"
+      "POC",
+      "Queer"
     ],
     "time": "6:30 PM",
     "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -5997,7 +6970,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "182",
+    "id": "183",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -6007,11 +6980,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$11.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Queer"
     ],
     "time": "10:00 PM",
     "location": "The Onyx Room · 8 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -6029,7 +7007,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "183",
+    "id": "184",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-28",
@@ -6040,12 +7018,16 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "happy-hour"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$36.75",
     "badges": [
-      "Day Party",
-      "Happy Hour"
+      "POC",
+      "Queer"
     ],
     "time": "6:30 PM",
     "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -6063,7 +7045,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "184",
+    "id": "185",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -6074,12 +7056,16 @@ export const generatedEvents: PrideEvent[] = [
       "day-party",
       "happy-hour"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$42.00",
     "badges": [
-      "Day Party",
-      "Happy Hour"
+      "POC",
+      "Queer"
     ],
     "time": "6:30 PM",
     "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -6097,7 +7083,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "185",
+    "id": "186",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-29",
@@ -6107,11 +7093,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$16.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Queer"
     ],
     "time": "10:00 PM",
     "location": "House of Yes · 2 Wyckoff Avenue, Brooklyn, NY 11237",
@@ -6129,7 +7120,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "186",
+    "id": "187",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-08-27",
@@ -6139,11 +7130,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "Saint James Libations · 269 Stanhope St, Brooklyn, NY 11237",
@@ -6161,7 +7157,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "187",
+    "id": "188",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-30",
@@ -6171,11 +7167,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking grown & sexy groove",
     "free": false,
     "price": "$34.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "4:00 PM",
     "location": "The Delancey Rooftop · 168 Delancey St, New York, NY 10002",
@@ -6193,7 +7194,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "188",
+    "id": "189",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -6203,11 +7204,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": false,
     "price": "$13.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "Dive Bar · 408 Troutman St, Brooklyn, NY 11237, USA",
@@ -6225,7 +7231,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "189",
+    "id": "190",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-30",
@@ -6235,11 +7241,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": false,
     "price": "$13.91",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "The Sultan Room Rooftop · 234 Starr St, Brooklyn, NY 11237",
@@ -6257,7 +7268,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "190",
+    "id": "191",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-04",
@@ -6267,11 +7278,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "After Dark",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "11:00 PM",
@@ -6289,7 +7305,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "191",
+    "id": "192",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-07",
@@ -6299,11 +7315,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "MLM",
+      "Trans/GNC"
+    ],
     "vibesRaw": "flirt community ass shaking grown & sexy groove",
     "free": false,
     "price": "$16.50",
     "badges": [
-      "After Dark"
+      "Black",
+      "MLM",
+      "Trans/GNC"
     ],
     "time": "10:00 PM",
     "location": "Red Eye NY · 355 West 41st Street, New York, NY 10036",
@@ -6322,7 +7345,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "192",
+    "id": "193",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -6332,11 +7355,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking groove",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "After Dark"
+      "POC",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "The Bush · 333 Troutman St, #Store 4, Brooklyn, NY 11237",
@@ -6353,7 +7381,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "193",
+    "id": "194",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -6363,11 +7391,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt ass shaking groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "After Dark",
+      "POC",
+      "Sapphic",
       "Free"
     ],
     "time": "10:00 PM",
@@ -6385,7 +7418,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "194",
+    "id": "195",
     "festival": "august-events",
     "day": "tuesday",
     "dayDate": "2026-09-08",
@@ -6396,12 +7429,16 @@ export const generatedEvents: PrideEvent[] = [
       "workshop",
       "meetup"
     ],
+    "audienceTags": [
+      "POC",
+      "Sapphic"
+    ],
     "vibesRaw": "chill creative cultural",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "Workshop",
-      "Meetup"
+      "POC",
+      "Sapphic"
     ],
     "time": "7:00 PM",
     "location": "The Bush · 333 Troutman St, #Store 4, Brooklyn, NY 11237",
@@ -6418,7 +7455,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "195",
+    "id": "196",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-22",
@@ -6429,12 +7466,18 @@ export const generatedEvents: PrideEvent[] = [
       "live-show",
       "ball"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "flirt community ass shaking grown & sexy groove",
     "free": true,
     "price": "Free",
     "badges": [
-      "Live Show",
-      "Ball",
+      "Black",
+      "Queer",
+      "Trans/GNC",
       "Free"
     ],
     "time": "6:00 PM",
@@ -6454,7 +7497,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "NYC Black Pride (29th Annual)"
   },
   {
-    "id": "196",
+    "id": "197",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-19",
@@ -6464,11 +7507,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "community chill",
     "free": true,
     "price": "Free",
     "badges": [
-      "Live Show",
+      "Black",
+      "Queer",
       "Free"
     ],
     "time": "6:00 PM",
@@ -6485,7 +7533,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "NYC Black Pride (29th Annual)"
   },
   {
-    "id": "197",
+    "id": "198",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-21",
@@ -6495,11 +7543,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "chill networking community cultural grown & sexy live show",
     "free": false,
     "price": "invite only",
     "badges": [
-      "Live Show"
+      "Black",
+      "Queer"
     ],
     "time": "3:00 PM",
     "location": "Renaissance Harlem Hotel · 233 W 125th St, New York, NY 10027",
@@ -6519,7 +7572,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "NYC Black Pride (29th Annual)"
   },
   {
-    "id": "198",
+    "id": "199",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-04",
@@ -6529,11 +7582,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "creative community live show",
     "free": true,
     "price": "Free",
     "badges": [
-      "Live Show",
+      "Black",
+      "Sapphic",
       "Free"
     ],
     "time": "7:00 PM",
@@ -6552,7 +7610,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "STAMINA 2026: Queer Caribbean Festival"
   },
   {
-    "id": "199",
+    "id": "200",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -6562,11 +7620,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "creative community live show",
     "free": false,
     "price": "$40.00",
     "badges": [
-      "Live Show"
+      "Black",
+      "Sapphic"
     ],
     "time": "1:00 PM",
     "location": "CABANA at Skyport Marina · 2430 FDR Drive, New York, NY 10010",
@@ -6584,7 +7647,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "STAMINA 2026: Queer Caribbean Festival"
   },
   {
-    "id": "200",
+    "id": "201",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-05",
@@ -6594,11 +7657,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "creative community live show",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "Live Show"
+      "Black",
+      "Sapphic"
     ],
     "time": "11:00 PM",
     "location": "littlefield · 635 Sackett Street, Brooklyn, NY 11217",
@@ -6616,7 +7684,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "STAMINA 2026: Queer Caribbean Festival"
   },
   {
-    "id": "201",
+    "id": "202",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-06",
@@ -6626,11 +7694,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "creative community live show",
     "free": false,
     "price": "$30.00",
     "badges": [
-      "Live Show"
+      "Black",
+      "Sapphic"
     ],
     "time": "3:00 PM",
     "location": "Parklife · 636 Degraw Street, Brooklyn, NY 11217",
@@ -6648,7 +7721,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "STAMINA 2026: Queer Caribbean Festival"
   },
   {
-    "id": "202",
+    "id": "203",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-08-12",
@@ -6659,12 +7732,16 @@ export const generatedEvents: PrideEvent[] = [
       "after-dark",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "MLM"
+    ],
     "vibesRaw": "chill community games groove flirt",
     "free": true,
     "price": "Free",
     "badges": [
-      "After Dark",
-      "Meetup",
+      "Black",
+      "MLM",
       "Free"
     ],
     "time": "9:00 PM",
@@ -6684,7 +7761,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "The Collective: NYC Black Pride"
   },
   {
-    "id": "203",
+    "id": "204",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -6694,11 +7771,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "MLM"
+    ],
     "vibesRaw": "ass shaking flirt grown & sexy groove",
     "free": false,
     "price": "$35.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "MLM"
     ],
     "time": "10:00 PM",
     "location": "Red Eye · 355 West 41st StreetNew York, New York, 10036",
@@ -6716,7 +7798,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "The Collective: NYC Black Pride"
   },
   {
-    "id": "205",
+    "id": "206",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -6726,11 +7808,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "MLM",
+      "Trans/GNC"
+    ],
     "vibesRaw": "flirt community ass shaking grown & sexy groove",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "MLM",
+      "Trans/GNC"
     ],
     "time": "4:00 PM",
     "location": "BK Backyard · 151 Banker St. Brooklyn, NY 11222",
@@ -6749,7 +7838,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "The Collective: NYC Black Pride"
   },
   {
-    "id": "206",
+    "id": "207",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-08-16",
@@ -6759,11 +7848,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "flirt community ass shaking grown & sexy groove",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "5:00 PM",
     "location": "Dive Bar BK · 408 troutman street East Williamsburg, Brooklyn",
@@ -6782,7 +7876,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "The Collective: NYC Black Pride"
   },
   {
-    "id": "208",
+    "id": "209",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-08-14",
@@ -6792,11 +7886,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": false,
     "price": "$18.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "The House · 29 Locust St, Brooklyn, NY 11206, USA",
@@ -6814,7 +7913,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "The Collective: NYC Black Pride"
   },
   {
-    "id": "209",
+    "id": "210",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -6824,11 +7923,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking groove community flirt",
     "free": false,
     "price": "$19.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "11:00 PM",
     "location": "Putnam's Pub & Cooker · 419 Myrtle Avenue, Brooklyn, NY 11205",
@@ -6846,7 +7950,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "The Collective: NYC Black Pride"
   },
   {
-    "id": "210",
+    "id": "211",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-08-15",
@@ -6856,11 +7960,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "MLM",
+      "Trans/GNC"
+    ],
     "vibesRaw": "flirt community ass shaking grown & sexy groove",
     "free": false,
     "price": "$10.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "MLM",
+      "Trans/GNC"
     ],
     "time": "3:00 PM",
     "location": "Unlisted Rooftop (11th floor) · 3 Freeman Alley, New York, NY 10002",
@@ -6879,20 +7990,28 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "The Collective: NYC Black Pride"
   },
   {
-    "id": "211",
+    "id": "212",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-13",
     "dayLabel": "Sunday",
     "name": "Bbb Black Pride Edition Sunday Sept 13",
+    "organizer": "BBB",
     "types": [
       "after-dark"
+    ],
+    "audienceTags": [
+      "Black",
+      "MLM",
+      "Queer"
     ],
     "vibesRaw": "flirt ass shaking groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "MLM",
+      "Queer"
     ],
     "time": "11:30 PM",
     "location": "La Nuit · 8 Boulevard de la Madeleine, 75009 Paris, France",
@@ -6909,7 +8028,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride"
   },
   {
-    "id": "212",
+    "id": "213",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-11",
@@ -6919,11 +8038,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Queer",
+      "MLM"
+    ],
     "vibesRaw": "ass shaking flirt groove",
     "free": false,
     "price": "$17.50",
     "badges": [
-      "After Dark"
+      "Queer",
+      "MLM"
     ],
     "time": "11:59 PM",
     "location": "Pamela · 62 Rue Mazarine, 75006 Paris, France",
@@ -6940,7 +8064,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "213",
+    "id": "214",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-09-17",
@@ -6950,11 +8074,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:30 PM",
     "location": "Pamela · 62 Rue Mazarine, 75006 Paris, France",
@@ -6971,7 +8100,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "214",
+    "id": "215",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-09-07",
@@ -6981,11 +8110,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "volunteer"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "community",
     "free": true,
     "price": "Free",
     "badges": [
-      "Volunteer",
+      "Black",
+      "Queer",
       "Free"
     ],
     "time": "12:00 AM",
@@ -7001,7 +8135,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "215",
+    "id": "216",
     "festival": "august-events",
     "day": "monday",
     "dayDate": "2026-09-07",
@@ -7011,11 +8145,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "volunteer"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "community",
     "free": true,
     "price": "Free",
     "badges": [
-      "Volunteer",
+      "Black",
+      "Queer",
       "Free"
     ],
     "time": "12:00 AM",
@@ -7031,7 +8170,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "216",
+    "id": "217",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-12",
@@ -7041,11 +8180,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt community groove",
     "free": false,
     "price": "$23.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Queer"
     ],
     "time": "11:00 PM",
     "location": "Bowling Foch & LE VOGUE · En sous-sol, 1 Av. Foch, 75016 Paris, France\nParis,  France",
@@ -7063,7 +8207,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "217",
+    "id": "218",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-09-10",
@@ -7073,11 +8217,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "networking community",
     "free": false,
     "price": "$35.00",
     "badges": [
-      "Meetup"
+      "Black",
+      "Queer"
     ],
     "time": "9:30 AM",
     "location": "Mairie du 10e arrondissement · 72 Rue du Faubourg Saint-Martin, 75010",
@@ -7093,7 +8242,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "218",
+    "id": "219",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-11",
@@ -7103,11 +8252,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "live-show"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "networking community cultural grown & sexy live show",
     "free": false,
     "price": "$135.00",
     "badges": [
-      "Live Show"
+      "Black",
+      "Queer"
     ],
     "time": "6:00 PM",
     "location": "To be announced",
@@ -7126,7 +8280,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "219",
+    "id": "220",
     "festival": "august-events",
     "day": "wednesday",
     "dayDate": "2026-09-09",
@@ -7136,11 +8290,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "networking community cultural",
     "free": false,
     "price": "$58.00",
     "badges": [
-      "Meetup"
+      "Black",
+      "Queer"
     ],
     "time": "5:30 PM",
     "location": "La Chapelle · 10 Boulevard du Palais, 75001 Paris, France",
@@ -7157,7 +8316,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "224",
+    "id": "225",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-09-10",
@@ -7179,7 +8338,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "225",
+    "id": "226",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-11",
@@ -7201,7 +8360,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "226",
+    "id": "227",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-12",
@@ -7223,7 +8382,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "227",
+    "id": "228",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-04",
@@ -7233,11 +8392,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer"
+    ],
     "vibesRaw": "ass shaking flirt grown & sexy groove",
     "free": false,
     "price": "$22.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Queer"
     ],
     "time": "11:00 PM",
     "location": "The Station – Mines Station · 29 avenue de la Porte d'Aubervilliers Paris",
@@ -7255,7 +8419,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "228",
+    "id": "229",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-06",
@@ -7265,11 +8429,18 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Queer",
+      "Trans/GNC"
+    ],
     "vibesRaw": "ass shaking flirt grown & sexy groove",
     "free": false,
     "price": "$13.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Queer",
+      "Trans/GNC"
     ],
     "time": "4:00 PM",
     "location": "La Station - Gare des Mines · 29 avenue de la Porte d’Aubervilliers Paris",
@@ -7287,47 +8458,42 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "Global Black Pride, Paris"
   },
   {
-    "id": "229",
-    "festival": "august-events",
-    "day": "sunday",
-    "dayDate": "2026-08-30",
-    "dayLabel": "Sunday",
-    "name": "Party4U: Lavender Evolutions 4th Anniversary Party",
-    "organizer": "Lavender Evolutions",
-    "types": [],
-    "vibesRaw": "",
-    "free": false,
-    "badges": [],
-    "time": "",
-    "location": "Electric Cool-Aid · 512 Rhode Island Ave NW, Washington, DC 20001",
-    "vibeTags": [],
-    "ctaHref": "https://posh.vip/e/party4u-lavender-evolutions-4th-anniversary-party?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadoyE4ILGr-wQZbvtAxt-lB8DYPGQ_OVyTIZcEAQNShg1iuV8hvK86wHpTGOw_aem_m52WNZPXcNArhKwPLvpxAQ",
-    "ctaLabel": "Get Tickets",
-    "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
-  },
-  {
-    "id": "230",
+    "id": "231",
     "festival": "august-events",
     "day": "thursday",
     "dayDate": "2026-09-03",
     "dayLabel": "Thursday",
     "name": "Dragon Con",
     "organizer": "Dragon Con",
-    "types": [],
-    "vibesRaw": "",
+    "types": [
+      "festival"
+    ],
+    "audienceTags": [
+      "Queer-friendly"
+    ],
+    "vibesRaw": "creative community cultural games",
     "free": false,
-    "badges": [],
+    "price": "$35.00",
+    "badges": [
+      "Queer-friendly"
+    ],
     "time": "",
-    "location": "",
-    "vibeTags": [],
+    "location": "Atlanta, GA",
+    "vibeTags": [
+      "Creative",
+      "Community",
+      "Cultural",
+      "Games"
+    ],
     "ctaHref": "https://www.dragoncon.org/",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
+    "cardClass": "tp-festival",
+    "city": "atlanta",
+    "prideSeries": "No -- standalone event"
   },
   {
-    "id": "231",
+    "id": "232",
     "festival": "august-events",
     "day": "saturday",
     "dayDate": "2026-09-12",
@@ -7338,12 +8504,16 @@ export const generatedEvents: PrideEvent[] = [
       "outdoors-hangout",
       "meetup"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "community chill wellness",
     "free": false,
     "price": "$7.00",
     "badges": [
-      "Outdoors Hangout",
-      "Meetup"
+      "Black",
+      "Sapphic"
     ],
     "time": "1:00 PM",
     "location": "Druid Hill Park · 900 Druid Park Lake DrBaltimore, MD 21217",
@@ -7360,7 +8530,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "232",
+    "id": "233",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-06",
@@ -7370,11 +8540,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "day-party"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "chill groove grown & sexy",
     "free": false,
     "price": "$20.00",
     "badges": [
-      "Day Party"
+      "Black",
+      "Sapphic"
     ],
     "time": "6:00 PM",
     "location": "420 Garden Bar · 420 Edgewood Avenue Southeast Atlanta, GA 30312",
@@ -7391,7 +8566,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "ATL Black Pride (20th Annual)"
   },
   {
-    "id": "233",
+    "id": "234",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-25",
@@ -7401,10 +8576,15 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt groove",
     "free": false,
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "10:00 PM",
     "location": "Cafe Saint Ex · 1847 14th St NW, Washington, DC 20009",
@@ -7421,7 +8601,7 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "234",
+    "id": "235",
     "festival": "august-events",
     "day": "sunday",
     "dayDate": "2026-09-06",
@@ -7431,11 +8611,16 @@ export const generatedEvents: PrideEvent[] = [
     "types": [
       "after-dark"
     ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
     "vibesRaw": "ass shaking flirt groove",
     "free": false,
     "price": "$15.00",
     "badges": [
-      "After Dark"
+      "Black",
+      "Sapphic"
     ],
     "time": "3:00 PM",
     "location": "Ivy City Smokehouse · 1356 Okie St NE, Washington, DC 20002",
@@ -7452,23 +8637,265 @@ export const generatedEvents: PrideEvent[] = [
     "prideSeries": "No -- standalone event"
   },
   {
-    "id": "235",
+    "id": "236",
     "festival": "august-events",
     "day": "friday",
     "dayDate": "2026-09-04",
     "dayLabel": "Friday",
     "name": "First Fridays w/ Party Girls DC",
     "organizer": "Party Girls by DJ Fay",
-    "types": [],
-    "vibesRaw": "",
+    "types": [
+      "after-dark"
+    ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
+    "vibesRaw": "ass shaking flirt groove",
     "free": false,
-    "badges": [],
+    "price": "$15.00",
+    "badges": [
+      "Black",
+      "Sapphic"
+    ],
     "time": "10:00 PM",
-    "location": "",
-    "vibeTags": [],
+    "location": "Icon DC · 2001 11th St NW, Washington, DC 20001",
+    "vibeTags": [
+      "Ass Shaking",
+      "Flirt",
+      "Groove"
+    ],
     "ctaHref": "https://posh.vip/e/first-fridays-w-party-girls-dc-1?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadP8phUEDW71vIUXTzbrFzE1WKHGhtdSdzecaX76KVJposIDFpEhsmfWyqUdA_aem_O2Of0muxI_g2WIt9L2mjuQ",
     "ctaLabel": "Get Tickets",
     "ctaButtonClass": "btn-p",
-    "cardClass": "tp-day-party"
+    "cardClass": "tp-after-dark",
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
+  },
+  {
+    "id": "237",
+    "festival": "august-events",
+    "day": "saturday",
+    "dayDate": "2026-09-12",
+    "dayLabel": "Saturday",
+    "name": "Party Girl Reset: Tennis Day",
+    "organizer": "Party Girls DC X Serve Society",
+    "types": [
+      "gynasium",
+      "outdoors-hangout"
+    ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
+    "vibesRaw": "community wellness",
+    "free": false,
+    "price": "$17.00",
+    "badges": [
+      "Black",
+      "Sapphic"
+    ],
+    "time": "1:00 PM",
+    "location": "S E Tennis & Learning Center · 701 Mississippi Ave SE, Washington, DC 20032",
+    "vibeTags": [
+      "Community",
+      "Wellness"
+    ],
+    "ctaHref": "https://posh.vip/e/party-girl-reset-tennis-day",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-gynasium",
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
+  },
+  {
+    "id": "238",
+    "festival": "august-events",
+    "day": "sunday",
+    "dayDate": "2026-09-27",
+    "dayLabel": "Sunday",
+    "name": "SuciaAMOR: Love Lab Workshop",
+    "organizer": "SuciaNYC",
+    "types": [
+      "workshop",
+      "educational"
+    ],
+    "audienceTags": [
+      "Black",
+      "POC",
+      "Non monogamy"
+    ],
+    "vibesRaw": "chill community dating wellness",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Black",
+      "POC",
+      "Non monogamy",
+      "Free"
+    ],
+    "time": "12:30 PM",
+    "location": "Park Slope · 1402 8th Ave, Brooklyn, NY 11215",
+    "vibeTags": [
+      "Chill",
+      "Community",
+      "Dating",
+      "Wellness"
+    ],
+    "ctaHref": "https://forbiddentickets.com/events/sucianyc/191a7bce7f",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-workshop",
+    "city": "nyc",
+    "prideSeries": "No -- standalone event"
+  },
+  {
+    "id": "239",
+    "festival": "august-events",
+    "day": "saturday",
+    "dayDate": "2026-09-12",
+    "dayLabel": "Saturday",
+    "name": "Love On The Low",
+    "organizer": "Sapphic Social DC X Mixxed",
+    "types": [
+      "after-dark"
+    ],
+    "audienceTags": [
+      "Black",
+      "Sapphic",
+      "POC"
+    ],
+    "vibesRaw": "ass shaking flirt groove",
+    "free": false,
+    "price": "$10.00",
+    "badges": [
+      "Black",
+      "Sapphic",
+      "POC"
+    ],
+    "time": "10:00 PM",
+    "location": "Mixxed · 2427 18th St NW, Washington, DC 20009",
+    "vibeTags": [
+      "Ass Shaking",
+      "Flirt",
+      "Groove"
+    ],
+    "ctaHref": "https://posh.vip/e/love-on-the-low?u=sapphicsocialdc&_t=mtd8a2wp&os=ios&src=event_page",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-after-dark",
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
+  },
+  {
+    "id": "240",
+    "festival": "august-events",
+    "day": "thursday",
+    "dayDate": "2026-09-24",
+    "dayLabel": "Thursday",
+    "name": "Queer Night Out: Mystics Game",
+    "organizer": "Lesbifriends Travel",
+    "types": [
+      "meetup",
+      "outdoors-hangout"
+    ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
+    "vibesRaw": "chill community games",
+    "free": false,
+    "price": "$35.00",
+    "badges": [
+      "Black",
+      "Sapphic"
+    ],
+    "time": "7:00 PM",
+    "location": "Capital One Arena · 601 F Street NorthwestWashington, District of Columbia, 20004",
+    "vibeTags": [
+      "Chill",
+      "Community",
+      "Games"
+    ],
+    "ctaHref": "https://www.lesbifriendstravel.com/events/queer-night-out-mystics-game-2",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
+  },
+  {
+    "id": "241",
+    "festival": "august-events",
+    "day": "saturday",
+    "dayDate": "2026-09-26",
+    "dayLabel": "Saturday",
+    "name": "Queer Night Out: Washington Spirit Match",
+    "organizer": "Lesbifriends Travel",
+    "types": [
+      "meetup",
+      "outdoors-hangout"
+    ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
+    "vibesRaw": "chill community games",
+    "free": false,
+    "price": "$55.00",
+    "badges": [
+      "Black",
+      "Sapphic"
+    ],
+    "time": "6:30 PM",
+    "location": "Audi Field · 100 Potomac Ave SW Washington, DC",
+    "vibeTags": [
+      "Chill",
+      "Community",
+      "Games"
+    ],
+    "ctaHref": "https://www.lesbifriendstravel.com/events/queer-night-out-washington-spirit-match",
+    "ctaLabel": "Get Tickets",
+    "ctaButtonClass": "btn-p",
+    "cardClass": "tp-meetup",
+    "city": "dc",
+    "prideSeries": "No -- standalone event"
+  },
+  {
+    "id": "242",
+    "festival": "august-events",
+    "day": "sunday",
+    "dayDate": "2026-09-13",
+    "dayLabel": "Sunday",
+    "name": "Great Falls LinqUp 🌳💖🤸🏾‍♀️",
+    "organizer": "les.linq",
+    "types": [
+      "meetup",
+      "outdoors-hangout"
+    ],
+    "audienceTags": [
+      "Black",
+      "Sapphic"
+    ],
+    "vibesRaw": "chill community",
+    "free": true,
+    "price": "Free",
+    "badges": [
+      "Black",
+      "Sapphic",
+      "Free"
+    ],
+    "time": "11:00 AM",
+    "location": "Great Falls Park · 9200 Old Dominion Dr, McLean, VA",
+    "vibeTags": [
+      "Chill",
+      "Community"
+    ],
+    "ctaHref": "https://partiful.com/e/YR5yQZoW4767D6SqHSCP?accept-cohost=27e7c302-dd16-42d5-b908-bb91d3704feb&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadVv_MAsuuWqaDHN8tTrV3ZZQ9ImL1Xl1wUBNY27GW0UTtgR4Lr8bYFDNIA4w_aem_JPTaxDLLuLCf40PrCoA6fg",
+    "ctaLabel": "RSVP Free",
+    "ctaButtonClass": "btn-free",
+    "cardClass": "tp-meetup",
+    "city": "dmv",
+    "prideSeries": "No -- standalone event"
   }
 ];

@@ -3,10 +3,16 @@ import { MahoganyPages } from './components/mahogany/MahoganyPages';
 import { SoftLettersPage } from './components/softLetters/SoftLettersPage';
 import { Topbar } from './components/Topbar';
 import { SOFT_LETTERS_ENABLED, type RoomId } from './data/rooms';
+import { trackPageView } from './lib/analytics';
 
 export default function App() {
   const [activeRoom, setActiveRoom] = useState<RoomId>('neighborhood');
   const [drawerOpen, setDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    const pagePath = activeRoom === 'reading' ? '/soft-letters' : '/';
+    trackPageView(pagePath);
+  }, [activeRoom]);
 
   const go = useCallback((room: RoomId) => {
     if (room === 'reading' && !SOFT_LETTERS_ENABLED) {

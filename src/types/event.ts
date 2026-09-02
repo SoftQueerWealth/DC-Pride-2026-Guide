@@ -61,6 +61,8 @@ export interface PrideEvent {
   name: string;
   organizer?: string;
   types: string[];
+  /** Audience labels from the sheet Audience Tag column, e.g. Black, Sapphic. */
+  audienceTags?: string[];
   /** Normalized lowercase string from `data-vibes` (multi-word tokens preserved). */
   vibesRaw: string;
   free: boolean;

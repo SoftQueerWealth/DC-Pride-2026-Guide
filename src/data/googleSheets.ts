@@ -107,6 +107,7 @@ const COLUMN_ALIASES = {
   name: ['name', 'event', 'eventname', 'eventtitle', 'title'],
   organizer: ['organizer', 'eventorganizer', 'host', 'hosts', 'presenter'],
   types: ['types', 'type', 'venuetype', 'eventtypes', 'eventtype', 'datatypes', 'data-types', 'category', 'categories'],
+  audienceTags: ['audiencetag', 'audiencetags', 'audience'],
   vibesRaw: ['vibesraw', 'vibes', 'vibestags', 'datavibes', 'data-vibes', 'vibe'],
   free: ['free', 'freetickets', 'isfree', 'datafree', 'data-free'],
   price: ['price', 'cost', 'ticketprice', 'data-price'],
@@ -490,6 +491,18 @@ function ctaLabelForTicketStatus(value: string): string | null {
   return null;
 }
 
+function parseAudienceTags(value: string): string[] {
+  return unique(splitListCell(value).map((tag) => tag.trim()).filter(Boolean));
+}
+
+function parseBadgesFromAudience(audienceTags: string[], free: boolean): string[] {
+  const derived = [...audienceTags];
+  if (free && !derived.some((badge) => normalizeHeader(badge) === 'free')) {
+    derived.push('Free');
+  }
+  return unique(derived);
+}
+
 function parseBadges(value: string, types: string[], free: boolean): string[] {
   const directBadges = splitListCell(value);
   const badges =
@@ -711,6 +724,12 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
       const city = cityRaw ? normalizeSheetCity(cityRaw) : null;
       if (cityRaw && !city) return null;
 
+      const audienceTags = parseAudienceTags(readCell(headers, row, 'audienceTags'));
+      const badgeCell = readCell(headers, row, 'badges');
+      const badges = audienceTags.length > 0
+        ? parseBadgesFromAudience(audienceTags, free)
+        : parseBadges(badgeCell, types, free);
+
       return {
         id: `${idPrefix}${index + 2}`,
         festival: festivalId,
@@ -720,10 +739,11 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         name,
         organizer: readEventField(headers, row, 'organizer', shifted) || undefined,
         types,
+        ...(audienceTags.length > 0 ? { audienceTags } : {}),
         vibesRaw,
         free,
         ...(price ? { price } : {}),
-        badges: parseBadges(readCell(headers, row, 'badges'), types, free),
+        badges,
         time: priceShifted ? readTimeFromRow(row) : readEventField(headers, row, 'time', shifted),
         location: priceShifted
           ? readLocationFromExtendedColumns(headers, row) || readLocation(headers, row)

@@ -228,7 +228,7 @@ export function MahoganyPages() {
           <div className="sidebar-box mahogany-vibe-box">
             <h3>✨ Find your vibe, save your favorites</h3>
             <p>
-              Sort the guide by day, venue type, vibes, and price — then tap <b>Add</b> and share
+              Sort the guide by day, audience, venue type, vibes, and price — then tap <b>Add</b> and share
               your itinerary with your people.
             </p>
           </div>
@@ -305,7 +305,7 @@ export function MahoganyPages() {
                 <>
                   {officialGrouped.length > 0 ? (
                     <CitySection
-                      cityLabel="Official events"
+                      cityLabel="Pride events"
                       dayGroups={officialGrouped}
                       isEventVisible={isEventShown}
                       isGoing={(event) => itinerary.isGoing(event.id)}
@@ -315,7 +315,7 @@ export function MahoganyPages() {
                   ) : null}
                   {moreGrouped.length > 0 ? (
                     <CitySection
-                      cityLabel="More Events"
+                      cityLabel="Other events"
                       dayGroups={moreGrouped}
                       isEventVisible={isEventShown}
                       isGoing={(event) => itinerary.isGoing(event.id)}

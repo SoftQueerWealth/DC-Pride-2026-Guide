@@ -10,6 +10,18 @@ const BADGE_CLASS: Record<string, string> = {
   Cultural: 'b-cultural',
   Wellness: 'b-wellness',
   Free: 'b-free',
+  Black: 'b-cultural',
+  Sapphic: 'b-party',
+  'Trans/GNC': 'b-workshop',
+  POC: 'b-meetup',
+  Queer: 'b-afterdark',
+  'Queer-friendly': 'b-happyhour',
+  MLM: 'b-ball',
+  '30+': 'b-outdoors',
+  ENM: 'b-brunch',
+  Kink: 'b-afterdark',
+  Masc: 'b-meetup',
+  'Youth/Family': 'b-wellness',
 };
 
 export function badgeClassForLabel(label: string): string {

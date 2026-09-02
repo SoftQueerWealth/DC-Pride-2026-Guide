@@ -3,6 +3,7 @@ import { EventDay, EventType, EventVibe, type DayId, type EventTypeId, type Even
 export enum FilterKind {
   Day = 'day',
   Type = 'type',
+  Audience = 'audience',
   Vibe = 'vibe',
   Free = 'free',
   Discount = 'discount',
@@ -48,6 +49,23 @@ export const FILTER_SECTIONS: FilterSectionDef<FilterKind>[] = [
       { kind: FilterKind.Type, value: EventType.Ball, label: 'Ball' },
       { kind: FilterKind.Type, value: EventType.Meetup, label: 'Meetup' },
       { kind: FilterKind.Type, value: EventType.Cultural, label: 'Cultural' },
+    ],
+  },
+  {
+    label: 'Audience',
+    pills: [
+      { kind: FilterKind.Audience, value: 'black', label: 'Black' },
+      { kind: FilterKind.Audience, value: 'sapphic', label: 'Sapphic' },
+      { kind: FilterKind.Audience, value: 'trans/gnc', label: 'Trans/GNC' },
+      { kind: FilterKind.Audience, value: 'poc', label: 'POC' },
+      { kind: FilterKind.Audience, value: 'queer', label: 'Queer' },
+      { kind: FilterKind.Audience, value: 'queer-friendly', label: 'Queer-friendly' },
+      { kind: FilterKind.Audience, value: 'mlm', label: 'MLM' },
+      { kind: FilterKind.Audience, value: '30+', label: '30+' },
+      { kind: FilterKind.Audience, value: 'enm', label: 'ENM' },
+      { kind: FilterKind.Audience, value: 'kink', label: 'Kink' },
+      { kind: FilterKind.Audience, value: 'masc', label: 'Masc' },
+      { kind: FilterKind.Audience, value: 'youth/family', label: 'Youth/Family' },
     ],
   },
   {

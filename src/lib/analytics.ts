@@ -18,6 +18,16 @@ function shouldTrackAnalytics(): boolean {
   return isAnalyticsEnabled() && typeof window !== 'undefined' && Boolean(window.gtag);
 }
 
+export function trackPageView(pagePath: string): void {
+  if (!shouldTrackAnalytics()) return;
+
+  window.gtag?.('event', 'page_view', {
+    page_path: pagePath,
+    page_title: document.title,
+    page_location: window.location.href,
+  });
+}
+
 export function trackClick(eventName: string, label: string): void {
   if (!shouldTrackAnalytics()) return;
 
