@@ -4,7 +4,7 @@ export type FestivalGrouping = 'weekday' | 'calendar';
 
 /** Sheet value in Black Pride / Festival for NYC Black Pride. */
 export const NYC_BLACK_PRIDE_SERIES = 'NYC Black Pride (29th Annual)';
-export const ATL_BLACK_PRIDE_SERIES = 'ATL Black Pride (20th Annual)';
+export const ATL_BLACK_PRIDE_SERIES = 'Atlanta Black Pride';
 export const STAMINA_PRIDE_SERIES = 'STAMINA 2026: Queer Caribbean Festival';
 export const GLOBAL_BLACK_PRIDE_SERIES = 'Global Black Pride';
 
@@ -161,7 +161,7 @@ export const FEATURED_FESTIVALS: FeaturedFestival[] = [
     id: 'atl-black-pride',
     monthId: SEPTEMBER_FESTIVAL_ID,
     monthPrefix: '2026-09',
-    tabLabel: 'ATL Black Pride (20th Annual)',
+    tabLabel: 'Atlanta Black Pride',
     location: 'Atlanta · September 2026',
     city: 'atlanta',
     prideSeries: ATL_BLACK_PRIDE_SERIES,

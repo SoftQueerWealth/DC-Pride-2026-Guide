@@ -15,7 +15,18 @@ import { shouldHideDiscountCode } from '../lib/parseDiscountDisplay';
 import { formatTicketPriceDisplay, priceIndicatesFree } from '../lib/parsePriceDisplay';
 import { parseEventTimeMinutes } from '../lib/eventTimeSort';
 
-const BEAUTY_SHEET_NAME = 'Business';
+function normalizePrideSeriesFromSheet(value: string): string {
+  const key = value.trim().toLowerCase().replace(/\s+/g, ' ');
+  if (
+    key === 'atl black pride' ||
+    key === 'atl black pride (20th annual)' ||
+    key === 'atlanta black pride (20th annual)'
+  ) {
+    return 'Atlanta Black Pride';
+  }
+  return value.trim();
+}
+
 const SHEETS_ID_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_ID_HERE';
 const API_KEY_PLACEHOLDER = 'YOUR_GOOGLE_SHEETS_API_KEY_HERE';
 
@@ -718,8 +729,9 @@ function parseSheetRows(values: string[][], options: ParseSheetRowsOptions): Pri
         discountCodeRaw && !shouldHideDiscountCode(discountCodeRaw) ? discountCodeRaw : '';
 
       const flyerUrl = normalizeFlyerUrl(readCell(headers, row, 'flyerUrl'));
-      const prideSeries =
+      const prideSeriesRaw =
         readCell(headers, row, 'prideSeries') || readCell(headers, row, 'festival') || undefined;
+      const prideSeries = prideSeriesRaw ? normalizePrideSeriesFromSheet(prideSeriesRaw) : undefined;
       const cityRaw = readCell(headers, row, 'city');
       const city = cityRaw ? normalizeSheetCity(cityRaw) : null;
       if (cityRaw && !city) return null;
